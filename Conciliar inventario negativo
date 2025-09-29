@@ -1,5 +1,5 @@
 # Script de reabastecimiento manual - Versión final de producción
-
+#Server action en odoo: modelo products.products
 compras_por_proveedor = {}
 
 for product in records:
