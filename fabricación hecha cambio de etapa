@@ -1,0 +1,37 @@
+# El 'record' aquí es la Orden de Fabricación (mrp.production) que se acaba de completar.
+mo = record
+
+# 1. Encontrar la Orden de Venta a través del origen de la MO
+if mo.origin:
+    sale_order = env['sale.order'].search([('name', '=', mo.origin)], limit=1)
+    
+    if sale_order:
+        # 2. Encontrar la Tarea del Proyecto original
+        # Buscamos una tarea en el proyecto de la OF que esté vinculada a una línea de la venta
+        task = env['project.task'].search([
+            ('project_id', '=', mo.project_id.id),
+            ('sale_line_id', 'in', sale_order.order_line.ids)
+        ], limit=1)
+
+        if task:
+            current_stage = task.stage_id
+            
+            # 3. Encontrar la siguiente etapa en el flujo del proyecto
+            next_stage = env['project.task.type'].search([
+                ('project_ids', '=', task.project_id.id),
+                ('sequence', '>', current_stage.sequence)
+            ], order='sequence asc', limit=1)
+            
+            # 4. Mover la tarea y registrar un mensaje
+            if next_stage:
+                task.write({'stage_id': next_stage.id})
+                
+                # Publicar una nota en la tarea para trazabilidad
+                task.message_post(
+                    body=f"La fabricación <strong>({mo.name})</strong> ha finalizado. La tarea avanza a la etapa: <strong>{next_stage.name}</strong>.",
+                    subtype_xmlid='mail.mt_note',
+                    body_is_html=True
+                )
+            else:
+                # Opcional: registrar que ya estaba en la última etapa
+                task.message_post(body=f"La fabricación <strong>({mo.name})</strong> ha finalizado, pero la tarea ya se encuentra en la última etapa.")
