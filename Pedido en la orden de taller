@@ -1,0 +1,33 @@
+# Evita ejecutar el código si la nota ya tiene contenido o si no hay un documento de origen.
+if not record.log_note and record.origin:
+    
+    # Busca la Orden de Venta usando directamente el campo 'Documento de Origen'.
+    sale_order = env['sale.order'].search([('name', '=', record.origin)], limit=1)
+    
+    # Si se encuentra la Orden de Venta, empezamos a construir el mensaje.
+    if sale_order:
+        message = ""
+        
+        # 1. AÑADIR EL PROYECTO DE LA TAREA (si existe)
+        if sale_order.project_id:
+            message += f"{sale_order.project_id.name}\n"
+            
+        message += f"Pedido: ({sale_order.name})\n\n"
+
+        # 2. AÑADIR LAS LÍNEAS DEL PEDIDO DE VENTA 
+        # Verificamos si la orden de venta tiene líneas de pedido.
+        if sale_order.order_line:
+            message += "Productos del Pedido:\n"
+            
+            # Itera sobre cada línea del pedido de venta.
+            for line in sale_order.order_line:
+                
+                # Obtenemos el nombre del producto y la cantidad pedida.
+                product_name = line.product_id.display_name
+                quantity = line.product_uom_qty
+                
+                # Agrega el producto y su cantidad a la nota.
+                message += f"- {quantity} x {product_name}\n"
+                
+        # Asigna el mensaje construido al campo de notas de la Orden de Fabricación.
+        record['log_note'] = message
