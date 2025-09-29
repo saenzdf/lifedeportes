@@ -1,0 +1,12 @@
+if record.res_id and record.model == 'project.task':
+  task = env['project.task'].browse(record.res_id)
+  if task:
+    task.write({'x_studio_diseo_enviado': True})
+    task.message_post(body="Diseño Enviado enviado para aprobación.")
+
+# Modelo mensaje del chatter
+# filtros contenido contiente /aprobar
+# tipo = comentario
+# segund acción; cambio de estado
+#     cuando el boolean "diseño enviado" se marca establecido 
+#     la actualización cambio de estado actualiza el estado de la tarea a cambios solicitados
