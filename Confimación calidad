@@ -1,0 +1,81 @@
+# === INICIO DE LA LÓGICA DE LA ACCIÓN ===
+task = record
+
+if task.sale_line_id:
+    sale_order = task.sale_line_id.order_id
+
+    # 1. Buscar la Orden de Fabricación "Consolidada" principal.
+    parent_mo = env['mrp.production'].search([
+        ('origin', '=', sale_order.name)
+    ], order='id desc', limit=1)
+
+    if parent_mo:
+        task.message_post(body=f"Verificando disponibilidad de componentes para la OF <strong>{parent_mo.name}</strong>...")
+
+        # 2. Re-intentar la asignación inicial para tener el estado más actualizado.
+        parent_mo.action_assign()
+
+        # 3. Identificar los movimientos de materia prima que no están disponibles.
+        # Un movimiento 'confirmed' significa que Odoo está esperando stock. 'assigned' significa que ya está reservado.
+        moves_to_fix = parent_mo.move_raw_ids.filtered(lambda m: m.state == 'confirmed')
+
+        if not moves_to_fix:
+            task.message_post(
+                body=f"✅ <strong>¡Todo listo!</strong> Todos los componentes para la OF <strong>{parent_mo.name}</strong> ya estaban disponibles y reservados.",
+                subtype_xmlid='mail.mt_note', body_is_html=True
+            )
+        else:
+            log_messages = []
+            # Obtenemos la ubicación de stock principal del almacén de la OF.
+            stock_location = parent_mo.location_src_id
+            if not stock_location:
+                raise UserError("La Orden de Fabricación no tiene una ubicación de origen definida.")
+
+            # 4. Para cada componente faltante, ajustar el inventario.
+            for move in moves_to_fix:
+                product = move.product_id
+                needed_qty = move.product_uom_qty - move.quantity_reserved
+                
+                if needed_qty > 0:
+                    # Usamos la función interna de Odoo para actualizar el stock de forma segura.
+                    env['stock.quant']._update_available_quantity(product, stock_location, needed_qty)
+                    
+                    log_message = f"<li>Componente <strong>{product.display_name}</strong>: Se necesitaban {needed_qty:.2f} {move.product_uom_id.name}. Inventario ajustado.</li>"
+                    log_messages.append(log_message)
+            # 5. Volver a intentar la asignación ahora que el stock ha sido ajustado.
+            parent_mo.action_assign()
+
+            # 6. Informar del resultado en la tarea.
+            final_moves_to_fix = parent_mo.move_raw_ids.filtered(lambda m: m.state == 'confirmed')
+            
+            summary_message = "<ul>" + "".join(log_messages) + "</ul>"
+
+            if not final_moves_to_fix:
+                task.message_post(
+                    body=f"""
+                    <p>🔧 <strong>Ajuste de inventario completado.</strong></p>
+                    {summary_message}
+                    <p>✅ La Orden de Fabricación <strong>{parent_mo.name}</strong> está lista </p>
+                    """,
+                    subtype_xmlid='mail.mt_note', body_is_html=True
+                )
+            else:
+                task.message_post(
+                    body=f"""
+                    <p>⚠️ <strong>Atención: Ajuste de inventario realizado, pero persisten problemas.</strong></p>
+                    {summary_message}
+                    <p>La OF <strong>{parent_mo.name}</strong> aún tiene componentes no disponibles. Por favor, revise manualmente.</p>
+                    """,
+                    subtype_xmlid='mail.mt_comment', body_is_html=True
+                )
+
+    else:
+        task.message_post(
+            body=f"<strong>Error:</strong> No se encontró la OF consolidada para el Pedido {sale_order.name}.",
+            body_is_html=True
+        )
+else:
+    task.message_post(
+        body=f"<strong>Error:</strong> La tarea no está ligada a un pedido de venta.",
+        body_is_html=True
+    )
