@@ -1,0 +1,13 @@
+for task in records:
+  # Se asegura de que la tarea está vinculada a una línea de pedido.
+  if task.sale_line_id:
+    order = task.sale_line_id.order_id
+    customer = order.partner_id
+    
+    # Clave: Usa la referencia interna (ref) del cliente si existe; si no, usa su nombre.
+    customer_identifier = customer.ref or customer.name
+    
+    # Construye el nuevo nombre para la tarea.
+    new_name = f"[{order.name}] {customer_identifier}"
+    
+    task.write({'name': new_name})
