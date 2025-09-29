@@ -1,0 +1,169 @@
+# cuando una tarea llega a la etapa de fabricación 
+# --- Flujos de operaciones definidos ---
+LASER_CUT_OPERATIONS = [
+    {'op_name': 'Impresión del diseño en el rollo de papel', 'wc_name': 'Área de impresión', 'depends_on': []},
+    {'op_name': 'Proceso de sublimación (Rollo)', 'wc_name': 'Área de Sublimación', 'depends_on': ['Impresión del diseño en el rollo de papel']},
+    {'op_name': 'Ejecución Corte Láser y envio a confeción', 'wc_name': 'Área de Corte láser', 'depends_on': ['Proceso de sublimación (Rollo)']},
+    {'op_name': 'Empaquetado listo y entrega a empresa de transporte', 'wc_name': 'Área de Empaque', 'depends_on': ['Ejecución Corte Láser y envio a confeción']},
+]
+TRADITIONAL_CUT_OPERATIONS = [
+    {'op_name': 'Impresión del diseño en el rollo de papel', 'wc_name': 'Área de impresión', 'depends_on': []},
+    {'op_name': 'Corte Tradicional', 'wc_name': 'Área de Corte', 'depends_on': ['Impresión del diseño en el rollo de papel']},
+    {'op_name': 'Proceso de sublimación (Pieza)', 'wc_name': 'Área de Sublimación', 'depends_on': ['Corte Tradicional']},
+    {'op_name': 'Coordinación confección', 'wc_name': 'Área de Corte láser', 'depends_on': ['Proceso de sublimación (Pieza)']},
+    {'op_name': 'Empaquetado listo y entrega a empresa de transporte', 'wc_name': 'Área de Empaque', 'depends_on': ['Coordinación confección']},
+]
+FULL_CUT_OPERATIONS = [
+    # --- LÍNEA 1: TRADICIONAL ---
+    {'op_name': 'Corte Tradicional', 'wc_name': 'Área de Corte', 'depends_on': []},
+    {'op_name': 'Proceso de sublimación (Pieza)', 'wc_name': 'Área de Sublimación', 'depends_on': ['Corte Tradicional']},
+    # --- LÍNEA 2: LÁSER ---
+    {'op_name': 'Impresión del diseño en el rollo de papel', 'wc_name': 'Área de impresión', 'depends_on': []},
+    {'op_name': 'Proceso de sublimación (Rollo)', 'wc_name': 'Área de Sublimación', 'depends_on': ['Impresión del diseño en el rollo de papel']},
+    {'op_name': 'Ejecución Corte Láser', 'wc_name': 'Área de Corte láser', 'depends_on': ['Proceso de sublimación (Rollo)']},
+    # --- PUNTO DE UNIÓN Y FINAL ---
+    {'op_name': 'Coordinación confección', 'wc_name': 'Área de Corte láser', 'depends_on': ['Proceso de sublimación (Pieza)', 'Ejecución Corte Láser']},
+    {'op_name': 'Empaquetado listo y entrega a empresa de transporte', 'wc_name': 'Área de Empaque', 'depends_on': ['Coordinación confección']},
+]
+
+if record and record.sale_line_id:
+    sale_order = record.sale_line_id.order_id
+    customer_ref = sale_order.partner_id.ref or sale_order.partner_id.name
+    product_name = f"{sale_order.name} - {customer_ref}"
+    product_template = env['product.template'].search([('name', '=', product_name)], limit=1)
+
+    if product_template:
+        mo = env['mrp.production'].search([('origin', '=', sale_order.name)], limit=1)
+        if mo:
+            record.message_post(
+                body=f"""<p><strong>La fabricación para este pedido ya fue creada previamente.</strong></p>
+                         <p>Puedes acceder a la fabricación existente aquí: <a href="#" data-oe-model="mrp.production" data-oe-id="{mo.id}">{mo.name}</a></p>""",
+                message_type='comment', subtype_xmlid='mail.mt_note', body_is_html=True
+            )
+        else:
+            record.message_post(body="El producto de fabricación ya existe, pero no se encontró una Orden de Fabricación asociada.")
+    else:
+        # 2. DECIDIR EL FLUJO DE OPERACIONES
+        if not record.tag_ids:
+            raise UserError("La tarea no tiene ninguna etiqueta. Por favor, añade 'Corte laser' o 'Corte pieza a pieza' para continuar.")
+
+        tag_names = [tag.name.lower() for tag in record.tag_ids]
+        has_laser_tag = 'corte laser' in tag_names
+        has_traditional_tag = 'corte pieza a pieza' in tag_names
+        
+        flow_name = ""
+        OPERATIONS_DATA = []
+
+        if has_laser_tag and has_traditional_tag:
+            OPERATIONS_DATA = FULL_CUT_OPERATIONS
+            flow_name = "Completo (Láser y Tradicional)"
+        elif has_traditional_tag:
+            OPERATIONS_DATA = TRADITIONAL_CUT_OPERATIONS
+            flow_name = "Corte Tradicional (Pieza a Pieza)"
+        elif has_laser_tag:
+            OPERATIONS_DATA = LASER_CUT_OPERATIONS
+            flow_name = "Corte Láser"
+        else:
+            raise UserError(f"Ninguna de las etiquetas de la tarea ('{', '.join(tag_names)}') coincide con un flujo de fabricación. Asegúrate de que tenga la etiqueta 'Corte laser' o 'Corte pieza a pieza'.")
+
+        # 3. CREACIÓN DEL PRODUCTO FINAL A FABRICAR
+        internal_category = env['product.category'].search([('name', '=', 'Interno')], limit=1)
+        if not internal_category:
+            raise UserError("La categoría de producto 'Interno' no fue encontrada.")
+        
+        product_template_new = env['product.template'].create({
+            'name': product_name, 'categ_id': internal_category.id, 'type': 'consu',
+            'sale_ok': False, 'purchase_ok': False,
+            'route_ids': [(6, 0, [env.ref('mrp.route_warehouse0_manufacture').id])],
+        })
+        new_product = product_template_new.product_variant_id
+
+        # 4. PREPARACIÓN DE LÍNEAS DE COMPONENTES
+        aggregated_components = {}
+        for line in sale_order.order_line:
+            if line.product_id.type != 'service' and line.product_uom_qty:
+                bom = env['mrp.bom'].search([('product_tmpl_id', '=', line.product_id.product_tmpl_id.id), ('type', '=', 'normal')], limit=1)
+                if bom:
+                    variant_attribute_values = line.product_id.product_template_attribute_value_ids
+                    for bom_line in bom.bom_line_ids:
+                        component_restrictions = bom_line.bom_product_template_attribute_value_ids
+                        if not component_restrictions or set(component_restrictions.ids).issubset(set(variant_attribute_values.ids)):
+                            component_id = bom_line.product_id.id
+                            quantity_to_add = bom_line.product_qty * line.product_uom_qty
+                            aggregated_components[component_id] = aggregated_components.get(component_id, 0) + quantity_to_add
+        
+        if not aggregated_components: raise UserError("No se encontraron componentes aplicables en las LdM de los productos vendidos.")
+        bom_lines = [(0, 0, {'product_id': p_id, 'product_qty': qty}) for p_id, qty in aggregated_components.items()]
+
+        # 4.5. PREPARACIÓN DE LÍNEAS DE SUBPRODUCTOS
+        byproduct_lines = []
+        for line in sale_order.order_line:
+            if line.product_id and line.product_id.type != 'service' and line.product_uom_qty > 0:
+                # --- LÍNEA CORREGIDA ---
+                byproduct_lines.append((0, 0, {'product_id': line.product_id.id, 'product_qty': line.product_uom_qty, 'product_uom_id': line.product_uom_id.id}))
+        
+        if not byproduct_lines: raise UserError("El pedido de venta no contiene productos válidos para ser generados como subproductos.")
+
+        # 5. PREPARACIÓN DE OPERACIONES Y LdM
+        required_wc_names = {op['wc_name'] for op in OPERATIONS_DATA}
+        workcenters = env['mrp.workcenter'].search([('name', 'in', list(required_wc_names))])
+        workcenter_map = {wc.name: wc.id for wc in workcenters}
+        if len(workcenter_map) != len(required_wc_names):
+            missing_wc = required_wc_names - set(workcenter_map.keys())
+            raise UserError(f"No se encontraron los siguientes centros de trabajo: {missing_wc}.")
+        
+        bom_operations_vals = []
+        for i, op_data in enumerate(OPERATIONS_DATA):
+            bom_operations_vals.append((0, 0, {'name': op_data['op_name'], 'workcenter_id': workcenter_map[op_data['wc_name']], 'time_mode': 'manual', 'sequence': (i + 1) * 10}))
+
+        # 6. CREACIÓN DE LA LdM Y ASIGNACIÓN
+        bom = env['mrp.bom'].create({
+            'product_tmpl_id': product_template_new.id, 'product_id': new_product.id,
+            'product_qty': 1.0, 'type': 'normal', 'consumption': 'flexible',
+            'bom_line_ids': bom_lines, 'operation_ids': bom_operations_vals,
+            'byproduct_ids': byproduct_lines,
+            'project_id': record.project_id.id,
+        })
+        
+        op_name_to_record_map = {op.name: op for op in bom.operation_ids}
+        for op_data, op_record in zip(OPERATIONS_DATA, bom.operation_ids.sorted('sequence')):
+            blocking_op_names = op_data.get('depends_on', [])
+            if blocking_op_names:
+                blocking_op_ids = [op_name_to_record_map[name].id for name in blocking_op_names if name in op_name_to_record_map]
+                if blocking_op_ids:
+                    op_record.write({'blocked_by_operation_ids': [(6, 0, blocking_op_ids)]})
+
+        operations_map = {op.name: op.id for op in bom.operation_ids}
+        for line in bom.bom_line_ids:
+            product_name_lower = line.product_id.name.lower()
+            target_op_name = None
+            if 'impresión' in product_name_lower: target_op_name = 'Impresión del diseño en el rollo de papel'
+            elif 'tela' in product_name_lower:
+                if 'Ejecución Corte Láser' in operations_map: target_op_name = 'Ejecución Corte Láser'
+                elif 'Corte Tradicional' in operations_map: target_op_name = 'Corte Tradicional'
+            elif 'confección' in product_name_lower: target_op_name = 'Coordinación confección'
+            
+            if target_op_name and target_op_name in operations_map:
+                line.write({'operation_id': operations_map[target_op_name]})
+                
+        # 7. CREACIÓN DE LA ORDEN DE FABRICACIÓN (OF)
+        mo_new = env['mrp.production'].create({
+            'product_id': new_product.id, 'product_uom_id': new_product.uom_id.id,
+            'product_qty': 1.0, 'bom_id': bom.id, 'origin': sale_order.name,
+            'project_id': record.project_id.id,
+        })
+        mo_new.action_confirm()
+        mo_new.action_assign()
+
+        # 8. ENLACE Y NOTIFICACIÓN EN LA TAREA
+        record.message_post(
+            body=f"""
+            <p><strong>Flujo de fabricación creado con éxito.</strong></p>
+            <p><b>Operaciones:</b> {flow_name}</p>
+            <ul>
+                <li><b>Producto:</b> <a href="#" data-oe-model="product.product" data-oe-id="{new_product.id}">{new_product.display_name}</a></li>
+                <li><b>Lista de Materiales:</b> <a href="#" data-oe-model="mrp.bom" data-oe-id="{bom.id}">{bom.display_name}</a></li>
+                <li><b>Orden de Fabricación:</b> <a href="#" data-oe-model="mrp.production" data-oe-id="{mo_new.id}">{mo_new.name}</a></li>
+            </ul>""",
+            message_type='comment', subtype_xmlid='mail.mt_note', body_is_html=True
+        )
