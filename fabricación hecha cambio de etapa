@@ -1,4 +1,6 @@
 # El 'record' aquí es la Orden de Fabricación (mrp.production) que se acaba de completar.
+# Automatización en orden de fabricación con filtro estado = hecho
+
 mo = record
 
 # 1. Encontrar la Orden de Venta a través del origen de la MO
