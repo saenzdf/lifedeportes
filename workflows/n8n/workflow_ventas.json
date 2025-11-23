@@ -14,7 +14,7 @@
       "webhookId": "d299f705-52a7-4434-8f71-95a86013b0c3",
       "credentials": {
         "telegramApi": {
-          "id": "p4i9p8RYgtjMBlLo",
+          "id": "{{ $env.TELEGRAM_CREDENTIAL_ID }}",
           "name": "Telegram account"
         }
       }
@@ -124,7 +124,7 @@
       ],
       "credentials": {
         "telegramApi": {
-          "id": "p4i9p8RYgtjMBlLo",
+          "id": "{{ $env.TELEGRAM_CREDENTIAL_ID }}",
           "name": "Telegram account"
         }
       }

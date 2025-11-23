@@ -50,7 +50,7 @@
       ],
       "credentials": {
         "qdrantApi": {
-          "id": "QnjLhm68XDWquRhQ"
+          "id": "{{ $env.QDRANT_CREDENTIAL_ID }}"
         }
       }
     },
@@ -70,7 +70,7 @@
       ],
       "credentials": {
         "odooApi": {
-          "id": "NDhlaYaWlBhfoyKL"
+          "id": "{{ $env.ODOO_CREDENTIAL_ID }}"
         }
       }
     },
@@ -103,7 +103,7 @@
       ],
       "credentials": {
         "odooApi": {
-          "id": "NDhlaYaWlBhfoyKL"
+          "id": "{{ $env.ODOO_CREDENTIAL_ID }}"
         }
       }
     },
@@ -122,7 +122,7 @@
       ],
       "credentials": {
         "telegramApi": {
-          "id": "p4i9p8RYgtjMBlLo"
+          "id": "{{ $env.TELEGRAM_CREDENTIAL_ID }}"
         }
       }
     }

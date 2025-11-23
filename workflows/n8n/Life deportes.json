@@ -136,7 +136,7 @@
       "webhookId": "d299f705-52a7-4434-8f71-95a86013b0c3",
       "credentials": {
         "telegramApi": {
-          "id": "p4i9p8RYgtjMBlLo",
+          "id": "{{ $env.TELEGRAM_CREDENTIAL_ID }}",
           "name": "Telegram account"
         }
       }
@@ -163,7 +163,7 @@
       "name": "Transcribe a recording",
       "credentials": {
         "googlePalmApi": {
-          "id": "1PlQb3xIE4PymgxA",
+          "id": "{{ $env.GEMINI_CREDENTIAL_ID }}",
           "name": "Google Gemini(PaLM) Api account"
         }
       }
@@ -213,7 +213,7 @@
       "name": "contacts",
       "credentials": {
         "qdrantApi": {
-          "id": "QnjLhm68XDWquRhQ",
+          "id": "{{ $env.QDRANT_CREDENTIAL_ID }}",
           "name": "QdrantApi account"
         }
       }
@@ -230,7 +230,7 @@
       "name": "Embeddings Google Gemini",
       "credentials": {
         "googlePalmApi": {
-          "id": "1PlQb3xIE4PymgxA",
+          "id": "{{ $env.GEMINI_CREDENTIAL_ID }}",
           "name": "Google Gemini(PaLM) Api account"
         }
       }
@@ -252,7 +252,7 @@
       "webhookId": "c22c38ba-1baa-46cc-87dc-90f71c9e5cb8",
       "credentials": {
         "telegramApi": {
-          "id": "p4i9p8RYgtjMBlLo",
+          "id": "{{ $env.TELEGRAM_CREDENTIAL_ID }}",
           "name": "Telegram account"
         }
       }
@@ -271,7 +271,7 @@
       "name": "LLM",
       "credentials": {
         "googlePalmApi": {
-          "id": "1PlQb3xIE4PymgxA",
+          "id": "{{ $env.GEMINI_CREDENTIAL_ID }}",
           "name": "Google Gemini(PaLM) Api account"
         }
       }
@@ -293,7 +293,7 @@
       "webhookId": "c2ed7c26-66cb-4cc0-86b6-c2ef1559d0b3",
       "credentials": {
         "telegramApi": {
-          "id": "p4i9p8RYgtjMBlLo",
+          "id": "{{ $env.TELEGRAM_CREDENTIAL_ID }}",
           "name": "Telegram account"
         }
       },
@@ -333,7 +333,7 @@
       "name": "Memoria de conversaciones",
       "credentials": {
         "postgres": {
-          "id": "dr8hjGyk2D9IFNIg",
+          "id": "{{ $env.POSTGRES_CREDENTIAL_ID }}",
           "name": "Postgres account"
         }
       }
@@ -562,7 +562,7 @@
       "webhookId": "962e99ea-227c-4446-b366-ce34be86c88e",
       "credentials": {
         "telegramApi": {
-          "id": "p4i9p8RYgtjMBlLo",
+          "id": "{{ $env.TELEGRAM_CREDENTIAL_ID }}",
           "name": "Telegram account"
         }
       }
@@ -607,7 +607,7 @@
       "name": "create-new-contact",
       "credentials": {
         "odooApi": {
-          "id": "NDhlaYaWlBhfoyKL",
+          "id": "{{ $env.ODOO_CREDENTIAL_ID }}",
           "name": "Odoo account"
         }
       }
@@ -645,7 +645,7 @@
       "name": "create-sale-order",
       "credentials": {
         "odooApi": {
-          "id": "NDhlaYaWlBhfoyKL",
+          "id": "{{ $env.ODOO_CREDENTIAL_ID }}",
           "name": "Odoo account"
         }
       }
@@ -669,7 +669,7 @@
       "name": "update-sale-order",
       "credentials": {
         "odooApi": {
-          "id": "NDhlaYaWlBhfoyKL",
+          "id": "{{ $env.ODOO_CREDENTIAL_ID }}",
           "name": "Odoo account"
         }
       }
@@ -694,7 +694,7 @@
       "name": "get-cotizacion",
       "credentials": {
         "odooApi": {
-          "id": "NDhlaYaWlBhfoyKL",
+          "id": "{{ $env.ODOO_CREDENTIAL_ID }}",
           "name": "Odoo account"
         }
       }
@@ -726,7 +726,7 @@
       "name": "productos-life",
       "credentials": {
         "qdrantApi": {
-          "id": "QnjLhm68XDWquRhQ",
+          "id": "{{ $env.QDRANT_CREDENTIAL_ID }}",
           "name": "QdrantApi account"
         }
       }
@@ -751,7 +751,7 @@
       "name": "get-task",
       "credentials": {
         "odooApi": {
-          "id": "NDhlaYaWlBhfoyKL",
+          "id": "{{ $env.ODOO_CREDENTIAL_ID }}",
           "name": "Odoo account"
         }
       }
@@ -774,7 +774,7 @@
       "webhookId": "d0b46c3d-072d-4b9e-8e0f-07517603ebb2",
       "credentials": {
         "telegramApi": {
-          "id": "p4i9p8RYgtjMBlLo",
+          "id": "{{ $env.TELEGRAM_CREDENTIAL_ID }}",
           "name": "Telegram account"
         }
       }
@@ -808,7 +808,7 @@
       "name": "create-gasto",
       "credentials": {
         "odooApi": {
-          "id": "NDhlaYaWlBhfoyKL",
+          "id": "{{ $env.ODOO_CREDENTIAL_ID }}",
           "name": "Odoo account"
         }
       }
@@ -837,7 +837,7 @@
       "name": "atributos",
       "credentials": {
         "qdrantApi": {
-          "id": "QnjLhm68XDWquRhQ",
+          "id": "{{ $env.QDRANT_CREDENTIAL_ID }}",
           "name": "QdrantApi account"
         }
       }
@@ -859,7 +859,7 @@
       "webhookId": "3f8605a5-78c2-4bef-b05b-a3a9f893b98a",
       "credentials": {
         "telegramApi": {
-          "id": "p4i9p8RYgtjMBlLo",
+          "id": "{{ $env.TELEGRAM_CREDENTIAL_ID }}",
           "name": "Telegram account"
         }
       }
@@ -880,7 +880,7 @@
       "webhookId": "2b4ca182-9978-4b92-9e06-97fb9d8a53e6",
       "credentials": {
         "telegramApi": {
-          "id": "p4i9p8RYgtjMBlLo",
+          "id": "{{ $env.TELEGRAM_CREDENTIAL_ID }}",
           "name": "Telegram account"
         }
       },
@@ -920,7 +920,7 @@
       "name": "attachment",
       "credentials": {
         "odooApi": {
-          "id": "NDhlaYaWlBhfoyKL",
+          "id": "{{ $env.ODOO_CREDENTIAL_ID }}",
           "name": "Odoo account"
         }
       }
