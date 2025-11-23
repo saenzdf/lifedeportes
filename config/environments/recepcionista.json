@@ -1,0 +1,355 @@
+{
+  "name": "Flujo 2: Recepcionista de WhatsApp",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "messages"
+        ]
+      },
+      "id": "2d1f8f9d-83b6-4c7b-8919-867c2d829107",
+      "name": "Recepcionista de WA",
+      "type": "n8n-nodes-base.whatsAppTrigger",
+      "typeVersion": 1,
+      "position": [
+        620,
+        340
+      ],
+      "credentials": {
+        "whatsAppTriggerApi": {
+          "id": "TU_CREDENCIAL_DE_WHATSAPP",
+          "name": "Tu Cuenta de WhatsApp"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "outputKey": "text",
+              "conditions": {
+                "options": {
+                  "version": 2
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "leftValue": "={{ $json.messages[0].type }}",
+                    "rightValue": "text"
+                  }
+                ]
+              },
+              "renameOutput": true
+            },
+            {
+              "outputKey": "image",
+              "conditions": {
+                "options": {
+                  "version": 2
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "89971d8c-a386-4e77-8f6c-f491a8e84cb6",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "leftValue": "={{ $json.messages[0].type }}",
+                    "rightValue": "image"
+                  }
+                ]
+              },
+              "renameOutput": true
+            },
+            {
+              "outputKey": "audio",
+              "conditions": {
+                "options": {
+                  "version": 2
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "e44c272a-c216-4f96-8d69-5a8220021c32",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "leftValue": "={{ $json.messages[0].type }}",
+                    "rightValue": "audio"
+                  }
+                ]
+              },
+              "renameOutput": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f51080bd-3f65-4d7a-b9c9-5a639b8b6088",
+      "name": "Clasificador de Mensaje",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        860,
+        340
+      ]
+    },
+    {
+      "parameters": {
+        "workflowId": "WORKFLOW_ID_TEXTO",
+        "options": {},
+        "inputs": {
+          "values": [
+            {
+              "name": "message",
+              "value": "={{ $json.messages[0].text.body }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "wa-{{ $json.messages[0].from }}"
+            }
+          ],
+          "options": {}
+        }
+      },
+      "id": "038317e0-c976-4d08-8e81-d41f53133610",
+      "name": "Subflujo: Procesar Texto",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 2,
+      "position": [
+        1120,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "textBody": "={{ $json.response_text }}",
+        "operation": "send",
+        "phoneNumberId": "TU_PHONE_ID",
+        "requestOptions": {},
+        "additionalFields": {
+          "previewUrl": false
+        },
+        "recipientPhoneNumber": "={{ $('Recepcionista de WA').item.json.messages[0].from }}"
+      },
+      "id": "2731871a-6379-450a-9d9e-105267a74737",
+      "name": "Responder al Usuario",
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        1600,
+        340
+      ],
+      "credentials": {
+        "whatsAppApi": {
+          "id": "TU_CREDENCIAL_DE_WHATSAPP",
+          "name": "Tu Cuenta de WhatsApp"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "workflowId": "WORKFLOW_ID_IMAGEN",
+        "options": {},
+        "inputs": {
+          "values": [
+            {
+              "name": "imageId",
+              "value": "={{ $json.messages[0].image.id }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "wa-{{ $json.messages[0].from }}"
+            }
+          ],
+          "options": {}
+        }
+      },
+      "id": "316719cd-9080-4822-b51f-ec73b7470c63",
+      "name": "Subflujo: Procesar Imagen",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 2,
+      "position": [
+        1120,
+        340
+      ]
+    },
+    {
+      "parameters": {
+        "workflowId": "WORKFLOW_ID_VOZ",
+        "options": {},
+        "inputs": {
+          "values": [
+            {
+              "name": "audioId",
+              "value": "={{ $json.messages[0].audio.id }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "wa-{{ $json.messages[0].from }}"
+            }
+          ],
+          "options": {}
+        }
+      },
+      "id": "a9081e7d-c2d2-4311-b75d-6395e8cd6e03",
+      "name": "Subflujo: Procesar Voz",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 2,
+      "position": [
+        1120,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "textBody": "Lo siento, solo puedo procesar mensajes de texto, imágenes y notas de voz. 🤖",
+        "operation": "send",
+        "phoneNumberId": "TU_PHONE_ID",
+        "requestOptions": {},
+        "additionalFields": {
+          "previewUrl": false
+        },
+        "recipientPhoneNumber": "={{ $('Recepcionista de WA').item.json.messages[0].from }}"
+      },
+      "id": "89e5e347-1c6f-42da-9f79-43c2c7cc45c4",
+      "name": "Responder: No Soportado",
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [
+        1120,
+        620
+      ],
+      "credentials": {
+        "whatsAppApi": {
+          "id": "TU_CREDENCIAL_DE_WHATSAPP",
+          "name": "Tu Cuenta de WhatsApp"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "mergeByPosition"
+      },
+      "id": "0639d67d-d41f-4950-8b06-4076cd57497d",
+      "name": "Unir Respuestas",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 2,
+      "position": [
+        1380,
+        340
+      ]
+    },
+    {
+      "parameters": {
+        "content": "### ⚠️ ¡CONFIGURACIÓN REQUERIDA! \n\n1.  Selecciona tus credenciales de WhatsApp en el nodo `Recepcionista de WA`.\n2.  Haz lo mismo en los nodos `Responder al Usuario` y `Responder: No Soportado`. (Y pon tu `phoneNumberId`)\n3.  Crea tus 3 subflujos y pega sus IDs de workflow en los nodos `Execute Workflow`.",
+        "color": 5
+      },
+      "id": "00787e91-c423-4558-863a-7967926b66e3",
+      "name": "¡LEEME!",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        620,
+        40
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Recepcionista de WA": {
+      "main": [
+        [
+          {
+            "node": "Clasificador de Mensaje",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Clasificador de Mensaje": {
+      "main": [
+        [
+          {
+            "node": "Subflujo: Procesar Texto",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Subflujo: Procesar Imagen",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Subflujo: Procesar Voz",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Responder: No Soportado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Subflujo: Procesar Texto": {
+      "main": [
+        [
+          {
+            "node": "Unir Respuestas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Subflujo: Procesar Imagen": {
+      "main": [
+        [
+          {
+            "node": "Unir Respuestas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Subflujo: Procesar Voz": {
+      "main": [
+        [
+          {
+            "node": "Unir Respuestas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Unir Respuestas": {
+      "main": [
+        [
+          {
+            "node": "Responder al Usuario",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

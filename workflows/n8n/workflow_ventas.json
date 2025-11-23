@@ -1,0 +1,190 @@
+{
+  "name": "Agente de Ventas",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "13611791-7a1d-4df7-a485-063df9578a05",
+      "name": "Telegram Trigger",
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -2736,
+        -308
+      ],
+      "webhookId": "d299f705-52a7-4434-8f71-95a86013b0c3",
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "operator": {
+                      "type": "string",
+                      "operation": "exists"
+                    },
+                    "leftValue": "={{ $json.message.text }}"
+                  }
+                ]
+              },
+              "outputKey": "text"
+            }
+          ]
+        }
+      },
+      "id": "4d39e89f-d638-4c78-a060-7f6cdd85da5c",
+      "name": "Clasificador de Mensaje",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -2512,
+        -340
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "name": "=text",
+              "value": "={{ $json.message.text }}",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "id": "6283267d-a738-4509-8c23-199211fe9a45",
+      "name": "Limpiar texto",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1776,
+        -896
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.text }}",
+        "options": {
+          "systemMessage": "Eres un Asistente Enrutador de IA. Tu ÚNICO trabajo es analizar el historial de conversación (Memoria) y el último mensaje del usuario para decidir qué agente debe manejar la solicitud.\n\n**FORMATO DE SALIDA (REGLA CRÍTICA):**\nTu respuesta DEBE ser una sola línea de texto. Debes combinar la etiqueta de la ruta y el mensaje exacto del usuario, separados por dos puntos dobles (`::`).\n\n**Formato:** `[ETIQUETA]::[MENSAJE_EXACTO_DEL_USUARIO]`\n\n**Ejemplos de Salida:**\n* `flujo-ventas::Hola, quiero 10 camisetas`\n* `identificar-contacto::listo, procedamos`\n* `detalles-pedido::te envío mi logo`\n* `flujo-ventas::ok`\n\n**ETIQUETAS (Elige una):**\n\n1. **flujo-ventas**: \n   - Saludos iniciales\n   - Preguntas sobre productos, atributos (talla, cuello), precios\n   - Mensajes de continuación (sí, ok, vale, listo, continuemos)\n   - MIENTRAS el usuario NO haya confirmado el total final\n\n2. **identificar-contacto**: \n   - CUANDO el usuario confirme el Total del pedido\n   - Frases como \"está listo\", \"eso es todo\", \"confirmamos\"\n   - LISTO para crear la cotización\n\n3. **detalles-pedido**: \n   - Cuando el usuario ya tiene una cotización (ej. 'S00451')\n   - Habla de pago, comprobante, o envía archivos (Excel, logos, etc.)\n\n4. **registro-compra**: \n   - Usuario interno registrando gastos, facturas de proveedor\n   - Compras de insumos\n\n5. **contacto-humano**: \n   - Solicitud explícita de hablar con humano/asesor/operador\n\n**CASOS ESPECIALES:**\n- Si hay ambigüedad, prioriza `flujo-ventas` excepto si hay confirmación explícita de total\n- Si el usuario ya tiene cotización (número tipo 'S00451'), usa `detalles-pedido`\n- Mantén consistencia con el contexto de la memoria conversacional\n\n**Regla de Memoria:** Si la conversación ya está en curso, usa la misma etiqueta que la última vez a menos que haya un cambio explícito de contexto.\n\n**NO** añadas explicaciones. **NO** saludes. Solo responde con el formato `[ETIQUETA]::[MENSAJE_EXACTO_DEL_USUARIO]`."
+        }
+      },
+      "id": "db41fbca-59ed-466a-a94a-926cd89247a4",
+      "name": "Agente Clasificador de mensajes",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -1488,
+        -632
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.output }}",
+        "options": {
+          "systemMessage": "Eres \"Life Deportes\", un asesor de ventas de ropa deportiva. Tu tono es amigable, directo y proactivo.\n\nOBJETIVO PRINCIPAL:\nDar cotizaciones inmediatas y precisas. SIEMPRE proporciona un precio desde el primer mensaje sin hacer preguntas innecesarias.\n\nTUS HERRAMIENTAS:\n1. `productos-life`: Úsala SOLO para productos específicos o cuando necesites validar detalles exactos\n2. `atributos`: Úsala cuando el cliente pida una combinación muy específica de características\n\nCATÁLOGO DE PRECIOS RÁPIDOS (Usar como referencia inicial):\n- **Uniformes de Fútbol**: desde $50.000\n- **Camisetas Deportivas**: desde $35.000\n- **Sudaderas**: desde $65.000\n- **Pantalonetas**: desde $25.000\n- **Conjuntos Deportivos**: desde $85.000\n- **Uniformes de Baloncesto**: desde $55.000\n- **Camisetas en Hidrotec**: desde $45.000\n\nESTRATEGIA DE RESPUESTA INMEDIATA:\n1. **Si el mensaje contiene palabras clave** (\"fútbol\", \"camiseta\", \"uniforme\", \"sudadera\"):\n   - Proporciona inmediatamente el precio de referencia más apropiado\n   - Menciona que el precio puede variar según especificaciones específicas\n   - Ofrece ayudar a encontrar la opción exacta si necesita refinamiento\n\n2. **Si el mensaje es muy vago** (\"precio\", \"ropa deportiva\"):\n   - Presenta las categorías principales con sus precios base\n   - Pregunta qué tipo de uniforme específicamente le interesa\n\n3. **Si busca algo específico**: Usa `productos-life` para validar y dar precio exacto\n\nFLUJO OPTIMIZADO:\n1. **Respuesta inmediata** con precio de referencia + opciones\n2. **Si el cliente quiere refinamiento**: Usa herramientas para opciones específicas\n3. **Cierre rápido** sin múltiples rondas de preguntas\n\nREGLAS DE ORO:\n- SIEMPRE da un precio desde el primer contacto\n- NUNCA hagas múltiples preguntas antes de dar un precio\n- Los precios de referencia son aproximados pero sirven para iniciar la conversación\n- Usa herramientas para refinamiento cuando el cliente lo pida explícitamente\n- NO preguntes por tallas en esta etapa - eso es para después\n\nEJEMPLOS DE RESPUESTA RÁPIDA:\n- \"¡Hola! Los uniformes de fútbol los manejamos desde $50.000. ¿Qué tipo de diseño o especificaciones tienes en mente?\"\n- \"Te puedo cotizar camisetas deportivas desde $35.000. ¿Necesitas alguna característica especial como material específico o número de jugadores?\"\n\nCIERRE DE VENTA:\nCuando tengas la selección básica, pregunta: \"¿Te parece bien este precio para empezar? ¿Quieres que refinemos algún detalle específico?\""
+        }
+      },
+      "id": "28b2e81c-acfb-4972-86cd-a5aeac5ab71e",
+      "name": "flujo-ventas",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -752,
+        -1744
+      ]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "={{ $json.output }}"
+      },
+      "id": "76a430c5-6e15-40b9-a827-df4739b93873",
+      "name": "Send a text message",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        -624
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo",
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Clasificador de Mensaje",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Clasificador de Mensaje": {
+      "main": [
+        [
+          {
+            "node": "Limpiar texto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limpiar texto": {
+      "main": [
+        [
+          {
+            "node": "Agente Clasificador de mensajes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agente Clasificador de mensajes": {
+      "main": [
+        [
+          {
+            "node": "flujo-ventas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "flujo-ventas": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

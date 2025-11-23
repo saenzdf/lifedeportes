@@ -1,0 +1,145 @@
+{
+  "name": "Agente de Post-Venta",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "post-venta",
+        "options": {}
+      },
+      "id": "webhook-trigger-post-venta",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -2736,
+        -308
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.message }}",
+        "options": {
+          "systemMessage": "Eres un asistente amigable de post-venta llamado **Life deportes**.\n**Contexto:** El cliente ya tiene una cotización (ej. 'S00451') y probablemente está enviando un comprobante de pago o preguntando por los detalles del diseño.\n**Herramientas:** `get-task`, `send-document`, `procesar-tallas`, `update-sale-order`.\n\n**FLUJO SECUENCIAL OBLIGATORIO:**\n\n1. **REVISAR MEMORIA Y COTIZACIÓN:**\n   - Identifica el número de la última cotización (ej. \"S00451\")\n   - Usa `get-task` para obtener detalles de la cotización\n\n2. **CONFIRMAR PRODUCCIÓN:**\n   > \"¡Perfecto! Para arrancar fabricación necesito la lista con *talla, número y nombre*.\"\n   > \"Envíamela así, una línea por uniforme: `M, 10, JUAN PÉREZ` o adjunta el Excel.\"\n\n3. **PROCESAR INFORMACIÓN:**\n   - **Si manda texto/JSON:** pásalo como `payload_text` a `procesar-tallas`\n   - **Si adjunta Excel/documento:** descárgalo, pásalo como binario y envíalo a `procesar-tallas` (`payload_binary`)\n\n4. **VALIDAR Y REGISTRAR:**\n   - Invoca `procesar-tallas` con: `sale_order`, `expected_qty` (suma total), información capturada\n   - **Si hay errores:** Indica específicamente qué fila/corregir\n   - **Si status=ok:** Confirma que registraste {n} uniformes y avisa que producción inicia\n\n5. **ACTUALIZAR SISTEMA:**\n   - Usa `update-sale-order` para guardar `uniform_details_json` cuando esté completo\n\n6. **CIERRE:**\n   - Agradece y ofrece recibir imágenes o dudas del diseño\n\n**MANEJO DE ERRORES:**\n- Si `procesar-tallas` falla: \"Hubo un problema procesando la lista. ¿Podrías verificar el formato?\"]\n- Si no se encuentra la cotización: \"No encuentro esa cotización. ¿Podrías confirmar el número?\"]"
+        }
+      },
+      "id": "b0c3a659-9c7e-43ff-87c8-aaa26049291a",
+      "name": "detalles-pedido",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -1488,
+        -632
+      ]
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Busca una Tarea (`project.task`) en Odoo usando su nombre. El nombre de la tarea es usualmente el mismo que el de la cotización (ej. 'S00451'). Devuelve el ID y los detalles de la tarea.",
+        "resource": "custom",
+        "customResource": "project.task",
+        "operation": "get",
+        "customResourceId": "={{ $fromAI('Custom_Resource_ID') }}"
+      },
+      "id": "f87caa5a-0d55-4551-b44d-8df9b6ab0ec5",
+      "name": "get-task",
+      "type": "n8n-nodes-base.odooTool",
+      "typeVersion": 1,
+      "position": [
+        -496,
+        -912
+      ],
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendDocument",
+        "chatId": "={{ $fromAI('Chat_ID') }}",
+        "binaryData": "={{ $fromAI('Binary_File') }}"
+      },
+      "id": "c0f50198-07d2-488c-b82e-3697c1840e8f",
+      "name": "send-document",
+      "type": "n8n-nodes-base.telegramTool",
+      "typeVersion": 1.2,
+      "position": [
+        -368,
+        -912
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Actualiza una cotización (`sale.order`) existente. Requiere el `customResourceId` (el ID de la cotización a actualizar) y los campos a cambiar (ej. añadir una nota).",
+        "resource": "custom",
+        "customResource": "sale.order",
+        "operation": "update",
+        "customResourceId": "={{ $fromAI('Custom_Resource_ID') }}"
+      },
+      "id": "c90237a7-c634-4445-b53a-a17cbdbd9cfc",
+      "name": "update-sale-order",
+      "type": "n8n-nodes-base.odooTool",
+      "typeVersion": 1,
+      "position": [
+        -752,
+        -912
+      ],
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.body.chatId }}",
+        "text": "={{ $json.output }}"
+      },
+      "id": "76a430c5-6e15-40b9-a827-df4739b93873",
+      "name": "Send a text message",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        -624
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "detalles-pedido",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "detalles-pedido": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

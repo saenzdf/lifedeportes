@@ -1,0 +1,154 @@
+{
+  "name": "Agente de Creación de Pedido",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "pedido",
+        "options": {}
+      },
+      "id": "webhook-trigger-pedido",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -2736,
+        -308
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.message }}",
+        "options": {
+          "systemMessage": "Eres un asistente de cierre de ventas.\n**Contexto:** El usuario acaba de confirmar el total de su pedido desde el `flujo-ventas`. Tu misión es capturar sus datos y crear la cotización (`sale.order`) en Odoo.\n**Herramientas:** `contacts`, `create-new-contact`, `create-sale-order`.\n\n**Flujo de Ejecución:**\n\n**PASO 1: CAPTURA DE CONTACTO**\n* Tu PRIMERA pregunta debe ser:\n    > \"¡Excelente! ¿A nombre de quién registramos este pedido?\"]\n* **Lógica de Cliente:**\n    1. Usa la herramienta `contacts` para buscar el nombre que te dio el usuario.\n    2. Si lo encuentras: Confirma. \"¡Perfecto, Juan! Te encontré en nuestro sistema.\" Guarda su ID (`contact_id`).\n    3. Si NO lo encuentras: Pide los datos faltantes (ej. teléfono) y usa `create-new-contact` para crearlo. Confirma. \"¡Excelente, Juan! Ya quedaste registrado.\" Guarda el nuevo ID (`contact_id`).\n\n**PASO 2: VALIDACIÓN Y CREACIÓN DE COTIZACIÓN**\n* **VALIDACIÓN CRÍTICA:** Antes de crear la cotización, verifica que todos los product_id de tu lista existan en Odoo\n* Una vez tengas el `contact_id` y la lista de pedido validada (de la memoria), llama a la herramienta `create-sale-order`\n* **Formato correcto para order_line:**\n```json\n[\n    {\"product_id\": 123, \"qty\": 10},\n    {\"product_id\": 456, \"qty\": 5}\n]\n```\n\n**PASO 3: CONFIRMACIÓN**\n* La herramienta te dará el nombre de la cotización (ej. \"S00451\")\n* Responde: \"¡Genial! He generado su cotización **S00451** a nombre de **[Nombre del Cliente]**. El siguiente paso es consignar el 50% para continuar con el pedido.\"\n\n**MANEJO DE ERRORES:**\n- Si algún product_id no existe: \"Lo siento, parece que hay un problema con algunos productos. Permíteme verificar la disponibilidad.\"\n- Si falla la creación: \"Hubo un problema técnico creando la cotización. Un momento por favor mientras lo solucionamos.\""
+        }
+      },
+      "id": "agente-crear-pedido",
+      "name": "Agente Crear Pedido",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -1488,
+        -632
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolDescription": "Busca un contacto (cliente o proveedor) en Odoo por su nombre. El input es el nombre que dice el usuario (ej. 'Juan Pérez'). Devuelve el ID del contacto si existe.",
+        "qdrantCollection": {
+          "value": "odoo_contacts"
+        }
+      },
+      "id": "68a80555-d586-4ea0-853f-8e44e18eb388",
+      "name": "contacts",
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
+      "typeVersion": 1.3,
+      "position": [
+        -768,
+        184
+      ],
+      "credentials": {
+        "qdrantApi": {
+          "id": "QnjLhm68XDWquRhQ"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Usar *solo si* la herramienta `contacts` no encuentra al cliente. Crea un nuevo contacto (cliente/proveedor) en Odoo. Requiere el `contactName` (nombre) y opcionalmente `phone` (teléfono).",
+        "contactName": "={{ $fromAI('Name') }}"
+      },
+      "id": "843a7595-d7ac-4edc-b192-cb3f2f732972",
+      "name": "create-new-contact",
+      "type": "n8n-nodes-base.odooTool",
+      "typeVersion": 1,
+      "position": [
+        -480,
+        184
+      ],
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Crea la cotización final (`sale.order`) en Odoo. Requiere el `partner_id` (el ID del contacto) y la `order_line` (la lista de productos en formato Odoo).",
+        "resource": "custom",
+        "customResource": "sale.order",
+        "fieldsToCreateOrUpdate": {
+          "fields": [
+            {
+              "fieldName": "partner_id",
+              "fieldValue": "={{ $fromAI('partner_id') }}"
+            },
+            {
+              "fieldName": "order_line",
+              "fieldValue": "={{ JSON.parse($fromAI('order_line')) }}"
+            }
+          ]
+        }
+      },
+      "id": "a4099f20-c209-41c9-aebc-10aac5d0ca1f",
+      "name": "create-sale-order",
+      "type": "n8n-nodes-base.odooTool",
+      "typeVersion": 1,
+      "position": [
+        -352,
+        184
+      ],
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.body.chatId }}",
+        "text": "={{ $json.output }}"
+      },
+      "id": "76a430c5-6e15-40b9-a827-df4739b93873",
+      "name": "Send a text message",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        -624
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Agente Crear Pedido",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agente Crear Pedido": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

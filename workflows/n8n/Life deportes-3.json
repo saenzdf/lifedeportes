@@ -1,0 +1,1434 @@
+{
+  "name": "Life deportes",
+  "nodes": [
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "operator": {
+                      "type": "string",
+                      "operation": "exists",
+                      "singleValue": true
+                    },
+                    "leftValue": "={{ $json.message.text }}",
+                    "rightValue": "text",
+                    "id": "90ecdfda-f0e5-4470-8f37-79a8fc98b07a"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "text"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "af193914-3f09-407e-9a9f-7f8b2a150742",
+                    "leftValue": "={{ $json.message.document }}",
+                    "rightValue": "document",
+                    "operator": {
+                      "type": "object",
+                      "operation": "exists",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "document"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "e7c8c3bd-5b5a-4a1b-b3f2-9405bd539841",
+                    "leftValue": "={{ $json.message.photo }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "array",
+                      "operation": "exists",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "photo"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "320d5fbe-d739-49fa-a342-7867aa7ef31e",
+                    "leftValue": "={{ $json.message.voice }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "object",
+                      "operation": "exists",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "voice"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "3ab4a7f8-007b-4e01-8d2a-64fd6b9edc96",
+      "name": "Clasificador de Mensaje",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -4672,
+        -320
+      ]
+    },
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -4896,
+        -288
+      ],
+      "id": "9411dd9e-1655-4cf0-be09-c1d01ddd9e6a",
+      "name": "Telegram Trigger",
+      "webhookId": "d299f705-52a7-4434-8f71-95a86013b0c3",
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "fileId": "={{ $json.message.document.file_id }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4512,
+        -480
+      ],
+      "id": "49ec2e60-539a-4d5b-a931-18234b63e7e8",
+      "name": "Descargar documento",
+      "webhookId": "0c0d9f4a-0f54-4d60-8f47-779efddcdcff",
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "audio",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.0-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.0-flash"
+        },
+        "inputType": "binary",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        -4112,
+        112
+      ],
+      "id": "fc7861b3-a35a-48c5-9288-6ab93532332b",
+      "name": "Transcribe a recording",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "1PlQb3xIE4PymgxA",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "80472597-de42-4a23-857d-add5192f01de",
+              "name": "=text",
+              "value": "={{ $json.message.text }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -3936,
+        -880
+      ],
+      "id": "cfc2afac-6ad2-49b3-9b41-8d94c4dbea0d",
+      "name": "Limpiar texto"
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolDescription": "Busca un contacto (cliente o proveedor) en Odoo por su nombre. El input es el nombre que dice el usuario (ej. 'Juan Pérez'). Devuelve el ID del contacto si existe.",
+        "qdrantCollection": {
+          "__rl": true,
+          "value": "odoo_contacts",
+          "mode": "list",
+          "cachedResultName": "odoo_contacts"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
+      "typeVersion": 1.3,
+      "position": [
+        -2720,
+        224
+      ],
+      "id": "64b128a0-0e2f-4d34-b737-0433485be3f3",
+      "name": "contacts",
+      "credentials": {
+        "qdrantApi": {
+          "id": "QnjLhm68XDWquRhQ",
+          "name": "QdrantApi account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -2448,
+        -1296
+      ],
+      "id": "4e63346e-a155-452f-97f0-fdd088e1e14c",
+      "name": "Embeddings Google Gemini",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "1PlQb3xIE4PymgxA",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -1744,
+        -608
+      ],
+      "id": "6327d4ff-e029-4db9-84e0-6be29f978c75",
+      "name": "Send a text message",
+      "webhookId": "c22c38ba-1baa-46cc-87dc-90f71c9e5cb8",
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -3072,
+        -1504
+      ],
+      "id": "bcdbc2e0-b4f5-48bb-8e11-ff62900b5c8d",
+      "name": "LLM",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "1PlQb3xIE4PymgxA",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "fileId": "={{ $json.message.voice.file_id }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4336,
+        112
+      ],
+      "id": "aa9307ce-7b7c-43c0-9aa0-2f028b2f0873",
+      "name": "Get voice message",
+      "webhookId": "c2ed7c26-66cb-4cc0-86b6-c2ef1559d0b3",
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo",
+          "name": "Telegram account"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "options": {
+          "systemMessage": "Eres un agente de sistema interno. Tu único trabajo es analizar la memoria de la conversación para encontrar el número de la última cotización relacionada con este chat id (ej. 'S00451') y luego usar la herramienta `get-task` para encontrar el ID de la tarea correspondiente al flujo de detalle-pedido.\n\nResponde ÚNICAMENTE con el número de ID de la tarea (ej. '123'). NO añadas texto, saludos ni explicaciones.",
+          "passthroughBinaryImages": true
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -3792,
+        -304
+      ],
+      "id": "43dc789a-9359-4ae0-9d5d-7f5ec50ccd37",
+      "name": "Ingresar parámetros diseño",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "{{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "tableName": "n8n_chat"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
+      "typeVersion": 1.3,
+      "position": [
+        -2944,
+        -1504
+      ],
+      "id": "3e95e34d-7557-444d-9437-58cd4be54ab7",
+      "name": "Memoria de conversaciones",
+      "credentials": {
+        "postgres": {
+          "id": "dr8hjGyk2D9IFNIg",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.text }}",
+        "options": {
+          "systemMessage": "=Eres un Asistente Enrutador de IA. Tu ÚNICO trabajo es analizar el historial de conversación (Memoria) y el último mensaje del usuario para decidir qué agente debe manejar la solicitud.\n\n**FORMATO DE SALIDA (REGLA CRÍTICA):**\nTu respuesta DEBE ser una sola línea de texto. Debes combinar la etiqueta de la ruta y el mensaje exacto del usuario, separados por dos puntos dobles (`::`).\n\n**Formato:** `[ETIQUETA]::[MENSAJE_EXACTO_DEL_USUARIO]`\n\n**Ejemplos de Salida:**\n* `flujo-ventas::Hola, quiero 10 camisetas`\n* `identificar-contacto::listo, procedamos`\n* `detalles-pedido::te envío mi logo`\n* `flujo-ventas::ok`\n\n**ETIQUETAS (Elige una):**\n\n1.  **flujo-ventas**: Para saludos iniciales, preguntas sobre productos, atributos (talla, cuello), precios, y mensajes cortos de continuación (como 'sí', 'ok', 'vale', 'listo', 'continuemos'). Usa esta si la conversación de ventas está en progreso y el usuario *aún no* ha confirmado el total final.\n\n2.  **identificar-contacto**: Para cuando el usuario *confirma el Total* del pedido y está listo para crear la cotización. \n\n3.  **detalles-pedido**: Para cuando el usuario ya tiene una cotización (ej. 'S00451') y ahora habla de un pago, un comprobante, o envía archivos de diseño (Excel, logos, etc.).\n\n4.  **registro-compra**: Para un usuario interno que quiere registrar un gasto, una factura de proveedor o una compra de insumos.\n\n5.  **contacto-humano**: Si el usuario pide explícitamente hablar con un humano, agente, asesor u operador.\n\n**Regla de Memoria:** Si la conversación ya está en curso (ej. el historial muestra que se está hablando de tallas) y el usuario envía un mensaje corto (ej. 'talla M', 'ok'), DEBES usar la misma etiqueta que la última vez (en este caso, `flujo-ventas`).\n\n**NO** añadas explicaciones. **NO** saludes. Solo responde con el formato `[ETIQUETA]::[MENSAJE_EXACTO_DEL_USUARIO]`."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -3648,
+        -608
+      ],
+      "id": "f0471366-f88f-491f-9b0c-81af69b9dc85",
+      "name": "Agente Clasificador de mensajes"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "flujo-ventas",
+                    "operator": {
+                      "type": "string",
+                      "operation": "startsWith"
+                    },
+                    "id": "e75c1885-f0cd-4a5e-b672-065301907568"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "flujo-ventas"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7ad95923-2080-4e1c-afbb-3b51323ca8d6",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "detalles-pedido",
+                    "operator": {
+                      "type": "string",
+                      "operation": "startsWith"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "detalles-pedido"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "968e63dc-b312-4e76-b95f-35b7c7bae3ad",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "registro-compra",
+                    "operator": {
+                      "type": "string",
+                      "operation": "startsWith"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "registro-compra"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "6b0c116d-a008-497d-9be4-cd420a55e888",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "contacto-humano",
+                    "operator": {
+                      "type": "string",
+                      "operation": "startsWith"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "contacto-humano"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "59d34f1d-2305-4f6b-80b2-647597fa2871",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "identificar-contacto",
+                    "operator": {
+                      "type": "string",
+                      "operation": "startsWith"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "identificar-contacto"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        -3296,
+        -656
+      ],
+      "id": "effb7ba0-d345-468b-9a48-885f58397bae",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.output }}",
+        "options": {
+          "systemMessage": "=Eres \"Life Deportes\", un asesor experto en ropa deportiva. Tu tono es amigable, directo y proactivo.\n\nOBJETIVO PRINCIPAL:\nAyudar al cliente a armar su pedido. Tu meta es identificar exactamente QUÉ productos quiere (con sus variaciones y cantidades) para poder cotizarle.\n\nTUS HERRAMIENTAS:\n1. `productos-life`: Úsala primero SIEMPRE. Busca qué tipos de productos vendemos (ej. \"Camisetas\", \"Sudaderas\") y devuelve `name`, `product_tmpl_id`, `display_name` (la variante completa), `codigo_variante` y `list_price`. Usa `list_price` para dar precios preliminares; si faltan atributos, responde algo como \"Desde $XX por unidad\" y explica qué dato falta. Cuando ya tengas la combinación completa, elige la entrada cuyo `display_name` coincida y usa su `list_price` como precio final.\n2. `atributos`: Úsala para interpretar los atributos/códigos que aparecen en `display_name`, explicar opciones (ej. género, tipo de cuello) y confirmar que la combinación describe exactamente lo que el cliente pidió.\n\nREGLAS DE ORO:\n- Conversa naturalmente.\n- NO preguntes todo de golpe. Si faltan 3 datos, pregunta por uno o dos a la vez.\n- PRECIOS: Siempre apóyate en `list_price`. Si aún no tienes la variante exacta, ofrece un rango o precio base y aclara qué falta para confirmarlo.\n- PROACTIVIDAD: Si el usuario dice \"quiero camisetas\", sugiere: \"¿Para hombre o mujer? ¿Buscas manga larga o corta?\".\n- TALLAS: **No preguntes por talla en esta etapa.** Ese dato se recolectará después en el agente `detalles-pedido`.\n\nCIERRE DE VENTA:\nCuando el usuario diga \"eso es todo\" o \"está listo\", muéstrale el resumen limpio con el total y pregunta: \"¿Confirmamos el pedido con estos datos?\""
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -2656,
+        -1728
+      ],
+      "id": "b191e815-27c1-4d9c-a4b6-8c724a7e9684",
+      "name": "flujo-ventas"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.output }}",
+        "options": {
+          "systemMessage": "Eres un asistente amigable de post-venta llamado **Life deportes**.\n**Contexto:** El cliente ya tiene una cotización (ej. 'S00451') y probablemente está enviando un comprobante de pago o preguntando por los detalles del diseño.\n**Herramientas:** `get-task`, `send-document`, `procesar-tallas`, `update-sale-order`.\n\n**Flujo de Ejecución:**\n1.  **Revisar la Memoria:** Identifica el número de la última cotización (ej. \"S00451\").\n2.  **Confirmar pago y explicar formato:** Cuando confirme que quiere producir, responde algo como:\n    > \"¡Perfecto! Para arrancar fabricación necesito la lista con *talla, número y nombre*.\"\n    > \"Envíamela así, una línea por uniforme: `M, 10, JUAN PÉREZ` o adjunta el Excel.\"\n3.  **Detección de archivos o texto:**\n    * Si manda texto/JSON: pásalo como `payload_text` a `procesar-tallas`.\n    * Si adjunta un Excel o documento: descárgalo con `Descargar documento`, pásalo como binario y envíalo a `procesar-tallas` (`payload_binary`).\n4.  **Llamar subflujo:** Invoca `procesar-tallas` pasando `sale_order`, `expected_qty` (suma de cantidades del pedido) y la información capturada.\n5.  **Validar resultado:** Si `procesar-tallas` regresa errores, indícale al cliente qué fila corregir. Si devuelve `status=ok`, confirma que registraste {n} uniformes y avisa que producción inicia.\n6.  **Actualizar Odoo:** Usa `update-sale-order` para guardar `uniform_details_json` cuando todo esté completo.\n7.  **Cierre:** Agradece y ofrece seguir recibiendo imágenes o dudas del diseño."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -2576,
+        -1120
+      ],
+      "id": "cc3871dc-eb20-4138-90d9-ef007bb80336",
+      "name": "detalles-pedido"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.output }}",
+        "options": {
+          "systemMessage": "Eres un asistente de contabilidad.\n\n**Misión:**\nTu trabajo es ayudar a un usuario interno a registrar un gasto o una orden de compra (`purchase.order`) en Odoo.\n\n**Flujo de Ejecución:**\n\n1.  **Identificar Proveedor:** Pregunta por el proveedor.\n    > \"¿A qué proveedor le estamos comprando?\"\n    * Usa la herramienta `contacts` para encontrar el ID del proveedor. Si no existe, pide los datos para crearlo con `Create new contact in Odoo`.\n2.  **Detalles de Compra:** Pregunta por los productos o el concepto.\n    > \"¿Qué se está comprando y cuál es el costo?\"\n3.  **Crear Pedido:** Recopila la información y usa la herramienta `Create an item in Odoo` (purchase.order) para registrarlo.\n4.  **Confirmar:**\n    > \"Listo. Se ha creado la orden de compra [NÚMERO] en el sistema.\""
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -2576,
+        -720
+      ],
+      "id": "b6bf837e-209c-4d07-a89e-fa06960f19b2",
+      "name": "registro-compra"
+    },
+    {
+      "parameters": {
+        "operation": "sendAndWait",
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "message": "={{ $json.output }}",
+        "responseType": "freeText",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -2512,
+        -320
+      ],
+      "id": "fbbc7d6e-257a-41e3-a012-46c435d2b5f0",
+      "name": "contacto-humano",
+      "webhookId": "962e99ea-227c-4446-b366-ce34be86c88e",
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ce79a67d-d711-4a89-8cdb-580d80584a30",
+              "name": "text",
+              "value": "={{ $json.content.parts[0].text }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -3824,
+        112
+      ],
+      "id": "d8eec532-83fe-43e1-b165-c4bde744314f",
+      "name": "Limpiar texto2"
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Usar *solo si* la herramienta `contacts` no encuentra al cliente. Crea un nuevo contacto (cliente/proveedor) en Odoo. Requiere el `contactName` (nombre) y opcionalmente `phone` (teléfono).\"ntact in Odoo",
+        "contactName": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Name', ``, 'string') }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.odooTool",
+      "typeVersion": 1,
+      "position": [
+        -2432,
+        224
+      ],
+      "id": "6f2b7443-20ed-488a-9bfc-12ed60ab5ff9",
+      "name": "create-new-contact",
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL",
+          "name": "Odoo account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Crea la cotización final (`sale.order`) en Odoo. Requiere el `partner_id` (el ID del contacto) y la `order_line` (la lista de productos en formato Odoo).\"",
+        "resource": "custom",
+        "customResource": "sale.order",
+        "fieldsToCreateOrUpdate": {
+          "fields": [
+            {
+              "fieldName": "project_account_id",
+              "fieldValue": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('fields0_New_Value', ``, 'string') }}"
+            },
+            {
+              "fieldName": "partner_id",
+              "fieldValue": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('fields1_New_Value', ``, 'string') }}"
+            },
+            {
+              "fieldName": "order_line",
+              "fieldValue": "=// Capturamos el input de la IA (que viene como string JSON o objeto)\nconst lines = typeof $fromAI('order_line') === 'string' \n    ? JSON.parse($fromAI('order_line')) \n    : $fromAI('order_line');\n\n// Lo transformamos al formato Odoo: [(0, 0, {datos}), (0, 0, {datos})]\nreturn lines.map(item => {\n    return [0, 0, {\n        \"product_id\": item.product_id,\n        \"product_uom_qty\": item.qty\n        // \"price_unit\": item.price // Opcional: Odoo lo calcula solo si lo omites\n    }]\n});"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.odooTool",
+      "typeVersion": 1,
+      "position": [
+        -2240,
+        224
+      ],
+      "id": "25f07c1f-f553-4a52-a470-930bbea48d0e",
+      "name": "create-sale-order",
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL",
+          "name": "Odoo account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Actualiza una cotización (`sale.order`) existente. Requiere el `customResourceId` (el ID de la cotización a actualizar) y los campos a cambiar (ej. añadir una nota).\"",
+        "resource": "custom",
+        "customResource": "sale.order",
+        "operation": "update",
+        "customResourceId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Custom_Resource_ID', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.odooTool",
+      "typeVersion": 1,
+      "position": [
+        -2640,
+        -896
+      ],
+      "id": "4d38aea0-22cd-48c4-bbe9-e6bad6f042d2",
+      "name": "update-sale-order",
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL",
+          "name": "Odoo account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Obtiene los detalles completos de una cotización (`sale.order`) ya creada. Requiere el `customResourceId` (el ID de la cotización).\"",
+        "resource": "custom",
+        "customResource": "sale.order.spreadsheet",
+        "operation": "get",
+        "customResourceId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Custom_Resource_ID', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.odooTool",
+      "typeVersion": 1,
+      "position": [
+        -2512,
+        -896
+      ],
+      "id": "7eca2ea2-609e-4fe1-a68b-d0e4ceb97be5",
+      "name": "get-cotizacion",
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL",
+          "name": "Odoo account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolDescription": "Busca el producto base (plantilla, `product.template`) en Odoo usando la descripción del cliente (ej. 'camiseta de futbol'). Devuelve un JSON con `name`, `product_tmpl_id`, `atributos_requeridos`, `list_price` y `precio_base`. Siempre utiliza los campos numéricos (`list_price` o `precio_base`) para responder preguntas de precio preliminar. ",
+        "qdrantCollection": {
+          "__rl": true,
+          "value": "odoo_products",
+          "mode": "list",
+          "cachedResultName": "odoo_products"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
+      "typeVersion": 1.3,
+      "position": [
+        -2816,
+        -1504
+      ],
+      "id": "38420515-d473-4f54-a409-bce86da1b82b",
+      "name": "productos-life",
+      "credentials": {
+        "qdrantApi": {
+          "id": "QnjLhm68XDWquRhQ",
+          "name": "QdrantApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Busca una Tarea (`project.task`) en Odoo usando su nombre. El nombre de la tarea es usualmente el mismo que el de la cotización (ej. 'S00451'). Devuelve el ID y los detalles de la tarea.\"",
+        "resource": "custom",
+        "customResource": "project.task",
+        "operation": "get",
+        "customResourceId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Custom_Resource_ID', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.odooTool",
+      "typeVersion": 1,
+      "position": [
+        -2384,
+        -896
+      ],
+      "id": "7e454721-5a1b-4019-969b-8fe6fb0d1b30",
+      "name": "get-task",
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL",
+          "name": "Odoo account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendDocument",
+        "chatId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Chat_ID', ``, 'string') }}",
+        "binaryData": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Binary_File', ``, 'boolean') }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTool",
+      "typeVersion": 1.2,
+      "position": [
+        -2240,
+        -896
+      ],
+      "id": "14bddf59-c318-493d-a718-174274947ff8",
+      "name": "send-document",
+      "webhookId": "d0b46c3d-072d-4b9e-8e0f-07517603ebb2",
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Crea una orden de compra (`purchase.order`) o un gasto interno. Requiere el `partner_id` (ID del proveedor) y la `order_line` (lista de productos/servicios comprados).\"",
+        "resource": "custom",
+        "customResource": "purchase.order",
+        "fieldsToCreateOrUpdate": {
+          "fields": [
+            {
+              "fieldName": "partner_id",
+              "fieldValue": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('fields0_New_Value', ``, 'string') }}"
+            },
+            {
+              "fieldName": "order_line",
+              "fieldValue": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('fields1_New_Value', ``, 'string') }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.odooTool",
+      "typeVersion": 1,
+      "position": [
+        -2512,
+        -496
+      ],
+      "id": "67d744ea-ef65-4e15-9766-e05c5ff929bd",
+      "name": "create-gasto",
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL",
+          "name": "Odoo account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolDescription": "Herramienta de consulta para saber a que corresponde el id de atributo. puedes encontrar el nombre del atributo y el valor.  Úsala para encontrar las relaciones entre productos_life y products-variante. \nEl nombre del atributo (ej. 'talla' o 'cuello'). Devuelve una lista de valores posibles correspondiente (ej. 'S, M, L' o 'Cuello V, Cuello Redondo'). entre todos los atributos endosados a un producto generan la identidad de esa variante de producto, esta tabla se usa para entender esas variantes,",
+        "qdrantCollection": {
+          "__rl": true,
+          "value": "=odoo_attribute_value",
+          "mode": "id"
+        },
+        "topK": 8,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
+      "typeVersion": 1.3,
+      "position": [
+        -2112,
+        -1504
+      ],
+      "id": "677d1efa-0768-43d8-b9d2-214f9348f0c6",
+      "name": "atributos",
+      "credentials": {
+        "qdrantApi": {
+          "id": "QnjLhm68XDWquRhQ",
+          "name": "QdrantApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4240,
+        -400
+      ],
+      "id": "0326a31f-7848-4d11-9577-92f57c84802f",
+      "name": "Get-file",
+      "webhookId": "3f8605a5-78c2-4bef-b05b-a3a9f893b98a",
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo",
+          "name": "Telegram account"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4240,
+        -208
+      ],
+      "id": "7de17815-e798-4d6c-942e-09226034fbba",
+      "name": "Get a file",
+      "webhookId": "2b4ca182-9978-4b92-9e06-97fb9d8a53e6",
+      "credentials": {
+        "telegramApi": {
+          "id": "p4i9p8RYgtjMBlLo",
+          "name": "Telegram account"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -4016,
+        -304
+      ],
+      "id": "aa2f6fcc-3609-4154-a5f6-83806091e544",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "resource": "custom",
+        "customResource": "ir.attachment",
+        "fieldsToCreateOrUpdate": {
+          "fields": [
+            {
+              "fieldName": "res_model",
+              "fieldValue": "="
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.odoo",
+      "typeVersion": 1,
+      "position": [
+        -3376,
+        -208
+      ],
+      "id": "5e1f1854-c918-4d7c-ab8f-52341e3f4eb4",
+      "name": "attachment",
+      "credentials": {
+        "odooApi": {
+          "id": "NDhlaYaWlBhfoyKL",
+          "name": "Odoo account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.output }}",
+        "options": {
+          "systemMessage": "Eres un asistente de cierre de ventas.\\n**Contexto:** El usuario acaba de confirmar el total de su pedido desde el `flujo-ventas`. Tu misión es capturar sus datos y crear la cotización (`sale.order`) en Odoo.\\n**Herramientas:** `contacts`, `create-new-contact`, `create-sale-order`.\\n\\n**Flujo de Ejecución:**\\n\\n**PASO 1: CAPTURA DE CONTACTO**\\n* Tu PRIMERA pregunta debe ser:\\n    > \\\"¡Excelente! ¿A nombre de quién registramos este pedido?\\\"\\n* **Lógica de Cliente:**\\n    1.  Usa la herramienta `contacts` para buscar el nombre que te dio el usuario.\\n    2.  Si lo encuentras: Confirma. \\\"¡Perfecto, Juan! Te encontré en nuestro sistema.\\\" Guarda su ID (`contact_id`).\\n    3.  Si NO lo encuentras: Pide los datos faltantes (ej. teléfono) y usa `create-new-contact` para crearlo. Confirma. \\\"¡Excelente, Juan! Ya quedaste registrado.\\\" Guarda el nuevo ID (`contact_id`).\\n\\n**PASO 2: CREACIÓN DE COTIZACIÓN**\\n* Una vez tengas el `contact_id` y la lista de pedido (de la memoria), llama a la herramienta `create-sale-order`.\\n* **Respuesta Final:** La herramienta te dará el nombre (ej. \\\"S00451\\\"). Responde:\\n    > \\\"¡Genial! He generado su cotización **S00451** a nombre de **[Nombre del Cliente]**. El siguiente paso es consignar el 50% para continuar con el pedido.\\\"\"\n\"Cuando llames a la herramienta create-sale-order, en el campo order_line, envíame un JSON simple así: [{\"product_id\": 123, \"qty\": 10}, {\"product_id\": 456, \"qty\": 5}].\""
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -2496,
+        -16
+      ],
+      "id": "ed52e46e-72c1-432d-9ffa-463ebc430222",
+      "name": "contacto-crear-saleorder"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Clasificador de Mensaje": {
+      "main": [
+        [
+          {
+            "node": "Limpiar texto",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get-file",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get a file",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get voice message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Clasificador de Mensaje",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transcribe a recording": {
+      "main": [
+        [
+          {
+            "node": "Limpiar texto2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limpiar texto": {
+      "main": [
+        [
+          {
+            "node": "Agente Clasificador de mensajes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "contacts": {
+      "ai_tool": [
+        [
+          {
+            "node": "contacto-crear-saleorder",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Google Gemini": {
+      "ai_embedding": [
+        [
+          {
+            "node": "productos-life",
+            "type": "ai_embedding",
+            "index": 0
+          },
+          {
+            "node": "contacts",
+            "type": "ai_embedding",
+            "index": 0
+          },
+          {
+            "node": "atributos",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LLM": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "detalles-pedido",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "registro-compra",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "flujo-ventas",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "Ingresar parámetros diseño",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "Agente Clasificador de mensajes",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "contacto-crear-saleorder",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get voice message": {
+      "main": [
+        [
+          {
+            "node": "Transcribe a recording",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ingresar parámetros diseño": {
+      "main": [
+        [
+          {
+            "node": "attachment",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Memoria de conversaciones": {
+      "ai_memory": [
+        [
+          {
+            "node": "flujo-ventas",
+            "type": "ai_memory",
+            "index": 0
+          },
+          {
+            "node": "detalles-pedido",
+            "type": "ai_memory",
+            "index": 0
+          },
+          {
+            "node": "registro-compra",
+            "type": "ai_memory",
+            "index": 0
+          },
+          {
+            "node": "Ingresar parámetros diseño",
+            "type": "ai_memory",
+            "index": 0
+          },
+          {
+            "node": "Agente Clasificador de mensajes",
+            "type": "ai_memory",
+            "index": 0
+          },
+          {
+            "node": "contacto-crear-saleorder",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agente Clasificador de mensajes": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "flujo-ventas": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "detalles-pedido": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "registro-compra": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "contacto-humano": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "flujo-ventas",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "detalles-pedido",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "registro-compra",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "contacto-humano",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "contacto-crear-saleorder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limpiar texto2": {
+      "main": [
+        [
+          {
+            "node": "Agente Clasificador de mensajes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "create-new-contact": {
+      "ai_tool": [
+        [
+          {
+            "node": "contacto-crear-saleorder",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "create-sale-order": {
+      "ai_tool": [
+        [
+          {
+            "node": "contacto-crear-saleorder",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "update-sale-order": {
+      "ai_tool": [
+        [
+          {
+            "node": "detalles-pedido",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "get-cotizacion": {
+      "ai_tool": [
+        [
+          {
+            "node": "detalles-pedido",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "productos-life": {
+      "ai_tool": [
+        [
+          {
+            "node": "flujo-ventas",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "get-task": {
+      "ai_tool": [
+        [
+          {
+            "node": "detalles-pedido",
+            "type": "ai_tool",
+            "index": 0
+          },
+          {
+            "node": "Ingresar parámetros diseño",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "send-document": {
+      "ai_tool": [
+        [
+          {
+            "node": "detalles-pedido",
+            "type": "ai_tool",
+            "index": 0
+          },
+          {
+            "node": "contacto-crear-saleorder",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "create-gasto": {
+      "ai_tool": [
+        [
+          {
+            "node": "registro-compra",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "atributos": {
+      "ai_tool": [
+        [
+          {
+            "node": "flujo-ventas",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get-file": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a file": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Ingresar parámetros diseño",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "attachment": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "contacto-crear-saleorder": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "72b1dc1d-d39b-4bee-bc2e-ca154270e936",
+  "meta": {
+    "instanceId": "14822c0b967ebc1fbc79e13302c7e5e2b2ff0fde22fa61d58dfd72a4433fd275"
+  },
+  "id": "cXxp6y3Hvuki2pQP",
+  "tags": []
+}
