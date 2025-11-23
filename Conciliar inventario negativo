@@ -1,0 +1,43 @@
+# Script de reabastecimiento manual - Versión final de producción
+#Server action en odoo: modelo products.products
+compras_por_proveedor = {}
+
+for product in records:
+    cantidad_a_reponer = 10 - product.virtual_available
+    
+    bom = env['mrp.bom'].search([('product_id', '=', product.id), ('active', '=', True)], limit=1)
+    if not bom:
+        bom = env['mrp.bom'].search([('product_tmpl_id', '=', product.product_tmpl_id.id), ('product_id', '=', False), ('active', '=', True)], limit=1)
+
+    if bom:
+        mo_vals = {'product_id': product.id, 'product_qty': cantidad_a_reponer, 'product_uom_id': product.product_tmpl_id.uom_id.id, 'bom_id': bom.id}
+        production_order = env['mrp.production'].create(mo_vals)
+        production_order.action_confirm()
+        production_order.button_mark_done()
+    elif product.seller_ids:
+        proveedor = product.seller_ids[0].partner_id
+        if proveedor not in compras_por_proveedor:
+            compras_por_proveedor[proveedor] = []
+        compras_por_proveedor[proveedor].append({
+            'product': product,
+            'quantity': cantidad_a_reponer,
+            'price': product.seller_ids[0].price
+        })
+
+if compras_por_proveedor:
+    for proveedor, lineas_data in compras_por_proveedor.items():
+        lineas_vals = []
+        for data in lineas_data:
+            template = data['product'].product_tmpl_id
+            purchase_uom = template.uom_id
+            lineas_vals.append((0, 0, {
+                'product_id': data['product'].id,
+                'name': data['product'].name,
+                'product_qty': data['quantity'],
+                'price_unit': data['price'] or data['product'].standard_price,
+                'product_uom_id': purchase_uom.id
+            }))
+        purchase_order = env['purchase.order'].create({'partner_id': proveedor.id, 'order_line': lineas_vals})
+        purchase_order.button_confirm()
+        for picking in purchase_order.picking_ids.filtered(lambda p: p.state != 'done'):
+            picking.button_validate()
