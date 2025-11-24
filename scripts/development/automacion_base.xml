@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Configuración XML para Automatización de Órdenes de Entrega en Odoo 19
+    Archivo: scripts/development/automacion_base.xml
+    Uso: Importar en Odoo para configurar automáticamente la automatización
+-->
+
+<odoo>
+    <data>
+        <!-- Automatización para cambio de etapa cuando orden de entrega se completa -->
+        <record id="automation_delivery_order_stage_change" model="base.automation">
+            <field name="name">Cambio de etapa cuando orden de entrega se completa</field>
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="state">code</field>
+            <field name="trigger">on_write</field>
+            <field name="active">true</field>
+            <field name="filter_domain">[('state', '=', 'done'), ('picking_type_code', '=', 'outgoing')]</field>
+            <field name="code"><![CDATA[
+# Automatización: Cambio de etapa de tareas cuando orden de entrega se completa
+# El 'record' aquí es la Orden de Entrega (stock.picking) que se acaba de completar.
+
+delivery_order = record
+
+# 1. Verificar que la orden de entrega tenga un origen
+if delivery_order.origin:
+    # 2. Buscar la Orden de Venta que originó esta entrega
+    sale_order = env['sale.order'].search([('name', '=', delivery_order.origin)], limit=1)
+    
+    if sale_order:
+        # 3. Buscar tareas asociadas a esta orden de venta
+        # Buscamos tareas que estén en el proyecto relacionado y tengan líneas de venta asociadas
+        tasks = env['project.task'].search([
+            ('sale_line_id', 'in', sale_order.order_line.ids),
+            ('stage_id.name', '=', 'Cobro y entrega')  # Solo tareas en la etapa "Cobro y entrega"
+        ])
+        
+        for task in tasks:
+            # 4. Buscar la etapa "Hecho" en el proyecto de la tarea
+            done_stage = env['project.task.type'].search([
+                ('project_ids', '=', task.project_id.id),
+                ('name', '=', 'Hecho')  # Buscamos la etapa llamada "Hecho"
+            ], limit=1)
+            
+            if done_stage:
+                # 5. Mover la tarea a la etapa "Hecho"
+                # En Odoo 19, el estado se maneja automáticamente según la etapa
+                task.write({
+                    'stage_id': done_stage.id
+                })
+                
+                # Opcional: Marcar la tarea como completada usando el método nativo
+                task.action_done()
+                
+                # 6. Registrar mensaje de trazabilidad en la tarea
+                task.message_post(
+                    body=f"""<div style="color: green; font-weight: bold;">
+                        🚚 ORDEN DE ENTREGA COMPLETADA
+                    </div>
+                    <p>La orden de entrega <strong>({delivery_order.name})</strong> ha sido marcada como realizada.</p>
+                    <p>La tarea ha avanzado automáticamente a la etapa: <strong style="color: green;">{done_stage.name}</strong></p>
+                    <p><em>Fecha de automatización: {fields.Datetime.now()}</em></p>""",
+                    subtype_xmlid='mail.mt_note',
+                    body_is_html=True
+                )
+                
+                # 7. También registrar en la orden de venta para trazabilidad completa
+                sale_order.message_post(
+                    body=f"""<div style="color: blue;">
+                        📋 ACTUALIZACIÓN AUTOMÁTICA DE TAREA
+                    </div>
+                    <p>La tarea <strong>{task.name}</strong> ha sido movida automáticamente a la etapa "Hecho" 
+                    después de completar la orden de entrega <strong>{delivery_order.name}</strong>.</p>""",
+                    subtype_xmlid='mail.mt_note',
+                    body_is_html=True
+                )
+            else:
+                # Si no se encuentra la etapa "Hecho", enviar advertencia
+                task.message_post(
+                    body=f"""<div style="color: orange; font-weight: bold;">
+                        ⚠️ CONFIGURACIÓN REQUERIDA
+                    </div>
+                    <p>No se encontró la etapa "Hecho" en el proyecto <strong>{task.project_id.name}</strong>.</p>
+                    <p>Por favor, configure la etapa "Hecho" en el proyecto para completar la automatización.</p>""",
+                    subtype_xmlid='mail.mt_note',
+                    body_is_html=True
+                )
+]]></field>
+        </record>
+
+        <!-- Plantilla de email para notificaciones de configuración (opcional) -->
+        <record id="email_template_automation_config_warning" model="mail.template">
+            <field name="name">Automation Config Warning</field>
+            <field name="model_id" ref="project.model_project_task"/>
+            <field name="subject">⚠️ Configuración de Automatización Incompleta</field>
+            <field name="email_from">${(user.email or 'noreply@odoo.com')}</field>
+            <field name="email_to">${user.email}</field>
+            <field name="body_html"><![CDATA[
+<div style="margin: 0px; padding: 0px;">
+    <p>Hola ${user.name},</p>
+    
+    <p>La automatización de cambio de etapa ha detectado un problema de configuración:</p>
+    
+    <div style="background-color: #f9f9f9; padding: 10px; margin: 10px 0; border-left: 4px solid #ffa500;">
+        <h3 style="color: #ffa500; margin-top: 0;">🔧 Problema Detectado</h3>
+        <p><strong>Tarea:</strong> ${task_name}</p>
+        <p><strong>Proyecto:</strong> ${project_name}</p>
+        <p><strong>Orden de Entrega:</strong> ${delivery_order_name}</p>
+        <p><strong>Error:</strong> No se encontró la etapa "Hecho" en el proyecto.</p>
+    </div>
+    
+    <h3>📋 Acciones Requeridas:</h3>
+    <ol>
+        <li>Ir a la configuración de etapas del proyecto <strong>${project_name}</strong></li>
+        <li>Crear o verificar que exista una etapa llamada <strong>"Hecho"</strong></li>
+        <li>Asegurar que esté asignada al proyecto correcto</li>
+        <li>Verificar que esté después de la etapa "Cobro y entrega" en la secuencia</li>
+    </ol>
+    
+    <p>Una vez configurada correctamente, la automatización funcionará automáticamente.</p>
+    
+    <p>Saludos,<br>
+    Sistema de Automatización de Odoo</p>
+</div>
+]]></field>
+        </record>
+
+        <!-- Configuración de etapas del proyecto (ejemplo) -->
+        <record id="stage_in_cobro_entrega" model="project.task.type">
+            <field name="name">Cobro y entrega</field>
+            <field name="sequence">30</field>
+            <field name="fold">false</field>
+            <field name="mail_template_id" ref="project.mail_template_data_task_closed"/>
+        </record>
+
+        <record id="stage_hecho" model="project.task.type">
+            <field name="name">Hecho</field>
+            <field name="sequence">40</field>
+            <field name="fold">true</field>
+            <field name="mail_template_id" ref="project.mail_template_data_task_closed"/>
+        </record>
+
+    </data>
+</odoo>
+
+<!--
+INSTRUCCIONES DE INSTALACIÓN:
+
+1. IMPORTAR EL ARCHIVO XML:
+   - Ir a Configuración > Técnico > Actualizaciones de Módulos > Importar Registro
+   - Seleccionar este archivo XML
+   - Aplicar
+
+2. CONFIGURACIÓN MANUAL ADICIONAL (SI ES NECESARIO):
+   - Crear las automatizaciones manualmente si no se importaron
+   - Configurar las etapas en cada proyecto específico
+   - Asignar las etapas a los proyectos correspondientes
+
+3. VERIFICAR CONFIGURACIÓN:
+   - Ir a Configuración > Técnico > Automatizaciones > Automatizaciones de Servidor
+   - Verificar que existe "Cambio de etapa cuando orden de entrega se completa"
+   - Confirmar que esté activada
+
+4. CONFIGURAR PROYECTOS:
+   - Ir a cada Proyecto > Configuración > Etapas de Tareas
+   - Crear etapas "Cobro y entrega" y "Hecho"
+   - Asignar al proyecto correspondiente
+
+NOTA: Este XML es una base. Podría requerir ajustes según la estructura específica de tu Odoo.
+-->
