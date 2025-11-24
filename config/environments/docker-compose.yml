@@ -6,7 +6,7 @@ services:
     container_name: local_postgres_db
     restart: unless-stopped
     env_file:
-      - .env # Carga las credenciales
+      - ../../.env # Carga las credenciales desde la raíz del proyecto
     environment:
       - POSTGRES_USER=${DB_POSTGRES_USER}
       - POSTGRES_PASSWORD=${DB_POSTGRES_PASSWORD}
@@ -23,7 +23,7 @@ services:
     depends_on:
       - postgres
     env_file:
-      - .env # Carga las credenciales
+      - ../../.env # Carga las credenciales desde la raíz del proyecto
     environment:
       # --- Conexión a Postgres ---
       - DB_TYPE=postgresdb
@@ -38,6 +38,7 @@ services:
       - N8N_HOST=sanctionless-abdiel-mincingly.ngrok-free.dev
       - N8N_PORT=5678
       - N8N_PROTOCOL=https 
+      - N8N_WORKFLOW_DIR=/workflows
       - WEBHOOK_URL=https://sanctionless-abdiel-mincingly.ngrok-free.dev # <-- Clave para webhooks
       - TZ=${TZ}
       
@@ -46,6 +47,7 @@ services:
       
     volumes:
       - n8n_data:/home/node/.n8n
+      - /Users/diego/Sync/workflows/n8n:/workflows
     networks:
       - local_stack
 
