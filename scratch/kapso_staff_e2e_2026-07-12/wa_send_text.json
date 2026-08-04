@@ -1,2 +1,0 @@
-11:43:32.615[31m [Client ERROR] Failed to handle retry receipt for 217115646812182@lid/3EB08B5E81F5BB6D341DDD from 173362093510729:60@lid: failed to get message from retry store: sql: no rows in result set[0m
-{"success":true,"data":{"id":"3EB08B5E81F5BB6D341DDD","sent":true,"to":"573222252942@s.whatsapp.net"},"error":null}
