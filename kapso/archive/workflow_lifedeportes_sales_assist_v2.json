@@ -1,0 +1,24 @@
+{
+  "name": "lifedeportes_sales_assist_v2",
+  "description": "Asistencia comercial y cotizacion consultiva con regla de material y precios en Odoo.",
+  "nodes": [
+    { "id": "start", "type": "trigger_internal_event", "config": { "event": "run_sales_assist_v2" } },
+    { "id": "material_guard_001", "type": "function", "config": { "name": "enforce-material-disambiguation" } },
+    { "id": "material_router_001", "type": "decide", "config": {
+      "conditions": [
+        { "label": "ask_material", "expression": "vars.quote.requires_material_disambiguation == true" },
+        { "label": "price_lookup", "expression": "vars.quote.requires_material_disambiguation != true" }
+      ]
+    } },
+    { "id": "ask_material_001", "type": "template", "config": { "text": "Perfecto, te cotizo en Dry Fit o en Falcao?" } },
+    { "id": "odoo_lookup_001", "type": "function", "config": { "name": "odoo-search-product-price" } },
+    { "id": "compose_reply_001", "type": "function", "config": { "name": "compose-sales-reply" } }
+  ],
+  "edges": [
+    { "source": "start", "target": "material_guard_001" },
+    { "source": "material_guard_001", "target": "material_router_001" },
+    { "source": "material_router_001", "target": "ask_material_001", "label": "ask_material" },
+    { "source": "material_router_001", "target": "odoo_lookup_001", "label": "price_lookup" },
+    { "source": "odoo_lookup_001", "target": "compose_reply_001" }
+  ]
+}

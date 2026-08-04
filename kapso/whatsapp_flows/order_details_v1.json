@@ -1,0 +1,58 @@
+{
+  "version": "7.3",
+  "screens": [
+    {
+      "id": "ORDER_DETAILS",
+      "title": "Detalle del pedido",
+      "terminal": true,
+      "layout": {
+        "type": "SingleColumnLayout",
+        "children": [
+          {
+            "type": "TextBody",
+            "text": "Después del abono aprobado, deja los datos para diseño. Si ya los mandaste antes, completa solo lo que falte."
+          },
+          {
+            "type": "TextInput",
+            "name": "disciplina",
+            "label": "Disciplina",
+            "helper-text": "Fútbol, voleibol, baloncesto...",
+            "required": true
+          },
+          {
+            "type": "TextInput",
+            "name": "color_media",
+            "label": "Color medias",
+            "helper-text": "Opcional si no aplica",
+            "required": false
+          },
+          {
+            "type": "TextArea",
+            "name": "lines_detail",
+            "label": "Jugadores",
+            "helper-text": "Uno por línea: Nombre - Talla - Número - Manga - Comentario",
+            "required": true
+          },
+          {
+            "type": "TextArea",
+            "name": "design_references",
+            "label": "Diseño y logos",
+            "helper-text": "Colores, logos, referencias o cambios especiales",
+            "required": false
+          },
+          {
+            "type": "Footer",
+            "label": "Enviar",
+            "on-click-action": {
+              "name": "complete",
+              "payload": {
+                "flow": "order_details_v1",
+                "designer_schema_version": "life_designer_order_v1"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

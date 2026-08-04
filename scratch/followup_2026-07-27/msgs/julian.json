@@ -1,0 +1,374 @@
+{
+  "data": [
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSNjdEQzFCRkQ4Q0ZDRjU5N0UxAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573209779415",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "220c021c-573f-44b1-932e-48bb682f249b",
+        "contact_name": "Julian B",
+        "content": "La entrega es de 15 días hábiles a partir de la confirmación del diseño y el abono del 50%. ¿Tienen ya los colores que quieren para el uniforme?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSNjdEQzFCRkQ4Q0ZDRjU5N0UxAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785166455",
+            "recipient_id": "573209779415",
+            "recipient_user_id": "CO.1984250198944535"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSNjdEQzFCRkQ4Q0ZDRjU5N0UxAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785166456",
+            "recipient_id": "573209779415",
+            "recipient_user_id": "CO.1984250198944535"
+          }
+        ]
+      },
+      "text": {
+        "body": "La entrega es de 15 días hábiles a partir de la confirmación del diseño y el abono del 50%. ¿Tienen ya los colores que quieren para el uniforme?"
+      },
+      "timestamp": "1785166455",
+      "to": "573209779415",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573209779415",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1984250198944535",
+      "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAEhgUM0E0NDA3M0M0RkNGMTVGMTFCOTQA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573209779415",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "220c021c-573f-44b1-932e-48bb682f249b",
+        "contact_name": "Julian B",
+        "content": "Cuánto se demora?"
+      },
+      "text": {
+        "body": "Cuánto se demora?"
+      },
+      "timestamp": "1785166378",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSOTVENTM5RUI1MDYzNjU2NkE4AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573209779415",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "220c021c-573f-44b1-932e-48bb682f249b",
+        "contact_name": "Julian B",
+        "content": "El uniforme de voleibol (camiseta + pantaloneta) en dry fit tiene un valor de $50.000 por unidad, es decir $450.000 para las 9. ¿Tienen ya los colores y el diseño que quieren llevar?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSOTVENTM5RUI1MDYzNjU2NkE4AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785166091",
+            "recipient_id": "573209779415",
+            "recipient_user_id": "CO.1984250198944535"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSOTVENTM5RUI1MDYzNjU2NkE4AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785166093",
+            "recipient_id": "573209779415",
+            "recipient_user_id": "CO.1984250198944535"
+          }
+        ]
+      },
+      "text": {
+        "body": "El uniforme de voleibol (camiseta + pantaloneta) en dry fit tiene un valor de $50.000 por unidad, es decir $450.000 para las 9. ¿Tienen ya los colores y el diseño que quieren llevar?"
+      },
+      "timestamp": "1785166091",
+      "to": "573209779415",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573209779415",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1984250198944535",
+      "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAEhgUM0ExRjc5NTU2MzdCODVDNTNBREYA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573209779415",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "220c021c-573f-44b1-932e-48bb682f249b",
+        "contact_name": "Julian B",
+        "content": "Queremos saber costos también"
+      },
+      "text": {
+        "body": "Queremos saber costos también"
+      },
+      "timestamp": "1785166035",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573209779415",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1984250198944535",
+      "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAEhgUM0FFRTkzOTQ1Q0Y2QTk0QjVEQ0QA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573209779415",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "220c021c-573f-44b1-932e-48bb682f249b",
+        "contact_name": "Julian B",
+        "content": "De cero"
+      },
+      "text": {
+        "body": "De cero"
+      },
+      "timestamp": "1785166032",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSNDg3MkMyRUEwNDZCQzk5NzUyAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573209779415",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "220c021c-573f-44b1-932e-48bb682f249b",
+        "contact_name": "Julian B",
+        "content": "Perfecto, 9 uniformes de voleibol. ¿Tienen ya algún diseño o foto de referencia, o lo definen de cero?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSNDg3MkMyRUEwNDZCQzk5NzUyAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785165282",
+            "recipient_id": "573209779415",
+            "recipient_user_id": "CO.1984250198944535"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSNDg3MkMyRUEwNDZCQzk5NzUyAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785165283",
+            "recipient_id": "573209779415",
+            "recipient_user_id": "CO.1984250198944535"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, 9 uniformes de voleibol. ¿Tienen ya algún diseño o foto de referencia, o lo definen de cero?"
+      },
+      "timestamp": "1785165282",
+      "to": "573209779415",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573209779415",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1984250198944535",
+      "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAEhgUM0EyOUY5NTdFMDIwRkE3RkUyQTcA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573209779415",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "220c021c-573f-44b1-932e-48bb682f249b",
+        "contact_name": "Julian B",
+        "content": "9 personas"
+      },
+      "text": {
+        "body": "9 personas"
+      },
+      "timestamp": "1785165228",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSM0NFNjRDRUM1M0Y1MTgzMTZGAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573209779415",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "220c021c-573f-44b1-932e-48bb682f249b",
+        "contact_name": "Julian B",
+        "content": "Buenas, ¿para cuántas personas serían los uniformes de voleibol? (mínimo 6)",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSM0NFNjRDRUM1M0Y1MTgzMTZGAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785164823",
+            "recipient_id": "573209779415",
+            "recipient_user_id": "CO.1984250198944535"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAERgSM0NFNjRDRUM1M0Y1MTgzMTZGAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785164824",
+            "recipient_id": "573209779415",
+            "recipient_user_id": "CO.1984250198944535"
+          }
+        ]
+      },
+      "text": {
+        "body": "Buenas, ¿para cuántas personas serían los uniformes de voleibol? (mínimo 6)"
+      },
+      "timestamp": "1785164823",
+      "to": "573209779415",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573209779415",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1984250198944535",
+      "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAEhgUM0E1MzBDMkE2MDlCODQwQkY2NkUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573209779415",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "220c021c-573f-44b1-932e-48bb682f249b",
+        "contact_name": "Julian B",
+        "content": "Hola, quiero cotizar uniformes de"
+      },
+      "text": {
+        "body": "Hola, quiero cotizar uniformes de"
+      },
+      "timestamp": "1785164685",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573209779415",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1984250198944535",
+      "id": "wamid.HBgMNTczMjA5Nzc5NDE1FQIAEhgUM0E1QkEyNDY1NDk1MEZEMjA3RjEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573209779415",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "220c021c-573f-44b1-932e-48bb682f249b",
+        "contact_name": "Julian B",
+        "content": "Volley"
+      },
+      "text": {
+        "body": "Volley"
+      },
+      "timestamp": "1785164667",
+      "type": "text",
+      "username": null
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yN1QxNTozNDoxNS41Njg5OTFaIiwiYTJmOWEwMTEtNmQzNy00MDM0LTk5MzUtYzEyOGQ1MDA4YzBmIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19",
+      "after": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yN1QxNTowNDoyNy42NzE2NDJaIiwiM2JjY2JmYmQtNTMzMS00MjYwLWE4NzEtZWJmZWEyODBkMDQzIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19"
+    },
+    "next": null,
+    "previous": null
+  }
+}

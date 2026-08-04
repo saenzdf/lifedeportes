@@ -1,0 +1,220 @@
+{
+  "audited": [
+    {
+      "task_id": 2358,
+      "task_name": "[S02564] DANIEL BELTRAN",
+      "order_name": "S02564",
+      "sheet": "formato life",
+      "rows": 30,
+      "comentarios": 1,
+      "pantaloneta": 0,
+      "arqueros": [
+        "David #99 (Uniforme)",
+        "Liset #99 (Negra de arquero)"
+      ],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2357,
+      "task_name": "[S02563] PATO MILLOS",
+      "order_name": "S02563",
+      "sheet": "Hoja2",
+      "rows": 33,
+      "comentarios": 8,
+      "pantaloneta": 2,
+      "arqueros": [
+        "ANTIGUA #35 (UNIFORME ARQUERO)",
+        "ANTIGUA #11 (CAMISETA ARQUERO)",
+        "ANTIGUA #10 (CAMISETA ARQUERO)",
+        "JUKI #1 (ARQUERO NEGRA CALAVERA BLANCA UNIF ANTIGUO)",
+        "PATO #77 (ARQUERO NEGRA CALAVERA BLANCA UNIF ANTIGUO)",
+        "JUKI #79 (ARQUERO NARANJA CALAVERA CLARA UNIF ANTIGUO)"
+      ],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2355,
+      "task_name": "[S02561] JULIAN SUPERBET",
+      "order_name": "S02561",
+      "sheet": "formato life",
+      "rows": 13,
+      "comentarios": 2,
+      "pantaloneta": 0,
+      "arqueros": [
+        "JULI #1 (EL MISMO MODELO PERO BLANCO MEDIA BLANCA)",
+        "DIEGO #12 (EL MISMO MODELO PERO BLANCO MEDIA BLANCA)"
+      ],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2352,
+      "task_name": "[S02558] TEAM FUTBOL",
+      "order_name": "S02558",
+      "sheet": "Hoja1",
+      "rows": 6,
+      "comentarios": 0,
+      "pantaloneta": 0,
+      "arqueros": [],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2350,
+      "task_name": "[S02556] JULIAN",
+      "order_name": "S02556",
+      "sheet": "Hoja1",
+      "rows": 11,
+      "comentarios": 0,
+      "pantaloneta": 0,
+      "arqueros": [],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2348,
+      "task_name": "[S02553] JULIETH PARIS",
+      "order_name": "S02553",
+      "sheet": "Hoja1",
+      "rows": 9,
+      "comentarios": 0,
+      "pantaloneta": 0,
+      "arqueros": [],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2347,
+      "task_name": "[S02552] ZULAY PEREZ",
+      "order_name": "S02552",
+      "sheet": "formato life",
+      "rows": 14,
+      "comentarios": 0,
+      "pantaloneta": 0,
+      "arqueros": [],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2345,
+      "task_name": "[S02548] Happy Kids",
+      "order_name": "S02548",
+      "sheet": "Hoja2",
+      "rows": 11,
+      "comentarios": 1,
+      "pantaloneta": 0,
+      "arqueros": [
+        "Enrique Diaz #16 (UNIFORME ROJO)"
+      ],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2338,
+      "task_name": "[S02537] JHON WILSON",
+      "order_name": "S02537",
+      "sheet": "formato life",
+      "rows": 8,
+      "comentarios": 2,
+      "pantaloneta": 0,
+      "arqueros": [],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2332,
+      "task_name": "[S02535] JULIETH",
+      "order_name": "S02535",
+      "sheet": "Hoja1",
+      "rows": 21,
+      "comentarios": 0,
+      "pantaloneta": 0,
+      "arqueros": [
+        "BELLO #12 (Uniforme)"
+      ],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2330,
+      "task_name": "[S02532] MARLY GOMEZ",
+      "order_name": "S02532",
+      "sheet": "formato life",
+      "rows": 42,
+      "comentarios": 42,
+      "pantaloneta": 0,
+      "arqueros": [],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2328,
+      "task_name": "[S02528] NICOLAS L",
+      "order_name": "S02528",
+      "sheet": "Hoja1",
+      "rows": 20,
+      "comentarios": 0,
+      "pantaloneta": 0,
+      "arqueros": [],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2322,
+      "task_name": "[S02522] JULIANA ESTUPIÑAN",
+      "order_name": "S02522",
+      "sheet": "formato life",
+      "rows": 23,
+      "comentarios": 4,
+      "pantaloneta": 0,
+      "arqueros": [],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2321,
+      "task_name": "[S02521] CARLOS ALBEIRO GARCIA",
+      "order_name": "S02521",
+      "sheet": "formato life",
+      "rows": 18,
+      "comentarios": 18,
+      "pantaloneta": 0,
+      "arqueros": [],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    },
+    {
+      "task_id": 2313,
+      "task_name": "[S02513] GAMBOA",
+      "order_name": "S02513",
+      "sheet": "formato life",
+      "rows": 21,
+      "comentarios": 0,
+      "pantaloneta": 0,
+      "arqueros": [
+        "Raisna #73 (Uniforme)"
+      ],
+      "parse_issues": [],
+      "missing_comment_fragments": [],
+      "html_stale": false
+    }
+  ],
+  "fixed": [],
+  "errors": []
+}

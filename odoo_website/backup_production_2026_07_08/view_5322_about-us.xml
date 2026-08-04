@@ -1,0 +1,344 @@
+<t t-name="website.about-us">
+<t t-call="website.layout">
+            <div id="wrap" class="oe_structure ld-home ld-about-page">
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=DM+Sans:wght@400;500;700&amp;display=swap");
+.ld-home{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a2e;-webkit-font-smoothing:antialiased}
+.ld-home .text-accent{color:#5B9BD5!important}
+.ld-home .ld-hero {
+  position:relative;isolation:isolate;background:linear-gradient(135deg,#051B36 0%,#0a3060 50%,#051B36 100%);
+  min-height:560px;color:#fff;overflow:hidden;padding:80px 0 52px}
+.ld-home.ld-gallery-page .ld-gallery-page-hero.ld-hero {
+  overflow:hidden!important;min-height:clamp(420px,52vh,560px)!important;padding-bottom:clamp(40px,6vw,64px)!important}
+.ld-home.ld-gallery-page .ld-gallery-page-hero.ld-hero &gt; .ld-gallery-hero-photo {
+  position:absolute;inset:0;z-index:0;background-position:center;background-size:cover;background-repeat:no-repeat}
+.ld-home.ld-gallery-page .ld-gallery-page-hero.ld-hero &gt; .ld-hero-overlay {
+  z-index:1;background:linear-gradient(160deg,rgba(0,31,63,.88) 0%,rgba(5,27,54,.82) 45%,rgba(0,20,45,.92) 100%)!important}
+.ld-home.ld-gallery-page .ld-gallery-page-hero.ld-hero &gt; .ld-gallery-hero-pattern {
+  position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.14;
+  background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='0.35' d='M0 40c20-8 40 8 60 0s40-8 60 0M0 80c22 10 38-6 60 0s38 6 60 0M20 0c-6 22 6 38 0 60s-6 38 0 60M80 0c8 18-8 42 0 60s-8 42 0 60'/%3E%3C/svg%3E\");
+  background-size:280px 280px}
+.ld-home.ld-about-page .ld-about-page-hero.ld-hero {
+  overflow:visible!important;min-height:clamp(460px,56vh,620px);padding-bottom:64px}
+.ld-home .ld-hero &gt; .ld-hero-bg-video {
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none}
+.ld-home .ld-hero &gt; .ld-hero-overlay {
+  position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(5,27,54,.88) 0%,rgba(15,56,95,.78) 50%,rgba(5,27,54,.92) 100%);
+  pointer-events:none}
+.ld-home .ld-hero .ld-hero-inner {
+  position:relative;z-index:2;display:flex;align-items:center;gap:40px;flex-wrap:wrap;max-width:1200px;margin:0 auto;padding:0 24px}
+.ld-home.ld-gallery-page .ld-gallery-page-hero .ld-hero-inner,
+.ld-home.ld-about-page .ld-about-page-hero .ld-hero-inner{
+  flex-direction:column;text-align:center;justify-content:center;align-items:center;min-height:min(44vh,440px);position:relative;z-index:3}
+.ld-home.ld-about-page .ld-about-page-hero .ld-hero-sub{max-width:760px!important;margin:0 auto 28px!important}
+.ld-home.ld-about-page .ld-hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:12px!important}
+.ld-home.ld-gallery-page .ld-gallery-page-hero .ld-hero-sub{max-width:720px!important;margin:0 auto 0!important;opacity:.95!important}
+.ld-home.ld-gallery-page .ld-gallery-page-hero .ld-hero-title,
+.ld-home .ld-gallery-page-hero .ld-hero-title{font-size:clamp(1.8rem,5vw,3.35rem)!important;font-weight:800!important;text-transform:uppercase!important;line-height:1.05!important;color:#fff!important}
+.ld-home.ld-about-page .ld-about-page-hero .ld-hero-title{font-size:clamp(2rem,5.5vw,3.85rem)!important;font-weight:800!important;color:#fff!important}
+.ld-home .ld-about-page-hero .ld-hero-badge{
+  font-size:.78rem!important;font-weight:700!important;text-transform:uppercase!important;letter-spacing:.15em!important;
+  padding:6px 16px!important;border-radius:50px;background:rgba(255,255,255,.1)!important;border:1px solid rgba(255,255,255,.22)!important}
+.ld-home .ld-gallery-filter-strip{background:#f8f9fa;border-top:1px solid rgba(5,27,54,.06);border-bottom:1px solid rgba(5,27,54,.06);
+  padding:clamp(18px,3vw,26px) 0}
+.ld-home .ld-gallery-filter-shell{background:transparent!important;border:none!important;border-radius:0!important;padding:0!important;
+  box-shadow:none!important}
+.ld-home .ld-gallery-filters{display:flex;flex-wrap:nowrap;justify-content:center;gap:12px;margin:0!important;
+ overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+.ld-home .filter-btn{appearance:none;border:1px solid #dee2e6;background:#fff;color:#1a2a3d;font-weight:700;
+  font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;padding:11px 20px;border-radius:999px;cursor:pointer;transition:.2s;
+  box-shadow:0 2px 8px rgba(5,27,54,.06)}
+.ld-home .filter-btn.active{border-color:#001f3f;background:#001f3f;color:#fff;
+  box-shadow:0 4px 16px rgba(0,31,63,.28)}
+.ld-home .filter-btn:hover:not(.active){border-color:rgba(0,31,63,.35);box-shadow:0 3px 12px rgba(5,27,54,.1)}
+.ld-home .ld-gallery{padding:clamp(48px,7vw,88px) 0;background:#f8f9fa}
+.ld-home .gallery-section-title{padding:clamp(28px,4vw,44px) 0 12px;max-width:900px}
+.ld-home .gallery-section-title h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.95rem,4vw,2.65rem)!important;
+  font-weight:800!important;text-transform:uppercase;letter-spacing:.035em;color:#051B36!important;line-height:1.12;margin:0 0 14px!important}
+.ld-home .gallery-section-title h2::after{content:'';display:block;width:56px;height:3px;margin-top:14px;background:#0F385F;border-radius:2px}
+.ld-home .gallery-section-title p{color:#5a6677;font-size:.98rem;margin:0;max-width:880px;line-height:1.6}
+.ld-home .ld-gallery-thumb{background:#12151c;border-radius:18px;padding:12px;box-shadow:0 8px 26px rgba(5,27,54,.14)}
+.ld-home .ld-gallery-thumb img{border-radius:12px;display:block;width:100%;height:auto;object-fit:contain}
+.ld-home .ld-banner-cta{background:#051B36 url('https://lifedeportes.com/img/hero-futbol.webp') center/cover no-repeat;position:relative;min-height:280px;display:flex}
+.ld-home .ld-banner-cta .ld-banner-overlay{background:rgba(5,27,54,.76);flex:1;display:flex;align-items:center;padding:48px 0}
+.ld-home .ld-banner-inner{text-align:center;margin:0 auto;color:#fff}
+.ld-home .ld-banner-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.2em;opacity:.75;display:block;margin-bottom:8px}
+.ld-home .ld-banner-inner h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(1.5rem,3.5vw,2.35rem)}
+.ld-home .ld-gallery-cta-title{color:#fff!important;text-align:center;text-transform:none!important;font-weight:800!important;margin-bottom:.5rem!important}
+.ld-home .ld-gallery-cta-phone{text-align:center;margin-bottom:28px!important}
+.ld-home .ld-gallery-cta-tel{color:rgba(255,255,255,.94)!important;font-weight:700;font-size:1.05rem;text-decoration:none!important;display:inline-flex;gap:8px;align-items:center}
+.ld-home .ld-gallery-cta-tel:hover{color:#fff!important}
+.ld-home .ld-gallery-cta-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:8px}
+.ld-home .btn.btn-ld-primary{background:#0F385F!important;color:#fff!important;border:none!important;padding:.85rem 1.6rem!important;
+  border-radius:999px!important;text-transform:uppercase!important;font-weight:700!important;letter-spacing:.04em!important}
+.ld-home .btn.btn-ld-primary:hover{background:#051B36!important;color:#fff!important}
+.ld-home .btn.btn-ld-outline{background:transparent!important;color:#fff!important;border:2px solid rgba(255,255,255,.65)!important;
+  padding:.75rem 1.35rem!important;border-radius:999px!important;text-transform:uppercase!important;font-weight:700!important;letter-spacing:.04em!important}
+.ld-home .btn.btn-ld-outline:hover{background:#fff!important;color:#0F385F!important;border-color:#fff!important}
+.ld-home .btn.btn-ld-white{background:#fff!important;color:#0F385F!important;border:none!important;padding:.85rem 1.75rem!important;
+  border-radius:999px!important;text-transform:uppercase!important;font-weight:700!important;letter-spacing:.04em!important}
+.ld-home .btn.btn-ld-white:hover{background:#051B36!important;color:#fff!important}
+.ld-home .ld-btn{padding:14px 28px!important;border-radius:10px!important;font-weight:700!important;text-decoration:none!important;
+  display:inline-block!important;text-align:center}
+.ld-home .ld-btn-white{background:#fff!important;color:#0F385F!important}
+.ld-home .ld-btn-outline-light{background:transparent!important;color:#fff!important;border:2px solid rgba(255,255,255,.58)!important;
+  border-radius:50px!important}
+.ld-home .ld-about{padding:80px 0;background:#f7f8fa}
+.ld-home .ld-about-inner{display:flex;align-items:center;gap:60px;max-width:1200px;margin:0 auto;padding:0 24px;flex-wrap:wrap}
+@media(max-width:1024px){.ld-home .ld-about-inner{flex-direction:column}}
+.ld-home .ld-about-content{flex:1;min-width:280px}
+.ld-home .ld-about-content h2{font-family:'Barlow Condensed',sans-serif;font-size:2.35rem!important;font-weight:700!important;
+  text-transform:uppercase;color:#051B36!important;margin-bottom:16px!important}
+.ld-home .ld-section-label{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:#5B9BD5!important;margin-bottom:8px;display:inline-block}
+.ld-home .ld-about-content p{color:#555;margin-bottom:14px!important;font-size:.95rem;line-height:1.65}
+.ld-home .ld-about-image img{width:100%;border-radius:12px;display:block}
+.ld-home .ld-process{padding:100px 0;background:#fff}
+.ld-home .ld-section-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2rem,5vw,3.05rem)!important;font-weight:700!important;
+  text-transform:uppercase;text-align:center;margin-bottom:8px;color:#051B36!important}
+.ld-home .ld-section-sub{text-align:center;color:#5a6677;margin-bottom:40px;margin-left:auto;margin-right:auto;max-width:520px;font-size:1rem}
+.ld-home .ld-process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;max-width:1060px;margin:0 auto;padding:0 24px}
+@media(max-width:1024px){.ld-home .ld-process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:576px){.ld-home .ld-process-grid{grid-template-columns:1fr}}
+.ld-home .ld-process-step{text-align:center}
+.ld-home .ld-process-img-wrap{position:relative;width:200px;height:200px;margin:0 auto 20px;border-radius:18px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.08)}
+.ld-home .ld-process-img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.ld-home .ld-process-num{position:absolute;bottom:10px;left:10px;font-family:'Barlow Condensed',sans-serif;font-weight:800;color:#fff;
+  font-size:1.75rem;text-shadow:0 2px 8px rgba(0,0,0,.55)}
+.ld-home .ld-process-step h3{font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;color:#051B36!important}
+.ld-home .ld-process-step p{font-size:.88rem;color:#888;max-width:220px;margin:0 auto;line-height:1.55}
+.ld-home .ld-why-us{padding:72px 0;background:linear-gradient(135deg,#0F385F 0%,#051B36 100%);color:#fff}
+.ld-home .ld-why-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:32px;text-align:center}
+.ld-home .ld-why-stat strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,4vw,3.2rem);font-weight:800;line-height:1;color:#fff}
+.ld-home .ld-why-us span{font-size:.85rem;opacity:.9;text-transform:uppercase;letter-spacing:.06em;display:block;margin-top:6px;line-height:1.35;color:#fff!important}
+.ld-home .lightbox.ld-lightbox{position:fixed;inset:0;z-index:100050;display:none;align-items:center;justify-content:center;
+  background:rgba(5,27,54,.92)}
+.ld-home .lightbox.ld-lightbox.open{display:flex!important}
+.ld-home #lightboxClose{position:absolute;top:16px;right:20px;width:44px;height:44px;border:none;border-radius:50%;
+  background:rgba(255,255,255,.12);color:#fff;font-size:1.65rem;line-height:1;cursor:pointer}
+.ld-home #lightboxClose:hover{background:rgba(255,255,255,.22);}
+.ld-home .lightbox-nav.lightbox-prev{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:46px;height:46px;
+  border-radius:50%;border:none;background:rgba(255,255,255,.15);color:#fff;font-size:1.35rem;cursor:pointer}
+.ld-home .lightbox-nav.lightbox-next{position:absolute;right:12px;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;
+  border:none;background:rgba(255,255,255,.15);color:#fff;font-size:1.35rem;cursor:pointer}
+.ld-home .lightbox-figure{margin:0;max-width:min(94vw,1100px)}
+.ld-home #lightboxImg{max-width:100%;max-height:82vh;border-radius:6px;transition:opacity .12s ease}
+@keyframes ld-gallery-filterFadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+</style>
+
+                <section class="ld-hero oe_structure ld-about-page-hero">
+                    <video class="ld-hero-bg-video" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="none" poster="https://lifedeportes.com/img/about-banner.webp" aria-hidden="true"/>
+                    <div class="ld-hero-overlay"/>
+                    <div class="container ld-hero-inner">
+                        <div class="ld-hero-content">
+                            <span class="ld-hero-badge">Fábrica de Uniformes Deportivos</span>
+                            <h1 class="ld-hero-title">Uniformes Deportivos<br/><span class="text-accent">Personalizados en Colombia</span></h1>
+                            <p class="ld-hero-sub">
+                                En Life Deportes somos fabricantes especializados en uniformes deportivos personalizados
+                                con más de 20 años de experiencia. Desde Bogotá atendemos equipos, escuelas, clubes
+                                y empresas en todo Colombia, con envíos también a Estados Unidos y Puerto Rico.
+                            </p>
+                            <div class="ld-hero-actions">
+                                <a href="/#contacto" class="btn btn-ld-primary">Cotiza Gratis</a>
+                                <a href="https://wa.me/573103362484?text=Hola%2C%20quiero%20cotizar%20uniformes%20deportivos" class="btn btn-ld-outline" target="_blank" rel="noopener noreferrer">
+                                    Escríbenos por WhatsApp
+                                </a>
+                                <a href="/gallery" class="btn btn-ld-outline">Ver Galería</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ld-about oe_structure" id="contenido">
+                    <div class="container ld-about-inner">
+                        <div class="ld-about-content">
+                            <span class="ld-section-label">Nuestra Historia</span>
+                            <h2>Conoce Nuestra Esencia</h2>
+                            <p>
+                                Somos una empresa colombiana con enfoque en calidad, innovación y cumplimiento.
+                                Fabricamos uniformes personalizados para fútbol, voleibol, baloncesto y otras
+                                disciplinas, con confección técnica y sublimación digital de alta definición.
+                            </p>
+                            <p>
+                                Acompañamos cada proyecto desde el diseño hasta la entrega para que cada equipo
+                                reciba prendas cómodas, durables y con identidad propia.
+                            </p>
+                            <a href="/#contacto" class="btn btn-ld-primary">Hablar con asesor</a>
+                        </div>
+                        <div class="ld-about-image">
+                            <img src="https://lifedeportes.com/img/about-banner.webp" alt="Equipo deportivo vestido con uniformes personalizados de Life Deportes" loading="lazy"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_features pt64 pb64 oe_structure bg-white">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="h-100 p-4 border rounded-3 bg-light">
+                                    <span class="ld-section-label">Nuestra Esencia</span>
+                                    <h3 class="h2 mb-3">Misión</h3>
+                                    <p class="mb-0">
+                                        <strong>LIFE SOLUCIONES DEPORTIVAS S.A.S</strong>, a través de exigentes
+                                        procesos administrativos, didácticos y pedagógicos, desarrolla productos
+                                        dirigidos a diferentes grupos poblacionales para contribuir a mejorar su
+                                        calidad de vida y fortalecer la convivencia pacífica.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="h-100 p-4 border rounded-3 bg-light">
+                                    <span class="ld-section-label">Nuestro Futuro</span>
+                                    <h3 class="h2 mb-3">Visión</h3>
+                                    <p class="mb-0">
+                                        Consolidar a <strong>LIFE SOLUCIONES DEPORTIVAS</strong> como una empresa
+                                        sólida en el mercado deportivo, didáctico y recreativo, con productos
+                                        excelentes que promuevan salud, responsabilidad, pertenencia y cambio
+                                        positivo en la ciudadanía.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ld-process oe_structure" id="proceso">
+                    <div class="container">
+                        <h2 class="ld-section-title">Nuestro Proceso de Fabricación</h2>
+                        <p class="ld-section-sub">
+                            Cada uniforme se fabrica con tela poliéster dry-fit y sublimación digital para lograr
+                            colores vivos, secado rápido y durabilidad superior.
+                        </p>
+                        <div class="ld-process-grid">
+                            <div class="ld-process-step">
+                                <div class="ld-process-img-wrap">
+                                    <img src="https://lifedeportes.com/img/process-1.webp" alt="Paso 1: cotización" loading="lazy"/>
+                                    <span class="ld-process-num">01</span>
+                                </div>
+                                <h3>Cotización</h3>
+                                <p>Recibimos tu idea, cantidades, tallas y fechas de entrega.</p>
+                            </div>
+                            <div class="ld-process-step">
+                                <div class="ld-process-img-wrap">
+                                    <img src="https://lifedeportes.com/img/process-2.webp" alt="Paso 2: diseño" loading="lazy"/>
+                                    <span class="ld-process-num">02</span>
+                                </div>
+                                <h3>Diseño</h3>
+                                <p>Personalizamos escudos, logos, números, nombres y colores.</p>
+                            </div>
+                            <div class="ld-process-step">
+                                <div class="ld-process-img-wrap">
+                                    <img src="https://lifedeportes.com/img/process-3.webp" alt="Paso 3: confección" loading="lazy"/>
+                                    <span class="ld-process-num">03</span>
+                                </div>
+                                <h3>Confección</h3>
+                                <p>Producimos con estándares de calidad en cada etapa de la prenda.</p>
+                            </div>
+                            <div class="ld-process-step">
+                                <div class="ld-process-img-wrap">
+                                    <img src="https://lifedeportes.com/img/process-4.webp" alt="Paso 4: entrega" loading="lazy"/>
+                                    <span class="ld-process-num">04</span>
+                                </div>
+                                <h3>Entrega</h3>
+                                <p>Despachamos a nivel nacional e internacional con acompañamiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ld-why-us oe_structure">
+                    <div class="container">
+                        <h2 class="ld-section-title">A Quiénes Vestimos</h2>
+                        <p class="ld-section-sub">
+                            Equipos amateur y profesionales, clubes, escuelas deportivas, ligas universitarias,
+                            empresas y eventos en todo el país.
+                        </p>
+                        <div class="ld-why-stats">
+                            <div class="ld-why-stat">
+                                <strong data-target="20" data-prefix="+">+20</strong>
+                                <span>Años de<br/>Experiencia</span>
+                            </div>
+                            <div class="ld-why-stat">
+                                <strong data-target="1000" data-suffix="+">1000+</strong>
+                                <span>Equipos<br/>Vestidos</span>
+                            </div>
+                            <div class="ld-why-stat">
+                                <strong data-target="100" data-suffix="%">100%</strong>
+                                <span>Personalización<br/>Total</span>
+                            </div>
+                            <div class="ld-why-stat">
+                                <strong data-target="32">32</strong>
+                                <span>Departamentos<br/>Cubiertos</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_features pt64 pb64 oe_structure bg-light">
+                    <div class="container">
+                        <h2 class="ld-section-title">Nuestros Valores</h2>
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h-100 p-4 border rounded-3 bg-white">
+                                    <h3 class="h4 mb-2">Calidad</h3>
+                                    <p class="mb-0">Materiales premium y sublimación de alta definición en cada prenda.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h-100 p-4 border rounded-3 bg-white">
+                                    <h3 class="h4 mb-2">Compromiso</h3>
+                                    <p class="mb-0">Cumplimos tiempos de entrega y acompañamos cada proyecto de principio a fin.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h-100 p-4 border rounded-3 bg-white">
+                                    <h3 class="h4 mb-2">Innovación</h3>
+                                    <p class="mb-0">Diseños únicos con tendencias actuales para cada deporte y categoría.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h-100 p-4 border rounded-3 bg-white">
+                                    <h3 class="h4 mb-2">Cercanía</h3>
+                                    <p class="mb-0">Atención directa por WhatsApp y asesoría personalizada en cada pedido.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ld-banner-cta oe_structure">
+                    <div class="ld-banner-overlay">
+                        <div class="container ld-banner-inner">
+                            <span class="ld-banner-label">¿Listo para crear tus uniformes?</span>
+                            <h2>Cotiza tu diseño con Life Deportes</h2>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <a href="/#contacto" class="btn btn-ld-white">Cotiza Ya</a>
+                                <a href="https://wa.me/573103362484?text=Hola%2C%20quiero%20cotizar%20uniformes%20personalizados" class="btn btn-ld-outline" target="_blank" rel="noopener noreferrer">
+                                    WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function(){
+  var rows=document.querySelectorAll('.ld-about-page.ld-home .ld-why-stat strong[data-target]');
+  if(!rows.length)return;
+  function go(el){
+    var t=parseInt(el.dataset.target||'0',10)||0,p=(el.dataset.prefix||''),s=(el.dataset.suffix||'');
+    var dur=1400,st=performance.now(),fn=function(now){
+      var p_=Math.min(1,(now-st)/dur),e_=1-Math.pow(1-p_,3);
+      el.textContent=p+Math.floor(t*e_)+s;if(p_&lt;1)requestAnimationFrame(fn);else el.textContent=p+t+s;
+    };requestAnimationFrame(fn);
+  }
+  rows.forEach(function(el){
+    new IntersectionObserver(function(ent,o){
+      ent.forEach(function(e){if(e.isIntersecting){go(e.target);o.unobserve(e.target);}});
+    },{threshold:0.35}).observe(el);
+  });
+});
+</script>
+
+
+            </div>
+        </t>
+</t>

@@ -1,0 +1,26 @@
+{
+  "name": "lifedeportes_create_order_text_v2",
+  "description": "Captura de pedido por texto con validacion playbook y creacion formal en Odoo.",
+  "nodes": [
+    { "id": "start", "type": "trigger_internal_event", "config": { "event": "run_create_order_text_v2" } },
+    { "id": "authorization_guard_001", "type": "function", "config": { "name": "assert-user-transaction-access" } },
+    { "id": "required_fields_guard_001", "type": "function", "config": { "name": "validate-order-required-fields" } },
+    { "id": "fields_router_001", "type": "decide", "config": {
+      "conditions": [
+        { "label": "missing_fields", "expression": "vars.order.is_valid != true" },
+        { "label": "valid_fields", "expression": "vars.order.is_valid == true" }
+      ]
+    } },
+    { "id": "request_missing_001", "type": "template", "config": { "text": "Para generar tu pedido necesito confirmar producto, cantidad, material y variante." } },
+    { "id": "create_quote_001", "type": "function", "config": { "name": "odoo_create_sale_order_from_text" } },
+    { "id": "confirm_reply_001", "type": "template", "config": { "text": "Listo, deje tu cotizacion en Odoo. El siguiente paso es el abono del 50% para iniciar produccion." } }
+  ],
+  "edges": [
+    { "source": "start", "target": "authorization_guard_001" },
+    { "source": "authorization_guard_001", "target": "required_fields_guard_001" },
+    { "source": "required_fields_guard_001", "target": "fields_router_001" },
+    { "source": "fields_router_001", "target": "request_missing_001", "label": "missing_fields" },
+    { "source": "fields_router_001", "target": "create_quote_001", "label": "valid_fields" },
+    { "source": "create_quote_001", "target": "confirm_reply_001" }
+  ]
+}

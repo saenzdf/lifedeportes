@@ -1,0 +1,94 @@
+# Staff agent — function tools registry
+# Upload a Odoo NO va como tool: complete_task dispara build-quote-payload → odoo-create-lead-and-so.
+
+version: "2026-07-27-staff-slim-tools"
+agent_node_id: agent_1780762885818
+
+# Existen en Kapso pero NO van en flow_agent_function_tools del Agent Staff.
+tools_ops_only:
+  - name: verificar_servicio
+    kapso_function_name: get-service-status
+    note: Health registry — no día a día operaria.
+  - name: medir_fidelidad_pedido
+    kapso_function_name: compute-fidelity-retention
+    note: KPI post-sync — scripts/tests, no chat staff.
+
+tools_active:
+  - name: buscar_producto_odoo
+    function_id: "4503ca5c-7114-4442-bada-112be3ddf67e"
+    kapso_function_name: odoo-search-product-price
+    mode: read
+    description: Busca producto en Odoo y precio antes de subir pedido.
+    input_schema:
+      type: object
+      properties:
+        product_text: { type: string }
+        quantity: { type: number }
+      required: [product_text]
+
+  - name: previsualizar_borrador_cotizacion
+    function_id: "4a1591c2-66e3-4734-82a7-ed64a1031c2b"
+    kapso_function_name: build-quote-payload
+    mode: read
+    description: Borrador sin crear SO (validar antes de complete_task).
+    input_schema:
+      type: object
+      properties: {}
+
+  - name: clasificar_adjuntos_pedido
+    kapso_function_name: clasificar-adjuntos-pedido
+    mode: read
+  - name: parsear_lista_excel_pedido
+    kapso_function_name: parsear-lista-excel-pedido
+    mode: read
+  - name: parsear_lista_texto_pedido
+    kapso_function_name: parsear-lista-texto-pedido
+    mode: read
+  - name: parsear_lista_imagen_pedido
+    kapso_function_name: parsear-lista-imagen-pedido
+    mode: read
+  - name: registrar_adjuntos_pedido
+    kapso_function_name: registrar-adjuntos-pedido
+    mode: read
+    note: Staging Kapso; upload Chatter = grafo tras complete_task.
+  - name: fusionar_borrador_lista
+    kapso_function_name: fusionar-borrador-lista
+    mode: read
+  - name: buscar_pedido_odoo
+    kapso_function_name: buscar-pedido-odoo
+    mode: read
+  - name: corregir_pedido_odoo
+    kapso_function_name: corregir-pedido-odoo
+    mode: write
+  - name: sincronizar_pedido_odoo
+    function_id: "55eeebe6-4249-4619-9ccc-0908148f49c5"
+    kapso_function_name: sync-order-draft-from-odoo
+    mode: write
+  - name: parse_nomina_attlog
+    kapso_function_name: parse-nomina-attlog
+    mode: read
+  - name: confirmar_nomina
+    kapso_function_name: confirmar-nomina
+    mode: write
+  - name: crear_compra_odoo
+    kapso_function_name: crear-compra-odoo
+    mode: write
+  - name: prepare_inbox_upload
+    kapso_function_name: prepare-inbox-upload
+    mode: write
+
+  - name: crear_presupuesto_odoo
+    note: Staff WA → SO draft desde CRM (HAZ PRESUPUESTO / presupuesto de X).
+  - name: enviar_formulario_excel
+    kapso_function_name: enviar-formulario-excel
+    mode: write
+    note: ENVIAR EXCEL DETALLE → Formulario Life xlsx al WA del cliente.
+  - name: enviar_retomar_pedido
+    kapso_function_name: enviar-retomar-pedido
+    mode: write
+    note: ENVIAR RETOMAR → template retomar_pedido_v2 al cliente.
+
+write_via_graph_only:
+  - name: activar_cotizacion_odoo
+    function_id: "8a7b731d-480c-4abc-8a72-f965856d7515"
+    note: Tras complete_task. No exponer como tool del agente.

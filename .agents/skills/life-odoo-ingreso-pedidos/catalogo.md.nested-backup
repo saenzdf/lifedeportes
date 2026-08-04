@@ -1,0 +1,125 @@
+# Catálogo Life Deportes — ingreso Odoo (jul 2026)
+
+Mínimo **6 u.** del mismo producto/diseño. Precios **desde** (`list_price`). Siempre resolver `product.template` → `product.product`.
+
+## Uniformes completos
+
+| Interpretación | Plantilla | id | Desde (COP) |
+|----------------|-----------|-----|-------------|
+| Fútbol dry-fit | Uniforme de Fútbol dry-fit | 115 | 50.000 |
+| Baloncesto | Uniforme de baloncesto | 23 | 50.000 |
+| Voleibol / voley | Uniforme de voleibol | 31 | 50.000 |
+
+### Variantes Odoo — Uniforme de voleibol (template 31)
+
+Atributos reales (`product.product` — **12 combinaciones** con Corta, todas $50.000):
+
+| Tipo pantalon | Cuello | Largo manga | id ejemplo |
+|---------------|--------|-------------|------------|
+| Pantaloneta | Cuello en V | Siza | 11139 |
+| Pantaloneta | Cuello en V | China | 11140 |
+| Pantaloneta | Cuello en V | **Corta** | 12200 |
+| Pantaloneta | Cuello Redondo | Siza | 11141 |
+| Pantaloneta | Cuello Redondo | China | 11142 |
+| Pantaloneta | Cuello Redondo | **Corta** | 12201 |
+| **Licra** | Cuello en V | Siza | 11143 |
+| **Licra** | Cuello en V | China | 11144 |
+| **Licra** | Cuello en V | **Corta** | **12202** |
+| **Licra** | Cuello Redondo | Siza | 11145 |
+| **Licra** | Cuello Redondo | China | 11146 |
+| **Licra** | Cuello Redondo | **Corta** | 12203 |
+
+**Manga corta ≠ manga china** — son cortes distintos; no intercambiar.
+
+**No existe** en voleibol: manga larga, pant. impermeable, medias como atributo separado del template 31.
+
+### Variantes Odoo — Uniforme de fútbol (template 115)
+
+Atributos: medias (semi/pro), cuello (V / redondo / sport), manga (**Corta** o **Larga**).
+
+**No existe** variante con **licra** en fútbol. Si piden licra → es **voleibol (31)** u otro deporte, no 115.
+| Atletismo (manga sisa) | Uniforme de atletismo | 35 | 50.000 |
+| Presentación | Uniforme de presentación | 8 | 58.000 |
+| Cuello polo | Uniformes con cuello polo | 947 | 55.000 |
+| Bordado incluido | Uniformes con bordado | 1819 | 57.000 |
+| Pant. impermeable | Uniformes con pantaloneta impermeable | 1815 | 58.000 |
+| Pant. bolsillos | Uniformes con pantaloneta con bolsillos | 1814 | 55.000 |
+
+## Camisetas solas (pedido principal válido ≥ 6 u.)
+
+| Interpretación | Plantilla | id | Desde (COP) |
+|----------------|-----------|-----|-------------|
+| Camiseta / camiseta de fútbol | Camiseta deportiva dry-fit | **62** | 30.000 |
+| Camiseta polo | Camiseta deportiva con cuello polo, Sin botones | 61 | 33.000 |
+| Camiseta dumonti | Camiseta Deportiva | 685 | 35.000 |
+
+## Arquero, buzos, extras
+
+| Interpretación | Plantilla | id | Desde (COP) |
+|----------------|-----------|-----|-------------|
+| Conjunto arquero | Conjunto de arquero | 178 | 70.000 |
+| Buzo arquero (pieza) | Buzo de arquero | 179 | 31.000 |
+| Sudaderas / hoodies | Sudaderas en algodón lycrado con bordados | 1811 | 120.000 |
+| Petos malla | Petos en malla | 177 | 25.000 |
+| Medias semi | Medias semi | 113 | 7.500 |
+| Medias pro | Medias profesionales | 1807 | 10.000 |
+| Gorras | Gorras con un bordado | 1804 | 15.000 |
+
+## Línea obligatoria Diseño
+
+| Campo | Valor |
+|-------|--------|
+| `product.product` id | **504** (verificar Paso 0) |
+| name línea | Diseño |
+| qty | 1 |
+| price_unit | **0** |
+
+No confundir con template 159 (diseño especial &lt;6 u.).
+
+## Modular (sobrecostos orientativos)
+
+Sobre base camiseta $30k / uniforme $50k dry-fit manga corta:
+
+- Manga larga: +$3.000
+- Polo sin botones camiseta: +$3.000 · uniforme: +$3.000
+- Polo con botones: +$5.000
+- Dumonti camiseta: +$5.000 · uniforme manga corta: +$10.000
+- Medias pro por uniforme: +$7.000
+- Talla 2XL+: +$5.000 · 3XL+: +$10.000
+
+Si el pedido menciona variante, buscar plantilla específica o ajustar `price_unit` solo si operaria confirma precio acordado.
+
+## Lenguaje coloquial
+
+| Dice | → |
+|------|---|
+| camiseta, camisa, camiseta de futbol | Camiseta sola 62 |
+| uniforme, kit, camisa y pantaloneta | Uniforme completo |
+| voley / volei | Voleibol 31 |
+| microfutbol + uniforme | Fútbol; pant. impermeable si aplica |
+| falcao | Dumonti |
+| medias semi | Incluidas en uniforme fútbol base |
+| 20 de campo y 2 arqueros | Uniforme ×20 + arquero ×2 |
+
+## Deportes
+
+**Sí:** fútbol, baloncesto, voleibol, atletismo.  
+**No:** natación, ciclismo, béisbol, hockey, tenis (como fabricación estándar), etc.
+
+## Proyectos (manual)
+
+| Nombre | project id |
+|--------|------------|
+| Proyecto Javier | 8 |
+| Proyecto Paola | 9 |
+
+Anotar en `sale.order.note`.
+
+## Resolver template → variante
+
+```
+search_read product.template → id
+search_read product.product [('product_tmpl_id','=',id)] → id variante venta
+```
+
+Usar **product.product.id** en `sale.order.line`.

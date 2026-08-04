@@ -1,0 +1,8 @@
+---
+description: Life Deportes local workspace anchor
+alwaysApply: true
+---
+
+# Life Deportes
+
+You are in the Life Deportes project folder. Use MCP `odoo` (test) / `odoo-prod` only with Life prefixes. Skills under `.agents/skills/`. Default to test Odoo unless the user asks for prod. Durable knowledge → `../../wiki/projects/lifedeportes.md`. After useful work: update that wiki page if behavior changed; append `../../wiki/log.md` with `agent:cursor` (same habit as Antigravity — see Sync `.cursor/rules/wiki-ops.mdc`).

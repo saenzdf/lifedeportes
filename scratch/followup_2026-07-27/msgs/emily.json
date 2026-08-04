@@ -1,0 +1,1585 @@
+{
+  "data": [
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRDBBNzEyNkRFQjU0MzcyMEREAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "A la orden, quedo atenta a lo que nos envíe mañana. Buenas noches.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRDBBNzEyNkRFQjU0MzcyMEREAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785107585",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRDBBNzEyNkRFQjU0MzcyMEREAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785107586",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRDBBNzEyNkRFQjU0MzcyMEREAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785164134",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "A la orden, quedo atenta a lo que nos envíe mañana. Buenas noches."
+      },
+      "timestamp": "1785107585",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0FCNDBBRDMzNEQ3MDYwNTMzRkUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Muchas gracias"
+      },
+      "text": {
+        "body": "Muchas gracias"
+      },
+      "timestamp": "1785107549",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRTlEMzQ0MDMxRjNDOTlCMENDAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Con gusto. Sí, por favor envíe los logos en buena calidad (ideal en formato PNG o vectorial) para que queden nítidos en la sublimación. Sobre el color azul de las franjas traseras, puede mandarnos una referencia (foto o código de color) y lo tomamos de ahí.\n\nRespecto al diseño final, el equipo de diseño le prepara una propuesta visual (mockup) para su aprobación antes de iniciar producción. Eso se gestiona una vez confirmado el pedido con el abono.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRTlEMzQ0MDMxRjNDOTlCMENDAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785107528",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRTlEMzQ0MDMxRjNDOTlCMENDAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785107529",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRTlEMzQ0MDMxRjNDOTlCMENDAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785107532",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Con gusto. Sí, por favor envíe los logos en buena calidad (ideal en formato PNG o vectorial) para que queden nítidos en la sublimación. Sobre el color azul de las franjas traseras, puede mandarnos una referencia (foto o código de color) y lo tomamos de ahí.\n\nRespecto al diseño final, el equipo de diseño le prepara una propuesta visual (mockup) para su aprobación antes de iniciar producción. Eso se gestiona una vez confirmado el pedido con el abono."
+      },
+      "timestamp": "1785107527",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0ExRjg2RDU0MzY3OEE1MkQxRkMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Es posible ver un diseño final como te lo indiqué?"
+      },
+      "text": {
+        "body": "Es posible ver un diseño final como te lo indiqué?"
+      },
+      "timestamp": "1785107479",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0EzQTMzQTc3MzNGNjZDRjdEOUMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Y el color del azul para las dos líneas de atrás de la camisa"
+      },
+      "text": {
+        "body": "Y el color del azul para las dos líneas de atrás de la camisa"
+      },
+      "timestamp": "1785107467",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0ExQ0REOUIwRjE2QzczMkZGQzMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Quisiera saber si te debo enviar los logos también?"
+      },
+      "text": {
+        "body": "Quisiera saber si te debo enviar los logos también?"
+      },
+      "timestamp": "1785107458",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0E2N0U2RjIyNkMxMjc4MTFBOEEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Muchas gracias"
+      },
+      "text": {
+        "body": "Muchas gracias"
+      },
+      "timestamp": "1785107443",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0ExRENCMTNCMEVFNzIzMzRDRUQA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Entonces el día de mañana te envío el listado y el 50%"
+      },
+      "text": {
+        "body": "Entonces el día de mañana te envío el listado y el 50%"
+      },
+      "timestamp": "1785107441",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0E1QzhGQzVBMUZBMjhDNzJDQkUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Listo!"
+      },
+      "text": {
+        "body": "Listo!"
+      },
+      "timestamp": "1785107432",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNjc3QjlFNkE0NEVGM0E0RDY3AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "El tiempo de entrega es de 15 días hábiles a partir de la confirmación del pedido y el abono del 50%.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNjc3QjlFNkE0NEVGM0E0RDY3AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785107420",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNjc3QjlFNkE0NEVGM0E0RDY3AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785107421",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNjc3QjlFNkE0NEVGM0E0RDY3AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785107424",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "El tiempo de entrega es de 15 días hábiles a partir de la confirmación del pedido y el abono del 50%."
+      },
+      "timestamp": "1785107420",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0E1NDIzODEwOEQzOTI2NUNDQjAA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "En cuantos días estarían listo?"
+      },
+      "text": {
+        "body": "En cuantos días estarían listo?"
+      },
+      "timestamp": "1785107379",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSN0FBMzg1OEY1QkY5MDY0RjJEAA==",
+        "from": "573222252942"
+      },
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0FEN0MxM0VCQjZDRkZBRUYwODcA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Perfecto"
+      },
+      "text": {
+        "body": "Perfecto"
+      },
+      "timestamp": "1785107375",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSN0FBMzg1OEY1QkY5MDY0RjJEAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Sí, el precio es el mismo. Somos fabricantes, así que el valor de catálogo ya es el mínimo; no manejamos rebaja adicional por cantidad.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSN0FBMzg1OEY1QkY5MDY0RjJEAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785030087",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSN0FBMzg1OEY1QkY5MDY0RjJEAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785030088",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSN0FBMzg1OEY1QkY5MDY0RjJEAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785107370",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Sí, el precio es el mismo. Somos fabricantes, así que el valor de catálogo ya es el mínimo; no manejamos rebaja adicional por cantidad."
+      },
+      "timestamp": "1785030087",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0FBOTNFQkFEMjRFREE4MDk1NTMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Sticker attached (sticker_bf5c4c1d4a74.webp) [Size: 62.4 KB | Type: image/webp]",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjFkMzU4NDNiLWQ3YWItNDI3OS1iYTAxLThhODI2M2JhNDcwNSIsInB1ciI6ImJsb2JfaWQifX0=--93ba486c54bedfefa47a26f66e3475a8f507ee13/sticker_bf5c4c1d4a74.webp",
+          "filename": "sticker_bf5c4c1d4a74.webp",
+          "content_type": "image/webp",
+          "byte_size": 63918
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjFkMzU4NDNiLWQ3YWItNDI3OS1iYTAxLThhODI2M2JhNDcwNSIsInB1ciI6ImJsb2JfaWQifX0=--93ba486c54bedfefa47a26f66e3475a8f507ee13/sticker_bf5c4c1d4a74.webp",
+        "message_type_data": {
+          "mime_type": "image/webp"
+        }
+      },
+      "sticker": {
+        "id": "1014528618139358",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1014528618139358&source=webhook&ext=1785030348&hash=ATxm4IM6f5npNFARCQPdMPwBLBH98Z9-dU9wm8fctUCbhg",
+        "sha256": "iEXvUqVBcmuUqMCC/Lvl/ZqLD8yYthlyqo0XwIEb7kU=",
+        "animated": false,
+        "mime_type": "image/webp",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjFkMzU4NDNiLWQ3YWItNDI3OS1iYTAxLThhODI2M2JhNDcwNSIsInB1ciI6ImJsb2JfaWQifX0=--93ba486c54bedfefa47a26f66e3475a8f507ee13/sticker_bf5c4c1d4a74.webp"
+      },
+      "timestamp": "1785030051",
+      "type": "sticker",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0E1NjlBQUIyQ0Y0ODZDODM1MDgA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Y siendo al por mayor sería el mismo precio?"
+      },
+      "text": {
+        "body": "Y siendo al por mayor sería el mismo precio?"
+      },
+      "timestamp": "1785030044",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRTQ1QzE0RjhEQkNBNENEQzE3AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "El precio por camiseta es de $30.000, para las 23 serían $690.000 en total.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRTQ1QzE0RjhEQkNBNENEQzE3AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785030007",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRTQ1QzE0RjhEQkNBNENEQzE3AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785030008",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRTQ1QzE0RjhEQkNBNENEQzE3AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785030013",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "El precio por camiseta es de $30.000, para las 23 serían $690.000 en total."
+      },
+      "timestamp": "1785030007",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0E5NjFGQUEwNTRBQ0JEQkNBRjYA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Si por favor"
+      },
+      "text": {
+        "body": "Si por favor"
+      },
+      "timestamp": "1785029960",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSMkFERjgxNURDNURCRDQ2RUNDAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Listo, logos propios confirmados, no hay inconveniente con esos. Ya tengo el diseño completo. ¿Le gustaría que le diera el precio de las camisetas?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSMkFERjgxNURDNURCRDQ2RUNDAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029948",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSMkFERjgxNURDNURCRDQ2RUNDAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029949",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSMkFERjgxNURDNURCRDQ2RUNDAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029952",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Listo, logos propios confirmados, no hay inconveniente con esos. Ya tengo el diseño completo. ¿Le gustaría que le diera el precio de las camisetas?"
+      },
+      "timestamp": "1785029948",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0E4RjA2QjZCQThDNDNFNjJGQzMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Son logos propios"
+      },
+      "text": {
+        "body": "Son logos propios"
+      },
+      "timestamp": "1785029894",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0FEQjhDMkVGRDkzMURGMDk4MTEA",
+      "image": {
+        "id": "1405581064828100",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1405581064828100&source=webhook&ext=1785030172&hash=ATz5iEcU4LiK8csQBvXu5Lcs1bbtokiYoZhsBlZjnljrzw",
+        "sha256": "sYLNXPKP1t0GLicgpwQcV+8euDUYsENXsfpcmOZzas4=",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQzZjRjNmU0LWQ2NTMtNGVkYi1hZGQ1LTM0ZTMxZjcyMzRhYiIsInB1ciI6ImJsb2JfaWQifX0=--0adab0b2af3bf1a42d00441562ee2e67ab0bafba/image_a16da06f0bab.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Image attached (image_a16da06f0bab.jpeg) [Size: 57.4 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQzZjRjNmU0LWQ2NTMtNGVkYi1hZGQ1LTM0ZTMxZjcyMzRhYiIsInB1ciI6ImJsb2JfaWQifX0=--0adab0b2af3bf1a42d00441562ee2e67ab0bafba/image_a16da06f0bab.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQzZjRjNmU0LWQ2NTMtNGVkYi1hZGQ1LTM0ZTMxZjcyMzRhYiIsInB1ciI6ImJsb2JfaWQifX0=--0adab0b2af3bf1a42d00441562ee2e67ab0bafba/image_a16da06f0bab.jpeg",
+          "filename": "image_a16da06f0bab.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 58816
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQzZjRjNmU0LWQ2NTMtNGVkYi1hZGQ1LTM0ZTMxZjcyMzRhYiIsInB1ciI6ImJsb2JfaWQifX0=--0adab0b2af3bf1a42d00441562ee2e67ab0bafba/image_a16da06f0bab.jpeg",
+        "message_type_data": {
+          "caption": "",
+          "has_media": true
+        }
+      },
+      "timestamp": "1785029877",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRDkxNzEwMzFENzRFODZGQUU4AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Perfecto, ya tengo claro el diseño completo: frente blanco con hombreras en azul, dos logos en el pecho y las siglas C.D.I., mangas vacías; espalda con dos franjas azules hacia arriba, nombre, número y mensaje pequeño personalizado por cada acompañante. ¿Los logos del pecho son de alguna marca deportiva (Nike, Adidas, etc.) o son logos propios?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRDkxNzEwMzFENzRFODZGQUU4AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029871",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRDkxNzEwMzFENzRFODZGQUU4AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029871",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRDkxNzEwMzFENzRFODZGQUU4AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029871",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, ya tengo claro el diseño completo: frente blanco con hombreras en azul, dos logos en el pecho y las siglas C.D.I., mangas vacías; espalda con dos franjas azules hacia arriba, nombre, número y mensaje pequeño personalizado por cada acompañante. ¿Los logos del pecho son de alguna marca deportiva (Nike, Adidas, etc.) o son logos propios?"
+      },
+      "timestamp": "1785029870",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0E5N0E5QTMxQjJGOTkzQUUzMjcA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Los dos logos del pecho sí y el CDI , las mangas también pueden ir vacías y la parte de atrás si igual a la de la imagen con dos franjas azules en la mitad ( las que están con el número) hacia arriba"
+      },
+      "text": {
+        "body": "Los dos logos del pecho sí y el CDI , las mangas también pueden ir vacías y la parte de atrás si igual a la de la imagen con dos franjas azules en la mitad ( las que están con el número) hacia arriba"
+      },
+      "timestamp": "1785029828",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSQjdCQ0VDQUEwNEI5M0MyRjk3AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Entendido, entonces el frente sería totalmente blanco sin las franjas, conservando el diseño en las hombreras. Tela dry-fit confirmado. ¿Los escudos o logos que se ven en el pecho y mangas también van, o esos se omiten?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSQjdCQ0VDQUEwNEI5M0MyRjk3AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029771",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSQjdCQ0VDQUEwNEI5M0MyRjk3AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029772",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSQjdCQ0VDQUEwNEI5M0MyRjk3AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029774",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Entendido, entonces el frente sería totalmente blanco sin las franjas, conservando el diseño en las hombreras. Tela dry-fit confirmado. ¿Los escudos o logos que se ven en el pecho y mangas también van, o esos se omiten?"
+      },
+      "timestamp": "1785029771",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0FEOEI1RTFBQTY4Njc2QzcxOTMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "La\nParte de adelante de la camisa no sería necesario el diseño de las líneas, puede ser totalmente blanca pero que arriba en las hombreras si tuviera el diseño azul, y en la que me dices está bien"
+      },
+      "text": {
+        "body": "La\nParte de adelante de la camisa no sería necesario el diseño de las líneas, puede ser totalmente blanca pero que arriba en las hombreras si tuviera el diseño azul, y en la que me dices está bien"
+      },
+      "timestamp": "1785029729",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNDk4NUI0QTcxM0Q2M0M3REM3AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Listo, diseño confirmado. ¿La tela sería dry-fit (la que usamos por defecto) o tenían en mente otra?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNDk4NUI0QTcxM0Q2M0M3REM3AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029673",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNDk4NUI0QTcxM0Q2M0M3REM3AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029674",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNDk4NUI0QTcxM0Q2M0M3REM3AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029674",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Listo, diseño confirmado. ¿La tela sería dry-fit (la que usamos por defecto) o tenían en mente otra?"
+      },
+      "timestamp": "1785029673",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0E5M0VDNjdGMjU2MjA5QkE5NEQA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Correcto"
+      },
+      "text": {
+        "body": "Correcto"
+      },
+      "timestamp": "1785029634",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNjM0NjQyQTQwMEEzQ0U5MTQwAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Entendido, entonces en la parte de abajo de la espalda iría un mensaje pequeño con la misma tipografía del nombre pero en menor tamaño, en lugar del recuadro blanco. ¿Es así?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNjM0NjQyQTQwMEEzQ0U5MTQwAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029620",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNjM0NjQyQTQwMEEzQ0U5MTQwAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029620",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNjM0NjQyQTQwMEEzQ0U5MTQwAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029620",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Entendido, entonces en la parte de abajo de la espalda iría un mensaje pequeño con la misma tipografía del nombre pero en menor tamaño, en lugar del recuadro blanco. ¿Es así?"
+      },
+      "timestamp": "1785029619",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0E1RjMxRjExNDg1RkMyNDRDMkIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "No quedaría pues como con ese recuadro, sino con un pequeño mensaje con la tipología del nombre pero más pequeño"
+      },
+      "text": {
+        "body": "No quedaría pues como con ese recuadro, sino con un pequeño mensaje con la tipología del nombre pero más pequeño"
+      },
+      "timestamp": "1785029610",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSOEI4Rjg1Qzg2RUY5QUFEQzM2AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Según la foto, son camisetas blancas con franjas verticales verde agua (turquesa) en degradado, cuello redondo, manga corta, con detalles en negro en hombros y puños. Al frente llevan las siglas \"C.D.I\", y en la espalda nombre y número personalizado por cada acompañante, más un recuadro blanco abajo con texto personalizado que usted enviaría en Excel. ¿Es ese el diseño que quieren replicar?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSOEI4Rjg1Qzg2RUY5QUFEQzM2AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029611",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSOEI4Rjg1Qzg2RUY5QUFEQzM2AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029611",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSOEI4Rjg1Qzg2RUY5QUFEQzM2AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029611",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Según la foto, son camisetas blancas con franjas verticales verde agua (turquesa) en degradado, cuello redondo, manga corta, con detalles en negro en hombros y puños. Al frente llevan las siglas \"C.D.I\", y en la espalda nombre y número personalizado por cada acompañante, más un recuadro blanco abajo con texto personalizado que usted enviaría en Excel. ¿Es ese el diseño que quieren replicar?"
+      },
+      "timestamp": "1785029610",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0EyNUEwNzAyMTJBNjQ5MEE5NzkA",
+      "image": {
+        "id": "1370498288387555",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1370498288387555&source=webhook&ext=1785029854&hash=ATwRtExU5FmIz6B80IG7ue_Y0SGilhGz0U6wQbl43PaK6Q",
+        "sha256": "H4qHSRM6BHe8g7R61rhdFzff8d11phdKxdJe1LBfNiA=",
+        "caption": "Es así, lo que se editaría sería los nombre él y el número y en la parte blanca de abajo donde está el texto ya es algo personalizado de cada acompañante que se enviaría organizado en un Excel para la personalización",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjU3MTE4NGU3LTYyNjUtNGE4NC1hNGRlLTZiMDYyZmZmZWYxYSIsInB1ciI6ImJsb2JfaWQifX0=--35ee9e59ac3a04790f4f1c8a1063aaadb08d24fb/image_ef67c573348a.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Es así, lo que se editaría sería los nombre él y el número y en la parte blanca de abajo donde está el texto ya es algo personalizado de cada acompañante que se enviaría organizado en un Excel para la personalización Image attached (image_ef67c573348a.jpeg) [Size: 45.8 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjU3MTE4NGU3LTYyNjUtNGE4NC1hNGRlLTZiMDYyZmZmZWYxYSIsInB1ciI6ImJsb2JfaWQifX0=--35ee9e59ac3a04790f4f1c8a1063aaadb08d24fb/image_ef67c573348a.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjU3MTE4NGU3LTYyNjUtNGE4NC1hNGRlLTZiMDYyZmZmZWYxYSIsInB1ciI6ImJsb2JfaWQifX0=--35ee9e59ac3a04790f4f1c8a1063aaadb08d24fb/image_ef67c573348a.jpeg",
+          "filename": "image_ef67c573348a.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 46932
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjU3MTE4NGU3LTYyNjUtNGE4NC1hNGRlLTZiMDYyZmZmZWYxYSIsInB1ciI6ImJsb2JfaWQifX0=--35ee9e59ac3a04790f4f1c8a1063aaadb08d24fb/image_ef67c573348a.jpeg",
+        "message_type_data": {
+          "caption": "Es así, lo que se editaría sería los nombre él y el número y en la parte blanca de abajo donde está el texto ya es algo personalizado de cada acompañante que se enviaría organizado en un Excel para la personalización",
+          "has_media": true
+        }
+      },
+      "timestamp": "1785029559",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRkU0RkUzNzJGMjQwODM2QzU4AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Entendido, serían camisetas sueltas para acompañantes. ¿Me envía la foto o referencia del diseño para confirmar lo que necesitan?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRkU0RkUzNzJGMjQwODM2QzU4AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029325",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRkU0RkUzNzJGMjQwODM2QzU4AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029326",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSRkU0RkUzNzJGMjQwODM2QzU4AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029494",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Entendido, serían camisetas sueltas para acompañantes. ¿Me envía la foto o referencia del diseño para confirmar lo que necesitan?"
+      },
+      "timestamp": "1785029324",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0E2QTQzOTY0OTEyNEE4QkQ3NjQA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Es solamente para realizar camisas de acompañantes"
+      },
+      "text": {
+        "body": "Es solamente para realizar camisas de acompañantes"
+      },
+      "timestamp": "1785029290",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0FERjIwNzVFMTA4QTE4QjQwMUEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Sí señorita"
+      },
+      "text": {
+        "body": "Sí señorita"
+      },
+      "timestamp": "1785029268",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNzI0NjA1MkRCRkE2RTE1QjEwAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Perfecto, 23 uniformes de fútbol. ¿Tienen ya el diseño o referencia visual de lo que quieren, o lo arman desde cero?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNzI0NjA1MkRCRkE2RTE1QjEwAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029259",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNzI0NjA1MkRCRkE2RTE1QjEwAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029260",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSNzI0NjA1MkRCRkE2RTE1QjEwAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029264",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, 23 uniformes de fútbol. ¿Tienen ya el diseño o referencia visual de lo que quieren, o lo arman desde cero?"
+      },
+      "timestamp": "1785029258",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0ExOTcxRDdEQkJGM0ZEQkM2NjgA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Aproximadamente 23 adultos"
+      },
+      "text": {
+        "body": "Aproximadamente 23 adultos"
+      },
+      "timestamp": "1785029221",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSN0VCMjhBNzU0MDJDQUY3RjlCAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Buenas, ¿para cuántas personas sería? (mínimo 6)",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSN0VCMjhBNzU0MDJDQUY3RjlCAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029195",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSN0VCMjhBNzU0MDJDQUY3RjlCAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029195",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          },
+          {
+            "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAERgSN0VCMjhBNzU0MDJDQUY3RjlCAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785029199",
+            "recipient_id": "573052656508",
+            "recipient_user_id": "CO.1188856296775554"
+          }
+        ]
+      },
+      "text": {
+        "body": "Buenas, ¿para cuántas personas sería? (mínimo 6)"
+      },
+      "timestamp": "1785029195",
+      "to": "573052656508",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0FGMjE3NjM4QjA0OUY2Q0Q4RkMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Futbol"
+      },
+      "text": {
+        "body": "Futbol"
+      },
+      "timestamp": "1785029118",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573052656508",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1188856296775554",
+      "id": "wamid.HBgMNTczMDUyNjU2NTA4FQIAEhgUM0ExMTg2NDI0QzM5QTQ0Rjk4QjUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573052656508",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+        "contact_name": "𝙀𝙢𝙞𝙡𝙮 𝙯𝙪𝙡𝙪𝙖𝙜𝙖⚕️",
+        "content": "Hola, quiero cotizar uniformes de"
+      },
+      "text": {
+        "body": "Hola, quiero cotizar uniformes de"
+      },
+      "timestamp": "1785029113",
+      "type": "text",
+      "username": null
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yNlQyMzoxMzowNS40NTg3MjZaIiwiMmQ3MzYzNjAtMTY5YS00NzE0LWJkODktYjJkODJjMmY2YWFlIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19",
+      "after": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yNlQwMToyNToxMy42Njc3NTVaIiwiYzRjYjAzMWYtMzAxMi00MGViLWIwZTEtNDg1NWZmODI0YTQ0Il0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19"
+    },
+    "next": null,
+    "previous": null
+  }
+}

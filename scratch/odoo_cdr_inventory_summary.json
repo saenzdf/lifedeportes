@@ -1,0 +1,1625 @@
+{
+  "total_tasks": 220,
+  "total_cdr": 231,
+  "total_bytes": 3385294183,
+  "attachments": [
+    {
+      "id": 24668,
+      "name": "ORDEN DE TRABAJO 2108 ANDRES MONEY.cdr",
+      "res_id": 1969,
+      "file_size": 2783922,
+      "create_date": "2026-05-28 14:11:56"
+    },
+    {
+      "id": 24141,
+      "name": "ANDRES TALENTOS FC 2111.cdr",
+      "res_id": 1971,
+      "file_size": 35966505,
+      "create_date": "2026-05-22 17:53:55"
+    },
+    {
+      "id": 24128,
+      "name": "ORDEN DE TRABAJO 2037 DEVELOPMENT.cdr",
+      "res_id": 1900,
+      "file_size": 6298311,
+      "create_date": "2026-05-22 16:42:57"
+    },
+    {
+      "id": 23767,
+      "name": "ORDEN DE TRABAJO 1990 MARÍA ELVIRA.cdr",
+      "res_id": 1857,
+      "file_size": 2986882,
+      "create_date": "2026-05-20 20:16:29"
+    },
+    {
+      "id": 23761,
+      "name": "ORDEN DE TRABAJO 2034 YOHAN MACHADO.cdr",
+      "res_id": 1897,
+      "file_size": 20521651,
+      "create_date": "2026-05-20 20:02:53"
+    },
+    {
+      "id": 23572,
+      "name": "CAT 2018 2048.cdr",
+      "res_id": 1911,
+      "file_size": 11227296,
+      "create_date": "2026-05-16 16:14:18"
+    },
+    {
+      "id": 23537,
+      "name": "DANNITA 2047.cdr",
+      "res_id": 1910,
+      "file_size": 7457748,
+      "create_date": "2026-05-15 19:54:02"
+    },
+    {
+      "id": 23500,
+      "name": "RUBEN ATRATO 2039.cdr",
+      "res_id": 1902,
+      "file_size": 9960724,
+      "create_date": "2026-05-15 15:42:26"
+    },
+    {
+      "id": 23380,
+      "name": "ORDEN DE TRABAJO 1986 IVAN MERCHAN 1.cdr",
+      "res_id": 1853,
+      "file_size": 3439122,
+      "create_date": "2026-05-14 20:55:13"
+    },
+    {
+      "id": 23284,
+      "name": "ORDEN DE TRABAJO 1978 EMIR BOLA.cdr",
+      "res_id": 1845,
+      "file_size": 8406369,
+      "create_date": "2026-05-14 00:00:25"
+    },
+    {
+      "id": 23255,
+      "name": "RISAS COLOMBIA 2053.cdr",
+      "res_id": 1916,
+      "file_size": 3563340,
+      "create_date": "2026-05-13 20:52:16"
+    },
+    {
+      "id": 23210,
+      "name": "ORDEN DE TRABAJO 1945 JULIAN BUGS BUNNY.cdr",
+      "res_id": 1812,
+      "file_size": 5825197,
+      "create_date": "2026-05-13 14:35:15"
+    },
+    {
+      "id": 23205,
+      "name": "RISAS 2054.cdr",
+      "res_id": 1917,
+      "file_size": 4030307,
+      "create_date": "2026-05-13 13:23:19"
+    },
+    {
+      "id": 23200,
+      "name": "ORDEN DE TRABAJO 1944 MARIANA LICEO.cdr",
+      "res_id": 1811,
+      "file_size": 7863364,
+      "create_date": "2026-05-12 23:43:12"
+    },
+    {
+      "id": 23197,
+      "name": "ORDEN DE TRABAJO 1943 MARCELO.cdr",
+      "res_id": 1810,
+      "file_size": 3852800,
+      "create_date": "2026-05-12 23:17:21"
+    },
+    {
+      "id": 23137,
+      "name": "CARLOS ESPAÑA 2019.cdr",
+      "res_id": 1884,
+      "file_size": 65567080,
+      "create_date": "2026-05-12 18:32:19"
+    },
+    {
+      "id": 23085,
+      "name": "JACKSON 2021.cdr",
+      "res_id": 1886,
+      "file_size": 61217051,
+      "create_date": "2026-05-11 20:55:33"
+    },
+    {
+      "id": 23080,
+      "name": "JHON DEPOSITO 2027.cdr",
+      "res_id": 1891,
+      "file_size": 5777259,
+      "create_date": "2026-05-11 20:11:56"
+    },
+    {
+      "id": 23018,
+      "name": "ORDEN DE TRABAJO 1919 MARIA JOSE .cdr",
+      "res_id": 1786,
+      "file_size": 3294744,
+      "create_date": "2026-05-11 19:11:51"
+    },
+    {
+      "id": 22942,
+      "name": "ORDEN DE TRABAJO 1905 EDGAR.cdr",
+      "res_id": 1772,
+      "file_size": 3230041,
+      "create_date": "2026-05-11 15:32:38"
+    },
+    {
+      "id": 22862,
+      "name": "MARY DRAGON 1928.cdr",
+      "res_id": 1795,
+      "file_size": 32687206,
+      "create_date": "2026-05-09 15:16:46"
+    },
+    {
+      "id": 22757,
+      "name": "ORDEN DE TRABAJO 1865 ANTHO.cdr",
+      "res_id": 1734,
+      "file_size": 18925803,
+      "create_date": "2026-05-07 23:30:18"
+    },
+    {
+      "id": 22654,
+      "name": "ORDEN DE TRABAJO 1891 ANA PEDIDO 3.cdr",
+      "res_id": 1759,
+      "file_size": 2038600,
+      "create_date": "2026-05-07 18:06:43"
+    },
+    {
+      "id": 22587,
+      "name": "CINDY HERRERA 1973.cdr",
+      "res_id": 1840,
+      "file_size": 2112179,
+      "create_date": "2026-05-07 15:46:54"
+    },
+    {
+      "id": 22536,
+      "name": "corazonista 1972.cdr",
+      "res_id": 1839,
+      "file_size": 6682149,
+      "create_date": "2026-05-07 02:12:09"
+    },
+    {
+      "id": 22503,
+      "name": "MARIA 1971.cdr",
+      "res_id": 1838,
+      "file_size": 56670337,
+      "create_date": "2026-05-06 21:30:03"
+    },
+    {
+      "id": 22493,
+      "name": "JUAN 1974.cdr",
+      "res_id": 1841,
+      "file_size": 10969453,
+      "create_date": "2026-05-06 21:04:51"
+    },
+    {
+      "id": 22419,
+      "name": "MADRE LAURA 1975.cdr",
+      "res_id": 1842,
+      "file_size": 45347898,
+      "create_date": "2026-05-06 13:28:47"
+    },
+    {
+      "id": 22405,
+      "name": "ORDEN DE TRABAJO 1866 EMI.cdr",
+      "res_id": 1735,
+      "file_size": 2432567,
+      "create_date": "2026-05-06 00:43:33"
+    },
+    {
+      "id": 22388,
+      "name": "ORDEN DE TRABAJO 1857 ALEJANDRA ABRILAEROBICOS.cdr",
+      "res_id": 1726,
+      "file_size": 11251254,
+      "create_date": "2026-05-05 22:54:28"
+    },
+    {
+      "id": 22380,
+      "name": "ORDEN DE TRABAJO 1854 OXCAR.cdr",
+      "res_id": 1723,
+      "file_size": 4003544,
+      "create_date": "2026-05-05 22:05:54"
+    },
+    {
+      "id": 22338,
+      "name": "ORDEN DE TRABAJO 1833 NANA CORONEL.cdr",
+      "res_id": 1704,
+      "file_size": 37334494,
+      "create_date": "2026-05-05 20:13:32"
+    },
+    {
+      "id": 22327,
+      "name": "CLARA VEGA 1938.cdr",
+      "res_id": 1805,
+      "file_size": 63264649,
+      "create_date": "2026-05-05 19:49:16"
+    },
+    {
+      "id": 22289,
+      "name": "ANA PEDIDO #5 1918.cdr",
+      "res_id": 1785,
+      "file_size": 5067207,
+      "create_date": "2026-05-05 16:46:43"
+    },
+    {
+      "id": 22281,
+      "name": "JAMILSON UNIFORMES 1915.cdr",
+      "res_id": 1782,
+      "file_size": 2386276,
+      "create_date": "2026-05-05 16:26:28"
+    },
+    {
+      "id": 22270,
+      "name": "ANA PEDIDO #4 1907.cdr",
+      "res_id": 1774,
+      "file_size": 4903093,
+      "create_date": "2026-05-05 16:11:23"
+    },
+    {
+      "id": 22265,
+      "name": "EDWIN GARZON 1888.cdr",
+      "res_id": 1756,
+      "file_size": 13621112,
+      "create_date": "2026-05-05 16:10:56"
+    },
+    {
+      "id": 22227,
+      "name": "PATRICIA QUIROGA 1967.cdr",
+      "res_id": 1834,
+      "file_size": 3947889,
+      "create_date": "2026-05-05 12:58:22"
+    },
+    {
+      "id": 22219,
+      "name": "ruta fc 1950.cdr",
+      "res_id": 1817,
+      "file_size": 4705002,
+      "create_date": "2026-05-05 01:49:44"
+    },
+    {
+      "id": 22151,
+      "name": "azalia 1887.cdr",
+      "res_id": 1755,
+      "file_size": 25657194,
+      "create_date": "2026-05-04 20:12:11"
+    },
+    {
+      "id": 22124,
+      "name": "MARTA GONZALEZ 1951.cdr",
+      "res_id": 1818,
+      "file_size": 1313141,
+      "create_date": "2026-05-04 19:12:28"
+    },
+    {
+      "id": 22087,
+      "name": "ANA 2 1862.cdr",
+      "res_id": 1736,
+      "file_size": 46880657,
+      "create_date": "2026-05-04 16:47:13"
+    },
+    {
+      "id": 22070,
+      "name": "SUEÑOS DORADOS 1948.cdr",
+      "res_id": 1815,
+      "file_size": 21071685,
+      "create_date": "2026-05-04 00:27:23"
+    },
+    {
+      "id": 22066,
+      "name": "JULIETH 1930.cdr",
+      "res_id": 1797,
+      "file_size": 15229121,
+      "create_date": "2026-05-02 22:24:26"
+    },
+    {
+      "id": 22030,
+      "name": "ADMI RAIDERS 1912.cdr",
+      "res_id": 1779,
+      "file_size": 1587930,
+      "create_date": "2026-05-02 17:41:39"
+    },
+    {
+      "id": 21995,
+      "name": "ARMANDO ICA AGROVID 1913.cdr",
+      "res_id": 1780,
+      "file_size": 13303423,
+      "create_date": "2026-05-02 16:33:52"
+    },
+    {
+      "id": 21979,
+      "name": "MARI SUAREZ 1901.cdr",
+      "res_id": 1769,
+      "file_size": 7854367,
+      "create_date": "2026-05-02 15:16:38"
+    },
+    {
+      "id": 21892,
+      "name": "NORMA RAMOS 1880.cdr",
+      "res_id": 1748,
+      "file_size": 21187209,
+      "create_date": "2026-04-30 23:00:58"
+    },
+    {
+      "id": 21884,
+      "name": "ALE JAPAN 1910.cdr",
+      "res_id": 1777,
+      "file_size": 47955041,
+      "create_date": "2026-04-30 18:51:10"
+    },
+    {
+      "id": 21878,
+      "name": "GRUPO FAC 1885.cdr",
+      "res_id": 1753,
+      "file_size": 14982779,
+      "create_date": "2026-04-30 17:03:51"
+    },
+    {
+      "id": 21748,
+      "name": "FERNANDO ALVEAR 1850.cdr",
+      "res_id": 1719,
+      "file_size": 11279637,
+      "create_date": "2026-04-30 02:46:01"
+    },
+    {
+      "id": 21743,
+      "name": "ORDEN DE TRABAJO 1812 IVAN IVAN.cdr",
+      "res_id": 1683,
+      "file_size": 14627013,
+      "create_date": "2026-04-30 01:30:17"
+    },
+    {
+      "id": 21709,
+      "name": "ORDEN DE TRABAJO 1787 JINNY LOZANO .cdr",
+      "res_id": 1658,
+      "file_size": 3504321,
+      "create_date": "2026-04-29 22:13:08"
+    },
+    {
+      "id": 21694,
+      "name": "ORDEN DE TRABAJO 1786 BANQUETBERTA.cdr",
+      "res_id": 1657,
+      "file_size": 13903077,
+      "create_date": "2026-04-29 19:38:34"
+    },
+    {
+      "id": 21690,
+      "name": "LUIS SALAZAR 1830.cdr",
+      "res_id": 1701,
+      "file_size": 2353676,
+      "create_date": "2026-04-29 18:39:02"
+    },
+    {
+      "id": 21687,
+      "name": "ORDEN DE TRABAJO 1779 AMATEUR FLORESTA.cdr",
+      "res_id": 1650,
+      "file_size": 7833408,
+      "create_date": "2026-04-29 18:07:07"
+    },
+    {
+      "id": 21675,
+      "name": "ORDEN DE TRABAJO 1776 SILVANA BOGOTA unif.cdr",
+      "res_id": 1647,
+      "file_size": 19049886,
+      "create_date": "2026-04-29 16:25:10"
+    },
+    {
+      "id": 21673,
+      "name": "ORDEN DE TRABAJO 1776 SILVANA BOGOTA LASER.cdr",
+      "res_id": 1647,
+      "file_size": 15402525,
+      "create_date": "2026-04-29 16:25:06"
+    },
+    {
+      "id": 21654,
+      "name": "FELIPE CANTERA CHAQUETAS 1827.cdr",
+      "res_id": 1698,
+      "file_size": 1879541,
+      "create_date": "2026-04-29 15:41:58"
+    },
+    {
+      "id": 21622,
+      "name": "MARCO GUAINIA 1914.cdr",
+      "res_id": 1781,
+      "file_size": 13092674,
+      "create_date": "2026-04-29 14:21:54"
+    },
+    {
+      "id": 21531,
+      "name": "ZULY AMAYA 1720.cdr",
+      "res_id": 1595,
+      "file_size": 31552011,
+      "create_date": "2026-04-28 19:16:35"
+    },
+    {
+      "id": 21430,
+      "name": "SUBA FUTBOLERA 1828.cdr",
+      "res_id": 1699,
+      "file_size": 5220874,
+      "create_date": "2026-04-28 02:23:13"
+    },
+    {
+      "id": 21397,
+      "name": "ORDEN DE TRABAJO 1769 CARMEL.cdr",
+      "res_id": 1640,
+      "file_size": 3732146,
+      "create_date": "2026-04-27 21:38:36"
+    },
+    {
+      "id": 21382,
+      "name": "ORDEN DE TRABAJO 1749 STARLIGHT.cdr",
+      "res_id": 1620,
+      "file_size": 3253754,
+      "create_date": "2026-04-27 19:34:14"
+    },
+    {
+      "id": 21375,
+      "name": "SAURIOS 1774.cdr",
+      "res_id": 1645,
+      "file_size": 14313244,
+      "create_date": "2026-04-27 19:13:40"
+    },
+    {
+      "id": 21361,
+      "name": "ORDEN DE TRABAJO 1747 LAU VOLEY.cdr",
+      "res_id": 1618,
+      "file_size": 3125622,
+      "create_date": "2026-04-27 17:25:02"
+    },
+    {
+      "id": 21356,
+      "name": "ORDEN DE TRABAJO 1778 SARA MALO.cdr",
+      "res_id": 1649,
+      "file_size": 3298877,
+      "create_date": "2026-04-27 17:11:58"
+    },
+    {
+      "id": 21344,
+      "name": "ORDEN DE TRABAJO 1745 SHALO.cdr",
+      "res_id": 1616,
+      "file_size": 17978204,
+      "create_date": "2026-04-27 16:08:52"
+    },
+    {
+      "id": 21337,
+      "name": "ORDEN DE TRABAJO 1689 ANDREINA.cdr",
+      "res_id": 1565,
+      "file_size": 9661264,
+      "create_date": "2026-04-27 15:48:38"
+    },
+    {
+      "id": 21277,
+      "name": "ADRI RAMIREZ 1803.cdr",
+      "res_id": 1674,
+      "file_size": 8059188,
+      "create_date": "2026-04-26 19:56:03"
+    },
+    {
+      "id": 21255,
+      "name": "PARAGUANERO 1849.cdr",
+      "res_id": 1718,
+      "file_size": 46179883,
+      "create_date": "2026-04-25 16:43:25"
+    },
+    {
+      "id": 21244,
+      "name": "PEDAGOGICA 1848.cdr",
+      "res_id": 1717,
+      "file_size": 14244282,
+      "create_date": "2026-04-25 14:01:26"
+    },
+    {
+      "id": 21241,
+      "name": "HH ALEMANIA 1795.cdr",
+      "res_id": 1666,
+      "file_size": 36615966,
+      "create_date": "2026-04-25 00:14:27"
+    },
+    {
+      "id": 21232,
+      "name": "JHONNY DE JESUS 1772.cdr",
+      "res_id": 1643,
+      "file_size": 9073618,
+      "create_date": "2026-04-24 22:01:06"
+    },
+    {
+      "id": 21109,
+      "name": "MARQUETALIA FC 1785.cdr",
+      "res_id": 1656,
+      "file_size": 21528206,
+      "create_date": "2026-04-24 15:19:58"
+    },
+    {
+      "id": 21079,
+      "name": "BLANCA ORTIZ 1796.cdr",
+      "res_id": 1667,
+      "file_size": 1445745,
+      "create_date": "2026-04-24 14:15:54"
+    },
+    {
+      "id": 21075,
+      "name": "danna gabriela 1781.cdr",
+      "res_id": 1652,
+      "file_size": 6944870,
+      "create_date": "2026-04-24 01:03:17"
+    },
+    {
+      "id": 21059,
+      "name": "LAURA ANALISTA 1733.cdr",
+      "res_id": 1608,
+      "file_size": 8740234,
+      "create_date": "2026-04-23 23:21:07"
+    },
+    {
+      "id": 21016,
+      "name": "ORDEN DE TRABAJO 1730 AMANDA SUAREZ.cdr",
+      "res_id": 1605,
+      "file_size": 9920289,
+      "create_date": "2026-04-23 22:02:01"
+    },
+    {
+      "id": 21012,
+      "name": "ORDEN DE TRABAJO 1729 VIVIANA ARANGO.cdr",
+      "res_id": 1604,
+      "file_size": 7759065,
+      "create_date": "2026-04-23 21:28:18"
+    },
+    {
+      "id": 20995,
+      "name": "ORDEN DE TRABAJO 1726 CLUB DEPORTIVO NATURAL.cdr",
+      "res_id": 1601,
+      "file_size": 17873295,
+      "create_date": "2026-04-23 20:34:18"
+    },
+    {
+      "id": 20971,
+      "name": "ORDEN DE TRABAJO 1724 ROYAL CHAQUETAS.cdr",
+      "res_id": 1599,
+      "file_size": 9619678,
+      "create_date": "2026-04-23 19:34:49"
+    },
+    {
+      "id": 20945,
+      "name": "MEXICO 1783.cdr",
+      "res_id": 1654,
+      "file_size": 23644578,
+      "create_date": "2026-04-23 17:43:49"
+    },
+    {
+      "id": 20935,
+      "name": "ORDEN DE TRABAJO 1707 SEBASTIAN ABRIL.cdr",
+      "res_id": 1582,
+      "file_size": 8866256,
+      "create_date": "2026-04-23 15:47:59"
+    },
+    {
+      "id": 20905,
+      "name": "ORDEN DE TRABAJO 1670 ANGEL 100 GABRIEL.cdr",
+      "res_id": 1546,
+      "file_size": 3988650,
+      "create_date": "2026-04-22 23:00:37"
+    },
+    {
+      "id": 20870,
+      "name": "ORDEN DE TRABAJO 1668 LUIS LOPERA POLOS.cdr",
+      "res_id": 1544,
+      "file_size": 5009950,
+      "create_date": "2026-04-22 20:08:13"
+    },
+    {
+      "id": 20818,
+      "name": "TATIANA OSORIO 1744.cdr",
+      "res_id": 1615,
+      "file_size": 40251919,
+      "create_date": "2026-04-22 14:48:56"
+    },
+    {
+      "id": 20790,
+      "name": "LAURA SMART WORLD 1797.cdr",
+      "res_id": 1668,
+      "file_size": 9056922,
+      "create_date": "2026-04-22 04:46:01"
+    },
+    {
+      "id": 20787,
+      "name": "INDEPENDIENTE 1798.cdr",
+      "res_id": 1669,
+      "file_size": 2069598,
+      "create_date": "2026-04-22 03:48:46"
+    },
+    {
+      "id": 20784,
+      "name": "DICSON MEDINA 1759.cdr",
+      "res_id": 1630,
+      "file_size": 23220966,
+      "create_date": "2026-04-22 03:40:04"
+    },
+    {
+      "id": 20780,
+      "name": "JENNY 1721.cdr",
+      "res_id": 1596,
+      "file_size": 11100156,
+      "create_date": "2026-04-21 22:27:53"
+    },
+    {
+      "id": 20768,
+      "name": "ORDEN DE TRABAJO 1704 FREDDY RENGIFO.cdr",
+      "res_id": 1579,
+      "file_size": 6236999,
+      "create_date": "2026-04-21 21:33:25"
+    },
+    {
+      "id": 20742,
+      "name": "ORDEN DE TRABAJO 1701 JOSE ISIDRO.cdr",
+      "res_id": 1577,
+      "file_size": 17438028,
+      "create_date": "2026-04-21 20:31:41"
+    },
+    {
+      "id": 20698,
+      "name": "LAURA MEXICO ROSADO 1762.cdr",
+      "res_id": 1633,
+      "file_size": 50919963,
+      "create_date": "2026-04-21 19:05:08"
+    },
+    {
+      "id": 20681,
+      "name": "ORDEN DE TRABAJO 1690 REDBULL.cdr",
+      "res_id": 1566,
+      "file_size": 9838578,
+      "create_date": "2026-04-21 18:03:53"
+    },
+    {
+      "id": 20678,
+      "name": "ORDEN DE TRABAJO 1683 RICARDO JAPON LA FAMILIA.cdr",
+      "res_id": 1559,
+      "file_size": 3955955,
+      "create_date": "2026-04-21 17:37:44"
+    },
+    {
+      "id": 20630,
+      "name": "DIEGO CHILDRENS 1782.cdr",
+      "res_id": 1653,
+      "file_size": 14776280,
+      "create_date": "2026-04-21 15:53:01"
+    },
+    {
+      "id": 20578,
+      "name": "NUEVO MILENIO 1686.cdr",
+      "res_id": 1562,
+      "file_size": 10704789,
+      "create_date": "2026-04-20 18:32:18"
+    },
+    {
+      "id": 20575,
+      "name": "LAURA MEXICO 1761.cdr",
+      "res_id": 1632,
+      "file_size": 25987538,
+      "create_date": "2026-04-20 18:15:51"
+    },
+    {
+      "id": 20503,
+      "name": "SUBA FUTBOLERA 1764.cdr",
+      "res_id": 1635,
+      "file_size": 5366874,
+      "create_date": "2026-04-19 22:36:52"
+    },
+    {
+      "id": 20502,
+      "name": "MONICA AVILA 1727.cdr",
+      "res_id": 1602,
+      "file_size": 57847915,
+      "create_date": "2026-04-18 18:33:21"
+    },
+    {
+      "id": 20346,
+      "name": "ORDEN DE TRABAJO 1667 FRANCISNEY.cdr",
+      "res_id": 1543,
+      "file_size": 6455593,
+      "create_date": "2026-04-17 22:49:16"
+    },
+    {
+      "id": 20326,
+      "name": "ORDEN DE TRABAJO 1662 NANA CORONEL.cdr",
+      "res_id": 1538,
+      "file_size": 4583410,
+      "create_date": "2026-04-17 21:21:54"
+    },
+    {
+      "id": 20318,
+      "name": "ORDEN DE TRABAJO 1659 SHARITO.cdr",
+      "res_id": 1535,
+      "file_size": 16440130,
+      "create_date": "2026-04-17 20:52:18"
+    },
+    {
+      "id": 20252,
+      "name": "ORDEN DE TRABAJO 1675 ANGEL 100 FRANCIA.cdr",
+      "res_id": 1551,
+      "file_size": 5530788,
+      "create_date": "2026-04-17 16:46:21"
+    },
+    {
+      "id": 20178,
+      "name": "RICHARD JORY 1648.cdr",
+      "res_id": 1524,
+      "file_size": 7645565,
+      "create_date": "2026-04-16 18:25:36"
+    },
+    {
+      "id": 20069,
+      "name": "KONG 1718.cdr",
+      "res_id": 1593,
+      "file_size": 32405248,
+      "create_date": "2026-04-16 15:40:38"
+    },
+    {
+      "id": 20065,
+      "name": "CORAZONISTA BRAYAN 1719.cdr",
+      "res_id": 1594,
+      "file_size": 4081573,
+      "create_date": "2026-04-16 13:43:36"
+    },
+    {
+      "id": 20056,
+      "name": "FENIX LESLIE 1714.cdr",
+      "res_id": 1589,
+      "file_size": 6272216,
+      "create_date": "2026-04-16 02:57:01"
+    },
+    {
+      "id": 20050,
+      "name": "FORTALEZA 1697 ADICIONALES.cdr",
+      "res_id": 1573,
+      "file_size": 6260325,
+      "create_date": "2026-04-16 02:39:37"
+    },
+    {
+      "id": 19951,
+      "name": "JORGE RAMIREZ  1636.cdr",
+      "res_id": 1512,
+      "file_size": 21577231,
+      "create_date": "2026-04-15 21:17:53"
+    },
+    {
+      "id": 19944,
+      "name": "PIKAREPA 1641.cdr",
+      "res_id": 1517,
+      "file_size": 2769961,
+      "create_date": "2026-04-15 19:59:53"
+    },
+    {
+      "id": 19911,
+      "name": "ORDEN DE TRABAJO 1647 UNIDAD.cdr",
+      "res_id": 1523,
+      "file_size": 19756595,
+      "create_date": "2026-04-15 18:24:23"
+    },
+    {
+      "id": 19907,
+      "name": "ORDEN DE TRABAJO 1645 ROBINSON LEON.cdr",
+      "res_id": 1521,
+      "file_size": 3367271,
+      "create_date": "2026-04-15 18:16:21"
+    },
+    {
+      "id": 19817,
+      "name": "ORDEN DE TRABAJO 1666 ACEPALMA.cdr",
+      "res_id": 1542,
+      "file_size": 16801724,
+      "create_date": "2026-04-14 23:01:44"
+    },
+    {
+      "id": 19811,
+      "name": "FORTALEZA DORADO 1697.cdr",
+      "res_id": 1573,
+      "file_size": 6230411,
+      "create_date": "2026-04-14 20:32:28"
+    },
+    {
+      "id": 19810,
+      "name": "FORTALEZA BLANCO 1697.cdr",
+      "res_id": 1573,
+      "file_size": 2984357,
+      "create_date": "2026-04-14 20:32:27"
+    },
+    {
+      "id": 19809,
+      "name": "FORTALEZA AZUL 1697.cdr",
+      "res_id": 1573,
+      "file_size": 4898768,
+      "create_date": "2026-04-14 20:32:27"
+    },
+    {
+      "id": 19808,
+      "name": "FORTALEZA presentacion 1697.cdr",
+      "res_id": 1573,
+      "file_size": 4245448,
+      "create_date": "2026-04-14 20:32:27"
+    },
+    {
+      "id": 19807,
+      "name": "FORTALEZA CHAQUETAS 1697.cdr",
+      "res_id": 1573,
+      "file_size": 2941906,
+      "create_date": "2026-04-14 20:32:26"
+    },
+    {
+      "id": 19768,
+      "name": "ORDEN DE TRABAJO 1637 NADIE MU.cdr",
+      "res_id": 1513,
+      "file_size": 4551526,
+      "create_date": "2026-04-14 16:56:52"
+    },
+    {
+      "id": 19767,
+      "name": "ORDEN DE TRABAJO 1637 NADIE.cdr",
+      "res_id": 1513,
+      "file_size": 3421105,
+      "create_date": "2026-04-14 16:56:52"
+    },
+    {
+      "id": 19765,
+      "name": "ORDEN DE TRABAJO 1637 NADIE EZLN.cdr",
+      "res_id": 1513,
+      "file_size": 2783026,
+      "create_date": "2026-04-14 16:56:52"
+    },
+    {
+      "id": 19704,
+      "name": "Y.V 1671.cdr",
+      "res_id": 1547,
+      "file_size": 6343260,
+      "create_date": "2026-04-14 04:41:41"
+    },
+    {
+      "id": 19233,
+      "name": "JORGE H 1677.cdr",
+      "res_id": 1553,
+      "file_size": 45129374,
+      "create_date": "2026-04-11 19:34:37"
+    },
+    {
+      "id": 19221,
+      "name": "ESPAÑA 1626.cdr",
+      "res_id": 1502,
+      "file_size": 23007995,
+      "create_date": "2026-04-11 17:52:37"
+    },
+    {
+      "id": 19211,
+      "name": "CRISTIAN TORRES 1673.cdr",
+      "res_id": 1549,
+      "file_size": 41436369,
+      "create_date": "2026-04-11 17:44:55"
+    },
+    {
+      "id": 19184,
+      "name": "ORDEN DE TRABAJO 1607 EDER PAEZ.cdr",
+      "res_id": 1483,
+      "file_size": 7956030,
+      "create_date": "2026-04-10 21:19:51"
+    },
+    {
+      "id": 18999,
+      "name": "JB 1639.cdr",
+      "res_id": 1515,
+      "file_size": 1194249,
+      "create_date": "2026-04-10 13:57:49"
+    },
+    {
+      "id": 18983,
+      "name": "TANDEM 1625.cdr",
+      "res_id": 1501,
+      "file_size": 2234217,
+      "create_date": "2026-04-10 02:51:16"
+    },
+    {
+      "id": 18977,
+      "name": "ERICK8 1623.cdr",
+      "res_id": 1499,
+      "file_size": 9610021,
+      "create_date": "2026-04-09 22:42:57"
+    },
+    {
+      "id": 18971,
+      "name": "TU IDEA 1649.cdr",
+      "res_id": 1525,
+      "file_size": 6988007,
+      "create_date": "2026-04-09 21:30:21"
+    },
+    {
+      "id": 18966,
+      "name": "ORDEN DE TRABAJO 1615 MEZLY IGUARAN.cdr",
+      "res_id": 1491,
+      "file_size": 6901122,
+      "create_date": "2026-04-09 20:44:42"
+    },
+    {
+      "id": 18849,
+      "name": "JUAN BARRIOS 1603.cdr",
+      "res_id": 1479,
+      "file_size": 10239743,
+      "create_date": "2026-04-09 15:45:31"
+    },
+    {
+      "id": 18831,
+      "name": "YUDERKIS CARDENAS 1584.cdr",
+      "res_id": 1460,
+      "file_size": 39130713,
+      "create_date": "2026-04-09 01:57:12"
+    },
+    {
+      "id": 18828,
+      "name": "DIANA MURCIA 1611.cdr",
+      "res_id": 1487,
+      "file_size": 13101817,
+      "create_date": "2026-04-08 21:46:10"
+    },
+    {
+      "id": 18816,
+      "name": "ORDEN DE TRABAJO 1521 ALVARO RIVER.cdr",
+      "res_id": 1400,
+      "file_size": 6628713,
+      "create_date": "2026-04-08 19:50:15"
+    },
+    {
+      "id": 18814,
+      "name": "ANNY ALVAREZ 1593 ADICIONAL.cdr",
+      "res_id": 1469,
+      "file_size": 3563357,
+      "create_date": "2026-04-08 19:40:23"
+    },
+    {
+      "id": 18810,
+      "name": "SERGIO CASTRO 1589.cdr",
+      "res_id": 1465,
+      "file_size": 8208796,
+      "create_date": "2026-04-08 19:21:51"
+    },
+    {
+      "id": 18782,
+      "name": "ANNY ALVAREZ 1593.cdr",
+      "res_id": 1469,
+      "file_size": 21321616,
+      "create_date": "2026-04-08 16:18:00"
+    },
+    {
+      "id": 18770,
+      "name": "RICARDO CRISTANCHO 1591.cdr",
+      "res_id": 1468,
+      "file_size": 5175247,
+      "create_date": "2026-04-08 16:02:21"
+    },
+    {
+      "id": 18609,
+      "name": "ORDEN DE TRABAJO 1532 JACOBO ROJAS.cdr",
+      "res_id": 1411,
+      "file_size": 27765339,
+      "create_date": "2026-04-06 21:57:14"
+    },
+    {
+      "id": 18599,
+      "name": "AMIGO DE TOÑO 1596.cdr",
+      "res_id": 1472,
+      "file_size": 8341804,
+      "create_date": "2026-04-06 20:51:50"
+    },
+    {
+      "id": 18561,
+      "name": "EXPRESO BOGOTA 1582.cdr",
+      "res_id": 1458,
+      "file_size": 21321265,
+      "create_date": "2026-04-06 18:00:09"
+    },
+    {
+      "id": 18507,
+      "name": "MISS PAOLA 1583.cdr",
+      "res_id": 1459,
+      "file_size": 18988554,
+      "create_date": "2026-04-06 16:17:32"
+    },
+    {
+      "id": 18460,
+      "name": "ORDEN DE TRABAJO 1534 SARA NOVA.cdr",
+      "res_id": 1413,
+      "file_size": 4108288,
+      "create_date": "2026-04-06 14:27:30"
+    },
+    {
+      "id": 18321,
+      "name": "JUAN ESTEBAN 1564.cdr",
+      "res_id": 1440,
+      "file_size": 14120440,
+      "create_date": "2026-04-01 21:33:05"
+    },
+    {
+      "id": 18297,
+      "name": "ORDEN DE TRABAJO 1533 ALEJANDRO BARON.cdr",
+      "res_id": 1412,
+      "file_size": 12444311,
+      "create_date": "2026-04-01 19:38:13"
+    },
+    {
+      "id": 18294,
+      "name": "ORDEN DE TRABAJO 1344 ALCIRA.cdr",
+      "res_id": 1237,
+      "file_size": 10956624,
+      "create_date": "2026-04-01 19:22:29"
+    },
+    {
+      "id": 18287,
+      "name": "YILBERSON AHUE 1566.cdr",
+      "res_id": 1442,
+      "file_size": 5351183,
+      "create_date": "2026-04-01 17:45:40"
+    },
+    {
+      "id": 18277,
+      "name": "ANGYE PEREZ 1430 2.cdr",
+      "res_id": 1318,
+      "file_size": 26367241,
+      "create_date": "2026-04-01 16:29:09"
+    },
+    {
+      "id": 18274,
+      "name": "SAMUEL CARDENAS 1529.cdr",
+      "res_id": 1408,
+      "file_size": 16430738,
+      "create_date": "2026-04-01 16:23:22"
+    },
+    {
+      "id": 18269,
+      "name": "SANTIAGO MIRANDA 1567.cdr",
+      "res_id": 1443,
+      "file_size": 24688911,
+      "create_date": "2026-04-01 16:20:49"
+    },
+    {
+      "id": 18198,
+      "name": "ORDEN DE TRABAJO 1526 CARLOS BEDOYA.cdr",
+      "res_id": 1405,
+      "file_size": 6204874,
+      "create_date": "2026-03-31 21:51:45"
+    },
+    {
+      "id": 18184,
+      "name": "YORLEIDY TRIANA 1552.cdr",
+      "res_id": 1430,
+      "file_size": 43165695,
+      "create_date": "2026-03-31 18:34:33"
+    },
+    {
+      "id": 18155,
+      "name": "VC FONTALVO 1565.cdr",
+      "res_id": 1441,
+      "file_size": 12776542,
+      "create_date": "2026-03-31 06:09:38"
+    },
+    {
+      "id": 18139,
+      "name": "NICOLAS SALCHIPAPAS  1420.cdr",
+      "res_id": 1308,
+      "file_size": 8328462,
+      "create_date": "2026-03-30 22:08:27"
+    },
+    {
+      "id": 18085,
+      "name": "ALEXANDRA ORTIZ 1530.cdr",
+      "res_id": 1409,
+      "file_size": 4645074,
+      "create_date": "2026-03-30 20:05:39"
+    },
+    {
+      "id": 18007,
+      "name": "ANGELA CHACON 1550.cdr",
+      "res_id": 1428,
+      "file_size": 15423526,
+      "create_date": "2026-03-30 15:55:02"
+    },
+    {
+      "id": 17990,
+      "name": "ADIELA RODRIGUEZ 1514.cdr",
+      "res_id": 1394,
+      "file_size": 19283481,
+      "create_date": "2026-03-30 13:38:00"
+    },
+    {
+      "id": 17981,
+      "name": "ANDREA GUTIERREZ 1518.cdr",
+      "res_id": 1398,
+      "file_size": 11597038,
+      "create_date": "2026-03-29 17:34:37"
+    },
+    {
+      "id": 17916,
+      "name": "SALOME 1519.cdr",
+      "res_id": 1399,
+      "file_size": 5175289,
+      "create_date": "2026-03-28 18:09:37"
+    },
+    {
+      "id": 17886,
+      "name": "PABLO HUFFELPUFF 1515.cdr",
+      "res_id": 1395,
+      "file_size": 15688474,
+      "create_date": "2026-03-28 15:50:49"
+    },
+    {
+      "id": 17871,
+      "name": "PILAR RODRIGUEZ 1501.cdr",
+      "res_id": 1383,
+      "file_size": 16857867,
+      "create_date": "2026-03-28 14:13:31"
+    },
+    {
+      "id": 17861,
+      "name": "JUAN 1509.cdr",
+      "res_id": 1390,
+      "file_size": 40519814,
+      "create_date": "2026-03-28 03:30:03"
+    },
+    {
+      "id": 17853,
+      "name": "CORAZONISTA BRAYAN 1510.cdr",
+      "res_id": 1391,
+      "file_size": 2937301,
+      "create_date": "2026-03-28 01:16:20"
+    },
+    {
+      "id": 17821,
+      "name": "carlos rios 1402.cdr",
+      "res_id": 1290,
+      "file_size": 28789732,
+      "create_date": "2026-03-27 21:48:03"
+    },
+    {
+      "id": 17778,
+      "name": "ANA C 1471.cdr",
+      "res_id": 1360,
+      "file_size": 16703958,
+      "create_date": "2026-03-27 16:56:42"
+    },
+    {
+      "id": 17759,
+      "name": "YILBERSON AHUE 1477.cdr",
+      "res_id": 1365,
+      "file_size": 3238784,
+      "create_date": "2026-03-27 13:34:04"
+    },
+    {
+      "id": 17619,
+      "name": "ORDEN DE TRABAJO 1433 JINNY LOZANO .cdr",
+      "res_id": 1321,
+      "file_size": 3150360,
+      "create_date": "2026-03-26 19:41:16"
+    },
+    {
+      "id": 17612,
+      "name": "ELIANA 1447.cdr",
+      "res_id": 1335,
+      "file_size": 6791168,
+      "create_date": "2026-03-26 16:57:27"
+    },
+    {
+      "id": 17596,
+      "name": "INDEPENDIENTE 1496.cdr",
+      "res_id": 1380,
+      "file_size": 2774028,
+      "create_date": "2026-03-26 14:07:53"
+    },
+    {
+      "id": 17548,
+      "name": "ORDEN DE TRABAJO 1413 ESTEBAN PRADA.cdr",
+      "res_id": 1301,
+      "file_size": 8928285,
+      "create_date": "2026-03-25 22:42:37"
+    },
+    {
+      "id": 17510,
+      "name": "MALPORTADAS 1495.cdr",
+      "res_id": 1379,
+      "file_size": 9540609,
+      "create_date": "2026-03-25 21:48:25"
+    },
+    {
+      "id": 17443,
+      "name": "ORDEN DE TRABAJO 1395 CHOACHI BLANCO.cdr",
+      "res_id": 1283,
+      "file_size": 4321594,
+      "create_date": "2026-03-25 17:58:22"
+    },
+    {
+      "id": 17442,
+      "name": "ORDEN DE TRABAJO 1395 CHOACHI DUVAN NEGRO.cdr",
+      "res_id": 1283,
+      "file_size": 3760037,
+      "create_date": "2026-03-25 17:58:22"
+    },
+    {
+      "id": 17422,
+      "name": "ORDEN DE TRABAJO 1392 TRILLADORA.cdr",
+      "res_id": 1280,
+      "file_size": 9335816,
+      "create_date": "2026-03-25 16:33:35"
+    },
+    {
+      "id": 17402,
+      "name": "JUANCHITO FORZA 1444.cdr",
+      "res_id": 1332,
+      "file_size": 43081029,
+      "create_date": "2026-03-24 22:18:52"
+    },
+    {
+      "id": 17379,
+      "name": "ITURRI 1453.cdr",
+      "res_id": 1341,
+      "file_size": 12509675,
+      "create_date": "2026-03-24 18:51:42"
+    },
+    {
+      "id": 17370,
+      "name": "ORDEN DE TRABAJO 1366 EGP.cdr",
+      "res_id": 1254,
+      "file_size": 31656200,
+      "create_date": "2026-03-24 17:20:57"
+    },
+    {
+      "id": 17367,
+      "name": "ORDEN DE TRABAJO 1384 FELIPE L.cdr",
+      "res_id": 1272,
+      "file_size": 5719176,
+      "create_date": "2026-03-24 17:05:26"
+    },
+    {
+      "id": 17280,
+      "name": "ORDEN DE TRABAJO 1353 DIEGO UBUNTO.cdr",
+      "res_id": 1246,
+      "file_size": 18867954,
+      "create_date": "2026-03-24 14:11:43"
+    },
+    {
+      "id": 17253,
+      "name": "ORDEN DE TRABAJO 1326 JOSE MONTIEL.cdr",
+      "res_id": 1219,
+      "file_size": 15050561,
+      "create_date": "2026-03-23 17:38:04"
+    },
+    {
+      "id": 17249,
+      "name": "JUANA CARO 1418.cdr",
+      "res_id": 1306,
+      "file_size": 59888229,
+      "create_date": "2026-03-23 16:41:35"
+    },
+    {
+      "id": 17244,
+      "name": "DIEGO FUERTE 1456.cdr",
+      "res_id": 1344,
+      "file_size": 33887635,
+      "create_date": "2026-03-23 16:09:52"
+    },
+    {
+      "id": 17220,
+      "name": "ANDRES CARRION 1428.cdr",
+      "res_id": 1316,
+      "file_size": 23050247,
+      "create_date": "2026-03-22 04:35:04"
+    },
+    {
+      "id": 17177,
+      "name": "GLORIA REBECA 1422.cdr",
+      "res_id": 1310,
+      "file_size": 5369545,
+      "create_date": "2026-03-21 17:18:29"
+    },
+    {
+      "id": 17166,
+      "name": "AVIACION 1417.cdr",
+      "res_id": 1305,
+      "file_size": 8255406,
+      "create_date": "2026-03-21 16:58:42"
+    },
+    {
+      "id": 17160,
+      "name": "ADRI ROCHA 1424.cdr",
+      "res_id": 1312,
+      "file_size": 7187597,
+      "create_date": "2026-03-21 16:46:45"
+    },
+    {
+      "id": 17112,
+      "name": "ORDEN DE TRABAJO 1398 JAC.cdr",
+      "res_id": 1286,
+      "file_size": 41138526,
+      "create_date": "2026-03-20 20:00:24"
+    },
+    {
+      "id": 17105,
+      "name": "VANESA 1414.cdr",
+      "res_id": 1302,
+      "file_size": 12828861,
+      "create_date": "2026-03-20 19:33:55"
+    },
+    {
+      "id": 17082,
+      "name": "ORDEN DE TRABAJO 1371 LAU VOLEY.cdr",
+      "res_id": 1259,
+      "file_size": 3325778,
+      "create_date": "2026-03-20 16:23:29"
+    },
+    {
+      "id": 17077,
+      "name": "ORDEN DE TRABAJO 1345 CLUB ARGENTINOS.cdr",
+      "res_id": 1238,
+      "file_size": 4199772,
+      "create_date": "2026-03-20 15:22:11"
+    },
+    {
+      "id": 17075,
+      "name": "JULIAN UNIF NEGRO 1401.cdr",
+      "res_id": 1289,
+      "file_size": 10540875,
+      "create_date": "2026-03-20 14:22:16"
+    },
+    {
+      "id": 17065,
+      "name": "ORDEN DE TRABAJO 1325 FELIPE CAPITALINOS.cdr",
+      "res_id": 1218,
+      "file_size": 6462468,
+      "create_date": "2026-03-20 14:18:26"
+    },
+    {
+      "id": 17060,
+      "name": "SUBA FUTBOLERA 1441.cdr",
+      "res_id": 1329,
+      "file_size": 10898648,
+      "create_date": "2026-03-20 03:32:13"
+    },
+    {
+      "id": 17056,
+      "name": "PATRICIA QUIROGA 1439.cdr",
+      "res_id": 1327,
+      "file_size": 5074260,
+      "create_date": "2026-03-20 02:56:28"
+    },
+    {
+      "id": 17052,
+      "name": "ASNERY BOLAÑOS MENDOZA 1407.cdr",
+      "res_id": 1295,
+      "file_size": 6638462,
+      "create_date": "2026-03-20 00:46:16"
+    },
+    {
+      "id": 17025,
+      "name": "DANIEL UNIFORMES 1410.cdr",
+      "res_id": 1298,
+      "file_size": 17884743,
+      "create_date": "2026-03-19 21:39:01"
+    },
+    {
+      "id": 17018,
+      "name": "ORDEN DE TRABAJO 1370 JULIAN ALCONES NEGRO.cdr",
+      "res_id": 1258,
+      "file_size": 8843573,
+      "create_date": "2026-03-19 21:37:13"
+    },
+    {
+      "id": 17017,
+      "name": "ORDEN DE TRABAJO 1370 JULIAN ALCONES AZUL.cdr",
+      "res_id": 1258,
+      "file_size": 6442013,
+      "create_date": "2026-03-19 21:37:13"
+    },
+    {
+      "id": 17005,
+      "name": "ORDEN DE TRABAJO 1367 FRANK.cdr",
+      "res_id": 1255,
+      "file_size": 3824340,
+      "create_date": "2026-03-19 20:45:36"
+    },
+    {
+      "id": 16970,
+      "name": "ORDEN DE TRABAJO 1352 JORGE TORRES .cdr",
+      "res_id": 1245,
+      "file_size": 12219532,
+      "create_date": "2026-03-19 20:15:49"
+    },
+    {
+      "id": 16894,
+      "name": "ORDEN DE TRABAJO 1299 LAU VOLEI BUSOS.cdr",
+      "res_id": 1192,
+      "file_size": 3603344,
+      "create_date": "2026-03-19 16:17:30"
+    },
+    {
+      "id": 16858,
+      "name": "NATALIA MEJIA 1409.cdr",
+      "res_id": 1297,
+      "file_size": 11339344,
+      "create_date": "2026-03-19 02:02:11"
+    },
+    {
+      "id": 16843,
+      "name": "ORDEN DE TRABAJO 1343 ILUSION SUREÑA.cdr",
+      "res_id": 1235,
+      "file_size": 14407099,
+      "create_date": "2026-03-18 19:44:27"
+    },
+    {
+      "id": 16817,
+      "name": "KATE MEXICO 1372.cdr",
+      "res_id": 1260,
+      "file_size": 20440335,
+      "create_date": "2026-03-18 17:33:46"
+    },
+    {
+      "id": 16789,
+      "name": "ORDEN DE TRABAJO 1287 CLAUDIA SOLANO.cdr",
+      "res_id": 1180,
+      "file_size": 36637914,
+      "create_date": "2026-03-18 16:08:37"
+    },
+    {
+      "id": 16770,
+      "name": "ORDEN DE TRABAJO 1285 SUAREZ.cdr",
+      "res_id": 1178,
+      "file_size": 13154829,
+      "create_date": "2026-03-18 15:27:45"
+    },
+    {
+      "id": 16731,
+      "name": "FELIPE CANTERA 1400.cdr",
+      "res_id": 1288,
+      "file_size": 10557582,
+      "create_date": "2026-03-17 21:09:48"
+    },
+    {
+      "id": 16729,
+      "name": "COLEGIO LEONARDO DAVINCI 1376.cdr",
+      "res_id": 1264,
+      "file_size": 1143479,
+      "create_date": "2026-03-17 20:55:51"
+    },
+    {
+      "id": 16627,
+      "name": "ORDEN DE TRABAJO 1303 SEBASTIAN VARGAS.cdr",
+      "res_id": 1196,
+      "file_size": 3221533,
+      "create_date": "2026-03-17 15:23:08"
+    },
+    {
+      "id": 16611,
+      "name": "ORDEN DE TRABAJO 1245 JULIAN BUGS BUNNY.cdr",
+      "res_id": 1137,
+      "file_size": 11940875,
+      "create_date": "2026-03-17 14:18:51"
+    },
+    {
+      "id": 16564,
+      "name": "ORDEN DE TRABAJO 1346 YEPEZ.cdr",
+      "res_id": 1239,
+      "file_size": 23826725,
+      "create_date": "2026-03-16 23:08:32"
+    },
+    {
+      "id": 16555,
+      "name": "CARTAGENA FUNDACION 1379.cdr",
+      "res_id": 1267,
+      "file_size": 40981589,
+      "create_date": "2026-03-16 21:59:11"
+    },
+    {
+      "id": 16546,
+      "name": "DIANA P BERMUDEZ 1332.cdr",
+      "res_id": 1225,
+      "file_size": 10971007,
+      "create_date": "2026-03-16 21:43:27"
+    },
+    {
+      "id": 16531,
+      "name": "VIVIANA PARAGUAY 1324.cdr",
+      "res_id": 1217,
+      "file_size": 4692681,
+      "create_date": "2026-03-16 20:52:48"
+    },
+    {
+      "id": 16466,
+      "name": "YOLI 1354.cdr",
+      "res_id": 1247,
+      "file_size": 18209642,
+      "create_date": "2026-03-16 18:22:23"
+    },
+    {
+      "id": 16462,
+      "name": "CAMPAÑA DV 1333.cdr",
+      "res_id": 1226,
+      "file_size": 12421267,
+      "create_date": "2026-03-16 17:32:13"
+    },
+    {
+      "id": 16444,
+      "name": "ORDEN DE TRABAJO 1271 NELSON BUFALOS.cdr",
+      "res_id": 1164,
+      "file_size": 21291420,
+      "create_date": "2026-03-16 15:56:20"
+    },
+    {
+      "id": 16435,
+      "name": "ORDEN DE TRABAJO 1264 CATASOL.cdr",
+      "res_id": 1157,
+      "file_size": 27772549,
+      "create_date": "2026-03-16 15:16:58"
+    },
+    {
+      "id": 16415,
+      "name": "JULIANA DUARTE 1356.cdr",
+      "res_id": 1249,
+      "file_size": 37800899,
+      "create_date": "2026-03-15 17:04:50"
+    },
+    {
+      "id": 16380,
+      "name": "JB 1378.cdr",
+      "res_id": 1266,
+      "file_size": 34173230,
+      "create_date": "2026-03-14 15:04:05"
+    },
+    {
+      "id": 16369,
+      "name": "NICOLAS AYALA 1355.cdr",
+      "res_id": 1248,
+      "file_size": 21423254,
+      "create_date": "2026-03-14 05:12:58"
+    },
+    {
+      "id": 16130,
+      "name": "REPRESENT DIANA 1337.cdr",
+      "res_id": 1229,
+      "file_size": 7839282,
+      "create_date": "2026-03-12 20:30:08"
+    },
+    {
+      "id": 16118,
+      "name": "REPRESENT DIANA 1336.cdr",
+      "res_id": 1228,
+      "file_size": 6410356,
+      "create_date": "2026-03-12 20:18:07"
+    },
+    {
+      "id": 16064,
+      "name": "ALEJO AYALA 1313.cdr",
+      "res_id": 1206,
+      "file_size": 4040483,
+      "create_date": "2026-03-12 16:53:15"
+    },
+    {
+      "id": 16008,
+      "name": "CARLOS ROMERO 1282.cdr",
+      "res_id": 1175,
+      "file_size": 12770820,
+      "create_date": "2026-03-12 13:51:47"
+    },
+    {
+      "id": 15903,
+      "name": "CELTICS 1276.cdr",
+      "res_id": 1169,
+      "file_size": 16660597,
+      "create_date": "2026-03-11 16:46:35"
+    },
+    {
+      "id": 15900,
+      "name": "nicolas ayala italia 1266.cdr",
+      "res_id": 1159,
+      "file_size": 9194726,
+      "create_date": "2026-03-11 16:27:49"
+    },
+    {
+      "id": 15833,
+      "name": "NELSON ELEFANTES 1305.cdr",
+      "res_id": 1199,
+      "file_size": 56533929,
+      "create_date": "2026-03-10 22:05:36"
+    }
+  ],
+  "invalid_skipped": []
+}

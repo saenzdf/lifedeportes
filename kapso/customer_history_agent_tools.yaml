@@ -1,0 +1,59 @@
+# Customer history agent — scoped tools only
+
+version: "2026-06-17"
+agent_node_id: agent_customer_history_1745500003100
+
+tools_active:
+  - name: consultar_mis_pedidos
+    kapso_function_name: get-customer-orders-scoped-odoo
+    mode: read
+    scope: vars.user.partner_id only
+    input_schema:
+      type: object
+      properties:
+        limit:
+          type: number
+          description: Max 10, default 5
+
+  - name: consultar_estado_pedido
+    kapso_function_name: get-order-status-odoo
+    function_id: "03009eb7-9fce-492d-b798-047baf612f28"
+    mode: read
+    scope: order must belong to partner
+    input_schema:
+      type: object
+      properties:
+        order_name:
+          type: string
+        order_id:
+          type: number
+
+  - name: consultar_timeline_pedido
+    kapso_function_name: get-order-timeline-odoo
+    mode: read
+    input_schema:
+      type: object
+      properties:
+        order_id:
+          type: number
+
+  - name: consultar_tarjetas_proyecto
+    kapso_function_name: get-customer-project-cards-scoped-odoo
+    mode: read
+    input_schema:
+      type: object
+      properties: {}
+
+  - name: consultar_disenos_anteriores
+    kapso_function_name: get-customer-designs-scoped-odoo
+    mode: read
+    input_schema:
+      type: object
+      properties:
+        order_id:
+          type: number
+
+blocked:
+  - buscar_producto_odoo
+  - odoo-create-lead-and-so
+  - any write to Odoo

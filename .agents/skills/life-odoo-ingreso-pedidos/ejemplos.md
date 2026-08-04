@@ -1,0 +1,98 @@
+# Ejemplos — ingreso Odoo (Antigravity + MCP) — jul 2026
+
+## Ejemplo 1 — Uniforme fútbol
+
+**Entrada:** Club Los Andes, 573001234567, 10 uniformes de fútbol dry fit.
+
+**Interpretación:** `uniforme_completo`, deporte fútbol → template **115**.
+
+**Odoo:** Partner → Lead → SO draft → Diseño 504×1×0 → Uniforme variante ×10×50000.
+
+---
+
+## Ejemplo 2 — Camiseta de fútbol (NO es uniforme)
+
+**Entrada:** 12 camisetas de fútbol para torneo, tel 573001112223.
+
+**Interpretación:** `camiseta_sola` → template **62**. **No preguntar** si es uniforme.
+
+**Odoo:** Línea Camiseta deportiva dry-fit ×12×30000 + Diseño $0.
+
+---
+
+## Ejemplo 3 — Solo camisa (explícito)
+
+**Entrada:** "Solo camisa, 8 unidades, cuello V, cliente Marco 57314…"
+
+**Interpretación:** camiseta sola 62, nota cuello V en `note` o descripción línea.
+
+---
+
+## Ejemplo 4 — Audio + foto (operaria)
+
+**Entrada operaria:**
+
+> Transcript: "Quiero 12 camisetas de fútbol como la foto"  
+> Foto: cuello polo sin botones, manga corta
+
+**Interpretación:** 12 camisetas polo → template **61** (no 62).
+
+---
+
+## Ejemplo 5 — Campo + arquero
+
+**Entrada:** 20 uniformes fútbol jugador + 2 conjuntos arquero, Club X.
+
+**Odoo (1 SO):**
+
+- Diseño 504 ×1 ×0
+- Uniforme Fútbol dry-fit ×20 ×50000
+- Conjunto de arquero **178** ×2 ×70000
+
+---
+
+## Ejemplo 6 — Camiseta para equipo (NO preguntar)
+
+**Entrada:** "10 camisetas para el equipo de fútbol"
+
+**Interpretación:** `camiseta_sola` → template **62**. “Para el equipo” no convierte la prenda en uniforme.
+
+---
+
+## Ejemplo 7 — NO preguntar (camiseta explícita)
+
+**Entrada:** "10 camisetas de fútbol"
+
+**Agente:** Ingresa directo template **62** ×10 (tras confirmación borrador).
+
+---
+
+## Ejemplo 8 — Voley sin tilde
+
+**Entrada:** 15 uniformes de voley
+
+**Interpretación:** voleibol → template **31**.
+
+---
+
+## Ejemplo 9 — Hoodies aparte
+
+**Entrada:** 56 uniformes fútbol + 20 hoodies, Angie, 573…
+
+**Recomendación:** 2 borradores SO o 2 líneas claramente separadas; no sumar qty para mínimo 6.
+
+---
+
+## Ejemplo 10 — Deporte rechazado
+
+**Entrada:** 12 uniformes natación → no crear SO; explicar deportes permitidos.
+
+---
+
+## Errores MCP
+
+| Error | Acción |
+|-------|--------|
+| product_id inválido | Usar variante `product.product`, no template |
+| 504 not found | Paso 0: buscar servicio Diseño |
+| Partner duplicado | Normalizar tel 573…, buscar phone y mobile |

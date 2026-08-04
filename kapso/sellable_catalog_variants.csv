@@ -1,0 +1,38 @@
+odoo_id,category,variant,material,family_key,commercial_role,is_published,product_name,list_price,description_sale
+61,camiseta,polo_sin_botones,dry_fit,camiseta_polo,extra,1,"Camiseta deportiva con cuello polo, Sin botones",33000,Camiseta deportiva cuello polo personalizada.
+62,camiseta,base,dry_fit,camiseta_manga_corta,extra,1,Camiseta deportiva dry-fit,30000,Camiseta deportiva dry-fit personalizada.
+685,camiseta,dumonti,dumonti,camiseta_manga_corta,extra,1,Camiseta Deportiva Dumonti,35000,Camiseta deportiva Dumonti personalizada.
+1797,camiseta,lluvia,lluvia,camiseta_manga_corta,extra,1,Camiseta deportiva lluvia,33000,Camiseta deportiva para lluvia personalizada.
+1807,medias,base,dry_fit,medias,extra,0,Medias profesionales,10000,
+113,medias,base,dry_fit,medias,extra,0,Medias semi,7500,
+194,otros,base,dry_fit,otros_general,extra,1,"Banderas, 1.10 X 1.50",60000,Bandera institucional 1.10 × 1.50 m personalizada.
+1794,otros,base,dry_fit,otros_general,extra,0,Bordado adicional,7000,
+1795,otros,base,dry_fit,otros_general,extra,1,Busos con capota,65000,Buso con capota en algodón Lotto sublimable.
+179,otros,arquero,dry_fit,otros_general,extra,0,Buzo de arquero,31000,
+1800,otros,base,dry_fit,otros_general,extra,1,Chaqueta Lotto,60000,Chaqueta en algodón Lotto sublimable.
+68,otros,base,dry_fit,otros_general,extra,1,Chaqueta Rompevientos,60000,Chaqueta rompevientos con capota personalizada.
+178,otros,arquero,dry_fit,otros_general,extra,1,Conjunto de arquero,70000,Conjunto de arquero personalizado.
+159,otros,arquero,dry_fit,otros_general,design,0,Diseño especial (arquero o jugador) si son menos de 6 unidades,35000,
+1802,otros,base,dry_fit,otros_general,extra,0,Extra chaqueta con cremallera en cada lado,5000,
+1803,otros,base,dry_fit,otros_general,extra,0,Extra pantalon con cremallera en cada lado,5000,
+1804,otros,base,dry_fit,otros_general,extra,1,Gorras con un bordado,15000,Gorra con un bordado incluido.
+1805,otros,base,dry_fit,otros_general,extra,0,Incrementos de precio: a partir de la 2xl:,5000,
+1806,otros,base,dry_fit,otros_general,extra,0,Incrementos de precio: a partir de la 3xl,10000,
+1188,otros,lycra,dry_fit,otros_general,extra,0,Lycra,30000,
+163,otros,arquero,dry_fit,otros_general,extra,0,Pantalón de arquero,45000,
+67,otros,base,dry_fit,otros_general,extra,1,Pantalón de sudadera,45000,Pantalón de sudadera personalizado.
+177,otros,base,dry_fit,otros_general,extra,0,Petos en malla,25000,Mas de 30 u
+69,otros,base,dry_fit,otros_general,extra,1,Petos sublimados,28000,Petos sublimados para entrenamiento.
+66,otros,base,dry_fit,otros_general,extra,1,Sudadera Chaqueta y Pantalón Orión,100000,Sudadera chaqueta y pantalón tela Orión personalizados.
+1811,otros,lycra,dry_fit,otros_general,extra,1,Sudaderas en algodón lycrado con bordados,120000,Sudadera algodón lycrado con bordados personalizados.
+70,otros,base,dry_fit,otros_general,extra,1,Tulas,18000,Tula deportiva sublimada personalizada.
+1808,pantaloneta,base,dry_fit,pantaloneta,extra,0,Pantalonetas,25000,
+1809,pantaloneta,impermeable,dry_fit,pantaloneta,extra,0,Pantalonetas impermeables,30000,Con bolsillos
+35,uniforme,base,dry_fit,uniforme_manga_corta,base_uniform,1,Uniforme de atletismo,50000,Uniforme de atletismo personalizado (camiseta sisa y pantaloneta o licra).
+23,uniforme,base,dry_fit,uniforme_manga_corta,base_uniform,1,Uniforme de baloncesto,50000,Uniforme de baloncesto personalizado (camiseta sisa y pantaloneta).
+115,uniforme,base,dry_fit,uniforme_manga_corta,base_uniform,1,Uniforme de Fútbol,50000,"Uniforme de fútbol personalizado (camiseta, pantaloneta y medias)."
+8,uniforme,polo,dry_fit,uniforme_polo,base_uniform,1,Uniforme de Presentación (Futbol polo),58000,Uniforme de presentación polo personalizado.
+31,uniforme,base,dry_fit,uniforme_manga_corta,base_uniform,1,Uniforme de voleibol,50000,Uniforme de voleibol personalizado (camiseta y pantaloneta o licra).
+1813,uniforme,base,dry_fit,uniforme_manga_corta,base_uniform,1,Uniformes camiseta doble faz y pantaloneta,85000,Uniforme camiseta doble faz y pantaloneta personalizado.
+1819,uniforme,base,dry_fit,uniforme_manga_corta,base_uniform,1,Uniformes con bordado,57000,Uniforme con bordado incluido (camiseta y pantaloneta).
+1818,uniforme,dumonti,dumonti,uniforme_dumonti,base_uniform,0,Uniformes Deportivo Dumonti,65000,

@@ -1,0 +1,13 @@
+=== 2026-06-17T18:31:12Z ===
+--- patch script ---
+Patched agent_customer_history: 2 tools + prompt v2
+--- update function card ---
+{
+  "ok": false,
+  "error": {
+    "message": "Command failed",
+    "details": {
+      "message": "ENOENT: no such file or directory, open '/Users/diego/Documents/Sync/cursor/life deportes/lifedeportes/kapso/functions/get_customer_card_scoped_odoo.js'"
+    }
+  }
+}

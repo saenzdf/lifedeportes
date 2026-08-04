@@ -1,0 +1,312 @@
+[
+  {
+    "id": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+    "phone": "573172575981",
+    "status": "ended",
+    "last_active_at": "2026-07-13T07:44:41-04:00",
+    "used": null,
+    "count": 0,
+    "window": [],
+    "last15": [],
+    "probe": {
+      "path": "/platform/v1/whatsapp/conversations/6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+      "status": 200,
+      "keys": [
+        "id",
+        "business_scoped_user_id",
+        "contact_name",
+        "created_at",
+        "kapso",
+        "last_active_at",
+        "metadata",
+        "parent_business_scoped_user_id",
+        "phone_number",
+        "phone_number_id",
+        "status",
+        "updated_at",
+        "username",
+        "whatsapp_config_id"
+      ],
+      "sample": "{\"id\":\"6ce89339-3f23-48bd-a292-2dd2c0fd9a72\",\"business_scoped_user_id\":\"CO.991561626849148\",\"contact_name\":\"Diego Sáenz\",\"created_at\":\"2026-07-12T21:22:47-04:00\",\"kapso\":{\"contact_name\":\"Diego Sáenz\",\"messages_count\":72,\"last_message_id\":\"wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNzJFQTYxMkNBNjk1NDA1MkY3AA="
+    }
+  },
+  {
+    "id": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+    "phone": "573172575981",
+    "status": "ended",
+    "last_active_at": "2026-07-12T21:21:42-04:00",
+    "used": null,
+    "count": 0,
+    "window": [],
+    "last15": [],
+    "probe": {
+      "path": "/platform/v1/whatsapp/conversations/b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+      "status": 200,
+      "keys": [
+        "id",
+        "business_scoped_user_id",
+        "contact_name",
+        "created_at",
+        "kapso",
+        "last_active_at",
+        "metadata",
+        "parent_business_scoped_user_id",
+        "phone_number",
+        "phone_number_id",
+        "status",
+        "updated_at",
+        "username",
+        "whatsapp_config_id"
+      ],
+      "sample": "{\"id\":\"b5ed86e8-da40-4c1f-b34c-acd94bf71562\",\"business_scoped_user_id\":\"CO.991561626849148\",\"contact_name\":\"Diego Sáenz\",\"created_at\":\"2026-07-12T21:01:02-04:00\",\"kapso\":{\"contact_name\":\"Diego Sáenz\",\"messages_count\":44,\"last_message_id\":\"wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMzZENDYyQ0JBM0U4MDlFNEM2AA="
+    }
+  },
+  {
+    "id": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+    "phone": "573172575981",
+    "status": "ended",
+    "last_active_at": "2026-07-12T21:19:02-04:00",
+    "used": null,
+    "count": 0,
+    "window": [],
+    "last15": [],
+    "probe": {
+      "path": "/platform/v1/whatsapp/conversations/f11dd042-3eaa-43fa-897b-ffa223c2294d",
+      "status": 200,
+      "keys": [
+        "id",
+        "business_scoped_user_id",
+        "contact_name",
+        "created_at",
+        "kapso",
+        "last_active_at",
+        "metadata",
+        "parent_business_scoped_user_id",
+        "phone_number",
+        "phone_number_id",
+        "status",
+        "updated_at",
+        "username",
+        "whatsapp_config_id"
+      ],
+      "sample": "{\"id\":\"f11dd042-3eaa-43fa-897b-ffa223c2294d\",\"business_scoped_user_id\":\"CO.991561626849148\",\"contact_name\":\"Diego Sáenz\",\"created_at\":\"2026-07-12T21:13:28-04:00\",\"kapso\":{\"contact_name\":\"Diego Sáenz\",\"messages_count\":13,\"last_message_id\":\"wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEM4MDk1NURFMUM5OUI4QTU"
+    }
+  },
+  {
+    "id": "e8112845-0d2c-418f-a1e3-1f9d2fd25579",
+    "phone": "573172575981",
+    "status": "ended",
+    "last_active_at": "2026-07-12T20:34:04-04:00",
+    "used": null,
+    "count": 0,
+    "window": [],
+    "last15": [],
+    "probe": {
+      "path": "/platform/v1/whatsapp/conversations/e8112845-0d2c-418f-a1e3-1f9d2fd25579",
+      "status": 200,
+      "keys": [
+        "id",
+        "business_scoped_user_id",
+        "contact_name",
+        "created_at",
+        "kapso",
+        "last_active_at",
+        "metadata",
+        "parent_business_scoped_user_id",
+        "phone_number",
+        "phone_number_id",
+        "status",
+        "updated_at",
+        "username",
+        "whatsapp_config_id"
+      ],
+      "sample": "{\"id\":\"e8112845-0d2c-418f-a1e3-1f9d2fd25579\",\"business_scoped_user_id\":\"CO.991561626849148\",\"contact_name\":\"Diego Sáenz\",\"created_at\":\"2026-07-12T20:32:19-04:00\",\"kapso\":{\"contact_name\":\"Diego Sáenz\",\"messages_count\":5,\"last_message_id\":\"wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMjU1NzEwNDJBMzFDRjI1QjQ4AA=="
+    }
+  },
+  {
+    "id": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+    "phone": "573172575981",
+    "status": "ended",
+    "last_active_at": "2026-07-12T18:37:13-04:00",
+    "used": null,
+    "count": 0,
+    "window": [],
+    "last15": [],
+    "probe": {
+      "path": "/platform/v1/whatsapp/conversations/baa5e5d5-e553-4172-9168-f9155a28f83a",
+      "status": 200,
+      "keys": [
+        "id",
+        "business_scoped_user_id",
+        "contact_name",
+        "created_at",
+        "kapso",
+        "last_active_at",
+        "metadata",
+        "parent_business_scoped_user_id",
+        "phone_number",
+        "phone_number_id",
+        "status",
+        "updated_at",
+        "username",
+        "whatsapp_config_id"
+      ],
+      "sample": "{\"id\":\"baa5e5d5-e553-4172-9168-f9155a28f83a\",\"business_scoped_user_id\":\"CO.991561626849148\",\"contact_name\":\"Diego Sáenz\",\"created_at\":\"2026-07-12T18:28:41-04:00\",\"kapso\":{\"contact_name\":\"Diego Sáenz\",\"messages_count\":34,\"last_message_id\":\"wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNDNGNDQ2MDZEQTI3QzY5MDk0AA="
+    }
+  },
+  {
+    "id": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+    "phone": "573172575981",
+    "status": "ended",
+    "last_active_at": "2026-07-12T18:24:49-04:00",
+    "used": null,
+    "count": 0,
+    "window": [],
+    "last15": [],
+    "probe": {
+      "path": "/platform/v1/whatsapp/conversations/124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+      "status": 200,
+      "keys": [
+        "id",
+        "business_scoped_user_id",
+        "contact_name",
+        "created_at",
+        "kapso",
+        "last_active_at",
+        "metadata",
+        "parent_business_scoped_user_id",
+        "phone_number",
+        "phone_number_id",
+        "status",
+        "updated_at",
+        "username",
+        "whatsapp_config_id"
+      ],
+      "sample": "{\"id\":\"124000b5-7a27-4bf9-8caa-da6d2d929b5a\",\"business_scoped_user_id\":\"CO.991561626849148\",\"contact_name\":\"Diego Sáenz\",\"created_at\":\"2026-07-12T13:00:38-04:00\",\"kapso\":{\"contact_name\":\"Diego Sáenz\",\"messages_count\":43,\"last_message_id\":\"wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSODI2RTU1MUQxMDZCOUE5NThEAA="
+    }
+  },
+  {
+    "id": "d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+    "phone": "573172575981",
+    "status": "ended",
+    "last_active_at": "2026-07-12T12:55:09-04:00",
+    "used": null,
+    "count": 0,
+    "window": [],
+    "last15": [],
+    "probe": {
+      "path": "/platform/v1/whatsapp/conversations/d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+      "status": 200,
+      "keys": [
+        "id",
+        "business_scoped_user_id",
+        "contact_name",
+        "created_at",
+        "kapso",
+        "last_active_at",
+        "metadata",
+        "parent_business_scoped_user_id",
+        "phone_number",
+        "phone_number_id",
+        "status",
+        "updated_at",
+        "username",
+        "whatsapp_config_id"
+      ],
+      "sample": "{\"id\":\"d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7\",\"business_scoped_user_id\":\"CO.991561626849148\",\"contact_name\":\"Diego Sáenz\",\"created_at\":\"2026-07-12T12:46:54-04:00\",\"kapso\":{\"contact_name\":\"Diego Sáenz\",\"messages_count\":6,\"last_message_id\":\"wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDdGOUUxQ0UzRERCRUM5NjYz"
+    }
+  },
+  {
+    "id": "e2d0eb63-6017-4975-aff3-0a560153e483",
+    "phone": "573172575981",
+    "status": "ended",
+    "last_active_at": "2026-07-12T12:45:26-04:00",
+    "used": null,
+    "count": 0,
+    "window": [],
+    "last15": [],
+    "probe": {
+      "path": "/platform/v1/whatsapp/conversations/e2d0eb63-6017-4975-aff3-0a560153e483",
+      "status": 200,
+      "keys": [
+        "id",
+        "business_scoped_user_id",
+        "contact_name",
+        "created_at",
+        "kapso",
+        "last_active_at",
+        "metadata",
+        "parent_business_scoped_user_id",
+        "phone_number",
+        "phone_number_id",
+        "status",
+        "updated_at",
+        "username",
+        "whatsapp_config_id"
+      ],
+      "sample": "{\"id\":\"e2d0eb63-6017-4975-aff3-0a560153e483\",\"business_scoped_user_id\":\"CO.991561626849148\",\"contact_name\":\"Diego Sáenz\",\"created_at\":\"2026-07-12T12:43:34-04:00\",\"kapso\":{\"contact_name\":\"Diego Sáenz\",\"messages_count\":5,\"last_message_id\":\"wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDUxRUYxQzg0RkQ0REFDMTRC"
+    }
+  },
+  {
+    "id": "e426c9c9-1cb7-4cc2-91bb-62e1aeb40542",
+    "phone": "573172575981",
+    "status": "ended",
+    "last_active_at": "2026-07-01T18:20:22-04:00",
+    "used": null,
+    "count": 0,
+    "window": [],
+    "last15": [],
+    "probe": {
+      "path": "/platform/v1/whatsapp/conversations/e426c9c9-1cb7-4cc2-91bb-62e1aeb40542",
+      "status": 200,
+      "keys": [
+        "id",
+        "business_scoped_user_id",
+        "contact_name",
+        "created_at",
+        "kapso",
+        "last_active_at",
+        "metadata",
+        "parent_business_scoped_user_id",
+        "phone_number",
+        "phone_number_id",
+        "status",
+        "updated_at",
+        "username",
+        "whatsapp_config_id"
+      ],
+      "sample": "{\"id\":\"e426c9c9-1cb7-4cc2-91bb-62e1aeb40542\",\"business_scoped_user_id\":\"CO.991561626849148\",\"contact_name\":\"Diego Sáenz\",\"created_at\":\"2026-07-01T18:20:02-04:00\",\"kapso\":{\"contact_name\":\"Diego Sáenz\",\"messages_count\":2,\"last_message_id\":\"wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRUY5REI5RTkyREJFOTM3NjQwAA=="
+    }
+  },
+  {
+    "id": "14381218-0226-4166-9ade-4374c6e8287f",
+    "phone": "573172575981",
+    "status": "ended",
+    "last_active_at": "2026-06-29T19:41:10-04:00",
+    "used": null,
+    "count": 0,
+    "window": [],
+    "last15": [],
+    "probe": {
+      "path": "/platform/v1/whatsapp/conversations/14381218-0226-4166-9ade-4374c6e8287f",
+      "status": 200,
+      "keys": [
+        "id",
+        "business_scoped_user_id",
+        "contact_name",
+        "created_at",
+        "kapso",
+        "last_active_at",
+        "metadata",
+        "parent_business_scoped_user_id",
+        "phone_number",
+        "phone_number_id",
+        "status",
+        "updated_at",
+        "username",
+        "whatsapp_config_id"
+      ],
+      "sample": "{\"id\":\"14381218-0226-4166-9ade-4374c6e8287f\",\"business_scoped_user_id\":\"CO.991561626849148\",\"contact_name\":\"Diego Sáenz\",\"created_at\":\"2026-06-29T19:41:10-04:00\",\"kapso\":{\"contact_name\":\"Diego Sáenz\",\"messages_count\":1,\"last_message_id\":\"wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNEMwMkJFOUU2RjAzQjVDQjBDAA=="
+    }
+  }
+]

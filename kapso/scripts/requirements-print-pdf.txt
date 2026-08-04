@@ -1,0 +1,5 @@
+# Venv: cd lifedeportes/kapso && python3 -m venv .venv-pdf && . .venv-pdf/bin/activate && pip install -r scripts/requirements-print-pdf.txt
+pymupdf>=1.24.0
+pytesseract>=0.3.10
+pillow>=10.0.0
+openpyxl>=3.1.0

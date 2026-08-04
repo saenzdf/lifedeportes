@@ -1,0 +1,65 @@
+{
+  "case": 2,
+  "display": "E2E Form v3 2 — JORGE",
+  "source": {
+    "model": "project.task",
+    "id": 2367,
+    "name": "[S02576] JORGE DUEÑOS DEL BALON",
+    "sale_order": "S02576",
+    "partner": "JORGE DUEÑOS DEL BALON"
+  },
+  "parse_rows": 26,
+  "parse_summary": "«UNIFORMES D DE EL RODEO» · 26 filas · 26 M uniforme · 9 manga larga · 17 manga corta",
+  "http_status": 200,
+  "kapso_status": "ready",
+  "order": {
+    "id": 2620,
+    "name": "S02630",
+    "amount_total": 1547000,
+    "spreadsheet_id": 50,
+    "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2620/sale-order-spreadsheet/50",
+    "needs_review": null
+  },
+  "spreadsheet_status": "complete",
+  "spreadsheet_filled": 26,
+  "spreadsheet_error": null,
+  "audit": {
+    "ok": true,
+    "id": 50,
+    "name": "Formulario pedido Life",
+    "sheet_names": [
+      "Formulario Life (Aprobación nombres, tallas y numero)",
+      "Productos del pedido"
+    ],
+    "has_productos": true,
+    "has_aprobacion": true,
+    "sample_productos": {
+      "A": "Producto",
+      "I": "Producto base",
+      "J": "Cuello",
+      "K": "Largo Manga",
+      "N": "Otros atributos",
+      "O": "Comentario",
+      "A2": "",
+      "I2": "Diseño"
+    },
+    "sample_aprobacion": {
+      "A": "Idx",
+      "B": "Producto",
+      "C": "Nombre en camiseta",
+      "D": "Numero en camiseta",
+      "E": "Talla uniforme",
+      "G": "Producto base",
+      "L": "Otros atributos",
+      "M": "Comentario",
+      "A2": "",
+      "C2": "RODA"
+    },
+    "formulas_hint": {
+      "productos_A2": "",
+      "aprobacion_A2": ""
+    }
+  },
+  "ok": true,
+  "note": "Lead y cotizacion BORRADOR creados en Odoo (confirmar manualmente). Linea Diseno a costo 0."
+}

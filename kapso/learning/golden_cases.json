@@ -1,0 +1,37 @@
+{
+  "schema_version": "life_sales_golden_cases_v1",
+  "cases": [
+    {
+      "id": "camiseta-bare",
+      "utterance": "Necesito 10 camisetas",
+      "expected_intent": "quote",
+      "expected_product_id": 62,
+      "expected_garment_type": "camiseta_sola",
+      "expected_question": null
+    },
+    {
+      "id": "camisa-regional",
+      "utterance": "Quiero 6 camisas para el equipo",
+      "expected_intent": "quote",
+      "expected_product_id": 62,
+      "expected_garment_type": "camiseta_sola",
+      "expected_question": null
+    },
+    {
+      "id": "uniforme-needs-sport",
+      "utterance": "Necesito 12 uniformes",
+      "expected_intent": "quote",
+      "expected_product_id": null,
+      "expected_garment_type": "uniforme_completo",
+      "expected_question": "¿Para qué deporte necesita el uniforme?"
+    },
+    {
+      "id": "voley-regional",
+      "utterance": "Cotización para 10 uniformes de voley",
+      "expected_intent": "quote",
+      "expected_product_id": 31,
+      "expected_garment_type": "uniforme_completo",
+      "expected_question": null
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "task_id": 1648,
+  "list_attachment_id": 20474,
+  "list_name": "FORMATO PEDIDO LIFE 1SEGUROS CATALANES FC.xlsx",
+  "print_attachment_id": 21666,
+  "pdf_name": "ORDEN DE TRABAJO 1777 SEGUROS Y FIANZA CAM.pdf",
+  "compare_mode": "dorsal",
+  "name_qc": {
+    "normalize_enabled": true,
+    "equivalence_rules_count": 0,
+    "equivalence_path": null
+  },
+  "pdf_source": "vision",
+  "counts": {
+    "excel_rows": 34,
+    "pdf_rows": 39
+  },
+  "qc": "diff",
+  "alarms": [
+    "Conteo distinto: excel=34 filas, pdf=39 filas",
+    "En Excel pero no en PDF (par nombre+dorsal): 34 — muestra: KEVIN GIOVANY DIAZ CASTRO #1; DAVID ALEJANDRO GARAVITO FAJARDO #2; OSCAR ESTEBAN QUIROZ LOPEZ #3; WILLIAM SANTIAGO RAMOS LOPEZ #4; SERGIO ANDRES CASTILLO CUERVO #5 …",
+    "En PDF pero no en Excel (par nombre+dorsal): 39 — muestra: 1SEGUROS #33; 1SEGUROS #12; 1SEGUROS #14; 1SEGUROS #30; 1SEGUROS #1 …"
+  ],
+  "compare": {
+    "ok": false,
+    "mode": "dorsal",
+    "excel_count": 34,
+    "pdf_count": 39,
+    "missing": [
+      [
+        "KEVIN GIOVANY DIAZ CASTRO",
+        "",
+        "1"
+      ],
+      [
+        "DAVID ALEJANDRO GARAVITO FAJARDO",
+        "",
+        "2"
+      ],
+      [
+        "OSCAR ESTEBAN QUIROZ LOPEZ",
+        "",
+        "3"
+      ],
+      [
+        "WILLIAM SANTIAGO RAMOS LOPEZ",
+        "",
+        "4"
+      ],
+      [
+        "SERGIO ANDRES CASTILLO CUERVO",
+        "",
+        "5"
+      ],
+      [
+        "LUIS FERNANDO FUYA SANABRIA",
+        "",
+        "6"
+      ],
+      [
+        "HANS SEBASTIAN FLOREZ VILLAMIL",
+        "",
+        "7"
+      ],
+      [
+        "ANDRES FERNANDO MENDOZA GARZON",
+        "",
+        "8"
+      ],
+      [
+        "BRYAN FELIPE FUQUENE YANQUEN",
+        "",
+        "9"
+      ],
+      [
+        "SANTIAGO CASTILLO CUERVO",
+        "",
+        "10"
+      ],
+      [
+        "JULIAN VEGA CASTANEDA",
+        "",
+        "11"
+      ],
+      [
+        "CRISTIAN CAMILO BORDA ROJAS",
+        "",
+        "12"
+      ],
+      [
+        "HOLMAN LEONEL MONTOYA VANEGAS",
+        "",
+        "13"
+      ],
+      [
+        "JOHN SEBASTIAN DUARTE OTALORA",
+        "",
+        "14"
+      ],
+      [
+        "JAVIER MATEO VARGAS GUERRERO",
+        "",
+        "15"
+      ],
+      [
+        "JEFFERSON JULIAN SALAS VARON",
+        "",
+        "16"
+      ],
+      [
+        "JEFFER ARTURO LAVERDE WILCHES",
+        "",
+        "17"
+      ],
+      [
+        "LUIS ANGEL MENDOZA AGUJA",
+        "",
+        "18"
+      ],
+      [
+        "YONATAN ANDRES FUYA GARCIA",
+        "",
+        "19"
+      ],
+      [
+        "CARLOS EDUARDO ALBINO CASALLAS",
+        "",
+        "20"
+      ],
+      [
+        "LERIANT ALEXIS ROMERO OJEDA",
+        "",
+        "21"
+      ],
+      [
+        "DANIEL ESTEBAN MUNOZ",
+        "",
+        "22"
+      ],
+      [
+        "MANUEL FERNANDO FARIGUA CIFUENTES",
+        "",
+        "23"
+      ],
+      [
+        "JORGE ARTURO RODRIGUEZ OCHOA",
+        "",
+        "24"
+      ],
+      [
+        "IGNACIO ANDRES GIL BUITRAGO",
+        "",
+        "25"
+      ],
+      [
+        "JORGE ANDRES RODRIGUEZ",
+        "",
+        "26"
+      ],
+      [
+        "WALTER FABIAN MORENO MOLANO",
+        "",
+        "27"
+      ],
+      [
+        "IVAN DARIO MEJIA ORTEGA",
+        "",
+        "28"
+      ],
+      [
+        "ARQUERO SUPLENTE",
+        "",
+        "29"
+      ],
+      [
+        "HAIDER SANTIAGO QUINCHO",
+        "",
+        "30"
+      ],
+      [
+        "QUIROZ",
+        "",
+        "31"
+      ],
+      [
+        "ALEJITO",
+        "",
+        "32"
+      ],
+      [
+        "ELIZABETH",
+        "",
+        "33"
+      ],
+      [
+        "EVELYN",
+        "",
+        "36"
+      ]
+    ],
+    "extra": [
+      [
+        "1SEGUROS",
+        "",
+        "33"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "12"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "14"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "30"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "1"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "28"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "19"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "99"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "17"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "80"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "4"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "20"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "77"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "21"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "18"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "15"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "11"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "13"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "10"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "6"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "3"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "8"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "90"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "16"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "7"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "24"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "2"
+      ],
+      [
+        "SANDRA",
+        "",
+        "10"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "5"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "88"
+      ],
+      [
+        "1SEGUROS",
+        "",
+        "9"
+      ],
+      [
+        "EVE",
+        "",
+        "10"
+      ],
+      [
+        "DUARTE",
+        "",
+        "13"
+      ],
+      [
+        "DUARTE",
+        "",
+        "13"
+      ],
+      [
+        "TOYA",
+        "",
+        "10"
+      ],
+      [
+        "ALEXITO",
+        "",
+        "9"
+      ],
+      [
+        "QUIROZ",
+        "",
+        "7"
+      ],
+      [
+        "LIZ",
+        "",
+        "9"
+      ],
+      [
+        "ANGEL",
+        "",
+        "28"
+      ]
+    ],
+    "pdf_text_empty": false
+  },
+  "talla_mismatches": [],
+  "pdf_pipeline": {
+    "source": "vision",
+    "vision_provider": "gemini",
+    "vision": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "raw_chars": 2243
+    }
+  }
+}

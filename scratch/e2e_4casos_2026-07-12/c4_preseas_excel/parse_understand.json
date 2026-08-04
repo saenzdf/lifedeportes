@@ -1,0 +1,14 @@
+{
+  "ok": false,
+  "layout": "generic",
+  "rows_parsed": 0,
+  "life_rows": 0,
+  "section_rows_for_formulario": 15,
+  "use_mirror": true,
+  "warnings": [
+    "Excel sin columnas estándar formato life; parseo genérico."
+  ],
+  "summary": "«pedido» · 0 filas",
+  "error": "no_rows_parsed",
+  "forced_square": false
+}

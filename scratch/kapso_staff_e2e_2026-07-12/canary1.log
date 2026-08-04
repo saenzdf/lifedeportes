@@ -1,0 +1,8 @@
+Odoo target: https://testlifesoluciones.odoo.com testlifesoluciones
+
+=== case 1 ===
+{
+  "ok": false
+}
+
+SUMMARY { passed: 0, failed: 1 }

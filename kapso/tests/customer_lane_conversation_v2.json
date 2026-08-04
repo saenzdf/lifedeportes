@@ -1,0 +1,109 @@
+{
+  "version": "customer_lane_conversation_v2",
+  "life_wa": "573222252942",
+  "tester_wa": "573172575981",
+  "notes": "Foco conversación fluida: debounce 30s, prompt v7, historial solo inquiry",
+  "profiles": [
+    {
+      "id": "C1",
+      "slug": "gradual_venta",
+      "goal": "Venta gradual una pregunta por turno; saludo nombre solo 1ª vez",
+      "mode": "turn_by_turn",
+      "steps": [
+        {
+          "type": "text",
+          "message": "Hola, quiero cotizar uniformes de fútbol",
+          "wait_s": 75
+        },
+        {
+          "type": "text",
+          "message": "Serían unos 12",
+          "wait_s": 70
+        },
+        {
+          "type": "text",
+          "message": "Dry fit, manga corta, cuello en V",
+          "wait_s": 70
+        },
+        {
+          "type": "text",
+          "message": "¿Cuánto sale el total?",
+          "wait_s": 75
+        }
+      ],
+      "expect": {
+        "no_maintenance": true,
+        "no_staff_upload_ok": true,
+        "bot_mentions_price_or_min6": true,
+        "greeting_once_max": true,
+        "no_early_order_confirm": true,
+        "short_replies": true
+      }
+    },
+    {
+      "id": "C2",
+      "slug": "rafaga_tres_msgs",
+      "goal": "Ráfaga: 3 msgs seguidos → una sola respuesta tras ~30s silencio",
+      "mode": "burst",
+      "burst_gap_s": 2,
+      "post_burst_wait_s": 55,
+      "steps": [
+        {
+          "type": "text",
+          "message": "Hola quiero cotizar uniformes de baloncesto"
+        },
+        {
+          "type": "text",
+          "message": "unos 12"
+        },
+        {
+          "type": "text",
+          "message": "dry fit cuello V"
+        }
+      ],
+      "expect": {
+        "no_maintenance": true,
+        "no_staff_upload_ok": true,
+        "bot_mentions_price_or_min6": true,
+        "single_reply_after_burst": true,
+        "no_early_order_confirm": true
+      }
+    },
+    {
+      "id": "C3",
+      "slug": "camiseta_abono_sin_cerrar",
+      "goal": "Camiseta sola + pregunta abono sin anotar pedido",
+      "mode": "turn_by_turn",
+      "steps": [
+        {
+          "type": "text",
+          "message": "Hola, quiero cotizar camisetas de fútbol",
+          "wait_s": 75
+        },
+        {
+          "type": "text",
+          "message": "Son 10",
+          "wait_s": 70
+        },
+        {
+          "type": "text",
+          "message": "Solo la camiseta, sin pantaloneta",
+          "wait_s": 70
+        },
+        {
+          "type": "text",
+          "message": "Ok y el abono cómo es?",
+          "wait_s": 70
+        }
+      ],
+      "expect": {
+        "no_maintenance": true,
+        "no_staff_upload_ok": true,
+        "bot_mentions_price_or_min6": true,
+        "mentions_abono_50": true,
+        "no_early_order_confirm": true,
+        "no_handoff_confirm_phrase": true
+      }
+    }
+  ]
+}

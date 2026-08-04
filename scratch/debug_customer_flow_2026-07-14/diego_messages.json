@@ -1,0 +1,1952 @@
+[
+  {
+    "id": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+    "phone": "573172575981",
+    "last_active_at": "2026-07-13T07:44:41-04:00",
+    "total": 72,
+    "since": 0,
+    "messages": [
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDJGMThGQ0Y4QzQ4NDI5RTU3QwA=",
+        "at": "1783906322",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Dry fit",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMTcwNzFBNTMzQkJEMTE4RTY3AA==",
+        "at": "1783906326",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Perfecto, Diego. Ya queda registrado que las **12 camisetas** deben ser en tela **Dry Fit**.\n\nToda esta información ya está lista para que el equipo de ventas la procese mañana lunes a primera hora.\n\n¿Hay algo más en lo que pueda ayudarte respecto a tus pedidos anteriores o alguna consulta sobre el historial de tus diseños?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDE2QkJEOUVDMzBENTc4MDNGNwA=",
+        "at": "1783906479",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar camisetas de fútbol",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNjNGNDNGREM2RTk4MkY5QkQ3AA==",
+        "at": "1783906494",
+        "dir": "outbound",
+        "type": "text",
+        "text": "¡Claro que sí, Diego! Para las **12 camisetas de fútbol** en tela Dry Fit (manga corta y cuello en V), el presupuesto es el siguiente:\n\n- **Valor unitario:** $30.000\n- **Total por 12 camisetas:** $360.000\n\nEste valor ya incluye la personalización total con sublimación digital. Como hoy es domingo, mañana lunes a partir de las 8:00 a.m. el equipo comercial revisará el diseño que nos enviaste para confirmar todos los detalles.\n\n¿Te parece bien si dejamos esta cotización registrada para que te contacten mañana?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMENEMDA0QzJENDIzNjMzMTMzNAA=",
+        "at": "1783906508",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Son como 12",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNDNBQzREODM5RkFDODJDQzUxAA==",
+        "at": "1783906513",
+        "dir": "outbound",
+        "type": "text",
+        "text": "¡Perfecto, Diego! Ya tengo registrado que son **12 camisetas** en tela Dry Fit.\n\nEl valor por cada camiseta es de **$30.000**, para un total de **$360.000** por las 12 unidades. Este precio ya incluye toda la personalización (escudos, números y nombres).\n\nComo hoy es domingo, mañana lunes a primera hora el equipo comercial revisará el diseño y el listado que nos enviaste para formalizar el pedido y enviarte los datos para el abono.\n\n¿Deseas que te ayude con algo más por ahora?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDJEOEI2OTg5MTNBQ0JDNzM0RAA=",
+        "at": "1783906522",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Solo la camiseta, sin pantaloneta",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNUJDMzA0QkY3M0JBMTA0QTBCAA==",
+        "at": "1783906528",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Exacto, Diego. Ya actualicé la información: la cotización es **solo por la camiseta**, sin pantaloneta ni medias.\n\nEl valor unitario es de **$30.000**, por lo que el total para las 12 camisetas sería de **$360.000**.\n\nMañana lunes, a partir de las 8:00 a.m., un asesor comercial se pondrá en contacto contigo para validar el diseño que nos compartiste y coordinar el inicio de la producción con el abono del 50%.\n\n¿Hay algo adicional que quieras ajustar en el pedido?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDg4QjY0OUU1OTgyOTQ3NTBFQwA=",
+        "at": "1783906537",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Dry fit",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQTc3RDNDQzQzNUY3NjEyMTZCAA==",
+        "at": "1783906541",
+        "dir": "outbound",
+        "type": "text",
+        "text": "¡Entendido, Diego! Confirmado que las **12 camisetas** serán en tela **Dry Fit**, ideal por su frescura y transporte de humedad.\n\nEl presupuesto final para las 12 camisetas (solo camiseta) es:\n- **Valor unitario:** $30.000\n- **Total:** $360.000\n\nYa tenemos tu diseño, el listado de jugadores y la especificación de la tela. Mañana lunes a primera hora el equipo comercial te contactará para formalizar todo.\n\n¿Te gustaría consultar algo más sobre tus pedidos anteriores o alguna otra referencia?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEIyQTAyNERCMTFDODg5OUU1QQA=",
+        "at": "1783942108",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar uniformes de fútbol",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNkY2QTE4Q0UxQUFEMjY3QkFFAA==",
+        "at": "1783942160",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola, Diego. Para los 18 uniformes completos (camiseta, pantaloneta y medias) en tela Dry Fit, el valor unitario es de $50.000, para un total de $900.000.\n\nYa tenemos el diseño y el listado de jugadores que enviaste. ¿Te gustaría que procedamos con los datos para el abono del 50% e iniciar la producción?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDRFNzk4RTY1RjU1MUJDN0E1NgA=",
+        "at": "1783942171",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Serían unos 12",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDZCMTlBQ0NBQTQxNTFENkQwQQA=",
+        "at": "1783942236",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Dry fit, manga corta, cuello en V",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDQwMzVFRTkwMUM2NEI1OEQ4QwA=",
+        "at": "1783942300",
+        "dir": "inbound",
+        "type": "text",
+        "text": "¿Cuánto sale el total?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDk4RDA3ODY0NkJEQ0I0N0M0NwA=",
+        "at": "1783942400",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola quiero cotizar uniformes de baloncesto",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDkyMkI0QjM2QzE5OTZCRTU3QwA=",
+        "at": "1783942404",
+        "dir": "inbound",
+        "type": "text",
+        "text": "unos 12",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEJGMjA5MDUzQTYzRURBOTU5NgA=",
+        "at": "1783942408",
+        "dir": "inbound",
+        "type": "text",
+        "text": "dry fit cuello V",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQzk5QjhGRUExMkE2MTAyNTAyAA==",
+        "at": "1783942446",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Para los 12 uniformes de baloncesto en tela Dry Fit con cuello en V, el valor unitario es de $50.000, para un total de $600.000.\n\nEste precio incluye la camiseta sisa y la pantaloneta totalmente personalizadas. ¿Te gustaría que registremos esta cotización para que el equipo comercial te contacte hoy mismo?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEJCRjUwMDk1QURGMjJGRUQ2RgA=",
+        "at": "1783942493",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar camisetas de fútbol",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNjNFNjVEQTM1NUY4RDQ5N0EyAA==",
+        "at": "1783942540",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Para las 12 camisetas de fútbol en tela Dry Fit, el valor unitario es de $30.000, para un total de $360.000.\n\nEste precio incluye la personalización completa con sublimación digital. ¿Te gustaría que registremos esta cotización para que el equipo comercial te contacte hoy mismo?\n\nf",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDZFNEFGRTAwMEMyNjBDQTM2OQA=",
+        "at": "1783942551",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Son 10",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEUzQzQwRjk0RkJGMEYwQkVGNwA=",
+        "at": "1783942616",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Solo la camiseta, sin pantaloneta",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDdENDQ5QkY5MDE5QkZDQkQ0RAA=",
+        "at": "1783942682",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Ok y el abono cómo es?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEFGRTlGRThDQURDRTRCRUQ2QwA=",
+        "at": "1783942835",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar uniformes de fútbol",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSOUZFOENBQTAzRTRBNTBBNjg4AA==",
+        "at": "1783942879",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Para los 10 uniformes de fútbol en Dry Fit, el valor unitario es de $50.000, para un total de $500.000.\n\nEl abono es del 50% para iniciar producción y el saldo restante se cancela al momento de la entrega. ¿Te gustaría que registremos el pedido con el diseño que enviaste antes?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDNCNjFENTdCMjI5REQ3NDJDOQA=",
+        "at": "1783942890",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Serían unos 12",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNzFEOEFCMEM1OThGRTFGQUQ1AA==",
+        "at": "1783942897",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Para los 12 uniformes de fútbol, el valor unitario es de $50.000, para un total de $600.000.\n\n¿Te gustaría que procedamos con el registro del pedido para que el equipo comercial te contacte hoy mismo?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDYzQjBDNjMyQTQxQkZBNDBGNAA=",
+        "at": "1783942906",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Dry fit, manga corta, cuello en V",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRDYyMzI3MkYxOTYwOUQ4REYwAA==",
+        "at": "1783942911",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Para los 12 uniformes de fútbol en Dry Fit con manga corta y cuello en V, el total es de $600.000 ($50.000 por unidad).\n\n¿Te parece bien si registramos el pedido con estos detalles para que el equipo comercial te contacte hoy?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDM5ODhEQUY0RjY4NTRERDQyNwA=",
+        "at": "1783942921",
+        "dir": "inbound",
+        "type": "text",
+        "text": "¿Cuánto sale el total?",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRTJGQjE5RDE3RjU5NjE4OEU2AA==",
+        "at": "1783942925",
+        "dir": "outbound",
+        "type": "text",
+        "text": "El total por los 12 uniformes completos es de $600.000.\n\n¿Deseas que registremos el pedido para que un asesor te contacte hoy mismo?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDY3OTQ3MjIwMjk5RTAwNDQ4MwA=",
+        "at": "1783942991",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar camisetas de fútbol",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMkUxMzNDODUyNUZFRjYyNDZCAA==",
+        "at": "1783943035",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Para las 12 camisetas de fútbol en tela Dry Fit, el valor unitario es de $30.000, para un total de $360.000.\n\nEste precio incluye la personalización completa con sublimación digital. ¿Te gustaría que registremos esta cotización para que el equipo comercial te contacte hoy mismo?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEUxMEZGNkEzNDQ5RTJCQTQwMAA=",
+        "at": "1783943047",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Son 10",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSOTBDRTlCNUEzOUIzRTQ3RTIwAA==",
+        "at": "1783943055",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Para las 10 camisetas en tela Dry Fit, el valor unitario es de $30.000, para un total de $300.000.\n\n¿Te gustaría que registremos esta cotización para que el equipo comercial te contacte hoy mismo?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEQ4NzJDMDFCMjk3NUY0RkMyOAA=",
+        "at": "1783943063",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Solo la camiseta, sin pantaloneta",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNUFENjE4Q0JEM0I0RkFDRTBFAA==",
+        "at": "1783943068",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Para las 10 camisetas (solo la prenda superior) en tela Dry Fit, el total es de $300.000.\n\n¿Te parece bien este valor para registrar la cotización y que un asesor te contacte hoy?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEVBMjk1NUJDMDQzOEE0NjhDNQA=",
+        "at": "1783943076",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Ok y el abono cómo es?",
+        "status": "read",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNzJFQTYxMkNBNjk1NDA1MkY3AA==",
+        "at": "1783943080",
+        "dir": "outbound",
+        "type": "text",
+        "text": "El abono es del 50% para iniciar la producción y el 50% restante se cancela al momento de la entrega.\n\n¿Te gustaría que registremos el pedido con los diseños que enviaste para que un asesor te contacte hoy mismo?",
+        "status": "delivered",
+        "conv": "6ce89339-3f23-48bd-a292-2dd2c0fd9a72",
+        "name": "Diego Sáenz"
+      }
+    ]
+  },
+  {
+    "id": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+    "phone": "573172575981",
+    "last_active_at": "2026-07-12T21:21:42-04:00",
+    "total": 44,
+    "since": 0,
+    "messages": [
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEEzQzM3MkYwQkQ0QkIxMkYzNQA=",
+        "at": "1783904537",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Dry fit, manga corta, cuello en V",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQ0Y2QjE0ODY2NDQ0NTcxMTM2AA==",
+        "at": "1783904542",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para armar la cotización del nuevo pedido con las especificaciones de tela dry fit, manga corta y cuello en V.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDNGNEI1MzNGNThEOTcxOUEzNAA=",
+        "at": "1783904561",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Sí, tengo el diseño, se lo mando después. ¿Cuánto sale el completo?",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSOTQ3OTk2Q0JGMzYzMkJFMThGAA==",
+        "at": "1783904567",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para que le brinden el valor del uniforme completo y reciban su diseño.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDZGRTNDNEVEMUZGMjZBODY4MgA=",
+        "at": "1783904595",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Ok y el abono cómo es?",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNTU4ODlFNUI1NDU0MDkxMEMzAA==",
+        "at": "1783904600",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para que le expliquen el proceso de abono para su nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEQ1NzhGMDg4QjMyNzkyMkEwNAA=",
+        "at": "1783904639",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar uniformes de fútbol",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMkJBQ0ZCNTM4QzcxNzE3QzVCAA==",
+        "at": "1783904645",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para armar la cotización del nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEYxOERBNTdGOUYzMDk4N0Y5QwA=",
+        "at": "1783904669",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Necesitaríamos 18 uniformes con un diseño propio",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQjBCNzAwRTFBOEU5QUYwMTUzAA==",
+        "at": "1783904673",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para gestionar la cotización de los 18 uniformes con su diseño propio.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEFGN0NBOENFRjM1MUM4OTA3NQA=",
+        "at": "1783904695",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia diseño equipo Image attached (image_fd18e7154e25.jpeg) [Size: 96.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjhhZTIzNDhlLWZmYTMtNDI0NS04MWEyLTQwNTYwZTMzNWUyZiIsInB1ciI6ImJsb2JfaWQifX0=--1bbb7c349061576695b128df309e1ebc2f9e0b51/image_fd18e7154e25.jpeg",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSODdCMTc5OTg3NTMzQjE0NzQ2AA==",
+        "at": "1783904704",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. He recibido la imagen del diseño. Le paso con ventas para que revisen la referencia y procedan con la cotización de su nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDM2NDFCNDMyNzU4NURDQjkzRQA=",
+        "at": "1783904704",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia diseño equipo Image attached (image_45474593f5a3.jpeg) [Size: 561.1 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjE1NjI2ZTE0LTYxNzQtNGQ4Zi1hNzNmLWYxOTRjNDIxYjAwZCIsInB1ciI6ImJsb2JfaWQifX0=--65242e20d236f00761d352988e683a332d7336d1/image_45474593f5a3.jpeg",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQTdFRTIwRjZBRjg3M0I5NEFCAA==",
+        "at": "1783904711",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. He recibido la imagen de referencia para el diseño. Le paso con ventas para que revisen los detalles y continúen con la cotización de su nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEU0OUZDQkYzNDZGQTdDNzRENgA=",
+        "at": "1783904726",
+        "dir": "inbound",
+        "type": "document",
+        "text": "Lista de jugadores FORMATO LIFE Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Ijg5MDEwZDQwLTMyNDUtNGY4YS1iMjQ2LTcyYjBmZjg1ZmZjZSIsInB1ciI6ImJsb2JfaWQifX0=--f314651b9465b210158421a96b9c7fa8ddbb0e36/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRUExMjQ5NjNENjE5ODI5NDY1AA==",
+        "at": "1783904733",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. He recibido el listado de jugadores en el formato de Life. Le paso con ventas para que procesen la información y continúen con la cotización de su nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDhBRDJEMTIwNjdBMkQ5MjIzMgA=",
+        "at": "1783904759",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Esa es la lista y las fotos del diseño. ¿Me cotizas el total?",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNThBRjc2Q0QwMTRBQzIyNTJFAA==",
+        "at": "1783904764",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. He recibido la lista y las fotos del diseño. Le paso con ventas para que revisen toda la información y le brinden el valor total de su nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMENDMjRFNTdDQ0I2QzFCMEEzNwA=",
+        "at": "1783904855",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar uniformes de futbol, aproximadamente unos 15",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNTVGQUY0NjJCNDQ3NTA5NDNCAA==",
+        "at": "1783904862",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para armar la cotización del nuevo pedido de 15 uniformes.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDFDODk3Qjc5OTA4MEZGRDg5QgA=",
+        "at": "1783904881",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Dry fit, manga corta, cuello en V",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNzJDMDczOEY0RUUzMDIyNEI0AA==",
+        "at": "1783904887",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para armar la cotización del nuevo pedido con las especificaciones de tela dry fit, manga corta y cuello en V.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDc3RUEzMUNDMkY4NDY5NkIzNQA=",
+        "at": "1783904906",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Sí, tengo el diseño, se lo mando después. ¿Cuánto sale el completo?",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSM0RFMDQyQTYzMEVFODBGRkRCAA==",
+        "at": "1783904911",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para que le brinden el valor del uniforme completo y reciban su diseño.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEZDQ0U0REVFQTEyN0Y5NDFGNAA=",
+        "at": "1783904942",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Ok y el abono cómo es?",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRDIxQjIwMDc1OEE4N0NBODBGAA==",
+        "at": "1783904947",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para que le expliquen el proceso de abono para su nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMERBNEQ5RkE1RUJGODhEQTc2RQA=",
+        "at": "1783904987",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar uniformes de fútbol",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSOTc4NTlFODcyM0Y3OUY1NzE1AA==",
+        "at": "1783904994",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para armar la cotización del nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDI5ODk2MkVEMUQ5NzhFNzhEQQA=",
+        "at": "1783905017",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Necesitaríamos 18 uniformes con un diseño propio",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSOEQwMUEzMzIzOTc1RDFCQUU3AA==",
+        "at": "1783905023",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. Le paso con ventas para gestionar la cotización de los 18 uniformes con su diseño propio.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDg5QTBFQjgwNkQ5MkU3MkE0QwA=",
+        "at": "1783905043",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia diseño equipo Image attached (image_39aaa4011acb.jpeg) [Size: 96.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImRlMzFmMTdmLWRkODEtNDI2OS1iZjUwLWFiYzUzYzcxOGMwNCIsInB1ciI6ImJsb2JfaWQifX0=--053f8ed5bf80b613c5a6d537901fa6bfc3f80f75/image_39aaa4011acb.jpeg",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMjIwOEEzMjlCMkEyRERDQkZBAA==",
+        "at": "1783905050",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. He recibido la imagen del diseño. Le paso con ventas para que revisen la referencia y procedan con la cotización de su nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDhDMjg3Q0YzN0QyRUM1QkYwRgA=",
+        "at": "1783905054",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia diseño equipo Image attached (image_52a9c1159e2f.jpeg) [Size: 561.1 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Ijc1Zjc3MTZmLTQ0YjUtNDY1ZS04M2FhLTIyNmY3NTdkNDk3YyIsInB1ciI6ImJsb2JfaWQifX0=--9790e626f43c108850f344d5f30489aad1f5fe81/image_52a9c1159e2f.jpeg",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRjk5MDE2MEU0MDI5MUVFRkFFAA==",
+        "at": "1783905064",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. He recibido la imagen de referencia para el diseño. Le paso con ventas para que revisen los detalles y continúen con la cotización de su nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDFFRkJCMjg5OTI0Q0MzQkYyRAA=",
+        "at": "1783905078",
+        "dir": "inbound",
+        "type": "document",
+        "text": "Lista de jugadores FORMATO LIFE Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Ijc5NTE4Mjc5LTdlZDAtNDNjNy05MjBlLTRkOTAwYjNmOTM2NSIsInB1ciI6ImJsb2JfaWQifX0=--113f375f095041aef5987cf003a04f93fbd35dbf/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSM0M5RjIyMkY1OEQxMUU1NEE4AA==",
+        "at": "1783905085",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. He recibido el listado de jugadores en el formato de Life. Le paso con ventas para que procesen la información y continúen con la cotización de su nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDVBMDE2MkI3Q0RFMTY0OTBGMQA=",
+        "at": "1783905110",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Esa es la lista y las fotos del diseño. ¿Me cotizas el total?",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSREM0MUEzRTZFNjJDRkU0MTA1AA==",
+        "at": "1783905116",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, bienvenido de nuevo a Life Deportes. He recibido la lista y las fotos del diseño. Le paso con ventas para que revisen toda la información y le brinden el valor total de su nuevo pedido.\n\nSi necesita consultar algo sobre sus pedidos anteriores o en curso, con gusto le ayudo.",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDkwNkQxNTlBRjBBQkFBQjQzNgA=",
+        "at": "1783905684",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar 12 uniformes de fútbol dry fit manga corta",
+        "status": "read",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMzZENDYyQ0JBM0U4MDlFNEM2AA==",
+        "at": "1783905701",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego Sáenz, qué gusto saludarte de nuevo. Con gusto te ayudo con la cotización para los 12 uniformes.\n\nEl Uniforme de Fútbol (que incluye camiseta, pantaloneta y medias) en tela dry fit, manga corta y cuello en V, tiene un valor unitario de $50.000. Para las 12 unidades, el total sería de $600.000.\n\nComo hoy es domingo, nuestro equipo comercial revisará los detalles de tu diseño y el listado que nos enviaste mañana lunes a primera hora para formalizar el pedido.\n\n¿Deseas que agende de una vez el contacto con un asesor para mañana?",
+        "status": "delivered",
+        "conv": "b5ed86e8-da40-4c1f-b34c-acd94bf71562",
+        "name": "Diego Sáenz"
+      }
+    ]
+  },
+  {
+    "id": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+    "phone": "573172575981",
+    "last_active_at": "2026-07-12T21:19:02-04:00",
+    "total": 13,
+    "since": 0,
+    "messages": [
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDJDMjUzNkM2ODY3Q0NGMjRDNwA=",
+        "at": "1783905208",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar uniformes de futbol, aproximadamente unos 15",
+        "status": "read",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMzA3QUZFMzdEMDk1MkQ5ODUyAA==",
+        "at": "1783905223",
+        "dir": "outbound",
+        "type": "text",
+        "text": "¡Hola, Diego! Qué gusto saludarte nuevamente. Con gusto te ayudo con la cotización para los 15 uniformes de fútbol.\n\nManejamos uniformes en sublimación digital de alta calidad (camiseta, pantaloneta y medias) con un mínimo de 6 unidades. Para las 15 unidades que necesitas, el **Uniforme de Fútbol** tiene un valor unitario de **$50.000**, para un total de **$750.000**.\n\nEste precio incluye el diseño personalizado, escudos, números y logos que desees. Puedes ver una referencia de nuestro producto aquí: https://testlifesoluciones.odoo.com/shop/uniforme-de-futbol-115\n\n¿Tienes algún diseño en mente o te gustaría que te ayudemos a crear uno desde cero?",
+        "status": "delivered",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDU5MTE1RTgxOTU0OTE4REMzNwA=",
+        "at": "1783905239",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Dry fit, manga corta, cuello en V",
+        "status": "read",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMDcxN0EwRkU5QUMyOUZBMEQwAA==",
+        "at": "1783905248",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Excelente elección, Diego. El cuello en V y la manga corta son ideales para la comodidad en el campo.\n\nManteniendo las especificaciones de tela **Dry Fit**, **manga corta** y **cuello en V**, el precio se mantiene igual:\n\n- **Valor unitario:** $50.000\n- **Total por 15 uniformes:** $750.000\n\nEste valor ya incluye la personalización completa (nombres, números y logos ilimitados en sublimación).\n\n¿Te gustaría que procedamos con el registro de tu pedido para que un asesor comercial revise los detalles del diseño contigo?",
+        "status": "delivered",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDZEQTBFOEM4MjMwREFBNTJEMgA=",
+        "at": "1783905263",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Sí, tengo el diseño, se lo mando después. ¿Cuánto sale el completo?",
+        "status": "read",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEI2REU1OUMwMDVBMEFFRTYxRAA=",
+        "at": "1783905298",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Ok y el abono cómo es?",
+        "status": "delivered",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDk5RTY2NDNDNDE1OEIyMkEzQQA=",
+        "at": "1783905342",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar uniformes de fútbol",
+        "status": "delivered",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDFDMUVDMTA4QkREQjk0ODFDMQA=",
+        "at": "1783905372",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Necesitaríamos 18 uniformes con un diseño propio",
+        "status": "delivered",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEEwODZEMjUyNjM3Mjk0RDcwMAA=",
+        "at": "1783905398",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia diseño equipo Image attached (image_27ea83c31a7a.jpeg) [Size: 96.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjEwNzVjYWQ1LTIyMzAtNDU2Ni1iOTI3LTIwODE2NGI0NGIxMyIsInB1ciI6ImJsb2JfaWQifX0=--e95e38aa83ce223415ef92543058f0cd81753f96/image_27ea83c31a7a.jpeg",
+        "status": "delivered",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDMxQzg2MUMwMkYxNjgyM0Y0NQA=",
+        "at": "1783905409",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia diseño equipo Image attached (image_7f57afbf5f7a.jpeg) [Size: 561.1 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjgwYzJlMTQxLWM2YTMtNDQ5YS1hNTY4LTZkMzc2ZWZmMDUzMCIsInB1ciI6ImJsb2JfaWQifX0=--c4c061f4d3868c486e791c8bc873f53d3acd1ed1/image_7f57afbf5f7a.jpeg",
+        "status": "delivered",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDczMTc5OEY4MzJFNEIxMDk4RAA=",
+        "at": "1783905433",
+        "dir": "inbound",
+        "type": "document",
+        "text": "Lista de jugadores FORMATO LIFE Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjE2Yjg5NDQ0LTI5Y2QtNGFhNC05ZTAwLTlkMmRjN2MxZTQzYSIsInB1ciI6ImJsb2JfaWQifX0=--4ffa7287d4583866dd6b38a34be2e0fd2f7b5c6b/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "delivered",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDg2OUMzQTJCMUIyNDFGNjE4NwA=",
+        "at": "1783905462",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Esa es la lista y las fotos del diseño. ¿Me cotizas el total?",
+        "status": "delivered",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEM4MDk1NURFMUM5OUI4QTU3RAA=",
+        "at": "1783905542",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Hola, quiero cotizar 12 uniformes de fútbol dry fit (test vendedor)",
+        "status": "delivered",
+        "conv": "f11dd042-3eaa-43fa-897b-ffa223c2294d",
+        "name": "Diego Sáenz"
+      }
+    ]
+  },
+  {
+    "id": "e8112845-0d2c-418f-a1e3-1f9d2fd25579",
+    "phone": "573172575981",
+    "last_active_at": "2026-07-12T20:34:04-04:00",
+    "total": 5,
+    "since": 0,
+    "messages": [
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDg1NDJFMzVBNDUxQUQ4RjEyQQA=",
+        "at": "1783902739",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07130032 C1\nModo partner: history\nCliente PASTO (historia). Excel Life + fotos. Pedido borrador Odoo test.\nOdoo TEST. NO confirmar presupuesto.\nSi hace falta confirmación de subida responde después con CONFIRMO SUBIR.",
+        "status": "read",
+        "conv": "e8112845-0d2c-418f-a1e3-1f9d2fd25579",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDY5QkJGNENBNEZFNDE1OTRGMwA=",
+        "at": "1783902745",
+        "dir": "inbound",
+        "type": "document",
+        "text": "WACLI-KAPSO 07130032 C1 · Excel lista · PASTO Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjA1ZGM1M2RjLTYzMWItNDM1NS05ODFhLWJhOWNmNmIzZjM4YyIsInB1ciI6ImJsb2JfaWQifX0=--fe961c60ad4c4058d1fa2093bb3c9b13b0315c53/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "delivered",
+        "conv": "e8112845-0d2c-418f-a1e3-1f9d2fd25579",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDExNDQxNzI5RThDMTA4MTU0QQA=",
+        "at": "1783902755",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07130032 C1 · ref UNIFORME DE ARQUERO PASTOOO.jpeg Image attached (image_4151fd913cb5.jpeg) [Size: 96.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImU4MjI4YjdjLTA4ZmItNGJkMC04ZTQyLTQyZTI0NDllZTZkZSIsInB1ciI6ImJsb2JfaWQifX0=--41debf0a6f16ec2879bd4a0672faf726d428f490/image_4151fd913cb5.jpeg",
+        "status": "delivered",
+        "conv": "e8112845-0d2c-418f-a1e3-1f9d2fd25579",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDUxQUZBNDI1RTM4QjU5OUYzOAA=",
+        "at": "1783902765",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07130032 C1 · ref UNIFORME JUGADORES PASTO.jpeg Image attached (image_ae40a41de0a7.jpeg) [Size: 561.1 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImYyYjJmZTNjLTZhMDItNDBiOS05ZDExLWIzOWU2ZTVjNDcyZCIsInB1ciI6ImJsb2JfaWQifX0=--380ec79a0acb0e2c2d6a2df9bf4ca6e5e12a72c4/image_ae40a41de0a7.jpeg",
+        "status": "delivered",
+        "conv": "e8112845-0d2c-418f-a1e3-1f9d2fd25579",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMjU1NzEwNDJBMzFDRjI1QjQ4AA==",
+        "at": "1783902844",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02661 ingresado en Odoo (borrador). Total: $1689800. Para otro pedido, envíe los datos del cliente.",
+        "status": "delivered",
+        "conv": "e8112845-0d2c-418f-a1e3-1f9d2fd25579",
+        "name": "Diego Sáenz"
+      }
+    ]
+  },
+  {
+    "id": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+    "phone": "573172575981",
+    "last_active_at": "2026-07-12T18:37:13-04:00",
+    "total": 34,
+    "since": 0,
+    "messages": [
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDE0NjNGMEUzRTM4QzNEMkI3MwA=",
+        "at": "1783895321",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07122228 C1\nModo partner: history\nCliente PASTO (historia). Excel Life + fotos. Pedido borrador Odoo test.\nOdoo TEST. NO confirmar presupuesto.\nSi hace falta confirmación de subida responde después con CONFIRMO SUBIR.",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQTFCRTYwOUVEMjZERjQ1RENFAA==",
+        "at": "1783895328",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Veo que es un pedido nuevo para **PASTO** (historia). \n\nPara continuar necesito que adjuntes:\n1. **Excel formato Life** (pestaña \"formato life\")\n2. **Fotos de referencia** (si las hay)\n\nEnvía los archivos y proceso el borrador en Odoo TEST.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEQ1QUIzNDhGODlFMjhGQzAyRAA=",
+        "at": "1783895328",
+        "dir": "inbound",
+        "type": "document",
+        "text": "WACLI-KAPSO 07122228 C1 · Excel lista · PASTO Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjE0YjYwZjdmLTQxY2ItNDJmYi1iNTM1LTg3NjkxNmJhNWJmZiIsInB1ciI6ImJsb2JfaWQifX0=--701e3865e50447b45ef7f7c2bdbbe96a3be72e95/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDcxM0MzMUM3RTBEMUMxMzk3OAA=",
+        "at": "1783895337",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07122228 C1 · ref UNIFORME DE ARQUERO PASTOOO.jpeg Image attached (image_2d1358f38972.jpeg) [Size: 96.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImZlZTAyYmI2LTllYzctNGIyMS1hOTgzLTNhNjgzYmNhZWYxZiIsInB1ciI6ImJsb2JfaWQifX0=--d8552289e4a37730dca1da1989dc4533f4b6aede/image_2d1358f38972.jpeg",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEQ0NDkwRjhDNEU2OEUwQUVFMQA=",
+        "at": "1783895346",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07122228 C1 · ref UNIFORME JUGADORES PASTO.jpeg Image attached (image_a1a5be2244bf.jpeg) [Size: 561.1 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjkyODBjMTQwLTg3YWMtNDhjNy1iZDFlLTQ3OTQwYjNiNjk1YSIsInB1ciI6ImJsb2JfaWQifX0=--954ca13ada29057d1335fef5e9507cabc1888ae7/image_a1a5be2244bf.jpeg",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSOTVGN0Q4QzdGNDYzMEM1MzRBAA==",
+        "at": "1783895374",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Excel parseado. Resumen:\n- **36 filas** · 17 M uniforme · 19 camisetas (18 F + 1 M) · **4 arqueros** (manga larga)\n- Fotos de referencia registradas\n\nValidando productos en Odoo:",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMDk1NjM5RUFBNThCQzczRkMwAA==",
+        "at": "1783895385",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Productos validados. Guardando datos del pedido:",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMTUyOUE4NEE2MjBDRTM5NEQ1AA==",
+        "at": "1783895400",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02657 ingresado en Odoo (borrador). Total: $1689800. Para otro pedido, envíe los datos del cliente.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDU0MzQ4RDg1NTVERjExQjk4MwA=",
+        "at": "1783895445",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07122230 C2\nModo partner: history\nCliente JORGE DUEÑOS DEL BALON (historia). Solo Excel.\nOdoo TEST. NO confirmar presupuesto.\nSi hace falta confirmación de subida responde después con CONFIRMO SUBIR.",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQ0VCQjE3MUNDNTY0N0EyODJEAA==",
+        "at": "1783895450",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Pedido incompleto: sin lineas comerciales.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEMyQzk3Q0ZBRjYzM0YyRDFCQwA=",
+        "at": "1783895453",
+        "dir": "inbound",
+        "type": "document",
+        "text": "WACLI-KAPSO 07122230 C2 · Excel lista · JORGE DUEÑOS DEL BALON Document attached (UNIFORMES RODEO JORGE DUEÑOS DEL BALON.xlsx) [Size: 12.7 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImEzNjA2MTIwLWFiODUtNDY4NC05MGJjLTNlOGE0NWVmYzg5ZSIsInB1ciI6ImJsb2JfaWQifX0=--f4a7510b9c46381addaabd687e3f793bf928df10/UNIFORMES%20RODEO%20JORGE%20DUE%C3%91OS%20DEL%20BALON.xlsx",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQUVEMDY1NkE1RTQ3MDkxMEE3AA==",
+        "at": "1783895519",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Excel parseado. **26 filas** · 26 M uniforme · 17 manga corta · 9 manga larga.\n\nValidado en Odoo: **Uniforme de Fútbol** · 26 unidades · $1,300,000.\n\nCliente: **JORGE DUEÑOS DEL BALON** (Rodeo). Layout genérico detectado; Excel adjunto como evidencia.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMjc0QTQwREQ5RjBEQ0I0NTE1AA==",
+        "at": "1783895528",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02658 ingresado en Odoo (borrador). Total: $1547000. Para otro pedido, envíe los datos del cliente.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDg2RUVBRUM4MTRGNjk4QjRBRgA=",
+        "at": "1783895539",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07122230 C3\nModo partner: new\nCliente NUEVO: E2E NUEVO WA LUCU. Excel + logo. Crear partner nuevo.\nOdoo TEST. NO confirmar presupuesto.\nSi hace falta confirmación de subida responde después con CONFIRMO SUBIR.",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQjJEQkY0ODZDMkEzNTFENzJFAA==",
+        "at": "1783895544",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Pedido incompleto: sin lineas comerciales.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDdDNUFDMDc0RTVENEQyRUJBMwA=",
+        "at": "1783895547",
+        "dir": "inbound",
+        "type": "document",
+        "text": "WACLI-KAPSO 07122230 C3 · Excel lista · E2E NUEVO WA LUCU Document attached (FORMATO PEDIDO LIFE 1 (8) LUCU FORMATOO.xlsx) [Size: 16.8 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjFlNWFiMzVjLWE4MGEtNDUwYy1iYjBmLTlhMTcwMDMzMTBiZiIsInB1ciI6ImJsb2JfaWQifX0=--0c7468697e7cbd5b324e29a84926f9aeb6540ddb/FORMATO%20PEDIDO%20LIFE%201%20(8)%20LUCU%20FORMATOO.xlsx",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDM0QjIzNEFCNjdFQ0YyMjFFMwA=",
+        "at": "1783895557",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07122230 C3 · ref LUCU DISEÑO.jpeg Image attached (image_ef691332c847.jpeg) [Size: 374.9 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQ2YzYzM2VlLTNkYmUtNGIzOS04M2RlLTJmZmU2OWU4Zjg0ZSIsInB1ciI6ImJsb2JfaWQifX0=--58c440c492e9862679e228c52c904d54370aa1fa/image_ef691332c847.jpeg",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDcwMDY1QkE2MzY4QjZBNjc0RQA=",
+        "at": "1783895566",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07122230 C3 · ref LUCU LOGO.jpeg Image attached (image_7558a927c260.jpeg) [Size: 402.6 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjkyZDg3YzA4LTgyMTYtNDZiNy1iYmE5LWIzNjU5N2NlZmNjZiIsInB1ciI6ImJsb2JfaWQifX0=--fa1c9ac5d900f886464cc5c3ad1134225781cf30/image_7558a927c260.jpeg",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNDNFM0Q2RkNFMTU3OTZBMzVBAA==",
+        "at": "1783895586",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Excel parseado. **19 filas** · 19 M uniforme · 2 arqueros · 19 manga corta. Fotos de diseño y logo registradas.\n\nValidando productos en Odoo:",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRTNEQjVDQjQyQTIyNjMzMUIyAA==",
+        "at": "1783895591",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Producto validado: **Uniforme de Fútbol** · 19 unidades · $950,000.\n\nCliente nuevo: **E2E NUEVO WA LUCU**. Guardando datos del pedido:",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNDM5RkYyQTkwOEUyMDFDOTFDAA==",
+        "at": "1783895602",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02659 ingresado en Odoo (borrador). Total: $1130500. Para otro pedido, envíe los datos del cliente.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDk2NjBDOTU3N0UxRjQ0QUQ2QwA=",
+        "at": "1783895653",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07122230 C4\nModo partner: history\nCliente NELSON ELEFANTES (mucha historia). Excel urgente.\nOdoo TEST. NO confirmar presupuesto.\nSi hace falta confirmación de subida responde después con CONFIRMO SUBIR.",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMzg4MjNEMjVBOEUwRkQ4ODhCAA==",
+        "at": "1783895660",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Pedido incompleto: sin lineas comerciales.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMERGRDg3MzQxMUM2NUEwRTVGMAA=",
+        "at": "1783895661",
+        "dir": "inbound",
+        "type": "document",
+        "text": "WACLI-KAPSO 07122230 C4 · Excel lista · NELSON ELEFANTES Document attached (PEDIDO  LIFE- 11- JULIO-2026. nelson elefantes urgentr.xlsx) [Size: 22.5 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImU4ZTMzMzIzLTNhMGMtNGEzNi05YzdhLTM5ZGM2NmM4MjM1YSIsInB1ciI6ImJsb2JfaWQifX0=--42c34db2e95404429e7a0148ef0ce898090d6159/PEDIDO%20%20LIFE-%2011-%20JULIO-2026.%20nelson%20elefantes%20urgentr.xlsx",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEM5NDNBN0Y4OTQ5OThEMTM2QQA=",
+        "at": "1783895670",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07122230 C4 · ref nelson elefantes (1).jpeg Image attached (image_226cdb1897d4.jpeg) [Size: 387.5 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjE5MzIzNzdiLTBlZDUtNGRiYi1iODQzLTY3NTkzNzgzZDUwOCIsInB1ciI6ImJsb2JfaWQifX0=--43dce0cb2407dac81910e764810bb0f2c98634ba/image_226cdb1897d4.jpeg",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSN0NEREFBNTIzOUFBNzM0ODE3AA==",
+        "at": "1783895697",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Excel parseado: **6 filas** · 6 M uniforme · BÁSQUETBAL · medias BLANCAS. Foto de referencia registrada.\n\nValidando producto en Odoo:",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMzZCRjIxNTlCRUVGRUMxMzVGAA==",
+        "at": "1783895706",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Producto validado: **Uniforme de Fútbol** · 6 unidades · $300,000.  \nNota: Excel indica BÁSQUETBAL; revisar deporte en Odoo.\n\nCliente: **NELSON ELEFANTES**. Guardando borrador:",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRTg0N0M1Q0VCRTVFMDM1RDU3AA==",
+        "at": "1783895717",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02660 ingresado en Odoo (borrador). Total: $357000. Para otro pedido, envíe los datos del cliente.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEY0RjhFNjQzN0E3RUYyRkE4RQA=",
+        "at": "1783895758",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07122230 C5\nModo partner: history\nCliente FORTALEZA OMAR (historia). Solo Excel.\nOdoo TEST. NO confirmar presupuesto.\nSi hace falta confirmación de subida responde después con CONFIRMO SUBIR.",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQ0U1QUQ1RTVEODNGQTQyOUQ2AA==",
+        "at": "1783895763",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Pedido incompleto: sin lineas comerciales.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDM4Q0UyMzk4RkY4MTdBRkM4QgA=",
+        "at": "1783895766",
+        "dir": "inbound",
+        "type": "document",
+        "text": "WACLI-KAPSO 07122230 C5 · Excel lista · FORTALEZA OMAR Document attached (QUINTO PEDIDO DE UNIFORMES 2026 FORTALEZA OMAR.xlsx) [Size: 71.3 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImU4NGU1NjY2LWI1NGEtNGUwMy1hMzU2LTQzNDg0YjBiZjJhMSIsInB1ciI6ImJsb2JfaWQifX0=--026c8bbe5a610ed50ae08f8ff4a133eefe9abbc2/QUINTO%20PEDIDO%20DE%20UNIFORMES%202026%20FORTALEZA%20OMAR.xlsx",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNUZCMTY3MkU1OTRGODk0RjQ2AA==",
+        "at": "1783895816",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Pedido incompleto: minimo 6 uniformes del mismo diseno.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMERFMUQwMEFDMThGRURGNjNBOAA=",
+        "at": "1783895828",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR",
+        "status": "read",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNDNGNDQ2MDZEQTI3QzY5MDk0AA==",
+        "at": "1783895833",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Pedido incompleto: minimo 6 uniformes del mismo diseno.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "baa5e5d5-e553-4172-9168-f9155a28f83a",
+        "name": "Diego Sáenz"
+      }
+    ]
+  },
+  {
+    "id": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+    "phone": "573172575981",
+    "last_active_at": "2026-07-12T18:24:49-04:00",
+    "total": 43,
+    "since": 0,
+    "messages": [
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEE5MjNGRjJGRDE1QjMyNUM1NAA=",
+        "at": "1783875905",
+        "dir": "inbound",
+        "type": "document",
+        "text": "E2E#2 Formulario nativo PASTO. Cliente E2E WA PASTO Kapso. Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjgxZDU0OGU3LTc5Y2QtNDljMC1hMmZmLTkwODliZDE2NzU1ZiIsInB1ciI6ImJsb2JfaWQifX0=--6159536995d1ff2b54899f6c715ee778e5d0d09c/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMDFGOTZEOTE3RDQ5QzcyMTY1AA==",
+        "at": "1783875970",
+        "dir": "outbound",
+        "type": "text",
+        "text": "**Resumen lista PASTO:**\n- 36 filas · 17 M uniforme · 1 M camiseta · 18 F camiseta · 4 arqueros (manga larga)\n- Líneas comerciales: Uniforme de Fútbol × 17, Camiseta deportiva dry-fit × 19\n- Cliente: E2E WA PASTO Kapso\n\nResponda **CONFIRMO SUBIR** para crear el borrador en Odoo.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEZGQjI1NDE0MTYxMUM1MDQ4QwA=",
+        "at": "1783876048",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSODlCQkEwNzE1QUMzREQxNkY3AA==",
+        "at": "1783876073",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Hay ambiguedad o parseo parcial. Resumen:\n• Uniforme de Fútbol × 17\n• Camiseta deportiva dry-fit × 19\nResponde CONFIRMO SUBIR para crear el borrador.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDIzRjFDOTRCMEIzODdCRjA0NgA=",
+        "at": "1783876168",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRjFEQjBFREVCNTE1OThERjE0AA==",
+        "at": "1783876178",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02640 ingresado en Odoo (borrador). Total: $1689800. Para otro pedido, envíe los datos del cliente.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDhBQkM0NkEyMDRGREI5OTY5RgA=",
+        "at": "1783876207",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQjc0QkZCRDE2MTgxNTZENjI0AA==",
+        "at": "1783876210",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02640 ya estaba en Odoo (borrador). Si necesita corregir, envíe el Excel o indique el cambio.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDU4MEFDNzg1MUJGRURGNTkyRQA=",
+        "at": "1783878917",
+        "dir": "inbound",
+        "type": "text",
+        "text": "ping e2e 175514",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNTQyOUMzNjk1QTQ5MEREQzFBAA==",
+        "at": "1783878921",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02640 ya estaba en Odoo (borrador). Si necesita corregir, envíe el Excel o indique el cambio.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDc3MTBGN0JFNEM2Q0QwRDZCOQA=",
+        "at": "1783878938",
+        "dir": "inbound",
+        "type": "document",
+        "text": "SUBIR PEDIDO E2E C+B. Cliente: E2E WA PASTO Kapso. Excel FORMATO LIFE + refs de diseño abajo. Uniforme x17 + Camiseta dry-fit x19. Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjUyNWRlNjdlLWUxNjYtNGQ0OS1iZGNiLWM3ZTVlNmE4NTRjNiIsInB1ciI6ImJsb2JfaWQifX0=--6c194cb20ea20208bced1763f31fcee79fb1c62e/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMEEwQzhDRTk3NEM2QjJFMjIzAA==",
+        "at": "1783878943",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02640 ya estaba en Odoo (borrador). Si necesita corregir, envíe el Excel o indique el cambio.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEUxOUZDNDJGNjI2REVBNTc1MAA=",
+        "at": "1783878945",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia diseño jugadores PASTO Image attached (image_748a88726619.jpeg) [Size: 561.1 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImZlYTFmYzJmLTRmYTctNDE5Yi1hYTk1LTgyMTc2NDdjNmQ0YSIsInB1ciI6ImJsb2JfaWQifX0=--f3b4ab26a561e3ea2ccfca5fc213e37eb8e32b2b/image_748a88726619.jpeg",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSN0NBMUYzQkUwMzcwMTVCODA1AA==",
+        "at": "1783878950",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02640 ya estaba en Odoo (borrador). Si necesita corregir, envíe el Excel o indique el cambio.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEZBQzVGNThENTQzQTQ5QzkzNwA=",
+        "at": "1783878951",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia arquero PASTO Image attached (image_b0fe7b158750.jpeg) [Size: 96.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjA1MmU3OTQyLWFhY2MtNDBjMS04Njc4LTQ0ZDg0NDA2ODQ3MSIsInB1ciI6ImJsb2JfaWQifX0=--5a3c849c410bc4c395dffbce2acb99e24e6978f6/image_b0fe7b158750.jpeg",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNTdCODBDQjIzNkE0NTAwNjUzAA==",
+        "at": "1783878957",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02640 ya estaba en Odoo (borrador). Si necesita corregir, envíe el Excel o indique el cambio.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDI4QTU4RkQ5NURBNjIwQTc2QgA=",
+        "at": "1783879127",
+        "dir": "inbound",
+        "type": "document",
+        "text": "SUBIR PEDIDO nuevo E2E C+B. Cliente E2E WA PASTO Kapso. Excel FORMATO LIFE + refs. Uniforme x17 + Camiseta dry-fit x19. Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjkxZjI5NDRkLWIxZjctNDFjZi04YmE5LTMwYTgzYjFmMjA0ZiIsInB1ciI6ImJsb2JfaWQifX0=--b0c2de61e6f833c4f645829ce5f6abe08ed73c59/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDVCQzg4NjZBRTUyRTlFNjA0QwA=",
+        "at": "1783879136",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia jugadores PASTO Image attached (image_581d74492c6c.jpeg) [Size: 561.1 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjU2ZTU4ODQyLTE3ZWMtNDFhZS1hNWRkLWE1Y2FhMGU3NWRhNSIsInB1ciI6ImJsb2JfaWQifX0=--3395fe4b8acc0f450ebdf2ada4571d5d541f98fe/image_581d74492c6c.jpeg",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDY5NjU4QzcwQzdBOTRBNTZFOAA=",
+        "at": "1783879146",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia arquero PASTO Image attached (image_1de37e177009.jpeg) [Size: 96.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImRmZWFkYmZiLWIxZDAtNDhkMi04NzUyLTBlZjUyNmFiM2NhNiIsInB1ciI6ImJsb2JfaWQifX0=--84829b941060e2982e2bc4c81e4179feea99f444/image_1de37e177009.jpeg",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQkQxMDQxOUFCMjMxMTNDOEFBAA==",
+        "at": "1783879270",
+        "dir": "outbound",
+        "type": "text",
+        "text": "**Resumen lista PASTO:**\n- 36 filas · 17 M uniforme · 1 M camiseta · 18 F camiseta · 4 arqueros (manga larga)\n- Líneas comerciales: Uniforme de Fútbol × 17, Camiseta deportiva dry-fit × 19\n- Total: $1.420.000\n- Cliente: E2E WA PASTO Kapso\n- Adjuntos: Excel + 2 referencias de diseño\n\nResponda **CONFIRMO SUBIR** para crear el borrador en Odoo.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEMzNzEyMkRFN0NERDk5NzA3QwA=",
+        "at": "1783879310",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNUY1NjVFRjhDQkQ3NkVDNzdCAA==",
+        "at": "1783879329",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Hay ambiguedad o parseo parcial. Resumen:\n• Uniforme de Fútbol × 17\n• Camiseta deportiva dry-fit × 19\nResponde CONFIRMO SUBIR para crear el borrador.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDg1NEFCRDVCNjA2OTRBMEIxNgA=",
+        "at": "1783879435",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSMzI2QzlFQzkxQjM1M0NFQzExAA==",
+        "at": "1783879447",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02642 ingresado en Odoo (borrador). Total: $1689800. Para otro pedido, envíe los datos del cliente.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDhENkQ4RDQxNDMyMDlGM0M3OAA=",
+        "at": "1783894580",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07122216 C1\nModo partner: history\nCliente PASTO (historia). Excel Life + fotos. Pedido borrador Odoo test.\nOdoo TEST. NO confirmar presupuesto.\nSi hace falta confirmación de subida responde después con CONFIRMO SUBIR.",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNjVGODBFRTlDNjgyMUNFOTZEAA==",
+        "at": "1783894583",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02642 ya estaba en Odoo (borrador). Si necesita corregir, envíe el Excel o indique el cambio.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDgyRjRBNTVDQTg1MzBEOUQ1NAA=",
+        "at": "1783894588",
+        "dir": "inbound",
+        "type": "document",
+        "text": "WACLI-KAPSO 07122216 C1 · Excel lista · PASTO Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjI1ZTFiYTVmLWY5NTctNGY3OS1iY2M3LWUxZTY0NTEyMmQzOSIsInB1ciI6ImJsb2JfaWQifX0=--9c5eb22cb57833c673da502c1c00fc834acaf476/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMENEOTExQTRGNDgwQTRGMDg0RQA=",
+        "at": "1783894600",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07122216 C1 · ref UNIFORME DE ARQUERO PASTOOO.jpeg Image attached (image_e260bf849246.jpeg) [Size: 96.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImU1ZDA3Yjg3LWIzMjItNDFhYy1hMmUwLWU2YzJjNDg3ZjNmNyIsInB1ciI6ImJsb2JfaWQifX0=--7058cd1ff26884ac66a64a5bd0ca303742413e68/image_e260bf849246.jpeg",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDNBNjE5RDJBOUNFQzM2MEE2NgA=",
+        "at": "1783894607",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07122216 C1 · ref UNIFORME JUGADORES PASTO.jpeg Image attached (image_5c25b96e5cbf.jpeg) [Size: 561.1 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjdkYjQ2MGQ5LTQzY2MtNDBiMC05YWJjLTI0NjM0OTM1MDc2MCIsInB1ciI6ImJsb2JfaWQifX0=--0a8b2014660df29ce222fe42467d5bff7ed52c17/image_5c25b96e5cbf.jpeg",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDIwMTBEMkI1MUI1RUVENjM1RAA=",
+        "at": "1783894645",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR. WACLI-KAPSO 07122216 C1. Cliente PASTO. Sube borrador Odoo test, no confirmar SO.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNjU4OTdBNUY0ODlBODQ0Mjc3AA==",
+        "at": "1783894661",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Hay ambiguedad o parseo parcial. Resumen:\n• Uniforme de Fútbol × 17\n• Camiseta deportiva dry-fit × 19\nResponde CONFIRMO SUBIR para crear el borrador.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEQzREQzREExRDFDMTcwQTIxMAA=",
+        "at": "1783895002",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07122223 C1\nModo partner: history\nCliente PASTO (historia). Excel Life + fotos. Pedido borrador Odoo test.\nOdoo TEST. NO confirmar presupuesto.\nSi hace falta confirmación de subida responde después con CONFIRMO SUBIR.",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMEE3QkQ1NEEzMzcyMUEyQ0U3NAA=",
+        "at": "1783895009",
+        "dir": "inbound",
+        "type": "document",
+        "text": "WACLI-KAPSO 07122223 C1 · Excel lista · PASTO Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjM1ZGFkNTI5LTZkNjAtNGYxZS05Y2QxLWNmM2JkNWMwZDU2NCIsInB1ciI6ImJsb2JfaWQifX0=--2aab42ce309decbd74a936525aa201ae01f0b94f/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNTYzQTcxRUZFOTE2MDY2M0U2AA==",
+        "at": "1783895016",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02618 ingresado en Odoo (borrador). Total: $1689800. Para otro pedido, envíe los datos del cliente.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDg2Mzg3MkY0NDI0MEM0MzEyMwA=",
+        "at": "1783895018",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07122223 C1 · ref UNIFORME DE ARQUERO PASTOOO.jpeg Image attached (image_8a4323d130da.jpeg) [Size: 96.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjYyNzUyMTI5LTU4N2YtNGQzMy04ZWEzLWZhMGJlZGJmOTcxNyIsInB1ciI6ImJsb2JfaWQifX0=--be41f8755526a24aef322cd41df75a60012a79d5/image_8a4323d130da.jpeg",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDYxREQ3RkE5REE2ODhDMzJEMAA=",
+        "at": "1783895029",
+        "dir": "inbound",
+        "type": "image",
+        "text": "WACLI-KAPSO 07122223 C1 · ref UNIFORME JUGADORES PASTO.jpeg Image attached (image_c242b72b6fe7.jpeg) [Size: 561.1 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjQzYjcyOGE0LTg5Y2ItNDhlOS1hMDk4LWMxYzJmMDFkMzViNCIsInB1ciI6ImJsb2JfaWQifX0=--5169995a246b180ecb36b700d4582a36f6fa7a7c/image_c242b72b6fe7.jpeg",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSQ0Q5QjQ4MjlEMzZFRUJCOUMzAA==",
+        "at": "1783895057",
+        "dir": "outbound",
+        "type": "text",
+        "text": "**Resumen lista PASTO:**\n- 36 filas · 17 M uniforme · 1 M camiseta · 18 F camiseta · 4 arqueros (manga larga)\n- Líneas comerciales: Uniforme de Fútbol × 17, Camiseta deportiva dry-fit × 19\n- Total: $1.420.000\n- Cliente: E2E WA PASTO Kapso\n- Adjuntos: Excel + 2 referencias de diseño\n\nResponda **CONFIRMO SUBIR** para crear el borrador en Odoo.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNDcxNTE4MUU4MUI0NTZGMDRCAA==",
+        "at": "1783895063",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Hay ambiguedad o parseo parcial. Resumen:\n• Uniforme de Fútbol × 17\n• Camiseta deportiva dry-fit × 19\nResponde CONFIRMO SUBIR para crear el borrador.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDgyOTkxODY5RDUxQjg2NDBCNgA=",
+        "at": "1783895074",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR",
+        "status": "read",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSODI2RTU1MUQxMDZCOUE5NThEAA==",
+        "at": "1783895089",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Pedido S02619 ingresado en Odoo (borrador). Total: $1689800. Para otro pedido, envíe los datos del cliente.",
+        "status": "delivered",
+        "conv": "124000b5-7a27-4bf9-8caa-da6d2d929b5a",
+        "name": "Diego Sáenz"
+      }
+    ]
+  },
+  {
+    "id": "d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+    "phone": "573172575981",
+    "last_active_at": "2026-07-12T12:55:09-04:00",
+    "total": 6,
+    "since": 0,
+    "messages": [
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDVENEE2Q0VBMDI3RTA2NDdCNgA=",
+        "at": "1783874814",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR. Cliente E2E WA PASTO Kapso. Confirmo el borrador con Uniforme de Fútbol x17 y Camiseta dry-fit x19 del Excel FORMATO LIFE que acabo de enviar.",
+        "status": "read",
+        "conv": "d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSOEVGMUY5NkQ2MTBBODczNTk0AA==",
+        "at": "1783874840",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No veo el Excel en este hilo. ¿Puedes reenviarlo o pegar la lista aquí? Necesito el detalle con tallas, nombres y dorsales para armar el borrador.",
+        "status": "delivered",
+        "conv": "d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDUzOTg5RTA2OERCNzQ2ODJDNAA=",
+        "at": "1783875115",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Reenvío el Excel FORMATO LIFE. Cliente: E2E WA PASTO Kapso. CONFIRMO SUBIR el borrador (Uniforme x17 + Camiseta dry-fit x19).",
+        "status": "read",
+        "conv": "d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDAyQTdFOEY2NzJDM0QyMkYzNgA=",
+        "at": "1783875121",
+        "dir": "inbound",
+        "type": "document",
+        "text": "FORMATO PEDIDO LIFE — CONFIRMO SUBIR E2E WA PASTO Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImUzOGE0YTRmLWY4ZDctNGM2ZS1iODZmLWFiYTY1MWZmZjdiOSIsInB1ciI6ImJsb2JfaWQifX0=--c1f634bb83389326f81ed8a20f20a81f982e0dc6/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "delivered",
+        "conv": "d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSOTI2RjZEQjBDOTc4ODkwQkI4AA==",
+        "at": "1783875183",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Hay ambiguedad o parseo parcial. Resumen:\n• Uniforme de Fútbol × 17\n• Camiseta deportiva dry-fit × 19\nResponde CONFIRMO SUBIR para crear el borrador.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDdGOUUxQ0UzRERCRUM5NjYzQgA=",
+        "at": "1783875307",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR",
+        "status": "read",
+        "conv": "d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+        "name": "Diego Sáenz"
+      }
+    ]
+  },
+  {
+    "id": "e2d0eb63-6017-4975-aff3-0a560153e483",
+    "phone": "573172575981",
+    "last_active_at": "2026-07-12T12:45:26-04:00",
+    "total": 5,
+    "since": 0,
+    "messages": [
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDhCNUU4MUY1QkI2RDM0MURERAA=",
+        "at": "1783874614",
+        "dir": "inbound",
+        "type": "text",
+        "text": "Pedido nuevo E2E Formulario nativo. Cliente: E2E WA PASTO Kapso. Adjunto Excel FORMATO LIFE + foto de referencia. Sube borrador en Odoo test.",
+        "status": "read",
+        "conv": "e2d0eb63-6017-4975-aff3-0a560153e483",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDQ1MUExMTI2RTNCMDczMjlDNAA=",
+        "at": "1783874621",
+        "dir": "inbound",
+        "type": "document",
+        "text": "FORMATO PEDIDO LIFE — E2E WA PASTO Document attached (FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx) [Size: 12.6 KB | Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImE5MDU3OTU3LWFmNGUtNDI2MC1hYjc3LTAzZjQ3NTBkYzI4MyIsInB1ciI6ImJsb2JfaWQifX0=--1524a56bb6147e6d1090aeac661117447a97607e/FORMATO%20PEDIDO%20LIFE%202026%20(1)%20listado%20PASTO.xlsx",
+        "status": "delivered",
+        "conv": "e2d0eb63-6017-4975-aff3-0a560153e483",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDE4NEFGM0E0QjNDOEMxNjA2QQA=",
+        "at": "1783874635",
+        "dir": "inbound",
+        "type": "image",
+        "text": "Referencia diseño E2E WA PASTO Image attached (image_5dc8427029c4.jpeg) [Size: 67.9 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImMyMWQ3NTVkLTZlODUtNGNhMi04ZmIxLTdlZTk2OTYwOGJhNyIsInB1ciI6ImJsb2JfaWQifX0=--793cbe17a73fecf1b9eb6d1c5aa9f610a0836e07/image_5dc8427029c4.jpeg",
+        "status": "delivered",
+        "conv": "e2d0eb63-6017-4975-aff3-0a560153e483",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRTdFNDVBNzlCMkNDOTg4NUU5AA==",
+        "at": "1783874681",
+        "dir": "outbound",
+        "type": "text",
+        "text": "No se subió el pedido: Hay ambiguedad o parseo parcial. Resumen:\n• Uniforme de Fútbol × 17\n• Camiseta deportiva dry-fit × 19\nResponde CONFIRMO SUBIR para crear el borrador.. Corrija y confirme de nuevo.",
+        "status": "delivered",
+        "conv": "e2d0eb63-6017-4975-aff3-0a560153e483",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhgWM0VCMDUxRUYxQzg0RkQ0REFDMTRCNAA=",
+        "at": "1783874724",
+        "dir": "inbound",
+        "type": "text",
+        "text": "CONFIRMO SUBIR",
+        "status": "read",
+        "conv": "e2d0eb63-6017-4975-aff3-0a560153e483",
+        "name": "Diego Sáenz"
+      }
+    ]
+  },
+  {
+    "id": "e426c9c9-1cb7-4cc2-91bb-62e1aeb40542",
+    "phone": "573172575981",
+    "last_active_at": "2026-07-01T18:20:22-04:00",
+    "total": 2,
+    "since": 0,
+    "messages": [
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAEhggQUMwRTdGMzZCQjA1MzIzMERDRDA2MURCRDg3RTY0MkMA",
+        "at": "1782944402",
+        "dir": "inbound",
+        "type": "audio",
+        "text": "Audio attached (audio_d84a591df23d.ogg) [Size: 8.3 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImRiY2U1NjllLThhNTEtNDg1MS05YmQwLTg3MjVlMTdkNDFhNSIsInB1ciI6ImJsb2JfaWQifX0=--81c55ed02f2f96ee145774cf4a9dc6b76b83fd33/audio_d84a591df23d.ogg \n\nTranscript: Hola Live Deportes, prueba de transcripción",
+        "status": "read",
+        "conv": "e426c9c9-1cb7-4cc2-91bb-62e1aeb40542",
+        "name": "Diego Sáenz"
+      },
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSRUY5REI5RTkyREJFOTM3NjQwAA==",
+        "at": "1782944422",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego, recibido. La transcripción del audio funcionó correctamente.\n\nEstoy en modo ingreso de pedido. Cuando tengas un pedido para registrar, pásame:\n\n1. **Teléfono y nombre del cliente**\n2. **Producto** (qué prenda, deporte, tipo de cuello/manga si aplica)\n3. **Cantidad** (mínimo 6 unidades)\n4. **Lista de tallas** (si la tienes, envíala o pégala aquí)\n\nTambién puedes enviarme fotos de referencia o archivos Excel con las tallas. ¿Tienes algún pedido para ingresar ahora?",
+        "status": "delivered",
+        "conv": "e426c9c9-1cb7-4cc2-91bb-62e1aeb40542",
+        "name": "Diego Sáenz"
+      }
+    ]
+  },
+  {
+    "id": "14381218-0226-4166-9ade-4374c6e8287f",
+    "phone": "573172575981",
+    "last_active_at": "2026-06-29T19:41:10-04:00",
+    "total": 1,
+    "since": 0,
+    "messages": [
+      {
+        "id": "wamid.HBgMNTczMTcyNTc1OTgxFQIAERgSNEMwMkJFOUU2RjAzQjVDQjBDAA==",
+        "at": "1782776483",
+        "dir": "outbound",
+        "type": "text",
+        "text": "Hola Diego. Consultas de precios o servicios. Para registrar en Odoo: **SUBIR PEDIDO** (ventas), **SUBIR NOMINA** o **SUBIR COMPRA**.\n\n¿En qué puedo ayudarte?",
+        "status": "failed",
+        "conv": "14381218-0226-4166-9ade-4374c6e8287f",
+        "name": "Diego Sáenz"
+      }
+    ]
+  }
+]

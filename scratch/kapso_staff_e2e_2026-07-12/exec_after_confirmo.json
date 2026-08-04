@@ -1,0 +1,140 @@
+{
+  "ok": true,
+  "data": {
+    "execution": {
+      "id": "5792bfcb-f7b0-4e82-91ca-adbd77120610",
+      "current_step": {
+        "id": "c8baa88a-eed9-4806-81cf-ac768763cc50",
+        "identifier": "agent_1780762885818",
+        "stepable_type": "FlowAgentStep"
+      },
+      "ended_at": null,
+      "execution_context": {
+        "vars": {
+          "user": {
+            "name": "Diego Saenz",
+            "role": "staff",
+            "wa_id": "573172575981",
+            "staff_member": {
+              "name": "Diego Saenz",
+              "role": "staff",
+              "phone": "573172575981"
+            },
+            "odoo_project_id": null,
+            "odoo_project_name": null,
+            "is_allowed_for_transactions": true
+          },
+          "kapso": {
+            "customer_lane": null,
+            "staff_only_mode": true
+          },
+          "staff": {
+            "lane": "staff_order_intake",
+            "input_route": {
+              "lane": "staff_pedido",
+              "mode": "deterministic",
+              "format": "structured_text",
+              "parser": "parsear_lista_texto_pedido",
+              "evidence": [],
+              "confidence": 0.75
+            }
+          },
+          "intent": {
+            "raw_text": "CONFIRMO SUBIR. Cliente E2E WA PASTO Kapso. Confirmo el borrador con Uniforme de Fútbol x17 y Camiseta dry-fit x19 del Excel FORMATO LIFE que acabo de enviar."
+          },
+          "tenant": {
+            "id": "life_main",
+            "name": "Life Deportes Principal",
+            "policy_set": "sales_default_v1",
+            "secret_prefix": "TENANT_LIFE_MAIN",
+            "phone_number_id": null
+          },
+          "service": {
+            "routed_edge": "staff",
+            "last_call_at": "2026-07-12T16:46:57.504Z",
+            "last_call_name": "route_user_entry",
+            "fallback_message": null,
+            "last_call_status": "ready"
+          },
+          "security": {
+            "input_blocked": false,
+            "input_flagged": false,
+            "mcp_call_count": 0,
+            "policy_version": "2026-06-17",
+            "last_block_reason": null
+          },
+          "user_lane": "staff",
+          "last_user_input": "CONFIRMO SUBIR. Cliente E2E WA PASTO Kapso. Confirmo el borrador con Uniforme de Fútbol x17 y Camiseta dry-fit x19 del Excel FORMATO LIFE que acabo de enviar."
+        },
+        "system": {
+          "flow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+          "customer": {
+            "id": "7fe6d691-be8f-462a-a2ec-9aeb93476b7b",
+            "name": "Default customer",
+            "external_customer_id": "default_customer"
+          },
+          "flow_name": "lifedeportes_sales_inbound",
+          "started_at": "2026-07-12T12:46:54-04:00",
+          "step_count": 4,
+          "waiting_at": "2026-07-12T12:47:21-04:00",
+          "workflow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+          "flow_version": 0,
+          "trigger_type": "inbound_message",
+          "workflow_name": "lifedeportes_sales_inbound",
+          "whatsapp_config": {
+            "id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+            "kind": "production",
+            "name": "Life Deportes Asistente",
+            "phone_number_id": "1095603153637786",
+            "business_account_id": "808809791888713",
+            "display_phone_number": "+57 322 2252942",
+            "display_phone_number_normalized": "573222252942"
+          },
+          "workflow_version": 0,
+          "flow_execution_id": "5792bfcb-f7b0-4e82-91ca-adbd77120610",
+          "last_status_change": "2026-07-12T12:47:21-04:00",
+          "workflow_execution_id": "5792bfcb-f7b0-4e82-91ca-adbd77120610",
+          "trigger_whatsapp_config_id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+          "available_whatsapp_config_ids": [
+            "c8364dd2-ae4d-433b-bc02-3b5ea01024df"
+          ]
+        },
+        "context": {
+          "channel": "whatsapp",
+          "contact": {
+            "id": "cae9d919-5419-432f-bb4d-a02be33389c0",
+            "name": "Diego Sáenz",
+            "wa_id": "573172575981",
+            "username": null,
+            "display_name": null,
+            "profile_name": "Diego Sáenz",
+            "business_scoped_user_id": "CO.991561626849148",
+            "parent_business_scoped_user_id": null
+          },
+          "phone_number": "573172575981",
+          "conversation_id": "d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+          "agent_iterations": 3,
+          "whatsapp_username": null,
+          "agent_last_message": "No veo el Excel en este hilo. ¿Puedes reenviarlo o pegar la lista aquí? Necesito el detalle con tallas, nombres y dorsales para armar el borrador.",
+          "whatsapp_business_scoped_user_id": "CO.991561626849148",
+          "whatsapp_parent_business_scoped_user_id": null
+        },
+        "metadata": {}
+      },
+      "last_event_at": "2026-07-12T12:47:21-04:00",
+      "started_at": "2026-07-12T12:46:54-04:00",
+      "status": "waiting",
+      "tracking_id": null,
+      "whatsapp_conversation_id": "d9f182e0-c6d1-40b2-b1b6-078ed94f6dc7",
+      "workflow": {
+        "id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+        "agent_default_tools_version": 2,
+        "lock_version": 977,
+        "name": "lifedeportes_sales_inbound",
+        "slug": "lifedeportes-sales-inbound",
+        "status": "active",
+        "updated_at": "2026-07-11T12:07:15-04:00"
+      }
+    }
+  }
+}

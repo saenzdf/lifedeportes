@@ -1,0 +1,63 @@
+{
+  "case": 6,
+  "source": {
+    "model": "project.task",
+    "id": 2320,
+    "name": "[S02520] ADRIAN",
+    "sale_order": "S02520",
+    "partner": "ADRIAN"
+  },
+  "display_customer": "E2E Form v3 6 — ADRIAN",
+  "suggested_text": "Pedido nuevo E2E.\nCliente: E2E Formulario 6 — ADRIAN v2\nAdjunto Excel/fotos. Sube borrador en Odoo test.",
+  "files": [
+    {
+      "file": "LISTADO ADRIAN.xlsx",
+      "odoo_attachment_id": 27608,
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 1221393
+    },
+    {
+      "file": "DISEÑO ROJO ..jpeg",
+      "odoo_attachment_id": 27607,
+      "mimetype": "image/jpeg",
+      "bytes": 150163
+    },
+    {
+      "file": "DISEÑO DORADO.jpeg",
+      "odoo_attachment_id": 27606,
+      "mimetype": "image/jpeg",
+      "bytes": 311038
+    },
+    {
+      "file": "DISEÑO DE COLOMBIA.jpeg",
+      "odoo_attachment_id": 27605,
+      "mimetype": "image/jpeg",
+      "bytes": 86035
+    },
+    {
+      "file": "1782220486941.png",
+      "odoo_attachment_id": 27604,
+      "mimetype": "image/png",
+      "bytes": 2263860
+    },
+    {
+      "file": "1782665829032.png",
+      "odoo_attachment_id": 27603,
+      "mimetype": "image/png",
+      "bytes": 2354437
+    },
+    {
+      "file": "1782600793922.png",
+      "odoo_attachment_id": 27602,
+      "mimetype": "image/png",
+      "bytes": 1124532
+    },
+    {
+      "file": "IMG_20260623_084135.png",
+      "odoo_attachment_id": 27601,
+      "mimetype": "image/png",
+      "bytes": 2018567
+    }
+  ],
+  "notes": "Skip print PDFs/CDR. Reuse excel + images only."
+}

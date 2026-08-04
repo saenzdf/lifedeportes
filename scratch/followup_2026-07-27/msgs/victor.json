@@ -1,0 +1,1599 @@
+{
+  "data": [
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0FCMjY5RTlEOTcxMTcyRERGQUUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Si porfa"
+      },
+      "text": {
+        "body": "Si porfa"
+      },
+      "timestamp": "1784764857",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0ExRDhCQTUzNDJGRkI0MTEyMUIA"
+      },
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDFEN0ZDRTY3NkM2NDczNkI2AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "SUDADERAS ES SOLO EL PANTALON?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDFEN0ZDRTY3NkM2NDczNkI2AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784759295",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDFEN0ZDRTY3NkM2NDczNkI2AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784759297",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDFEN0ZDRTY3NkM2NDczNkI2AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784764845",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "SUDADERAS ES SOLO EL PANTALON?"
+      },
+      "timestamp": "1784759295",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQTU1NjBBODZEMjFFNjhDQTk4AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "El asesor Javier Ayala, se comunicara y enviara la cotizacion.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQTU1NjBBODZEMjFFNjhDQTk4AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784759000",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQTU1NjBBODZEMjFFNjhDQTk4AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784759000",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQTU1NjBBODZEMjFFNjhDQTk4AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784764845",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "El asesor Javier Ayala, se comunicara y enviara la cotizacion."
+      },
+      "timestamp": "1784759000",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDNCNEI3RjQ2QTY4NUFDN0E2AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "ok",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDNCNEI3RjQ2QTY4NUFDN0E2AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784758953",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDNCNEI3RjQ2QTY4NUFDN0E2AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784758954",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDNCNEI3RjQ2QTY4NUFDN0E2AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784764845",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "ok"
+      },
+      "timestamp": "1784758953",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0ExRDhCQTUzNDJGRkI0MTEyMUIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Serían 60 camisetas \n60 sudaderas \n16 chaquetas"
+      },
+      "text": {
+        "body": "Serían 60 camisetas \n60 sudaderas \n16 chaquetas"
+      },
+      "timestamp": "1784758837",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDQyQTkwOUM3QjQyQkM2N0QxAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Por favor me resume, cuantas sudaderas y cuantas camisetas",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDQyQTkwOUM3QjQyQkM2N0QxAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784757695",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDQyQTkwOUM3QjQyQkM2N0QxAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784757696",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSRDQyQTkwOUM3QjQyQkM2N0QxAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784758595",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "Por favor me resume, cuantas sudaderas y cuantas camisetas"
+      },
+      "timestamp": "1784757695",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0E5MjcxMkFFNjM1MjIwQzMxMDEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Hola, quedo atento"
+      },
+      "text": {
+        "body": "Hola, quedo atento"
+      },
+      "timestamp": "1784753718",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMTkzNTUwMkIxMzNDMEM3Nzg1AA==",
+        "from": "573222252942"
+      },
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0E4Njg5Mzc2QkI2OTNFMTM3MjAA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Por favorrrr"
+      },
+      "text": {
+        "body": "Por favorrrr"
+      },
+      "timestamp": "1784752409",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0EzQUZDODMxREY1QUFFRjU3RjcA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Víctor Hugo echeverry"
+      },
+      "text": {
+        "body": "Víctor Hugo echeverry"
+      },
+      "timestamp": "1784752402",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzU1MTc1ODkxREFFMUE1MUU4AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "a nombre de quien?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzU1MTc1ODkxREFFMUE1MUU4AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752357",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzU1MTc1ODkxREFFMUE1MUU4AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752357",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzU1MTc1ODkxREFFMUE1MUU4AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752397",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "a nombre de quien?"
+      },
+      "timestamp": "1784752356",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMTkzNTUwMkIxMzNDMEM3Nzg1AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "si desea le envio una cotizacion formal",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMTkzNTUwMkIxMzNDMEM3Nzg1AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752345",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMTkzNTUwMkIxMzNDMEM3Nzg1AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752346",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMTkzNTUwMkIxMzNDMEM3Nzg1AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752397",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "si desea le envio una cotizacion formal"
+      },
+      "timestamp": "1784752345",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzhENkFFRjgzREUzQzJCOUY1AA==",
+        "from": "573222252942"
+      },
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0EwMzZCRTM4NUVENkQyMEE5NDQA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Si de todo completo con precio final"
+      },
+      "text": {
+        "body": "Si de todo completo con precio final"
+      },
+      "timestamp": "1784752319",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNjRGQzEwODI3NkRDMDM0MDkzAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Si*",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNjRGQzEwODI3NkRDMDM0MDkzAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752319",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNjRGQzEwODI3NkRDMDM0MDkzAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752320",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNjRGQzEwODI3NkRDMDM0MDkzAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752397",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "Si*"
+      },
+      "timestamp": "1784752319",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzhENkFFRjgzREUzQzJCOUY1AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "i desea factura, precios mas IVA",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzhENkFFRjgzREUzQzJCOUY1AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752304",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzhENkFFRjgzREUzQzJCOUY1AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752305",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzhENkFFRjgzREUzQzJCOUY1AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752309",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "i desea factura, precios mas IVA"
+      },
+      "timestamp": "1784752304",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMDdGN0FFRjk4NzZCRjJDRjA0AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "correcto",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMDdGN0FFRjk4NzZCRjJDRjA0AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752292",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMDdGN0FFRjk4NzZCRjJDRjA0AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752293",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMDdGN0FFRjk4NzZCRjJDRjA0AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784752309",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "correcto"
+      },
+      "timestamp": "1784752292",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0EyOTUzNzYyQjkwOTE5N0M2NzMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Déjame ver si entendí:\nChaqueta y pantalon sublimación digital ambos valen 110.000\n\nCamiseta tipo polo 35.000\nCamiseta poliéster 30.000\n\nTodo incluye  los estampados que deseemos?"
+      },
+      "text": {
+        "body": "Déjame ver si entendí:\nChaqueta y pantalon sublimación digital ambos valen 110.000\n\nCamiseta tipo polo 35.000\nCamiseta poliéster 30.000\n\nTodo incluye  los estampados que deseemos?"
+      },
+      "timestamp": "1784751978",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0FGRTRENzIyRERBRTEzNTBFMkUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "O solo manejan cotizaciones por mensajes"
+      },
+      "text": {
+        "body": "O solo manejan cotizaciones por mensajes"
+      },
+      "timestamp": "1784751875",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0FBNDJBNEY1MTQ0MDk4ODhGRjEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Me puedes dar una cotización formal, es para un gimnasio y los más seguro es q avancemos"
+      },
+      "text": {
+        "body": "Me puedes dar una cotización formal, es para un gimnasio y los más seguro es q avancemos"
+      },
+      "timestamp": "1784751862",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNTdBMTExM0ZERjVBMDUxQkREAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Precios con todo lo que desee colocarle",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNTdBMTExM0ZERjVBMDUxQkREAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751367",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNTdBMTExM0ZERjVBMDUxQkREAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751378",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNTdBMTExM0ZERjVBMDUxQkREAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751776",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "Precios con todo lo que desee colocarle"
+      },
+      "timestamp": "1784751367",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0E1M0ZFRTk3QzFEOEEwRTlDNEEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Rrr"
+      },
+      "text": {
+        "body": "Rrr"
+      },
+      "timestamp": "1784751325",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0EyQkZGM0M5NTVBQzNGREQxMzUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Incluye el estampado que te mandé?"
+      },
+      "text": {
+        "body": "Incluye el estampado que te mandé?"
+      },
+      "timestamp": "1784751300",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNjhGMUQ3QjkwOEEwQTA1RTc2AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "rabajmos con el 50% de inicio",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNjhGMUQ3QjkwOEEwQTA1RTc2AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751275",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNjhGMUQ3QjkwOEEwQTA1RTc2AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751276",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNjhGMUQ3QjkwOEEwQTA1RTc2AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751278",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "rabajmos con el 50% de inicio"
+      },
+      "timestamp": "1784751275",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0EzREE0Q0UxQjEzOTlFM0MyQUMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Sublimada"
+      },
+      "text": {
+        "body": "Sublimada"
+      },
+      "timestamp": "1784751261",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSREMwNkYyMEVENjlBMzRFODBCAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "$30.000",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSREMwNkYyMEVENjlBMzRFODBCAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751261",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSREMwNkYyMEVENjlBMzRFODBCAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751262",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSREMwNkYyMEVENjlBMzRFODBCAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751262",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "$30.000"
+      },
+      "timestamp": "1784751261",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgTQ08uMTM3MTI1ODU0NDk4MDY4NRUUABIYFDNBQjlGQ0NCRkY1QzAxNDhBREYwAA==",
+        "from": "573194249321",
+        "from_user_id": "CO.1371258544980685"
+      },
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0E5RkIwNjg4QThCNkE2QUIyOTIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Siblimada"
+      },
+      "text": {
+        "body": "Siblimada"
+      },
+      "timestamp": "1784751252",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0FCOUZDQ0JGRjVDMDE0OEFERjAA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Y la camiseta poliéster subliminada?"
+      },
+      "text": {
+        "body": "Y la camiseta poliéster subliminada?"
+      },
+      "timestamp": "1784751230",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQTlFMzRERTlEQkUzOUEyMEM2AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "polo con cremallera",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQTlFMzRERTlEQkUzOUEyMEM2AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751105",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQTlFMzRERTlEQkUzOUEyMEM2AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751106",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQTlFMzRERTlEQkUzOUEyMEM2AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751128",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "polo con cremallera"
+      },
+      "timestamp": "1784751105",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNkYyM0VBOTQzN0MxMDJFOUQ4AA==",
+        "from": "573222252942"
+      },
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0FERjY0NkE2MzhDRUNDN0E1MTUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "?"
+      },
+      "text": {
+        "body": "?"
+      },
+      "timestamp": "1784751073",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNkYyM0VBOTQzN0MxMDJFOUQ4AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "no manejamos",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNkYyM0VBOTQzN0MxMDJFOUQ4AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751052",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNkYyM0VBOTQzN0MxMDJFOUQ4AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751053",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNkYyM0VBOTQzN0MxMDJFOUQ4AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751053",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "no manejamos"
+      },
+      "timestamp": "1784751052",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNEQ5RENCNUQ1RkIyNTgwQUJBAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Camiseta tipo polo con botones $35.000",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNEQ5RENCNUQ1RkIyNTgwQUJBAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751045",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNEQ5RENCNUQ1RkIyNTgwQUJBAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751046",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSNEQ5RENCNUQ1RkIyNTgwQUJBAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751050",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "Camiseta tipo polo con botones $35.000"
+      },
+      "timestamp": "1784751045",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQzNGREUzMjVERTdDNEREM0UzAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "chaqueta, pantalón en material orión, sublimación digital $110.000",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQzNGREUzMjVERTdDNEREM0UzAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751028",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQzNGREUzMjVERTdDNEREM0UzAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751031",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSQzNGREUzMjVERTdDNEREM0UzAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784751050",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "chaqueta, pantalón en material orión, sublimación digital $110.000"
+      },
+      "timestamp": "1784751028",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0FFMTFFN0VGNDA5RjNBQkJEQjUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Qué precios manejan por prenda y por cantidad"
+      },
+      "text": {
+        "body": "Qué precios manejan por prenda y por cantidad"
+      },
+      "timestamp": "1784750995",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0EwNDQ3MUQ1QUNDRjBERTg4QUQA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Me gusta"
+      },
+      "text": {
+        "body": "Me gusta"
+      },
+      "timestamp": "1784750980",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzBERTAzMTYzRjRBMjJBQTBGAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "sublimado",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzBERTAzMTYzRjRBMjJBQTBGAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784750966",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzBERTAzMTYzRjRBMjJBQTBGAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784750966",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          },
+          {
+            "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAERgSMzBERTAzMTYzRjRBMjJBQTBGAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784750966",
+            "recipient_id": "573194249321",
+            "recipient_user_id": "CO.1371258544980685"
+          }
+        ]
+      },
+      "text": {
+        "body": "sublimado"
+      },
+      "timestamp": "1784750965",
+      "to": "573194249321",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573194249321",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1371258544980685",
+      "id": "wamid.HBgMNTczMTk0MjQ5MzIxFQIAEhgUM0FERTlDRTc5MzQxNTQ5OTM0MzUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573194249321",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+        "contact_name": "Victor.E",
+        "content": "Genial"
+      },
+      "text": {
+        "body": "Genial"
+      },
+      "timestamp": "1784750962",
+      "type": "text",
+      "username": null
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yM1QwMDowMDo1Ny44MDAwNjBaIiwiNWFmNzRlZjAtMjA5MC00NzY3LWIzMjQtM2YxODlhYTc5YjZlIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19",
+      "after": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yMlQyMDowOToyMi45MzE3NjlaIiwiNTAyZTc1ZTMtOTViNi00MGNiLWEwZGEtMDg4ZjJjNmVkZDQ5Il0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19"
+    },
+    "next": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yMlQyMDowOToyMi45MzE3NjlaIiwiNTAyZTc1ZTMtOTViNi00MGNiLWEwZGEtMDg4ZjJjNmVkZDQ5Il0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19",
+    "previous": null
+  }
+}

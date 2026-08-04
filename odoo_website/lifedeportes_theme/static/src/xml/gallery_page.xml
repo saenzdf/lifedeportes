@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="lifedeportes_theme.GalleryPageWidget">
+        <div class="ld-gallery-filter-shell">
+            <div class="gallery-filters ld-gallery-filters" role="tablist">
+                <t t-foreach="categories" t-as="cat" t-key="cat.id">
+                    <button type="button"
+                            class="filter-btn"
+                            t-att-class="state.activeFilter === cat.id ? 'filter-btn active' : 'filter-btn'"
+                            t-att-data-filter="cat.id"
+                            t-att-aria-selected="state.activeFilter === cat.id ? 'true' : 'false'"
+                            t-on-click="() => this.onFilterClick(cat.id)">
+                        <t t-esc="cat.label"/>
+                    </button>
+                </t>
+            </div>
+        </div>
+
+        <div class="ld-lightbox lightbox"
+             t-att-class="state.lightboxOpen ? 'ld-lightbox lightbox open' : 'ld-lightbox lightbox'"
+             aria-modal="true"
+             role="dialog"
+             aria-label="Ampliación de imagen"
+             t-on-click="onCloseLightbox"
+             t-on-touchstart="onLightboxTouchStart"
+             t-on-touchend="onLightboxTouchEnd">
+            <button type="button"
+                    class="lightbox-close"
+                    aria-label="Cerrar"
+                    t-on-click.stop="onCloseLightbox">
+                &times;
+            </button>
+            <button type="button"
+                    class="lightbox-nav lightbox-prev"
+                    aria-label="Imagen anterior"
+                    t-on-click.stop="onPrevImage">
+                &#8249;
+            </button>
+            <div class="lightbox-figure" t-on-click.stop="">
+                <img t-att-src="state.lightboxSrc" t-att-alt="state.lightboxAlt" id="lightboxImg"/>
+            </div>
+            <button type="button"
+                    class="lightbox-nav lightbox-next"
+                    aria-label="Imagen siguiente"
+                    t-on-click.stop="onNextImage">
+                &#8250;
+            </button>
+        </div>
+    </t>
+</templates>

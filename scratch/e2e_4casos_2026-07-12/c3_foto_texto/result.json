@@ -1,0 +1,62 @@
+{
+  "case": "c3",
+  "ok": true,
+  "label": "Tarea sin Excel (fotos Centro VC)",
+  "attachments": 5,
+  "note_goal": "identificar + descripción + pedido; confrontación debe marcar desfase si no hay OCR",
+  "expect_mismatch": true,
+  "so_name": "S02644",
+  "partner": [
+    3626,
+    "E2E Test 1 — PASTO"
+  ],
+  "note_chars": 401,
+  "note_preview": "  E2E c3 Centro VC  Sin Excel / sin OCR  Pedido Centro VC (tarea sin Excel — lista en foto LISTADO CENTRO.jpeg).\nUniforme de fútbol × 20 (evidencia SO).\nReferencias: HD, RB, VZ, UNIFORME CENTRO.\nDetalle nombres/tallas: OCR no ejecutado → Formulario debe quedar vacío y confrontaci",
+  "lines": [
+    {
+      "qty": 1,
+      "name": "Diseño",
+      "price": 0
+    },
+    {
+      "qty": 20,
+      "name": "Uniforme de Fútbol",
+      "price": 50000
+    }
+  ],
+  "spreadsheet_id": 63,
+  "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2634/sale-order-spreadsheet/63",
+  "filled": 0,
+  "mode": "native_aprobacion_cf",
+  "people_cf": 0,
+  "channels_confront": {
+    "person_count_detail": 0,
+    "people_cf_sheet": 0,
+    "line_qty_so": 20,
+    "qty_match": null,
+    "needs_review": true,
+    "payload_warnings": [
+      {
+        "code": "no_units",
+        "message": "Sin unidades/personas (Aprobación vacía)"
+      }
+    ]
+  },
+  "payload_validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      {
+        "code": "no_units",
+        "message": "Sin unidades/personas (Aprobación vacía)"
+      }
+    ],
+    "grave": false
+  },
+  "sample": {
+    "C2": "",
+    "D2": "",
+    "E2": "",
+    "B2": "=XLOOKUP(A2,Pedido!F:F,Pedido!I:I,\"\",1,1)"
+  }
+}

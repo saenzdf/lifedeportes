@@ -1,0 +1,331 @@
+[
+  {
+    "file": "asi_es_la_vida",
+    "last_dir": "outbound",
+    "tail": [
+      "outbound: Según la foto, es un uniforme de fútbol blanco con franjas moradas en degradado, cuello en V, manga corta y pantaloneta morada, con escudo y número 10",
+      "inbound: Si señor",
+      "outbound: ¿Tiene preferencia por la tela? Trabajamos dry-fit y otras opciones.",
+      "inbound: No",
+      "outbound: Le sugiero dry-fit, que es la tela más usada para fútbol por su comodidad. ¿Ya tienen definidas las tallas y cantidades por talla?",
+      "inbound: *Lista de uniforme*  Paisa 12 talla s  Chel 13 talla s Chelmi 6 Talla L Mona 10 talla l Rose 11 Talla S Mayra 05 talla M Cathe 18 talla XL Sury 15 tal",
+      "inbound: *Lista de uniforme*  Paisa 12 talla s  Chel 13 talla s Chelmi 6 Talla L Rose 11 Talla S Mayra 05 talla M Cathe 18 talla XL Sury 15 talla XL Luisa 22 t",
+      "outbound: Perfecto, tengo la lista: 10 uniformes completos en dry-fit, con nombres y números en la espalda, replicando el diseño de la foto (blanco con franjas ",
+      "inbound: Lista final",
+      "outbound: ¿Le gustaría que le envíe el valor de la cotización?",
+      "inbound: Si señor",
+      "outbound: La cotización para los 10 uniformes completos de fútbol dry-fit, cuello en V, con el diseño de la foto (nombres y números en la espalda) es:  - Precio",
+      "outbound: Perfecto, gracias por la información. Su pedido lo confirmamos el siguiente día hábil en la mañana (el lunes). Cualquier duda, aquí estamos.",
+      "outbound: Perfecto, gracias por la información. Su pedido lo confirmamos el siguiente día hábil en la mañana (el lunes). Cualquier duda, aquí estamos."
+    ],
+    "last_body": "Perfecto, gracias por la información. Su pedido lo confirmamos el siguiente día hábil en la mañana (el lunes). Cualquier duda, aquí estamos."
+  },
+  {
+    "file": "david_o",
+    "last_dir": "inbound",
+    "tail": [
+      "inbound: Hola, quiero cotizar uniformes de fútbol",
+      "inbound: Cuánto demoran mandar a hacer 15 uniformes?",
+      "outbound: El tiempo de producción es de 15 días hábiles a partir de la confirmación del diseño y el abono. Para los 15 uniformes de fútbol, ¿serían uniforme com",
+      "inbound: Es uniforme completo. Osea que para el próximo sábado, no mañana sino el de arriba imposible?",
+      "inbound: O podría ayudarme?",
+      "outbound: Hoy es viernes 24 de julio. El sábado de la próxima semana sería el 1 de agosto, y el tiempo estándar de producción es de 15 días hábiles, que nos dej",
+      "inbound: Le agradezco si me puede ayudar",
+      "inbound: ¿Ustedes están en Bogotá o Medellín?",
+      "outbound: Estamos en Bogotá, en la Cl. 66a #98a 12, barrio Los Álamos, Engativá. Aquí puede ver la ubicación: https://maps.google.com/?cid=12304529363039725410 ",
+      "inbound: Estoy muy atento",
+      "outbound: Gracias, en cuanto tenga la confirmación del equipo se lo hago saber.",
+      "outbound: 12 DIAS HABILES DE FABRICACION, DESPUES DEL ABONO 50%",
+      "inbound: Ah que falla, no me daría"
+    ],
+    "last_body": "Ah que falla, no me daría"
+  },
+  {
+    "file": "edwin",
+    "last_dir": "inbound",
+    "tail": [
+      "outbound: Manejamos abono del 50% para iniciar producción y el resto contra entrega. Sí tenemos punto físico. Déjeme confirmarle la dirección exacta y los medio",
+      "inbound: Eso porfa me regala la direccion",
+      "outbound: Señor, le confirmo la dirección y los medios de pago con el equipo lo antes posible. Mientras tanto, ¿ya tiene las tallas definidas para los 6 uniform",
+      "inbound: Estoy mirando las tallas",
+      "outbound: Claro, sin problema. En cuanto tenga las tallas me las comparte y seguimos avanzando.",
+      "inbound: Todavía no tengo definidas las tallas por que primero quiero conocer el taller y confirmar algunos detalles me podrían compartir la direccion o decirm",
+      "outbound: Claro, puede visitar el taller sin problema. Déjeme confirmarle la dirección exacta con el equipo para que pueda acercarse. Le aviso en breve.",
+      "inbound: Vale",
+      "outbound: Calle 66 a 98 a 12",
+      "inbound: Perfecto muchas gracias",
+      "inbound: Que horarios de atención manejan para acercarme mañana al salir de mi trabajo ?",
+      "outbound: 8.30 a 5pm",
+      "outbound: 12.30 a 1.30 es hora de almuerzo",
+      "inbound: Vale"
+    ],
+    "last_body": "Vale"
+  },
+  {
+    "file": "emily",
+    "last_dir": "outbound",
+    "tail": [
+      "inbound: Sticker attached (sticker_bf5c4c1d4a74.webp) [Size: 62.4 KB | Type: image/webp]",
+      "outbound: Sí, el precio es el mismo. Somos fabricantes, así que el valor de catálogo ya es el mínimo; no manejamos rebaja adicional por cantidad.",
+      "inbound: Perfecto",
+      "inbound: En cuantos días estarían listo?",
+      "outbound: El tiempo de entrega es de 15 días hábiles a partir de la confirmación del pedido y el abono del 50%.",
+      "inbound: Listo!",
+      "inbound: Entonces el día de mañana te envío el listado y el 50%",
+      "inbound: Muchas gracias",
+      "inbound: Quisiera saber si te debo enviar los logos también?",
+      "inbound: Y el color del azul para las dos líneas de atrás de la camisa",
+      "inbound: Es posible ver un diseño final como te lo indiqué?",
+      "outbound: Con gusto. Sí, por favor envíe los logos en buena calidad (ideal en formato PNG o vectorial) para que queden nítidos en la sublimación. Sobre el color",
+      "inbound: Muchas gracias",
+      "outbound: A la orden, quedo atenta a lo que nos envíe mañana. Buenas noches."
+    ],
+    "last_body": "A la orden, quedo atenta a lo que nos envíe mañana. Buenas noches."
+  },
+  {
+    "file": "jaime",
+    "last_dir": "outbound",
+    "tail": [
+      "inbound: Si, si claro entiendo",
+      "outbound: Perfecto, entonces uniforme de voleibol con ese diseño. ¿Para cuántas personas sería? (mínimo 6)",
+      "inbound: Creo que para 10 y uno de entrenador",
+      "outbound: Entonces serían 11 uniformes en total (10 jugadores + 1 entrenador), con el diseño de la foto en voleibol. ¿La tela sería dry-fit?",
+      "inbound: Son 19 más uno de entrenador",
+      "outbound: Entendido, serían 20 uniformes en total (19 jugadores + 1 entrenador). ¿La tela sería dry-fit?",
+      "inbound: Ya le muestro la de entrenador",
+      "inbound: Image attached (image_cf74f8de90b2.jpeg) [Size: 26.1 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMi",
+      "outbound: Según la foto, la de entrenador es una camiseta negra manga corta con cuello en V, texto \"ENTRENADOR\" en dorado y \"NEXUS\" en la espalda. ¿Es ese el di",
+      "inbound: Si",
+      "inbound: Es con la pantaloneta",
+      "outbound: Claro, entonces el entrenador también lleva camiseta + pantaloneta. ¿La tela sería dry-fit para todos?",
+      "inbound: Deme los dos precios por favor",
+      "outbound: Estos son los precios en dry-fit:  - Uniforme completo (camiseta + pantaloneta): $50.000 c/u → 20 unidades = $1.000.000 - Camiseta sola: $30.000 c/u →"
+    ],
+    "last_body": "Estos son los precios en dry-fit:\n\n- Uniforme completo (camiseta + pantaloneta): $50.000 c/u → 20 unidades = $1.000.000\n- Camiseta sola: $30.000 c/u → 20 unidades = $600.000"
+  },
+  {
+    "file": "jan",
+    "last_dir": "outbound",
+    "tail": [
+      "outbound: El uniforme cotizado es en tela dry-fit, que es una tela plana de secado rápido, muy utilizada para fútbol. También manejamos la tela Dumonti, que tie",
+      "inbound: ¿Es impermeable la pantaloneta?",
+      "outbound: No, la pantaloneta no es impermeable. El dry-fit es una tela de secado rápido que evacúa la humedad del cuerpo, pero no repela el agua. La Dumonti tam",
+      "inbound: Si, que precio tiene la hidrotec",
+      "outbound: Según la cotización, el uniforme en tela Hidrotec sale a $50.000 por unidad; para las 9 serían $450.000, igual que en dry-fit.",
+      "outbound: Según la cotización, el uniforme en tela Hidrotec sale a $50.000 por unidad; para las 9 serían $450.000.",
+      "inbound: Buen día, una pregunta, ¿Se puede la camisa en tela dry-fit y la pantaloneta en tela hidrotec?",
+      "outbound: Buen día. Esa combinación de telas (camiseta en dry-fit y pantaloneta en Hidrotec) es una opción que le confirmo con el equipo de producción, ya que d",
+      "inbound: Gracias",
+      "outbound: Con gusto, en cuanto tenga la confirmación le aviso.",
+      "inbound: Deseo hacer el pedido",
+      "outbound: Listo, ya tengo registrado el pedido. Un asesor se comunicará con usted para confirmar los detalles finales, la mezcla de telas que preguntó y el medi",
+      "inbound: ????",
+      "outbound: Disculpe la espera. Su pedido ya está registrado: 9 uniformes de fútbol, diseño negro/blanco/rojo con dragones, sin logo, tallas 2 en 4 y 7 de la M a "
+    ],
+    "last_body": "Disculpe la espera. Su pedido ya está registrado: 9 uniformes de fútbol, diseño negro/blanco/rojo con dragones, sin logo, tallas 2 en 4 y 7 de la M a la XL. Pendiente confirmar la mezcla de telas (cam"
+  },
+  {
+    "file": "johan",
+    "last_dir": "outbound",
+    "tail": [
+      "inbound: Hola, quiero cotizar uniformes de presentación",
+      "outbound: Claro, ¿de qué deporte serían los uniformes de presentación?",
+      "inbound: De natación",
+      "inbound: Preferiblemente en tela calida( algodón o algo así)",
+      "outbound: Por ahora no fabricamos uniformes de natación. Trabajamos fútbol, baloncesto, voleibol y atletismo. Si necesita uniformes de alguno de esos deportes, ",
+      "inbound: Pero son de presentación",
+      "inbound: No de competencia",
+      "outbound: Entiendo, pero aun así no trabajamos con equipos de natación. Fabricamos uniformes de presentación y competencia solo para fútbol, baloncesto, voleibo",
+      "inbound: A, entiendo te agradezco mucho",
+      "outbound: Con gusto, aquí quedo por si en el futuro necesita algo.",
+      "inbound: Claro que si, mil gracias",
+      "outbound: Con gusto, quedo atento."
+    ],
+    "last_body": "Con gusto, quedo atento."
+  },
+  {
+    "file": "jr",
+    "last_dir": "outbound",
+    "tail": [
+      "inbound: El estado se consulta por medio de este chat",
+      "inbound: ?",
+      "outbound: Sí, por este chat puede consultar el estado cuando quiera. También puede escribir directamente a los asesores al 310 336 2484 o 321 398 8464.",
+      "inbound: Que información necesita, el pedido es en Itagüí Antioquia",
+      "outbound: Sí, tenemos envíos nacionales por cobrar: despachamos por transportadora y el valor del flete se paga al recibir. Para Itagüí no hay problema.  Ya ten",
+      "inbound: Cuánto tiempo duraría con el envío y otra persona no lo podrían tener listo para antes?",
+      "inbound: La tranferencia se la haría el viernes",
+      "inbound: Cuánto sería?",
+      "outbound: La producción son 15 días hábiles a partir del abono, más 1 a 3 días de envío a Itagüí. Sobre si otro lo tendría antes, no puedo hablar por otros prov",
+      "inbound: Listo quedamos pendientes para el viernes",
+      "inbound: Me puedes regalar un número de cuenta para transferir",
+      "outbound: Perfecto, quedamos pendientes para el viernes. El número de cuenta y medio exacto se lo indica el asesor al momento de confirmar el pedido. Si quiere ",
+      "inbound: Listo",
+      "outbound: Quedo atento el viernes. Cualquier duda aquí estoy."
+    ],
+    "last_body": "Quedo atento el viernes. Cualquier duda aquí estoy."
+  },
+  {
+    "file": "juan_pablo",
+    "last_dir": "inbound",
+    "tail": [
+      "outbound: Recibido el cuadro. Pude leer la mayoría de las filas pero la imagen se corta en las últimas tres (IDs 25, 26 y el DT). ¿Podría confirmarme los datos ",
+      "inbound: Es aje debes abrir la imagen para poder verla",
+      "outbound: Perfecto, ya tengo el cuadro completo. Son 27 filas en total. Le confirmo lo que leí:  - 2 porteros (rojo/negro): ID 1 Juan Pablo Segura (#1, M) y ID ",
+      "inbound: Audio attached (audio_918272808e88.ogg) [Size: 130.4 KB | Type: audio/ogg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiO",
+      "outbound: Claro, ya quedó corregido. El pedido actualizado sería:  - 23 uniformes titulares azules + camiseta suplente blanca a $80.000 c/u = $1.840.000 - 1 uni",
+      "inbound: Excelente así estaría correcto",
+      "inbound: Si no hay problema estaría perfecto",
+      "outbound: Perfecto, entonces queda confirmado el pedido por $2.020.000. Un asesor se comunicará con usted para indicarle el medio de pago del abono del 50% ($1.",
+      "inbound: Quedo atento al contacto para cerrar el proceso",
+      "inbound: Muy amables",
+      "outbound: Con gusto, en breve le contactan. Quedamos atentos.",
+      "inbound: Hola buen día, tardan mucho en contactar? Aún no lo hacen… entiendo que esta es un asistente de IA pero si me gustaría mandar a hacer los uniformes ho",
+      "outbound: Buen día, entiendo la urgencia. Le doy los números directos para que un asesor le atienda hoy mismo:  - 310 336 2484 - 321 398 8464  Ahí le atienden p",
+      "inbound: Muchas gracias"
+    ],
+    "last_body": "Muchas gracias"
+  },
+  {
+    "file": "julian",
+    "last_dir": "outbound",
+    "tail": [
+      "inbound: Volley",
+      "inbound: Hola, quiero cotizar uniformes de",
+      "outbound: Buenas, ¿para cuántas personas serían los uniformes de voleibol? (mínimo 6)",
+      "inbound: 9 personas",
+      "outbound: Perfecto, 9 uniformes de voleibol. ¿Tienen ya algún diseño o foto de referencia, o lo definen de cero?",
+      "inbound: De cero",
+      "inbound: Queremos saber costos también",
+      "outbound: El uniforme de voleibol (camiseta + pantaloneta) en dry fit tiene un valor de $50.000 por unidad, es decir $450.000 para las 9. ¿Tienen ya los colores",
+      "inbound: Cuánto se demora?",
+      "outbound: La entrega es de 15 días hábiles a partir de la confirmación del diseño y el abono del 50%. ¿Tienen ya los colores que quieren para el uniforme?"
+    ],
+    "last_body": "La entrega es de 15 días hábiles a partir de la confirmación del diseño y el abono del 50%. ¿Tienen ya los colores que quieren para el uniforme?"
+  },
+  {
+    "file": "my_flia",
+    "last_dir": "inbound",
+    "tail": [
+      "inbound: Pero el modelo de sudadera  se puede aumentar la capucha?",
+      "inbound: De las que me cotizo de 120 mil",
+      "inbound: Image attached (image_7b696e5354d3.jpeg) [Size: 92.6 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMi",
+      "inbound: A esta con capucha",
+      "outbound: Según la foto, es una chaqueta deportiva con cremallera y cuello alto, sin capucha. Sí, podemos fabricarla con capucha. Le confirmo con el equipo el v",
+      "inbound: Muchas gracias",
+      "outbound: Con gusto. En cuanto tenga la confirmación del precio con capucha le aviso por aquí.",
+      "inbound: 👍🏻",
+      "outbound: Se puede realizar ese diseño con capota a ese mismo precio indicado",
+      "outbound: En material orión impermeable",
+      "inbound: Audio attached (audio_e3faa9a5993e.ogg) [Size: 53.6 KB | Type: audio/ogg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOn",
+      "inbound: Pero que sea en algodón licrado",
+      "inbound: Audio attached (audio_ab0dd185040f.ogg) [Size: 31.0 KB | Type: audio/ogg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOn",
+      "inbound: Audio attached (audio_990fd1a32cbc.ogg) [Size: 21.3 KB | Type: audio/ogg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOn"
+    ],
+    "last_body": "Audio attached (audio_990fd1a32cbc.ogg) [Size: 21.3 KB | Type: audio/ogg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImVlMGYzNDFjLWMxM2QtNDg1ZS1iZGQ4LWVhODVj"
+  },
+  {
+    "file": "sebastian",
+    "last_dir": "outbound",
+    "tail": [
+      "inbound: Ay está veci",
+      "inbound: Eso sí seria redondo y no se me puedes explicar lo de la tela",
+      "outbound: Ya vi la imagen. Es una camiseta negra con detalles en blanco y fucsia, con diseño de leones y llamas, manga corta. Usted pidió cuello redondo (en la ",
+      "inbound: Pues si tenemos ese diseño en mente no sé si ustedes nos podrían decir más diseños o algo así  Y dale seria esa tela y también fabrican banderas??",
+      "outbound: Sobre el diseño, podemos tomar la idea que ya tienen y nuestro equipo de diseño la puede ajustar y proponer variaciones. También pueden ver referencia",
+      "inbound: Dale entonces esperomos esos ajustes  Si también sería la bandera",
+      "outbound: Perfecto, ya tenemos anotado el uniforme completo para 24 personas en dry-fit, cuello redondo, con el diseño de leones y el escudo en el pecho izquier",
+      "inbound: Si la bandera sería 2m × 1m",
+      "inbound: Y manejan combos o no ??",
+      "outbound: No manejamos combos; somos fabricantes y cada producto tiene su precio mínimo de catálogo. Lo que sí podemos es incluir todo en un mismo pedido para q",
+      "inbound: Sí así sería y x cuánto saldría todo",
+      "outbound: Esto sería lo siguiente:  - 24 uniformes completos (camiseta + pantaloneta) dry-fit, cuello redondo: $50.000 c/u, total $1.200.000 - 1 bandera sublima",
+      "inbound: Si para la fábricicon cuánto tengo que dar la mitad cierto",
+      "outbound: Así es, el abono es del 50% para iniciar la fabricación y el resto va contra entrega. El medio de pago exacto se lo indica el asesor al confirmar el p"
+    ],
+    "last_body": "Así es, el abono es del 50% para iniciar la fabricación y el resto va contra entrega. El medio de pago exacto se lo indica el asesor al confirmar el pedido."
+  },
+  {
+    "file": "stefannia",
+    "last_dir": "inbound",
+    "tail": [
+      "outbound: Claro, ¿para cuántas personas serían? El mínimo es 6 unidades.",
+      "inbound: 16",
+      "outbound: Perfecto, 16 uniformes de voleibol. ¿Sería uniforme completo (camiseta + pantaloneta) o solo camisetas?",
+      "inbound: Solo camiseta",
+      "outbound: Bien, 16 camisetas de voleibol. ¿Tiene alguna foto o referencia del diseño que quieren?",
+      "inbound: Dejame ya te la envio",
+      "outbound: Claro, quedo atento.",
+      "inbound: Algo así, pero también para hombre. Image attached (image_a1218fa26aa2.jpeg) [Size: 65.5 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active",
+      "outbound: Según la foto, es una camiseta de voleibol negra con detalles en blanco, cuello en V, sin mangas (sisa), con número y logo en el pecho. ¿Sería ese el ",
+      "inbound: Para las mujeres manga sisa, pero para los hombres si se podría completa?",
+      "inbound: Queremos poner el nombre el grupo en el pecho, con el numero.  Y atrás el nombre también con el número.",
+      "outbound: Claro, se puede sin problema: las de mujer en sisa y las de hombre con manga corta. ¿Qué tela prefieren? Trabajamos Dry Fit, Dumonti e Hidrotec.",
+      "outbound: Perfecto, eso se puede hacer sin problema: nombre del grupo y número en el pecho, y nombre con número en la espalda. ¿Qué tela prefieren: Dry Fit, Dum",
+      "inbound: Cual es la diferencia."
+    ],
+    "last_body": "Cual es la diferencia."
+  },
+  {
+    "file": "valentina",
+    "last_dir": "outbound",
+    "tail": [
+      "inbound: Perdon, 11 camisetas",
+      "inbound: Cuanto se demoraria en llegar?",
+      "outbound: Listo, 11 camisetas. La entrega es de 15 días hábiles a partir del abono. ¿Qué tela prefieren: dry-fit o Dumonti?",
+      "inbound: Hay posibilidad de que la entrega se demore menos?",
+      "outbound: El tiempo estándar es de 15 días hábiles desde el abono. Ese tiempo corresponde al proceso de sublimación y confección, y por ahora no tenemos opción ",
+      "inbound: Es contra entrega?",
+      "outbound: El pago es así: se abona el 50% para iniciar la producción y el resto se cancela contra entrega. El medio exacto de pago se lo indica el asesor al con",
+      "inbound: Cuanto seria el total, para mandarle el 50%",
+      "inbound: Tela dry-fit",
+      "outbound: Listo, en tela dry-fit. El precio por camiseta es de $30.000, para 11 el total es $330.000. El abono del 50% sería $165.000 para iniciar la producción",
+      "inbound: Te mandaria el 50% el lunes, le parece bien?",
+      "outbound: Claro, el lunes está perfecto. Un asesor le escribirá para indicarle el medio de pago y coordinar el abono del 50%. Quedo atenta por si tiene alguna d",
+      "inbound: Si esta bien, gracias",
+      "outbound: Con gusto. Estaremos en contacto el lunes para coordinar el abono."
+    ],
+    "last_body": "Con gusto. Estaremos en contacto el lunes para coordinar el abono."
+  },
+  {
+    "file": "victor",
+    "last_dir": "inbound",
+    "tail": [
+      "outbound: i desea factura, precios mas IVA",
+      "inbound: Si de todo completo con precio final",
+      "outbound: Si*",
+      "outbound: si desea le envio una cotizacion formal",
+      "outbound: a nombre de quien?",
+      "inbound: Víctor Hugo echeverry",
+      "inbound: Por favorrrr",
+      "inbound: Hola, quedo atento",
+      "outbound: Por favor me resume, cuantas sudaderas y cuantas camisetas",
+      "inbound: Serían 60 camisetas  60 sudaderas  16 chaquetas",
+      "outbound: ok",
+      "outbound: El asesor Javier Ayala, se comunicara y enviara la cotizacion.",
+      "outbound: SUDADERAS ES SOLO EL PANTALON?",
+      "inbound: Si porfa"
+    ],
+    "last_body": "Si porfa"
+  },
+  {
+    "file": "yeison",
+    "last_dir": "outbound",
+    "tail": [
+      "inbound: Pues la verdad estoy cotizando",
+      "outbound: Entiendo que está comparando opciones. El uniforme completo de fútbol (camiseta + pantaloneta, dry fit) sale a $50.000 cada uno; para 20 serían $1.000",
+      "inbound: Bueno está bn si me puedes enviar modelos muchas gracias",
+      "inbound: Viene con las medias verdad",
+      "outbound: Puede ver modelos en el catálogo: https://lifedeportes.odoo.com/shop  Sobre las medias: el uniforme de fútbol incluye camiseta, pantaloneta y medias s",
+      "inbound: Y cuanto con las medias profesionales",
+      "outbound: Las medias profesionales tienen un costo adicional de $10.000 por unidad. Así que el uniforme completo con medias profesionales quedaría en $60.000 ca",
+      "inbound: Uyy pues suben mucho con las medias",
+      "outbound: Claro, por eso la opción con medias semi (incluidas en el precio base) es la más común. Quedaría en $50.000 cada uno, $1.000.000 por las 20. ¿Avanza c",
+      "inbound: Bueno voy a consultarlo",
+      "inbound: Con el equipo y mañana te doy razón",
+      "outbound: Perfecto, sin problema. Cuando tenga la decisión me cuenta y seguimos.",
+      "inbound: Muchas gracias buena noche",
+      "outbound: Buenas noches, quedo atento."
+    ],
+    "last_body": "Buenas noches, quedo atento."
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "whatsapp_context": {
+    "messages": [
+      { "direction": "inbound", "content": "SUBIR PEDIDO" }
+    ]
+  },
+  "execution_context": {
+    "vars": { "user": { "role": "staff" } }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "case": 3,
+  "display": "E2E Form v3 3 — LUCU",
+  "source": {
+    "model": "project.task",
+    "id": 2279,
+    "name": "[S02474] LUCU",
+    "sale_order": "S02474",
+    "partner": "LUCU"
+  },
+  "parse_rows": 19,
+  "parse_summary": "«formato life» · 19 filas · 19 M uniforme · 2 arquero(s) · 19 manga corta",
+  "http_status": 200,
+  "kapso_status": "ready",
+  "order": {
+    "id": 2621,
+    "name": "S02631",
+    "amount_total": 1130500,
+    "spreadsheet_id": 51,
+    "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2621/sale-order-spreadsheet/51",
+    "needs_review": null
+  },
+  "spreadsheet_status": "complete",
+  "spreadsheet_filled": 19,
+  "spreadsheet_error": null,
+  "audit": {
+    "ok": true,
+    "id": 51,
+    "name": "Formulario pedido Life",
+    "sheet_names": [
+      "Formulario Life (Aprobación nombres, tallas y numero)",
+      "Productos del pedido"
+    ],
+    "has_productos": true,
+    "has_aprobacion": true,
+    "sample_productos": {
+      "A": "Producto",
+      "I": "Producto base",
+      "J": "Cuello",
+      "K": "Largo Manga",
+      "N": "Otros atributos",
+      "O": "Comentario",
+      "A2": "",
+      "I2": "Diseño"
+    },
+    "sample_aprobacion": {
+      "A": "Idx",
+      "B": "Producto",
+      "C": "Nombre en camiseta",
+      "D": "Numero en camiseta",
+      "E": "Talla uniforme",
+      "G": "Producto base",
+      "L": "Otros atributos",
+      "M": "Comentario",
+      "A2": "",
+      "C2": "MARTINEZ"
+    },
+    "formulas_hint": {
+      "productos_A2": "",
+      "aprobacion_A2": ""
+    }
+  },
+  "ok": true,
+  "note": "Lead y cotizacion BORRADOR creados en Odoo (confirmar manualmente). Linea Diseno a costo 0."
+}

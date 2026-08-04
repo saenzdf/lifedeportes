@@ -1,0 +1,122 @@
+[
+  {
+    "model": "product.template",
+    "id": 69,
+    "name": "Petos sublimados",
+    "ok": true,
+    "backup": "scratch/image_opt_backups_2026-07-11/product_template_69_8632664cfc34.bin",
+    "orig_format": "PNG",
+    "orig_pixels": [
+      1536,
+      1024
+    ],
+    "new_pixels": [
+      1536,
+      1024
+    ],
+    "before_kb": 2463.8,
+    "uploaded_kb": 313.9,
+    "stored_kb": 313.9,
+    "saved_pct": 87.3
+  },
+  {
+    "model": "product.template",
+    "id": 35,
+    "name": "Uniforme de atletismo",
+    "ok": true,
+    "backup": "scratch/image_opt_backups_2026-07-11/product_template_35_4e223c3a1c25.bin",
+    "orig_format": "PNG",
+    "orig_pixels": [
+      1536,
+      1024
+    ],
+    "new_pixels": [
+      1536,
+      1024
+    ],
+    "before_kb": 2380.0,
+    "uploaded_kb": 243.5,
+    "stored_kb": 243.5,
+    "saved_pct": 89.8
+  },
+  {
+    "model": "product.template",
+    "id": 194,
+    "name": "Banderas, 1.10 X 1.50",
+    "ok": true,
+    "backup": "scratch/image_opt_backups_2026-07-11/product_template_194_4886458f9db5.bin",
+    "orig_format": "PNG",
+    "orig_pixels": [
+      1536,
+      1024
+    ],
+    "new_pixels": [
+      1536,
+      1024
+    ],
+    "before_kb": 1878.5,
+    "uploaded_kb": 99.9,
+    "stored_kb": 99.9,
+    "saved_pct": 94.7
+  },
+  {
+    "model": "product.template",
+    "id": 1819,
+    "name": "Uniformes con bordado",
+    "ok": true,
+    "backup": "scratch/image_opt_backups_2026-07-11/product_template_1819_12c293dc6e06.bin",
+    "orig_format": "PNG",
+    "orig_pixels": [
+      1536,
+      1024
+    ],
+    "new_pixels": [
+      1536,
+      1024
+    ],
+    "before_kb": 1487.8,
+    "uploaded_kb": 114.1,
+    "stored_kb": 114.1,
+    "saved_pct": 92.3
+  },
+  {
+    "model": "product.template",
+    "id": 1811,
+    "name": "Sudaderas en algodón lycrado con bordados",
+    "ok": true,
+    "backup": "scratch/image_opt_backups_2026-07-11/product_template_1811_5cd93c8aef05.bin",
+    "orig_format": "PNG",
+    "orig_pixels": [
+      1536,
+      1024
+    ],
+    "new_pixels": [
+      1536,
+      1024
+    ],
+    "before_kb": 1353.7,
+    "uploaded_kb": 63.2,
+    "stored_kb": 63.2,
+    "saved_pct": 95.3
+  },
+  {
+    "model": "product.image",
+    "id": 5,
+    "name": "Catálogo — Camiseta deportiva con cuello polo, Sin botones",
+    "ok": true,
+    "backup": "scratch/image_opt_backups_2026-07-11/product_image_5_096640a37290.bin",
+    "orig_format": "PNG",
+    "orig_pixels": [
+      1536,
+      1024
+    ],
+    "new_pixels": [
+      1536,
+      1024
+    ],
+    "before_kb": 1789.6,
+    "uploaded_kb": 131.3,
+    "stored_kb": 131.3,
+    "saved_pct": 92.7
+  }
+]

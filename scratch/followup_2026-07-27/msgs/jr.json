@@ -1,0 +1,1427 @@
+{
+  "data": [
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSQkFCOTM4RUEwNzQyNEJDOEJDAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Quedo atento el viernes. Cualquier duda aquí estoy.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSQkFCOTM4RUEwNzQyNEJDOEJDAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784762749",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSQkFCOTM4RUEwNzQyNEJDOEJDAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784762750",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSQkFCOTM4RUEwNzQyNEJDOEJDAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784763081",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Quedo atento el viernes. Cualquier duda aquí estoy."
+      },
+      "timestamp": "1784762749",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUMxRTkzNzRFMzczRTEwRDc3NjdBMTM4NjUzNjdCOUYA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Listo"
+      },
+      "text": {
+        "body": "Listo"
+      },
+      "timestamp": "1784762714",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOEY5NzExOTFBQkU3NTc1NTE0AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Perfecto, quedamos pendientes para el viernes. El número de cuenta y medio exacto se lo indica el asesor al momento de confirmar el pedido. Si quiere adelantar, puede escribir al 310 336 2484 o 321 398 8464 y le comparten los datos de la cuenta.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOEY5NzExOTFBQkU3NTc1NTE0AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784762689",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOEY5NzExOTFBQkU3NTc1NTE0AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784762689",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOEY5NzExOTFBQkU3NTc1NTE0AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784762697",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, quedamos pendientes para el viernes. El número de cuenta y medio exacto se lo indica el asesor al momento de confirmar el pedido. Si quiere adelantar, puede escribir al 310 336 2484 o 321 398 8464 y le comparten los datos de la cuenta."
+      },
+      "timestamp": "1784762689",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNCMDU0MzhGQjJBRTczODVEQjlBNTlFMEFGQzlDMjAA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Me puedes regalar un número de cuenta para transferir"
+      },
+      "text": {
+        "body": "Me puedes regalar un número de cuenta para transferir"
+      },
+      "timestamp": "1784762650",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUMwNkQyNUEwQUIzQTI3MzYzOUUwMERCMjI1REQ1OUYA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Listo quedamos pendientes para el viernes"
+      },
+      "text": {
+        "body": "Listo quedamos pendientes para el viernes"
+      },
+      "timestamp": "1784762637",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSNDU2M0NFOTJDNzY0NzI4QjRGAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "La producción son 15 días hábiles a partir del abono, más 1 a 3 días de envío a Itagüí. Sobre si otro lo tendría antes, no puedo hablar por otros proveedores; lo que sí le digo es que como fabricantes manejamos los tiempos directamente.\n\nEl total del pedido es $549.000:\n- 15 manga corta a $30.000 = $450.000\n- 3 manga larga a $33.000 = $99.000\n\nEl abono del 50% sería $274.500. Si hace la transferencia el viernes, los 15 días hábiles inician desde ahí.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSNDU2M0NFOTJDNzY0NzI4QjRGAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784762318",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSNDU2M0NFOTJDNzY0NzI4QjRGAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784762319",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "La producción son 15 días hábiles a partir del abono, más 1 a 3 días de envío a Itagüí. Sobre si otro lo tendría antes, no puedo hablar por otros proveedores; lo que sí le digo es que como fabricantes manejamos los tiempos directamente.\n\nEl total del pedido es $549.000:\n- 15 manga corta a $30.000 = $450.000\n- 3 manga larga a $33.000 = $99.000\n\nEl abono del 50% sería $274.500. Si hace la transferencia el viernes, los 15 días hábiles inician desde ahí."
+      },
+      "timestamp": "1784762318",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUM5RTUzMzIzNkQwRjQ4NjIyMDJFNDNFQTE2M0I2RTkA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Cuánto sería?"
+      },
+      "text": {
+        "body": "Cuánto sería?"
+      },
+      "timestamp": "1784762257",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNDRDJGNTdBRDdFNEQyOUJCOTNFQzk5RjA4NkM0Q0QA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "La tranferencia se la haría el viernes"
+      },
+      "text": {
+        "body": "La tranferencia se la haría el viernes"
+      },
+      "timestamp": "1784762252",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNCNEFENEM3QTM5NkRGMTBEQUU1MTdCRDY1MkQ0NUUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Cuánto tiempo duraría con el envío y otra persona no lo podrían tener listo para antes?"
+      },
+      "text": {
+        "body": "Cuánto tiempo duraría con el envío y otra persona no lo podrían tener listo para antes?"
+      },
+      "timestamp": "1784762240",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRUM4RDBFRUQ4NkZFREVBNEQwAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Sí, tenemos envíos nacionales por cobrar: despachamos por transportadora y el valor del flete se paga al recibir. Para Itagüí no hay problema.\n\nYa tenemos casi todo: los dos diseños (manga corta y larga), la lista de jugadores con nombres, números y tallas. Solo faltaría que confirme si avanza con el pedido para que el asesor le indique el medio de pago del abono.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRUM4RDBFRUQ4NkZFREVBNEQwAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784762134",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRUM4RDBFRUQ4NkZFREVBNEQwAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784762134",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRUM4RDBFRUQ4NkZFREVBNEQwAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784762164",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Sí, tenemos envíos nacionales por cobrar: despachamos por transportadora y el valor del flete se paga al recibir. Para Itagüí no hay problema.\n\nYa tenemos casi todo: los dos diseños (manga corta y larga), la lista de jugadores con nombres, números y tallas. Solo faltaría que confirme si avanza con el pedido para que el asesor le indique el medio de pago del abono."
+      },
+      "timestamp": "1784762134",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUM0RDAxMUExN0VENEVBOUYyQ0MyNzVFRDg1MDQ4OEQA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Que información necesita, el pedido es en Itagüí Antioquia"
+      },
+      "text": {
+        "body": "Que información necesita, el pedido es en Itagüí Antioquia"
+      },
+      "timestamp": "1784762085",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSQUIzOTY4OEMxOTE0RTk3OEVEAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Sí, por este chat puede consultar el estado cuando quiera. También puede escribir directamente a los asesores al 310 336 2484 o 321 398 8464.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSQUIzOTY4OEMxOTE0RTk3OEVEAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784761994",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSQUIzOTY4OEMxOTE0RTk3OEVEAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784761995",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSQUIzOTY4OEMxOTE0RTk3OEVEAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784761999",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Sí, por este chat puede consultar el estado cuando quiera. También puede escribir directamente a los asesores al 310 336 2484 o 321 398 8464."
+      },
+      "timestamp": "1784761994",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNFMEM4MjU0MUI0M0JBRDAwNDY5M0Y0RkNEMEIzRTEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "?"
+      },
+      "text": {
+        "body": "?"
+      },
+      "timestamp": "1784761958",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUM3RjA2OTI2QjFCREUzMkM3NTEzN0JCOTk2OTY1MDYA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "El estado se consulta por medio de este chat"
+      },
+      "text": {
+        "body": "El estado se consulta por medio de este chat"
+      },
+      "timestamp": "1784761956",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOEVBMzBERjhBQkQyMjc3RjY1AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Claro, durante los 15 días hábiles puede pedir seguimiento del pedido cuando quiera y le mostramos cómo va el proceso. Una vez confirmado el pedido, se le asigna un número de seguimiento con el que puede consultar el estado en cualquier momento.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOEVBMzBERjhBQkQyMjc3RjY1AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784761900",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOEVBMzBERjhBQkQyMjc3RjY1AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784761901",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOEVBMzBERjhBQkQyMjc3RjY1AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784761905",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Claro, durante los 15 días hábiles puede pedir seguimiento del pedido cuando quiera y le mostramos cómo va el proceso. Una vez confirmado el pedido, se le asigna un número de seguimiento con el que puede consultar el estado en cualquier momento."
+      },
+      "timestamp": "1784761900",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUM3MzMxQkZBRjJFNkVEQUQzRDhEODcyQTA4RDBEMEUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Listo, podemos ir viendo el estado de las camisas en los 15 días? PS como evidencia del trabajo y para evitar riesgos y poder confiar por parte de nosotros?"
+      },
+      "text": {
+        "body": "Listo, podemos ir viendo el estado de las camisas en los 15 días? PS como evidencia del trabajo y para evitar riesgos y poder confiar por parte de nosotros?"
+      },
+      "timestamp": "1784761853",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSNTBGODUxOEI3RjI1NENEQTJDAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Entiendo su inquietud. Life Deportes es una empresa registrada y con punto físico en Bogotá (Cl. 66a #98a 12, Engativá), así que puede visitarnos y verificar directamente. Trabajamos con abono del 50% y el resto contra entrega, lo que protege su pedido. Puede ver el catálogo y productos publicados en https://lifedeportes.odoo.com/shop. Si prefiere, puede acercarse al punto físico para conocer el proceso de fabricación en persona.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSNTBGODUxOEI3RjI1NENEQTJDAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784761251",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSNTBGODUxOEI3RjI1NENEQTJDAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784761252",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSNTBGODUxOEI3RjI1NENEQTJDAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784761263",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Entiendo su inquietud. Life Deportes es una empresa registrada y con punto físico en Bogotá (Cl. 66a #98a 12, Engativá), así que puede visitarnos y verificar directamente. Trabajamos con abono del 50% y el resto contra entrega, lo que protege su pedido. Puede ver el catálogo y productos publicados en https://lifedeportes.odoo.com/shop. Si prefiere, puede acercarse al punto físico para conocer el proceso de fabricación en persona."
+      },
+      "timestamp": "1784761251",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUMwMTNGNjgyNTU1QURBRkUzMEZGODAxOERBNDIyODAA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Cómo puedo confirmar que si son seguros y van a cumplir con el proceso de entrega, pues no es por nada Pero en sus redes solo tienen imágenes publicitarios con IA y no veo nada q me asegure"
+      },
+      "text": {
+        "body": "Cómo puedo confirmar que si son seguros y van a cumplir con el proceso de entrega, pues no es por nada Pero en sus redes solo tienen imágenes publicitarios con IA y no veo nada q me asegure"
+      },
+      "timestamp": "1784761201",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSMUYzRDYwQUQ4NjQxRjVDNzc2AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Estamos en la Cl. 66a #98a 12, barrio Los Álamos, Engativá, Bogotá. Puede ver la ubicación aquí: https://maps.google.com/?cid=12304529363039725410",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSMUYzRDYwQUQ4NjQxRjVDNzc2AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760803",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSMUYzRDYwQUQ4NjQxRjVDNzc2AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760803",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSMUYzRDYwQUQ4NjQxRjVDNzc2AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760864",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Estamos en la Cl. 66a #98a 12, barrio Los Álamos, Engativá, Bogotá. Puede ver la ubicación aquí: https://maps.google.com/?cid=12304529363039725410"
+      },
+      "timestamp": "1784760803",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNGN0Q0ODNENzVDNzQ5RUQ2MzA2NzM1OTE1QzkyOTEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Dónde están ubicados?"
+      },
+      "text": {
+        "body": "Dónde están ubicados?"
+      },
+      "timestamp": "1784760762",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOUQxMzUyRDY0RENCN0ZFOEZDAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Sí, el puño elástico en la muñeca va incluido en la manga larga. Se hace con el ribete dorado tal como se ve en la foto.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOUQxMzUyRDY0RENCN0ZFOEZDAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760431",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOUQxMzUyRDY0RENCN0ZFOEZDAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760441",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSOUQxMzUyRDY0RENCN0ZFOEZDAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760742",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Sí, el puño elástico en la muñeca va incluido en la manga larga. Se hace con el ribete dorado tal como se ve en la foto."
+      },
+      "timestamp": "1784760431",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNBQUUyNzE0NEM0Q0UwNzEwRUY4OEI1QjY5QTMxREMA",
+      "image": {
+        "id": "27825936977025496",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=27825936977025496&source=webhook&ext=1784760674&hash=ATyoIhn0ePK2ls3erK8TAAJsMCVnAl5GAcAxWKD0j-xzGA",
+        "sha256": "G0Xq1KaFuc0hPqfP1NuJzo8hh7qRXsPe28mbxKKFu/4=",
+        "caption": "Y para las camisas manga larga en el final del brazo muestra una elástica que va en la muñecas van incluidas?",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjVmMzllZGRhLWI2OTItNGE3MS1iNTA5LWU4ZWUwMTIxZDUxZCIsInB1ciI6ImJsb2JfaWQifX0=--512ce7f9e4f7487232adca89c262a88cc9fb779e/image_20df23190db1.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Y para las camisas manga larga en el final del brazo muestra una elástica que va en la muñecas van incluidas? Image attached (image_20df23190db1.jpeg) [Size: 30.9 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjVmMzllZGRhLWI2OTItNGE3MS1iNTA5LWU4ZWUwMTIxZDUxZCIsInB1ciI6ImJsb2JfaWQifX0=--512ce7f9e4f7487232adca89c262a88cc9fb779e/image_20df23190db1.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjVmMzllZGRhLWI2OTItNGE3MS1iNTA5LWU4ZWUwMTIxZDUxZCIsInB1ciI6ImJsb2JfaWQifX0=--512ce7f9e4f7487232adca89c262a88cc9fb779e/image_20df23190db1.jpeg",
+          "filename": "image_20df23190db1.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 31613
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjVmMzllZGRhLWI2OTItNGE3MS1iNTA5LWU4ZWUwMTIxZDUxZCIsInB1ciI6ImJsb2JfaWQifX0=--512ce7f9e4f7487232adca89c262a88cc9fb779e/image_20df23190db1.jpeg",
+        "message_type_data": {
+          "caption": "Y para las camisas manga larga en el final del brazo muestra una elástica que va en la muñecas van incluidas?",
+          "has_media": true
+        }
+      },
+      "timestamp": "1784760375",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSMjA2RjI5MURDQ0M4N0M2RDI2AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Sí, por sublimación se puede replicar ese patrón de fondo tal cual. Queda igual al diseño de referencia.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSMjA2RjI5MURDQ0M4N0M2RDI2AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760364",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSMjA2RjI5MURDQ0M4N0M2RDI2AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760364",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Sí, por sublimación se puede replicar ese patrón de fondo tal cual. Queda igual al diseño de referencia."
+      },
+      "timestamp": "1784760363",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNBNzU4QkFEQTRGOTFCQTZFNEU3NkMyMzU2OUI2RTUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Si ese"
+      },
+      "text": {
+        "body": "Si ese"
+      },
+      "timestamp": "1784760298",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRkVBOThDNUQxNzQ1NUM4OUUzAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Sí, se alcanza a ver el patrón de fondo. En la sublimación se reproduce ese tipo de detalles en gris sobre el negro. ¿Es ese el patrón al que se refiere?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRkVBOThDNUQxNzQ1NUM4OUUzAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760245",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRkVBOThDNUQxNzQ1NUM4OUUzAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760245",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Sí, se alcanza a ver el patrón de fondo. En la sublimación se reproduce ese tipo de detalles en gris sobre el negro. ¿Es ese el patrón al que se refiere?"
+      },
+      "timestamp": "1784760245",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNCOEE2NzM4MzgzMUI4NzUyQzhEODY2Qjc0RkY0RjUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Las harían igual?"
+      },
+      "text": {
+        "body": "Las harían igual?"
+      },
+      "timestamp": "1784760245",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNBRkM2QTBGOTVBNTAzQkQ4RUEzNzIzMjE3OTk4NjkA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Si una pregunta las camisas tienen un detalle en el fondo que están en gris nose si se alcanzen a ver"
+      },
+      "text": {
+        "body": "Si una pregunta las camisas tienen un detalle en el fondo que están en gris nose si se alcanzen a ver"
+      },
+      "timestamp": "1784760202",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSREE5ODI3ODkwQzA2MzI4NjY3AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Según la foto, el diseño de manga larga es igual al de manga corta: negra con detalles dorados, cuello redondo, escudo de león, logo Nike, nombre DOMINICK número 7, y además lleva el logo de Monster Energy en la espalda. ¿Es correcto?\n\nSobre su pregunta: la producción toma aproximadamente 15 días hábiles a partir del abono del 50%. El resto se cancela contra entrega. El medio de pago exacto se lo indica el asesor al confirmar el pedido.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSREE5ODI3ODkwQzA2MzI4NjY3AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760133",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSREE5ODI3ODkwQzA2MzI4NjY3AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784760133",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Según la foto, el diseño de manga larga es igual al de manga corta: negra con detalles dorados, cuello redondo, escudo de león, logo Nike, nombre DOMINICK número 7, y además lleva el logo de Monster Energy en la espalda. ¿Es correcto?\n\nSobre su pregunta: la producción toma aproximadamente 15 días hábiles a partir del abono del 50%. El resto se cancela contra entrega. El medio de pago exacto se lo indica el asesor al confirmar el pedido."
+      },
+      "timestamp": "1784760132",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUM5RDlDNjMzMDkyRUFGQTc2NjY0NTVBQTA3RTg5NTkA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Me puede confirmar para cuando estarían listas y si tengo que darle algún porcentaje antes y para cuando por favor"
+      },
+      "text": {
+        "body": "Me puede confirmar para cuando estarían listas y si tengo que darle algún porcentaje antes y para cuando por favor"
+      },
+      "timestamp": "1784760067",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNGNzI2MkVFMEVGN0E5RTI2NjExQzNDQjUwRTE0ODMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Listo"
+      },
+      "text": {
+        "body": "Listo"
+      },
+      "timestamp": "1784760026",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUMxQUJGMUM2NDQyMkM3QTA0NTY2RDkwQkE1OTBDQ0QA",
+      "image": {
+        "id": "1012790228330945",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1012790228330945&source=webhook&ext=1784760322&hash=ATwlZx38a3CK4E3JqensC2TLfZ9UlryvClZzFVp2Gn0A7A",
+        "sha256": "9FkGm7e4A0hnD+p5TH9cy3wigOtcTPxvWSnFpz/C1mk=",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImY2ZGMwNWViLWI1OWItNGJmZi1iNDUyLTIyMjI2MTM0NGRjYyIsInB1ciI6ImJsb2JfaWQifX0=--caeac34c0e466ec772500b32bee5fd6d25b08e3c/image_bb9730a08df7.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Image attached (image_bb9730a08df7.jpeg) [Size: 95.9 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImY2ZGMwNWViLWI1OWItNGJmZi1iNDUyLTIyMjI2MTM0NGRjYyIsInB1ciI6ImJsb2JfaWQifX0=--caeac34c0e466ec772500b32bee5fd6d25b08e3c/image_bb9730a08df7.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImY2ZGMwNWViLWI1OWItNGJmZi1iNDUyLTIyMjI2MTM0NGRjYyIsInB1ciI6ImJsb2JfaWQifX0=--caeac34c0e466ec772500b32bee5fd6d25b08e3c/image_bb9730a08df7.jpeg",
+          "filename": "image_bb9730a08df7.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 98193
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImY2ZGMwNWViLWI1OWItNGJmZi1iNDUyLTIyMjI2MTM0NGRjYyIsInB1ciI6ImJsb2JfaWQifX0=--caeac34c0e466ec772500b32bee5fd6d25b08e3c/image_bb9730a08df7.jpeg",
+        "message_type_data": {
+          "caption": "",
+          "has_media": true
+        }
+      },
+      "timestamp": "1784760023",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRDY0ODgyODQ5RUQ0NzI4ODE0AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Perfecto, entonces serían 15 manga corta y 3 manga larga. En total 18 camisetas:\n\n- 15 manga corta a $30.000 = $450.000\n- 3 manga larga a $33.000 = $99.000\n- Total: $549.000\n\nQuedo a la espera del diseño de manga larga.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRDY0ODgyODQ5RUQ0NzI4ODE0AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784759435",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRDY0ODgyODQ5RUQ0NzI4ODE0AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784759435",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSRDY0ODgyODQ5RUQ0NzI4ODE0AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784759440",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, entonces serían 15 manga corta y 3 manga larga. En total 18 camisetas:\n\n- 15 manga corta a $30.000 = $450.000\n- 3 manga larga a $33.000 = $99.000\n- Total: $549.000\n\nQuedo a la espera del diseño de manga larga."
+      },
+      "timestamp": "1784759435",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNBQkY3OUFENzVFRThBQjZFQzQ1NTE5MzlFRTgxMDIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "En un momento ya se lo mando"
+      },
+      "text": {
+        "body": "En un momento ya se lo mando"
+      },
+      "timestamp": "1784759376",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573046432036",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1032118449197313",
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAEhggQUNGOENBNEE3OUJFNzZENjM2OEQwQThCNzdFM0ZBNTcA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Con Manga\n\n11     JR. DAVID    XL\n7    Orrego         XL\n12   Rigo              L\n\nEl diseño con manga es el siguiente"
+      },
+      "text": {
+        "body": "Con Manga\n\n11     JR. DAVID    XL\n7    Orrego         XL\n12   Rigo              L\n\nEl diseño con manga es el siguiente"
+      },
+      "timestamp": "1784759356",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSNzhBNDA1N0I5RDJBMDFFNDFGAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573046432036",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+        "contact_name": "JR",
+        "content": "Tengo la lista de manga corta: 15 camisetas con sus nombres, números y tallas. La imagen que envió para manga larga parece ser la misma referencia del diseño. ¿Me manda la lista de jugadores para manga larga?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSNzhBNDA1N0I5RDJBMDFFNDFGAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784759248",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          },
+          {
+            "id": "wamid.HBgMNTczMDQ2NDMyMDM2FQIAERgSNzhBNDA1N0I5RDJBMDFFNDFGAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784759249",
+            "recipient_id": "573046432036",
+            "recipient_user_id": "CO.1032118449197313"
+          }
+        ]
+      },
+      "text": {
+        "body": "Tengo la lista de manga corta: 15 camisetas con sus nombres, números y tallas. La imagen que envió para manga larga parece ser la misma referencia del diseño. ¿Me manda la lista de jugadores para manga larga?"
+      },
+      "timestamp": "1784759248",
+      "to": "573046432036",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yMlQyMzoyNTo0OS42NzUyOTlaIiwiZjA4NjA0M2MtNDVhYi00MWMyLTgyMGItN2RiNWZlY2NiZTE4Il0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19",
+      "after": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yMlQyMjoyNzoyOC42MjI2NDRaIiwiM2Q4NjE0ZDUtNWM5MC00NjBiLTgwNWMtZDI5NDI2MzMxODIzIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19"
+    },
+    "next": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yMlQyMjoyNzoyOC42MjI2NDRaIiwiM2Q4NjE0ZDUtNWM5MC00NjBiLTgwNWMtZDI5NDI2MzMxODIzIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19",
+    "previous": null
+  }
+}

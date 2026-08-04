@@ -1,0 +1,104 @@
+{
+  "task_id": 1659,
+  "list_attachment_id": 20852,
+  "list_name": "FORMATO PEDIDO LIFE 1 (1) (7) PINIMA LISTADO FINAL.xlsx",
+  "print_attachment_id": 21275,
+  "pdf_name": "PINIMA 1788 1.pdf",
+  "compare_mode": "dorsal",
+  "name_qc": {
+    "normalize_enabled": true,
+    "equivalence_rules_count": 0,
+    "equivalence_path": null
+  },
+  "pdf_source": "vision",
+  "counts": {
+    "excel_rows": 6,
+    "pdf_rows": 6
+  },
+  "qc": "diff",
+  "alarms": [
+    "En Excel pero no en PDF (par nombre+dorsal): 6 — muestra: GOMEZ #1; PEREA #2; MAHECHA #4; MANRIQUE #5; OWHEN #6 …",
+    "En PDF pero no en Excel (par nombre+dorsal): 6 — muestra: GOMEZ #5; MAHECHA #2; MONCAYO #11; PEREA #10; MANRIQUE #7 …"
+  ],
+  "compare": {
+    "ok": false,
+    "mode": "dorsal",
+    "excel_count": 6,
+    "pdf_count": 6,
+    "missing": [
+      [
+        "GOMEZ",
+        "",
+        "1"
+      ],
+      [
+        "PEREA",
+        "",
+        "2"
+      ],
+      [
+        "MAHECHA",
+        "",
+        "4"
+      ],
+      [
+        "MANRIQUE",
+        "",
+        "5"
+      ],
+      [
+        "OWHEN",
+        "",
+        "6"
+      ],
+      [
+        "MONCAYO",
+        "",
+        "7"
+      ]
+    ],
+    "extra": [
+      [
+        "GOMEZ",
+        "",
+        "5"
+      ],
+      [
+        "MAHECHA",
+        "",
+        "2"
+      ],
+      [
+        "MONCAYO",
+        "",
+        "11"
+      ],
+      [
+        "PEREA",
+        "",
+        "10"
+      ],
+      [
+        "MANRIQUE",
+        "",
+        "7"
+      ],
+      [
+        "OWHEN",
+        "",
+        "9"
+      ]
+    ],
+    "pdf_text_empty": false
+  },
+  "talla_mismatches": [],
+  "pdf_pipeline": {
+    "source": "vision",
+    "vision_provider": "gemini",
+    "vision": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "raw_chars": 723
+    }
+  }
+}

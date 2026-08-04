@@ -1,0 +1,878 @@
+{
+  "data": [
+    {
+      "audio": {
+        "id": "1424450989493255",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1424450989493255&source=webhook&ext=1784675381&hash=ATz1W-E4bNqEmxF9M3lqeloIRKG7InhLUe7w-4_I5dcOog",
+        "voice": true,
+        "sha256": "PNZw4FkGognpttruuoZoPQvjs6ZHDAakNxAWXacvQic=",
+        "mime_type": "audio/ogg; codecs=opus",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImVlMGYzNDFjLWMxM2QtNDg1ZS1iZGQ4LWVhODVjYmVkNmE2NyIsInB1ciI6ImJsb2JfaWQifX0=--232192df85d5036f9d974dc9073dbc43d06fe1e6/audio_990fd1a32cbc.ogg"
+      },
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUM5Q0EzQjBDRjcwRTNEQzU1NkNEMjg1RkZBQTUyQTQA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Audio attached (audio_990fd1a32cbc.ogg) [Size: 21.3 KB | Type: audio/ogg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImVlMGYzNDFjLWMxM2QtNDg1ZS1iZGQ4LWVhODVjYmVkNmE2NyIsInB1ciI6ImJsb2JfaWQifX0=--232192df85d5036f9d974dc9073dbc43d06fe1e6/audio_990fd1a32cbc.ogg \n\nTranscript: Es que en la página solo me aparecen cuatro modelos de sudaderas. De pronto a ver si tienen otro tipo de, de catálogo para, para poder escoger desde ahí",
+        "transcript": {
+          "text": "Es que en la página solo me aparecen cuatro modelos de sudaderas. De pronto a ver si tienen otro tipo de, de catálogo para, para poder escoger desde ahí"
+        },
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImVlMGYzNDFjLWMxM2QtNDg1ZS1iZGQ4LWVhODVjYmVkNmE2NyIsInB1ciI6ImJsb2JfaWQifX0=--232192df85d5036f9d974dc9073dbc43d06fe1e6/audio_990fd1a32cbc.ogg",
+          "filename": "audio_990fd1a32cbc.ogg",
+          "content_type": "audio/ogg",
+          "byte_size": 21794
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImVlMGYzNDFjLWMxM2QtNDg1ZS1iZGQ4LWVhODVjYmVkNmE2NyIsInB1ciI6ImJsb2JfaWQifX0=--232192df85d5036f9d974dc9073dbc43d06fe1e6/audio_990fd1a32cbc.ogg"
+      },
+      "timestamp": "1784675086",
+      "type": "audio",
+      "username": null
+    },
+    {
+      "audio": {
+        "id": "994425206928450",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=994425206928450&source=webhook&ext=1784675365&hash=ATxiJ8B5gfsbULnab8qIgEPxf51FdyUrHjszfqdn6GgHJA",
+        "voice": true,
+        "sha256": "S3YJ7x4HoG/3vhaJ78j9wYwnt63r4AEB7DpmGCdPkKU=",
+        "mime_type": "audio/ogg; codecs=opus",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjkwMDE4YWMxLWExY2QtNGUzYi1hZDNjLWQ1YTI1MTU2NGE5OCIsInB1ciI6ImJsb2JfaWQifX0=--410bc772a6a1f730e46b053d2eaab20a6ec932cc/audio_ab0dd185040f.ogg"
+      },
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUM0RTVBNDFFMDFFQkFGMUY3NzQwMDRFQTNCMTRENTAA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Audio attached (audio_ab0dd185040f.ogg) [Size: 31.0 KB | Type: audio/ogg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjkwMDE4YWMxLWExY2QtNGUzYi1hZDNjLWQ1YTI1MTU2NGE5OCIsInB1ciI6ImJsb2JfaWQifX0=--410bc772a6a1f730e46b053d2eaab20a6ec932cc/audio_ab0dd185040f.ogg \n\nTranscript: Y porfa, hágame un favor. De pronto ustedes tienen más modelos de sudaderas para ver si escogemos uno de los que ustedes ya han fabricado para poder nosotros ya tomar la decisión de qué sudadera vamos a, a hacer confeccionar",
+        "transcript": {
+          "text": "Y porfa, hágame un favor. De pronto ustedes tienen más modelos de sudaderas para ver si escogemos uno de los que ustedes ya han fabricado para poder nosotros ya tomar la decisión de qué sudadera vamos a, a hacer confeccionar"
+        },
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjkwMDE4YWMxLWExY2QtNGUzYi1hZDNjLWQ1YTI1MTU2NGE5OCIsInB1ciI6ImJsb2JfaWQifX0=--410bc772a6a1f730e46b053d2eaab20a6ec932cc/audio_ab0dd185040f.ogg",
+          "filename": "audio_ab0dd185040f.ogg",
+          "content_type": "audio/ogg",
+          "byte_size": 31776
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjkwMDE4YWMxLWExY2QtNGUzYi1hZDNjLWQ1YTI1MTU2NGE5OCIsInB1ciI6ImJsb2JfaWQifX0=--410bc772a6a1f730e46b053d2eaab20a6ec932cc/audio_ab0dd185040f.ogg"
+      },
+      "timestamp": "1784675066",
+      "type": "audio",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUNDQUQ2NzQ1NzlCMDg4QjI1MTRCNjE5ODA3ODZBNkEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Pero que sea en algodón licrado"
+      },
+      "text": {
+        "body": "Pero que sea en algodón licrado"
+      },
+      "timestamp": "1784667442",
+      "type": "text",
+      "username": null
+    },
+    {
+      "audio": {
+        "id": "1660929615010333",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1660929615010333&source=webhook&ext=1784667726&hash=ATwCtpQ1F0U2Mcu6OMGP1M9ngHN9_NooQ8WhD4H1a72VEg",
+        "voice": true,
+        "sha256": "skSOcRgpNi/4gNwQxb7UnapHV8uMZEXSAKJfQp0FOO0=",
+        "mime_type": "audio/ogg; codecs=opus",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjMyZGYxZGU2LWQwNGItNDE5Zi04MjNmLTAwZDY3NjA1ZTY3ZiIsInB1ciI6ImJsb2JfaWQifX0=--c2a3538dbd0164456eabc2017e689e0963c961e1/audio_e3faa9a5993e.ogg"
+      },
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUNCNkVBMDdDQTkxQkIzQzk2NEQyNzMxODFDRjY4NzAA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "pending",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Audio attached (audio_e3faa9a5993e.ogg) [Size: 53.6 KB | Type: audio/ogg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjMyZGYxZGU2LWQwNGItNDE5Zi04MjNmLTAwZDY3NjA1ZTY3ZiIsInB1ciI6ImJsb2JfaWQifX0=--c2a3538dbd0164456eabc2017e689e0963c961e1/audio_e3faa9a5993e.ogg \n\nTranscript: Sí, es que queremos la cotización es en algodón licrado, que es como más, pues más, de más calidad. Entonces, en esa cotización es como para saber el precio y si no nos quedamos con, con lo de sin capucha. Entonces queremos ver cuánto se nos incrementa para ya definir nosotros acá el, el modelo y mirar de cuál de las dos dejamos, si la de capucha o la lisa normal. Entonces únicamente que nos confirme",
+        "transcript": {
+          "text": "Sí, es que queremos la cotización es en algodón licrado, que es como más, pues más, de más calidad. Entonces, en esa cotización es como para saber el precio y si no nos quedamos con, con lo de sin capucha. Entonces queremos ver cuánto se nos incrementa para ya definir nosotros acá el, el modelo y mirar de cuál de las dos dejamos, si la de capucha o la lisa normal. Entonces únicamente que nos confirme"
+        },
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjMyZGYxZGU2LWQwNGItNDE5Zi04MjNmLTAwZDY3NjA1ZTY3ZiIsInB1ciI6ImJsb2JfaWQifX0=--c2a3538dbd0164456eabc2017e689e0963c961e1/audio_e3faa9a5993e.ogg",
+          "filename": "audio_e3faa9a5993e.ogg",
+          "content_type": "audio/ogg",
+          "byte_size": 54862
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjMyZGYxZGU2LWQwNGItNDE5Zi04MjNmLTAwZDY3NjA1ZTY3ZiIsInB1ciI6ImJsb2JfaWQifX0=--c2a3538dbd0164456eabc2017e689e0963c961e1/audio_e3faa9a5993e.ogg"
+      },
+      "timestamp": "1784667427",
+      "type": "audio",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNzRDNjJCNjM0RDFFMUUyMjYwAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "En material orión impermeable",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNzRDNjJCNjM0RDFFMUUyMjYwAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667371",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNzRDNjJCNjM0RDFFMUUyMjYwAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667371",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNzRDNjJCNjM0RDFFMUUyMjYwAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667375",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          }
+        ]
+      },
+      "text": {
+        "body": "En material orión impermeable"
+      },
+      "timestamp": "1784667371",
+      "to": "573177763656",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNUI1NkI0RDE0NDdEMDgyNTk5AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Se puede realizar ese diseño con capota a ese mismo precio indicado",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNUI1NkI0RDE0NDdEMDgyNTk5AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667356",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNUI1NkI0RDE0NDdEMDgyNTk5AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667356",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNUI1NkI0RDE0NDdEMDgyNTk5AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667375",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          }
+        ]
+      },
+      "text": {
+        "body": "Se puede realizar ese diseño con capota a ese mismo precio indicado"
+      },
+      "timestamp": "1784667355",
+      "to": "573177763656",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUM0MENGRDYyODRBM0M3MTlBNDA3NDNBRTc0NjkwMDEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "👍🏻"
+      },
+      "text": {
+        "body": "👍🏻"
+      },
+      "timestamp": "1784667143",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSM0YwNjVDOUU3RDE5ODBEOTFBAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Con gusto. En cuanto tenga la confirmación del precio con capucha le aviso por aquí.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSM0YwNjVDOUU3RDE5ODBEOTFBAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667126",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSM0YwNjVDOUU3RDE5ODBEOTFBAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667126",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSM0YwNjVDOUU3RDE5ODBEOTFBAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667132",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          }
+        ]
+      },
+      "text": {
+        "body": "Con gusto. En cuanto tenga la confirmación del precio con capucha le aviso por aquí."
+      },
+      "timestamp": "1784667126",
+      "to": "573177763656",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUMzOTAwMkVDQjM4Njg2ODFBOTNCODU4ODJBNUQ0RjAA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Muchas gracias"
+      },
+      "text": {
+        "body": "Muchas gracias"
+      },
+      "timestamp": "1784667090",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNkYyQjM1RkM0OTM5NTY1MjMwAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Según la foto, es una chaqueta deportiva con cremallera y cuello alto, sin capucha. Sí, podemos fabricarla con capucha. Le confirmo con el equipo el valor del incremento por agregar la capota a ese modelo de sudadera.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNkYyQjM1RkM0OTM5NTY1MjMwAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667043",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNkYyQjM1RkM0OTM5NTY1MjMwAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667072",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSNkYyQjM1RkM0OTM5NTY1MjMwAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784667072",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          }
+        ]
+      },
+      "text": {
+        "body": "Según la foto, es una chaqueta deportiva con cremallera y cuello alto, sin capucha. Sí, podemos fabricarla con capucha. Le confirmo con el equipo el valor del incremento por agregar la capota a ese modelo de sudadera."
+      },
+      "timestamp": "1784667043",
+      "to": "573177763656",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUM5OUU3RTk0Mjc2NjA0MUFDNEQ0MUZERDg5NjMyRTcA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "A esta con capucha"
+      },
+      "text": {
+        "body": "A esta con capucha"
+      },
+      "timestamp": "1784666811",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUNGNzQ2QTJEQzc2MEUwNkMxODBDMjUwRjBENDQxNzAA",
+      "image": {
+        "id": "2011634199456408",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=2011634199456408&source=webhook&ext=1784667102&hash=ATzX_Bmlrh0jnDPiWBVt_FzaA43cJKs8Z47w2-0kpzUTuQ",
+        "sha256": "BNvt4WFdUX+EMMpmpeRUDMsOhgjWvqwS6o7PCfRVEC0=",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjA1NWJjNTYzLTJjNTAtNDA2OC05MDAzLTg0NTdmOTEzMmMyYyIsInB1ciI6ImJsb2JfaWQifX0=--d59d78313c8f2baed15bbf81859cfcdbe71296b1/image_7b696e5354d3.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Image attached (image_7b696e5354d3.jpeg) [Size: 92.6 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjA1NWJjNTYzLTJjNTAtNDA2OC05MDAzLTg0NTdmOTEzMmMyYyIsInB1ciI6ImJsb2JfaWQifX0=--d59d78313c8f2baed15bbf81859cfcdbe71296b1/image_7b696e5354d3.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjA1NWJjNTYzLTJjNTAtNDA2OC05MDAzLTg0NTdmOTEzMmMyYyIsInB1ciI6ImJsb2JfaWQifX0=--d59d78313c8f2baed15bbf81859cfcdbe71296b1/image_7b696e5354d3.jpeg",
+          "filename": "image_7b696e5354d3.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 94774
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjA1NWJjNTYzLTJjNTAtNDA2OC05MDAzLTg0NTdmOTEzMmMyYyIsInB1ciI6ImJsb2JfaWQifX0=--d59d78313c8f2baed15bbf81859cfcdbe71296b1/image_7b696e5354d3.jpeg",
+        "message_type_data": {
+          "caption": "",
+          "has_media": true
+        }
+      },
+      "timestamp": "1784666803",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUM2QjFENkZFN0FCNjdFQkEwNTI3MkQyQzc2MTlFMDkA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "De las que me cotizo de 120 mil"
+      },
+      "text": {
+        "body": "De las que me cotizo de 120 mil"
+      },
+      "timestamp": "1784666774",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUM0MTM4NzFBOEVCREQ2MDkxRUVENEE0M0NCRjgyRTgA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Pero el modelo de sudadera  se puede aumentar la capucha?"
+      },
+      "text": {
+        "body": "Pero el modelo de sudadera  se puede aumentar la capucha?"
+      },
+      "timestamp": "1784666752",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUNBMEZEQkJERUZCMjBBRUZDOUVFMzlCQTNDOEMyNDAA"
+      },
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMzBCNDNDNEE1OUJFMjNDRTIwAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "y así como me muestra, se podría pero con cremallera, en orion impermeable con capota a $65.000",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMzBCNDNDNEE1OUJFMjNDRTIwAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784666656",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMzBCNDNDNEE1OUJFMjNDRTIwAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784666657",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMzBCNDNDNEE1OUJFMjNDRTIwAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784666680",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          }
+        ]
+      },
+      "text": {
+        "body": "y así como me muestra, se podría pero con cremallera, en orion impermeable con capota a $65.000"
+      },
+      "timestamp": "1784666656",
+      "to": "573177763656",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMzZCNEVGQ0Y4OUNCQjJERjY3AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "a $110.000",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMzZCNEVGQ0Y4OUNCQjJERjY3AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784666607",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMzZCNEVGQ0Y4OUNCQjJERjY3AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784666607",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMzZCNEVGQ0Y4OUNCQjJERjY3AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784666680",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          }
+        ]
+      },
+      "text": {
+        "body": "a $110.000"
+      },
+      "timestamp": "1784666607",
+      "to": "573177763656",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUNCQzE5MzJGMTU0QTU0NkE5MTQ0NkRGQzNCMUNCRUEA"
+      },
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMDY2OTQ5RjhDOEE5Mzc4NjUyAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Manejamos en material orión impermeable, con cremallera asi como la imagen",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMDY2OTQ5RjhDOEE5Mzc4NjUyAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784666592",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMDY2OTQ5RjhDOEE5Mzc4NjUyAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784666593",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          },
+          {
+            "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAERgSMDY2OTQ5RjhDOEE5Mzc4NjUyAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784666680",
+            "recipient_id": "573177763656",
+            "recipient_user_id": "CO.27602844862702140"
+          }
+        ]
+      },
+      "text": {
+        "body": "Manejamos en material orión impermeable, con cremallera asi como la imagen"
+      },
+      "timestamp": "1784666591",
+      "to": "573177763656",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUM2NzBFQTU0NjA4REE3M0NDMTA4OUYyNUI0MTVDM0QA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Algo parecid"
+      },
+      "text": {
+        "body": "Algo parecid"
+      },
+      "timestamp": "1784666132",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUNBMEZEQkJERUZCMjBBRUZDOUVFMzlCQTNDOEMyNDAA",
+      "image": {
+        "id": "4030020273958035",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=4030020273958035&source=webhook&ext=1784666422&hash=ATzr-DJAhP7G61XiJQ-TDE-lSFah8VjNPIo_zREL9Ue0eA",
+        "sha256": "ADt9Zwom6nXUgde6vzpB3AByngQ/52ZFROhGFQjAVpI=",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQxNmFlNzAwLTlkZGQtNGIzMi04YjBlLTNjNDM3ZWI0Njg2MiIsInB1ciI6ImJsb2JfaWQifX0=--d59b55929bd03f726ed29e9493e5dd18a6361deb/image_6fd2ca8ee9cf.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Image attached (image_6fd2ca8ee9cf.jpeg) [Size: 33.8 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQxNmFlNzAwLTlkZGQtNGIzMi04YjBlLTNjNDM3ZWI0Njg2MiIsInB1ciI6ImJsb2JfaWQifX0=--d59b55929bd03f726ed29e9493e5dd18a6361deb/image_6fd2ca8ee9cf.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQxNmFlNzAwLTlkZGQtNGIzMi04YjBlLTNjNDM3ZWI0Njg2MiIsInB1ciI6ImJsb2JfaWQifX0=--d59b55929bd03f726ed29e9493e5dd18a6361deb/image_6fd2ca8ee9cf.jpeg",
+          "filename": "image_6fd2ca8ee9cf.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 34642
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQxNmFlNzAwLTlkZGQtNGIzMi04YjBlLTNjNDM3ZWI0Njg2MiIsInB1ciI6ImJsb2JfaWQifX0=--d59b55929bd03f726ed29e9493e5dd18a6361deb/image_6fd2ca8ee9cf.jpeg",
+        "message_type_data": {
+          "caption": "",
+          "has_media": true
+        }
+      },
+      "timestamp": "1784666123",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573177763656",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.27602844862702140",
+      "id": "wamid.HBgMNTczMTc3NzYzNjU2FQIAEhggQUM1NEEyNDlCMDIyNjY1NTU1NURCNzZERTQwRDBFRkIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573177763656",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "24c8680a-a112-4956-8215-dadf8bfc11c6",
+        "contact_name": "My Flia",
+        "content": "Buenas tardes, para la sudadera con capucha cuánto se incrementa ?"
+      },
+      "text": {
+        "body": "Buenas tardes, para la sudadera con capucha cuánto se incrementa ?"
+      },
+      "timestamp": "1784666094",
+      "type": "text",
+      "username": null
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yMVQyMzowNDo0Ni44NjY1MzdaIiwiZDcwOTcxYjMtMDhhNy00MzBjLWI3MTQtNzQwMDUxMTgzNjljIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19",
+      "after": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yMVQyMDozNDo1NC42OTE0OTdaIiwiZmVlMDgwZTItZWM2NS00YmY5LTkyYjUtYWIxZjY1NzE2NzFmIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19"
+    },
+    "next": null,
+    "previous": null
+  }
+}

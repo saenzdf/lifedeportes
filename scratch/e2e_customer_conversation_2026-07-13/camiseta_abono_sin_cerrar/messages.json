@@ -1,0 +1,42 @@
+[
+  {
+    "from_me": false,
+    "ts": "2026-07-13T11:44:41Z",
+    "text": "El abono es del 50% para iniciar la producción y el 50% restante se cancela al momento de la entrega.\n\n¿Te gustaría que registremos el pedido con los diseños que enviaste para que un asesor te contacte hoy mismo?"
+  },
+  {
+    "from_me": true,
+    "ts": "2026-07-13T11:44:35Z",
+    "text": "Ok y el abono cómo es?"
+  },
+  {
+    "from_me": false,
+    "ts": "2026-07-13T11:44:28Z",
+    "text": "Para las 10 camisetas (solo la prenda superior) en tela Dry Fit, el total es de $300.000.\n\n¿Te parece bien este valor para registrar la cotización y que un asesor te contacte hoy?"
+  },
+  {
+    "from_me": true,
+    "ts": "2026-07-13T11:44:23Z",
+    "text": "Solo la camiseta, sin pantaloneta"
+  },
+  {
+    "from_me": false,
+    "ts": "2026-07-13T11:44:15Z",
+    "text": "Para las 10 camisetas en tela Dry Fit, el valor unitario es de $30.000, para un total de $300.000.\n\n¿Te gustaría que registremos esta cotización para que el equipo comercial te contacte hoy mismo?"
+  },
+  {
+    "from_me": true,
+    "ts": "2026-07-13T11:44:06Z",
+    "text": "Son 10"
+  },
+  {
+    "from_me": false,
+    "ts": "2026-07-13T11:43:56Z",
+    "text": "Para las 12 camisetas de fútbol en tela Dry Fit, el valor unitario es de $30.000, para un total de $360.000.\n\nEste precio incluye la personalización completa con sublimación digital. ¿Te gustaría que registremos esta cotización para que el equipo comercial te contacte hoy mismo?"
+  },
+  {
+    "from_me": true,
+    "ts": "2026-07-13T11:43:09Z",
+    "text": "Hola, quiero cotizar camisetas de fútbol"
+  }
+]

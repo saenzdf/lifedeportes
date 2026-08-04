@@ -1,0 +1,39 @@
+---
+description: Grafo Kapso Life Deportes — v10 staff, validar antes de subir
+globs: kapso/workflow*.json,kapso/functions/**/*.js,kapso/prompts/**,kapso/docs/**
+alwaysApply: false
+---
+
+# Grafo Kapso Life Deportes
+
+Leer `kapso/docs/graph_architecture.md` y `kapso/docs/staff_graph_v10.md`.
+
+Skill obligatoria antes de publicar: `.agents/skills/kapso-graph-guard/SKILL.md`
+
+## Validación pre-upload (obligatorio)
+
+```bash
+node kapso/scripts/validate-graph-lifedeportes.js kapso/workflow_lifedeportes_sales_inbound_v10.json
+```
+
+No ejecutar `update-graph` si falla.
+
+## Grafo activo
+
+`workflow_lifedeportes_sales_inbound_v10.json` — staff línea única. Sin nodos huérfanos de v7/v8/v9.
+
+## Carril cliente
+
+Sin cambios de filosofía. Sin decides post vendedor/histórico. Ver `graph_architecture.md`.
+
+## Staff v10
+
+```
+route-user-entry [staff] → agente ingreso → validate → route-staff-write → build → odoo → handoff
+```
+
+No reintroducir: detect-staff-upload-command, route-staff-entry, staff general, nómina.
+
+## Sync
+
+`get-graph` → validar → `update-graph` con lock_version. Prompts staff: `embed_prompts_staff_v10.js` (lee `prompts/agent_staff_upload_v5.md`).

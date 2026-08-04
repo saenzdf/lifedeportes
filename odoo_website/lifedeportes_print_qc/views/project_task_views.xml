@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_task_form_print_qc" model="ir.ui.view">
+        <field name="name">project.task.form.print.qc</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="QC impresión" name="lifedeportes_print_qc" groups="project.group_project_user">
+                    <group string="Adjuntos fijos (opcional)">
+                        <field name="ld_qc_list_attachment_id"/>
+                        <field name="ld_qc_print_attachment_id"/>
+                    </group>
+                    <group>
+                        <button name="action_ld_print_qc_manual" type="object" string="Auditar (local)" class="btn-secondary"/>
+                        <button name="action_ld_print_qc_kapso" type="object" string="Auditar (Kapso)" class="btn-primary"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

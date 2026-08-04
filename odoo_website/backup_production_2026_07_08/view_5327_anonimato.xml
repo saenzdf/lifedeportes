@@ -1,0 +1,15 @@
+<t t-name="website.anonimato">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+    <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block">
+        <div class="s_allow_columns container"><h2>Instrucciones para la Eliminación de Datos</h2></div>
+    </section>
+    <section class="s_text_block o_colored_level pb0 pt16" data-snippet="s_text_block">
+        <div class="s_allow_columns o_container_small">
+            <p>Para solicitar la eliminación o anonimización de sus datos, por favor, contacte a nuestro responsable de privacidad en privacidad@lifedeportes.com. Verificaremos su identidad y procederemos según nuestras políticas</p><p><span class="fa fa-envelope-o fa-3x" style="width: 25% !important;"/>privacidad@lifedeportes.com</p><p><br/></p></div>
+    </section>
+    
+    
+</div>
+    </t>
+</t>

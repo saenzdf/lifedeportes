@@ -1,0 +1,14 @@
+{
+  "enabled_at": "2026-07-14T17:21:11.558Z",
+  "workflow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+  "lock_version_before": 1053,
+  "enabled": false,
+  "original_customer_target": "fn_classify_contact_odoo_1745500002550",
+  "sales_whitelist": [
+    "573172575981"
+  ],
+  "customer_edge_target": "decide_sales_whitelist_ai_1745500019010",
+  "gate": "ai_phone_whitelist",
+  "archived_at": "2026-07-16T21:11:21.860Z",
+  "note": "Archived 2026-07-16; salesGate bypass is default. Do not re-enable without --i-know-this-blocks-production"
+}

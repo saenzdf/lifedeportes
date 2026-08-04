@@ -1,0 +1,201 @@
+{
+  "name": "lifedeportes_sales_inbound_v1",
+  "description": "Inbound de WhatsApp para cotizacion comercial Life Deportes.",
+  "nodes": [
+    {
+      "id": "start",
+      "type": "trigger_whatsapp_inbound",
+      "config": {
+        "event": "inbound_message"
+      }
+    },
+    {
+      "id": "normalize_input_001",
+      "type": "function",
+      "config": {
+        "name": "normalize-input",
+        "input_map": {
+          "text": "context.message.text",
+          "phone": "context.message.from"
+        }
+      }
+    },
+    {
+      "id": "policy_guard_input_001",
+      "type": "function",
+      "config": {
+        "name": "policy-guard-input"
+      }
+    },
+    {
+      "id": "intent_classifier_001",
+      "type": "agent",
+      "config": {
+        "system_prompt_ref": "prompts/sales_agent_v2.md",
+        "memory_scope": "conversation",
+        "outputs": [
+          "vars.intent"
+        ]
+      }
+    },
+    {
+      "id": "needs_disambiguation_001",
+      "type": "decide",
+      "config": {
+        "conditions": [
+          {
+            "label": "needs_variant_or_material",
+            "expression": "vars.intent.requires_disambiguation == true"
+          },
+          {
+            "label": "ready_to_quote",
+            "expression": "vars.intent.requires_disambiguation != true"
+          }
+        ]
+      }
+    },
+    {
+      "id": "disambiguation_reply_001",
+      "type": "template",
+      "config": {
+        "text": "{{vars.intent.disambiguation_question}}"
+      }
+    },
+    {
+      "id": "odoo_product_search_001",
+      "type": "function",
+      "config": {
+        "name": "odoo-search-product-price",
+        "input_map": {
+          "product_text": "vars.intent.product_text",
+          "material": "vars.intent.material",
+          "variant": "vars.intent.variant",
+          "quantity": "vars.intent.quantity"
+        }
+      }
+    },
+    {
+      "id": "price_composer_001",
+      "type": "function",
+      "config": {
+        "name": "compose-price-cop"
+      }
+    },
+    {
+      "id": "sales_reply_agent_001",
+      "type": "agent",
+      "config": {
+        "system_prompt_ref": "prompts/sales_agent_v2.md",
+        "tools": [
+          "odoo-search-product-price"
+        ]
+      }
+    },
+    {
+      "id": "closing_detector_001",
+      "type": "function",
+      "config": {
+        "name": "detect-quote-activation"
+      }
+    },
+    {
+      "id": "quote_router_001",
+      "type": "decide",
+      "config": {
+        "conditions": [
+          {
+            "label": "activate_quote",
+            "expression": "vars.quote.should_activate == true"
+          },
+          {
+            "label": "send_only",
+            "expression": "vars.quote.should_activate != true"
+          }
+        ]
+      }
+    },
+    {
+      "id": "activate_quote_signal_001",
+      "type": "function",
+      "config": {
+        "name": "emit-quote-signal"
+      }
+    },
+    {
+      "id": "send_reply_001",
+      "type": "whatsapp_send_message",
+      "config": {
+        "text": "vars.reply_text"
+      }
+    },
+    {
+      "id": "error_fallback_001",
+      "type": "template",
+      "config": {
+        "text": "Disculpa, tuve un problema momentaneo. ¿Me confirmas producto y cantidad para cotizarte bien?"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "start",
+      "target": "normalize_input_001"
+    },
+    {
+      "source": "normalize_input_001",
+      "target": "policy_guard_input_001"
+    },
+    {
+      "source": "policy_guard_input_001",
+      "target": "intent_classifier_001"
+    },
+    {
+      "source": "intent_classifier_001",
+      "target": "needs_disambiguation_001"
+    },
+    {
+      "source": "needs_disambiguation_001",
+      "target": "disambiguation_reply_001",
+      "label": "needs_variant_or_material"
+    },
+    {
+      "source": "needs_disambiguation_001",
+      "target": "odoo_product_search_001",
+      "label": "ready_to_quote"
+    },
+    {
+      "source": "disambiguation_reply_001",
+      "target": "send_reply_001"
+    },
+    {
+      "source": "odoo_product_search_001",
+      "target": "price_composer_001"
+    },
+    {
+      "source": "price_composer_001",
+      "target": "sales_reply_agent_001"
+    },
+    {
+      "source": "sales_reply_agent_001",
+      "target": "closing_detector_001"
+    },
+    {
+      "source": "closing_detector_001",
+      "target": "quote_router_001"
+    },
+    {
+      "source": "quote_router_001",
+      "target": "activate_quote_signal_001",
+      "label": "activate_quote"
+    },
+    {
+      "source": "quote_router_001",
+      "target": "send_reply_001",
+      "label": "send_only"
+    },
+    {
+      "source": "activate_quote_signal_001",
+      "target": "send_reply_001"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="param_auto_qc_on_pdf_attach" model="ir.config_parameter">
+        <field name="key">lifedeportes_print_qc.auto_qc_on_pdf_attach</field>
+        <field name="value">False</field>
+    </record>
+    <record id="param_kapso_webhook_url" model="ir.config_parameter">
+        <field name="key">lifedeportes_print_qc.kapso_webhook_url</field>
+        <field name="value"></field>
+    </record>
+    <record id="param_kapso_webhook_secret" model="ir.config_parameter">
+        <field name="key">lifedeportes_print_qc.kapso_webhook_secret</field>
+        <field name="value"></field>
+    </record>
+</odoo>

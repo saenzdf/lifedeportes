@@ -1,0 +1,28 @@
+{
+  "prefix": "prod",
+  "url": "https://lifedeportes.odoo.com",
+  "stage": {
+    "id": 6,
+    "name": "Presupuesto",
+    "sequence": 3,
+    "is_won": false
+  },
+  "automation": {
+    "id": 26,
+    "action": "updated",
+    "name": "CRM Presupuesto \u2192 SO + webhook Kapso"
+  },
+  "server_actions": {
+    "code": 1547,
+    "webhook_legacy_unused": 1548
+  },
+  "webhook_url": "https://api.kapso.ai/platform/v1/functions/ecc7008e-0f18-4af9-9753-02825037ddcc/invoke",
+  "params": {
+    "life.kapso.presupuesto_stage_id": 6,
+    "life.kapso.presupuesto_webhook_url": "https://api.kapso.ai/platform/v1/functions/ecc7008e-0f18-4af9-9753-02825037ddcc/invoke"
+  },
+  "secret_set": true,
+  "secret_preview": "0B5W\u2026",
+  "hint": "Add to .env: LIFE_ODOO_WEBHOOK_SECRET=<same secret> and sync to Kapso function secret LIFE_ODOO_WEBHOOK_SECRET",
+  "secret": "0B5WImqlzfn7FnE0o193ZUEuT2Rtir-6zFpT2v_odkY"
+}

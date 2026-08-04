@@ -1,0 +1,58 @@
+# Orquestador ventas — function tools registry
+# Write a Odoo NO va como tool: staff sube con SUBIR PEDIDO → graph post complete_task.
+
+version: "2026-06-16"
+agent_node_id: agent_orquestador_1745500003000
+
+tools_active:
+  - name: buscar_producto_odoo
+    function_id: "4503ca5c-7114-4442-bada-112be3ddf67e"
+    kapso_function_name: odoo-search-product-price
+    mode: read
+    description: Consulta precio oficial en Odoo cuando producto y cantidad estan claros (Fase 3). Fallback al catalogo en cache si falla.
+    input_schema:
+      type: object
+      properties:
+        product_text:
+          type: string
+          description: Nombre del producto, ej. Uniforme de Futbol dry-fit
+        quantity:
+          type: number
+          description: Cantidad de unidades (min 6)
+      required:
+        - product_text
+
+tools_pending_deploy:
+  - name: interpretar_intencion_cotizacion
+    kapso_function_name: interpret-quote-intent
+    local_path: kapso/functions/interpret_quote_intent.js
+    bundle: node kapso/scripts/bundle_interpret_quote_intent.js
+    description: Parsea texto+transcript+foto en intención estructurada; devuelve input listo para buscar_producto_odoo. No reemplaza KB ni redacción del agente.
+    input_schema:
+      type: object
+      properties:
+        message_text:
+          type: string
+          description: Texto escrito del cliente (sin transcript)
+        transcript:
+          type: string
+          description: Transcript Kapso del audio
+        raw_message:
+          type: string
+          description: Mensaje completo si hay que extraer Transcript
+        photo_description:
+          type: string
+          description: Respuesta de ask_about_file
+        visual_hints:
+          type: array
+          items: { type: string }
+        quantity:
+          type: number
+  - name: consultar_estado_pedido
+    note: Linea cliente con historial — fase 2
+  - name: consultar_timeline_pedido
+    note: Linea cliente con historial — fase 2
+
+write_via_graph_only:
+  - activar_cotizacion_odoo
+  - construir_payload_pedido

@@ -1,0 +1,62 @@
+{
+  "schema": "life_attlog_employee_map_v1",
+  "updated": "2026-07-21",
+  "notes": "PIN del reloj ZKTeco = hr.employee.barcode (Badge ID / credencial) en Odoo prod. Regenerado desde Odoo 2026-07-21. Sync: python scripts/sync_attlog_employees_odoo.py",
+  "odoo_credential_field": "barcode",
+  "employees": [
+    {
+      "pin": "4",
+      "name": "Jesus",
+      "odoo": { "mode": "match", "employee_id": 12, "name": "Jesus", "barcode": "4", "department_id": 6 },
+      "status": "confirmed"
+    },
+    {
+      "pin": "5",
+      "name": "Laura Alejandra",
+      "odoo": { "mode": "match", "employee_id": 16, "name": "Laura Alejandra", "barcode": "5", "department_id": null },
+      "status": "confirmed"
+    },
+    {
+      "pin": "6",
+      "name": "Yesica",
+      "odoo": { "mode": "match", "employee_id": 6, "name": "Yesica", "barcode": "6", "department_id": 4 },
+      "status": "confirmed"
+    },
+    {
+      "pin": "8",
+      "name": "Laura Gomez",
+      "odoo": { "mode": "match", "employee_id": 15, "name": "Laura Gomez", "barcode": "8", "department_id": 2 },
+      "status": "confirmed"
+    },
+    {
+      "pin": "9",
+      "name": "Natalia",
+      "odoo": { "mode": "match", "employee_id": 10, "name": "Natalia", "barcode": "9", "department_id": 3 },
+      "status": "confirmed"
+    },
+    {
+      "pin": "10",
+      "name": "Valentina",
+      "odoo": { "mode": "match", "employee_id": 13, "name": "Valentina", "barcode": "10", "department_id": 2 },
+      "status": "confirmed"
+    },
+    {
+      "pin": "11",
+      "name": "Lorena",
+      "odoo": { "mode": "match", "employee_id": 5, "name": "Lorena", "barcode": "11", "department_id": 2 },
+      "status": "confirmed"
+    },
+    {
+      "pin": "15",
+      "name": "Tatiana",
+      "odoo": { "mode": "match", "employee_id": 7, "name": "Tatiana", "barcode": "15", "department_id": 5 },
+      "status": "confirmed"
+    },
+    {
+      "pin": "16",
+      "name": "Milvany",
+      "odoo": { "mode": "match", "employee_id": 4, "name": "Milvany", "barcode": "16", "department_id": 2 },
+      "status": "confirmed"
+    }
+  ]
+}

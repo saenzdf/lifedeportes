@@ -1,0 +1,129 @@
+{
+  "case": 2,
+  "started_at": "2026-07-12T22:30:43.338Z",
+  "marker": "WACLI-KAPSO 07122230 C2",
+  "staff": "573172575981",
+  "to": "573222252942",
+  "steps": [
+    {
+      "at": "2026-07-12T22:30:47.543Z",
+      "name": "send_text",
+      "ok": true,
+      "status": 0,
+      "data": {
+        "success": true,
+        "data": {
+          "id": "3EB054348D8555DF11B983",
+          "sent": true,
+          "to": "573222252942@s.whatsapp.net"
+        },
+        "error": null
+      },
+      "stderr": ""
+    },
+    {
+      "at": "2026-07-12T22:30:49.547Z",
+      "name": "media_plan",
+      "files": [
+        "UNIFORMES RODEO JORGE DUEÑOS DEL BALON.xlsx"
+      ]
+    },
+    {
+      "at": "2026-07-12T22:30:55.764Z",
+      "name": "send_xlsx",
+      "file": "UNIFORMES RODEO JORGE DUEÑOS DEL BALON.xlsx",
+      "ok": true,
+      "success": true,
+      "id": "3EB0C2C97CFAF633F2D1BC",
+      "error": ""
+    },
+    {
+      "at": "2026-07-12T22:31:27.841Z",
+      "name": "poll_1",
+      "bot_snippets": [],
+      "mine_snippets": [
+        "WACLI-KAPSO 07122230 C2 · Excel lista · JORGE DUEÑOS DEL BALON",
+        "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07122230 C2\nModo partner: history\nCliente JORGE DUEÑOS DEL BALON (his"
+      ]
+    },
+    {
+      "at": "2026-07-12T22:31:52.006Z",
+      "name": "poll_2",
+      "bot_snippets": [],
+      "mine_snippets": [
+        "WACLI-KAPSO 07122230 C2 · Excel lista · JORGE DUEÑOS DEL BALON",
+        "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07122230 C2\nModo partner: history\nCliente JORGE DUEÑOS DEL BALON (his"
+      ]
+    },
+    {
+      "at": "2026-07-12T22:32:17.315Z",
+      "name": "poll_3",
+      "bot_snippets": [
+        "Pedido S02658 ingresado en Odoo (borrador). Total: $1547000. Para otro pedido, envíe los datos del cliente.",
+        "Excel parseado. **26 filas** · 26 M uniforme · 17 manga corta · 9 manga larga.\n\nValidado en Odoo: **Uniforme de Fútbol** · 26 unidades · $1,300,000.\n\nCliente: **JORGE DUEÑOS DEL BA"
+      ],
+      "mine_snippets": [
+        "WACLI-KAPSO 07122230 C2 · Excel lista · JORGE DUEÑOS DEL BALON",
+        "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07122230 C2\nModo partner: history\nCliente JORGE DUEÑOS DEL BALON (his"
+      ]
+    },
+    {
+      "at": "2026-07-12T22:32:17.712Z",
+      "name": "odoo_recent",
+      "count": 1,
+      "names": [
+        "S02658"
+      ]
+    },
+    {
+      "at": "2026-07-12T22:32:18.129Z",
+      "name": "audit",
+      "so_name": "S02658",
+      "partner": [
+        3637,
+        "Cliente Life"
+      ],
+      "state": "draft",
+      "amount_total": 1547000,
+      "note_preview": "  Pedido \n\n \n\n Resumen de uniformes \n \n    Uniforme de Fútbol (26 u.):   \n \n\n \n\n Lista de jugadores (Masculino) \n \n   \n     \n       N° \n       Nombre \n       Talla \n       Rol / variante \n     \n   \n   \n      77  RODA  L  Uniforme · CORTA  \n",
+      "lines": [
+        {
+          "qty": 1,
+          "name": "Diseño"
+        },
+        {
+          "qty": 26,
+          "name": "Uniforme de Fútbol"
+        }
+      ],
+      "spreadsheet_id": 77,
+      "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2648/sale-order-spreadsheet/77"
+    }
+  ],
+  "ok": true,
+  "error": null,
+  "stop_reason": null,
+  "order": {
+    "so_name": "S02658",
+    "partner": [
+      3637,
+      "Cliente Life"
+    ],
+    "state": "draft",
+    "amount_total": 1547000,
+    "note_preview": "  Pedido \n\n \n\n Resumen de uniformes \n \n    Uniforme de Fútbol (26 u.):   \n \n\n \n\n Lista de jugadores (Masculino) \n \n   \n     \n       N° \n       Nombre \n       Talla \n       Rol / variante \n     \n   \n   \n      77  RODA  L  Uniforme · CORTA  \n",
+    "lines": [
+      {
+        "qty": 1,
+        "name": "Diseño"
+      },
+      {
+        "qty": 26,
+        "name": "Uniforme de Fútbol"
+      }
+    ],
+    "spreadsheet_id": 77,
+    "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2648/sale-order-spreadsheet/77"
+  },
+  "last_bot": "Pedido S02658 ingresado en Odoo (borrador). Total: $1547000. Para otro pedido, envíe los datos del cliente.\n---\nExcel parseado. **26 filas** · 26 M uniforme · 17 manga corta · 9 manga larga.\n\nValidado en Odoo: **Uniforme de Fútbol** · 26 unidades · $1,300,000.\n\nCliente: **JORGE DUEÑOS DEL BALON** (Rodeo). Layout genérico detectado; Excel adjunto como evidencia."
+}

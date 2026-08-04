@@ -1,0 +1,16 @@
+{
+  "execution_context": {
+    "vars": {
+      "user": { "role": "staff", "wa_id": "573172575981" },
+      "quote": {
+        "product_text": "Uniforme de Futbol dry-fit",
+        "quantity": 10,
+        "customer_display_name": "Club Prueba Inbox",
+        "customer_wa_id": "573001234567",
+        "formal_quote_requested": true,
+        "quote_request_source": "staff_upload_inbox"
+      }
+    },
+    "context": { "phone_number": "+573001234567" }
+  }
+}

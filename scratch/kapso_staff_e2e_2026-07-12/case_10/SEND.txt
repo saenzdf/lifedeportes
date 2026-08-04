@@ -1,0 +1,9 @@
+Pedido nuevo E2E canary.
+Cliente: E2E Test 10 — CHUCHO
+Adjunto Excel/fotos de referencia. Sube borrador en Odoo test.
+
+Files:
+image.png
+UNIFORME TACALOA FC chucho tacaloa.xlsx
+chucho tacaloa.jpeg
+logo chucho.jpeg

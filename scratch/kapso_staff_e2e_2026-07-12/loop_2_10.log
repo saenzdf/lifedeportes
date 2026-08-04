@@ -1,0 +1,48 @@
+Odoo target: https://testlifesoluciones.odoo.com testlifesoluciones
+
+=== case 2 ===
+{
+  "ok": false
+}
+
+=== case 3 ===
+{
+  "ok": false
+}
+
+=== case 4 ===
+{
+  "ok": false
+}
+
+=== case 5 ===
+{
+  "ok": false
+}
+
+=== case 6 ===
+{
+  "ok": false
+}
+
+=== case 7 ===
+{
+  "ok": false
+}
+
+=== case 8 ===
+{
+  "ok": false
+}
+
+=== case 9 ===
+{
+  "ok": false
+}
+
+=== case 10 ===
+{
+  "ok": false
+}
+
+SUMMARY { passed: 0, failed: 9 }

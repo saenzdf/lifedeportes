@@ -1,0 +1,308 @@
+{
+  "total_to_delete": 1120,
+  "keep_with_so": [
+    535
+  ],
+  "sample50": [
+    {
+      "id": 1832,
+      "name": "Inicio de sesión",
+      "email_from": "informacion@skandia.com.co",
+      "create_date": "2025-12-13 01:53:24"
+    },
+    {
+      "id": 1828,
+      "name": "Vacunate Ya! Vacunaton Nocturna y Gran jornada Nacional 👨‍👩‍👧‍👦 💉",
+      "email_from": "\"Aliansalud EPS\" <aliansalud@aliansalud.com.co>",
+      "create_date": "2025-12-12 20:58:09"
+    },
+    {
+      "id": 1827,
+      "name": "Executive fireside chat: AI fluency, adoption, and change",
+      "email_from": "\"Zapier\" <events@send.zapier.com>",
+      "create_date": "2025-12-12 18:03:25"
+    },
+    {
+      "id": 1826,
+      "name": "Blog: Textiles que cumplen con las normas de los uniformes de seguridad privada",
+      "email_from": "\"Carolina de Lafayette\" <noreply@lafayette.com>",
+      "create_date": "2025-12-12 17:43:32"
+    },
+    {
+      "id": 1825,
+      "name": "Sin asunto",
+      "email_from": "\"Gerencia Life deportes\" <gerencia@lifedeportes.com>",
+      "create_date": "2025-12-12 17:21:45"
+    },
+    {
+      "id": 1824,
+      "name": "New Lead | Quote Request",
+      "email_from": "\"Life Deportes\" <info@lifedeportes.com>",
+      "create_date": "2025-12-12 14:06:45"
+    },
+    {
+      "id": 1823,
+      "name": "CORREO NO HABILITADO Re: EMPRESA ASERTAD",
+      "email_from": "\"ALMEIRA TORRES\" <facturacionalmeira@gmail.com>",
+      "create_date": "2025-12-12 06:35:42"
+    },
+    {
+      "id": 1822,
+      "name": "Edición limitada: Nuevo color Rosin de Mulán Lycra",
+      "email_from": "\"Sebastián de Lafayette\" <noreply@lafayette.com>",
+      "create_date": "2025-12-12 06:35:40"
+    },
+    {
+      "id": 1821,
+      "name": "Blog: Pequeños cambios, gran impacto: cómo la personalización de uniformes puede diferenciar a tu negocio",
+      "email_from": "\"Daniela de Lafayette\" <noreply@lafayette.com>",
+      "create_date": "2025-12-12 06:33:47"
+    },
+    {
+      "id": 1820,
+      "name": "Que no se te haga tarde 😉",
+      "email_from": "\"DiDi para Colombia\" <didi@co.didiglobal.com>",
+      "create_date": "2025-12-12 06:33:41"
+    },
+    {
+      "id": 1819,
+      "name": "¿Cómo ha sido tu experiencia con Colmédica?",
+      "email_from": "\"COLMÉDICA\" <noreply@qemailserver.com>",
+      "create_date": "2025-12-12 06:33:34"
+    },
+    {
+      "id": 1818,
+      "name": "¿Cómo fue su experiencia en Bienestar IPS?",
+      "email_from": "\"ALIANSALUD EPS\" <noreply@qemailserver.com>",
+      "create_date": "2025-12-12 06:33:33"
+    },
+    {
+      "id": 1817,
+      "name": "LIFE SOLUCIONES DEPORTIVAS SAS",
+      "email_from": "\"Nómina Electrónica\" <noreply@factoa.co>",
+      "create_date": "2025-12-12 06:33:31"
+    },
+    {
+      "id": 1816,
+      "name": "LIFE SOLUCIONES DEPORTIVAS SAS",
+      "email_from": "\"Nómina Electrónica\" <noreply@factoa.co>",
+      "create_date": "2025-12-12 06:33:31"
+    },
+    {
+      "id": 1815,
+      "name": "Invite your teammates",
+      "email_from": "\"Fred from Fireflies.ai\" <fred@fireflies.ai>",
+      "create_date": "2025-12-12 06:29:14"
+    },
+    {
+      "id": 1814,
+      "name": "¿Cómo fue su experiencia en Bienestar IPS?",
+      "email_from": "\"ALIANSALUD EPS\" <noreply@qemailserver.com>",
+      "create_date": "2025-12-12 06:29:01"
+    },
+    {
+      "id": 1813,
+      "name": "LIFE SOLUCIONES DEPORTIVAS SAS",
+      "email_from": "\"Nómina Electrónica\" <noreply@factoa.co>",
+      "create_date": "2025-12-12 06:29:00"
+    },
+    {
+      "id": 1812,
+      "name": "LIFE SOLUCIONES DEPORTIVAS SAS",
+      "email_from": "\"Nómina Electrónica\" <noreply@factoa.co>",
+      "create_date": "2025-12-12 06:27:13"
+    },
+    {
+      "id": 1811,
+      "name": "🦟🦟Alexandra para prevenir el dengue, debemos controlarlo !",
+      "email_from": "\"Aliansalud EPS\" <aliansalud@aliansalud.com.co>",
+      "create_date": "2025-12-12 06:27:05"
+    },
+    {
+      "id": 1810,
+      "name": "Recordatorio Política de Regalos e Invitaciones",
+      "email_from": "\"Comunicaciones Keralty\" <comunicacionesinternas@keralty.notify-it.com>",
+      "create_date": "2025-12-12 06:26:53"
+    },
+    {
+      "id": 1809,
+      "name": "Recordatorio Política de Regalos e Invitaciones",
+      "email_from": "\"Comunicaciones Keralty\" <comunicacionesinternas@keralty.notify-it.com>",
+      "create_date": "2025-12-12 06:26:52"
+    },
+    {
+      "id": 1808,
+      "name": "Google Workspace: Ya está disponible la factura de lifedeportes.com",
+      "email_from": "\"Google Payments\" <payments-noreply@google.com>",
+      "create_date": "2025-12-12 06:26:52"
+    },
+    {
+      "id": 1807,
+      "name": "Inmueble: 40501 Cuenta de Cobro Diciembre 1 de 2025",
+      "email_from": "conjuntomiro@gmail.com",
+      "create_date": "2025-12-12 06:26:51"
+    },
+    {
+      "id": 1806,
+      "name": "Inmueble: 40501 Recibo de Caja Noviembre 4 de 2025",
+      "email_from": "conjuntomiro@gmail.com",
+      "create_date": "2025-12-12 06:26:50"
+    },
+    {
+      "id": 1805,
+      "name": "Rv: ESTADO DE CUENTA (UNIDAD 3-354) al 30 November/2025",
+      "email_from": "\"Alexandra Paola Murcia Segura\" <jmhpao@yahoo.com>",
+      "create_date": "2025-12-12 06:25:00"
+    },
+    {
+      "id": 1804,
+      "name": "Uh-oh! Your Odoo free trial just ended!",
+      "email_from": "\"Odoo Online\" <online@odoo.com>",
+      "create_date": "2025-12-12 06:24:59"
+    },
+    {
+      "id": 1803,
+      "name": "🎙️PODCAST: ALEXANDRA ponte al día con nuestros últimos episodios ❤️💙",
+      "email_from": "\"Colmedica\" <colmedica@colmedica.com>",
+      "create_date": "2025-12-12 06:24:54"
+    },
+    {
+      "id": 1802,
+      "name": "¡Accede a tu Citologia y VPH sin costo!",
+      "email_from": "\"Aliansalud EPS\" <aliansalud@aliansalud.com.co>",
+      "create_date": "2025-12-12 06:24:52"
+    },
+    {
+      "id": 1801,
+      "name": "💚Hola ALEXANDRA, conoce el boletín Aliansalud - noviembre",
+      "email_from": "\"Aliansalud EPS\" <aliansalud@aliansalud.com.co>",
+      "create_date": "2025-12-12 06:24:49"
+    },
+    {
+      "id": 1800,
+      "name": "Your Odoo free trial is coming to an end soon",
+      "email_from": "\"Odoo Online\" <online@odoo.com>",
+      "create_date": "2025-12-12 06:24:48"
+    },
+    {
+      "id": 1799,
+      "name": "Alerta de seguridad",
+      "email_from": "\"Google\" <no-reply@accounts.google.com>",
+      "create_date": "2025-12-12 06:21:42"
+    },
+    {
+      "id": 1798,
+      "name": "🎙️PODCAST: ALEXANDRA, respira, siente, transforma: nueva meditación guiada❤️💙",
+      "email_from": "\"Colmedica\" <colmedica@colmedica.com>",
+      "create_date": "2025-12-12 06:21:40"
+    },
+    {
+      "id": 1797,
+      "name": "El periodo de gracia del almacenamiento compartido ha finalizado",
+      "email_from": "\"The Google Workspace Team\" <workspace-noreply@google.com>",
+      "create_date": "2025-12-12 06:21:28"
+    },
+    {
+      "id": 1796,
+      "name": "lifedeportes, ponte al día con los momentos que te has perdido",
+      "email_from": "\"Instagram\" <posts-recaps@mail.instagram.com>",
+      "create_date": "2025-12-12 06:21:15"
+    },
+    {
+      "id": 1795,
+      "name": "Alerta de seguridad",
+      "email_from": "\"Google\" <no-reply@accounts.google.com>",
+      "create_date": "2025-12-12 06:21:08"
+    },
+    {
+      "id": 1794,
+      "name": "ALIANSALUD tiene estos consejos en salud para tí !",
+      "email_from": "\"Aliansalud EPS\" <aliansalud@aliansalud.com.co>",
+      "create_date": "2025-12-12 06:18:15"
+    },
+    {
+      "id": 1793,
+      "name": "🎙️PODCAST: ALEXANDRA hablemos sobre el poder de decir “no estoy bien”❤️💙",
+      "email_from": "\"Colmedica\" <colmedica@colmedica.com>",
+      "create_date": "2025-12-12 06:18:14"
+    },
+    {
+      "id": 1792,
+      "name": "¿Cómo ha sido tu experiencia con Colmédica?",
+      "email_from": "\"COLMÉDICA\" <noreply@qemailserver.com>",
+      "create_date": "2025-12-12 06:18:05"
+    },
+    {
+      "id": 1791,
+      "name": "830037946; PANAMERICANA LIBRERÍA Y PAPELERÍA S.A.; 23E705680; 01; PANAMERICANA LIBRERÍA Y PAPELERÍA S.A.;",
+      "email_from": "Notificaciones@fymtech.com",
+      "create_date": "2025-12-12 06:18:04"
+    },
+    {
+      "id": 1790,
+      "name": "Carnetización de bicicletas, motos y vehículos",
+      "email_from": "facturacionalmeira@gmail.com",
+      "create_date": "2025-12-12 06:18:03"
+    },
+    {
+      "id": 1789,
+      "name": "Carnetización de bicicletas, motos y vehículos",
+      "email_from": "facturacionalmeira@gmail.com",
+      "create_date": "2025-12-12 06:15:43"
+    },
+    {
+      "id": 1788,
+      "name": "Alerta de seguridad",
+      "email_from": "\"Google\" <no-reply@accounts.google.com>",
+      "create_date": "2025-12-12 06:15:42"
+    },
+    {
+      "id": 1787,
+      "name": "INFORMACIÓN CIERRE FACTURACION MAPFRE 2025",
+      "email_from": "\"Adminproveedores Mapfre Colombia\" <Adminproveedores@mapfre.com.co>",
+      "create_date": "2025-12-12 06:15:37"
+    },
+    {
+      "id": 1786,
+      "name": "Alerta de seguridad",
+      "email_from": "\"Google\" <no-reply@accounts.google.com>",
+      "create_date": "2025-12-12 06:15:25"
+    },
+    {
+      "id": 1785,
+      "name": "Tu cuenta de Google se ha recuperado correctamente",
+      "email_from": "\"Google\" <no-reply@accounts.google.com>",
+      "create_date": "2025-12-12 06:15:23"
+    },
+    {
+      "id": 1784,
+      "name": "Colmédica te hace envío del siguiente código de verificación para ingresar a WhatsApp",
+      "email_from": "oficinavirtual@colmedica.com",
+      "create_date": "2025-12-12 06:15:21"
+    },
+    {
+      "id": 1783,
+      "name": "Colmédica te hace envío del siguiente código de verificación para ingresar a WhatsApp",
+      "email_from": "oficinavirtual@colmedica.com",
+      "create_date": "2025-12-12 06:15:20"
+    },
+    {
+      "id": 1782,
+      "name": "CERTIFICADO RETE IVA BIM V 2025",
+      "email_from": "\"facturaelectronica contabilidad\" <facturaelectronica@promomarcas.com>",
+      "create_date": "2025-12-12 06:13:03"
+    },
+    {
+      "id": 1781,
+      "name": "Notificación débito automático",
+      "email_from": "oficinavirtual@colmedica.com",
+      "create_date": "2025-12-12 06:13:01"
+    },
+    {
+      "id": 1780,
+      "name": "El periodo de gracia del almacenamiento compartido ha finalizado",
+      "email_from": "\"The Google Workspace Team\" <workspace-noreply@google.com>",
+      "create_date": "2025-12-12 06:12:52"
+    }
+  ]
+}

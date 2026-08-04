@@ -1,0 +1,334 @@
+{
+  "dry_run": false,
+  "total_candidates": 25,
+  "updated": [
+    {
+      "task_id": 2358,
+      "task_name": "[S02564] DANIEL BELTRAN",
+      "state": "01_in_progress",
+      "sale_order_id": 2562,
+      "order_name": "S02564",
+      "attachment": "Copia de FORMATO PEDIDO LIFE 1.xlsx",
+      "attachment_source": "task",
+      "row_count": 30,
+      "buckets": {
+        "uniforme_corta": 15,
+        "uniforme_larga": 6,
+        "camiseta_corta": 9,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«formato life» · 30 filas · 21 M uniforme · 9 F camiseta · 2 arquero(s) · 6 manga larga · 24 manga corta"
+    },
+    {
+      "task_id": 2357,
+      "task_name": "[S02563] PATO MILLOS",
+      "state": "01_in_progress",
+      "sale_order_id": 2561,
+      "order_name": "S02563",
+      "attachment": "AFC PATO MILLOS FINAL (1).xlsx",
+      "attachment_source": "task",
+      "row_count": 33,
+      "buckets": {
+        "uniforme_corta": 21,
+        "uniforme_larga": 0,
+        "camiseta_corta": 12,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«Hoja2» · 33 filas · 3 M uniforme · 22 M camiseta · 8 F camiseta · 6 arquero(s) · 32 manga corta"
+    },
+    {
+      "task_id": 2355,
+      "task_name": "[S02561] JULIAN SUPERBET",
+      "state": "01_in_progress",
+      "sale_order_id": 2559,
+      "order_name": "S02561",
+      "attachment": "FORMATO PEDIDO LIFE 1 (1) JULIAN SUPERBET.xlsx",
+      "attachment_source": "task",
+      "row_count": 13,
+      "buckets": {
+        "uniforme_corta": 10,
+        "uniforme_larga": 3,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«formato life» · 13 filas · 13 M uniforme · 2 arquero(s) · 3 manga larga · 10 manga corta"
+    },
+    {
+      "task_id": 2352,
+      "task_name": "[S02558] TEAM FUTBOL",
+      "state": "01_in_progress",
+      "sale_order_id": 2556,
+      "order_name": "S02558",
+      "attachment": "FORMATO PEDIDO INICIAL LIFE TEAM FUTBOL.xlsx",
+      "attachment_source": "task",
+      "row_count": 6,
+      "buckets": {
+        "uniforme_corta": 6,
+        "uniforme_larga": 0,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«Hoja1» · 6 filas · 1 M uniforme · 1 manga corta"
+    },
+    {
+      "task_id": 2350,
+      "task_name": "[S02556] JULIAN",
+      "state": "01_in_progress",
+      "sale_order_id": 2554,
+      "order_name": "S02556",
+      "attachment": "FORMATO PEDIDO INICIAL LIFE LISTADO JULIAN.xlsx",
+      "attachment_source": "task",
+      "row_count": 11,
+      "buckets": {
+        "uniforme_corta": 11,
+        "uniforme_larga": 0,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«Hoja1» · 11 filas · 4 M uniforme"
+    },
+    {
+      "task_id": 2348,
+      "task_name": "[S02553] JULIETH PARIS",
+      "state": "01_in_progress",
+      "sale_order_id": 2551,
+      "order_name": "S02553",
+      "attachment": "FORMATO PEDIDO JUANITO (1) FORMATO JULIETH PARIS.xlsx",
+      "attachment_source": "task",
+      "row_count": 9,
+      "buckets": {
+        "uniforme_corta": 9,
+        "uniforme_larga": 0,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«Hoja1» · 9 filas · 7 M uniforme"
+    },
+    {
+      "task_id": 2347,
+      "task_name": "[S02552] ZULAY PEREZ",
+      "state": "01_in_progress",
+      "sale_order_id": 2550,
+      "order_name": "S02552",
+      "attachment": "formato camisetas ZULAY.xlsx",
+      "attachment_source": "task",
+      "row_count": 14,
+      "buckets": {
+        "uniforme_corta": 14,
+        "uniforme_larga": 0,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«formato life» · 14 filas · 14 M uniforme"
+    },
+    {
+      "task_id": 2345,
+      "task_name": "[S02548] Happy Kids",
+      "state": "01_in_progress",
+      "sale_order_id": 2546,
+      "order_name": "S02548",
+      "attachment": "FORMATO PEDIDO LIFE - HAPPY.xlsx",
+      "attachment_source": "task",
+      "row_count": 11,
+      "buckets": {
+        "uniforme_corta": 11,
+        "uniforme_larga": 0,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«Hoja2» · 11 filas · 8 M uniforme · 3 M camiseta · 1 arquero(s) · 11 manga corta"
+    },
+    {
+      "task_id": 2338,
+      "task_name": "[S02537] JHON WILSON",
+      "state": "01_in_progress",
+      "sale_order_id": 2535,
+      "order_name": "S02537",
+      "attachment": "FORMATO PEDIDO LIFE JHON WILSOM.xlsx",
+      "attachment_source": "task",
+      "row_count": 8,
+      "buckets": {
+        "uniforme_corta": 8,
+        "uniforme_larga": 0,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«formato life» · 8 filas · 6 M uniforme · 8 manga corta"
+    },
+    {
+      "task_id": 2332,
+      "task_name": "[S02535] JULIETH",
+      "state": "01_in_progress",
+      "sale_order_id": 2533,
+      "order_name": "S02535",
+      "attachment": "FORMATO PEDIDO THE KINGS listado julieth (1).xlsx",
+      "attachment_source": "task",
+      "row_count": 21,
+      "buckets": {
+        "uniforme_corta": 21,
+        "uniforme_larga": 0,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«Hoja1» · 21 filas · 21 M uniforme · 1 arquero(s)"
+    },
+    {
+      "task_id": 2330,
+      "task_name": "[S02532] MARLY GOMEZ",
+      "state": "01_in_progress",
+      "sale_order_id": 2530,
+      "order_name": "S02532",
+      "attachment": "FORMATO PEDIDO LIFE 1 MARLY GOMEZ.xlsx",
+      "attachment_source": "task",
+      "row_count": 42,
+      "buckets": {
+        "uniforme_corta": 0,
+        "uniforme_larga": 30,
+        "camiseta_corta": 12,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«formato life» · 42 filas · 30 M camiseta · 12 F camiseta · 42 manga larga"
+    },
+    {
+      "task_id": 2328,
+      "task_name": "[S02528] NICOLAS L",
+      "state": "01_in_progress",
+      "sale_order_id": 2526,
+      "order_name": "S02528",
+      "attachment": "JUANIS CUMPLEAÑO nicolas L.xlsx",
+      "attachment_source": "task",
+      "row_count": 20,
+      "buckets": {
+        "uniforme_corta": 20,
+        "uniforme_larga": 0,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«Hoja1» · 20 filas"
+    },
+    {
+      "task_id": 2322,
+      "task_name": "[S02522] JULIANA ESTUPIÑAN",
+      "state": "01_in_progress",
+      "sale_order_id": 2520,
+      "order_name": "S02522",
+      "attachment": "FORMATO PEDIDO LIFE 2 JULIANA ESTUPIÑANN {.xlsx",
+      "attachment_source": "task",
+      "row_count": 23,
+      "buckets": {
+        "uniforme_corta": 10,
+        "uniforme_larga": 0,
+        "camiseta_corta": 13,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«formato life» · 23 filas · 10 M uniforme · 13 F camiseta"
+    },
+    {
+      "task_id": 2321,
+      "task_name": "[S02521] CARLOS ALBEIRO GARCIA",
+      "state": "01_in_progress",
+      "sale_order_id": 2519,
+      "order_name": "S02521",
+      "attachment": "FORMATO PEDIDO LIFE FINAL CARLOS ALBEIRO GARCIA.xlsx",
+      "attachment_source": "task",
+      "row_count": 18,
+      "buckets": {
+        "uniforme_corta": 18,
+        "uniforme_larga": 0,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«formato life» · 18 filas · 18 M camiseta · 18 manga corta"
+    },
+    {
+      "task_id": 2313,
+      "task_name": "[S02513] GAMBOA",
+      "state": "01_in_progress",
+      "sale_order_id": 2511,
+      "order_name": "S02513",
+      "attachment": "PEDIDO LIFE LA NOVENA FC GAMBOA.xlsx",
+      "attachment_source": "task",
+      "row_count": 21,
+      "buckets": {
+        "uniforme_corta": 21,
+        "uniforme_larga": 0,
+        "camiseta_corta": 0,
+        "camiseta_larga": 0
+      },
+      "parse_report": "«formato life» · 21 filas · 21 M uniforme · 1 arquero(s) · 21 manga corta"
+    }
+  ],
+  "skipped": [
+    {
+      "task_id": 2354,
+      "task_name": "[S02560] JAFET ALMARIO",
+      "state": "01_in_progress",
+      "sale_order_id": 2558,
+      "reason": "sin_excel_xlsx"
+    },
+    {
+      "task_id": 2353,
+      "task_name": "[S02559] DANIEL PEREZ",
+      "state": "01_in_progress",
+      "sale_order_id": 2557,
+      "reason": "sin_excel_xlsx"
+    },
+    {
+      "task_id": 2349,
+      "task_name": "[S02554] UNIVERSIDAD DEL CHOCÓ FELIPE",
+      "state": "01_in_progress",
+      "sale_order_id": 2552,
+      "reason": "sin_excel_xlsx"
+    },
+    {
+      "task_id": 2343,
+      "task_name": "[S02546] MISS TATIANA",
+      "state": "01_in_progress",
+      "sale_order_id": 2544,
+      "reason": "sin_excel_xlsx"
+    },
+    {
+      "task_id": 2341,
+      "task_name": "[S02544] MIGUEL PINO",
+      "state": "01_in_progress",
+      "sale_order_id": 2542,
+      "reason": "sin_excel_xlsx"
+    },
+    {
+      "task_id": 2331,
+      "task_name": "[S02533] WILCKEN",
+      "state": "01_in_progress",
+      "sale_order_id": 2531,
+      "reason": "sin_excel_xlsx"
+    },
+    {
+      "task_id": 2329,
+      "task_name": "[S02531] JIMENEZ",
+      "state": "01_in_progress",
+      "sale_order_id": 2529,
+      "reason": "sin_excel_xlsx"
+    },
+    {
+      "task_id": 2324,
+      "task_name": "[S02525] GABRIEL MOSQUERA",
+      "state": "01_in_progress",
+      "sale_order_id": 2523,
+      "reason": "sin_excel_xlsx"
+    },
+    {
+      "task_id": 2306,
+      "task_name": "[S02506] UNIVERSIDAD CARMEN DE BOLIVAR JHON",
+      "state": "01_in_progress",
+      "sale_order_id": 2504,
+      "reason": "sin_excel_xlsx"
+    },
+    {
+      "task_id": 1908,
+      "task_name": "[S02045] ANGELICA BASKET",
+      "state": "01_in_progress",
+      "sale_order_id": 2043,
+      "reason": "sin_excel_xlsx"
+    }
+  ],
+  "errors": []
+}

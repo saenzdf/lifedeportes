@@ -1,0 +1,1015 @@
+{
+  "data": [
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQTk2MzYwMEIzM0YxMzA0NkFGAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Perfecto, gracias por la información. Su pedido lo confirmamos el siguiente día hábil en la mañana (el lunes). Cualquier duda, aquí estamos.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQTk2MzYwMEIzM0YxMzA0NkFGAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784414668",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQTk2MzYwMEIzM0YxMzA0NkFGAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784414669",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQTk2MzYwMEIzM0YxMzA0NkFGAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784414859",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, gracias por la información. Su pedido lo confirmamos el siguiente día hábil en la mañana (el lunes). Cualquier duda, aquí estamos."
+      },
+      "timestamp": "1784414668",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSREYxOUZFREQ2QzJBN0Q4MDZDAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Perfecto, gracias por la información. Su pedido lo confirmamos el siguiente día hábil en la mañana (el lunes). Cualquier duda, aquí estamos.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSREYxOUZFREQ2QzJBN0Q4MDZDAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784414657",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSREYxOUZFREQ2QzJBN0Q4MDZDAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784414657",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSREYxOUZFREQ2QzJBN0Q4MDZDAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784414859",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, gracias por la información. Su pedido lo confirmamos el siguiente día hábil en la mañana (el lunes). Cualquier duda, aquí estamos."
+      },
+      "timestamp": "1784414656",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSNzczNUMyNTE4NDkxNzE3RjczAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "La cotización para los 10 uniformes completos de fútbol dry-fit, cuello en V, con el diseño de la foto (nombres y números en la espalda) es:\n\n- Precio por uniforme: $50.000\n- Total por 10 uniformes: $500.000\n\n¿Le queda alguna duda o desea avanzar?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSNzczNUMyNTE4NDkxNzE3RjczAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397771",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSNzczNUMyNTE4NDkxNzE3RjczAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397771",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSNzczNUMyNTE4NDkxNzE3RjczAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397865",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "La cotización para los 10 uniformes completos de fútbol dry-fit, cuello en V, con el diseño de la foto (nombres y números en la espalda) es:\n\n- Precio por uniforme: $50.000\n- Total por 10 uniformes: $500.000\n\n¿Le queda alguna duda o desea avanzar?"
+      },
+      "timestamp": "1784397771",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUM4NDIxREZGQ0VFMTM4NjJDOTgwODhGM0M5RDlERTIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Si señor"
+      },
+      "text": {
+        "body": "Si señor"
+      },
+      "timestamp": "1784397721",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQUQ0Nzk1NUM5RUJBNkM0MTVGAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "¿Le gustaría que le envíe el valor de la cotización?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQUQ0Nzk1NUM5RUJBNkM0MTVGAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397712",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQUQ0Nzk1NUM5RUJBNkM0MTVGAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397712",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQUQ0Nzk1NUM5RUJBNkM0MTVGAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397716",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "¿Le gustaría que le envíe el valor de la cotización?"
+      },
+      "timestamp": "1784397711",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUNDM0ZERjdDMjA3ODExODUwRTk3REI4NDlGRDc1NDUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Lista final"
+      },
+      "text": {
+        "body": "Lista final"
+      },
+      "timestamp": "1784397662",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSOTU4RTZFRUNERTJGMjY4NjgyAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Perfecto, tengo la lista: 10 uniformes completos en dry-fit, con nombres y números en la espalda, replicando el diseño de la foto (blanco con franjas moradas, cuello en V, pantaloneta morada).\n\nResumen de tallas:\n- S: 3 (Paisa, Chel, Rose)\n- M: 2 (Mayra, Karol)\n- L: 2 (Chelmi, Victoria)\n- XL: 3 (Cathe, Sury, Luisa)\n\n¿Es esa la lista final o falta agregar o quitar alguien?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSOTU4RTZFRUNERTJGMjY4NjgyAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397624",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSOTU4RTZFRUNERTJGMjY4NjgyAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397625",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSOTU4RTZFRUNERTJGMjY4NjgyAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397633",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, tengo la lista: 10 uniformes completos en dry-fit, con nombres y números en la espalda, replicando el diseño de la foto (blanco con franjas moradas, cuello en V, pantaloneta morada).\n\nResumen de tallas:\n- S: 3 (Paisa, Chel, Rose)\n- M: 2 (Mayra, Karol)\n- L: 2 (Chelmi, Victoria)\n- XL: 3 (Cathe, Sury, Luisa)\n\n¿Es esa la lista final o falta agregar o quitar alguien?"
+      },
+      "timestamp": "1784397624",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUMyNkJBM0RFNDZFNEJEMDhGMTBDMkI3MTk2MTlERkYA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "*Lista de uniforme*\n\nPaisa 12 talla s \nChel 13 talla s\nChelmi 6 Talla L\nRose 11 Talla S\nMayra 05 talla M\nCathe 18 talla XL\nSury 15 talla XL\nLuisa 22 talla XL \nKarol o7 talla  M\nVictoria 08 talla L"
+      },
+      "text": {
+        "body": "*Lista de uniforme*\n\nPaisa 12 talla s \nChel 13 talla s\nChelmi 6 Talla L\nRose 11 Talla S\nMayra 05 talla M\nCathe 18 talla XL\nSury 15 talla XL\nLuisa 22 talla XL \nKarol o7 talla  M\nVictoria 08 talla L"
+      },
+      "timestamp": "1784397603",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUNDNzVGOUMwNTUyOUNGMDY3MjU3MkQ4QUI3MjhDRTMA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "*Lista de uniforme*\n\nPaisa 12 talla s \nChel 13 talla s\nChelmi 6 Talla L\nMona 10 talla l\nRose 11 Talla S\nMayra 05 talla M\nCathe 18 talla XL\nSury 15 talla XL\nYasneida 70 talla M\nLuisa 22 talla XL \nKarol o7 talla  M\nVictoria 08 talla L"
+      },
+      "text": {
+        "body": "*Lista de uniforme*\n\nPaisa 12 talla s \nChel 13 talla s\nChelmi 6 Talla L\nMona 10 talla l\nRose 11 Talla S\nMayra 05 talla M\nCathe 18 talla XL\nSury 15 talla XL\nYasneida 70 talla M\nLuisa 22 talla XL \nKarol o7 talla  M\nVictoria 08 talla L"
+      },
+      "timestamp": "1784397561",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSREI0RjM0NUQ0NUI0QzEyM0REAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Le sugiero dry-fit, que es la tela más usada para fútbol por su comodidad. ¿Ya tienen definidas las tallas y cantidades por talla?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSREI0RjM0NUQ0NUI0QzEyM0REAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397545",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSREI0RjM0NUQ0NUI0QzEyM0REAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397546",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "Le sugiero dry-fit, que es la tela más usada para fútbol por su comodidad. ¿Ya tienen definidas las tallas y cantidades por talla?"
+      },
+      "timestamp": "1784397545",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUNCODFBNjVCNUZGMUI3NkM5N0E5Nzc1RThCMjA4NzUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "No"
+      },
+      "text": {
+        "body": "No"
+      },
+      "timestamp": "1784397502",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMzlGRUY1N0Q3QjUwQUNDODQ1AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "¿Tiene preferencia por la tela? Trabajamos dry-fit y otras opciones.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMzlGRUY1N0Q3QjUwQUNDODQ1AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397487",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMzlGRUY1N0Q3QjUwQUNDODQ1AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397487",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMzlGRUY1N0Q3QjUwQUNDODQ1AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397491",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "¿Tiene preferencia por la tela? Trabajamos dry-fit y otras opciones."
+      },
+      "timestamp": "1784397487",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUNEMEIzMjMyN0E5QkRCQzdBMjc4NEQxNTg3QTAzNzQA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Si señor"
+      },
+      "text": {
+        "body": "Si señor"
+      },
+      "timestamp": "1784397451",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMkI2RUQyRjJBMDZENjE2RDZGAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Según la foto, es un uniforme de fútbol blanco con franjas moradas en degradado, cuello en V, manga corta y pantaloneta morada, con escudo y número 10 en la espalda. ¿Es ese el diseño que quieren replicar?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMkI2RUQyRjJBMDZENjE2RDZGAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397430",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMkI2RUQyRjJBMDZENjE2RDZGAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397430",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMkI2RUQyRjJBMDZENjE2RDZGAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397449",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "Según la foto, es un uniforme de fútbol blanco con franjas moradas en degradado, cuello en V, manga corta y pantaloneta morada, con escudo y número 10 en la espalda. ¿Es ese el diseño que quieren replicar?"
+      },
+      "timestamp": "1784397429",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUM3QjIyRjczRDA1QUQ2MTYyMEM4QTVBRUE2QjZFN0IA",
+      "image": {
+        "id": "1529641688651530",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1529641688651530&source=webhook&ext=1784397678&hash=ATygJGkF_Kq186wj6tp5_UVu6detwWU7BzphxHrM-uqDFQ",
+        "sha256": "REhyEQA1SD3O7119LAQXNvA+FghFGdFh8k6jtjqBgfY=",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImNkM2Y1YjRmLTQ0YWMtNDdkOC04Njc0LTBjNmYwY2Q2MWE3ZSIsInB1ciI6ImJsb2JfaWQifX0=--0f4c0c952c73e6676d149b90bb8c38e52488ca5a/image_035e598ac6fc.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Image attached (image_035e598ac6fc.jpeg) [Size: 83.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImNkM2Y1YjRmLTQ0YWMtNDdkOC04Njc0LTBjNmYwY2Q2MWE3ZSIsInB1ciI6ImJsb2JfaWQifX0=--0f4c0c952c73e6676d149b90bb8c38e52488ca5a/image_035e598ac6fc.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImNkM2Y1YjRmLTQ0YWMtNDdkOC04Njc0LTBjNmYwY2Q2MWE3ZSIsInB1ciI6ImJsb2JfaWQifX0=--0f4c0c952c73e6676d149b90bb8c38e52488ca5a/image_035e598ac6fc.jpeg",
+          "filename": "image_035e598ac6fc.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 85348
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImNkM2Y1YjRmLTQ0YWMtNDdkOC04Njc0LTBjNmYwY2Q2MWE3ZSIsInB1ciI6ImJsb2JfaWQifX0=--0f4c0c952c73e6676d149b90bb8c38e52488ca5a/image_035e598ac6fc.jpeg",
+        "message_type_data": {
+          "caption": "",
+          "has_media": true
+        }
+      },
+      "timestamp": "1784397379",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQ0Y4MEE5QTQ3OEU4MTMxODE2AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "¿Tiene una foto o referencia del diseño que quieren, o lo definen desde cero?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQ0Y4MEE5QTQ3OEU4MTMxODE2AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397353",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQ0Y4MEE5QTQ3OEU4MTMxODE2AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397354",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSQ0Y4MEE5QTQ3OEU4MTMxODE2AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397359",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "¿Tiene una foto o referencia del diseño que quieren, o lo definen desde cero?"
+      },
+      "timestamp": "1784397353",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUNGMkE1MjFBODcxMDcxRDQ1NEIzNkU2MzkxRUU5RTAA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Completo"
+      },
+      "text": {
+        "body": "Completo"
+      },
+      "timestamp": "1784397317",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMzU3RjBGN0ZDQkVFQTlENEI4AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "¿Necesita el uniforme completo (camiseta + pantaloneta + medias) o solo camisetas?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMzU3RjBGN0ZDQkVFQTlENEI4AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397300",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMzU3RjBGN0ZDQkVFQTlENEI4AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397301",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSMzU3RjBGN0ZDQkVFQTlENEI4AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397306",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "¿Necesita el uniforme completo (camiseta + pantaloneta + medias) o solo camisetas?"
+      },
+      "timestamp": "1784397300",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUM5MzQzRkM2RUI0REI4N0FBRUQ3RTJGRDAxNzA0MkIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "10"
+      },
+      "text": {
+        "body": "10"
+      },
+      "timestamp": "1784397263",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSRDhFREI5RjRBMEQ0MzFBMDgyAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Buenas, ¿para cuántas personas sería? (El mínimo es 6 unidades)",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSRDhFREI5RjRBMEQ0MzFBMDgyAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397242",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSRDhFREI5RjRBMEQ0MzFBMDgyAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397243",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAERgSRDhFREI5RjRBMEQ0MzFBMDgyAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784397253",
+            "recipient_id": "573207640189",
+            "recipient_user_id": "CO.1024961393211199"
+          }
+        ]
+      },
+      "text": {
+        "body": "Buenas, ¿para cuántas personas sería? (El mínimo es 6 unidades)"
+      },
+      "timestamp": "1784397242",
+      "to": "573207640189",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUMzQkEzNzc1RkRDMjEyQjNFM0ZBOUQwQzE3RDIzNUUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Fútbol"
+      },
+      "text": {
+        "body": "Fútbol"
+      },
+      "timestamp": "1784397177",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573207640189",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1024961393211199",
+      "id": "wamid.HBgMNTczMjA3NjQwMTg5FQIAEhggQUNBMDI2NzBFMEEyNUY4N0FEQzAxQkY1MkZGNjlGRUUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573207640189",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "eb8db3fa-28f1-4cba-9273-35e448b7027a",
+        "contact_name": "Así Es La Vida 😎😎",
+        "content": "Hola, quiero cotizar uniformes de"
+      },
+      "text": {
+        "body": "Hola, quiero cotizar uniformes de"
+      },
+      "timestamp": "1784396907",
+      "type": "text",
+      "username": null
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0xOFQyMjo0NDoyOC41NzIwMzRaIiwiM2QwMmYxNDEtNmYyYy00ZTVkLWFkNWMtM2M4Mjg3NTJjN2M5Il0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19",
+      "after": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0xOFQxNzo0ODoyNy45NjE0ODJaIiwiMDFkNjkxNmEtNTNlMS00OGM1LWIxMzgtYWE2MDk1MTIyZTBjIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19"
+    },
+    "next": null,
+    "previous": null
+  }
+}

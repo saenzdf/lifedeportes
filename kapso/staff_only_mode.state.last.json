@@ -1,0 +1,9 @@
+{
+  "enabled_at": "2026-06-29T19:49:43.538Z",
+  "workflow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+  "lock_version_before": 709,
+  "enabled": true,
+  "original_customer_target": "fn_classify_contact_odoo_1745500002550",
+  "customer_edge_id": "6893a769-a496-4ea3-b89e-0a938fe20fe7",
+  "disabled_at": "2026-07-13T00:59:35.421Z"
+}

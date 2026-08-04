@@ -1,0 +1,8 @@
+{
+  "prepare_inbox_upload": "d750cbd5-b8a5-4eb8-b6d4-62e0e7fd8058",
+  "compute_fidelity_retention": "37be9c66-e600-4d40-af99-81003ef7fb39",
+  "parse_nomina_attlog": "7c490919-ceb7-48a4-b267-abbf57ff33ab",
+  "confirmar_nomina": "8d493868-02d1-4beb-bfc9-f1d4d17dcaf4",
+  "crear_compra_odoo": "b07a0ccf-e310-4e6b-8fae-7fe30865c2ba",
+  "detect_staff_lane": "b6e4935f-cbf7-48f7-9483-729a2294ec14"
+}

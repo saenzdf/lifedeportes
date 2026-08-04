@@ -1,0 +1,347 @@
+{
+  "version": "v10-2026-07-21-unified-staff",
+  "description": "Grafo v10: Agent Staff unificado (pedido + nómina attlog + compra PO draft). Jump → mismo agente. PDF/HR attendance fuera.",
+  "kapso": {
+    "project_id": "b470d474-6a7a-4d84-a214-6cd4b198b4f3",
+    "workflow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+    "workflow_name": "lifedeportes_sales_inbound",
+    "trigger_id": "581c292e-7abd-4bfe-97a7-159cb3a33f95",
+    "phone_number_id": "1095603153637786",
+    "phone_display": "+57 322 2252942 (Life Deportes Asistente)",
+    "workflow_lock_version": 1418,
+    "local_graph": "kapso/workflow_lifedeportes_sales_inbound_v10.json",
+    "trigger_active": true,
+    "trigger_note": "Customer lane ON; Diego 573172575981 back on staff allowlist for wacli staff tests",
+    "staff_only_mode": false,
+    "workflow_status": "active",
+    "active_function_count": 15,
+    "sales_tester_mode": false,
+    "sales_tester_note": "Bypass whitelist vigente (route_user_entry salesGate=false). No reactivar sales_tester_mode.js enable sin --i-know-this-blocks-production.",
+    "synced_at": "2026-07-29T20:19:54.177Z"
+  },
+  "staff_lane": {
+    "doc": "kapso/docs/staff_graph_v10.md",
+    "graph_functions": [
+      "policy-guard-input",
+      "staff-allowlist-check",
+      "route-user-entry",
+      "compile-staff-order-draft",
+      "validate-staff-write",
+      "route-staff-write",
+      "build-quote-payload",
+      "odoo-create-lead-and-so",
+      "route-staff-lane-resume",
+      "route-staff-burst-resume"
+    ],
+    "agent": "agent_1780762885818",
+    "agent_tools": [
+      "odoo-search-product-price",
+      "build-quote-payload",
+      "get-service-status",
+      "sync-order-draft-from-odoo"
+    ],
+    "burst_debounce_seconds": 15
+  },
+  "customer_lane": {
+    "unchanged": false,
+    "graph_functions": [
+      "classify-contact-odoo",
+      "mark-maintenance-sent",
+      "policy-guard-input",
+      "route-customer-burst-resume",
+      "route-customer-paused",
+      "route-user-entry",
+      "staff-allowlist-check",
+      "ensure-crm-from-quote"
+    ],
+    "agents": [
+      "agent_orquestador_1745500003000"
+    ],
+    "burst_debounce_seconds": 30,
+    "sales_whitelist_function_id": "82f92d7b-cb10-466c-8b9d-67649b7d893a",
+    "sales_tester_whitelist": [
+      "573172575981"
+    ],
+    "ensure_crm_function_id": "10c53577-1fd5-45b1-9353-1dd44da449ee"
+  },
+  "customer_paused": {
+    "route_customer_paused": {
+      "kapso_function_name": "route-customer-paused",
+      "kapso_function_id": "64a408aa-2b5c-4112-81e2-9d09ccfda23d",
+      "local_path": "kapso/functions/route_customer_paused.js"
+    },
+    "mark_maintenance_sent": {
+      "kapso_function_name": "mark-maintenance-sent",
+      "kapso_function_id": "4fb0b1cc-b2a3-4232-8e7c-9b295710faf3",
+      "local_path": "kapso/functions/mark_maintenance_sent.js"
+    }
+  },
+  "entry_guards": {
+    "policy_guard_input": {
+      "kapso_function_name": "policy-guard-input",
+      "kapso_function_id": "3800675c-b32c-46c4-b896-2a885f58421c",
+      "local_path": "kapso/functions/policy_guard_input.js"
+    },
+    "staff_allowlist_check": {
+      "kapso_function_name": "staff-allowlist-check",
+      "kapso_function_id": "53d38630-abc6-4512-bfec-58cbc6c3bc29",
+      "local_path": "kapso/functions/staff_allowlist_check.js"
+    },
+    "route_user_entry": {
+      "kapso_function_name": "route-user-entry",
+      "kapso_function_id": "58b1d07a-ace2-48fd-9e55-94c288d92a86",
+      "local_path": "kapso/functions/route_user_entry.js"
+    },
+    "classify_contact_odoo": {
+      "kapso_function_name": "classify-contact-odoo",
+      "kapso_function_id": "93d89e4c-603b-49fc-96f9-0b1c13df86be",
+      "local_path": "kapso/functions/classify_contact_odoo.js",
+      "bundle": "kapso/functions/classify_contact_odoo_deploy.js",
+      "note": "Hydrate quote Kapso + LIFE_DOSSIER_v1 CRM opportunity"
+    }
+  },
+  "customer_routers": {
+    "route_customer_entry": {
+      "kapso_function_name": "route-customer-entry",
+      "kapso_function_id": "189befcd-5a62-482a-ad95-982c6721ad3e",
+      "local_path": "kapso/functions/route_customer_entry.js"
+    }
+  },
+  "inbox_lane": {
+    "doc": "kapso/docs/inbox_ingreso_handoff.md",
+    "note": "Agent Inbox retirado 2026-07-21. Jump → agent_1780762885818. prepare/fidelity como tools o Jump-only chain.",
+    "agent_node_id": "agent_1780762885818",
+    "jump_display_name": "Agent: Staff (pedido / nómina / compra)",
+    "prepare_inbox_upload": {
+      "kapso_function_name": "prepare-inbox-upload",
+      "kapso_function_id": "d750cbd5-b8a5-4eb8-b6d4-62e0e7fd8058",
+      "local_path": "kapso/functions/prepare_inbox_upload.js"
+    },
+    "snapshot_upload_fidelity": {
+      "kapso_function_name": "snapshot-upload-fidelity",
+      "kapso_function_id": "3ea0712b-6243-49b3-a7e6-a5db9c61dd16",
+      "local_path": "kapso/functions/snapshot_upload_fidelity.js"
+    },
+    "compute_fidelity_retention": {
+      "kapso_function_name": "compute-fidelity-retention",
+      "kapso_function_id": "37be9c66-e600-4d40-af99-81003ef7fb39",
+      "local_path": "kapso/functions/compute_fidelity_retention.js"
+    }
+  },
+  "unified_staff_tools": {
+    "doc": "kapso/docs/staff_graph_v10.md",
+    "parse_nomina_attlog": {
+      "kapso_function_name": "parse-nomina-attlog",
+      "kapso_function_id": "7c490919-ceb7-48a4-b267-abbf57ff33ab",
+      "local_path": "kapso/functions/parse_nomina_attlog.js"
+    },
+    "confirmar_nomina": {
+      "kapso_function_name": "confirmar-nomina",
+      "kapso_function_id": "8d493868-02d1-4beb-bfc9-f1d4d17dcaf4",
+      "local_path": "kapso/functions/confirmar_nomina.js"
+    },
+    "crear_compra_odoo": {
+      "kapso_function_name": "crear-compra-odoo",
+      "kapso_function_id": "b07a0ccf-e310-4e6b-8fae-7fe30865c2ba",
+      "local_path": "kapso/functions/crear_compra_odoo.js"
+    }
+  },
+  "staff_write": {
+    "validate_staff_write": {
+      "kapso_function_name": "validate-staff-write",
+      "kapso_function_id": "4061a9e7-fce9-4301-81e7-bd2e47da3da4",
+      "local_path": "kapso/functions/validate_staff_write.js"
+    },
+    "route_staff_write": {
+      "kapso_function_name": "route-staff-write",
+      "kapso_function_id": "1cf1c2f1-f5ca-49c3-b9a7-bff76d87c1ee",
+      "local_path": "kapso/functions/route_staff_write.js"
+    },
+    "compile_staff_order_draft": {
+      "kapso_function_name": "compile-staff-order-draft",
+      "kapso_function_id": "55575147-9a87-4e2b-9d83-8e5146ca0661",
+      "local_path": "kapso/functions/compile_staff_order_draft.js",
+      "note": "Insertar en grafo entre agent complete_task y validate-staff-write cuando se publique.",
+      "bundle": "kapso/functions/compile_staff_order_draft_deploy.js"
+    },
+    "build_quote_payload": {
+      "kapso_function_name": "build-quote-payload",
+      "kapso_function_id": "4a1591c2-66e3-4734-82a7-ed64a1031c2b",
+      "local_path": "kapso/functions/build_quote_payload.js"
+    },
+    "odoo_create_lead_and_so": {
+      "kapso_function_name": "odoo-create-lead-and-so",
+      "kapso_function_id": "8a7b731d-480c-4abc-8a72-f965856d7515",
+      "local_path": "kapso/functions/odoo_create_lead_and_so.js"
+    },
+    "sync_order_draft_from_odoo": {
+      "kapso_function_name": "sync-order-draft-from-odoo",
+      "kapso_function_id": "55eeebe6-4249-4619-9ccc-0908148f49c5",
+      "local_path": "kapso/functions/sync_order_draft_from_odoo.js",
+      "bundle": "kapso/functions/sync_order_draft_from_odoo_deploy.js"
+    },
+    "buscar_pedido_odoo": {
+      "kapso_function_name": "buscar-pedido-odoo",
+      "kapso_function_id": "99d48e68-9d7f-43dc-94f5-ce55495a1be0",
+      "local_path": "kapso/functions/search_staff_order.js",
+      "bundle": "kapso/functions/search_staff_order_deploy.js"
+    },
+    "buscar_oportunidad_odoo": {
+      "kapso_function_name": "buscar-oportunidad-odoo",
+      "kapso_function_id": "1009b5dd-7034-42d3-8742-aeda29f481db",
+      "local_path": "kapso/functions/buscar_oportunidad_odoo.js",
+      "note": "Retomar opp CRM manual (Canal Ventas) → vars.lead.id"
+    },
+    "corregir_pedido_odoo": {
+      "kapso_function_name": "corregir-pedido-odoo",
+      "kapso_function_id": "3387d3d8-6ea8-4e59-9158-c46e3263884a",
+      "local_path": "kapso/functions/apply_staff_order_correction.js",
+      "bundle": "kapso/functions/apply_staff_order_correction_deploy.js"
+    }
+  },
+  "odoo_catalog": {
+    "odoo_search_product_price": {
+      "kapso_function_name": "odoo-search-product-price",
+      "kapso_function_id": "4503ca5c-7114-4442-bada-112be3ddf67e",
+      "local_path": "kapso/functions/odoo_search_product_price.js"
+    },
+    "interpret_quote_intent": {
+      "kapso_function_name": "interpret-quote-intent",
+      "kapso_function_id": "e9ee8299-bcf7-4a3d-9dd9-5dd23118a015",
+      "deploy_pending": false,
+      "local_path": "kapso/functions/interpret_quote_intent.js",
+      "bundle_script": "kapso/scripts/bundle_interpret_quote_intent.js"
+    }
+  },
+  "meta": {
+    "get_service_status": {
+      "kapso_function_name": "get-service-status",
+      "kapso_function_id": "c0ea46a6-24f3-4e64-bdd9-cbb51c21a85d",
+      "local_path": "kapso/functions/get_service_status.js"
+    }
+  },
+  "archived_staff_legacy": {
+    "doc": "kapso/docs/archived_staff_nomina_compra.md",
+    "note": "Routers legacy archivados. Nómina+compra viven como tools del Agent Staff unificado (2026-07-21).",
+    "local_paths": [
+      "kapso/functions/_archive/detect_staff_upload_command.js",
+      "kapso/functions/_archive/route_staff_entry.js",
+      "kapso/functions/_archive/route_staff_post.js",
+      "kapso/functions/_archive/route_staff_registration.js"
+    ]
+  },
+  "archived_customer": {
+    "note": "kapso/functions/_archive/README.md"
+  },
+  "odoo": {
+    "target": "prod",
+    "url": "https://lifedeportes.odoo.com",
+    "db": "lifedeportes",
+    "note": "Kapso functions en Odoo prod (2026-07-18). Test: testlifesoluciones.odoo.com vía --target test."
+  },
+  "assets": {
+    "formulario_detalle_pedido_xlsx": {
+      "local_path": "kapso/assets/Formulario-detalle-pedido.xlsx",
+      "raw_source": "raw/projects/Formulario-pedido-lifedeportes(1).xlsx",
+      "whatsapp_media_id": "2104027950152696",
+      "phone_number_id": "1095603153637786",
+      "filename": "Formulario-detalle-pedido-Life.xlsx",
+      "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "uploaded_at": "2026-07-27",
+      "note": "Tool enviar_formulario_excel. Media ID ~30d; function re-upload B64 si falla.",
+      "kapso_function_id": "f0981cbd-f8f5-4161-93fc-c1b25c4aec13",
+      "kapso_function_name": "enviar-formulario-excel"
+    },
+    "templates": {
+      "retomar_pedido_v2": {
+        "name": "retomar_pedido_v2",
+        "language": "es",
+        "status": "APPROVED",
+        "waba_template_id": "1381646390243187",
+        "body": "Hola, te escribimos para confirmar o retomar su pedido.",
+        "kapso_function_id": "b297a0c7-ce59-4f7c-bfba-1184c02c9743"
+      }
+    }
+  },
+  "functions": {
+    "notify_sales_interest": {
+      "kapso_function_name": "notify-sales-interest",
+      "kapso_function_id": "a2236fdc-8afa-40ab-a09f-d231c2b638cd",
+      "local_path": "kapso/functions/notify_sales_interest.js",
+      "bundle": "kapso/functions/notify_sales_interest_deploy.js",
+      "note": "Al aceptar cotización: dry-run salvo LIFE_SALES_NOTIFY_ENABLED=true + LIFE_SALES_NOTIFY_PHONES; quote rico + LIFE_DOSSIER_v1; sin handoff"
+    },
+    "route_staff_lane_resume": {
+      "kapso_function_name": "route-staff-lane-resume",
+      "kapso_function_id": "9333529a-6e01-468c-931a-203b9ad378d2",
+      "local_path": "kapso/functions/route_staff_lane_resume.js",
+      "note": "Tras wait_staff_lane: CONFIRMO→validate; nuevo/corrección→agent; ack+SO→done; else→agent (copiloto)"
+    },
+    "route_customer_burst_resume": {
+      "kapso_function_name": "route-customer-burst-resume",
+      "kapso_function_id": "972d60bb-ff84-40fc-ba3d-cdd6104aa143",
+      "local_path": "kapso/functions/route_customer_burst_resume.js"
+    },
+    "route_customer_sales_whitelist": {
+      "kapso_function_name": "route-customer-sales-whitelist",
+      "kapso_function_id": "f95c1cb4-56cb-4875-b443-5b533a84fc3c",
+      "local_path": "kapso/functions/route_customer_sales_whitelist.js"
+    },
+    "route_staff_burst_resume": {
+      "kapso_function_name": "route-staff-burst-resume",
+      "kapso_function_id": "c33b936f-437b-40e0-925b-960c8efd86ca",
+      "local_path": "kapso/functions/route_staff_burst_resume.js",
+      "note": "Tras wait_staff_burst 15s: user_input→rewait; timeout→Agent Staff"
+    },
+    "on_odoo_presupuesto": {
+      "kapso_function_name": "on-odoo-presupuesto",
+      "kapso_function_id": "ecc7008e-0f18-4af9-9753-02825037ddcc",
+      "local_path": "kapso/functions/on_odoo_presupuesto.js",
+      "bundle": "kapso/functions/on_odoo_presupuesto_deploy.js",
+      "public_endpoint": true,
+      "deploy_script": "kapso/scripts/deploy_on_odoo_presupuesto.js",
+      "odoo_doc": "docs/odoo/PRESUPUESTO_CRM_SO_WEBHOOK.md",
+      "note": "Webhook Proposition→SO: enrich + organiza lista Excel/Word → sale.order.note"
+    },
+    "ensure_crm_from_quote": {
+      "kapso_function_name": "ensure-crm-from-quote",
+      "kapso_function_id": "10c53577-1fd5-45b1-9353-1dd44da449ee",
+      "local_path": "kapso/functions/ensure_crm_from_quote.js",
+      "note": "Deterministic CRM seed before agent_orquestador (customer lane)"
+    }
+  },
+  "order_detail": {
+    "crear_presupuesto_odoo": {
+      "kapso_function_name": "crear-presupuesto-odoo",
+      "kapso_function_id": "7dbccd1b-e754-4e71-8d9c-6bc9df3c3dd5",
+      "local_path": "kapso/functions/crear_presupuesto_odoo.js",
+      "note": "Staff WhatsApp: crear presupuesto SO desde CRM (Daniel Tovar path)"
+    },
+    "enviar_formulario_excel": {
+      "kapso_function_name": "enviar-formulario-excel",
+      "kapso_function_id": "f0981cbd-f8f5-4161-93fc-c1b25c4aec13",
+      "local_path": "kapso/functions/enviar_formulario_excel.js",
+      "note": "Staff→cliente o vendedor→mismo chat: Formulario Life xlsx"
+    },
+    "enviar_retomar_pedido": {
+      "kapso_function_name": "enviar-retomar-pedido",
+      "kapso_function_id": "b297a0c7-ce59-4f7c-bfba-1184c02c9743",
+      "local_path": "kapso/functions/enviar_retomar_pedido.js",
+      "template": "retomar_pedido_v2",
+      "language": "es",
+      "note": "Staff ENVIAR RETOMAR → template Meta al cliente (fuera ventana 24h)"
+    },
+    "odoo_send_wa_template": {
+      "kapso_function_name": "odoo-send-wa-template",
+      "kapso_function_id": "8044ad1b-833f-4869-9a4f-2f231f0a37d2",
+      "local_path": "kapso/functions/odoo_send_wa_template.js",
+      "public_endpoint": true,
+      "invoke_url": "https://api.kapso.ai/platform/v1/functions/8044ad1b-833f-4869-9a4f-2f231f0a37d2/invoke",
+      "templates": [
+        "retomar_pedido_v2",
+        "abono_50_cuentas"
+      ],
+      "note": "Botones Odoo crm.lead → templates Meta"
+    }
+  }
+}

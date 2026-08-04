@@ -1,0 +1,39 @@
+{
+  "case": 8,
+  "source": {
+    "model": "project.task",
+    "id": 2289,
+    "name": "[S02487] WILLIAM",
+    "sale_order": "S02487",
+    "partner": "WILLIAM"
+  },
+  "display_customer": "E2E Form v3 8 — WILLIAM",
+  "suggested_text": "Pedido nuevo E2E.\nCliente: E2E Formulario 8 — WILLIAM v2\nAdjunto Excel/fotos. Sube borrador en Odoo test.",
+  "files": [
+    {
+      "file": "CUERPO TECNICO WILLIAM.jpeg",
+      "odoo_attachment_id": 27152,
+      "mimetype": "image/jpeg",
+      "bytes": 64808
+    },
+    {
+      "file": "ARQUERO WILLIAM.jpeg",
+      "odoo_attachment_id": 27151,
+      "mimetype": "image/jpeg",
+      "bytes": 55275
+    },
+    {
+      "file": "JUGADORES WILLIAM.jpeg",
+      "odoo_attachment_id": 27150,
+      "mimetype": "image/jpeg",
+      "bytes": 62502
+    },
+    {
+      "file": "pedido uniforme villa u william formato finaal final.xlsx",
+      "odoo_attachment_id": 27149,
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 16912
+    }
+  ],
+  "notes": "Skip print PDFs/CDR. Reuse excel + images only."
+}

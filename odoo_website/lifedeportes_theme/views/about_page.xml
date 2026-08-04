@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Sobre Nosotros — mismo stack visual que home + galería (ld-hero en #wrap.ld-home).
+        El contenido se copia sobre website.page (/about-us, /about, etc.; merge data/about_merge.xml).
+    -->
+    <template id="about_ld_page" name="Life Deportes — About">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure ld-home ld-about-page">
+                <section class="ld-hero oe_structure ld-about-page-hero">
+                    <video class="ld-hero-bg-video"
+                           autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline"
+                           preload="none"
+                           poster="https://lifedeportes.com/img/about-banner.webp"
+                           data-video-src="/lifedeportes_theme/static/src/videos/hero-1.mp4"
+                           aria-hidden="true"/>
+                    <div class="ld-hero-overlay"/>
+                    <div class="container ld-hero-inner">
+                        <div class="ld-hero-content">
+                            <span class="ld-hero-badge">Fábrica de Uniformes Deportivos</span>
+                            <h1 class="ld-hero-title">Uniformes Deportivos<br/><span class="text-accent">Personalizados en Colombia</span></h1>
+                            <p class="ld-hero-sub">
+                                En Life Deportes somos fabricantes especializados en uniformes deportivos personalizados
+                                con más de 20 años de experiencia. Desde Bogotá atendemos equipos, escuelas, clubes
+                                y empresas en todo Colombia, con envíos también a Estados Unidos y Puerto Rico.
+                            </p>
+                            <div class="ld-hero-actions">
+                                <a href="/#contacto" class="btn btn-ld-primary">Cotiza Gratis</a>
+                                <a href="https://wa.me/573103362484?text=Hola%2C%20quiero%20cotizar%20uniformes%20deportivos"
+                                   class="btn btn-ld-outline" target="_blank" rel="noopener noreferrer">
+                                    Escríbenos por WhatsApp
+                                </a>
+                                <a href="/gallery" class="btn btn-ld-outline">Ver Galería</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ld-about oe_structure" id="contenido">
+                    <div class="container ld-about-inner">
+                        <div class="ld-about-content">
+                            <span class="ld-section-label">Nuestra Historia</span>
+                            <h2>Conoce Nuestra Esencia</h2>
+                            <p>
+                                Somos una empresa colombiana con enfoque en calidad, innovación y cumplimiento.
+                                Fabricamos uniformes personalizados para fútbol, voleibol, baloncesto y otras
+                                disciplinas, con confección técnica y sublimación digital de alta definición.
+                            </p>
+                            <p>
+                                Acompañamos cada proyecto desde el diseño hasta la entrega para que cada equipo
+                                reciba prendas cómodas, durables y con identidad propia.
+                            </p>
+                            <a href="/#contacto" class="btn btn-ld-primary">Hablar con asesor</a>
+                        </div>
+                        <div class="ld-about-image">
+                            <img src="https://lifedeportes.com/img/about-banner.webp"
+                                 alt="Equipo deportivo vestido con uniformes personalizados de Life Deportes"
+                                 loading="lazy"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_features pt64 pb64 oe_structure bg-white">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="h-100 p-4 border rounded-3 bg-light">
+                                    <span class="ld-section-label">Nuestra Esencia</span>
+                                    <h3 class="h2 mb-3">Misión</h3>
+                                    <p class="mb-0">
+                                        <strong>LIFE SOLUCIONES DEPORTIVAS S.A.S</strong>, a través de exigentes
+                                        procesos administrativos, didácticos y pedagógicos, desarrolla productos
+                                        dirigidos a diferentes grupos poblacionales para contribuir a mejorar su
+                                        calidad de vida y fortalecer la convivencia pacífica.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="h-100 p-4 border rounded-3 bg-light">
+                                    <span class="ld-section-label">Nuestro Futuro</span>
+                                    <h3 class="h2 mb-3">Visión</h3>
+                                    <p class="mb-0">
+                                        Consolidar a <strong>LIFE SOLUCIONES DEPORTIVAS</strong> como una empresa
+                                        sólida en el mercado deportivo, didáctico y recreativo, con productos
+                                        excelentes que promuevan salud, responsabilidad, pertenencia y cambio
+                                        positivo en la ciudadanía.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ld-process oe_structure" id="proceso">
+                    <div class="container">
+                        <h2 class="ld-section-title">Nuestro Proceso de Fabricación</h2>
+                        <p class="ld-section-sub">
+                            Cada uniforme se fabrica con tela poliéster dry-fit y sublimación digital para lograr
+                            colores vivos, secado rápido y durabilidad superior.
+                        </p>
+                        <div class="ld-process-grid">
+                            <div class="ld-process-step">
+                                <div class="ld-process-img-wrap">
+                                    <img src="https://lifedeportes.com/img/process-1.webp"
+                                         alt="Paso 1: cotización" loading="lazy"/>
+                                    <span class="ld-process-num">01</span>
+                                </div>
+                                <h3>Cotización</h3>
+                                <p>Recibimos tu idea, cantidades, tallas y fechas de entrega.</p>
+                            </div>
+                            <div class="ld-process-step">
+                                <div class="ld-process-img-wrap">
+                                    <img src="https://lifedeportes.com/img/process-2.webp"
+                                         alt="Paso 2: diseño" loading="lazy"/>
+                                    <span class="ld-process-num">02</span>
+                                </div>
+                                <h3>Diseño</h3>
+                                <p>Personalizamos escudos, logos, números, nombres y colores.</p>
+                            </div>
+                            <div class="ld-process-step">
+                                <div class="ld-process-img-wrap">
+                                    <img src="https://lifedeportes.com/img/process-3.webp"
+                                         alt="Paso 3: confección" loading="lazy"/>
+                                    <span class="ld-process-num">03</span>
+                                </div>
+                                <h3>Confección</h3>
+                                <p>Producimos con estándares de calidad en cada etapa de la prenda.</p>
+                            </div>
+                            <div class="ld-process-step">
+                                <div class="ld-process-img-wrap">
+                                    <img src="https://lifedeportes.com/img/process-4.webp"
+                                         alt="Paso 4: entrega" loading="lazy"/>
+                                    <span class="ld-process-num">04</span>
+                                </div>
+                                <h3>Entrega</h3>
+                                <p>Despachamos a nivel nacional e internacional con acompañamiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ld-why-us oe_structure">
+                    <div class="container">
+                        <h2 class="ld-section-title">A Quiénes Vestimos</h2>
+                        <p class="ld-section-sub">
+                            Equipos amateur y profesionales, clubes, escuelas deportivas, ligas universitarias,
+                            empresas y eventos en todo el país.
+                        </p>
+                        <div class="ld-why-stats">
+                            <div class="ld-why-stat">
+                                <strong data-target="20" data-prefix="+">+20</strong>
+                                <span>Años de<br/>Experiencia</span>
+                            </div>
+                            <div class="ld-why-stat">
+                                <strong data-target="1000" data-suffix="+">1000+</strong>
+                                <span>Equipos<br/>Vestidos</span>
+                            </div>
+                            <div class="ld-why-stat">
+                                <strong data-target="100" data-suffix="%">100%</strong>
+                                <span>Personalización<br/>Total</span>
+                            </div>
+                            <div class="ld-why-stat">
+                                <strong data-target="32">32</strong>
+                                <span>Departamentos<br/>Cubiertos</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_features pt64 pb64 oe_structure bg-light">
+                    <div class="container">
+                        <h2 class="ld-section-title">Nuestros Valores</h2>
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h-100 p-4 border rounded-3 bg-white">
+                                    <h3 class="h4 mb-2">Calidad</h3>
+                                    <p class="mb-0">Materiales premium y sublimación de alta definición en cada prenda.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h-100 p-4 border rounded-3 bg-white">
+                                    <h3 class="h4 mb-2">Compromiso</h3>
+                                    <p class="mb-0">Cumplimos tiempos de entrega y acompañamos cada proyecto de principio a fin.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h-100 p-4 border rounded-3 bg-white">
+                                    <h3 class="h4 mb-2">Innovación</h3>
+                                    <p class="mb-0">Diseños únicos con tendencias actuales para cada deporte y categoría.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h-100 p-4 border rounded-3 bg-white">
+                                    <h3 class="h4 mb-2">Cercanía</h3>
+                                    <p class="mb-0">Atención directa por WhatsApp y asesoría personalizada en cada pedido.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ld-banner-cta oe_structure">
+                    <div class="ld-banner-overlay">
+                        <div class="container ld-banner-inner">
+                            <span class="ld-banner-label">¿Listo para crear tus uniformes?</span>
+                            <h2>Cotiza tu diseño con Life Deportes</h2>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <a href="/#contacto" class="btn btn-ld-white">Cotiza Ya</a>
+                                <a href="https://wa.me/573103362484?text=Hola%2C%20quiero%20cotizar%20uniformes%20personalizados"
+                                   class="btn btn-ld-outline" target="_blank" rel="noopener noreferrer">
+                                    WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

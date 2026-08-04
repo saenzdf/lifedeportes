@@ -1,0 +1,19 @@
+{
+  "clasificar_adjuntos_pedido": "69b09b3e-213e-4871-8bcb-3ac0eff31e0b",
+  "parsear_lista_excel_pedido": "2bfdd40a-5556-48d0-b08b-b1bfdd02c368",
+  "parsear_lista_texto_pedido": "99cd2e9b-c3a4-4f79-93cd-614c126890bc",
+  "parsear_lista_imagen_pedido": "ca5b89c4-1fce-4bc5-9f63-93ca448b89e9",
+  "registrar_adjuntos_pedido": "9f144024-859a-4c21-bc83-7acad5893489",
+  "fusionar_borrador_lista": "ab5ca5cf-b5a8-4656-b9ce-70d23ec4c5af",
+  "odoo_create_lead_and_so": "8a7b731d-480c-4abc-8a72-f965856d7515",
+  "compile_staff_order_draft": "55575147-9a87-4e2b-9d83-8e5146ca0661",
+  "sync_order_draft_from_odoo": "55eeebe6-4249-4619-9ccc-0908148f49c5",
+  "buscar_pedido_odoo": "99d48e68-9d7f-43dc-94f5-ce55495a1be0",
+  "buscar_oportunidad_odoo": "1009b5dd-7034-42d3-8742-aeda29f481db",
+  "corregir_pedido_odoo": "3387d3d8-6ea8-4e59-9158-c46e3263884a",
+  "parsear_lista_pdf_pedido": "49b0e88c-11bf-49c5-bf80-431a007af0f9",
+  "crear_presupuesto_odoo": "7dbccd1b-e754-4e71-8d9c-6bc9df3c3dd5",
+  "enviar_formulario_excel": "f0981cbd-f8f5-4161-93fc-c1b25c4aec13",
+  "enviar_retomar_pedido": "b297a0c7-ce59-4f7c-bfba-1184c02c9743",
+  "odoo_send_wa_template": "8044ad1b-833f-4869-9a4f-2f231f0a37d2"
+}

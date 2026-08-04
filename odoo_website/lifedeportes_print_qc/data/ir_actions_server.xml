@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ir_actions_server_task_manual_print_qc" model="ir.actions.server">
+        <field name="name">Auditar lista vs PDF</field>
+        <field name="model_id" ref="project.model_project_task"/>
+        <field name="binding_model_id" ref="project.model_project_task"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="state">code</field>
+        <field name="code">
+records.action_ld_print_qc_manual()
+        </field>
+    </record>
+    <record id="ir_actions_server_task_kapso_print_qc" model="ir.actions.server">
+        <field name="name">Auditar lista vs PDF (Kapso)</field>
+        <field name="model_id" ref="project.model_project_task"/>
+        <field name="binding_model_id" ref="project.model_project_task"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="state">code</field>
+        <field name="code">records.action_ld_print_qc_kapso()</field>
+    </record>
+</odoo>

@@ -1,0 +1,25 @@
+{
+  "name": "pedido_en_detalle_v2",
+  "language": "es_CO",
+  "category": "UTILITY",
+  "parameter_format": "NAMED",
+  "components": [
+    {
+      "type": "BODY",
+      "text": "Hola {{customer_name}}. Su pedido {{order_summary}} ya está en presupuesto y pasa a detalle de pedido (tallas, nombres y referencias). Puede enviar la lista o el Excel Formato Life por este chat.",
+      "example": {
+        "body_text_named_params": [
+          { "param_name": "customer_name", "example": "Carlos" },
+          {
+            "param_name": "order_summary",
+            "example": "9 uniformes de futbol"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FOOTER",
+      "text": "Life Deportes"
+    }
+  ]
+}

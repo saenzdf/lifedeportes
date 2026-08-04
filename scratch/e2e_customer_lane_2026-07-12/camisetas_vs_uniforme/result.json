@@ -1,0 +1,28 @@
+{
+  "ok": false,
+  "profile": "P3",
+  "slug": "camisetas_vs_uniforme",
+  "started_at": "2026-07-15T11:52:39.544Z",
+  "bot_snippets": [
+    "Hola, mucho gusto. Este WhatsApp de Life Deportes (asistente) está en mantenimiento temporalmente. Para cotizar y recibir atención comercial, escríbenos a nuestros vendedores: 310 336 2484 o 321 398 8464. Con gusto te at",
+    "Dry fit",
+    "Son como 12"
+  ],
+  "score": {
+    "checks": {
+      "no_maintenance": false,
+      "no_staff_upload_ok": true,
+      "bot_mentions_price_or_min6": false
+    },
+    "failed": [
+      "no_maintenance",
+      "bot_mentions_price_or_min6"
+    ],
+    "ok": false
+  },
+  "expect": {
+    "no_maintenance": true,
+    "no_staff_upload_ok": true,
+    "bot_mentions_price_or_min6": true
+  }
+}

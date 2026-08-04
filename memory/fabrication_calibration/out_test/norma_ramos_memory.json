@@ -1,0 +1,353 @@
+{
+  "pair_id": "norma_ramos_memory",
+  "list_file": "/Users/diego/Documents/Sync/projects/lifedeportes/memory/CAMISETAS (1) norma ramos formato final.xlsx",
+  "print_pdf": "/Users/diego/Documents/Sync/projects/lifedeportes/memory/NORMA RAMOS 1880.pdf",
+  "qc": "diff",
+  "counts": {
+    "excel_rows": 23,
+    "pdf_rows": 0
+  },
+  "compare": {
+    "ok": false,
+    "mode": "dorsal",
+    "excel_count": 23,
+    "pdf_count": 0,
+    "missing": [
+      [
+        "ISABELLA B",
+        "",
+        "1"
+      ],
+      [
+        "ANTONELLA C",
+        "",
+        "2"
+      ],
+      [
+        "JULIETA C",
+        "",
+        "3"
+      ],
+      [
+        "JULIANA C",
+        "",
+        "4"
+      ],
+      [
+        "MILEY C",
+        "",
+        "5"
+      ],
+      [
+        "GUADALUPE C",
+        "",
+        "6"
+      ],
+      [
+        "MARIA CELESTE E",
+        "",
+        "7"
+      ],
+      [
+        "SANTIAGO I",
+        "",
+        "8"
+      ],
+      [
+        "SHALOMEH J",
+        "",
+        "9"
+      ],
+      [
+        "MARIA CELESTE M",
+        "",
+        "10"
+      ],
+      [
+        "GREEICY M",
+        "",
+        "11"
+      ],
+      [
+        "EMMA M",
+        "",
+        "12"
+      ],
+      [
+        "MARTINA M",
+        "",
+        "13"
+      ],
+      [
+        "DIEGO M",
+        "",
+        "14"
+      ],
+      [
+        "ANA LUCIA M",
+        "",
+        "15"
+      ],
+      [
+        "SUSANA O",
+        "",
+        "16"
+      ],
+      [
+        "ALEJANDRO P",
+        "",
+        "17"
+      ],
+      [
+        "ELIAS R",
+        "",
+        "18"
+      ],
+      [
+        "ZHAMIRA S",
+        "",
+        "19"
+      ],
+      [
+        "MATIAS S",
+        "",
+        "20"
+      ],
+      [
+        "JOHANA M",
+        "",
+        "21"
+      ],
+      [
+        "KARELYS O",
+        "",
+        "22"
+      ],
+      [
+        "SOFIA M",
+        "",
+        "4"
+      ]
+    ],
+    "extra": [],
+    "pdf_text_empty": true
+  },
+  "heuristic_labels": {
+    "missing_details": [
+      {
+        "row": [
+          "ISABELLA B",
+          "",
+          "1"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "ANTONELLA C",
+          "",
+          "2"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "JULIETA C",
+          "",
+          "3"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "JULIANA C",
+          "",
+          "4"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "MILEY C",
+          "",
+          "5"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "GUADALUPE C",
+          "",
+          "6"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "MARIA CELESTE E",
+          "",
+          "7"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "SANTIAGO I",
+          "",
+          "8"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "SHALOMEH J",
+          "",
+          "9"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "MARIA CELESTE M",
+          "",
+          "10"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "GREEICY M",
+          "",
+          "11"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "EMMA M",
+          "",
+          "12"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "MARTINA M",
+          "",
+          "13"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "DIEGO M",
+          "",
+          "14"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "ANA LUCIA M",
+          "",
+          "15"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "SUSANA O",
+          "",
+          "16"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "ALEJANDRO P",
+          "",
+          "17"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "ELIAS R",
+          "",
+          "18"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "ZHAMIRA S",
+          "",
+          "19"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "MATIAS S",
+          "",
+          "20"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "JOHANA M",
+          "",
+          "21"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "KARELYS O",
+          "",
+          "22"
+        ],
+        "label": "review",
+        "paired_extra": null
+      },
+      {
+        "row": [
+          "SOFIA M",
+          "",
+          "4"
+        ],
+        "label": "review",
+        "paired_extra": null
+      }
+    ],
+    "extra_details": []
+  },
+  "talla_mismatches": [],
+  "name_qc": {
+    "normalize_enabled": true,
+    "equivalence_rules_count": 0,
+    "equivalence_path": null
+  }
+}

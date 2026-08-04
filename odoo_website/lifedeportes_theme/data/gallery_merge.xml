@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Merge theme gallery QWeb into existing website.gallery view(s); runs on install/update. -->
+    <function model="ir.ui.view" name="lifedeportes_merge_gallery_templates"/>
+</odoo>

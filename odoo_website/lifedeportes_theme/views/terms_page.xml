@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="terms_ld_page" name="Life Deportes — Condiciones de venta">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure ld-home ld-legal-page">
+                <section class="ld-legal-hero pt64 pb32">
+                    <div class="container">
+                        <span class="ld-section-label">Información comercial</span>
+                        <h1>Condiciones de venta</h1>
+                        <p class="ld-legal-lead">
+                            Life Deportes fabrica y vende uniformes y prendas deportivas personalizadas
+                            <strong>al por mayor</strong>. Estas condiciones aplican a cotizaciones, pedidos,
+                            pagos y entregas realizados por nuestra tienda en línea, WhatsApp o asesores comerciales.
+                        </p>
+                        <p class="ld-legal-meta">Última actualización: mayo 2026</p>
+                    </div>
+                </section>
+
+                <section class="ld-legal-body pt16 pb64">
+                    <div class="container">
+                        <div class="ld-legal-grid">
+                            <article class="ld-legal-card">
+                                <h2>1. Venta al por mayor</h2>
+                                <p>
+                                    Trabajamos principalmente con equipos, clubes, colegios, empresas y organizaciones
+                                    que requieren producción en volumen. No vendemos prendas sueltas al detal
+                                    (por ejemplo, una camiseta, una bandera o medias sin pedido base).
+                                </p>
+                            </article>
+
+                            <article class="ld-legal-card ld-legal-highlight">
+                                <h2>2. Pedido mínimo</h2>
+                                <p>
+                                    El pedido base es de <strong>mínimo 6 uniformes completos</strong> por diseño
+                                    (camiseta + pantaloneta + medias, según el producto cotizado).
+                                </p>
+                                <ul>
+                                    <li>Camisetas extra, banderas, gorras, medias adicionales u otros complementos se cotizan <strong>encima</strong> de esos 6 uniformes.</li>
+                                    <li>Si el pedido es menor a 6 uniformes, puede aplicarse cargo por diseño especial según cotización.</li>
+                                </ul>
+                            </article>
+
+                            <article class="ld-legal-card">
+                                <h2>3. Cotizaciones</h2>
+                                <p>
+                                    Los precios publicados son referenciales y pueden variar según tela, manga, cuello,
+                                    tipo de pantaloneta, medias y personalización. La cotización definitiva se confirma
+                                    por un asesor antes de iniciar producción.
+                                </p>
+                            </article>
+
+                            <article class="ld-legal-card">
+                                <h2>4. Forma de pago</h2>
+                                <ul>
+                                    <li><strong>50% de abono</strong> para iniciar la producción.</li>
+                                    <li><strong>50% restante</strong> antes del envío o entrega del pedido terminado.</li>
+                                    <li>Los medios de pago se confirman al cerrar la venta (transferencia, consignación u otros acordados).</li>
+                                </ul>
+                            </article>
+
+                            <article class="ld-legal-card">
+                                <h2>5. Tiempos de fabricación</h2>
+                                <p>
+                                    El tiempo estándar de fabricación es de <strong>15 días hábiles</strong>,
+                                    contados después de recibir el abono inicial y la información completa del pedido
+                                    (tallas, nombres, números, logos y aprobación de diseño cuando aplique).
+                                </p>
+                                <p>
+                                    La entrega estimada al cliente suele ser de aproximadamente <strong>15 días hábiles</strong>
+                                    después de la aprobación del diseño, sujeta a volumen, ciudad de destino y transportadora.
+                                </p>
+                            </article>
+
+                            <article class="ld-legal-card">
+                                <h2>6. Personalización y diseño</h2>
+                                <ul>
+                                    <li>Los diseños personalizados se elaboran con la información suministrada por el cliente.</li>
+                                    <li>El cliente debe revisar y aprobar el diseño antes de imprimir.</li>
+                                    <li>Life Deportes no se hace responsable por errores en nombres, números o logos enviados incorrectamente por el cliente.</li>
+                                </ul>
+                            </article>
+
+                            <article class="ld-legal-card">
+                                <h2>7. Envíos</h2>
+                                <p>
+                                    Realizamos envíos a todo Colombia y, según disponibilidad, a otros destinos acordados
+                                    con el cliente. El costo de transporte, empaque adicional o entregas urgentes se cotiza
+                                    aparte cuando aplique.
+                                </p>
+                            </article>
+
+                            <article class="ld-legal-card">
+                                <h2>8. Cambios, devoluciones y garantía</h2>
+                                <p>
+                                    Al tratarse de productos personalizados y fabricados bajo pedido, <strong>no aplican
+                                    devoluciones por cambio de opinión</strong>. Si existe un defecto de fabricación
+                                    atribuible a Life Deportes, evaluaremos la reposición o corrección correspondiente.
+                                </p>
+                            </article>
+
+                            <article class="ld-legal-card">
+                                <h2>9. Uso del sitio web</h2>
+                                <p>
+                                    El contenido de este sitio (textos, imágenes, diseños de referencia y catálogo)
+                                    es propiedad de Life Deportes o de sus clientes, según corresponda. Queda prohibida
+                                    su reproducción no autorizada. Los enlaces a sitios de terceros son informativos;
+                                    no controlamos su contenido.
+                                </p>
+                            </article>
+
+                            <article class="ld-legal-card">
+                                <h2>10. Protección de datos</h2>
+                                <p>
+                                    Los datos personales que nos entregue se usan para cotizar, producir, facturar y
+                                    entregar su pedido. Puede consultar más detalle en nuestra
+                                    <a href="/privacy-policy">política de privacidad</a>.
+                                </p>
+                            </article>
+
+                            <article class="ld-legal-card">
+                                <h2>11. Legislación aplicable</h2>
+                                <p>
+                                    Estas condiciones se rigen por la legislación de la <strong>República de Colombia</strong>.
+                                    Cualquier controversia se someterá a los jueces competentes de Bogotá, D.C.,
+                                    salvo norma imperativa en contrario.
+                                </p>
+                            </article>
+
+                            <article class="ld-legal-card">
+                                <h2>12. Contacto</h2>
+                                <p><strong>LIFE SOLUCIONES DEPORTIVAS S.A.S — Life Deportes</strong></p>
+                                <ul>
+                                    <li>Dirección: Cl. 66a #98a 12, Bogotá, Colombia</li>
+                                    <li>Correo: <a href="mailto:info@lifedeportes.com">info@lifedeportes.com</a></li>
+                                    <li>WhatsApp: <a href="https://wa.me/573103362484" target="_blank" rel="noopener">+57 310 336 2484</a></li>
+                                    <li>Sitio web: <a href="https://lifedeportes.com">lifedeportes.com</a></li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

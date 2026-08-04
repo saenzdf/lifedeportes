@@ -1,0 +1,26 @@
+{
+  "name": "lifedeportes_create_order_audio_v2",
+  "description": "Procesa audio para pedido: transcribe, normaliza, confirma y crea pedido.",
+  "nodes": [
+    { "id": "start", "type": "trigger_internal_event", "config": { "event": "run_create_order_audio_v2" } },
+    { "id": "authorization_guard_001", "type": "function", "config": { "name": "assert-user-transaction-access" } },
+    { "id": "transcribe_audio_001", "type": "function", "config": { "name": "transcribe-order-audio" } },
+    { "id": "quality_router_001", "type": "decide", "config": {
+      "conditions": [
+        { "label": "low_confidence", "expression": "vars.audio.confidence < 0.8" },
+        { "label": "high_confidence", "expression": "vars.audio.confidence >= 0.8" }
+      ]
+    } },
+    { "id": "handoff_low_confidence_001", "type": "function", "config": { "name": "run-workflow-handoff-human-v2" } },
+    { "id": "confirm_summary_001", "type": "template", "config": { "text": "{{vars.audio.order_summary_for_confirmation}}" } },
+    { "id": "create_quote_001", "type": "function", "config": { "name": "odoo_create_sale_order_from_audio" } }
+  ],
+  "edges": [
+    { "source": "start", "target": "authorization_guard_001" },
+    { "source": "authorization_guard_001", "target": "transcribe_audio_001" },
+    { "source": "transcribe_audio_001", "target": "quality_router_001" },
+    { "source": "quality_router_001", "target": "handoff_low_confidence_001", "label": "low_confidence" },
+    { "source": "quality_router_001", "target": "confirm_summary_001", "label": "high_confidence" },
+    { "source": "confirm_summary_001", "target": "create_quote_001" }
+  ]
+}

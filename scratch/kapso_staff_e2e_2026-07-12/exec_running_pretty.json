@@ -1,0 +1,1326 @@
+{
+  "ok": true,
+  "data": {
+    "execution": {
+      "id": "b9c289c8-d522-4344-b8b0-ef67673ab72e",
+      "current_step": {
+        "id": "f9c557c1-a45d-410e-9de2-6b41382d3e33",
+        "identifier": "wait_staff_lane_1745500019050",
+        "stepable_type": "FlowWaitStep"
+      },
+      "ended_at": null,
+      "execution_context": {
+        "vars": {
+          "shop": {
+            "name": "Camiseta deportiva dry-fit",
+            "page_url": "https://testlifesoluciones.odoo.com/shop/camiseta-deportiva-dry-fit-62",
+            "unit_cop": 30000,
+            "image_url": "https://testlifesoluciones.odoo.com/web/image/product.template/62/image_512",
+            "is_published": true,
+            "shop_home_url": "https://testlifesoluciones.odoo.com/shop",
+            "description_sale": "Camiseta deportiva dry-fit personalizada.",
+            "odoo_template_id": 62
+          },
+          "user": {
+            "name": "Diego Saenz",
+            "role": "staff",
+            "wa_id": "573172575981",
+            "staff_member": {
+              "name": "Diego Saenz",
+              "role": "staff",
+              "phone": "573172575981"
+            },
+            "odoo_project_id": null,
+            "odoo_project_name": null,
+            "is_allowed_for_transactions": true
+          },
+          "kapso": {
+            "customer_lane": null,
+            "staff_only_mode": true
+          },
+          "quote": {
+            "quantity": 19,
+            "unit_cop": 30000,
+            "total_cop": 570000,
+            "price_source": "odoo_live",
+            "product_text": "Camiseta deportiva dry-fit",
+            "odoo_product_id": 62,
+            "match_confidence": "high"
+          },
+          "staff": {
+            "write_code": "needs_confirmation",
+            "write_status": "needs_confirmation",
+            "registration_type": "pedido",
+            "write_blocked_reason": "Hay ambiguedad o parseo parcial. Resumen:\n• Uniforme de Fútbol × 17\n• Camiseta deportiva dry-fit × 19\nResponde CONFIRMO SUBIR para crear el borrador."
+          },
+          "intent": {
+            "raw_text": "Pedido nuevo E2E Formulario nativo. Cliente: E2E WA PASTO Kapso. Adjunto Excel FORMATO LIFE + foto de referencia. Sube borrador en Odoo test."
+          },
+          "tenant": {
+            "id": "life_main",
+            "name": "Life Deportes Principal",
+            "policy_set": "sales_default_v1",
+            "secret_prefix": "TENANT_LIFE_MAIN",
+            "phone_number_id": null
+          },
+          "pricing": {
+            "quantity": 19,
+            "unit_cop": 30000,
+            "total_cop": 570000,
+            "price_source": "odoo_live",
+            "variant_extras": []
+          },
+          "product": {
+            "found": true,
+            "variant": "base",
+            "category": "camiseta",
+            "match_id": 62,
+            "candidates": [
+              {
+                "name": "Camiseta deportiva dry-fit",
+                "rank": 1,
+                "score": 200,
+                "odoo_id": 62,
+                "reason_es": null,
+                "list_price_cop": 30000
+              },
+              {
+                "name": "Camiseta deportiva con cuello polo, Sin botones",
+                "rank": 2,
+                "score": 69,
+                "odoo_id": 61,
+                "reason_es": null,
+                "list_price_cop": 33000
+              },
+              {
+                "name": "Camiseta deportiva lluvia",
+                "rank": 3,
+                "score": 57,
+                "odoo_id": 1797,
+                "reason_es": null,
+                "list_price_cop": 33000
+              }
+            ],
+            "match_name": "Camiseta deportiva dry-fit",
+            "query_text": "Camiseta deportiva dry-fit",
+            "alternatives": [
+              {
+                "name": "Camiseta deportiva con cuello polo, Sin botones",
+                "rank": 2,
+                "score": 69,
+                "odoo_id": 61,
+                "reason_es": null,
+                "list_price_cop": 33000
+              },
+              {
+                "name": "Camiseta deportiva lluvia",
+                "rank": 3,
+                "score": 57,
+                "odoo_id": 1797,
+                "reason_es": null,
+                "list_price_cop": 33000
+              },
+              {
+                "name": "Camiseta Deportiva Dumonti",
+                "rank": 4,
+                "score": 57,
+                "odoo_id": 685,
+                "reason_es": null,
+                "list_price_cop": 35000
+              },
+              {
+                "name": "Gorras con un bordado",
+                "rank": 5,
+                "score": 22,
+                "odoo_id": 1804,
+                "reason_es": null,
+                "list_price_cop": 15000
+              }
+            ],
+            "parsed_intent": {
+              "sport": null,
+              "collar": null,
+              "sleeves": null,
+              "material": "dry_fit",
+              "quantity": 19,
+              "shortType": "standard",
+              "visualCues": [],
+              "withLining": null,
+              "garmentType": "camiseta_sola",
+              "productText": "Camiseta deportiva dry-fit",
+              "combinedText": "Camiseta deportiva dry-fit",
+              "quantityProvided": true
+            },
+            "commercial_role": "base_product",
+            "match_confidence": "high",
+            "odoo_template_id": 62,
+            "catalog_published": true,
+            "interpretation_es": "Propongo: Camiseta deportiva dry-fit (tipo: camiseta sola; tela: dry_fit).",
+            "missing_dimensions": [],
+            "clarifying_question": null
+          },
+          "service": {
+            "routed_edge": "staff_write_blocked",
+            "last_call_at": "2026-07-12T16:44:39.312Z",
+            "last_call_name": "route_staff_write",
+            "fallback_message": "Hay ambiguedad o parseo parcial. Resumen:\n• Uniforme de Fútbol × 17\n• Camiseta deportiva dry-fit × 19\nResponde CONFIRMO SUBIR para crear el borrador.",
+            "last_call_status": "ready"
+          },
+          "security": {
+            "input_blocked": false,
+            "input_flagged": false,
+            "mcp_call_count": 0,
+            "policy_version": "2026-06-17",
+            "last_block_reason": null
+          },
+          "user_lane": "staff",
+          "order_draft": {
+            "write": {
+              "code": "needs_confirmation",
+              "status": "needs_staff_confirmation",
+              "fingerprint": "{\"lines\":[{\"p\":11788,\"q\":19},{\"p\":12409,\"q\":17}],\"people\":[\"10|LEANDRO SUARÉZ|L\",\"11|MALK.S.K|S\",\"11|OLIVER|M\",\"12|CARVAJAL .L|S\",\"12|VELA.F|S\",\"13|LOZANO|M\",\"14|ANDRÉS R|S\",\"14|YANIXA A.CH|S\",\"16|CABRERA D|M\",\"16|ELIZABETH|M\",\"17|DIEGO 444|S\",\"17|J.ORTEGA|M\",\"18|ELL' MENDOZA|M\",\"19|SULIBET. P-V|M\",\"1|D.CHUMBE|S\",\"1|FERRIN LARE|S\",\"20|ELIZ LEIDER|S\",\"20|MANRIQUE.S.J.L|M\",\"21|ALEJA.P|S\",\"21|FERNANDA|M\",\"21|MAURICIO#2|L\",\"22|M.BORRAEZ|S\",\"23|OROZCO G|S\",\"23|VARGAS.S|S\",\"24|JUANCHO POLO|M\",\"27|RUIZ|M\",\"28|ROBINS|M\",\"3|ANDRÉS J|M\",\"3|KATE|S\",\"3|PATRICIO. D|M\",\"6|ANA.D.P.B|S\",\"7|MIRANDA.J|S\",\"8|THALIA.N|S\",\"9|CHAPIAMA.A|S\",\"9|MELGAR|S\",\"Teacher|John S.Muñoz|S\"],\"partner\":\"\"}"
+            },
+            "detail": {
+              "rows": [
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "ANDRÉS J",
+                  "numero": "3",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "MANRIQUE.S.J.L",
+                  "numero": "20",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "VELA.F",
+                  "numero": "12",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "L",
+                  "nombre": "LEANDRO SUARÉZ",
+                  "numero": "10",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "ELIZABETH",
+                  "numero": "16",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "ANDRÉS R",
+                  "numero": "14",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "CARVAJAL .L",
+                  "numero": "12",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "ROBINS",
+                  "numero": "28",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "MIRANDA.J",
+                  "numero": "7",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme arquero de francia · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "Largo",
+                  "talla": "M",
+                  "nombre": "ELL' MENDOZA",
+                  "numero": "18",
+                  "arquero": true,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme arquero de francia · Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "KATE",
+                  "numero": "3",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "D.CHUMBE",
+                  "numero": "1",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "OROZCO G",
+                  "numero": "23",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "J.ORTEGA",
+                  "numero": "17",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "ELIZ LEIDER",
+                  "numero": "20",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "FERNANDA",
+                  "numero": "21",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "YANIXA A.CH",
+                  "numero": "14",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "MALK.S.K",
+                  "numero": "11",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "PATRICIO. D",
+                  "numero": "3",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "CABRERA D",
+                  "numero": "16",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "JUANCHO POLO",
+                  "numero": "24",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "DIEGO 444",
+                  "numero": "17",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "M.BORRAEZ",
+                  "numero": "22",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "ANA.D.P.B",
+                  "numero": "6",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "LOZANO",
+                  "numero": "13",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "THALIA.N",
+                  "numero": "8",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "VARGAS.S",
+                  "numero": "23",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "RUIZ",
+                  "numero": "27",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "SULIBET. P-V",
+                  "numero": "19",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "MELGAR",
+                  "numero": "9",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "",
+                  "talla": "M",
+                  "nombre": "OLIVER",
+                  "numero": "11",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme arquero de francia · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "Largo",
+                  "talla": "S",
+                  "nombre": "ALEJA.P",
+                  "numero": "21",
+                  "arquero": true,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme arquero de francia · Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme arquero de francia · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "Largo",
+                  "talla": "L",
+                  "nombre": "MAURICIO#2",
+                  "numero": "21",
+                  "arquero": true,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme arquero de francia · Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Uniforme · Uniforme",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "CHAPIAMA.A",
+                  "numero": "9",
+                  "arquero": false,
+                  "camiseta": false,
+                  "category": null,
+                  "uniforme": true,
+                  "person_id": null,
+                  "comentario": "Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta · Uniforme arquero de francia · Uniforme",
+                  "grupo": "femenino",
+                  "manga": "Largo",
+                  "talla": "S",
+                  "nombre": "FERRIN LARE",
+                  "numero": "1",
+                  "arquero": true,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "Uniforme arquero de francia · Uniforme",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                },
+                {
+                  "rol": "Camiseta",
+                  "grupo": "masculino",
+                  "manga": "",
+                  "talla": "S",
+                  "nombre": "John S.Muñoz",
+                  "numero": "Teacher",
+                  "arquero": false,
+                  "camiseta": true,
+                  "category": null,
+                  "uniforme": false,
+                  "person_id": null,
+                  "comentario": "",
+                  "pantaloneta": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null,
+                  "impresion_trasera": null,
+                  "impresion_delantera": null,
+                  "nombre_vacio_impresion": false
+                }
+              ],
+              "people": [
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "masculino",
+                    "number": "3",
+                    "print_name": "ANDRÉS J",
+                    "display_name": "ANDRÉS J"
+                  },
+                  "person_id": "row-1",
+                  "components": [
+                    {
+                      "size": "M",
+                      "type": "uniforme_completo",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": false,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "femenino",
+                    "number": "20",
+                    "print_name": "MANRIQUE.S.J.L",
+                    "display_name": "MANRIQUE.S.J.L"
+                  },
+                  "person_id": "row-2",
+                  "components": [
+                    {
+                      "size": "M",
+                      "type": "camiseta",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": false,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "femenino",
+                    "number": "12",
+                    "print_name": "VELA.F",
+                    "display_name": "VELA.F"
+                  },
+                  "person_id": "row-3",
+                  "components": [
+                    {
+                      "size": "S",
+                      "type": "camiseta",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": false,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "masculino",
+                    "number": "10",
+                    "print_name": "LEANDRO SUARÉZ",
+                    "display_name": "LEANDRO SUARÉZ"
+                  },
+                  "person_id": "row-4",
+                  "components": [
+                    {
+                      "size": "L",
+                      "type": "uniforme_completo",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": false,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "femenino",
+                    "number": "16",
+                    "print_name": "ELIZABETH",
+                    "display_name": "ELIZABETH"
+                  },
+                  "person_id": "row-5",
+                  "components": [
+                    {
+                      "size": "M",
+                      "type": "camiseta",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": false,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "masculino",
+                    "number": "14",
+                    "print_name": "ANDRÉS R",
+                    "display_name": "ANDRÉS R"
+                  },
+                  "person_id": "row-6",
+                  "components": [
+                    {
+                      "size": "S",
+                      "type": "uniforme_completo",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": false,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "masculino",
+                    "number": "12",
+                    "print_name": "CARVAJAL .L",
+                    "display_name": "CARVAJAL .L"
+                  },
+                  "person_id": "row-7",
+                  "components": [
+                    {
+                      "size": "S",
+                      "type": "uniforme_completo",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": false,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "masculino",
+                    "number": "28",
+                    "print_name": "ROBINS",
+                    "display_name": "ROBINS"
+                  },
+                  "person_id": "row-8",
+                  "components": [
+                    {
+                      "size": "M",
+                      "type": "uniforme_completo",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": false,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "masculino",
+                    "number": "7",
+                    "print_name": "MIRANDA.J",
+                    "display_name": "MIRANDA.J"
+                  },
+                  "person_id": "row-9",
+                  "components": [
+                    {
+                      "size": "S",
+                      "type": "uniforme_completo",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": false,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme arquero de francia · Uniforme"
+                  ],
+                  "identity": {
+                    "group": "masculino",
+                    "number": "18",
+                    "print_name": "ELL' MENDOZA",
+                    "display_name": "ELL' MENDOZA"
+                  },
+                  "person_id": "row-10",
+                  "components": [
+                    {
+                      "size": "M",
+                      "type": "uniforme_completo",
+                      "sleeve": "Largo",
+                      "comment": "Uniforme arquero de francia · Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": true,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "femenino",
+                    "number": "3",
+                    "print_name": "KATE",
+                    "display_name": "KATE"
+                  },
+                  "person_id": "row-11",
+                  "components": [
+                    {
+                      "size": "S",
+                      "type": "camiseta",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": null,
+                      "printing": {
+                        "back": null,
+                        "front": null
+                      },
+                      "goalkeeper": false,
+                      "garment_type": null,
+                      "product_text": null,
+                      "variant_notes": null,
+                      "product_line_key": null
+                    }
+                  ]
+                },
+                {
+                  "comments": [
+                    "Uniforme"
+                  ],
+                  "identity": {
+                    "group": "masculino",
+                    "number": "1",
+                    "print_name": "D.CHUMBE",
+                    "display_name": "D.CHUMBE"
+                  },
+                  "person_id": "row-12",
+                  "components": [
+                    {
+                      "size": "S",
+                      "type": "uniforme_completo",
+                      "sleeve": null,
+                      "comment": "Uniforme",
+                      "category": nu

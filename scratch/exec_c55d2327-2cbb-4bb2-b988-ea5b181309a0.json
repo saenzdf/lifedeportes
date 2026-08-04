@@ -1,0 +1,282 @@
+{
+  "data": {
+    "id": "c55d2327-2cbb-4bb2-b988-ea5b181309a0",
+    "current_step": {
+      "id": "fa38bdc8-0121-4f16-852f-5a91c3bda646",
+      "identifier": "agent_orquestador_1745500003000",
+      "stepable_type": "FlowAgentStep"
+    },
+    "ended_at": null,
+    "execution_context": {
+      "vars": {
+        "shop": null,
+        "user": {
+          "name": "EL JAVI",
+          "role": "customer",
+          "wa_id": "573143708651",
+          "staff_member": null,
+          "history_count": 0,
+          "contact_segment": "new_customer",
+          "odoo_project_id": null,
+          "is_known_in_odoo": false,
+          "odoo_project_name": null,
+          "is_allowed_for_transactions": false
+        },
+        "kapso": {
+          "customer_lane": "paused_maintenance",
+          "staff_only_mode": true
+        },
+        "quote": {
+          "notes": "Equipo Francia. 12 jugadores. Tallas: M x6, 16 x4, 14 x2. Lista con dorsales y nombres para estampa. Cliente: Javier Quintero.",
+          "status": "cotizando",
+          "quantity": 12,
+          "revision": 1,
+          "unit_cop": 50000,
+          "variants": {
+            "sport": "futbol",
+            "material": "dry_fit",
+            "garment_type": "uniforme_completo"
+          },
+          "total_cop": 600000,
+          "media_refs": [
+            {
+              "role": "lista_tallas",
+              "summary": "Captura de Excel 'EQUIPO FRANCIA - UNIFORMES.xlsx' con 12 jugadores, tallas M/16/14, dorsales y nombres para estampa"
+            }
+          ],
+          "updated_at": "2026-07-30T17:48:00Z",
+          "product_text": "Uniforme de Fútbol (selección de Francia)",
+          "odoo_product_id": 115
+        },
+        "intent": {
+          "raw_text": "Image attached (image_54e99dff11dc.jpeg) [Size: 136.4 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImYzZGI2Mjg5LThkYTItNGM5Ni05NTdiLTM4OWFhZmEwOTA0MSIsInB1ciI6ImJsb2JfaWQifX0=--6387b0aafba8b54d349a97e873e24426db499219/image_54e99dff11dc.jpeg"
+        },
+        "orders": {
+          "active": [],
+          "active_count": 0,
+          "focus_order_id": null,
+          "focus_order_name": null
+        },
+        "tenant": {
+          "id": "life_main",
+          "name": "Life Deportes Principal",
+          "policy_set": "sales_default_v1",
+          "secret_prefix": "TENANT_LIFE_MAIN",
+          "phone_number_id": null
+        },
+        "pricing": {
+          "quantity": 12,
+          "unit_cop": 50000,
+          "total_cop": 600000,
+          "price_source": "catalog_cache",
+          "variant_extras": []
+        },
+        "product": {
+          "found": true,
+          "variant": "base",
+          "category": "uniforme",
+          "match_id": 115,
+          "candidates": [
+            {
+              "name": "Uniforme de Fútbol",
+              "rank": 1,
+              "score": 179,
+              "odoo_id": 115,
+              "reason_es": null,
+              "list_price_cop": 50000
+            },
+            {
+              "name": "Uniforme de Presentación (Futbol polo)",
+              "rank": 2,
+              "score": 104,
+              "odoo_id": 8,
+              "reason_es": null,
+              "list_price_cop": 75000
+            },
+            {
+              "name": "Uniforme de atletismo",
+              "rank": 3,
+              "score": 53,
+              "odoo_id": 35,
+              "reason_es": null,
+              "list_price_cop": 50000
+            }
+          ],
+          "match_name": "Uniforme de Fútbol",
+          "query_text": "uniforme de futbol seleccion de francia",
+          "alternatives": [
+            {
+              "name": "Uniforme de Presentación (Futbol polo)",
+              "rank": 2,
+              "score": 104,
+              "odoo_id": 8,
+              "reason_es": null,
+              "list_price_cop": 75000
+            },
+            {
+              "name": "Uniforme de atletismo",
+              "rank": 3,
+              "score": 53,
+              "odoo_id": 35,
+              "reason_es": null,
+              "list_price_cop": 50000
+            },
+            {
+              "name": "Uniforme de baloncesto",
+              "rank": 4,
+              "score": 53,
+              "odoo_id": 23,
+              "reason_es": null,
+              "list_price_cop": 50000
+            },
+            {
+              "name": "Uniforme de voleibol",
+              "rank": 5,
+              "score": 53,
+              "odoo_id": 31,
+              "reason_es": null,
+              "list_price_cop": 50000
+            }
+          ],
+          "parsed_intent": {
+            "sport": "futbol",
+            "collar": null,
+            "sleeves": null,
+            "material": "dry_fit",
+            "quantity": 12,
+            "shortType": "standard",
+            "visualCues": [],
+            "withLining": null,
+            "garmentType": "uniforme_completo",
+            "productText": "uniforme de futbol seleccion de francia",
+            "attr_sources": {
+              "collar": null,
+              "lining": null,
+              "garment": "explicit",
+              "sleeves": null,
+              "material": "explicit"
+            },
+            "combinedText": "uniforme de futbol seleccion de francia",
+            "quantityProvided": true
+          },
+          "commercial_role": "base_uniform",
+          "match_confidence": "high",
+          "odoo_template_id": 115,
+          "catalog_published": null,
+          "interpretation_es": "Propongo: Uniforme de Fútbol (deporte: futbol; tipo: uniforme completo (explícito); tela: dry fit (explícito)).",
+          "missing_dimensions": [],
+          "clarifying_question": null
+        },
+        "service": {
+          "last_call_at": "2026-07-30T17:48:07.381Z",
+          "last_call_name": "buscar_producto_odoo",
+          "fallback_message": null,
+          "last_call_status": "ready"
+        },
+        "session": {
+          "continuity": {
+            "source": "none",
+            "resumed": false,
+            "resumed_at": "2026-07-30T17:46:32.440Z",
+            "hydrate_error": "no_useful_quote"
+          }
+        },
+        "security": {
+          "input_blocked": false,
+          "input_flagged": false,
+          "mcp_call_count": 0,
+          "policy_version": "2026-06-17",
+          "last_block_reason": null
+        },
+        "user_lane": "customer",
+        "shop_catalog": [],
+        "spam_profile": null,
+        "crm_seed_ensure": {
+          "at": "2026-07-30T17:47:06.154Z",
+          "reason": "insufficient_payload",
+          "skipped": true,
+          "message_es": "Falta producto+cantidad (≥6) o lista/cotización suficiente."
+        },
+        "last_user_input": "No lo solicito como está en la foto es para una competencia de un colegio\nIntercursos",
+        "customer_burst_reply": null,
+        "service.greeting_sent": true
+      },
+      "system": {
+        "flow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+        "customer": {
+          "id": "7fe6d691-be8f-462a-a2ec-9aeb93476b7b",
+          "name": "Default customer",
+          "external_customer_id": "default_customer"
+        },
+        "flow_name": "lifedeportes_sales_inbound",
+        "running_at": "2026-07-30T13:53:07-04:00",
+        "started_at": "2026-07-30T13:45:06-04:00",
+        "step_count": 8,
+        "waiting_at": "2026-07-30T13:53:16-04:00",
+        "last_resume": {
+          "at": "2026-07-30T13:53:07-04:00",
+          "reason": "user_input",
+          "step_id": "fa38bdc8-0121-4f16-852f-5a91c3bda646",
+          "step_type": "FlowAgentStep",
+          "step_identifier": "agent_orquestador_1745500003000"
+        },
+        "workflow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+        "flow_version": 0,
+        "trigger_type": "inbound_message",
+        "workflow_name": "lifedeportes_sales_inbound",
+        "whatsapp_config": {
+          "id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+          "kind": "production",
+          "name": "Life Deportes Asistente",
+          "phone_number_id": "1095603153637786",
+          "business_account_id": "808809791888713",
+          "display_phone_number": "+57 322 2252942",
+          "display_phone_number_normalized": "573222252942"
+        },
+        "workflow_version": 0,
+        "flow_execution_id": "c55d2327-2cbb-4bb2-b988-ea5b181309a0",
+        "last_status_change": "2026-07-30T13:53:16-04:00",
+        "workflow_execution_id": "c55d2327-2cbb-4bb2-b988-ea5b181309a0",
+        "trigger_whatsapp_config_id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+        "available_whatsapp_config_ids": [
+          "c8364dd2-ae4d-433b-bc02-3b5ea01024df"
+        ]
+      },
+      "context": {
+        "channel": "whatsapp",
+        "contact": {
+          "id": "d891a6c2-6f77-4a9e-9b8d-a003e349a572",
+          "name": "EL JAVI",
+          "wa_id": "573143708651",
+          "username": null,
+          "display_name": null,
+          "profile_name": "EL JAVI",
+          "business_scoped_user_id": "CO.1292747470582121",
+          "parent_business_scoped_user_id": null
+        },
+        "phone_number": "573143708651",
+        "conversation_id": "eac9e7f4-0540-4055-bbe9-57aa72721e67",
+        "agent_iterations": 1,
+        "whatsapp_username": null,
+        "agent_last_message": "Claro, entendido. El diseño de la camiseta (azul con las líneas diagonales y el escudo del gallo) lo hacemos igual. En el espacio donde va el logo de Nike podemos poner el escudo de su colegio o del equipo Intercursos.\n\n¿Tiene algún logo o escudo del equipo para enviar?",
+        "whatsapp_business_scoped_user_id": "CO.1292747470582121",
+        "whatsapp_parent_business_scoped_user_id": null
+      },
+      "metadata": {}
+    },
+    "last_event_at": "2026-07-30T13:53:16-04:00",
+    "started_at": "2026-07-30T13:45:06-04:00",
+    "status": "waiting",
+    "tracking_id": null,
+    "whatsapp_conversation_id": "eac9e7f4-0540-4055-bbe9-57aa72721e67",
+    "workflow": {
+      "id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+      "agent_default_tools_version": 2,
+      "lock_version": 1443,
+      "name": "lifedeportes_sales_inbound",
+      "slug": "lifedeportes-sales-inbound",
+      "status": "active",
+      "updated_at": "2026-07-30T13:16:02-04:00"
+    }
+  }
+}

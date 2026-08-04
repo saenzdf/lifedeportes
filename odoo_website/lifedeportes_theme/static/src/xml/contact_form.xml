@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="lifedeportes_theme.ContactQuoteForm">
+        <div class="ld-quote-form-root">
+            <h2>¡Cotiza Ya!</h2>
+            <p class="ld-form-subtitle">
+                Tu uniforme ideal está a un mensaje de distancia.
+                Cuéntanos qué necesitas.
+            </p>
+
+            <div t-if="state.success" class="ld-form-success">
+                <strong>¡Listo!</strong> Recibimos tu solicitud y te contactaremos por WhatsApp pronto.
+            </div>
+
+            <form t-on-submit="onSubmit" t-if="!state.success" novalidate="novalidate">
+                <div class="ld-form-row">
+                    <div class="ld-form-field">
+                        <label>Nombre completo *</label>
+                        <input type="text"
+                               t-model="state.name"
+                               placeholder="Tu nombre"
+                               autocomplete="name"/>
+                    </div>
+                    <div class="ld-form-field">
+                        <label>Tipo de uniforme *</label>
+                        <select t-model="state.tipo">
+                            <option value="">Selecciona...</option>
+                            <option value="futbol">Fútbol</option>
+                            <option value="microfutbol">Microfútbol</option>
+                            <option value="baloncesto">Baloncesto</option>
+                            <option value="voleibol">Voleibol</option>
+                            <option value="sudaderas">Sudaderas</option>
+                            <option value="ciclismo">Ciclismo</option>
+                            <option value="otro">Otro deporte</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ld-form-row">
+                    <div class="ld-form-field">
+                        <label>WhatsApp / Teléfono *</label>
+                        <input type="tel"
+                               t-model="state.phone"
+                               placeholder="310 000 0000"
+                               autocomplete="tel"/>
+                    </div>
+                    <div class="ld-form-field">
+                        <label>Correo electrónico</label>
+                        <input type="email"
+                               t-model="state.email"
+                               placeholder="tu@correo.com"
+                               autocomplete="email"/>
+                    </div>
+                </div>
+
+                <div class="ld-form-field">
+                    <label>¿Qué necesitas?</label>
+                    <textarea t-model="state.message"
+                              rows="4"
+                              placeholder="Ej: 15 uniformes de fútbol con número y nombre, tallas S, M y L..."/>
+                </div>
+
+                <div t-if="state.error" class="ld-form-error">
+                    <t t-esc="state.error"/>
+                </div>
+
+                <button type="submit"
+                        class="ld-btn ld-btn-primary ld-btn-full"
+                        t-att-disabled="state.submitting">
+                    <t t-if="state.submitting">Enviando...</t>
+                    <t t-else="">Solicitar Cotización Gratis</t>
+                </button>
+            </form>
+        </div>
+    </t>
+
+</templates>

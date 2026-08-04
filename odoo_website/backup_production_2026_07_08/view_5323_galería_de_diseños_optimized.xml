@@ -1,0 +1,447 @@
+<t t-name="website.galeria-de-disenos">
+<t t-call="website.layout">
+            <div id="wrap" class="oe_structure ld-home ld-gallery-page" itemscope="itemscope" itemtype="https://schema.org/CollectionPage">
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=DM+Sans:wght@400;500;700&amp;display=swap");
+.ld-home{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a2e;-webkit-font-smoothing:antialiased}
+.ld-home .text-accent{color:#5B9BD5!important}
+.ld-home .ld-hero {
+  position:relative;isolation:isolate;background:linear-gradient(135deg,#051B36 0%,#0a3060 50%,#051B36 100%);
+  min-height:560px;color:#fff;overflow:hidden;padding:80px 0 52px}
+.ld-home.ld-gallery-page .ld-gallery-page-hero.ld-hero {
+  overflow:hidden!important;min-height:clamp(420px,52vh,560px)!important;padding-bottom:clamp(40px,6vw,64px)!important}
+.ld-home.ld-gallery-page .ld-gallery-page-hero.ld-hero &gt; .ld-gallery-hero-photo {
+  position:absolute;inset:0;z-index:0;background-position:center;background-size:cover;background-repeat:no-repeat}
+.ld-home.ld-gallery-page .ld-gallery-page-hero.ld-hero &gt; .ld-hero-overlay {
+  z-index:1;background:linear-gradient(160deg,rgba(0,31,63,.88) 0%,rgba(5,27,54,.82) 45%,rgba(0,20,45,.92) 100%)!important}
+.ld-home.ld-gallery-page .ld-gallery-page-hero.ld-hero &gt; .ld-gallery-hero-pattern {
+  position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.14;
+  background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='0.35' d='M0 40c20-8 40 8 60 0s40-8 60 0M0 80c22 10 38-6 60 0s38 6 60 0M20 0c-6 22 6 38 0 60s-6 38 0 60M80 0c8 18-8 42 0 60s-8 42 0 60'/%3E%3C/svg%3E\");
+  background-size:280px 280px}
+.ld-home.ld-about-page .ld-about-page-hero.ld-hero {
+  overflow:visible!important;min-height:clamp(460px,56vh,620px);padding-bottom:64px}
+.ld-home .ld-hero &gt; .ld-hero-bg-video {
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none}
+.ld-home .ld-hero &gt; .ld-hero-overlay {
+  position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(5,27,54,.88) 0%,rgba(15,56,95,.78) 50%,rgba(5,27,54,.92) 100%);
+  pointer-events:none}
+.ld-home .ld-hero .ld-hero-inner {
+  position:relative;z-index:2;display:flex;align-items:center;gap:40px;flex-wrap:wrap;max-width:1200px;margin:0 auto;padding:0 24px}
+.ld-home.ld-gallery-page .ld-gallery-page-hero .ld-hero-inner,
+.ld-home.ld-about-page .ld-about-page-hero .ld-hero-inner{
+  flex-direction:column;text-align:center;justify-content:center;align-items:center;min-height:min(44vh,440px);position:relative;z-index:3}
+.ld-home.ld-about-page .ld-about-page-hero .ld-hero-sub{max-width:760px!important;margin:0 auto 28px!important}
+.ld-home.ld-about-page .ld-hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:12px!important}
+.ld-home.ld-gallery-page .ld-gallery-page-hero .ld-hero-sub{max-width:720px!important;margin:0 auto 0!important;opacity:.95!important;font-size:.96rem!important;color:rgba(255,255,255,.93)!important}
+.ld-home.ld-gallery-page .ld-gallery-page-hero .ld-hero-title,
+.ld-home .ld-gallery-page-hero .ld-hero-title{font-size:clamp(2.05rem,4.9vw,3.7rem)!important;font-weight:800!important;text-transform:uppercase!important;line-height:1.05!important;color:#fff!important}
+.ld-home.ld-about-page .ld-about-page-hero .ld-hero-title{font-size:clamp(2rem,5.5vw,3.85rem)!important;font-weight:800!important;color:#fff!important}
+.ld-home .ld-about-page-hero .ld-hero-badge{
+  font-size:.78rem!important;font-weight:700!important;text-transform:uppercase!important;letter-spacing:.15em!important;
+  padding:6px 16px!important;border-radius:50px;background:rgba(255,255,255,.1)!important;border:1px solid rgba(255,255,255,.22)!important}
+.ld-home .ld-gallery-filter-strip{background:#f8f9fa;border-top:1px solid rgba(5,27,54,.06);border-bottom:1px solid rgba(5,27,54,.06);
+  padding:clamp(18px,3vw,26px) 0}
+.ld-home .ld-gallery-filter-shell{background:transparent!important;border:none!important;border-radius:0!important;padding:0!important;
+  box-shadow:none!important}
+.ld-home .ld-gallery-filters{display:flex;flex-wrap:nowrap;justify-content:center;gap:12px;margin:0!important;
+ overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+.ld-home .filter-btn{appearance:none;border:1px solid #dee2e6;background:#fff;color:#1a2a3d;font-weight:700;
+  font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;padding:11px 20px;border-radius:999px;cursor:pointer;transition:.2s;
+  box-shadow:0 2px 8px rgba(5,27,54,.06)}
+.ld-home .filter-btn.active{border-color:#001f3f;background:#001f3f;color:#fff;
+  box-shadow:0 4px 16px rgba(0,31,63,.28)}
+.ld-home .filter-btn:hover:not(.active){border-color:rgba(0,31,63,.35);box-shadow:0 3px 12px rgba(5,27,54,.1)}
+.ld-home .ld-gallery{padding:clamp(48px,7vw,88px) 0;background:#f8f9fa}
+.ld-home .gallery-section-title{padding:clamp(28px,4vw,44px) 0 12px;max-width:900px}
+.ld-home .gallery-section-title h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.95rem,4vw,2.65rem)!important;
+  font-weight:800!important;text-transform:uppercase;letter-spacing:.035em;color:#051B36!important;line-height:1.12;margin:0 0 14px!important}
+.ld-home .gallery-section-title h2::after{content:'';display:block;width:56px;height:3px;margin-top:14px;background:#0F385F;border-radius:2px}
+.ld-home .gallery-section-title p{color:#5a6677;font-size:.98rem;margin:0;max-width:880px;line-height:1.6}
+.ld-home .ld-gallery-thumb{background:#12151c;border-radius:18px;padding:12px;box-shadow:0 8px 26px rgba(5,27,54,.14)}
+.ld-home .ld-gallery-thumb img{border-radius:12px;display:block;width:100%;height:auto;object-fit:contain}
+.ld-home .ld-banner-cta{background:#051B36 url('https://lifedeportes.com/img/hero-futbol.webp') center/cover no-repeat;position:relative;min-height:280px;display:flex}
+.ld-home .ld-banner-cta .ld-banner-overlay{background:rgba(5,27,54,.76);flex:1;display:flex;align-items:center;padding:48px 0}
+.ld-home .ld-banner-inner{text-align:center;margin:0 auto;color:#fff}
+.ld-home .ld-banner-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.2em;opacity:.75;display:block;margin-bottom:8px}
+.ld-home .ld-banner-inner h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(1.5rem,3.5vw,2.35rem)}
+.ld-home .ld-gallery-cta-title{color:#fff!important;text-align:center;text-transform:none!important;font-weight:800!important;margin-bottom:.5rem!important}
+.ld-home .ld-gallery-cta-phone{text-align:center;margin-bottom:28px!important}
+.ld-home .ld-gallery-cta-tel{color:rgba(255,255,255,.94)!important;font-weight:700;font-size:1.05rem;text-decoration:none!important;display:inline-flex;gap:8px;align-items:center}
+.ld-home .ld-gallery-cta-tel:hover{color:#fff!important}
+.ld-home .ld-gallery-cta-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:8px}
+.ld-home .btn.btn-ld-primary{background:#0F385F!important;color:#fff!important;border:none!important;padding:.85rem 1.6rem!important;
+  border-radius:999px!important;text-transform:uppercase!important;font-weight:700!important;letter-spacing:.04em!important}
+.ld-home .btn.btn-ld-primary:hover{background:#051B36!important;color:#fff!important}
+.ld-home .btn.btn-ld-outline{background:transparent!important;color:#fff!important;border:2px solid rgba(255,255,255,.65)!important;
+  padding:.75rem 1.35rem!important;border-radius:999px!important;text-transform:uppercase!important;font-weight:700!important;letter-spacing:.04em!important}
+.ld-home .btn.btn-ld-outline:hover{background:#fff!important;color:#0F385F!important;border-color:#fff!important}
+.ld-home .btn.btn-ld-white{background:#fff!important;color:#0F385F!important;border:none!important;padding:.85rem 1.75rem!important;
+  border-radius:999px!important;text-transform:uppercase!important;font-weight:700!important;letter-spacing:.04em!important}
+.ld-home .btn.btn-ld-white:hover{background:#051B36!important;color:#fff!important}
+.ld-home .ld-btn{padding:14px 28px!important;border-radius:10px!important;font-weight:700!important;text-decoration:none!important;
+  display:inline-block!important;text-align:center}
+.ld-home .ld-btn-white{background:#fff!important;color:#0F385F!important}
+.ld-home .ld-btn-outline-light{background:transparent!important;color:#fff!important;border:2px solid rgba(255,255,255,.58)!important;
+  border-radius:50px!important}
+.ld-home .ld-about{padding:80px 0;background:#f7f8fa}
+.ld-home .ld-about-inner{display:flex;align-items:center;gap:60px;max-width:1200px;margin:0 auto;padding:0 24px;flex-wrap:wrap}
+@media(max-width:1024px){.ld-home .ld-about-inner{flex-direction:column}}
+.ld-home .ld-about-content{flex:1;min-width:280px}
+.ld-home .ld-about-content h2{font-family:'Barlow Condensed',sans-serif;font-size:2.35rem!important;font-weight:700!important;
+  text-transform:uppercase;color:#051B36!important;margin-bottom:16px!important}
+.ld-home .ld-section-label{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:#5B9BD5!important;margin-bottom:8px;display:inline-block}
+.ld-home .ld-about-content p{color:#555;margin-bottom:14px!important;font-size:.95rem;line-height:1.65}
+.ld-home .ld-about-image img{width:100%;border-radius:12px;display:block}
+.ld-home .ld-process{padding:100px 0;background:#fff}
+.ld-home .ld-section-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2rem,5vw,3.05rem)!important;font-weight:700!important;
+  text-transform:uppercase;text-align:center;margin-bottom:8px;color:#051B36!important}
+.ld-home .ld-section-sub{text-align:center;color:#5a6677;margin-bottom:40px;margin-left:auto;margin-right:auto;max-width:520px;font-size:1rem}
+.ld-home .ld-process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;max-width:1060px;margin:0 auto;padding:0 24px}
+@media(max-width:1024px){.ld-home .ld-process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:576px){.ld-home .ld-process-grid{grid-template-columns:1fr}}
+.ld-home .ld-process-step{text-align:center}
+.ld-home .ld-process-img-wrap{position:relative;width:200px;height:200px;margin:0 auto 20px;border-radius:18px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.08)}
+.ld-home .ld-process-img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.ld-home .ld-process-num{position:absolute;bottom:10px;left:10px;font-family:'Barlow Condensed',sans-serif;font-weight:800;color:#fff;
+  font-size:1.75rem;text-shadow:0 2px 8px rgba(0,0,0,.55)}
+.ld-home .ld-process-step h3{font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;color:#051B36!important}
+.ld-home .ld-process-step p{font-size:.88rem;color:#888;max-width:220px;margin:0 auto;line-height:1.55}
+.ld-home .ld-why-us{padding:72px 0;background:linear-gradient(135deg,#0F385F 0%,#051B36 100%);color:#fff}
+.ld-home .ld-why-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:32px;text-align:center}
+.ld-home .ld-why-stat strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,4vw,3.2rem);font-weight:800;line-height:1;color:#fff}
+.ld-home .ld-why-us span{font-size:.85rem;opacity:.9;text-transform:uppercase;letter-spacing:.06em;display:block;margin-top:6px;line-height:1.35;color:#fff!important}
+.ld-home .lightbox.ld-lightbox{position:fixed;inset:0;z-index:100050;display:none;align-items:center;justify-content:center;
+  background:rgba(5,27,54,.92)}
+.ld-home .lightbox.ld-lightbox.open{display:flex!important}
+.ld-home #lightboxClose{position:absolute;top:16px;right:20px;width:44px;height:44px;border:none;border-radius:50%;
+  background:rgba(255,255,255,.12);color:#fff;font-size:1.65rem;line-height:1;cursor:pointer}
+.ld-home #lightboxClose:hover{background:rgba(255,255,255,.22);}
+.ld-home .lightbox-nav.lightbox-prev{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:46px;height:46px;
+  border-radius:50%;border:none;background:rgba(255,255,255,.15);color:#fff;font-size:1.35rem;cursor:pointer}
+.ld-home .lightbox-nav.lightbox-next{position:absolute;right:12px;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;
+  border:none;background:rgba(255,255,255,.15);color:#fff;font-size:1.35rem;cursor:pointer}
+.ld-home .lightbox-figure{margin:0;max-width:min(94vw,1100px)}
+.ld-home #lightboxImg{max-width:100%;max-height:82vh;border-radius:6px;transition:opacity .12s ease}
+@keyframes ld-gallery-filterFadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+</style>
+
+                <!-- Mismo patrón que homepage.xml (.ld-hero + vídeo/poster + overlay) para que Odoo SaaS cargue una sola hoja visual -->
+                <!-- Hero alineado a lifedeportes.com: foto + overlay azul + trama sutil; filtros en franja gris bajo el hero -->
+                <section class="ld-hero oe_structure ld-gallery-page-hero">
+                    <div class="ld-gallery-hero-photo" role="presentation" style="background-image: url('https://lifedeportes.com/img/hero-futbol.webp');"/>
+                    <div class="ld-hero-overlay"/>
+                    <div class="ld-gallery-hero-pattern" aria-hidden="true"/>
+                    <div class="container ld-hero-inner">
+                        <div class="ld-hero-content">
+                            <span class="ld-hero-badge">Fabricantes de uniformes deportivos</span>
+                            <h1 class="ld-hero-title">Diseños de Uniformes de Fútbol, Voleibol y Baloncesto Personalizados</h1>
+                            <p class="ld-hero-sub">En Life Deportes diseñamos y fabricamos uniformes deportivos personalizados con sublimación digital de alta calidad. Esta galería muestra algunos de los miles de diseños que hemos creado para equipos de fútbol, voleibol, baloncesto y sudaderas en toda Colombia. Cada diseño es 100% único y se confecciona con tela poliéster dry-fit que garantiza durabilidad, transpirabilidad y colores vivos que no se desvanecen con el lavado.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="ld-gallery-filter-strip oe_structure">
+                    <div class="container">
+                        <div class="ld-gallery-filter-shell">
+  <div class="gallery-filters ld-gallery-filters" role="tablist">
+    <button type="button" class="filter-btn active" data-filter="all" aria-selected="true">Todo</button>
+    <button type="button" class="filter-btn" data-filter="futbol" aria-selected="false">Fútbol</button>
+    <button type="button" class="filter-btn" data-filter="baloncesto" aria-selected="false">Baloncesto</button>
+    <button type="button" class="filter-btn" data-filter="voleibol" aria-selected="false">Voleibol</button>
+    <button type="button" class="filter-btn" data-filter="sudaderas" aria-selected="false">Sudaderas</button>
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function(){
+  var root=document.querySelector('.ld-gallery-page.ld-home');
+  if(!root)return;
+  function filt(cat){root.querySelectorAll('.ld-gallery-wall').forEach(function(w){
+   var wc=w.getAttribute('data-wall-cat')||w.dataset.wallCat;var ok=(cat==='all'||wc===cat);
+   w.style.display=ok?'':'none';w.style.animation=ok?'ld-gallery-filterFadeIn 0.38s ease both':'';
+  });root.querySelectorAll('.gallery-section-title').forEach(function(s){var wc=s.dataset.cat;
+   var ok=(cat==='all'||wc===cat);s.style.display=ok?'':'none';});}
+  var fb=root.querySelectorAll('.filter-btn'), bar=root.querySelector('.gallery-filters');
+  fb.forEach(function(b){b.addEventListener('click',function(){fb.forEach(function(x){x.classList.remove('active');});
+   b.classList.add('active');if(bar){var ox=b.offsetLeft-bar.offsetLeft-bar.clientWidth/2+b.offsetWidth/2;
+   bar.scrollTo({left:ox,behavior:'smooth'});}filt(b.getAttribute('data-filter')||'all');});});
+  var h=(location.hash||'').replace('#','');
+  if(['futbol','voleibol','baloncesto','sudaderas'].indexOf(h)&gt;=0){
+   var tb=root.querySelector('.filter-btn[data-filter="'+h+'"]');if(tb)tb.click();}
+  var lb=root.querySelector('#lightbox'),img=root.querySelector('#lightboxImg'),x=root.querySelector('#lightboxClose'),
+   pr=root.querySelector('#lightboxPrev'),nx=root.querySelector('#lightboxNext');
+  if(!lb||!img||!x)return;
+  function vis(im){var w=im.closest('.ld-gallery-wall');if(!w)return true;return w.style.display!=='none';}
+  function list(){return[].filter.call(root.querySelectorAll('.ld-gallery-wall .gallery-item img'),vis);}
+  var idx=0;
+  function open(im){var a=list();idx=Math.max(0,a.indexOf(im));img.src=im.dataset.fullSrc||im.src;img.alt=im.alt||'';lb.classList.add('open');
+   document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';window.setTimeout(function(){img.src='';},280);}
+  function hop(d){var a=list();if(!a.length)return;idx=(idx+d+a.length)%a.length;img.style.opacity='0';window.setTimeout(function(){
+   var target=a[idx];img.src=target.dataset.fullSrc||target.src;img.alt=a[idx].alt||'';img.style.opacity='1';},115);}
+  img.style.transition='opacity 0.12s ease';
+  root.querySelectorAll('.gallery-item').forEach(function(el){
+   el.style.cursor='zoom-in';el.addEventListener('click',function(){var ig=el.querySelector('img');if(ig&amp;&amp;vis(ig))open(ig);});});
+  x.addEventListener('click',close);
+  if(pr)pr.addEventListener('click',function(e){e.stopPropagation();hop(-1);});
+  if(nx)nx.addEventListener('click',function(e){e.stopPropagation();hop(1);});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();
+   if(e.key==='ArrowLeft')hop(-1);if(e.key==='ArrowRight')hop(1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+});
+</script>
+<div class="ld-lightbox lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Ampliación de imagen">
+  <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Cerrar">×</button>
+  <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">‹</button>
+  <div class="lightbox-figure">
+    <img src="" alt="" id="lightboxImg"/>
+  </div>
+  <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">›</button>
+</div>
+                    </div>
+                </section>
+                <section class="ld-gallery oe_structure">
+                    <div class="container">
+
+                        <div id="futbol" class="gallery-section-title s_title oe_structure" data-cat="futbol">
+            <h2>Galería de Uniformes de Fútbol — Trabajos Reales</h2>
+            <p>Equipos de fútbol en Colombia con uniformes personalizados fabricados por Life Deportes. Fotos tomadas de publicaciones oficiales en Facebook.</p>
+        </div>
+        <section class="s_image_gallery ld-gallery-wall o_spc-small pt24 pb56" data-wall-cat="futbol" style="overflow: hidden;">
+            <div class="container px-0 px-lg-1">
+                <div class="row s_nb_column_fixed g-3 g-lg-4 mx-0 mx-lg-n1">
+        <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/28994?width=400" data-full-src="/web/image/28994" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1105549571594244" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/28996?width=400" data-full-src="/web/image/28996" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1036577548491447" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/28997?width=400" data-full-src="/web/image/28997" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1077999401015928" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/28998?width=400" data-full-src="/web/image/28998" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1196147692534431" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/28999?width=400" data-full-src="/web/image/28999" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1218381036977763" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29000?width=400" data-full-src="/web/image/29000" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1045773040905231" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29001?width=400" data-full-src="/web/image/29001" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1039542524861616" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29002?width=400" data-full-src="/web/image/29002" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1141895694626298" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29003?width=400" data-full-src="/web/image/29003" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1368728425276356" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29004?width=400" data-full-src="/web/image/29004" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1298852452263954" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29005?width=400" data-full-src="/web/image/29005" alt="Equipo de fútbol con uniformes personalizados Life Deportes — publicación Facebook 1130801062402428" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+                        <div id="voleibol" class="gallery-section-title s_title oe_structure" data-cat="voleibol">
+            <h2>Galería de Uniformes de Voleibol — Trabajos Reales</h2>
+            <p>Equipos de voleibol femenino y masculino con diseños exclusivos en sublimación digital.</p>
+        </div>
+        <section class="s_image_gallery ld-gallery-wall o_spc-small pt24 pb56" data-wall-cat="voleibol" style="overflow: hidden;">
+            <div class="container px-0 px-lg-1">
+                <div class="row s_nb_column_fixed g-3 g-lg-4 mx-0 mx-lg-n1">
+        <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29006?width=400" data-full-src="/web/image/29006" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1346056374210228" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29007?width=400" data-full-src="/web/image/29007" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1049658213850047" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29008?width=400" data-full-src="/web/image/29008" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1346056367543562" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29009?width=400" data-full-src="/web/image/29009" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1374476374701561" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29010?width=400" data-full-src="/web/image/29010" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1346056394210226" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29011?width=400" data-full-src="/web/image/29011" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1374476384701560" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29012?width=400" data-full-src="/web/image/29012" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1374476364701562" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29013?width=400" data-full-src="/web/image/29013" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1346056380876894" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29014?width=400" data-full-src="/web/image/29014" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1346056387543560" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29015?width=400" data-full-src="/web/image/29015" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1145671494248718" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29016?width=400" data-full-src="/web/image/29016" alt="Equipo de voleibol con uniformes personalizados Life Deportes — publicación Facebook 1145671477582053" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+                        <div id="baloncesto" class="gallery-section-title s_title oe_structure" data-cat="baloncesto">
+            <h2>Galería de Uniformes de Baloncesto — Trabajos Reales</h2>
+            <p>Uniformes de baloncesto personalizados en cancha y torneos locales.</p>
+        </div>
+        <section class="s_image_gallery ld-gallery-wall o_spc-small pt24 pb56" data-wall-cat="baloncesto" style="overflow: hidden;">
+            <div class="container px-0 px-lg-1">
+                <div class="row s_nb_column_fixed g-3 g-lg-4 mx-0 mx-lg-n1">
+        <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29017?width=400" data-full-src="/web/image/29017" alt="Equipo de baloncesto con uniformes personalizados Life Deportes — publicación Facebook 1105549584927576" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29018?width=400" data-full-src="/web/image/29018" alt="Equipo de baloncesto con uniformes personalizados Life Deportes — publicación Facebook 1036577561824779" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29021?width=400" data-full-src="/web/image/29021" alt="Equipo de baloncesto con uniformes personalizados Life Deportes — publicación Facebook 1038805608268641" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+                        <div id="sudaderas" class="gallery-section-title s_title oe_structure" data-cat="sudaderas">
+            <h2>Galería de Sudaderas y Prendas — Trabajos Reales</h2>
+            <p>Sudaderas, chaquetas y conjuntos deportivos personalizados para equipos y clubes.</p>
+        </div>
+        <section class="s_image_gallery ld-gallery-wall o_spc-small pt24 pb56" data-wall-cat="sudaderas" style="overflow: hidden;">
+            <div class="container px-0 px-lg-1">
+                <div class="row s_nb_column_fixed g-3 g-lg-4 mx-0 mx-lg-n1">
+        <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29022?width=400" data-full-src="/web/image/29022" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1045773034238565" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29023?width=400" data-full-src="/web/image/29023" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1191910396291494" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29024?width=400" data-full-src="/web/image/29024" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1051232430359292" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29025?width=400" data-full-src="/web/image/29025" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1039542504861618" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29026?width=400" data-full-src="/web/image/29026" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1191910389624828" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29027?width=400" data-full-src="/web/image/29027" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1051231460359389" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29028?width=400" data-full-src="/web/image/29028" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1105549578260910" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29029?width=400" data-full-src="/web/image/29029" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1050619607087241" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29030?width=400" data-full-src="/web/image/29030" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1374476378034894" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29031?width=400" data-full-src="/web/image/29031" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1115366830612518" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29032?width=400" data-full-src="/web/image/29032" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1199473918868475" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+    <div class="ld-gallery-thumb">
+        <img class="img img-fluid rounded w-100" src="/web/image/29033?width=400" data-full-src="/web/image/29033" alt="Sudaderas y ropa deportiva personalizada Life Deportes — publicación Facebook 1199473928868474" loading="lazy" data-name="Image"/>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+                    </div>
+                </section>
+                <section class="ld-banner-cta ld-gallery-cta-banner ld-gallery-main-banner">
+                    <div class="ld-banner-overlay">
+                        <div class="container ld-banner-inner ld-gallery-cta-inner">
+                            <h2 class="ld-gallery-cta-title">¿Te Gustó lo que Viste? Cotiza tu Diseño</h2>
+                            <p class="ld-gallery-cta-phone">
+                                <a href="tel:+573103362484" class="ld-gallery-cta-tel"><i class="fa fa-phone"/> Llámenos (310) 336 2484</a>
+                            </p>
+                            <div class="ld-gallery-cta-buttons">
+                                <a href="/#contacto" class="ld-btn ld-btn-white">Enviar solicitud</a>
+                                <a href="https://wa.me/573103362484?text=Hola%2C%20quiero%20cotizar%20uniformes%20de%20" class="ld-btn ld-btn-outline-light" target="_blank" rel="noopener">WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+</t>
