@@ -64,6 +64,7 @@ En Life Deportes, "subir un producto" o "ingresar un pedido" significa tomar la 
 4. **Mínimo Comercial**: Mínimo 6 unidades del mismo producto/diseño.
 5. **Regla de Subida Directa (Sin Fricción Staff)**: Si la información ingresada es válida y no hay un bloqueador duro (como una variante inexistente o cantidad < 6), el agente debe **crear el borrador en Odoo de inmediato sin preguntar "¿Confirmas la subida?"**.
 6. **No Duplicar Datos Sensibles en Notas**: La nota del presupuesto (`sale.order.note`) y la descripción de la tarea (`project.task.description`) **NO** deben contener el nombre del cliente, teléfono ni precios. Esos datos ya residen en los campos nativos de Odoo.
+7. **Subida de Nómina/Asistencia estricta (attlog.dat)**: Al subir asistencias a Odoo, nunca inventar información de turnos. Solo registrar los días que salgan en el archivo. No llenar el mes de forma artificial. Aplicar heurística de salida a las 17:00 o entrada a las 08:00 únicamente cuando el empleado olvidó marcar la entrada o la salida, impidiendo que los turnos queden con más de 12 horas consecutivas. Inyectar siempre la duración real calculada (`duration`) y fecha en cada registro de `hr.work.entry`. Mapear los empleados únicamente mediante el `barcode` (Badge ID / PIN del reloj) para evitar confusiones con IDs internos.
 
 ---
 
