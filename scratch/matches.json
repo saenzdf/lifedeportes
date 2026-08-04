@@ -1,0 +1,978 @@
+[
+  {
+    "id": "fdda1463-40c9-40b1-a069-feaae8f70f6e",
+    "status": "handoff",
+    "user": "Sergio",
+    "wa_id": "3000000011",
+    "extraVars": {},
+    "last_input": "Como se llama la tienda de repuestos de motos"
+  },
+  {
+    "id": "42789382-e32e-4914-b05c-c9d9ecfac4f7",
+    "status": "waiting",
+    "user": "Jr",
+    "wa_id": "573107400512",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Así está perfecto"
+  },
+  {
+    "id": "39836bae-0a3a-4830-a750-2146b1be19c3",
+    "status": "waiting",
+    "user": "Wendy Perez",
+    "wa_id": "3000000076",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Audio attached (audio_2314bc37af19.ogg) [Size: 6.5 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Ijc5YzA1ZTY4LTg5M2EtNDAwYi1hOTc0LTczM2Q1MjdmNDg0OCIsInB1ciI6ImJsb2JfaWQifX0=--404de5c592fad1a69bdaf1a7efa192f87540ae2d/audio_2314bc37af19.ogg \n\nTranscript: [outro jingle]"
+  },
+  {
+    "id": "34f17097-b8b3-4e92-960a-6e1457f8bf01",
+    "status": "waiting",
+    "user": "Okimara Gutiérrez ☺️",
+    "wa_id": "573153528766",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Y como son las formas de pago ?"
+  },
+  {
+    "id": "76cc2fab-3e19-4d6d-9484-3ed2b4cf018d",
+    "status": "waiting",
+    "user": "NF✨",
+    "wa_id": "573105874657",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "24"
+  },
+  {
+    "id": "40f13e2c-a798-4363-b42f-e061affa3c2b",
+    "status": "waiting",
+    "user": "Jenny Rincon",
+    "wa_id": "34644127250",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Image attached (image_5b57be297e97.jpeg) [Size: 494.5 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjcwYTkzNjM5LTUyMmYtNGQ1Yy1iN2YxLWRkZTNiM2M1MjVlZiIsInB1ciI6ImJsb2JfaWQifX0=--eda4c079d891a96c94d8b0cd367cdc0071f90f8c/image_5b57be297e97.jpeg"
+  },
+  {
+    "id": "c5be1631-6378-4bf5-ac61-cf9c40fcf3d0",
+    "status": "waiting",
+    "user": "out",
+    "wa_id": "573216164523",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Gracias"
+  },
+  {
+    "id": "c7d35e35-c2f1-41aa-b1e5-365ba0563337",
+    "status": "handoff",
+    "user": "Damian Romero",
+    "wa_id": "573012390344",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Por favor regálame los diseños",
+    "agent_response": "Para esa cantidad, el uniforme completo en tela dry fit le sale a $50.000 cada uno.\n\nEste precio ya le incluye la camiseta, la pantaloneta, las medias y todo el diseño personalizado con sus logos y números.\n\n¿Desea que le envíe algunos diseños de referencia para que los vea?"
+  },
+  {
+    "id": "bab4a415-9042-419d-966e-8f688ea81a46",
+    "status": "waiting",
+    "user": "✨",
+    "wa_id": "573117540359",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Varían el mismo precio"
+  },
+  {
+    "id": "8c096c01-e227-4eae-ba52-b2fd0f860a6a",
+    "status": "waiting",
+    "user": "LIZAR",
+    "wa_id": "573046524679",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Gracias"
+  },
+  {
+    "id": "a59e0bec-02a2-47a3-9310-7d37e2f3f64e",
+    "status": "waiting",
+    "user": "😊",
+    "wa_id": "573217431532",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Nada"
+  },
+  {
+    "id": "204094a9-cdab-4cbe-8e64-aa4be4e18113",
+    "status": "waiting",
+    "user": "Yessica Munera",
+    "wa_id": "573146058227",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "te agradezco!"
+  },
+  {
+    "id": "555ce23f-f4eb-4b80-8153-6ad6b4935132",
+    "status": "handoff",
+    "user": "felipe_bernal",
+    "wa_id": "573027459139",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Gracias",
+    "agent_response": "Claro que sí, es lo mejor para que todos queden conformes con la calidad.\n\nLos esperamos mañana en el horario acordado para mostrarles los materiales y resolver cualquier inquietud.\n\n¿Hay algo más en lo que pueda ayudarle por ahora?"
+  },
+  {
+    "id": "cf897afd-77ba-497a-b30e-60c65b4b6d9c",
+    "status": "waiting",
+    "user": "AGU🍒",
+    "wa_id": "573057453754",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Asi mismo, me puedes indicar el gramaje del hoodie?"
+  },
+  {
+    "id": "07c34aba-0a36-4c6f-a34c-84585640e584",
+    "status": "waiting",
+    "user": "Lore 🌺",
+    "wa_id": "573212928855",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Ya le confirmo."
+  },
+  {
+    "id": "8b26f144-6dd4-4903-8195-5dc27feabc77",
+    "status": "waiting",
+    "user": "Leidy",
+    "wa_id": "573182466153",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Baloncesto niño de 11 años"
+  },
+  {
+    "id": "256bff35-56e5-4998-8422-99a194e18066",
+    "status": "handoff",
+    "user": "Rosalinda🌹",
+    "wa_id": "573165022093",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Mil gracias",
+    "agent_response": "Lo siento, pero no podemos ayudarle en esta ocasión. Fabricamos únicamente sobre pedido a partir de un mínimo de 6 unidades por referencia."
+  },
+  {
+    "id": "c0b44fae-b2ca-464c-961e-08d554b260be",
+    "status": "waiting",
+    "user": "Nando Javii",
+    "wa_id": "573024074399",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Image attached (image_9aed15dcf930.jpeg) [Size: 102.5 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjM0MDI3ZGM0LWMwMTEtNDkwNS1iYmM2LTlmMGI3M2E5Y2ZmZiIsInB1ciI6ImJsb2JfaWQifX0=--e3d8e2c3dd09f5d90de0d5766136829b6c1efa4f/image_9aed15dcf930.jpeg\nImage attached (image_3bcca342d3c3.jpeg) [Size: 57.6 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Ijc0NmE0YTFhLWQ2YWItNGIwZi1hNDk2LTk4M2Y3NGRmYzBlYiIsInB1ciI6ImJsb2JfaWQifX0=--29ccfd6d45aa5dddaf211e605d405ed49aa57e61/image_3bcca342d3c3.jpeg\n\"Quiero fabricar una camiseta estilo retro de Colombia igual a la de las imágenes, talla 4XL. Es para una sola unidad. ¿Pueden hacerla? ¿Cuál sería el precio y el tiempo de entrega a Cartagena?\""
+  },
+  {
+    "id": "684756bf-796f-4142-a2fe-9f01175bcd19",
+    "status": "waiting",
+    "user": "Kylian Andrés 😍",
+    "wa_id": "573226253020",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Ok gracias"
+  },
+  {
+    "id": "5dc78f3b-5392-40e4-a329-9c16a75024bd",
+    "status": "handoff",
+    "user": "Christian",
+    "wa_id": "573112790472",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "No por ahora",
+    "agent_response": "Listo, anotado. Todas llevarán el nombre JACOB en la parte baja de la espalda.\n\nPerfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?"
+  },
+  {
+    "id": "42d8a707-93fb-4d24-b92e-4c554f4bcd85",
+    "status": "waiting",
+    "user": "ANDREA",
+    "wa_id": "573134562273",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes de"
+  },
+  {
+    "id": "70dc0023-fdb1-4b23-96d7-69ebf8b55a4b",
+    "status": "handoff",
+    "user": "Harol Porras",
+    "wa_id": "573004993272",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Deseo hablar con una persona un ser humano que me entienda"
+  },
+  {
+    "id": "0f04e76a-b910-437c-9e45-98eed73d867b",
+    "status": "waiting",
+    "user": "😎😎",
+    "wa_id": "3000000010",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Audio attached (audio_1d2b28e5b0fa.ogg) [Size: 2.8 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImVkMjRiMTFmLTAxOWYtNGI0NC1iZmRiLWYyOWRiNzkyYjE5MSIsInB1ciI6ImJsb2JfaWQifX0=--2668be08734a29177c5a2286716a703cd081ad37/audio_1d2b28e5b0fa.ogg \n\nTranscript: [phone ringing]\nReacted with 😢 to message wamid.HBgMNTczMDQyNjY4NzAyFQIAEhggQUM5MjU0NTlCMTIyMzMyQjU4M0EwMUExQThBQUJGNjgA"
+  },
+  {
+    "id": "6043106e-6d8f-4950-8776-2a0c1429e922",
+    "status": "waiting",
+    "user": "Karen Mejia",
+    "wa_id": "573127103924",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Audio attached (audio_55cfdf71e3bb.ogg) [Size: 4.3 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImUyY2Y4N2Q2LTMzOWYtNGI4MS04ZWU2LWM4MWZhNWY5MDk4YSIsInB1ciI6ImJsb2JfaWQifX0=--3d2380c98554a993dfeff4ca955e212e5b1adc64/audio_55cfdf71e3bb.ogg \n\nTranscript: [outro jingle]"
+  },
+  {
+    "id": "52074065-d94b-4044-9b1a-4480e3dbb160",
+    "status": "waiting",
+    "user": "Mi Madre Te Amo",
+    "wa_id": "573144036395",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes de c"
+  },
+  {
+    "id": "b499e0d9-4e0f-4681-85da-7ca15044ff0f",
+    "status": "waiting",
+    "user": "ApplianceService",
+    "wa_id": "573144458303",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Negro"
+  },
+  {
+    "id": "4fbd4a99-3f92-47b2-8d72-580b9c59fb99",
+    "status": "waiting",
+    "user": "Sebastian Lara",
+    "wa_id": "573104284842",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "En cuanto nos saldría la docena en dumonti"
+  },
+  {
+    "id": "a3136fa0-9f37-48d7-be88-5bc65c5a8ffa",
+    "status": "handoff",
+    "user": "Juanes Fernandez ⚜️",
+    "wa_id": "573114726488",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "no señor",
+    "agent_response": "Perfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?"
+  },
+  {
+    "id": "2df25aef-ac72-4b92-a1fd-fd9e6c327ec0",
+    "status": "waiting",
+    "user": "John Arturo Castañeda",
+    "wa_id": "573214751196",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes de baloncesto"
+  },
+  {
+    "id": "3bef3788-7b9a-45d6-92aa-cc1566bd084a",
+    "status": "waiting",
+    "user": "😊",
+    "wa_id": "573217431532",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "No me enviaste nada"
+  },
+  {
+    "id": "331d5e13-ce1c-4355-9507-17d343a6fd29",
+    "status": "waiting",
+    "user": "🥶Düvän Ältåmâr 🥵",
+    "wa_id": "573246754718",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Image attached (image_acab46329eff.jpeg) [Size: 215.8 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImRhZWMyZDgwLTZiNDQtNGVkZC1iOGE5LTBlNzgwYTI2NTM0MyIsInB1ciI6ImJsb2JfaWQifX0=--3a28c6f7882738fa4544283f98280bc3012077f9/image_acab46329eff.jpeg"
+  },
+  {
+    "id": "8f2f98ef-be6f-42a5-a1a7-9135510cbc46",
+    "status": "waiting",
+    "user": "Daniel",
+    "wa_id": "573152586035",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Envíame dirección"
+  },
+  {
+    "id": "d2fdf23e-58db-404e-9ee6-c2024ee594e4",
+    "status": "handoff",
+    "user": "Reydea Holding",
+    "wa_id": "573156377641",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "A este mismo"
+  },
+  {
+    "id": "b5bc8958-1823-4b7f-80bf-a460a8dd1c8c",
+    "status": "waiting",
+    "user": "July",
+    "wa_id": "573123178578",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Ok muchas gracias"
+  },
+  {
+    "id": "eaa85f52-d70e-4a10-b9e8-b9b8a2c5014b",
+    "status": "waiting",
+    "user": "Barry",
+    "wa_id": "573023118997",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Por unidad"
+  },
+  {
+    "id": "ddac0d94-b05c-4aa1-9dd9-a76c7b14dfc9",
+    "status": "waiting",
+    "user": "Wilson Bejarano Morales",
+    "wa_id": "573104008582",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Audio attached (audio_675cf1237a08.ogg) [Size: 8.8 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjkwOTI0MWVjLTA2NDktNDI4MS05MGU3LWY4YWEwMWIyYWQ5NSIsInB1ciI6ImJsb2JfaWQifX0=--b42518faf4d17377fe5e69714bf996042320656c/audio_675cf1237a08.ogg \n\nTranscript: Regaleme una foto, regaleme una foto, ¿me hace un favor?"
+  },
+  {
+    "id": "67c4502a-5ae4-48fb-987d-f55b4b0fdae4",
+    "status": "waiting",
+    "user": "Laura Peña✨",
+    "wa_id": "573147349747",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes de voleibol\nEn que ciudad se encuentran?"
+  },
+  {
+    "id": "839d7d8e-2d76-400c-bd0f-cee669f5a9c4",
+    "status": "waiting",
+    "user": "Danthonni",
+    "wa_id": "573148435815",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Si las necesitamos para el 17 seria posible ?"
+  },
+  {
+    "id": "30f7969d-7573-4f6a-b56c-edbd7f9842ad",
+    "status": "waiting",
+    "user": "☀️Lina Trujillo🌻",
+    "wa_id": "573005063689",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Si por favor"
+  },
+  {
+    "id": "28d22a5c-6bb2-47dc-beb1-4f4bfdd0b3c2",
+    "status": "handoff",
+    "user": "Félix L. 😊",
+    "wa_id": "573186538047",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Estaré al pendiente.",
+    "agent_response": "A Bucaramanga enviamos sin problema por la transportadora de su preferencia. El envío suele tardar de 1 a 2 días hábiles después del despacho.\n\n¿Desea que procedamos con el pedido en alguna de las dos telas que hablamos?"
+  },
+  {
+    "id": "ce46888a-da65-4adf-8394-a951abad69a2",
+    "status": "waiting",
+    "user": "Michael Steven Henao",
+    "wa_id": "573132423531",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Buenas tardes ustedes tienen sede en Cali"
+  },
+  {
+    "id": "43e79c10-c745-423a-acd7-be6e8ec5c7fa",
+    "status": "handoff",
+    "user": "Vanessa Aguirre",
+    "wa_id": "573008994888",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Quisiera hablar con un asesor"
+  },
+  {
+    "id": "9f65963e-6139-4938-a763-5d30e67d775d",
+    "status": "waiting",
+    "user": "AD",
+    "wa_id": "573138886915",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "15 camisetas"
+  },
+  {
+    "id": "24217a8f-82ef-44c1-aefe-5e4bae47b99a",
+    "status": "waiting",
+    "user": "😎😎",
+    "wa_id": "573175027628",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Barranquilla"
+  },
+  {
+    "id": "2f0f2e57-4e2a-4f70-a228-33cb3e6c438c",
+    "status": "waiting",
+    "user": "💖Yeimy johanna Fonseca💖",
+    "wa_id": "573158831524",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Muchas gracias"
+  },
+  {
+    "id": "c206f44b-6d34-4055-bedf-b9e30c2c3ea6",
+    "status": "handoff",
+    "user": "Luis Alonso",
+    "wa_id": "573108153953",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Audio attached (audio_5d81f5b6d975.ogg) [Size: 29.8 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImEwNDAyODU3LWNmN2MtNDUxYy1iYmE4LTE4MDJiNWFkYTA4OCIsInB1ciI6ImJsb2JfaWQifX0=--35ba4441388bdf37c2333cc872f438f4034c13a5/audio_5d81f5b6d975.ogg \n\nTranscript: Ah, bueno, bueno, perfecto, perfecto. Pero ya tengo el dato para cualquier cosa ya sé. Discúlpame, una última inquietud. ¿Podrías referirme algún colega tuyo que venda al por menor, que no sea fabricante ni distribuidor? Qué pena",
+    "agent_response": "Entiendo, Luis Alonso. En ese caso no podríamos ayudarle, ya que al ser fabricantes trabajamos sobre pedidos de mínimo 6 unidades por diseño.\n\nLamento no poder cumplir con su requerimiento en esta ocasión."
+  },
+  {
+    "id": "5887f4ea-ce1a-410d-b991-0c6123d2462f",
+    "status": "waiting",
+    "user": "😍",
+    "wa_id": "573245936280",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "No , no tengo idea"
+  },
+  {
+    "id": "ae8eaae8-c8f8-4240-a027-64434f95bdc7",
+    "status": "handoff",
+    "user": "j14",
+    "wa_id": "573153993541",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Gracias",
+    "agent_response": "Entiendo, pero en este momento solo trabajamos sobre pedido a partir de 6 unidades, ya que somos fabricantes y personalizamos cada prenda desde cero. \n\nLamento no poder ayudarle con una sola pieza en esta ocasión."
+  },
+  {
+    "id": "680db00a-dbdb-4fd2-8017-1db7e5676f24",
+    "status": "waiting",
+    "user": "Christian",
+    "wa_id": "573112790472",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Ya busco y te envío"
+  },
+  {
+    "id": "56803b19-c18e-4526-8f0a-cad8666c176c",
+    "status": "waiting",
+    "user": "Melissa 🌸",
+    "wa_id": "573112568013",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Qué precio tienen en tela de y fit y en tela dumonti"
+  },
+  {
+    "id": "0507a0e6-02a9-42d6-aa9e-337ba81e3a1a",
+    "status": "waiting",
+    "user": "Diego Alexander",
+    "wa_id": "573184025284",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes de"
+  },
+  {
+    "id": "4aec2388-cf20-4fbf-9b78-5da6501bc615",
+    "status": "waiting",
+    "user": ".",
+    "wa_id": "573148751552",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Si. Les pregunto. 50 mil es el precio máximo que podrían bajar?"
+  },
+  {
+    "id": "e66802a4-20cb-4fd0-b9cb-7961d5f8542b",
+    "status": "handoff",
+    "user": "Sol-@Tuldeazucar",
+    "wa_id": "573232281813",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Ok",
+    "agent_response": "Entendido, ya quedó registrado que esas mismas tallas y cantidades aplican tanto para las camisetas como para los conjuntos de sudadera.\n\nQuedamos atentos a su mensaje para continuar con el proceso. ¡Feliz tarde!"
+  },
+  {
+    "id": "89e9835e-ba4d-480f-9d3d-a3b8260a3283",
+    "status": "waiting",
+    "user": "Gladys",
+    "wa_id": "573204332866",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes de fútbol"
+  },
+  {
+    "id": "b5ddb1b5-3d79-4b53-8b02-2522ef1f7164",
+    "status": "waiting",
+    "user": "🦋💍💎",
+    "wa_id": "573122621482",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "3 docenas"
+  },
+  {
+    "id": "20fcedd8-21c6-4c7b-9257-4e3fb5a644a3",
+    "status": "handoff",
+    "user": "luis arias cortes",
+    "wa_id": "573162809691",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Ok voy a preguntar y vuelvo a contactar. Gracias",
+    "agent_response": "Lamentablemente no logramos cumplir con ese tiempo, ya que nuestro proceso de fabricación personalizada tarda 15 días hábiles.\n\n¿Habría alguna posibilidad de que los reciba en ese plazo o los necesita obligatoriamente para esta semana?"
+  },
+  {
+    "id": "203a535a-9942-497b-926e-303355ad6588",
+    "status": "waiting",
+    "user": "guerrayuli49",
+    "wa_id": "573103121480",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "En dónde están ubicados"
+  },
+  {
+    "id": "2953081f-5858-4036-98b8-c47166f80fcf",
+    "status": "handoff",
+    "user": "delago",
+    "wa_id": "573234280206",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Si"
+  },
+  {
+    "id": "e460fe4a-4d77-4a5d-aafa-6212c9db8112",
+    "status": "waiting",
+    "user": "Jenn Rodriguez",
+    "wa_id": "573105726538",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "México talla 6 para niño"
+  },
+  {
+    "id": "92b2c51a-56fc-4c78-844c-1ed7035edb3a",
+    "status": "waiting",
+    "user": "💛",
+    "wa_id": "573014079343",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "No"
+  },
+  {
+    "id": "d5ffa919-c827-4b93-a8fc-e365a9756064",
+    "status": "waiting",
+    "user": "Paola Ruiz",
+    "wa_id": "573175047027",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Y sólo el esqueleto que precio tiene?"
+  },
+  {
+    "id": "151ed610-8478-4b07-8832-193806f0828a",
+    "status": "waiting",
+    "user": "Yolanda Páez",
+    "wa_id": "573164314332",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "No he recibido la imagen"
+  },
+  {
+    "id": "1d2905ea-f6f9-4e2e-8d64-6d6d5416c975",
+    "status": "handoff",
+    "user": "GS🍕⚖️",
+    "wa_id": "573013702261",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Ninguna",
+    "agent_response": "Listo, las 7 camisetas en manga corta con cuello redondo y el diseño que nos envió tienen un valor total de $210.000.\n\nPerfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?"
+  },
+  {
+    "id": "c7dee4ef-f6ad-4696-ac5e-9fd78bc9c5a7",
+    "status": "waiting",
+    "user": "……",
+    "wa_id": "573145196320",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Y para el envío para Medellín como sería ?"
+  },
+  {
+    "id": "49b799ad-51b7-47c3-b658-3ffaf51050ce",
+    "status": "waiting",
+    "user": "573215919490",
+    "wa_id": "573215919490",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Una pregunta donde estan ubicados"
+  },
+  {
+    "id": "a9d8409d-4db5-42b1-8ea4-c6ed570715ce",
+    "status": "waiting",
+    "user": "Yerlis. Pao",
+    "wa_id": "573218719577",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Tiene así como esta"
+  },
+  {
+    "id": "5c3df821-835b-49f6-ab1d-3f625c58806b",
+    "status": "handoff",
+    "user": "Denny✨",
+    "wa_id": "573006388209",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Todo claro, gracias",
+    "agent_response": "Claro que sí, en ese enlace puede ver la calidad de nuestro trabajo y los diferentes estilos que hemos manejado.\n\nCualquier diseño que vea allí se puede adaptar a los colores y logos que usted necesite. ¿Desea que procedamos con la revisión de sus diseños o tiene alguna otra pregunta?"
+  },
+  {
+    "id": "d5d8922e-bc62-41af-9238-8baa1042719c",
+    "status": "handoff",
+    "user": "Guillermo Pisco",
+    "wa_id": "573158404963",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "No, espero poder comunicarme con diseño pronto",
+    "agent_response": "El tiempo de entrega es de 15 días hábiles, los cuales se cuentan a partir de que usted apruebe el diseño final con nuestro equipo de arte.\n\nPerfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?"
+  },
+  {
+    "id": "6f5b7503-44bd-4b3b-afb4-ab621dafdac9",
+    "status": "waiting",
+    "user": ".",
+    "wa_id": "573144244149",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "No me deja ingresar"
+  },
+  {
+    "id": "cdde8ca7-e5b6-4ed8-9bb7-cf985d984c73",
+    "status": "handoff",
+    "user": "Diana A. Tinoco ",
+    "wa_id": "573104771633",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Por ahora no",
+    "agent_response": "Perfecto, ya he pasado la información a nuestro equipo interno para que verifiquen la viabilidad de la fecha. Ellos se comunicarán con usted lo antes posible para confirmarle y darle los pasos a seguir.\n\n¿Le queda alguna otra duda por ahora?"
+  },
+  {
+    "id": "6b87280e-511f-451a-a8d9-eef31cf0f801",
+    "status": "waiting",
+    "user": "Distrimarcas",
+    "wa_id": "573112778233",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes de"
+  },
+  {
+    "id": "7855d09b-a80f-41d7-bd84-532947029965",
+    "status": "waiting",
+    "user": "*~Reyka~*",
+    "wa_id": "17876880118",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes de entrenamiento de baseball camisa full print y pantalón corto aletic"
+  },
+  {
+    "id": "bfef5cf5-bf57-4d9b-9231-61d36d1c8e5f",
+    "status": "handoff",
+    "user": "Michael Steven Henao",
+    "wa_id": "573132423531",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Muchas gracias",
+    "agent_response": "Me alegra mucho que le guste la propuesta. Tómese su tiempo para confirmar las tallas con sus amigos.\n\nPerfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?"
+  },
+  {
+    "id": "408dd90f-c23e-4e62-8c75-bc0517d187fe",
+    "status": "waiting",
+    "user": "Juanes Fernandez ⚜️",
+    "wa_id": "573114726488",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "de aquí al martes 2 de junio te haré el abono mientras recaudo la plata"
+  },
+  {
+    "id": "354d0802-98a1-4447-a140-b051acf84e75",
+    "status": "waiting",
+    "user": "Sebastián",
+    "wa_id": "573106500673",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes de"
+  },
+  {
+    "id": "8bf19000-bef1-41ac-a00e-850216840ab7",
+    "status": "waiting",
+    "user": "Valentina ✨",
+    "wa_id": "573222343417",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes de\nPatinaje"
+  },
+  {
+    "id": "4e7b5cb1-05a9-45a2-91d1-6bb2c62d6e20",
+    "status": "waiting",
+    "user": "yudisdanissesernahernande",
+    "wa_id": "573137549476",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar uniformes deportivos"
+  },
+  {
+    "id": "69bb254b-0bf5-4c03-9968-96dffe96f435",
+    "status": "waiting",
+    "user": "=÷£[ =§¢|",
+    "wa_id": "573503375553",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Estás son diseño de dama, a ver si es posible que me puedas mandar un diseño masculino"
+  },
+  {
+    "id": "f4090231-c1f5-4332-a7cf-3be25197ccd8",
+    "status": "waiting",
+    "user": "🖤",
+    "wa_id": "573134816156",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "10"
+  },
+  {
+    "id": "d9ddcba8-eae5-44a1-bdea-06ac06d7a51e",
+    "status": "waiting",
+    "user": "Edilma",
+    "wa_id": "573157603049",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Me puedes regalar la dirección."
+  },
+  {
+    "id": "7871d326-b0ed-419d-9206-871d2fe65085",
+    "status": "handoff",
+    "user": "TATIANA R.🤩",
+    "wa_id": "573143495961",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "cc 38142782"
+  },
+  {
+    "id": "f0eb79ba-3dd0-4a12-9f68-76d8efc026ef",
+    "status": "handoff",
+    "user": "Ovidio SDG",
+    "wa_id": "573184111438",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Okis gracias feliz noche",
+    "agent_response": "Mucho gusto, señor Ovidio. Para esa cantidad de 32 uniformes completos (camiseta, pantaloneta y medias) con sus números, el valor total sería de $1.600.000, ya que cada uno sale a $50.000.\n\nEl presupuesto que usted menciona de $864.000 no nos alcanzaría para la fabricación de los 32 uniformes completos.\n\n¿Para qué deporte los necesita?"
+  },
+  {
+    "id": "e6d8c7b8-cfae-43ba-b400-6ff414b6cd7e",
+    "status": "waiting",
+    "user": "Sebastian",
+    "wa_id": "573219321537",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Y para la parte del pago"
+  },
+  {
+    "id": "0ac2949d-4301-4379-98bd-9e3c7f478a23",
+    "status": "waiting",
+    "user": "Carolina Carrillo",
+    "wa_id": "573213127440",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Nombre y número personalizado"
+  },
+  {
+    "id": "9e37470d-5fca-4eab-93c8-4698943c4727",
+    "status": "waiting",
+    "user": "Meka",
+    "wa_id": "573134415422",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "A vainas"
+  },
+  {
+    "id": "5d6608c6-89f6-4e93-bc4c-81959be8263f",
+    "status": "handoff",
+    "user": "GS🍕⚖️",
+    "wa_id": "573013702261",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Si",
+    "agent_response": "Los 15 días hábiles son el tiempo estándar que manejamos para garantizar la calidad de la fabricación y el diseño. En caso de que el equipo logre terminarlas antes, se le informará de inmediato para coordinar la entrega.\n\n¿Desea que procedamos con estos detalles para que el equipo lo contacte?"
+  },
+  {
+    "id": "fd0d13fd-6e67-429a-9c1d-6d50ec8b617b",
+    "status": "waiting",
+    "user": "Suelen 🥰🥰",
+    "wa_id": "573165479258",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Así tal cual  queda"
+  },
+  {
+    "id": "91c4bb2b-e0aa-4f49-bcb5-e93ceed050ad",
+    "status": "waiting",
+    "user": "……",
+    "wa_id": "573145196320",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "De futbol\nHola buenas tardes"
+  },
+  {
+    "id": "725171c1-edd0-424c-8be4-be5fe697debe",
+    "status": "handoff",
+    "user": "Martin Moya Celis 💙",
+    "wa_id": "573212068789",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Muchas gracias",
+    "agent_response": "Por el momento manejamos ese tiempo estándar de 15 días hábiles para garantizar la calidad de la sublimación y los acabados.\n\nSi el equipo de producción logra tenerlas antes, se le informará de inmediato para la entrega. ¿Desea que le ayude con alguna otra duda?"
+  },
+  {
+    "id": "d8b72e0e-84cd-4f12-810e-2fbc196432b3",
+    "status": "waiting",
+    "user": "John Eusse 🥶❄️",
+    "wa_id": "573057155426",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Tienes local físico"
+  },
+  {
+    "id": "d3c1fdad-ae7a-442d-868b-078c2ba9a00c",
+    "status": "waiting",
+    "user": "milenasa23",
+    "wa_id": "573115026911",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Futbol femenino 10 mujeres"
+  },
+  {
+    "id": "eaa8ca00-f667-41cb-ae54-a2f7e4d95fe3",
+    "status": "waiting",
+    "user": "Vc15",
+    "wa_id": "573102556521",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Ahora te lo envío"
+  },
+  {
+    "id": "c9b9a28b-0d03-4671-bd44-8f2d09f06aa7",
+    "status": "waiting",
+    "user": "Wilson",
+    "wa_id": "573144223302",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Hola, quiero cotizar unas camisetas para tenis de mesa"
+  },
+  {
+    "id": "227329af-6524-4b6b-8f00-375d39d4fbb8",
+    "status": "handoff",
+    "user": ".",
+    "wa_id": "573137267897",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Que pena no me entra el link"
+  },
+  {
+    "id": "45590441-553c-4b16-9b58-312f12a5ac1c",
+    "status": "waiting",
+    "user": "Arely Pc",
+    "wa_id": "573123060263",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Video attached (video_add7ea8338cd.mp4) [Size: 1.1 MB | Type: video/mp4] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjM4Zjg1MWQzLWE1NmUtNDc3YS04MTY1LTg2Y2I5MmQxYjA5NCIsInB1ciI6ImJsb2JfaWQifX0=--914140f63677af17bcc9bd3c28d86c31f357ca7b/video_add7ea8338cd.mp4"
+  },
+  {
+    "id": "ccf5e2f8-e141-439b-a887-5849dbbbfb9c",
+    "status": "waiting",
+    "user": "Sam...",
+    "wa_id": "573244270740",
+    "extraVars": {
+      "staff_route": "continue_agent"
+    },
+    "last_input": "Si porfavor"
+  }
+]

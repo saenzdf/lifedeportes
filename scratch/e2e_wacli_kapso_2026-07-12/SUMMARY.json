@@ -1,0 +1,176 @@
+[
+  {
+    "case": 1,
+    "started_at": "2026-07-13T00:32:15.618Z",
+    "marker": "WACLI-KAPSO 07130032 C1",
+    "staff": "3000000047",
+    "to": "3000000066",
+    "steps": [
+      {
+        "at": "2026-07-13T00:32:20.603Z",
+        "name": "send_text",
+        "ok": true,
+        "status": 0,
+        "data": {
+          "success": true,
+          "data": {
+            "id": "3EB08542E35A451AD8F12A",
+            "sent": true,
+            "to": "3000000066@s.whatsapp.net"
+          },
+          "error": null
+        },
+        "stderr": ""
+      },
+      {
+        "at": "2026-07-13T00:32:22.607Z",
+        "name": "media_plan",
+        "files": [
+          "FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx",
+          "UNIFORME DE ARQUERO PASTOOO.jpeg",
+          "UNIFORME JUGADORES PASTO.jpeg"
+        ]
+      },
+      {
+        "at": "2026-07-13T00:32:28.236Z",
+        "name": "send_xlsx",
+        "file": "FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx",
+        "ok": true,
+        "success": true,
+        "id": "3EB069BBF4CA4FE41594F3",
+        "error": ""
+      },
+      {
+        "at": "2026-07-13T00:32:38.029Z",
+        "name": "send_image",
+        "file": "UNIFORME DE ARQUERO PASTOOO.jpeg",
+        "ok": true,
+        "success": true,
+        "id": "3EB011441729E8C108154A",
+        "error": ""
+      },
+      {
+        "at": "2026-07-13T00:32:47.898Z",
+        "name": "send_image",
+        "file": "UNIFORME JUGADORES PASTO.jpeg",
+        "ok": true,
+        "success": true,
+        "id": "3EB051AFA425E38B599F38",
+        "error": ""
+      },
+      {
+        "at": "2026-07-13T00:33:19.337Z",
+        "name": "poll_1",
+        "bot_snippets": [],
+        "mine_snippets": [
+          "WACLI-KAPSO 07130032 C1 · ref UNIFORME JUGADORES PASTO.jpeg",
+          "WACLI-KAPSO 07130032 C1 · ref UNIFORME DE ARQUERO PASTOOO.jpeg",
+          "WACLI-KAPSO 07130032 C1 · Excel lista · PASTO",
+          "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07130032 C1\nModo partner: history\nCliente PASTO (historia). Excel Lif"
+        ]
+      },
+      {
+        "at": "2026-07-13T00:33:43.823Z",
+        "name": "poll_2",
+        "bot_snippets": [],
+        "mine_snippets": [
+          "WACLI-KAPSO 07130032 C1 · ref UNIFORME JUGADORES PASTO.jpeg",
+          "WACLI-KAPSO 07130032 C1 · ref UNIFORME DE ARQUERO PASTOOO.jpeg",
+          "WACLI-KAPSO 07130032 C1 · Excel lista · PASTO",
+          "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07130032 C1\nModo partner: history\nCliente PASTO (historia). Excel Lif"
+        ]
+      },
+      {
+        "at": "2026-07-13T00:34:13.629Z",
+        "name": "poll_3",
+        "bot_snippets": [
+          "Pedido S02661 ingresado en Odoo (borrador). Total: $1689800. Para otro pedido, envíe los datos del cliente."
+        ],
+        "mine_snippets": [
+          "WACLI-KAPSO 07130032 C1 · ref UNIFORME JUGADORES PASTO.jpeg",
+          "WACLI-KAPSO 07130032 C1 · ref UNIFORME DE ARQUERO PASTOOO.jpeg",
+          "WACLI-KAPSO 07130032 C1 · Excel lista · PASTO",
+          "Pedido staff E2E vía WhatsApp.\nMarker: WACLI-KAPSO 07130032 C1\nModo partner: history\nCliente PASTO (historia). Excel Lif"
+        ]
+      },
+      {
+        "at": "2026-07-13T00:34:14.458Z",
+        "name": "odoo_recent",
+        "count": 1,
+        "names": [
+          "S02661"
+        ]
+      },
+      {
+        "at": "2026-07-13T00:34:14.965Z",
+        "name": "audit",
+        "so_name": "S02661",
+        "partner": [
+          3626,
+          "E2E Test 1 — PASTO"
+        ],
+        "state": "draft",
+        "amount_total": 1689800,
+        "note_preview": "   REVISAR BORRADOR:  ingreso agentico, parseo parcial o descuadre lista↔cantidades. Validar líneas y Formulario antes de confirmar. \n Pedido \n\n \n\n Resumen de uniformes \n \n    Uniforme de Fútbol (17 u.):   \n    Camiseta deportiva dry-fit (1",
+        "lines": [
+          {
+            "qty": 1,
+            "name": "Diseño"
+          },
+          {
+            "qty": 17,
+            "name": "Uniforme de Fútbol"
+          },
+          {
+            "qty": 19,
+            "name": "Camiseta deportiva dry-fit"
+          }
+        ],
+        "spreadsheet_id": 80,
+        "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2651/sale-order-spreadsheet/80",
+        "formulario_names": 36,
+        "formulario_sample": [
+          "ANDRÉS J",
+          "MANRIQUE.S.J.L",
+          "VELA.F"
+        ]
+      }
+    ],
+    "ok": true,
+    "error": null,
+    "stop_reason": null,
+    "order": {
+      "so_name": "S02661",
+      "partner": [
+        3626,
+        "E2E Test 1 — PASTO"
+      ],
+      "state": "draft",
+      "amount_total": 1689800,
+      "note_preview": "   REVISAR BORRADOR:  ingreso agentico, parseo parcial o descuadre lista↔cantidades. Validar líneas y Formulario antes de confirmar. \n Pedido \n\n \n\n Resumen de uniformes \n \n    Uniforme de Fútbol (17 u.):   \n    Camiseta deportiva dry-fit (1",
+      "lines": [
+        {
+          "qty": 1,
+          "name": "Diseño"
+        },
+        {
+          "qty": 17,
+          "name": "Uniforme de Fútbol"
+        },
+        {
+          "qty": 19,
+          "name": "Camiseta deportiva dry-fit"
+        }
+      ],
+      "spreadsheet_id": 80,
+      "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2651/sale-order-spreadsheet/80",
+      "formulario_names": 36,
+      "formulario_sample": [
+        "ANDRÉS J",
+        "MANRIQUE.S.J.L",
+        "VELA.F"
+      ]
+    },
+    "last_bot": "Pedido S02661 ingresado en Odoo (borrador). Total: $1689800. Para otro pedido, envíe los datos del cliente."
+  }
+]

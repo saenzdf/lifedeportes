@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Reemplaza el footer estándar del website por el de Life Deportes:
+        logo, redes sociales, dirección y derechos.
+        Se hace via inheritance para que el editor de Odoo siga teniendo
+        un footer reconocido y se respete la opción "Copyright" del tema base.
+    -->
+    <template id="ld_footer" name="Life Deportes Footer"
+              inherit_id="website.layout" priority="30">
+        <xpath expr="//footer" position="replace">
+            <footer class="ld-footer o_footer">
+                <div class="container ld-footer-inner">
+                    <div class="ld-footer-left">
+                        <img src="/lifedeportes_theme/static/src/img/logo-white.webp"
+                             alt="Life Deportes" class="ld-footer-logo"/>
+                        <p class="ld-footer-tagline">
+                            Uniformes deportivos personalizados desde 2003.
+                        </p>
+                        <p class="ld-footer-address">
+                            Cl. 66a #98a 12, Bogotá, Cundinamarca, Colombia
+                        </p>
+                    </div>
+                    <div class="ld-footer-social">
+                        <a t-att-href="website.social_facebook or 'https://www.facebook.com/people/Life-Soluciones-Deportivas/100064176332051/'"
+                           target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fa fa-facebook"/>
+                        </a>
+                        <a t-att-href="website.social_instagram or 'https://www.instagram.com/lifedeportes/'"
+                           target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fa fa-instagram"/>
+                        </a>
+                        <a href="https://wa.me/573103362484"
+                           target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fa fa-whatsapp"/>
+                        </a>
+                        <a t-att-href="website.social_youtube or 'https://www.youtube.com/@lifedeportes'"
+                           target="_blank" rel="noopener" aria-label="YouTube">
+                            <i class="fa fa-youtube-play"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="ld-footer-bottom">
+                    <div class="container ld-footer-bottom-inner">
+                        <span>© Life Deportes — Todos los derechos reservados.</span>
+                        <span class="ld-footer-legal">
+                            <a href="/terms-of-use">Condiciones de venta</a>
+                            <span aria-hidden="true">·</span>
+                            <a href="/privacy-policy">Política de privacidad</a>
+                        </span>
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+</odoo>

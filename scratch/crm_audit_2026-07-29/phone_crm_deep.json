@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Allison",
+    "phone": "573215904262",
+    "bucket": "sales_exploratory",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "Anny☺️",
+    "phone": "3000000082",
+    "bucket": "sales_followup",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "Thiam Restrepo",
+    "phone": "3000000021",
+    "bucket": "sales_followup",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "Emmanuelle Girón",
+    "phone": "3000000020",
+    "bucket": "sales_followup",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "Deily💗",
+    "phone": "573138800271",
+    "bucket": "sales_followup",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "lrodriguez",
+    "phone": "573195161649",
+    "bucket": "sales_exploratory",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "Laura",
+    "phone": "3000000019",
+    "bucket": "sales_followup",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "Cris 🤓",
+    "phone": "573043785243",
+    "bucket": "sales_followup",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "Laider Bayona Sánchez",
+    "phone": "573112758589",
+    "bucket": "sales_exploratory",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "brendamargaritaorozco",
+    "phone": "573113829322",
+    "bucket": "sales_exploratory",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "Juanita Iregui Marin",
+    "phone": "3000000009",
+    "bucket": "sales_followup",
+    "leads": [
+      {
+        "id": 3592,
+        "name": "Juanita Iregui Marin",
+        "stage": "Asistente Kapso",
+        "created": "2026-07-27 21:49:04"
+      }
+    ],
+    "partners": [
+      {
+        "id": 3832,
+        "name": "Juanita Iregui Marin"
+      }
+    ],
+    "kapso_meta": true
+  },
+  {
+    "name": "Helena",
+    "phone": "3000000068",
+    "bucket": "sales_followup",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "🎶Cristian Maza 🎶",
+    "phone": "3000000056",
+    "bucket": "sales_followup",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  },
+  {
+    "name": "Julian B",
+    "phone": "3000000060",
+    "bucket": "sales_followup",
+    "leads": [],
+    "partners": [],
+    "kapso_meta": false
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "path": "/shop/bandera-194",
+    "url": "https://lifedeportes.odoo.com/shop/bandera-194",
+    "name": "Bandera",
+    "price_cop": 60000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/busos-con-capota-1795",
+    "url": "https://lifedeportes.odoo.com/shop/busos-con-capota-1795",
+    "name": "Busos con capota",
+    "price_cop": 65000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/camiseta-deportiva-dry-fit-62",
+    "url": "https://lifedeportes.odoo.com/shop/camiseta-deportiva-dry-fit-62",
+    "name": "Camiseta deportiva dry-fit",
+    "price_cop": 30000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/camiseta-deportiva-dumonti-685",
+    "url": "https://lifedeportes.odoo.com/shop/camiseta-deportiva-dumonti-685",
+    "name": "Camiseta Deportiva Dumonti",
+    "price_cop": 35000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/camiseta-tipo-polo-61",
+    "url": "https://lifedeportes.odoo.com/shop/camiseta-tipo-polo-61",
+    "name": "Camiseta tipo Polo",
+    "price_cop": 35000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/chaqueta-lotto-1800",
+    "url": "https://lifedeportes.odoo.com/shop/chaqueta-lotto-1800",
+    "name": "Chaqueta Lotto",
+    "price_cop": 60000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/chaqueta-rompevientos-68",
+    "url": "https://lifedeportes.odoo.com/shop/chaqueta-rompevientos-68",
+    "name": "Chaqueta Rompevientos",
+    "price_cop": 60000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/conjunto-de-arquero-178",
+    "url": "https://lifedeportes.odoo.com/shop/conjunto-de-arquero-178",
+    "name": "Conjunto de arquero",
+    "price_cop": 70000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/gorras-con-un-bordado-1804",
+    "url": "https://lifedeportes.odoo.com/shop/gorras-con-un-bordado-1804",
+    "name": "Gorras con un bordado",
+    "price_cop": 15000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/peto-sublimado-life-69",
+    "url": "https://lifedeportes.odoo.com/shop/peto-sublimado-life-69",
+    "name": "Peto sublimado life",
+    "price_cop": 28000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/sudadera-chaqueta-y-pantalon-orion-66",
+    "url": "https://lifedeportes.odoo.com/shop/sudadera-chaqueta-y-pantalon-orion-66",
+    "name": "Sudadera Chaqueta y Pantalón Orión",
+    "price_cop": 100000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/sudaderas-en-algodon-lycrado-con-bordados-1811",
+    "url": "https://lifedeportes.odoo.com/shop/sudaderas-en-algodon-lycrado-con-bordados-1811",
+    "name": "Sudaderas en algodón lycrado con bordados",
+    "price_cop": 120000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/tulas-70",
+    "url": "https://lifedeportes.odoo.com/shop/tulas-70",
+    "name": "Tulas",
+    "price_cop": 18000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/uniforme-de-atletismo-35",
+    "url": "https://lifedeportes.odoo.com/shop/uniforme-de-atletismo-35",
+    "name": "Uniforme de Atletismo",
+    "price_cop": 50000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/uniforme-de-baloncesto-23",
+    "url": "https://lifedeportes.odoo.com/shop/uniforme-de-baloncesto-23",
+    "name": "Uniforme de Baloncesto",
+    "price_cop": 50000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/uniforme-de-futbol-115",
+    "url": "https://lifedeportes.odoo.com/shop/uniforme-de-futbol-115",
+    "name": "Uniforme de Fútbol",
+    "price_cop": 50000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/uniforme-de-presentacion-futbol-polo-8",
+    "url": "https://lifedeportes.odoo.com/shop/uniforme-de-presentacion-futbol-polo-8",
+    "name": "Uniforme de Presentación (Futbol polo)",
+    "price_cop": 75000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/uniforme-de-voleibol-31",
+    "url": "https://lifedeportes.odoo.com/shop/uniforme-de-voleibol-31",
+    "name": "Uniforme de Voleibol",
+    "price_cop": 50000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/uniformes-camiseta-doble-faz-y-pantaloneta-1813",
+    "url": "https://lifedeportes.odoo.com/shop/uniformes-camiseta-doble-faz-y-pantaloneta-1813",
+    "name": "Uniformes camiseta doble faz y pantaloneta",
+    "price_cop": 85000,
+    "options_sample": []
+  },
+  {
+    "path": "/shop/uniformes-con-bordado-1819",
+    "url": "https://lifedeportes.odoo.com/shop/uniformes-con-bordado-1819",
+    "name": "Uniformes con bordado",
+    "price_cop": 57000,
+    "options_sample": []
+  }
+]

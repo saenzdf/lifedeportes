@@ -1,0 +1,45 @@
+{
+  "case": 1,
+  "source": {
+    "model": "project.task",
+    "id": 2237,
+    "name": "[S02423] PASTO",
+    "sale_order": "S02423",
+    "partner": "PASTO"
+  },
+  "display_customer": "E2E Native Formulario — PASTO",
+  "suggested_text": "Pedido nuevo E2E.\nCliente: E2E Formulario 1 — PASTO v2\nAdjunto Excel/fotos. Sube borrador en Odoo test.",
+  "files": [
+    {
+      "file": "UNIFORMES DE ARQUERO PASTO.jpeg",
+      "odoo_attachment_id": 26591,
+      "mimetype": "image/jpeg",
+      "bytes": 69489
+    },
+    {
+      "file": "UNIFORME DE ARQUERO PASTOOO.jpeg",
+      "odoo_attachment_id": 26590,
+      "mimetype": "image/jpeg",
+      "bytes": 98605
+    },
+    {
+      "file": "UNIFORME JUGADORES PASTO.jpeg",
+      "odoo_attachment_id": 26589,
+      "mimetype": "image/jpeg",
+      "bytes": 574544
+    },
+    {
+      "file": "image.png",
+      "odoo_attachment_id": 26587,
+      "mimetype": "image/png",
+      "bytes": 171126
+    },
+    {
+      "file": "FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx",
+      "odoo_attachment_id": 26586,
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 12953
+    }
+  ],
+  "notes": "Skip print PDFs/CDR. Reuse excel + images only."
+}

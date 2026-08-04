@@ -1,0 +1,135 @@
+{
+  "version": "customer_lane_profiles_v1",
+  "life_wa": "3000000066",
+  "tester_wa": "3000000047",
+  "notes": "Diego temporarily off staff allowlist; staff_only_mode off",
+  "quick_replies_customer": [
+    "Hola, quiero cotizar uniformes de",
+    "Hola, quiero cotizar uniformes de fútbol",
+    "Hola, quiero cotizar uniformes de futbol",
+    "Hola, quiero cotizar uniformes de baloncesto",
+    "Hola, quiero cotizar uniformes de voley",
+    "Hola, quiero cotizar camisetas de fútbol",
+    "Necesitaríamos 33 uniformes con un diseño propio",
+    "Necesitaría 22 uniformes",
+    "Son 6 uniformes",
+    "Uniforme completo futbol de camisa y pantalonetas",
+    "O uniforme completo que precio tiene",
+    "Y las camisetas a como ?",
+    "Buenos días tengo una pregunta ustedes estan en Bogotá??",
+    "Si lo quisiera profesional ?",
+    "Dry fit, manga corta, cuello en V",
+    "Solo la camiseta, sin pantaloneta",
+    "Ok y el abono cómo es?"
+  ],
+  "profiles": [
+    {
+      "id": "P1",
+      "slug": "futbol_excel_fotos",
+      "goal": "Cliente manda Excel + fotos en hilo de ventas",
+      "media_pack": "scratch/kapso_staff_e2e_2026-07-12/case_01",
+      "steps": [
+        {
+          "type": "text",
+          "message": "Hola, quiero cotizar uniformes de fútbol",
+          "wait_s": 65
+        },
+        {
+          "type": "text",
+          "message": "Necesitaríamos 18 uniformes con un diseño propio",
+          "wait_s": 65
+        },
+        {
+          "type": "file",
+          "match": "\\.jpe?g$",
+          "limit": 2,
+          "caption": "Referencia diseño equipo",
+          "wait_s": 65
+        },
+        {
+          "type": "file",
+          "match": "\\.xlsx$",
+          "limit": 1,
+          "caption": "Lista de jugadores FORMATO LIFE",
+          "wait_s": 50
+        },
+        {
+          "type": "text",
+          "message": "Esa es la lista y las fotos del diseño. ¿Me cotizas el total?",
+          "wait_s": 65
+        }
+      ],
+      "expect": {
+        "no_maintenance": true,
+        "no_staff_upload_ok": true,
+        "bot_mentions_price_or_min6": true
+      }
+    },
+    {
+      "id": "P2",
+      "slug": "futbol_solo_hilo",
+      "goal": "Cotizar solo con hilo, sin Excel",
+      "media_pack": null,
+      "steps": [
+        {
+          "type": "text",
+          "message": "Hola, quiero cotizar uniformes de futbol, aproximadamente unos 15",
+          "wait_s": 65
+        },
+        {
+          "type": "text",
+          "message": "Dry fit, manga corta, cuello en V",
+          "wait_s": 65
+        },
+        {
+          "type": "text",
+          "message": "Sí, tengo el diseño, se lo mando después. ¿Cuánto sale el completo?",
+          "wait_s": 65
+        },
+        {
+          "type": "text",
+          "message": "Ok y el abono cómo es?",
+          "wait_s": 65
+        }
+      ],
+      "expect": {
+        "no_maintenance": true,
+        "no_staff_upload_ok": true,
+        "bot_mentions_price_or_min6": true
+      }
+    },
+    {
+      "id": "P3",
+      "slug": "camisetas_vs_uniforme",
+      "goal": "Camiseta sola vs uniforme completo",
+      "media_pack": null,
+      "steps": [
+        {
+          "type": "text",
+          "message": "Hola, quiero cotizar camisetas de fútbol",
+          "wait_s": 65
+        },
+        {
+          "type": "text",
+          "message": "Son como 12",
+          "wait_s": 65
+        },
+        {
+          "type": "text",
+          "message": "Solo la camiseta, sin pantaloneta",
+          "wait_s": 65
+        },
+        {
+          "type": "text",
+          "message": "Dry fit",
+          "wait_s": 65
+        }
+      ],
+      "expect": {
+        "no_maintenance": true,
+        "no_staff_upload_ok": true,
+        "bot_mentions_price_or_min6": true
+      }
+    }
+  ]
+}

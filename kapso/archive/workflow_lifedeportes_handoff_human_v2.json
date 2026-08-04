@@ -1,0 +1,15 @@
+{
+  "name": "lifedeportes_handoff_human_v2",
+  "description": "Escalamiento a humano con paquete de contexto y motivo de handoff.",
+  "nodes": [
+    { "id": "start", "type": "trigger_internal_event", "config": { "event": "run_handoff_human_v2" } },
+    { "id": "build_context_packet_001", "type": "function", "config": { "name": "build-handoff-context-packet" } },
+    { "id": "create_handoff_ticket_001", "type": "function", "config": { "name": "create-human-handoff-ticket" } },
+    { "id": "send_customer_ack_001", "type": "template", "config": { "text": "Te paso con un asesor humano para ayudarte mejor. Ya le comparti tu contexto para atenderte sin repetir datos." } }
+  ],
+  "edges": [
+    { "source": "start", "target": "build_context_packet_001" },
+    { "source": "build_context_packet_001", "target": "create_handoff_ticket_001" },
+    { "source": "create_handoff_ticket_001", "target": "send_customer_ack_001" }
+  ]
+}

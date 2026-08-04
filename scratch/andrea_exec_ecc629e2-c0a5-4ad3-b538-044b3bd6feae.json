@@ -1,0 +1,1674 @@
+{
+  "id": "ecc629e2-c0a5-4ad3-b538-044b3bd6feae",
+  "current_step": {
+    "id": "178536bf-d0de-469e-a5de-c735aa48ecfe",
+    "identifier": "fn_staff_upload_odoo_1745500002700",
+    "stepable_type": "FlowActionStep"
+  },
+  "ended_at": "2026-07-27T16:17:26-04:00",
+  "execution_context": {
+    "vars": {
+      "crm": {
+        "stage": "Canal Ventas",
+        "has_orders": false,
+        "partner_name": "",
+        "brief_preview": null,
+        "opportunity_id": 3578,
+        "opportunity_name": "Oportunidad de DANIEL TOVAR"
+      },
+      "lead": {
+        "id": 3578,
+        "name": "Oportunidad de DANIEL TOVAR",
+        "phone": "+57 316 0406438",
+        "partner_id": null
+      },
+      "shop": null,
+      "user": {
+        "name": "Paola",
+        "role": "staff",
+        "wa_id": "573213988464",
+        "staff_member": {
+          "name": "Paola",
+          "role": "staff",
+          "phone": "573213988464",
+          "odoo_project_id": 9,
+          "odoo_project_name": "Proyecto Paola"
+        },
+        "odoo_project_id": 9,
+        "odoo_project_name": "Proyecto Paola",
+        "is_allowed_for_transactions": true
+      },
+      "kapso": {
+        "customer_lane": null,
+        "staff_only_mode": true
+      },
+      "quote": {
+        "variant": "base",
+        "material": "dry_fit",
+        "quantity": 1,
+        "unit_cop": 50000,
+        "total_cop": 50000,
+        "extra_lines": [],
+        "product_text": "Uniforme de baloncesto",
+        "draft_payload": {
+          "rows": [
+            {
+              "name": "Uniforme de baloncesto",
+              "line_id": "rl_1_23",
+              "category": "uniforme",
+              "comments": "",
+              "quantity": 1,
+              "attributes": {
+                "tela": "dry_fit",
+                "deporte": "baloncesto",
+                "tipo_pantalon": "mariposa"
+              },
+              "price_unit": 50000,
+              "product_id": 23,
+              "unit_price": 50000,
+              "product_text": "Uniforme de baloncesto",
+              "commercial_role": null
+            }
+          ],
+          "source": "conversation",
+          "variant": "base",
+          "built_at": "2026-07-27T20:17:24.208Z",
+          "material": "dry_fit",
+          "quantity": 1,
+          "unit_cop": 50000,
+          "tenant_id": "life_main",
+          "total_cop": 50000,
+          "detail_rows": [
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "S",
+              "nombre": "SARA",
+              "numero": "30",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "XL",
+              "nombre": "LOZANO",
+              "numero": "17",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "12",
+              "nombre": "MATIAS M.Z",
+              "numero": "9",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "12",
+              "nombre": "GUADALUPE",
+              "numero": "25",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "M",
+              "nombre": "VIVAS",
+              "numero": "22",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "16",
+              "nombre": "ANGEL P.",
+              "numero": "10",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "XL",
+              "nombre": "DAIRY A.",
+              "numero": "23",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "S",
+              "nombre": "SARAY B.",
+              "numero": "13",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "S",
+              "nombre": "REYES",
+              "numero": "7",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "10",
+              "nombre": "BRAVO",
+              "numero": "15",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "S",
+              "nombre": "AGUIRRE M.",
+              "numero": "21",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "10",
+              "nombre": "NICOLAS R.",
+              "numero": "11",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "14",
+              "nombre": "LAUREN H.",
+              "numero": "7",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "L",
+              "nombre": "SOFIA F.",
+              "numero": "47",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "S",
+              "nombre": "SANCHEZ",
+              "numero": "18",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            }
+          ],
+          "extra_lines": [],
+          "product_text": "Uniforme de baloncesto",
+          "customer_notes": null,
+          "customer_wa_id": null,
+          "price_from_cop": 50000,
+          "resolved_lines": [
+            {
+              "line_id": "rl_1_23",
+              "category": "uniforme",
+              "comments": "",
+              "quantity": 1,
+              "unit_cop": 50000,
+              "attributes": {
+                "tela": "dry_fit",
+                "deporte": "baloncesto",
+                "tipo_pantalon": "mariposa"
+              },
+              "confidence": "high",
+              "product_base": "Uniforme de baloncesto",
+              "product_text": "Uniforme de baloncesto",
+              "product_tmpl_id": 23,
+              "product_variant_id": 23
+            }
+          ],
+          "schema_version": "quote_payload_v2",
+          "odoo_product_id": 23,
+          "order_note_html": "<h1>Pedido</h1>\n\n<hr>\n\n<h2>Resumen de uniformes</h2>\n<ul>\n  <li><strong>Uniforme de baloncesto (1 u.):</strong> </li>\n</ul>\n\n<hr>\n\n<h2>Bloqueadores (confirmar)</h2>\n<ul>\n  <li>Falta lista de jugadores (Excel, texto o imagen).</li>\n</ul>\n\n<hr>\n\n<h2>Lista de jugadoras (Femenino) \u2014 Uniforme (conjunto)</h2>\n<table border=\"1\" cellpadding=\"5\" style=\"border-collapse:collapse; width:100%; border: 1px solid #ddd; font-family: sans-serif;\">\n  <thead>\n    <tr style=\"background-color:#f2f2f2;\">\n      <th style=\"text-align:center; padding: 8px;\">N\u00b0</th>\n      <th style=\"text-align:left; padding: 8px;\">Nombre</th>\n      <th style=\"text-align:center; padding: 8px;\">Talla</th>\n      \n      \n      \n    </tr>\n  </thead>\n  <tbody>\n    <tr><td style=\"text-align:center; padding: 8px;\">30</td><td style=\"padding: 8px;\">SARA</td><td style=\"text-align:center; padding: 8px;\">S</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">25</td><td style=\"padding: 8px;\">GUADALUPE</td><td style=\"text-align:center; padding: 8px;\">12</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">23</td><td style=\"padding: 8px;\">DAIRY A.</td><td style=\"text-align:center; padding: 8px;\">XL</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">13</td><td style=\"padding: 8px;\">SARAY B.</td><td style=\"text-align:center; padding: 8px;\">S</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">7</td><td style=\"padding: 8px;\">LAUREN H.</td><td style=\"text-align:center; padding: 8px;\">14</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">47</td><td style=\"padding: 8px;\">SOFIA F.</td><td style=\"text-align:center; padding: 8px;\">L</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">18</td><td style=\"padding: 8px;\">SANCHEZ</td><td style=\"text-align:center; padding: 8px;\">S</td></tr>\n  </tbody>\n</table>\n\n<hr>\n\n<h2>Lista de detalle</h2>\n<table border=\"1\" cellpadding=\"5\" style=\"border-collapse:collapse; width:100%; border: 1px solid #ddd; font-family: sans-serif;\">\n  <thead>\n    <tr style=\"background-color:#f2f2f2;\">\n      <th style=\"text-align:center; padding: 8px;\">N\u00b0</th>\n      <th style=\"text-align:left; padding: 8px;\">Nombre</th>\n      <th style=\"text-align:center; padding: 8px;\">Talla</th>\n      \n      \n      \n    </tr>\n  </thead>\n  <tbody>\n    <tr><td style=\"text-align:center; padding: 8px;\">17</td><td style=\"padding: 8px;\">LOZANO</td><td style=\"text-align:center; padding: 8px;\">XL</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">9</td><td style=\"padding: 8px;\">MATIAS M.Z</td><td style=\"text-align:center; padding: 8px;\">12</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">22</td><td style=\"padding: 8px;\">VIVAS</td><td style=\"text-align:center; padding: 8px;\">M</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">10</td><td style=\"padding: 8px;\">ANGEL P.</td><td style=\"text-align:center; padding: 8px;\">16</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">7</td><td style=\"padding: 8px;\">REYES</td><td style=\"text-align:center; padding: 8px;\">S</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">15</td><td style=\"padding: 8px;\">BRAVO</td><td style=\"text-align:center; padding: 8px;\">10</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">21</td><td style=\"padding: 8px;\">AGUIRRE M.</td><td style=\"text-align:center; padding: 8px;\">S</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">11</td><td style=\"padding: 8px;\">NICOLAS R.</td><td style=\"text-align:center; padding: 8px;\">10</td></tr>\n  </tbody>\n</table>\n\n<hr>\n\n<p>Proyecto: Proyecto Paola</p>",
+          "commercial_lines": [
+            {
+              "category": "uniforme",
+              "quantity": 1,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": ""
+            }
+          ],
+          "match_confidence": "high",
+          "reference_images": [],
+          "catalog_synced_at": "2026-07-06T02:38:51Z",
+          "design_product_id": null,
+          "product_attributes": {},
+          "matched_product_name": "Uniforme de baloncesto",
+          "quote_request_source": "agent_request",
+          "customer_display_name": null,
+          "partial_order_details": {},
+          "billing_is_third_party": false,
+          "formal_quote_requested": false,
+          "suggested_alternatives": [],
+          "order_or_team_name_for_billing": null
+        },
+        "price_from_cop": 50000,
+        "odoo_product_id": 23,
+        "order_note_html": "<h1>Pedido</h1>\n\n<hr>\n\n<h2>Resumen de uniformes</h2>\n<ul>\n  <li><strong>Uniforme de baloncesto (1 u.):</strong> </li>\n</ul>\n\n<hr>\n\n<h2>Bloqueadores (confirmar)</h2>\n<ul>\n  <li>Falta lista de jugadores (Excel, texto o imagen).</li>\n</ul>\n\n<hr>\n\n<h2>Lista de jugadoras (Femenino) \u2014 Uniforme (conjunto)</h2>\n<table border=\"1\" cellpadding=\"5\" style=\"border-collapse:collapse; width:100%; border: 1px solid #ddd; font-family: sans-serif;\">\n  <thead>\n    <tr style=\"background-color:#f2f2f2;\">\n      <th style=\"text-align:center; padding: 8px;\">N\u00b0</th>\n      <th style=\"text-align:left; padding: 8px;\">Nombre</th>\n      <th style=\"text-align:center; padding: 8px;\">Talla</th>\n      \n      \n      \n    </tr>\n  </thead>\n  <tbody>\n    <tr><td style=\"text-align:center; padding: 8px;\">30</td><td style=\"padding: 8px;\">SARA</td><td style=\"text-align:center; padding: 8px;\">S</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">25</td><td style=\"padding: 8px;\">GUADALUPE</td><td style=\"text-align:center; padding: 8px;\">12</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">23</td><td style=\"padding: 8px;\">DAIRY A.</td><td style=\"text-align:center; padding: 8px;\">XL</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">13</td><td style=\"padding: 8px;\">SARAY B.</td><td style=\"text-align:center; padding: 8px;\">S</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">7</td><td style=\"padding: 8px;\">LAUREN H.</td><td style=\"text-align:center; padding: 8px;\">14</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">47</td><td style=\"padding: 8px;\">SOFIA F.</td><td style=\"text-align:center; padding: 8px;\">L</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">18</td><td style=\"padding: 8px;\">SANCHEZ</td><td style=\"text-align:center; padding: 8px;\">S</td></tr>\n  </tbody>\n</table>\n\n<hr>\n\n<h2>Lista de detalle</h2>\n<table border=\"1\" cellpadding=\"5\" style=\"border-collapse:collapse; width:100%; border: 1px solid #ddd; font-family: sans-serif;\">\n  <thead>\n    <tr style=\"background-color:#f2f2f2;\">\n      <th style=\"text-align:center; padding: 8px;\">N\u00b0</th>\n      <th style=\"text-align:left; padding: 8px;\">Nombre</th>\n      <th style=\"text-align:center; padding: 8px;\">Talla</th>\n      \n      \n      \n    </tr>\n  </thead>\n  <tbody>\n    <tr><td style=\"text-align:center; padding: 8px;\">17</td><td style=\"padding: 8px;\">LOZANO</td><td style=\"text-align:center; padding: 8px;\">XL</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">9</td><td style=\"padding: 8px;\">MATIAS M.Z</td><td style=\"text-align:center; padding: 8px;\">12</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">22</td><td style=\"padding: 8px;\">VIVAS</td><td style=\"text-align:center; padding: 8px;\">M</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">10</td><td style=\"padding: 8px;\">ANGEL P.</td><td style=\"text-align:center; padding: 8px;\">16</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">7</td><td style=\"padding: 8px;\">REYES</td><td style=\"text-align:center; padding: 8px;\">S</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">15</td><td style=\"padding: 8px;\">BRAVO</td><td style=\"text-align:center; padding: 8px;\">10</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">21</td><td style=\"padding: 8px;\">AGUIRRE M.</td><td style=\"text-align:center; padding: 8px;\">S</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">11</td><td style=\"padding: 8px;\">NICOLAS R.</td><td style=\"text-align:center; padding: 8px;\">10</td></tr>\n  </tbody>\n</table>\n\n<hr>\n\n<p>Proyecto: Proyecto Paola</p>",
+        "match_confidence": "high",
+        "reference_images": [],
+        "design_product_id": null,
+        "commercial_summary": "Uniforme de baloncesto: $50.000 c/u \u00d7 1 = $50.000",
+        "product_attributes": {},
+        "quote_request_source": "agent_request",
+        "commercial_validation": {
+          "ok": false,
+          "code": "BASE_BELOW_MINIMUM",
+          "extras_qty": 0,
+          "message_es": "Sumerce, el pedido m\u00ednimo es 6 uniformes completos por dise\u00f1o. Con 1 no alcanzamos; \u00bflos hacemos en 6?",
+          "base_uniform_qty": 1
+        },
+        "customer_display_name": null,
+        "billing_is_third_party": false,
+        "formal_quote_requested": false,
+        "suggested_alternatives": [],
+        "minimum_ready_for_quote": false,
+        "order_or_team_name_for_billing": null
+      },
+      "staff": {
+        "write_code": "opportunity_ready",
+        "write_mode": "opportunity_only",
+        "write_status": "ok",
+        "registration_type": "pedido",
+        "write_blocked_reason": null,
+        "confirmation_fingerprint": "{\"lines\":[{\"p\":\"Uniforme de baloncesto\",\"q\":1}],\"people\":[],\"partner\":\"\"}"
+      },
+      "funnel": {
+        "stage": "venta",
+        "updated_at": "2026-07-27T20:17:24.208Z",
+        "stage_reason": "quote_payload_built"
+      },
+      "intent": {
+        "raw_text": "ODALINDA ES UNIFORME FEMENINO"
+      },
+      "tenant": {
+        "id": "life_main",
+        "name": "Life Deportes Principal",
+        "policy_set": "sales_default_v1",
+        "secret_prefix": "TENANT_LIFE_MAIN",
+        "phone_number_id": null
+      },
+      "pricing": {
+        "quantity": 1,
+        "unit_cop": 50000,
+        "total_cop": 50000,
+        "price_source": "catalog_cache",
+        "variant_extras": []
+      },
+      "product": {
+        "found": true,
+        "variant": "base",
+        "category": "uniforme",
+        "match_id": 23,
+        "candidates": [
+          {
+            "name": "Uniforme de baloncesto",
+            "rank": 1,
+            "score": 177,
+            "odoo_id": 23,
+            "reason_es": null,
+            "list_price_cop": 50000
+          },
+          {
+            "name": "Uniforme de F\u00fatbol",
+            "rank": 2,
+            "score": 63,
+            "odoo_id": 115,
+            "reason_es": null,
+            "list_price_cop": 50000
+          },
+          {
+            "name": "Uniforme de atletismo",
+            "rank": 3,
+            "score": 63,
+            "odoo_id": 35,
+            "reason_es": null,
+            "list_price_cop": 50000
+          }
+        ],
+        "match_name": "Uniforme de baloncesto",
+        "query_text": "Uniforme de baloncesto",
+        "alternatives": [
+          {
+            "name": "Uniforme de F\u00fatbol",
+            "rank": 2,
+            "score": 63,
+            "odoo_id": 115,
+            "reason_es": null,
+            "list_price_cop": 50000
+          },
+          {
+            "name": "Uniforme de atletismo",
+            "rank": 3,
+            "score": 63,
+            "odoo_id": 35,
+            "reason_es": null,
+            "list_price_cop": 50000
+          },
+          {
+            "name": "Uniforme de voleibol",
+            "rank": 4,
+            "score": 63,
+            "odoo_id": 31,
+            "reason_es": null,
+            "list_price_cop": 50000
+          },
+          {
+            "name": "Uniformes con bordado",
+            "rank": 5,
+            "score": 63,
+            "odoo_id": 1819,
+            "reason_es": null,
+            "list_price_cop": 57000
+          }
+        ],
+        "parsed_intent": {
+          "sport": "baloncesto",
+          "collar": null,
+          "sleeves": null,
+          "material": "dry_fit",
+          "quantity": 1,
+          "shortType": "mariposa",
+          "visualCues": [],
+          "withLining": null,
+          "garmentType": "uniforme_completo",
+          "productText": "Uniforme de baloncesto",
+          "attr_sources": {
+            "collar": null,
+            "lining": null,
+            "garment": "text",
+            "sleeves": null,
+            "material": "default"
+          },
+          "combinedText": "Uniforme de baloncesto",
+          "quantityProvided": true
+        },
+        "commercial_role": "base_uniform",
+        "match_confidence": "high",
+        "odoo_template_id": 23,
+        "catalog_published": null,
+        "interpretation_es": "Propongo: Uniforme de baloncesto (deporte: baloncesto; tipo: uniforme completo; tela: dry fit (default)).",
+        "missing_dimensions": [],
+        "clarifying_question": null
+      },
+      "service": {
+        "last_call_at": "2026-07-27T20:17:24.208Z",
+        "last_call_name": "build_quote_payload",
+        "fallback_message": "Sumerce, el pedido m\u00ednimo es 6 uniformes completos por dise\u00f1o. Con 1 no alcanzamos; \u00bflos hacemos en 6?",
+        "last_call_status": "blocked"
+      },
+      "security": {
+        "input_blocked": false,
+        "input_flagged": false,
+        "mcp_call_count": 0,
+        "policy_version": "2026-06-17",
+        "last_block_reason": null
+      },
+      "user_lane": "staff",
+      "order_draft": {
+        "write": {
+          "code": "opportunity_ready",
+          "mode": "opportunity_only",
+          "status": "ready",
+          "fingerprint": "{\"lines\":[{\"p\":\"Uniforme de baloncesto\",\"q\":1}],\"people\":[],\"partner\":\"\"}"
+        },
+        "detail": {
+          "rows": [
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "S",
+              "nombre": "SARA",
+              "numero": "30",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "XL",
+              "nombre": "LOZANO",
+              "numero": "17",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "12",
+              "nombre": "MATIAS M.Z",
+              "numero": "9",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "12",
+              "nombre": "GUADALUPE",
+              "numero": "25",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "M",
+              "nombre": "VIVAS",
+              "numero": "22",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "16",
+              "nombre": "ANGEL P.",
+              "numero": "10",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "XL",
+              "nombre": "DAIRY A.",
+              "numero": "23",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "S",
+              "nombre": "SARAY B.",
+              "numero": "13",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "S",
+              "nombre": "REYES",
+              "numero": "7",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "10",
+              "nombre": "BRAVO",
+              "numero": "15",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "S",
+              "nombre": "AGUIRRE M.",
+              "numero": "21",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "mas",
+              "manga": "ESQUELETO",
+              "talla": "10",
+              "nombre": "NICOLAS R.",
+              "numero": "11",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "14",
+              "nombre": "LAUREN H.",
+              "numero": "7",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "L",
+              "nombre": "SOFIA F.",
+              "numero": "47",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "femenino",
+              "manga": "ESQUELETO",
+              "talla": "S",
+              "nombre": "SANCHEZ",
+              "numero": "18",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": null,
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": null,
+              "nombre_vacio_impresion": false
+            }
+          ],
+          "people": [
+            {
+              "comments": [],
+              "identity": {
+                "group": "femenino",
+                "number": "30",
+                "print_name": "SARA",
+                "display_name": "SARA"
+              },
+              "person_id": "row-1",
+              "components": [
+                {
+                  "size": "S",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "mas",
+                "number": "17",
+                "print_name": "LOZANO",
+                "display_name": "LOZANO"
+              },
+              "person_id": "row-2",
+              "components": [
+                {
+                  "size": "XL",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "mas",
+                "number": "9",
+                "print_name": "MATIAS M.Z",
+                "display_name": "MATIAS M.Z"
+              },
+              "person_id": "row-3",
+              "components": [
+                {
+                  "size": "12",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "femenino",
+                "number": "25",
+                "print_name": "GUADALUPE",
+                "display_name": "GUADALUPE"
+              },
+              "person_id": "row-4",
+              "components": [
+                {
+                  "size": "12",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "mas",
+                "number": "22",
+                "print_name": "VIVAS",
+                "display_name": "VIVAS"
+              },
+              "person_id": "row-5",
+              "components": [
+                {
+                  "size": "M",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "mas",
+                "number": "10",
+                "print_name": "ANGEL P.",
+                "display_name": "ANGEL P."
+              },
+              "person_id": "row-6",
+              "components": [
+                {
+                  "size": "16",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "femenino",
+                "number": "23",
+                "print_name": "DAIRY A.",
+                "display_name": "DAIRY A."
+              },
+              "person_id": "row-7",
+              "components": [
+                {
+                  "size": "XL",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "femenino",
+                "number": "13",
+                "print_name": "SARAY B.",
+                "display_name": "SARAY B."
+              },
+              "person_id": "row-8",
+              "components": [
+                {
+                  "size": "S",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "mas",
+                "number": "7",
+                "print_name": "REYES",
+                "display_name": "REYES"
+              },
+              "person_id": "row-9",
+              "components": [
+                {
+                  "size": "S",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "mas",
+                "number": "15",
+                "print_name": "BRAVO",
+                "display_name": "BRAVO"
+              },
+              "person_id": "row-10",
+              "components": [
+                {
+                  "size": "10",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "mas",
+                "number": "21",
+                "print_name": "AGUIRRE M.",
+                "display_name": "AGUIRRE M."
+              },
+              "person_id": "row-11",
+              "components": [
+                {
+                  "size": "S",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "mas",
+                "number": "11",
+                "print_name": "NICOLAS R.",
+                "display_name": "NICOLAS R."
+              },
+              "person_id": "row-12",
+              "components": [
+                {
+                  "size": "10",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "femenino",
+                "number": "7",
+                "print_name": "LAUREN H.",
+                "display_name": "LAUREN H."
+              },
+              "person_id": "row-13",
+              "components": [
+                {
+                  "size": "14",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "femenino",
+                "number": "47",
+                "print_name": "SOFIA F.",
+                "display_name": "SOFIA F."
+              },
+              "person_id": "row-14",
+              "components": [
+                {
+                  "size": "L",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "femenino",
+                "number": "18",
+                "print_name": "SANCHEZ",
+                "display_name": "SANCHEZ"
+              },
+              "person_id": "row-15",
+              "components": [
+                {
+                  "size": "S",
+                  "type": "uniforme_completo",
+                  "sleeve": "ESQUELETO",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": "Uniforme de baloncesto",
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            }
+          ],
+          "source": "agent_normalized",
+          "warnings": [
+            "Conteo lista (15) difiere de cantidad comercial (1)."
+          ],
+          "parsed_at": "2026-07-27T20:16:41.228Z",
+          "row_count": 15,
+          "parse_status": "partial",
+          "person_count": 15,
+          "summary_text": "15 filas \u00b7 7 F \u00b7 8 general",
+          "schema_version": "life_order_people_v1"
+        },
+        "blockers": [
+          "Falta lista de jugadores (Excel, texto o imagen)."
+        ],
+        "lifecycle": {
+          "state": "draft_partial",
+          "updated_at": "2026-07-27T20:17:16.754Z",
+          "missing_fields": [
+            "cliente"
+          ],
+          "schema_version": "life_order_lifecycle_v1",
+          "active_revision": 0,
+          "detail_quantity": 15,
+          "confirmation_gate": {
+            "reason": "Faltan: cliente",
+            "allowed": false
+          },
+          "commercial_quantity": 1
+        },
+        "commercial": {
+          "lines": [
+            {
+              "category": "uniforme",
+              "quantity": 1,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": ""
+            }
+          ],
+          "resolved_lines": [
+            {
+              "line_id": "rl_1_23",
+              "category": "uniforme",
+              "comments": "",
+              "quantity": 1,
+              "unit_cop": 50000,
+              "attributes": {
+                "tela": "dry_fit",
+                "deporte": "baloncesto",
+                "tipo_pantalon": "mariposa"
+              },
+              "confidence": "high",
+              "product_base": "Uniforme de baloncesto",
+              "product_text": "Uniforme de baloncesto",
+              "product_tmpl_id": 23,
+              "product_variant_id": 23
+            }
+          ],
+          "requested_lines": [
+            {
+              "category": "uniforme",
+              "quantity": 1,
+              "product_text": "Uniforme de baloncesto",
+              "variant_notes": ""
+            }
+          ]
+        },
+        "attachments": [],
+        "spreadsheet": {
+          "status": "empty",
+          "cross_check": null
+        }
+      },
+      "quote.notes": "Baloncesto GUERREROS EFDAL. Diseno: azul oscuro con llamas azules/celestes/blancas, balon en llamas naranja/amarillo, cuello V, musculosa. Texto: GUERREROS EFDAL. 15 uniformes (7 F, 8 M). Manga esqueleto. Media blanca.",
+      "shop_catalog": [],
+      "spam_profile": null,
+      "order_details": {
+        "partial": {},
+        "updated_at": "2026-07-27T20:17:24.208Z",
+        "completeness": "incomplete",
+        "missing_fields": [],
+        "designer_schema_version": "life_designer_order_v1"
+      },
+      "agent_response": "Paola, entiendo: en el S02789 CHAMEZA DISCAPACIDAD, ODALINDA lleva uniforme femenino (corte femenino).\n\nNo logr\u00e9 sincronizar el pedido desde Odoo para ver la lista actual. Para hacer la correcci\u00f3n necesito:\n\n- Confirmame: es solo cambiar ODALINDA a corte femenino, o hay mas cambios?\n- Si tenes la lista o los datos de ODALINDA (talla, numero, posicion), mandamelos para armar el parche.\n\nCon eso corrijo el S02789.",
+      "last_user_input": "Este es el uniforme qu\u00e9 se desea as\u00ed mismo\nEste ser\u00eda el uniforme en cuesti\u00f3n Image attached (image_7e3aac1f12e8.jpeg) [Size: 172.7 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImViNmEzOTgwLTgyZDctNGY0ZS1hYzk2LWRkNWU3Zjg1NmY3OSIsInB1ciI6ImJsb2JfaWQifX0=--a88c8d1a605951ceb33a8f5bff76b4d1634645b0/image_7e3aac1f12e8.jpeg\nSon hasta ahora son 13 uniformes\nMuy buenos d\u00edas\nTe voy a enviar el PDF con el pedido de los uniforme por favor lo revisas si est\u00e1 bien para enviarte el dinero\nDaniel Tovar\nFORMATO PEDIDO LIFE 1.pdf Document attached (FORMATO PEDIDO LIFE 1.pdf) [Size: 115.1 KB | Type: application/pdf] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjJhYzIwOGRjLWY4MTktNDBjMC1hMzNhLTNlYWM4Mzc5ZWM4MSIsInB1ciI6ImJsb2JfaWQifX0=--5bb872c68dc5b29db47647eb87fbd3b03c18f162/FORMATO%20PEDIDO%20LIFE%201.pdf\nImage attached (image_ec6c2695ad76.jpeg) [Size: 152.7 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImY0N2EwNjQzLWI2YzEtNGE1NS1hMjc1LTAyNWZjNDIzZTljZCIsInB1ciI6ImJsb2JfaWQifX0=--36a8f5d84c290fb5269de8ab8de4353b3e93580e/image_ec6c2695ad76.jpeg\nImage attached (image_6ece05403ccb.jpeg) [Size: 187.7 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjE2YmJhYjMxLWU4MWEtNDUxYi04ZTAyLWUxZmI4MGQ5NjFiMiIsInB1ciI6ImJsb2JfaWQifX0=--aa941be9646f69e2f9cd85799bcda1431e47f280/image_6ece05403ccb.jpeg\nImage attached (image_c81ca305eb44.jpeg) [Size: 144.6 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImFhZmIwOTUyLWIyMTAtNDRlOC05MTFjLTcyNzVkMWNlYzAzNiIsInB1ciI6ImJsb2JfaWQifX0=--d38997f0cd1c853c830971b0c2b88b08d92a0512/image_c81ca305eb44.jpeg\nQu\u00e9 pena as\u00ed es el uniforme a realizar vale gracias\nImage attached (image_0820f57ad8a0.jpeg) [Size: 137.6 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjAyZWJkZmViLTQ2MjktNDY5MC1hOGI1LTdkZDMwZjExZTJmYyIsInB1ciI6ImJsb2JfaWQifX0=--476e52501a7616de908b2145db17f9ef58da228e/image_0820f57ad8a0.jpeg\nSaray no le entend\u00ed 14 s dice\nSi se\u00f1@r\nEs talla 14 o talla S??\nTalla S",
+      "agent_iterations": 18,
+      "staff.write_mode": "opportunity_only",
+      "staff_burst_reply": null,
+      "quote.customer_display_name": "DANIEL TOVAR"
+    },
+    "system": {
+      "flow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+      "customer": {
+        "id": "7fe6d691-be8f-462a-a2ec-9aeb93476b7b",
+        "name": "Default customer",
+        "external_customer_id": "default_customer"
+      },
+      "failed_at": "2026-07-27T16:17:26-04:00",
+      "flow_name": "lifedeportes_sales_inbound",
+      "running_at": "2026-07-27T16:14:54-04:00",
+      "started_at": "2026-07-27T16:05:30-04:00",
+      "step_count": 12,
+      "waiting_at": "2026-07-27T16:13:58-04:00",
+      "last_resume": {
+        "at": "2026-07-27T16:14:54-04:00",
+        "reason": "user_input",
+        "step_id": "c8baa88a-eed9-4806-81cf-ac768763cc50",
+        "step_type": "FlowAgentStep",
+        "step_identifier": "agent_1780762885818"
+      },
+      "workflow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+      "flow_version": 0,
+      "trigger_type": "inbound_message",
+      "workflow_name": "lifedeportes_sales_inbound",
+      "whatsapp_config": {
+        "id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+        "kind": "production",
+        "name": "Life Deportes Asistente",
+        "phone_number_id": "1095603153637786",
+        "business_account_id": "808809791888713",
+        "display_phone_number": "3000000066",
+        "display_phone_number_normalized": "3000000066"
+      },
+      "workflow_version": 0,
+      "flow_execution_id": "ecc629e2-c0a5-4ad3-b538-044b3bd6feae",
+      "last_status_change": "2026-07-27T16:17:26-04:00",
+      "workflow_execution_id": "ecc629e2-c0a5-4ad3-b538-044b3bd6feae",
+      "trigger_whatsapp_config_id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+      "available_whatsapp_config_ids": [
+        "c8364dd2-ae4d-433b-bc02-3b5ea01024df"
+      ]
+    },
+    "context": {
+      "channel": "whatsapp",
+      "contact": {
+        "id": "c53204cc-ccfa-49e0-bc67-2af24c9eb7d4",
+        "name": "Life Deportes",
+        "wa_id": "573213988464",
+        "username": null,
+        "display_name": null,
+        "profile_name": "Life Deportes",
+        "business_scoped_user_id": "CO.2556400578091357",
+        "parent_business_scoped_user_id": null
+      },
+      "phone_number": "573213988464",
+      "conversation_id": "5f93d5ec-15f9-4187-a3b4-fe50c0d57c62",
+      "agent_iterations": 2,
+      "whatsapp_username": null,
+      "agent_last_message": "Encontr\u00e9 la oportunidad de DANIEL TOVAR (CRM 3578, Canal Ventas, sin presupuesto a\u00fan).\n\nPara anexar la informaci\u00f3n y retomar, necesito saber:\n\n- Tienes la lista/Excel de DANIEL TOVAR para armar el pedido, o vas a mandarla?\n- Quieres que cree presupuesto (S0...) o solo actualizar la oportunidad CRM con la nota de que ODALINDA es uniforme femenino?\n\nMandame lo que tengas y arrancamos.",
+      "whatsapp_business_scoped_user_id": "CO.2556400578091357",
+      "whatsapp_parent_business_scoped_user_id": null
+    },
+    "metadata": {}
+  },
+  "last_event_at": "2026-07-27T16:17:26-04:00",
+  "started_at": "2026-07-27T16:05:30-04:00",
+  "status": "failed",
+  "tracking_id": null,
+  "whatsapp_conversation_id": "5f93d5ec-15f9-4187-a3b4-fe50c0d57c62",
+  "workflow": {
+    "id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+    "agent_default_tools_version": 2,
+    "lock_version": 1443,
+    "name": "lifedeportes_sales_inbound",
+    "slug": "lifedeportes-sales-inbound",
+    "status": "active",
+    "updated_at": "2026-07-30T13:16:02-04:00"
+  }
+}

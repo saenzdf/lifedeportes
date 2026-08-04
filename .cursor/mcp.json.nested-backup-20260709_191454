@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "kapso": {
+      "url": "https://docs.kapso.ai/mcp"
+    },
+    "odoo": {
+      "command": "/Users/diego/Documents/Sync/cursor/life deportes/lifedeportes/scripts/run-odoo-mcp.sh",
+      "args": [],
+      "env": {
+        "ODOO_PREFIX": "LIFEDEPORTES",
+        "ODOO_TARGET": "test"
+      }
+    },
+    "odoo-prod": {
+      "command": "/Users/diego/Documents/Sync/cursor/life deportes/lifedeportes/scripts/run-odoo-mcp-prod.sh",
+      "args": [],
+      "env": {
+        "ODOO_PREFIX": "LIFEDEPORTES_PROD",
+        "ODOO_TARGET": "prod"
+      }
+    }
+  }
+}

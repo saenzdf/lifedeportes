@@ -1,0 +1,85 @@
+{
+  "case": 6,
+  "ok": true,
+  "partner_mode": "history",
+  "entry": "excel_mirror_no_life",
+  "note": "Excel NO Life → espejo nota + comercial mínimo",
+  "task": {
+    "model": "project.task",
+    "id": 2320,
+    "name": "[S02520] ADRIAN",
+    "sale_order": "S02520",
+    "partner": "ADRIAN"
+  },
+  "customer_requested": "ADRIAN",
+  "history_probe": {
+    "candidates": [
+      {
+        "id": 3512,
+        "name": "ADRIAN"
+      },
+      {
+        "id": 3510,
+        "name": "ADRIAN"
+      },
+      {
+        "id": 3496,
+        "name": "ADRIANA DAVID"
+      }
+    ],
+    "so_count": 4,
+    "latest": "S02520"
+  },
+  "parse": "layout=generic rows=0 · mirror + comercial×8 (parser Life 0 filas)",
+  "parse_rows": 0,
+  "bumped_min6": false,
+  "write_status": "ready",
+  "write_error": "Lead y cotizacion BORRADOR creados en Odoo (confirmar manualmente). Linea Diseno a costo 0.",
+  "order_id": 2642,
+  "partner_match_ok": true,
+  "so_name": "S02652",
+  "so_state": "draft",
+  "amount_total": 476000,
+  "partner_id": 3512,
+  "partner_name": "ADRIAN",
+  "partner_prior_so_count": 1,
+  "partner_has_history": true,
+  "note_has_lista": true,
+  "note_chars": 17191,
+  "lines": [
+    {
+      "qty": 1,
+      "name": "Diseño"
+    },
+    {
+      "qty": 8,
+      "name": "Uniforme de Fútbol"
+    }
+  ],
+  "spreadsheet_id": 71,
+  "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2642/sale-order-spreadsheet/71",
+  "filled": 0,
+  "mode": "native_aprobacion_cf_hm",
+  "people_cf": 0,
+  "talla_sample": "",
+  "nombre_sample": "",
+  "payload_validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      {
+        "code": "no_units",
+        "message": "Sin unidades/personas (Aprobación vacía)"
+      },
+      {
+        "code": "qty_people_vs_lines",
+        "message": "Personas (0) != líneas (8)"
+      },
+      {
+        "code": "lines_without_people",
+        "message": "Qty líneas 8 sin personas en detalle — no forzar cuadre"
+      }
+    ],
+    "grave": false
+  }
+}

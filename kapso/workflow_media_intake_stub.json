@@ -1,0 +1,31 @@
+{
+  "name": "lifedeportes_media_intake_stub",
+  "description": "STUB v1 - placeholder para el subworkflow que procesa foto/audio y rellena vars.quote.draft_payload. Hoy solo marca vars.service y retorna. Reemplazar nodos internos cuando el multimodal real este listo. Referenciado por el Agent tool invocar_media_intake.",
+  "nodes": [
+    {
+      "id": "start",
+      "type": "flow-node",
+      "position": { "x": 100, "y": 100 },
+      "data": {
+        "node_type": "start",
+        "display_name": "Inicio media_intake (stub)",
+        "config": {}
+      }
+    },
+    {
+      "id": "mark_stub_001",
+      "type": "flow-node",
+      "position": { "x": 100, "y": 280 },
+      "data": {
+        "node_type": "function",
+        "display_name": "Marcar stub en vars",
+        "config": {
+          "function_name": "media-intake-dispatcher"
+        }
+      }
+    }
+  ],
+  "edges": [
+    { "source": "start", "target": "mark_stub_001", "label": "next" }
+  ]
+}

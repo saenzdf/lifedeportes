@@ -1,0 +1,8 @@
+{
+  "detect_staff_lane": "b6e4935f-cbf7-48f7-9483-729a2294ec14",
+  "route_staff_lane": "763ddc62-3d3a-439e-a3f4-78621a93ea3a",
+  "validate_nomina_confirm": "d719ba6e-e2d2-45cf-a8e6-3339adaa9e0c",
+  "route_nomina_confirm": "e65f3ee7-2ff7-41a4-a5ac-66278b080db2",
+  "parse_nomina_attlog": "7c490919-ceb7-48a4-b267-abbf57ff33ab",
+  "register_nomina_stub": "481fa039-0368-4983-bf44-6839cc29da42"
+}

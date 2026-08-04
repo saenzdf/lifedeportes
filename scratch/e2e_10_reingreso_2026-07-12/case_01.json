@@ -1,0 +1,76 @@
+{
+  "case": 1,
+  "ok": true,
+  "partner_mode": "history",
+  "entry": "excel_life_plus_fotos",
+  "note": "Excel Life + fotos diseño/arquero",
+  "task": {
+    "model": "project.task",
+    "id": 2237,
+    "name": "[S02423] PASTO",
+    "sale_order": "S02423",
+    "partner": "PASTO"
+  },
+  "customer_requested": "PASTO",
+  "history_probe": {
+    "candidates": [
+      {
+        "id": 3626,
+        "name": "E2E Test 1 — PASTO"
+      },
+      {
+        "id": 3396,
+        "name": "PASTO"
+      },
+      {
+        "id": 3391,
+        "name": "PASTO"
+      }
+    ],
+    "so_count": 5,
+    "latest": "S02646"
+  },
+  "parse": "layout=formato_life_v1 rows=36",
+  "parse_rows": 36,
+  "bumped_min6": false,
+  "write_status": "ready",
+  "write_error": "Lead y cotizacion BORRADOR creados en Odoo (confirmar manualmente). Linea Diseno a costo 0.",
+  "order_id": 2637,
+  "partner_match_ok": true,
+  "so_name": "S02647",
+  "so_state": "draft",
+  "amount_total": 1689800,
+  "partner_id": 3626,
+  "partner_name": "E2E Test 1 — PASTO",
+  "partner_prior_so_count": 5,
+  "partner_has_history": true,
+  "note_has_lista": true,
+  "note_chars": 10120,
+  "lines": [
+    {
+      "qty": 1,
+      "name": "Diseño"
+    },
+    {
+      "qty": 17,
+      "name": "Uniforme de Fútbol"
+    },
+    {
+      "qty": 19,
+      "name": "Camiseta deportiva dry-fit"
+    }
+  ],
+  "spreadsheet_id": 66,
+  "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2637/sale-order-spreadsheet/66",
+  "filled": 36,
+  "mode": "native_aprobacion_cf_hm",
+  "people_cf": 36,
+  "talla_sample": "Tallas: M",
+  "nombre_sample": "ANDRÉS J",
+  "payload_validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "grave": false
+  }
+}

@@ -1,0 +1,1033 @@
+{
+  "data": [
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSMjgwOEFEOTQyMTg0RjU4QzlFAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Así es, el abono es del 50% para iniciar la fabricación y el resto va contra entrega. El medio de pago exacto se lo indica el asesor al confirmar el pedido.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSMjgwOEFEOTQyMTg0RjU4QzlFAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785007102",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSMjgwOEFEOTQyMTg0RjU4QzlFAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785007103",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          }
+        ]
+      },
+      "text": {
+        "body": "Así es, el abono es del 50% para iniciar la fabricación y el resto va contra entrega. El medio de pago exacto se lo indica el asesor al confirmar el pedido."
+      },
+      "timestamp": "1785007102",
+      "to": "3000000055",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUM3RTM1ODgyNEQ0NzcxMzQ0NjA2MjQ5QzY1MEVCNTcA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Si para la fábricicon cuánto tengo que dar la mitad cierto"
+      },
+      "text": {
+        "body": "Si para la fábricicon cuánto tengo que dar la mitad cierto"
+      },
+      "timestamp": "1785007060",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSQTg1RDZFMjM5NzA2RjMzMzQ2AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Esto sería lo siguiente:\n\n- 24 uniformes completos (camiseta + pantaloneta) dry-fit, cuello redondo: $50.000 c/u, total $1.200.000\n- 1 bandera sublimada 2m x 1m: $60.000\n\nTotal aproximado: $1.260.000\n\nEl precio de la bandera es de referencia, ya que el tamaño que pide (2m x 1m) es más grande que el estándar; el asesor le confirmaría el valor exacto al cerrar el pedido. ¿Le queda alguna duda?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSQTg1RDZFMjM5NzA2RjMzMzQ2AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785006989",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSQTg1RDZFMjM5NzA2RjMzMzQ2AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785006990",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSQTg1RDZFMjM5NzA2RjMzMzQ2AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1785007006",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          }
+        ]
+      },
+      "text": {
+        "body": "Esto sería lo siguiente:\n\n- 24 uniformes completos (camiseta + pantaloneta) dry-fit, cuello redondo: $50.000 c/u, total $1.200.000\n- 1 bandera sublimada 2m x 1m: $60.000\n\nTotal aproximado: $1.260.000\n\nEl precio de la bandera es de referencia, ya que el tamaño que pide (2m x 1m) es más grande que el estándar; el asesor le confirmaría el valor exacto al cerrar el pedido. ¿Le queda alguna duda?"
+      },
+      "timestamp": "1785006989",
+      "to": "3000000055",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSNEY0NzE4N0EwNDczM0RGOEE2AA==",
+        "from": "3000000066"
+      },
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUNGN0FCNzcyODUxQTA0MTY5QUMyMTkzRjI5ODIxODUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Sí así sería y x cuánto saldría todo"
+      },
+      "text": {
+        "body": "Sí así sería y x cuánto saldría todo"
+      },
+      "timestamp": "1785006921",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSNEY0NzE4N0EwNDczM0RGOEE2AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "No manejamos combos; somos fabricantes y cada producto tiene su precio mínimo de catálogo. Lo que sí podemos es incluir todo en un mismo pedido para que vaya junto.\n\nAnotado: bandera sublimada de 2m x 1m. ¿El diseño de la bandera sería el mismo escudo de Los Leones o algo distinto?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSNEY0NzE4N0EwNDczM0RGOEE2AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784994134",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSNEY0NzE4N0EwNDczM0RGOEE2AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784994136",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSNEY0NzE4N0EwNDczM0RGOEE2AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784994180",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          }
+        ]
+      },
+      "text": {
+        "body": "No manejamos combos; somos fabricantes y cada producto tiene su precio mínimo de catálogo. Lo que sí podemos es incluir todo en un mismo pedido para que vaya junto.\n\nAnotado: bandera sublimada de 2m x 1m. ¿El diseño de la bandera sería el mismo escudo de Los Leones o algo distinto?"
+      },
+      "timestamp": "1784994134",
+      "to": "3000000055",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUNDMDE2QjczN0JGMUJEMUZGOEQ3QUM5OUZDMjZFNjIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Y manejan combos o no ??"
+      },
+      "text": {
+        "body": "Y manejan combos o no ??"
+      },
+      "timestamp": "1784994075",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSQzM3NTExRkEyQjAxQzM4MzJCAA==",
+        "from": "3000000066"
+      },
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUMxQjE3OEE4OEY2M0Q1RjNBOEI0NDFENkE3MjU1MzIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Si la bandera sería 2m × 1m"
+      },
+      "text": {
+        "body": "Si la bandera sería 2m × 1m"
+      },
+      "timestamp": "1784994052",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSQzM3NTExRkEyQjAxQzM4MzJCAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Perfecto, ya tenemos anotado el uniforme completo para 24 personas en dry-fit, cuello redondo, con el diseño de leones y el escudo en el pecho izquierdo, más la bandera.\n\nSobre la bandera, ¿qué tamaño tendría en mente y llevaría el mismo diseño del escudo o algo distinto?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSQzM3NTExRkEyQjAxQzM4MzJCAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784993328",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSQzM3NTExRkEyQjAxQzM4MzJCAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784993329",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSQzM3NTExRkEyQjAxQzM4MzJCAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784993397",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, ya tenemos anotado el uniforme completo para 24 personas en dry-fit, cuello redondo, con el diseño de leones y el escudo en el pecho izquierdo, más la bandera.\n\nSobre la bandera, ¿qué tamaño tendría en mente y llevaría el mismo diseño del escudo o algo distinto?"
+      },
+      "timestamp": "1784993327",
+      "to": "3000000055",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUMyMUQwNDUxMEM1QjYyODE3MTg4Q0U0MDNFNTYyNzUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Dale entonces esperomos esos ajustes \nSi también sería la bandera"
+      },
+      "text": {
+        "body": "Dale entonces esperomos esos ajustes \nSi también sería la bandera"
+      },
+      "timestamp": "1784993278",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSMjFCMjM3MzFDRjFBNUUwNDkyAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Sobre el diseño, podemos tomar la idea que ya tienen y nuestro equipo de diseño la puede ajustar y proponer variaciones. También pueden ver referencias de otros trabajos en https://lifedeportes.odoo.com/shop para inspirarse.\n\nY sí, fabricamos banderas sublimadas. Como ya van con el pedido de uniformes, las banderas pueden ir incluidas en el mismo pedido. ¿Querría cotizar banderas también?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSMjFCMjM3MzFDRjFBNUUwNDkyAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784992937",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSMjFCMjM3MzFDRjFBNUUwNDkyAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784992938",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSMjFCMjM3MzFDRjFBNUUwNDkyAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784993183",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          }
+        ]
+      },
+      "text": {
+        "body": "Sobre el diseño, podemos tomar la idea que ya tienen y nuestro equipo de diseño la puede ajustar y proponer variaciones. También pueden ver referencias de otros trabajos en https://lifedeportes.odoo.com/shop para inspirarse.\n\nY sí, fabricamos banderas sublimadas. Como ya van con el pedido de uniformes, las banderas pueden ir incluidas en el mismo pedido. ¿Querría cotizar banderas también?"
+      },
+      "timestamp": "1784992937",
+      "to": "3000000055",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUM4NTQ4MTZFRDVFRjNCQTFDOThDQ0QwOUZBNDJDNjgA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Pues si tenemos ese diseño en mente no sé si ustedes nos podrían decir más diseños o algo así \nY dale seria esa tela y también fabrican banderas??"
+      },
+      "text": {
+        "body": "Pues si tenemos ese diseño en mente no sé si ustedes nos podrían decir más diseños o algo así \nY dale seria esa tela y también fabrican banderas??"
+      },
+      "timestamp": "1784992894",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSNjlGMEJBRjVEMzhBMzdFRjFBAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Ya vi la imagen. Es una camiseta negra con detalles en blanco y fucsia, con diseño de leones y llamas, manga corta. Usted pidió cuello redondo (en la foto aparece en V, pero se hace en redondo sin problema) y el escudo va en el lado izquierdo del pecho. ¿Es ese el diseño que quieren replicar?\n\nSobre la tela: trabajamos en dry-fit, que es una tela deportiva transpirable, liviana y de secado rápido, ideal para microfútbol. Es la que usamos en casi todos los pedidos. ¿Le parece bien con dry-fit?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSNjlGMEJBRjVEMzhBMzdFRjFBAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784992542",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSNjlGMEJBRjVEMzhBMzdFRjFBAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784992542",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSNjlGMEJBRjVEMzhBMzdFRjFBAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784992545",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          }
+        ]
+      },
+      "text": {
+        "body": "Ya vi la imagen. Es una camiseta negra con detalles en blanco y fucsia, con diseño de leones y llamas, manga corta. Usted pidió cuello redondo (en la foto aparece en V, pero se hace en redondo sin problema) y el escudo va en el lado izquierdo del pecho. ¿Es ese el diseño que quieren replicar?\n\nSobre la tela: trabajamos en dry-fit, que es una tela deportiva transpirable, liviana y de secado rápido, ideal para microfútbol. Es la que usamos en casi todos los pedidos. ¿Le parece bien con dry-fit?"
+      },
+      "timestamp": "1784992541",
+      "to": "3000000055",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUMzOUFGMUNEMDAwNjk5NzExODlGRDE0MEVFQkJFOUUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Eso sí seria redondo y no se me puedes explicar lo de la tela"
+      },
+      "text": {
+        "body": "Eso sí seria redondo y no se me puedes explicar lo de la tela"
+      },
+      "timestamp": "1784992476",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSRDZDQTBCMkIwRjNFODA5OTU3AA==",
+        "from": "3000000066"
+      },
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUM0MTU5MDA4NTU1Q0M3NTJGNTlDRUI0ODI4MDhCQ0UA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Ay está veci"
+      },
+      "text": {
+        "body": "Ay está veci"
+      },
+      "timestamp": "1784992453",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUM3QTE4MUYwRjM0QzNGMTExRkExQzY5Njg0RDQyNDMA",
+      "image": {
+        "id": "1625451565818022",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1625451565818022&source=webhook&ext=1784992731&hash=ATzj_H0NNlnujvXFJ1QvmsatcGTgPRlBpOz0ATT5-T56qg",
+        "sha256": "XRmojbK7u9yLJ6OgIWmjLw/n4joE/uiUUR5CvxwDukw=",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjYwNTJmNzBkLTRlMGItNGE1Yy1iYWY0LTExYzQ5YjA5MzJlMCIsInB1ciI6ImJsb2JfaWQifX0=--13eb40afb607414355aa2725d4f61aadf9dd650e/image_5b964f914254.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Image attached (image_5b964f914254.jpeg) [Size: 172.5 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjYwNTJmNzBkLTRlMGItNGE1Yy1iYWY0LTExYzQ5YjA5MzJlMCIsInB1ciI6ImJsb2JfaWQifX0=--13eb40afb607414355aa2725d4f61aadf9dd650e/image_5b964f914254.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjYwNTJmNzBkLTRlMGItNGE1Yy1iYWY0LTExYzQ5YjA5MzJlMCIsInB1ciI6ImJsb2JfaWQifX0=--13eb40afb607414355aa2725d4f61aadf9dd650e/image_5b964f914254.jpeg",
+          "filename": "image_5b964f914254.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 176637
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjYwNTJmNzBkLTRlMGItNGE1Yy1iYWY0LTExYzQ5YjA5MzJlMCIsInB1ciI6ImJsb2JfaWQifX0=--13eb40afb607414355aa2725d4f61aadf9dd650e/image_5b964f914254.jpeg",
+        "message_type_data": {
+          "caption": "",
+          "has_media": true
+        }
+      },
+      "timestamp": "1784992436",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSRDZDQTBCMkIwRjNFODA5OTU3AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Veo el escudo que enviaron: es un diseño circular con un león coronado, estilo urbano, en negro y dorado, con el texto \"LOS LEONES - DE LA COMUNA #13\". Lo del escudo en el lado izquierdo del pecho, sí se puede hacer.\n\nSin embargo, no pude procesar la imagen del diseño del uniforme. ¿Podría reenviarla? Mientras tanto, ¿sabe qué tipo de cuello prefieren (redondo, en V, sport) y si la tela sería dry-fit?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSRDZDQTBCMkIwRjNFODA5OTU3AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784992343",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSRDZDQTBCMkIwRjNFODA5OTU3AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784992344",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSRDZDQTBCMkIwRjNFODA5OTU3AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784992384",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          }
+        ]
+      },
+      "text": {
+        "body": "Veo el escudo que enviaron: es un diseño circular con un león coronado, estilo urbano, en negro y dorado, con el texto \"LOS LEONES - DE LA COMUNA #13\". Lo del escudo en el lado izquierdo del pecho, sí se puede hacer.\n\nSin embargo, no pude procesar la imagen del diseño del uniforme. ¿Podría reenviarla? Mientras tanto, ¿sabe qué tipo de cuello prefieren (redondo, en V, sport) y si la tela sería dry-fit?"
+      },
+      "timestamp": "1784992343",
+      "to": "3000000055",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUMyNzVFN0UxMTcwMjVGOEUwRUQ0OTQ0QjRBOEVEMTIA",
+      "image": {
+        "id": "1767942631005573",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1767942631005573&source=webhook&ext=1784992493&hash=ATyXxcTRCUZRlu-GiTikVR2rphTpxHEdA_RD89Zd6VXzzg",
+        "sha256": "XRmojbK7u9yLJ6OgIWmjLw/n4joE/uiUUR5CvxwDukw=",
+        "caption": "Tenemos pensado este diseño y nuestro escudo es este quiero que el escudo quede en la parte izquierda del pecho",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImIzMTNmOWFjLWU5Y2ItNDJkOS05MTNiLWY4NGIyZTRhNWZmNSIsInB1ciI6ImJsb2JfaWQifX0=--abc5395c47959464d602959b5e17c6482d9f9918/image_28622c605f06.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Tenemos pensado este diseño y nuestro escudo es este quiero que el escudo quede en la parte izquierda del pecho Image attached (image_28622c605f06.jpeg) [Size: 172.5 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImIzMTNmOWFjLWU5Y2ItNDJkOS05MTNiLWY4NGIyZTRhNWZmNSIsInB1ciI6ImJsb2JfaWQifX0=--abc5395c47959464d602959b5e17c6482d9f9918/image_28622c605f06.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImIzMTNmOWFjLWU5Y2ItNDJkOS05MTNiLWY4NGIyZTRhNWZmNSIsInB1ciI6ImJsb2JfaWQifX0=--abc5395c47959464d602959b5e17c6482d9f9918/image_28622c605f06.jpeg",
+          "filename": "image_28622c605f06.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 176637
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImIzMTNmOWFjLWU5Y2ItNDJkOS05MTNiLWY4NGIyZTRhNWZmNSIsInB1ciI6ImJsb2JfaWQifX0=--abc5395c47959464d602959b5e17c6482d9f9918/image_28622c605f06.jpeg",
+        "message_type_data": {
+          "caption": "Tenemos pensado este diseño y nuestro escudo es este quiero que el escudo quede en la parte izquierda del pecho",
+          "has_media": true
+        }
+      },
+      "timestamp": "1784992197",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUMyMkZEQTRFN0E2M0RENUUyRDNGMzZCMzJGNjVBNTQA",
+      "image": {
+        "id": "37644454555152975",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=37644454555152975&source=webhook&ext=1784992492&hash=ATy6NqIPyPrFwSQ3XU6djCyUEVOSWH14J3ddsxSnDOB7Bg",
+        "sha256": "oKZ6XwDjsOpNMrzfl3i6fTalG1dBRlbuPnIXgMsj5wI=",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjBmODdiZjU3LTE2Y2EtNDVhYS1iNTY5LTVkMDUwYmU3NWQ1NiIsInB1ciI6ImJsb2JfaWQifX0=--542f6764bd7775debe3753b407f60cb0e711f72c/image_1a9a049e5e93.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Image attached (image_1a9a049e5e93.jpeg) [Size: 74.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjBmODdiZjU3LTE2Y2EtNDVhYS1iNTY5LTVkMDUwYmU3NWQ1NiIsInB1ciI6ImJsb2JfaWQifX0=--542f6764bd7775debe3753b407f60cb0e711f72c/image_1a9a049e5e93.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjBmODdiZjU3LTE2Y2EtNDVhYS1iNTY5LTVkMDUwYmU3NWQ1NiIsInB1ciI6ImJsb2JfaWQifX0=--542f6764bd7775debe3753b407f60cb0e711f72c/image_1a9a049e5e93.jpeg",
+          "filename": "image_1a9a049e5e93.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 76038
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjBmODdiZjU3LTE2Y2EtNDVhYS1iNTY5LTVkMDUwYmU3NWQ1NiIsInB1ciI6ImJsb2JfaWQifX0=--542f6764bd7775debe3753b407f60cb0e711f72c/image_1a9a049e5e93.jpeg",
+        "message_type_data": {
+          "caption": "",
+          "has_media": true
+        }
+      },
+      "timestamp": "1784992196",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUM0MjJENjM3NDFCQjM1MTZDQkIxRTFEQ0UxMkUxNEUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "[Unsupported message - Error 131051]: Message type unknown"
+      },
+      "timestamp": "1784992193",
+      "type": "unsupported",
+      "username": null,
+      "errors": [
+        {
+          "code": 131051,
+          "title": "Message type unknown",
+          "message": "Message type unknown",
+          "error_data": {
+            "details": "Message type is currently not supported."
+          }
+        }
+      ],
+      "unsupported": {
+        "type": "unknown"
+      }
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUNBODgzMUVFMTZENDAxNzM2M0FDNjUzQkREQjVFRTYA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Todo el uniforme completo camiseta y pantalóneta no manejan combos"
+      },
+      "text": {
+        "body": "Todo el uniforme completo camiseta y pantalóneta no manejan combos"
+      },
+      "timestamp": "1784992188",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSRDkxNzhFQTkzOEQxODhDMDFDAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "¿Necesita uniforme completo (camiseta + pantaloneta) o solo camisetas?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSRDkxNzhFQTkzOEQxODhDMDFDAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784991423",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSRDkxNzhFQTkzOEQxODhDMDFDAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784991446",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSRDkxNzhFQTkzOEQxODhDMDFDAA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784991517",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          }
+        ]
+      },
+      "text": {
+        "body": "¿Necesita uniforme completo (camiseta + pantaloneta) o solo camisetas?"
+      },
+      "timestamp": "1784991422",
+      "to": "3000000055",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUNBMTM2RDQ3NzI5RjIyOTQ3MjdEN0ZDMDA5NERERTEA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "24 personas"
+      },
+      "text": {
+        "body": "24 personas"
+      },
+      "timestamp": "1784991382",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSOTI1RjFFRUY4MzY0NjJGMUU5AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Buenas, ¿para cuántas personas serían los uniformes de microfútbol? (mínimo 6)",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSOTI1RjFFRUY4MzY0NjJGMUU5AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784991189",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSOTI1RjFFRUY4MzY0NjJGMUU5AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784991224",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          },
+          {
+            "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAERgSOTI1RjFFRUY4MzY0NjJGMUU5AA==",
+            "status": "read",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784991226",
+            "recipient_id": "3000000055",
+            "recipient_user_id": "CO.1417490393765662"
+          }
+        ]
+      },
+      "text": {
+        "body": "Buenas, ¿para cuántas personas serían los uniformes de microfútbol? (mínimo 6)"
+      },
+      "timestamp": "1784991189",
+      "to": "3000000055",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "3000000055",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.1417490393765662",
+      "id": "wamid.HBgMNTczMjA0NjkxMDQzFQIAEhggQUNGMUVGMEUzQjM2NEVCMDA4Qzc5NkJENDZFQkUwODkA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "3000000055",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+        "contact_name": "Sebastián Martinez",
+        "content": "Hola, quiero cotizar uniformes de micro"
+      },
+      "text": {
+        "body": "Hola, quiero cotizar uniformes de micro"
+      },
+      "timestamp": "1784991105",
+      "type": "text",
+      "username": null
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yNVQxOToxODoyMi42OTQ0OTJaIiwiYTNlODY1MzgtMWQ4YS00MWZmLWEwMjgtMDBiNmRmYTYwZDk0Il0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19",
+      "after": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yNVQxNDo1MTo0NS45NzQwODBaIiwiM2QzM2U3MTYtNDI0YS00MzI1LWFhMTgtZDg4NzAxMmE5NzMzIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19"
+    },
+    "next": null,
+    "previous": null
+  }
+}

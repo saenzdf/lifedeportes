@@ -1,0 +1,8 @@
+=== FACEBOOK & INSTAGRAM CAMPAIGN SPAM ANALYSIS ===
+
+Scanned 100 webhook logs from the last 30 days.
+Parsed 2 incoming messages.
+Detected 0 total ad click referrals.
+
+--- AD CAMPAIGNS CLICKS & SPAM RATE ---
+

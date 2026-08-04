@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Merge plantilla sobre website.page (/about etc.) al actualizar tema -->
+    <function model="ir.ui.view" name="lifedeportes_merge_about_templates"/>
+</odoo>

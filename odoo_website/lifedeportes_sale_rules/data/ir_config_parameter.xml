@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="lifedeportes_uniform_base_min_qty" model="ir.config_parameter">
+        <field name="key">lifedeportes.uniform_base_min_qty</field>
+        <field name="value">6</field>
+    </record>
+</odoo>

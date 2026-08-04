@@ -1,0 +1,2 @@
+11:43:54.717[31m [Client ERROR] Failed to handle retry receipt for 217115646812182@lid/3EB0184AF3A4B3C8C1606A from 173362093510729:60@lid: failed to get message from retry store: sql: no rows in result set[0m
+{"success":true,"data":{"file":{"media":"image","mime_type":"image/jpeg","name":"UNIFORMES DE ARQUERO PASTO.jpeg","ptt":"false"},"id":"3EB0184AF3A4B3C8C1606A","sent":true,"to":"3000000066@s.whatsapp.net"},"error":null}

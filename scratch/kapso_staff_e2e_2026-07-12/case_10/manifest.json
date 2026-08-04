@@ -1,0 +1,39 @@
+{
+  "case": 10,
+  "source": {
+    "model": "project.task",
+    "id": 2288,
+    "name": "[S02486] CHUCHO TACALOA",
+    "sale_order": "S02486",
+    "partner": "CHUCHO TACALOA"
+  },
+  "display_customer": "E2E Form v3 10 — CHUCHO",
+  "suggested_text": "Pedido nuevo E2E.\nCliente: E2E Formulario 10 — CHUCHO v2\nAdjunto Excel/fotos. Sube borrador en Odoo test.",
+  "files": [
+    {
+      "file": "image.png",
+      "odoo_attachment_id": 27145,
+      "mimetype": "image/png",
+      "bytes": 149964
+    },
+    {
+      "file": "UNIFORME TACALOA FC chucho tacaloa.xlsx",
+      "odoo_attachment_id": 27144,
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 16404
+    },
+    {
+      "file": "chucho tacaloa.jpeg",
+      "odoo_attachment_id": 27141,
+      "mimetype": "image/jpeg",
+      "bytes": 57176
+    },
+    {
+      "file": "logo chucho.jpeg",
+      "odoo_attachment_id": 27140,
+      "mimetype": "image/jpeg",
+      "bytes": 28946
+    }
+  ],
+  "notes": "Skip print PDFs/CDR. Reuse excel + images only."
+}

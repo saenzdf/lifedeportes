@@ -1,0 +1,72 @@
+[
+  {
+    "case": 1,
+    "dir": "scratch/kapso_staff_e2e_2026-07-12/case_01",
+    "files": 5,
+    "xlsx": true,
+    "display": "E2E Test 1 — PASTO"
+  },
+  {
+    "case": 2,
+    "dir": "scratch/kapso_staff_e2e_2026-07-12/case_02",
+    "files": 4,
+    "xlsx": true,
+    "display": "E2E Test 2 — JORGE"
+  },
+  {
+    "case": 3,
+    "dir": "scratch/kapso_staff_e2e_2026-07-12/case_03",
+    "files": 5,
+    "xlsx": true,
+    "display": "E2E Test 3 — LUCU"
+  },
+  {
+    "case": 4,
+    "dir": "scratch/kapso_staff_e2e_2026-07-12/case_04",
+    "files": 2,
+    "xlsx": true,
+    "display": "E2E Test 4 — NELSON"
+  },
+  {
+    "case": 5,
+    "dir": "scratch/kapso_staff_e2e_2026-07-12/case_05",
+    "files": 1,
+    "xlsx": true,
+    "display": "E2E Test 5 — FORTALEZA"
+  },
+  {
+    "case": 6,
+    "dir": "scratch/kapso_staff_e2e_2026-07-12/case_06",
+    "files": 8,
+    "xlsx": true,
+    "display": "E2E Test 6 — ADRIAN"
+  },
+  {
+    "case": 7,
+    "dir": "scratch/kapso_staff_e2e_2026-07-12/case_07",
+    "files": 8,
+    "xlsx": true,
+    "display": "E2E Test 7 — david"
+  },
+  {
+    "case": 8,
+    "dir": "scratch/kapso_staff_e2e_2026-07-12/case_08",
+    "files": 4,
+    "xlsx": true,
+    "display": "E2E Test 8 — WILLIAM"
+  },
+  {
+    "case": 9,
+    "dir": "scratch/kapso_staff_e2e_2026-07-12/case_09",
+    "files": 5,
+    "xlsx": true,
+    "display": "E2E Test 9 — JEAN"
+  },
+  {
+    "case": 10,
+    "dir": "scratch/kapso_staff_e2e_2026-07-12/case_10",
+    "files": 4,
+    "xlsx": true,
+    "display": "E2E Test 10 — CHUCHO"
+  }
+]

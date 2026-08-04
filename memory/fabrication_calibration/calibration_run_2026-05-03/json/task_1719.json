@@ -1,0 +1,149 @@
+{
+  "task_id": 1719,
+  "list_attachment_id": 21261,
+  "list_name": "FORMATO PEDIDO INICIAL LIFE (6) FERNANDO ALVEAR.xlsx",
+  "print_attachment_id": 21749,
+  "pdf_name": "FERNANDO ALVEAR 1850 PANT..pdf",
+  "compare_mode": "dorsal",
+  "name_qc": {
+    "normalize_enabled": true,
+    "equivalence_rules_count": 0,
+    "equivalence_path": null
+  },
+  "pdf_source": "vision",
+  "counts": {
+    "excel_rows": 21,
+    "pdf_rows": 0
+  },
+  "qc": "diff",
+  "alarms": [
+    "Conteo distinto: excel=21 filas, pdf=0 filas",
+    "En Excel pero no en PDF (par nombre+dorsal): 21 — muestra: Y. ALVEAR #11; R. ALVEAR #13; F. ALVEAR #10; NELVER #9; DAYANNA #9 …",
+    "PDF no produjo filas con nombre mientras Excel sí tiene datos"
+  ],
+  "compare": {
+    "ok": false,
+    "mode": "dorsal",
+    "excel_count": 21,
+    "pdf_count": 0,
+    "missing": [
+      [
+        "Y. ALVEAR",
+        "",
+        "11"
+      ],
+      [
+        "R. ALVEAR",
+        "",
+        "13"
+      ],
+      [
+        "F. ALVEAR",
+        "",
+        "10"
+      ],
+      [
+        "NELVER",
+        "",
+        "9"
+      ],
+      [
+        "DAYANNA",
+        "",
+        "9"
+      ],
+      [
+        "ANDREY20",
+        "",
+        "75"
+      ],
+      [
+        "OSCAR",
+        "",
+        "83"
+      ],
+      [
+        "BETO PAEZ",
+        "",
+        "3"
+      ],
+      [
+        "TELLEZ",
+        "",
+        "8"
+      ],
+      [
+        "GEOVANNY ZARATE",
+        "",
+        "15"
+      ],
+      [
+        "F. TELLEZ",
+        "",
+        "7"
+      ],
+      [
+        "CALA",
+        "",
+        "14"
+      ],
+      [
+        "RICARDO",
+        "",
+        "87"
+      ],
+      [
+        "THOMAS",
+        "",
+        "70"
+      ],
+      [
+        "DARWIN",
+        "",
+        "77"
+      ],
+      [
+        "MILTON",
+        "",
+        "27"
+      ],
+      [
+        "Q. MILTON",
+        "",
+        "23"
+      ],
+      [
+        "URIEL",
+        "",
+        "23"
+      ],
+      [
+        "LUIS C",
+        "",
+        "26"
+      ],
+      [
+        "TATAN",
+        "",
+        "12"
+      ],
+      [
+        "DIEGO",
+        "",
+        "22"
+      ]
+    ],
+    "extra": [],
+    "pdf_text_empty": true
+  },
+  "talla_mismatches": [],
+  "pdf_pipeline": {
+    "source": "vision",
+    "vision_provider": "gemini",
+    "vision": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "raw_chars": 978
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "case": 2,
+  "source": {
+    "model": "project.task",
+    "id": 2367,
+    "name": "[S02576] JORGE DUEÑOS DEL BALON",
+    "sale_order": "S02576",
+    "partner": "JORGE DUEÑOS DEL BALON"
+  },
+  "display_customer": "E2E Form v3 2 — JORGE",
+  "suggested_text": "Pedido nuevo E2E.\nCliente: E2E Formulario 2 — JORGE v2\nAdjunto Excel/fotos. Sube borrador en Odoo test.",
+  "files": [
+    {
+      "file": "UNIFORMES RODEO JORGE DUEÑOS DEL BALON.xlsx",
+      "odoo_attachment_id": 29984,
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 12981
+    },
+    {
+      "file": "DUEÑOS DEL BALON DISEÑO.jpeg",
+      "odoo_attachment_id": 29247,
+      "mimetype": "image/jpeg",
+      "bytes": 15892
+    },
+    {
+      "file": "DUEÑOS DEL BALON.jpeg",
+      "odoo_attachment_id": 29246,
+      "mimetype": "image/jpeg",
+      "bytes": 61915
+    },
+    {
+      "file": "DUEÑOS DEL BALONN.jpeg",
+      "odoo_attachment_id": 29245,
+      "mimetype": "image/jpeg",
+      "bytes": 165019
+    }
+  ],
+  "notes": "Skip print PDFs/CDR. Reuse excel + images only."
+}

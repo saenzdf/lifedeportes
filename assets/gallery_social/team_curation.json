@@ -1,0 +1,363 @@
+{
+  "teams": [
+    {
+      "team_key": "sudaderas-el-indomable-yellow-orange",
+      "category": "sudaderas",
+      "label": "El Indomable / N. Ramos yellow-orange jackets outdoor turf",
+      "photos": [
+        "1036577535158115",
+        "1036577541824781",
+        "1036577548491447",
+        "1036577555158113",
+        "1036577561824779"
+      ],
+      "keep": [
+        "1036577548491447",
+        "1036577535158115"
+      ],
+      "drop": [
+        "1036577541824781",
+        "1036577555158113",
+        "1036577561824779"
+      ],
+      "keep_reason": "best full-group shots (6-man and classic V pose); drop redundant same-shoot variants"
+    },
+    {
+      "team_key": "futbol-je13-navy-red-white",
+      "category": "futbol",
+      "label": "JE 13 navy/red/white youth outdoor",
+      "photos": [
+        "1039542504861618",
+        "1039542524861616"
+      ],
+      "keep": [
+        "1039542504861618",
+        "1039542524861616"
+      ],
+      "drop": [],
+      "keep_reason": "only two photos; coach row vs mixed squad — distinct compositions"
+    },
+    {
+      "team_key": "futbol-mgreen-duramax-black-green",
+      "category": "futbol",
+      "label": "MG M Green Duramax black/green/white indoor",
+      "photos": [
+        "1045773034238565",
+        "1045773040905231"
+      ],
+      "keep": [
+        "1045773034238565",
+        "1045773040905231"
+      ],
+      "drop": [],
+      "keep_reason": "only two photos; tighter indoor crop vs wider goal framing"
+    },
+    {
+      "team_key": "futbol-yellow-black-brushstroke-youth",
+      "category": "futbol",
+      "label": "Youth yellow/black brushstroke indoor checkered floor",
+      "photos": [
+        "1038805608268641"
+      ],
+      "keep": [
+        "1038805608268641"
+      ],
+      "drop": [],
+      "keep_reason": "single clear full-team group shot"
+    },
+    {
+      "team_key": "futbol-valent-sthetic-black-yellow",
+      "category": "futbol",
+      "label": "Valent Sthetic black/yellow splinter night turf",
+      "photos": [
+        "1105549571594244",
+        "1105549578260910",
+        "1105549584927576"
+      ],
+      "keep": [
+        "1105549571594244",
+        "1105549584927576"
+      ],
+      "drop": [
+        "1105549578260910"
+      ],
+      "keep_reason": "keep full-team night group + distinct solo product pose; drop coach/duo promo"
+    },
+    {
+      "team_key": "futbol-las-mismas-carnivore",
+      "category": "futbol",
+      "label": "Las Mismas white/blue Carnivore Barrel red shorts",
+      "photos": [
+        "1077999401015928"
+      ],
+      "keep": [
+        "1077999401015928"
+      ],
+      "drop": [],
+      "keep_reason": "single hero group shot with banner and dog"
+    },
+    {
+      "team_key": "futbol-elite-academy-black-neon",
+      "category": "futbol",
+      "label": "Elite Academy black/neon green large outdoor",
+      "photos": [
+        "1130801062402428"
+      ],
+      "keep": [
+        "1130801062402428"
+      ],
+      "drop": [],
+      "keep_reason": "single all-hands academy group shot"
+    },
+    {
+      "team_key": "futbol-union-cantonesino-red-black",
+      "category": "futbol",
+      "label": "Unión Cantonesino FC red/black outdoor grass",
+      "photos": [
+        "1141895694626298"
+      ],
+      "keep": [
+        "1141895694626298"
+      ],
+      "drop": [],
+      "keep_reason": "single large women's team group shot"
+    },
+    {
+      "team_key": "futbol-blue-youth-mascot",
+      "category": "futbol",
+      "label": "Youth blue/white kits with feline mascot outdoor",
+      "photos": [
+        "1196147692534431"
+      ],
+      "keep": [
+        "1196147692534431"
+      ],
+      "drop": [],
+      "keep_reason": "single full-team shot with mascot"
+    },
+    {
+      "team_key": "futbol-blue-beaver-kids",
+      "category": "futbol",
+      "label": "Royal blue/white beaver-logo kids outdoor",
+      "photos": [
+        "1218381036977763"
+      ],
+      "keep": [
+        "1218381036977763"
+      ],
+      "drop": [],
+      "keep_reason": "single clear full-team group shot"
+    },
+    {
+      "team_key": "futbol-pink-white-girls",
+      "category": "futbol",
+      "label": "Pink/white girls Barça-style crest outdoor",
+      "photos": [
+        "1298852452263954"
+      ],
+      "keep": [
+        "1298852452263954"
+      ],
+      "drop": [],
+      "keep_reason": "single multi-team festival shot; assigned to central pink/white girls squad"
+    },
+    {
+      "team_key": "futbol-retorno-memuna-white-red",
+      "category": "futbol",
+      "label": "Retorno + Memuna white/red community outdoor",
+      "photos": [
+        "1368728425276356"
+      ],
+      "keep": [
+        "1368728425276356"
+      ],
+      "drop": [],
+      "keep_reason": "single full community/team celebration shot"
+    },
+    {
+      "team_key": "futbol-life-fc-black-red",
+      "category": "futbol",
+      "label": "Life FC black/red diagonal sash outdoor",
+      "photos": [
+        "1051231460359389",
+        "1051232430359292"
+      ],
+      "keep": [
+        "1051231460359389",
+        "1051232430359292"
+      ],
+      "drop": [],
+      "keep_reason": "only two photos; nearly identical full-team poses — both kept as pair"
+    },
+    {
+      "team_key": "futbol-diz-darsa-red-black",
+      "category": "futbol",
+      "label": "DIZ 10 Darsa red/black sawtooth night duo",
+      "photos": [
+        "1050619607087241"
+      ],
+      "keep": [
+        "1050619607087241"
+      ],
+      "drop": [],
+      "keep_reason": "single duo promo shot"
+    },
+    {
+      "team_key": "futbol-irrirent-red-blue",
+      "category": "futbol",
+      "label": "Irrirent COLOMBIA red/blue stripes night outdoor",
+      "photos": [
+        "1115366830612518"
+      ],
+      "keep": [
+        "1115366830612518"
+      ],
+      "drop": [],
+      "keep_reason": "single large mixed group night shot"
+    },
+    {
+      "team_key": "futbol-suya-orange-kids",
+      "category": "futbol",
+      "label": "SUYA orange/yellow/red diagonal kids turf",
+      "photos": [
+        "1199473918868475"
+      ],
+      "keep": [
+        "1199473918868475"
+      ],
+      "drop": [],
+      "keep_reason": "single full youth team group shot"
+    },
+    {
+      "team_key": "futbol-cootracerol-black-kids",
+      "category": "futbol",
+      "label": "Cootracerol black/green/red sunburst kids turf",
+      "photos": [
+        "1199473928868474"
+      ],
+      "keep": [
+        "1199473928868474"
+      ],
+      "drop": [],
+      "keep_reason": "single full youth team group shot"
+    },
+    {
+      "team_key": "baloncesto-esbal-red-pinstripe",
+      "category": "baloncesto",
+      "label": "ESBAL red/white pinstripe youth outdoor court",
+      "photos": [
+        "1191910389624828"
+      ],
+      "keep": [
+        "1191910389624828"
+      ],
+      "drop": [],
+      "keep_reason": "single red-kit team group shot"
+    },
+    {
+      "team_key": "baloncesto-esbal-black-pinstripe",
+      "category": "baloncesto",
+      "label": "ESBAL black/yellow pinstripe youth outdoor court",
+      "photos": [
+        "1191910396291494"
+      ],
+      "keep": [
+        "1191910396291494"
+      ],
+      "drop": [],
+      "keep_reason": "single black-kit team group shot"
+    },
+    {
+      "team_key": "voleibol-navy-gold-indoor-men",
+      "category": "voleibol",
+      "label": "Men's navy/gold libero white indoor gym",
+      "photos": [
+        "1049658213850047"
+      ],
+      "keep": [
+        "1049658213850047"
+      ],
+      "drop": [],
+      "keep_reason": "single full men's team group shot"
+    },
+    {
+      "team_key": "futbol-independiente-red",
+      "category": "futbol",
+      "label": "Independiente red/white Liga Cundinamarca outdoor",
+      "photos": [
+        "1145671477582053",
+        "1145671494248718"
+      ],
+      "keep": [
+        "1145671477582053",
+        "1145671494248718"
+      ],
+      "drop": [],
+      "keep_reason": "only two photos; front portrait vs back names — distinct poses"
+    },
+    {
+      "team_key": "voleibol-suesca-white-pink-indoor",
+      "category": "voleibol",
+      "label": "Suesca white/pink S-logo indoor court",
+      "photos": [
+        "1346056367543562"
+      ],
+      "keep": [
+        "1346056367543562"
+      ],
+      "drop": [],
+      "keep_reason": "single full indoor line-up group shot"
+    },
+    {
+      "team_key": "voleibol-suesca-black-pink-indoor",
+      "category": "voleibol",
+      "label": "Suesca black/pink S-logo indoor gym",
+      "photos": [
+        "1346056374210228"
+      ],
+      "keep": [
+        "1346056374210228"
+      ],
+      "drop": [],
+      "keep_reason": "single full indoor two-row group shot"
+    },
+    {
+      "team_key": "voleibol-power-volley-black-pink-outdoor",
+      "category": "voleibol",
+      "label": "Power Volley black/pink outdoor court",
+      "photos": [
+        "1346056380876894",
+        "1346056387543560",
+        "1346056394210226"
+      ],
+      "keep": [
+        "1346056380876894",
+        "1346056394210226"
+      ],
+      "drop": [
+        "1346056387543560"
+      ],
+      "keep_reason": "keep two full-team outdoor group poses; drop solo #22 portrait"
+    },
+    {
+      "team_key": "voleibol-suesca-black-pink-outdoor",
+      "category": "voleibol",
+      "label": "Suesca black/pink outdoor court",
+      "photos": [
+        "1374476364701562",
+        "1374476374701561",
+        "1374476378034894",
+        "1374476384701560"
+      ],
+      "keep": [
+        "1374476384701560",
+        "1374476374701561"
+      ],
+      "drop": [
+        "1374476364701562",
+        "1374476378034894"
+      ],
+      "keep_reason": "keep 6-girl full team with ball + clean 4-girl line-up; drop partial groups (jeans/outlier pose)"
+    }
+  ]
+}

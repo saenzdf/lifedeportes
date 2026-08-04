@@ -1,0 +1,27 @@
+{
+  "case": 4,
+  "source": {
+    "model": "project.task",
+    "id": 2407,
+    "name": "[S02616] NELSON ELEFANTES",
+    "sale_order": "S02616",
+    "partner": "NELSON ELEFANTES"
+  },
+  "display_customer": "E2E Form v3 4 — NELSON",
+  "suggested_text": "Pedido nuevo E2E.\nCliente: E2E Formulario 4 — NELSON v2\nAdjunto Excel/fotos. Sube borrador en Odoo test.",
+  "files": [
+    {
+      "file": "nelson elefantes (1).jpeg",
+      "odoo_attachment_id": 29991,
+      "mimetype": "image/jpeg",
+      "bytes": 396785
+    },
+    {
+      "file": "PEDIDO  LIFE- 11- JULIO-2026. nelson elefantes urgentr.xlsx",
+      "odoo_attachment_id": 29990,
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 23085
+    }
+  ],
+  "notes": "Skip print PDFs/CDR. Reuse excel + images only."
+}

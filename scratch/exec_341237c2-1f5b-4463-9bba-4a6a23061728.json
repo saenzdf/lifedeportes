@@ -1,0 +1,277 @@
+{
+  "data": {
+    "id": "341237c2-1f5b-4463-9bba-4a6a23061728",
+    "current_step": {
+      "id": "fa38bdc8-0121-4f16-852f-5a91c3bda646",
+      "identifier": "agent_orquestador_1745500003000",
+      "stepable_type": "FlowAgentStep"
+    },
+    "ended_at": null,
+    "execution_context": {
+      "vars": {
+        "shop": {
+          "name": "Uniforme de Fútbol",
+          "page_url": null,
+          "image_url": null,
+          "is_published": false,
+          "shop_home_url": "https://lifedeportes.odoo.com/shop",
+          "odoo_template_id": 115,
+          "unavailable_reason": "exact_product_not_published"
+        },
+        "user": {
+          "name": "😈",
+          "role": "customer",
+          "wa_id": "573001856505",
+          "staff_member": null,
+          "history_count": 0,
+          "contact_segment": "new_customer",
+          "odoo_project_id": null,
+          "is_known_in_odoo": false,
+          "odoo_project_name": null,
+          "is_allowed_for_transactions": false
+        },
+        "kapso": {
+          "customer_lane": "paused_maintenance",
+          "staff_only_mode": true
+        },
+        "quote": {
+          "quantity": 9,
+          "unit_cop": 50000,
+          "total_cop": 450000,
+          "price_source": "catalog_cache",
+          "product_text": "Uniforme de Fútbol",
+          "odoo_product_id": 115,
+          "match_confidence": "high"
+        },
+        "intent": {
+          "raw_text": "Hola, quiero cotizar uniformes de Portugal"
+        },
+        "orders": {
+          "active": [],
+          "active_count": 0,
+          "focus_order_id": null,
+          "focus_order_name": null
+        },
+        "tenant": {
+          "id": "life_main",
+          "name": "Life Deportes Principal",
+          "policy_set": "sales_default_v1",
+          "secret_prefix": "TENANT_LIFE_MAIN",
+          "phone_number_id": null
+        },
+        "pricing": {
+          "quantity": 9,
+          "unit_cop": 50000,
+          "total_cop": 450000,
+          "price_source": "catalog_cache",
+          "variant_extras": []
+        },
+        "product": {
+          "found": true,
+          "variant": "base",
+          "category": "uniforme",
+          "match_id": 115,
+          "candidates": [
+            {
+              "name": "Uniforme de Fútbol",
+              "rank": 1,
+              "score": 219,
+              "odoo_id": 115,
+              "reason_es": null,
+              "list_price_cop": 50000
+            },
+            {
+              "name": "Uniforme de Presentación (Futbol polo)",
+              "rank": 2,
+              "score": 104,
+              "odoo_id": 8,
+              "reason_es": null,
+              "list_price_cop": 75000
+            },
+            {
+              "name": "Uniforme de atletismo",
+              "rank": 3,
+              "score": 53,
+              "odoo_id": 35,
+              "reason_es": null,
+              "list_price_cop": 50000
+            }
+          ],
+          "match_name": "Uniforme de Fútbol",
+          "query_text": "uniforme de futbol",
+          "alternatives": [
+            {
+              "name": "Uniforme de Presentación (Futbol polo)",
+              "rank": 2,
+              "score": 104,
+              "odoo_id": 8,
+              "reason_es": null,
+              "list_price_cop": 75000
+            },
+            {
+              "name": "Uniforme de atletismo",
+              "rank": 3,
+              "score": 53,
+              "odoo_id": 35,
+              "reason_es": null,
+              "list_price_cop": 50000
+            },
+            {
+              "name": "Uniforme de baloncesto",
+              "rank": 4,
+              "score": 53,
+              "odoo_id": 23,
+              "reason_es": null,
+              "list_price_cop": 50000
+            },
+            {
+              "name": "Uniforme de voleibol",
+              "rank": 5,
+              "score": 53,
+              "odoo_id": 31,
+              "reason_es": null,
+              "list_price_cop": 50000
+            }
+          ],
+          "parsed_intent": {
+            "sport": "futbol",
+            "collar": null,
+            "sleeves": null,
+            "material": "dry_fit",
+            "quantity": 9,
+            "shortType": "standard",
+            "visualCues": [],
+            "withLining": null,
+            "garmentType": "uniforme_completo",
+            "productText": "uniforme de futbol",
+            "attr_sources": {
+              "collar": null,
+              "lining": null,
+              "garment": "explicit",
+              "sleeves": null,
+              "material": "default"
+            },
+            "combinedText": "uniforme de futbol",
+            "quantityProvided": true
+          },
+          "commercial_role": "base_uniform",
+          "match_confidence": "high",
+          "odoo_template_id": 115,
+          "catalog_published": null,
+          "interpretation_es": "Propongo: Uniforme de Fútbol (deporte: futbol; tipo: uniforme completo (explícito); tela: dry fit (default)).",
+          "missing_dimensions": [],
+          "clarifying_question": null
+        },
+        "service": {
+          "last_call_at": "2026-07-30T15:47:05.986Z",
+          "last_call_name": "buscar_producto_odoo",
+          "fallback_message": null,
+          "last_call_status": "shop_not_published"
+        },
+        "session": {
+          "continuity": {
+            "source": "none",
+            "resumed": false,
+            "resumed_at": "2026-07-30T15:09:46.848Z",
+            "hydrate_error": "no_useful_quote"
+          }
+        },
+        "security": {
+          "input_blocked": false,
+          "input_flagged": false,
+          "mcp_call_count": 0,
+          "policy_version": "2026-06-17",
+          "last_block_reason": null
+        },
+        "user_lane": "customer",
+        "shop_catalog": [],
+        "spam_profile": null,
+        "crm_seed_ensure": {
+          "at": "2026-07-30T15:10:20.153Z",
+          "reason": "insufficient_payload",
+          "skipped": true,
+          "message_es": "Falta producto+cantidad (≥6) o lista/cotización suficiente."
+        },
+        "last_user_input": "Si me puedes mostrar el que manejas\nSolo manejas esa calidad ?",
+        "customer_burst_reply": null,
+        "service.greeting_sent": true
+      },
+      "system": {
+        "flow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+        "customer": {
+          "id": "7fe6d691-be8f-462a-a2ec-9aeb93476b7b",
+          "name": "Default customer",
+          "external_customer_id": "default_customer"
+        },
+        "flow_name": "lifedeportes_sales_inbound",
+        "running_at": "2026-07-30T11:41:27-04:00",
+        "started_at": "2026-07-30T11:09:14-04:00",
+        "step_count": 8,
+        "waiting_at": "2026-07-30T11:47:18-04:00",
+        "last_resume": {
+          "at": "2026-07-30T11:41:27-04:00",
+          "reason": "user_input",
+          "step_id": "fa38bdc8-0121-4f16-852f-5a91c3bda646",
+          "step_type": "FlowAgentStep",
+          "step_identifier": "agent_orquestador_1745500003000"
+        },
+        "workflow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+        "flow_version": 0,
+        "trigger_type": "inbound_message",
+        "workflow_name": "lifedeportes_sales_inbound",
+        "whatsapp_config": {
+          "id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+          "kind": "production",
+          "name": "Life Deportes Asistente",
+          "phone_number_id": "1095603153637786",
+          "business_account_id": "808809791888713",
+          "display_phone_number": "3000000066",
+          "display_phone_number_normalized": "3000000066"
+        },
+        "workflow_version": 0,
+        "flow_execution_id": "341237c2-1f5b-4463-9bba-4a6a23061728",
+        "last_status_change": "2026-07-30T11:47:18-04:00",
+        "workflow_execution_id": "341237c2-1f5b-4463-9bba-4a6a23061728",
+        "trigger_whatsapp_config_id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+        "available_whatsapp_config_ids": [
+          "c8364dd2-ae4d-433b-bc02-3b5ea01024df"
+        ]
+      },
+      "context": {
+        "channel": "whatsapp",
+        "contact": {
+          "id": "6c573240-db2e-44ef-83cc-f54860b4e9bd",
+          "name": "😈",
+          "wa_id": "573001856505",
+          "username": null,
+          "display_name": null,
+          "profile_name": "😈",
+          "business_scoped_user_id": "CO.4468350450101359",
+          "parent_business_scoped_user_id": null
+        },
+        "phone_number": "573001856505",
+        "conversation_id": "583ebcc3-a1a7-45ae-b206-12187f551eac",
+        "agent_iterations": 4,
+        "whatsapp_username": null,
+        "agent_last_message": "[ENTER_WAITING]",
+        "whatsapp_business_scoped_user_id": "CO.4468350450101359",
+        "whatsapp_parent_business_scoped_user_id": null
+      },
+      "metadata": {}
+    },
+    "last_event_at": "2026-07-30T11:47:18-04:00",
+    "started_at": "2026-07-30T11:09:14-04:00",
+    "status": "waiting",
+    "tracking_id": null,
+    "whatsapp_conversation_id": "583ebcc3-a1a7-45ae-b206-12187f551eac",
+    "workflow": {
+      "id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+      "agent_default_tools_version": 2,
+      "lock_version": 1443,
+      "name": "lifedeportes_sales_inbound",
+      "slug": "lifedeportes-sales-inbound",
+      "status": "active",
+      "updated_at": "2026-07-30T13:16:02-04:00"
+    }
+  }
+}

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+      DO NOT PUSH THIS FILE TO PROD as the live gallery walls.
+      Live /gallery uses Facebook trabajos reales (ir.attachment web/content/*)
+      from assets/gallery_social/ via scripts/update_odoo_gallery_from_social.py --from-assets.
+      This XML is a layout/seed only (SEO webps from lifedeportes.com/img/gallery/).
+      push_ld_pages_via_rpc.py skips gallery unless --force-gallery-seed.
+      Wiki: wiki/concepts/life-galeria-trabajos-reales.md
+    -->
+    <!-- Galería v3: patrón de snippet Website «Muro/Galería» (s_image_gallery). Merge en data/gallery_merge.xml -->
+    <template id="gallery_ld_page" name="Life Deportes — Galería">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure ld-home ld-gallery-page"
+                 itemscope="itemscope" itemtype="https://schema.org/CollectionPage">
+                <!-- Mismo patrón que homepage.xml (.ld-hero + vídeo/poster + overlay) para que Odoo SaaS cargue una sola hoja visual -->
+                <!-- Hero alineado a lifedeportes.com: foto + overlay azul + trama sutil; filtros en franja gris bajo el hero -->
+                <section class="ld-hero oe_structure ld-gallery-page-hero">
+                    <div class="ld-gallery-hero-photo" role="presentation"
+                         style="background-image: url('/lifedeportes_theme/static/src/img/about-banner.webp');"/>
+                    <div class="ld-hero-overlay"/>
+                    <div class="ld-gallery-hero-pattern" aria-hidden="true"/>
+                    <div class="container ld-hero-inner">
+                        <div class="ld-hero-content">
+                            <span class="ld-hero-badge">Fabricantes de uniformes deportivos</span>
+                            <h1 class="ld-hero-title">Diseños de Uniformes de Fútbol, Voleibol y Baloncesto Personalizados</h1>
+                            <p class="ld-hero-sub">En Life Deportes diseñamos y fabricamos uniformes deportivos personalizados con sublimación digital de alta calidad. Esta galería muestra algunos de los miles de diseños que hemos creado para equipos de fútbol, voleibol, baloncesto y sudaderas en toda Colombia. Cada diseño es 100% único y se confecciona con tela poliéster dry-fit que garantiza durabilidad, transpirabilidad y colores vivos que no se desvanecen con el lavado.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="ld-gallery-filter-strip oe_structure">
+                    <div class="container">
+                        <div data-ld-gallery-app="1"/>
+                    </div>
+                </section>
+                <section class="ld-gallery oe_structure">
+                    <div class="container">
+
+                        <div id="futbol" class="gallery-section-title s_title oe_structure" data-cat="futbol">
+                            <h2>Galería de Uniformes de Fútbol Personalizados</h2>
+                            <p>Diseños de uniformes de fútbol personalizados para equipos profesionales, escuelas, clubes amateur y empresas. Trabajamos con escudos, logos, patrocinadores, números y nombres a la medida. Patrones disponibles desde XS hasta 3XL, masculino y femenino.</p>
+                        </div>
+                        <section class="s_image_gallery ld-gallery-wall o_spc-small pt24 pb56"
+                                 data-wall-cat="futbol"
+                                 style="overflow: hidden;">
+                            <div class="container px-0 px-lg-1">
+                                <div class="row s_nb_column_fixed g-3 g-lg-4 mx-0 mx-lg-n1">
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-futbol-personalizados.webp" alt="Diseño de uniforme de fútbol personalizado Life Deportes" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-futbol-bogota-7-de-agosto.webp" alt="Uniformes de fútbol personalizados Bogotá 7 de Agosto" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-futbol.webp" alt="Diseño de uniforme de fútbol personalizado Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-futbol-bogota.webp" alt="Uniformes de fútbol personalizados en Bogotá" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-para-futbol.webp" alt="Diseño de uniforme para fútbol personalizado" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/fabrica-de-uniformes-de-futbol.webp" alt="Fábrica de uniformes de fútbol personalizados Life Deportes" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-futbol-cali.webp" alt="Uniformes de fútbol personalizados Cali Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-futbol-medellin.webp" alt="Uniformes de fútbol personalizados Medellín Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="futbol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/venta-de-uniformes-de-futbol.webp" alt="Diseño de uniforme de fútbol personalizado con sublimación" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div id="voleibol" class="gallery-section-title s_title oe_structure" data-cat="voleibol">
+                            <h2>Galería de Uniformes de Voleibol Personalizados</h2>
+                            <p>Uniformes de voleibol personalizados para categorías femenino y masculino, infantiles y adultos. Confeccionados con tela técnica de alto rendimiento ideal para las exigencias del deporte: control de sudoración, secado rápido y libertad de movimiento.</p>
+                        </div>
+                        <section class="s_image_gallery ld-gallery-wall o_spc-small pt24 pb56"
+                                 data-wall-cat="voleibol"
+                                 style="overflow: hidden;">
+                            <div class="container px-0 px-lg-1">
+                                <div class="row s_nb_column_fixed g-3 g-lg-4 mx-0 mx-lg-n1">
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniforme-de-voleibol-completo.webp" alt="Diseño de uniforme de voleibol personalizado completo" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniforme-de-voleibol.webp" alt="Diseño de uniforme de voleibol personalizado" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniforme-voleibol-femenino.webp" alt="Uniforme de voleibol femenino personalizado" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniforme-voleibol.webp" alt="Diseño de uniforme de voleibol personalizado Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-voleibol-bogota.webp" alt="Uniformes de voleibol personalizados en Bogotá" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-voleibol-colombia.webp" alt="Uniformes de voleibol personalizados en Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-voleibol-femenino.webp" alt="Uniformes de voleibol femenino personalizados" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-voleibol-masculino.webp" alt="Uniformes de voleibol masculino personalizados" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-voleibol.webp" alt="Diseño de uniformes de voleibol personalizados Life Deportes" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-para-voleibol-femenino.webp" alt="Uniformes para voleibol femenino personalizados Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-para-voleibol.webp" alt="Diseño de uniformes para voleibol personalizados" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-voleibol-bogota.webp" alt="Uniformes de voleibol personalizados Bogotá" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-voleibol-femenino.webp" alt="Uniformes de voleibol femenino personalizados sublimación" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-voleibol-masculino.webp" alt="Uniformes de voleibol masculino personalizados sublimación" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-voleibol.webp" alt="Diseño de uniformes de voleibol personalizados" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/dise%C3%B1ar-uniformes-de-voleibol-online.webp" alt="Diseñar uniformes de voleibol personalizados online Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="voleibol">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/venta-de-uniformes-de-voleibol.webp" alt="Uniformes de voleibol personalizados con sublimación premium" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div id="baloncesto" class="gallery-section-title s_title oe_structure" data-cat="baloncesto">
+                            <h2>Galería de Uniformes de Baloncesto Personalizados</h2>
+                            <p>Diseños de uniformes de baloncesto personalizados con corte holgado y tela transpirable. Disponible en variantes masculino, femenino e infantil para escuelas, clubes y torneos amateur o competitivos.</p>
+                        </div>
+                        <section class="s_image_gallery ld-gallery-wall o_spc-small pt24 pb56"
+                                 data-wall-cat="baloncesto"
+                                 style="overflow: hidden;">
+                            <div class="container px-0 px-lg-1">
+                                <div class="row s_nb_column_fixed g-3 g-lg-4 mx-0 mx-lg-n1">
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-baloncesto.webp" alt="Diseño de uniformes de baloncesto personalizados" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-basketball.webp" alt="Diseño de uniformes de basketball personalizados Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/venta-de-uniformes-de-baloncesto-en-bogota.webp" alt="Uniformes de baloncesto personalizados en Bogotá" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniforme-de-basketball.webp" alt="Diseño de uniforme de basketball personalizado" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-baloncesto-femenino.webp" alt="Uniformes de baloncesto femenino personalizados sublimación" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-baloncesto-colombia.webp" alt="Uniformes de baloncesto personalizados fabricados en Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniformes-de-baloncesto-bogota.webp" alt="Uniformes de baloncesto personalizados Bogotá Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="baloncesto">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/uniforme-de-baloncesto.webp" alt="Diseño de uniforme de baloncesto personalizado Life Deportes" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div id="sudaderas" class="gallery-section-title s_title oe_structure" data-cat="sudaderas">
+                            <h2>Galería de Sudaderas Deportivas Personalizadas</h2>
+                            <p>Sudaderas deportivas personalizadas con sublimación full color. Ideales para conjuntos de entrenamiento, presentación de equipo o uniforme de viaje. Trabajamos modelos individuales o conjuntos completos para equipos.</p>
+                        </div>
+                        <section class="s_image_gallery ld-gallery-wall o_spc-small pt24 pb56"
+                                 data-wall-cat="sudaderas"
+                                 style="overflow: hidden;">
+                            <div class="container px-0 px-lg-1">
+                                <div class="row s_nb_column_fixed g-3 g-lg-4 mx-0 mx-lg-n1">
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/sudadera_de_futbol.webp" alt="Sudadera deportiva de fútbol personalizada" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/sudadera_a_medida.webp" alt="Sudadera deportiva personalizada a medida" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/sudaderas_deportivas_para_f%C3%BAtbol.webp" alt="Sudaderas deportivas personalizadas para fútbol" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/sudaderas_bogota.webp" alt="Sudaderas deportivas personalizadas en Bogotá" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/sudadera_dise%C3%B1os.webp" alt="Diseños de sudaderas deportivas personalizadas" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/sudaderas_deportivas.webp" alt="Sudaderas deportivas personalizadas con sublimación" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 gallery-item o_snippet_not_selectable" data-cat="sudaderas">
+                                <div class="ld-gallery-thumb">
+                                    <img class="img img-fluid rounded w-100" src="https://lifedeportes.com/img/gallery/sudaderas-personalizadas.webp" alt="Sudaderas personalizadas con sublimación premium Colombia" loading="lazy" data-name="Image"/>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="ld-banner-cta ld-gallery-cta-banner ld-gallery-main-banner">
+                    <div class="ld-banner-overlay">
+                        <div class="container ld-banner-inner ld-gallery-cta-inner">
+                            <h2 class="ld-gallery-cta-title">¿Te Gustó lo que Viste? Cotiza tu Diseño</h2>
+                            <p class="ld-gallery-cta-phone">
+                                <a href="tel:+573103362484" class="ld-gallery-cta-tel"><i class="fa fa-phone"/> Llámenos (310) 336 2484</a>
+                            </p>
+                            <div class="ld-gallery-cta-buttons">
+                                <a href="/#contacto" class="ld-btn ld-btn-white">Enviar solicitud</a>
+                                <a href="https://wa.me/573103362484?text=Hola%2C%20quiero%20cotizar%20uniformes%20de%20"
+                                   class="ld-btn ld-btn-outline-light" target="_blank" rel="noopener">WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

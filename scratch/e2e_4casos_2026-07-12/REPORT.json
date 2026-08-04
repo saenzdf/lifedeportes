@@ -1,0 +1,60 @@
+{
+  "at": "2026-07-12T21:48:36.706Z",
+  "results": [
+    {
+      "case": "c4",
+      "ok": true,
+      "label": "PRESEAS 14 solo Excel minimalista",
+      "so_name": "S02646",
+      "lines": [
+        {
+          "qty": 1,
+          "name": "Diseño",
+          "price": 0
+        },
+        {
+          "qty": 8,
+          "name": "Uniforme de Fútbol",
+          "price": 50000
+        },
+        {
+          "qty": 3,
+          "name": "Camiseta deportiva dry-fit",
+          "price": 30000
+        },
+        {
+          "qty": 4,
+          "name": "Chaqueta Rompevientos",
+          "price": 65000
+        }
+      ],
+      "people_cf": 15,
+      "filled": 15,
+      "channels_confront": {
+        "person_count_detail": 15,
+        "people_cf_sheet": 15,
+        "line_qty_so": 15,
+        "qty_match": true,
+        "needs_review": false,
+        "payload_warnings": []
+      },
+      "expect_mismatch": false,
+      "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2636/sale-order-spreadsheet/65",
+      "understand": {
+        "ok": false,
+        "layout": "generic",
+        "rows_parsed": 0,
+        "life_rows": 0,
+        "section_rows_for_formulario": 15,
+        "use_mirror": true,
+        "warnings": [
+          "Excel sin columnas estándar formato life; parseo genérico."
+        ],
+        "summary": "«pedido» · 0 filas",
+        "error": "no_rows_parsed",
+        "forced_square": false
+      },
+      "error": null
+    }
+  ]
+}

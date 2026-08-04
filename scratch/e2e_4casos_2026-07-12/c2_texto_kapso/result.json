@@ -1,0 +1,54 @@
+{
+  "case": "c2",
+  "ok": true,
+  "label": "Texto conversación Kapso ventas",
+  "rows": 16,
+  "so_name": "S02645",
+  "partner": [
+    3626,
+    "E2E Test 1 — PASTO"
+  ],
+  "note_chars": 4648,
+  "note_preview": " E2E c2 Inter Bogotá \n\n \n\n Resumen de uniformes \n \n    Uniforme de Fútbol (16 u.):   \n \n\n \n\n Resumen por variante (manga) \n \n    Camiseta manga corta:  1 u. \n    Arquero:  1 u.  (comentario en lista; mismo precio camiseta/uniforme, sin cargo adicional)  \n \n\n \n\n Lista de detalle \n",
+  "lines": [
+    {
+      "qty": 1,
+      "name": "Diseño",
+      "price": 0
+    },
+    {
+      "qty": 16,
+      "name": "Uniforme de Fútbol",
+      "price": 50000
+    }
+  ],
+  "spreadsheet_id": 64,
+  "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2635/sale-order-spreadsheet/64",
+  "filled": 16,
+  "mode": "native_aprobacion_cf_hm",
+  "people_cf": 16,
+  "channels_confront": {
+    "person_count_detail": 16,
+    "people_cf_sheet": 16,
+    "line_qty_so": 16,
+    "qty_match": true,
+    "needs_review": false,
+    "payload_warnings": []
+  },
+  "payload_validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "grave": false
+  },
+  "sample": {
+    "C2": "ANDRES",
+    "D2": "10",
+    "E2": "M",
+    "F2": "",
+    "H2": "Cuello en V",
+    "I2": "Corta",
+    "M2": "",
+    "B2": "=XLOOKUP(A2,Pedido!F:F,Pedido!I:I,\"\",1,1)"
+  }
+}

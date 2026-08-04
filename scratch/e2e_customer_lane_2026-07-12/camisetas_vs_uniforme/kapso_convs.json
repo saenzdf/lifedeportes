@@ -1,0 +1,23 @@
+[
+  {
+    "id": "fa430ed7-bd09-4f8b-9a2b-029a8b56b630",
+    "status": "ended",
+    "last_out": "2026-07-15T11:55:31.064180Z",
+    "text": "Dry fit",
+    "last_in": "2026-07-15T11:56:08.223486Z"
+  },
+  {
+    "id": "c01edfae-9ca3-4624-8c17-9c0aa0e0f529",
+    "status": "ended",
+    "last_out": "2026-07-15T11:53:27.517137Z",
+    "text": "Son como 12",
+    "last_in": "2026-07-15T11:53:43.478737Z"
+  },
+  {
+    "id": "1db6538c-bcba-42e0-9c77-b78d2d0c97c0",
+    "status": "active",
+    "last_out": "2026-07-15T11:42:13.571802Z",
+    "text": "Necesitaríamos 18 uniformes con un diseño propio",
+    "last_in": "2026-07-15T11:42:23.533884Z"
+  }
+]

@@ -1,0 +1,197 @@
+{
+  "ok": true,
+  "data": {
+    "apps": [
+      {
+        "id": "app_w0hvV7",
+        "name_slug": "__1msg",
+        "name": "1msg",
+        "auth_type": "keys",
+        "description": "Tools & automation for WhatsApp Business API.",
+        "img_src": "https://assets.pipedream.net/s.v0/app_w0hvV7/logo/orig",
+        "custom_fields_json": "[{\"name\":\"user_token\",\"label\":\"User Token\",\"description\":\"Sign in and get your User Token from your [Profile](https://my.1msg.io/profile)\",\"default\":null,\"optional\":null,\"type\":\"password\"},{\"name\":\"channel_id\",\"label\":\"Channel ID\",\"description\":\"Sign in and get your Channel ID from your [Dev Toolkit](https://my.1msg.io/testing/send-message)\",\"default\":null,\"optional\":null},{\"name\":\"environment\",\"label\":\"Environment\",\"description\":null,\"default\":null,\"optional\":null,\"type\":\"options\",\"options\":[{\"label\":\"Sandbox\",\"value\":\"sandbox\"},{\"label\":\"Live\",\"value\":\"api\"}]}]",
+        "categories": [
+          "Communication"
+        ],
+        "featured_weight": 0,
+        "connect": {
+          "allowed_domains": null,
+          "base_proxy_target_url": "https://{{custom_fields.environment}}.1msg.io",
+          "proxy_enabled": true
+        }
+      },
+      {
+        "id": "app_lxhDwE",
+        "name_slug": "_0codekit",
+        "name": "0codekit",
+        "auth_type": "keys",
+        "description": "0CodeKit (formerly 1SaaS.co) brings you the missing building block for all your projects when working with low-code, no-code, APIs and automation.",
+        "img_src": "https://assets.pipedream.net/s.v0/app_lxhDwE/logo/orig",
+        "custom_fields_json": "[{\"name\":\"api_key\",\"label\":\"API Key\",\"description\":\"Sign in and copy your API key directly from [Account](https://my.1saas.co/account) home page.\",\"default\":null,\"optional\":null,\"type\":\"password\"}]",
+        "categories": [
+          "Web & App Development"
+        ],
+        "featured_weight": 0,
+        "connect": {
+          "allowed_domains": [
+            "v2.1saas.co"
+          ],
+          "base_proxy_target_url": "https://v2.1saas.co",
+          "proxy_enabled": true
+        }
+      },
+      {
+        "id": "app_mqehLx",
+        "name_slug": "_10000ft",
+        "name": "Resource Management by Smartsheet",
+        "auth_type": "keys",
+        "description": "Simple resource allocation",
+        "img_src": "https://assets.pipedream.net/s.v0/app_mqehLx/logo/orig",
+        "custom_fields_json": "[{\"name\":\"token\",\"type\":\"password\"}]",
+        "categories": [
+          "Business Management"
+        ],
+        "featured_weight": 0,
+        "connect": {
+          "allowed_domains": null,
+          "base_proxy_target_url": "https://api.10000ft.com",
+          "proxy_enabled": true
+        }
+      },
+      {
+        "id": "app_krhREq",
+        "name_slug": "_1crm",
+        "name": "1CRM",
+        "auth_type": "keys",
+        "description": "The All in One CRM That Changes Everything.",
+        "img_src": "https://assets.pipedream.net/s.v0/app_krhREq/logo/orig",
+        "custom_fields_json": "[{\"name\":\"username\",\"label\":\"Username\",\"description\":null,\"default\":null,\"optional\":null},{\"name\":\"password\",\"label\":\"Password\",\"description\":null,\"default\":null,\"optional\":null,\"type\":\"password\"},{\"name\":\"url\",\"label\":\"URL\",\"description\":\"The **url** field above is your 1CRM **domain** where your 1CRM instance is installed.\\n\\nFor example, if you have a 1CRM instance hosted at `https://example.com`, then enter `https://example.com` in the **url** field above.\",\"default\":null,\"optional\":null}]",
+        "categories": [
+          "CRM"
+        ],
+        "featured_weight": 0,
+        "connect": {
+          "allowed_domains": null,
+          "base_proxy_target_url": "{{custom_fields.url}}",
+          "proxy_enabled": true
+        }
+      },
+      {
+        "id": "app_bPha5E",
+        "name_slug": "_1shop_api",
+        "name": "1Shot API",
+        "auth_type": "oauth",
+        "description": "Smart Tools for Smart Contracts",
+        "img_src": "https://assets.pipedream.net/s.v0/app_bPha5E/logo/orig",
+        "custom_fields_json": "[{\"name\":\"client_id\",\"label\":\"Client ID\",\"description\":\"Sign in and copy your Client ID directly from your dashboard under [API Keys](https://app.1shotapi.com/api-keys).\",\"default\":null,\"optional\":null,\"type\":\"password\"},{\"name\":\"client_secret\",\"label\":\"Client Secret\",\"description\":null,\"default\":null,\"optional\":null,\"type\":\"password\"}]",
+        "categories": [
+          "Developer Tools"
+        ],
+        "featured_weight": 0,
+        "connect": {
+          "allowed_domains": null,
+          "base_proxy_target_url": "https://api.1shotapi.com",
+          "proxy_enabled": true
+        }
+      },
+      {
+        "id": "app_4dhd9V",
+        "name_slug": "_21risk",
+        "name": "21RISK",
+        "auth_type": "keys",
+        "description": "Audit. Improve. Empower. Make compliance happen.",
+        "img_src": "https://assets.pipedream.net/s.v0/app_4dhd9V/logo/orig",
+        "custom_fields_json": "[{\"name\":\"api_key\",\"label\":\"API Key\",\"description\":\"Generate and copy your API Key from [Account](https://www.21risk.com/profile/account) settings.\",\"default\":null,\"optional\":null,\"type\":\"password\"}]",
+        "categories": [
+          "Business Management"
+        ],
+        "featured_weight": 0,
+        "connect": {
+          "allowed_domains": [
+            "www.21risk.com"
+          ],
+          "base_proxy_target_url": "https://www.21risk.com",
+          "proxy_enabled": true
+        }
+      },
+      {
+        "id": "app_ArhjyZ",
+        "name_slug": "_2chat",
+        "name": "2Chat",
+        "auth_type": "keys",
+        "description": "All-in-one WhatsApp* automation for small teams. Integrate it into your existing workflows easily while you keep using WhatsApp as usual.",
+        "img_src": "https://assets.pipedream.net/s.v0/app_ArhjyZ/logo/orig",
+        "custom_fields_json": "[{\"name\":\"api_key\",\"label\":\"API Key\",\"description\":\"Generate and copy your API Key from [User settings](https://app.2chat.io/user) under Access tab.\",\"default\":null,\"optional\":null,\"type\":\"password\"}]",
+        "categories": [
+          "Communication"
+        ],
+        "featured_weight": 0,
+        "connect": {
+          "allowed_domains": [
+            "api.p.2chat.io"
+          ],
+          "base_proxy_target_url": "https://api.p.2chat.io",
+          "proxy_enabled": true
+        }
+      },
+      {
+        "id": "app_Noh9NP",
+        "name_slug": "_2markdown",
+        "name": "2markdown",
+        "auth_type": "keys",
+        "description": "Transform Websites into Clean Markdown. Supercharge your AI models with access to comprehensive website content.",
+        "img_src": "https://assets.pipedream.net/s.v0/app_Noh9NP/logo/orig",
+        "custom_fields_json": "[{\"name\":\"api_key\",\"label\":\"API Key\",\"description\":\"Sign in to 2markdown and copy your API Key directly from the Dashboard.\",\"default\":null,\"optional\":null,\"type\":\"password\"}]",
+        "categories": [
+          "Web & App Development"
+        ],
+        "featured_weight": 0,
+        "connect": {
+          "allowed_domains": [
+            "api.2markdown.com"
+          ],
+          "base_proxy_target_url": "https://api.2markdown.com",
+          "proxy_enabled": true
+        }
+      },
+      {
+        "id": "app_w0hv92",
+        "name_slug": "_302_ai",
+        "name": "302.AI",
+        "auth_type": "keys",
+        "description": "302.AI is a pay-as-you-go enterprise AI resource hub that offers the latest and most comprehensive AI models and APIs on the market, along with a variety of ready-to-use online AI applications.",
+        "img_src": "https://assets.pipedream.net/s.v0/app_w0hv92/logo/orig",
+        "custom_fields_json": "[{\"name\":\"api_key\",\"label\":\"API Key\",\"description\":\"Sign in to 302.AI and get your API Key from \\\"API\\\" \\u003e [\\\"API Keys\\\"](https://dash.302.ai/apis/list).\",\"default\":null,\"optional\":null,\"type\":\"password\"}]",
+        "categories": [
+          "Artificial Intelligence (AI)"
+        ],
+        "featured_weight": 0,
+        "connect": {
+          "allowed_domains": null,
+          "base_proxy_target_url": null,
+          "proxy_enabled": false
+        }
+      },
+      {
+        "id": "app_dBhw6L",
+        "name_slug": "_360nrs",
+        "name": "360NRS",
+        "auth_type": "keys",
+        "description": "Multichannel markting: SMS marketing, email marketing, WhatsApp and interactive voice.",
+        "img_src": "https://assets.pipedream.net/s.v0/app_dBhw6L/logo/orig",
+        "custom_fields_json": "[{\"name\":\"username\",\"label\":\"Username\",\"description\":\"360NRS requires their users enter their 360NRS username in order to connect to their API. For more info, refer to 360NRS’s [documentation](https://apidocs.360nrs.com/?shell#authentication).\",\"default\":null,\"optional\":null,\"type\":\"password\"},{\"name\":\"api_password\",\"label\":\"API Password\",\"description\":\"Generate and copy your API Password from \\\"APIs\\\" tab \\u003e \\\"Change API password\\\".\",\"default\":null,\"optional\":null,\"type\":\"password\"}]",
+        "categories": [
+          "Marketing"
+        ],
+        "featured_weight": 0,
+        "connect": {
+          "allowed_domains": [
+            "dashboard.360nrs.com"
+          ],
+          "base_proxy_target_url": "https://dashboard.360nrs.com",
+          "proxy_enabled": true
+        }
+      }
+    ]
+  }
+}

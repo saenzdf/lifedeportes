@@ -1,0 +1,565 @@
+=== GitHub user ===
+USER=saenzdf
+=== Public repo init ===
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Repo exists, pushing...
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+=== Life deportes commit ===
+## workspace
+ M ../../.DS_Store
+ M ../.DS_Store
+ M .DS_Store
+ M .envrc.example
+ M kapso/functions/_bundle_all_functions.js
+ M kapso/functions/build_quote_payload.js
+ M kapso/functions/classify_contact_odoo.js
+ D kapso/functions/compose_price_cop.js
+ D kapso/functions/design_approval_gate.js
+ D kapso/functions/detect_quote_activation.js
+ M kapso/functions/detect_staff_upload_command.js
+ D kapso/functions/emit_quote_signal.js
+ D kapso/functions/get_order_status_odoo.js
+ D kapso/functions/get_order_timeline_odoo.js
+ D kapso/functions/get_payment_assets.js
+ D kapso/functions/media_intake_dispatcher.js
+ D kapso/functions/normalize_input.js
+ D kapso/functions/normalize_order_details.js
+ D kapso/functions/odoo_get_quote_pdf.js
+ M kapso/functions/odoo_search_product_price.js
+ D kapso/functions/order_commercial_rules.js
+ M kapso/functions/policy_guard_input.js
+ D kapso/functions/prepare_payment_review.js
+ D kapso/functions/print_qc_webhook_odoo.js
+ D kapso/functions/resolve_tenant_context.js
+ M kapso/functions/route_staff_entry.js
+ M kapso/kapso_snapshot.json
+ M kapso/prompts/agent_orchestrator_v3.md
+ M kapso/service_registry.json
+ M kapso/workflow_lifedeportes_sales_inbound.json
+ M odoo_connector.py
+ M scripts/run-odoo-mcp.sh
+ M ../../madebloque/.DS_Store
+ M ../../madebloque/.envrc
+ M ../../madebloque/odoo_website/cocun_arch.xml
+ M ../../madebloque/odoo_website/content/blogs/blog_posts.json
+ M ../../madebloque/odoo_website/content/blogs/cocun_estructuracion.html
+ M ../../madebloque/odoo_website/content/blogs/en/bim_construccion_industrializada.html
+ M ../../madebloque/odoo_website/content/blogs/en/blog_posts_en.json
+ M ../../madebloque/odoo_website/content/blogs/en/carbon_regulaciones_edificios.html
+ M ../../madebloque/odoo_website/content/blogs/en/cocun_estructuracion.html
+ M ../../madebloque/odoo_website/content/blogs/en/expo_osaka_2025_madera.html
+ M ../../madebloque/odoo_website/content/blogs/en/fiducia_fidis.html
+ M ../../madebloque/odoo_website/content/blogs/en/hitos_construccion_madera.html
+ M ../../madebloque/odoo_website/content/blogs/en/interiorismo_madera_carbon12.html
+ M ../../madebloque/odoo_website/content/blogs/en/mass_timber_vis_4.html
+ M ../../madebloque/odoo_website/content/blogs/en/medir_sostenibilidad_construcciones.html
+ M ../../madebloque/odoo_website/content/blogs/en/neoconstructoras_madera.html
+ M ../../madebloque/odoo_website/content/blogs/en/proyectos_iconicos_madera.html
+ M ../../madebloque/odoo_website/content/blogs/en/proyectos_madera_latinoamerica.html
+ M ../../madebloque/odoo_website/content/blogs/en/seguimiento_datos_odoo_speckle.html
+ M ../../madebloque/odoo_website/content/blogs/interiorismo_madera_carbon12.html
+ M ../../madebloque/odoo_website/content/blogs/mass_timber_vis_4.html
+ M ../../madebloque/odoo_website/live_snapshots/blogs/baseline_manifest.json
+ M ../../madebloque/odoo_website/live_snapshots/blogs/blog_1_es.json
+ M ../../madebloque/odoo_website/live_snapshots/blogs/post_22_cocun_estructuracion_content.html
+ M ../../madebloque/odoo_website/live_snapshots/blogs/post_22_cocun_estructuracion_es.json
+ M ../../madebloque/odoo_website/translations/_en_sync_report.json
+ M ../../madebloque/odoo_website/translations/en_US_cocun.json
+?? ../../.obsidian/
+?? .cursor/rules/
+?? assets/
+?? auditoria_impresion_skill.zip
+?? kapso/customer_history_agent_tools.yaml
+?? kapso/deploy_consolidation.log
+?? kapso/docs/conversation_lifecycle.md
+?? kapso/docs/functions_inventory.md
+?? kapso/docs/graph_architecture.md
+?? kapso/docs/kapso_orphan_function_ids.md
+?? kapso/docs/lines_architecture.md
+?? kapso/docs/session_and_handoff.md
+?? kapso/docs/staff_audit.md
+?? kapso/docs/test_mode.md
+?? kapso/functions/_archive/
+?? kapso/functions/get_customer_card_scoped_odoo.js
+?? kapso/functions/get_customer_design_references_scoped_odoo.js
+?? kapso/functions/register_nomina_stub.js
+?? kapso/functions/route_customer_entry.js
+?? kapso/functions/route_staff_post.js
+?? kapso/functions/route_staff_registration.js
+?? kapso/functions/route_staff_write.js
+?? kapso/functions/route_user_entry.js
+?? kapso/functions/validate_staff_write.js
+?? kapso/orchestrator_agent_tools.yaml
+?? kapso/prompts/agent_customer_history_v1.md
+?? kapso/prompts/agent_customer_history_v2.md
+?? kapso/prompts/agent_customer_history_v3.md
+?? kapso/prompts/agent_orchestrator_v4.md
+?? kapso/prompts/agent_staff_general_v1.md
+?? kapso/prompts/agent_staff_general_v2.md
+?? kapso/prompts/agent_staff_general_v3.md
+?? kapso/prompts/agent_staff_upload_v1.md
+?? kapso/prompts/agent_staff_upload_v2.md
+?? kapso/prompts/agent_staff_upload_v3.md
+?? kapso/prompts/agent_vendedor_v1.md
+?? kapso/prompts/agent_vendedor_v2.md
+?? kapso/prompts/agent_vendedor_v3.md
+?? kapso/scripts/build_graph_v6_vendedor.js
+?? kapso/scripts/build_graph_v7_staff.js
+?? kapso/scripts/build_graph_v8_handoff.js
+?? kapso/scripts/build_graph_v8_session.js
+?? kapso/scripts/embed_prompts_v8.js
+?? kapso/scripts/patch_history_agent_two_tools.js
+?? kapso/scripts/publish_prompts_to_kapso.js
+?? kapso/scripts/run_consolidation_deploy.sh
+?? kapso/scripts/test_odoo_create_lead_and_so_local.js
+?? kapso/staff_agent_tools.yaml
+?? kapso/tests/
+?? kapso/workflow_lifedeportes_sales_inbound_v2_upload.json
+?? kapso/workflow_lifedeportes_sales_inbound_v3_lines.json
+?? kapso/workflow_lifedeportes_sales_inbound_v4_routing.json
+?? kapso/workflow_lifedeportes_sales_inbound_v5_agents.json
+?? kapso/workflow_lifedeportes_sales_inbound_v6_vendedor.json
+?? kapso/workflow_lifedeportes_sales_inbound_v7_staff.json
+?? kapso/workflow_lifedeportes_sales_inbound_v8_handoff.json
+?? kapso/workflow_lifedeportes_sales_inbound_v8_session.json
+?? life_deportes_skills.zip
+?? "odoo_website/mcp_publish_once 2.json"
+?? scratch/analyze_conversations.js
+?? scratch/analyze_dump.js
+?? scratch/check_all_vars.js
+?? scratch/check_details.js
+?? scratch/check_juanes.js
+?? scratch/check_staff_route.js
+?? scratch/classified_conversations.json
+?? scratch/executions_dump.json
+?? scratch/extract_orders_table.js
+?? scratch/fetch_conversations.js
+?? scratch/generate_report.js
+?? scratch/inspect_handoffs.js
+?? scratch/inspect_keys.js
+?? scratch/matches.json
+?? scratch/odoo_cdr_audit.json
+?? scratch/odoo_cdr_audit_prod.json
+?? scratch/odoo_cdr_deletion_log.json
+?? scratch/odoo_cdr_deletion_log_prod.json
+?? scratch/odoo_cdr_inventory_summary.json
+?? scratch/odoo_cdr_inventory_summary_prod.json
+?? scratch/odoo_cdr_run_summary.json
+?? scratch/odoo_cdr_run_summary_prod.json
+?? scratch/platform_conversations.json
+?? scratch/rule_classified.json
+?? scratch/rule_classifier.js
+?? scratch/summarize_and_group.js
+?? scratch/summarize_states.js
+?? scratch/test_messages.js
+?? "scripts/import_catalog_2026 2.py"
+?? scripts/publish-odoo-skill.sh
+?? ../../madebloque/.cursor/
+?? ../../madebloque/.env.example
+?? ../../madebloque/.gitignore
+?? "../../madebloque/04_REEL_Carpinteria_Diego Saenzb.mov"
+?? "../../madebloque/22112023 HUG - PRESENTACI\303\223N COMERCIAL.pdf"
+?? "../../madebloque/ARQ01 (1).pdf"
+?? "../../madebloque/ARQ02 (1).pdf"
+?? "../../madebloque/ARQ03 (1).pdf"
+?? "../../madebloque/ARQ04 (1).pdf"
+?? "../../madebloque/BosqueVirrey_BrochureDigital Julio 25 (2).pdf"
+?? ../../madebloque/CARBON-STORAGE.pdf
+?? ../../madebloque/CONTEXT.md
+?? ../../madebloque/Cartilla-ABC-Negocios-Fiduciarios.pdf
+?? ../../madebloque/Cokun_Mass_Timber_Investment.pdf
+?? "../../madebloque/Fiducia inmobiliaria.pdf"
+?? ../../madebloque/G-0011_CommercialTimberBuildingGuidebook.pdf
+?? ../../madebloque/Guia-Proceso-Integrativo-1.pdf
+?? ../../madebloque/Guia-Vendedor-Inmobiliario.pdf
+?? ../../madebloque/Hoja-ruta-de-sostenibilidad-para-materiales-de-construccion-V2.pdf
+?? ../../madebloque/Last-Planner-System-Workbook.pdf
+?? "../../madebloque/Mass timber evaluating construction performance.pdf"
+?? "../../madebloque/N\302\2722-REVISTA-MYC.-ESPECIAL-CONSTRUCCION-EN-CLT.pdf"
+?? ../../madebloque/PROJECT_INDEXER.md
+?? ../../madebloque/Photos-3-001(1)/
+?? ../../madebloque/Photos-3-001/
+?? "../../madebloque/Protocolos BIM.pdf"
+?? "../../madebloque/Proyecto Cocun.pdf"
+?? "../../madebloque/Proyecto de hospedaje Nabilera_cokun.xlsx"
+?? ../../madebloque/RESUMEN_DISENO_CONSTRUCCION.md
+?? ../../madebloque/RESUMEN_DISENO_CONSTRUCCION_PROFUNDO.md
+?? ../../madebloque/RESUMEN_EJECUTIVO_CICLO_VIDA.md
+?? ../../madebloque/RESUMEN_FINANZAS_SEGUROS.md
+?? ../../madebloque/RESUMEN_FINANZAS_SEGUROS_PROFUNDO.md
+?? ../../madebloque/RESUMEN_LCA_CARBONO.md
+?? ../../madebloque/RESUMEN_LCA_CARBONO_PROFUNDO.md
+?? ../../madebloque/RESUMEN_MARCOS_CERTIFICACION.md
+?? ../../madebloque/RESUMEN_MARCOS_CERTIFICACION_PROFUNDO.md
+?? ../../madebloque/SG-0009_Timber-in-real-estate.pdf
+?? "../../madebloque/Screenshot 2025-02-16 at 5.05.20\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.06.04\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.06.40\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.07.02\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.15.48\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.16.05\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.19.02\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.19.37\342\200\257PM.png"
+?? "../../madebloque/VIS 4.0_Digital_VF.pdf"
+?? "../../madebloque/Zero Carbon Hybrid Timber Supertall Prototype.pdf"
+?? ../../madebloque/_wp-content_uploads_WoodWorks_Getting-Started-w-Mass-Timber-2-Pager.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper-Mass-Timber-Design-Cost-Optimization-Checklists-05.2023.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper-concealed_spaces_timber_structures_0522.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper-demonstrating-frrs-in-tall-wood-buildings-woodworks.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper-shaft-wall-light-frame-mass-timber.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper-tall-wood.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper_MEPF_in_Mass_Timber-Buildings_01.2026-1.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper_what_is_mass_timber_07.2024.pdf
+?? ../../madebloque/accounting-framework-for-bio-based-construction_holland-houtland.pdf
+?? ../../madebloque/build_translations.log
+?? ../../madebloque/build_translations_2.log
+?? ../../madebloque/carbonmitigationtimberbuilding.pdf
+?? ../../madebloque/extract_images_cert.py
+?? ../../madebloque/extract_images_final.py
+?? ../../madebloque/extract_images_lca.py
+?? ../../madebloque/extract_text_axis1.py
+?? ../../madebloque/extract_text_axis2.py
+?? ../../madebloque/extract_text_axis3.py
+?? ../../madebloque/extract_text_axis4.py
+?? ../../madebloque/extracted_text_axis1.txt
+?? ../../madebloque/extracted_text_axis2.txt
+?? ../../madebloque/extracted_text_axis3.txt
+?? ../../madebloque/extracted_text_axis4.txt
+?? ../../madebloque/https___www.woodworks.org_wp-content_uploads_2022-woodworks-thinkwood-mass-timber-design-manual-vol2-revised2024.pdf
+?? ../../madebloque/images_diseno/
+?? ../../madebloque/images_finanzas/
+?? ../../madebloque/images_lca/
+?? ../../madebloque/indexer.py
+?? ../../madebloque/mass-timber-insurance-playbook_asbp.pdf
+?? ../../madebloque/masstimber.pdf
+?? ../../madebloque/media_index/
+?? ../../madebloque/nmb-details-book-1.0_2.pdf
+?? ../../madebloque/nmb-evidence-book-1.0_1.pdf
+?? ../../madebloque/nmb-guide-book-1.1_1.pdf
+?? ../../madebloque/odoo_website_backup/
+?? ../../madebloque/patches/
+?? ../../madebloque/pexels-aliia-troitskaya-44735989-10894324.jpg
+?? ../../madebloque/pexels-ashar-mirza-2148003869-33658513.jpg
+?? ../../madebloque/pexels-audstories-37111424.jpg
+?? ../../madebloque/pexels-berk-ozdemir-1761205-3779187.jpg
+?? ../../madebloque/pexels-construccion-total-2464540-6034140.jpg
+?? ../../madebloque/pexels-cottonbro-4753024.jpg
+?? ../../madebloque/pexels-daniel-sarmiento-314143596-27896149.jpg
+?? ../../madebloque/pexels-diego-agudelo-257100874-13836269.jpg
+?? ../../madebloque/pexels-diegonzalez-13359828.jpg
+?? ../../madebloque/pexels-ekaterinabelinskaya-4744827.jpg
+?? ../../madebloque/pexels-googledeepmind-17483809.jpg
+?? ../../madebloque/pexels-googledeepmind-17483874.jpg
+?? ../../madebloque/pexels-googledeepmind-17484901.jpg
+?? ../../madebloque/pexels-googledeepmind-17484975.jpg
+?? ../../madebloque/pexels-googledeepmind-17485819.jpg
+?? ../../madebloque/pexels-googledeepmind-18069362.jpg
+?? ../../madebloque/pexels-italo-melo-248867-2049736.jpg
+?? ../../madebloque/pexels-juan-rojas-24302738-6708682.jpg
+?? ../../madebloque/pexels-l-a-17372988-36798623.jpg
+?? ../../madebloque/pexels-laker-6156577.jpg
+?? ../../madebloque/pexels-lawrence-lam-988602849-35273211.jpg
+?? ../../madebloque/pexels-lawrence-lam-988602849-35273220.jpg
+?? ../../madebloque/pexels-markusspiske-965345.jpg
+?? ../../madebloque/pexels-matthiasfiesel-9280986.jpg
+?? ../../madebloque/pexels-michael-wright-2160641032-37273609.jpg
+?? ../../madebloque/pexels-naldoandando-13834689.jpg
+?? ../../madebloque/pexels-paduret-1476321.jpg
+?? ../../madebloque/pexels-peter-morch-2157759396-35319114.jpg
+?? ../../madebloque/pexels-pixabay-260024.jpg
+?? ../../madebloque/pexels-pixabay-276452.jpg
+?? ../../madebloque/pexels-santiagob-3337501.jpg
+?? ../../madebloque/pexels-shotbyrain-4705102.jpg
+?? ../../madebloque/pexels-tara-winstead-8849295.jpg
+?? ../../madebloque/project_index.json
+?? ../../madebloque/requirements-odoo-mcp.txt
+?? ../../madebloque/s41467-025-60245-y.pdf
+?? ../../madebloque/scratch/
+?? ../../madebloque/scripts/
+?? ../../madebloque/search_keywords.py
+?? ../../madebloque/search_results.txt
+?? "../../madebloque/technical assessment paper tap for long-term temporary-ML0125089ENN.pdf"
+?? "../../madebloque/timberbuildingasaclimatechange mitigation.pdf"
+?? ../../madebloque/whole-life-carbon-impact-of-45-timber-buildings.pdf
+## workspace
+ M ../../.DS_Store
+ M ../.DS_Store
+ M .DS_Store
+ M .envrc.example
+ M kapso/functions/_bundle_all_functions.js
+ M kapso/functions/build_quote_payload.js
+ M kapso/functions/classify_contact_odoo.js
+ D kapso/functions/compose_price_cop.js
+ D kapso/functions/design_approval_gate.js
+ D kapso/functions/detect_quote_activation.js
+ M kapso/functions/detect_staff_upload_command.js
+ D kapso/functions/emit_quote_signal.js
+ D kapso/functions/get_order_status_odoo.js
+ D kapso/functions/get_order_timeline_odoo.js
+ D kapso/functions/get_payment_assets.js
+ D kapso/functions/media_intake_dispatcher.js
+ D kapso/functions/normalize_input.js
+ D kapso/functions/normalize_order_details.js
+ D kapso/functions/odoo_get_quote_pdf.js
+ M kapso/functions/odoo_search_product_price.js
+ D kapso/functions/order_commercial_rules.js
+ M kapso/functions/policy_guard_input.js
+ D kapso/functions/prepare_payment_review.js
+ D kapso/functions/print_qc_webhook_odoo.js
+ D kapso/functions/resolve_tenant_context.js
+ M kapso/functions/route_staff_entry.js
+ M kapso/kapso_snapshot.json
+ M kapso/prompts/agent_orchestrator_v3.md
+ M kapso/service_registry.json
+ M kapso/workflow_lifedeportes_sales_inbound.json
+ M odoo_connector.py
+ M scripts/run-odoo-mcp.sh
+ M ../../madebloque/.DS_Store
+ M ../../madebloque/.envrc
+ M ../../madebloque/odoo_website/cocun_arch.xml
+ M ../../madebloque/odoo_website/content/blogs/blog_posts.json
+ M ../../madebloque/odoo_website/content/blogs/cocun_estructuracion.html
+ M ../../madebloque/odoo_website/content/blogs/en/bim_construccion_industrializada.html
+ M ../../madebloque/odoo_website/content/blogs/en/blog_posts_en.json
+ M ../../madebloque/odoo_website/content/blogs/en/carbon_regulaciones_edificios.html
+ M ../../madebloque/odoo_website/content/blogs/en/cocun_estructuracion.html
+ M ../../madebloque/odoo_website/content/blogs/en/expo_osaka_2025_madera.html
+ M ../../madebloque/odoo_website/content/blogs/en/fiducia_fidis.html
+ M ../../madebloque/odoo_website/content/blogs/en/hitos_construccion_madera.html
+ M ../../madebloque/odoo_website/content/blogs/en/interiorismo_madera_carbon12.html
+ M ../../madebloque/odoo_website/content/blogs/en/mass_timber_vis_4.html
+ M ../../madebloque/odoo_website/content/blogs/en/medir_sostenibilidad_construcciones.html
+ M ../../madebloque/odoo_website/content/blogs/en/neoconstructoras_madera.html
+ M ../../madebloque/odoo_website/content/blogs/en/proyectos_iconicos_madera.html
+ M ../../madebloque/odoo_website/content/blogs/en/proyectos_madera_latinoamerica.html
+ M ../../madebloque/odoo_website/content/blogs/en/seguimiento_datos_odoo_speckle.html
+ M ../../madebloque/odoo_website/content/blogs/interiorismo_madera_carbon12.html
+ M ../../madebloque/odoo_website/content/blogs/mass_timber_vis_4.html
+ M ../../madebloque/odoo_website/live_snapshots/blogs/baseline_manifest.json
+ M ../../madebloque/odoo_website/live_snapshots/blogs/blog_1_es.json
+ M ../../madebloque/odoo_website/live_snapshots/blogs/post_22_cocun_estructuracion_content.html
+ M ../../madebloque/odoo_website/live_snapshots/blogs/post_22_cocun_estructuracion_es.json
+ M ../../madebloque/odoo_website/translations/_en_sync_report.json
+ M ../../madebloque/odoo_website/translations/en_US_cocun.json
+?? ../../.obsidian/
+?? .cursor/rules/
+?? assets/
+?? auditoria_impresion_skill.zip
+?? kapso/customer_history_agent_tools.yaml
+?? kapso/deploy_consolidation.log
+?? kapso/docs/conversation_lifecycle.md
+?? kapso/docs/functions_inventory.md
+?? kapso/docs/graph_architecture.md
+?? kapso/docs/kapso_orphan_function_ids.md
+?? kapso/docs/lines_architecture.md
+?? kapso/docs/session_and_handoff.md
+?? kapso/docs/staff_audit.md
+?? kapso/docs/test_mode.md
+?? kapso/functions/_archive/
+?? kapso/functions/get_customer_card_scoped_odoo.js
+?? kapso/functions/get_customer_design_references_scoped_odoo.js
+?? kapso/functions/register_nomina_stub.js
+?? kapso/functions/route_customer_entry.js
+?? kapso/functions/route_staff_post.js
+?? kapso/functions/route_staff_registration.js
+?? kapso/functions/route_staff_write.js
+?? kapso/functions/route_user_entry.js
+?? kapso/functions/validate_staff_write.js
+?? kapso/orchestrator_agent_tools.yaml
+?? kapso/prompts/agent_customer_history_v1.md
+?? kapso/prompts/agent_customer_history_v2.md
+?? kapso/prompts/agent_customer_history_v3.md
+?? kapso/prompts/agent_orchestrator_v4.md
+?? kapso/prompts/agent_staff_general_v1.md
+?? kapso/prompts/agent_staff_general_v2.md
+?? kapso/prompts/agent_staff_general_v3.md
+?? kapso/prompts/agent_staff_upload_v1.md
+?? kapso/prompts/agent_staff_upload_v2.md
+?? kapso/prompts/agent_staff_upload_v3.md
+?? kapso/prompts/agent_vendedor_v1.md
+?? kapso/prompts/agent_vendedor_v2.md
+?? kapso/prompts/agent_vendedor_v3.md
+?? kapso/scripts/build_graph_v6_vendedor.js
+?? kapso/scripts/build_graph_v7_staff.js
+?? kapso/scripts/build_graph_v8_handoff.js
+?? kapso/scripts/build_graph_v8_session.js
+?? kapso/scripts/embed_prompts_v8.js
+?? kapso/scripts/patch_history_agent_two_tools.js
+?? kapso/scripts/publish_prompts_to_kapso.js
+?? kapso/scripts/run_consolidation_deploy.sh
+?? kapso/scripts/test_odoo_create_lead_and_so_local.js
+?? kapso/staff_agent_tools.yaml
+?? kapso/tests/
+?? kapso/workflow_lifedeportes_sales_inbound_v2_upload.json
+?? kapso/workflow_lifedeportes_sales_inbound_v3_lines.json
+?? kapso/workflow_lifedeportes_sales_inbound_v4_routing.json
+?? kapso/workflow_lifedeportes_sales_inbound_v5_agents.json
+?? kapso/workflow_lifedeportes_sales_inbound_v6_vendedor.json
+?? kapso/workflow_lifedeportes_sales_inbound_v7_staff.json
+?? kapso/workflow_lifedeportes_sales_inbound_v8_handoff.json
+?? kapso/workflow_lifedeportes_sales_inbound_v8_session.json
+?? life_deportes_skills.zip
+?? "odoo_website/mcp_publish_once 2.json"
+?? scratch/analyze_conversations.js
+?? scratch/analyze_dump.js
+?? scratch/check_all_vars.js
+?? scratch/check_details.js
+?? scratch/check_juanes.js
+?? scratch/check_staff_route.js
+?? scratch/classified_conversations.json
+?? scratch/executions_dump.json
+?? scratch/extract_orders_table.js
+?? scratch/fetch_conversations.js
+?? scratch/generate_report.js
+?? scratch/inspect_handoffs.js
+?? scratch/inspect_keys.js
+?? scratch/matches.json
+?? scratch/odoo_cdr_audit.json
+?? scratch/odoo_cdr_audit_prod.json
+?? scratch/odoo_cdr_deletion_log.json
+?? scratch/odoo_cdr_deletion_log_prod.json
+?? scratch/odoo_cdr_inventory_summary.json
+?? scratch/odoo_cdr_inventory_summary_prod.json
+?? scratch/odoo_cdr_run_summary.json
+?? scratch/odoo_cdr_run_summary_prod.json
+?? scratch/platform_conversations.json
+?? scratch/rule_classified.json
+?? scratch/rule_classifier.js
+?? scratch/summarize_and_group.js
+?? scratch/summarize_states.js
+?? scratch/test_messages.js
+?? "scripts/import_catalog_2026 2.py"
+?? scripts/publish-odoo-skill.sh
+?? ../../madebloque/.cursor/
+?? ../../madebloque/.env.example
+?? ../../madebloque/.gitignore
+?? "../../madebloque/04_REEL_Carpinteria_Diego Saenzb.mov"
+?? "../../madebloque/22112023 HUG - PRESENTACI\303\223N COMERCIAL.pdf"
+?? "../../madebloque/ARQ01 (1).pdf"
+?? "../../madebloque/ARQ02 (1).pdf"
+?? "../../madebloque/ARQ03 (1).pdf"
+?? "../../madebloque/ARQ04 (1).pdf"
+?? "../../madebloque/BosqueVirrey_BrochureDigital Julio 25 (2).pdf"
+?? ../../madebloque/CARBON-STORAGE.pdf
+?? ../../madebloque/CONTEXT.md
+?? ../../madebloque/Cartilla-ABC-Negocios-Fiduciarios.pdf
+?? ../../madebloque/Cokun_Mass_Timber_Investment.pdf
+?? "../../madebloque/Fiducia inmobiliaria.pdf"
+?? ../../madebloque/G-0011_CommercialTimberBuildingGuidebook.pdf
+?? ../../madebloque/Guia-Proceso-Integrativo-1.pdf
+?? ../../madebloque/Guia-Vendedor-Inmobiliario.pdf
+?? ../../madebloque/Hoja-ruta-de-sostenibilidad-para-materiales-de-construccion-V2.pdf
+?? ../../madebloque/Last-Planner-System-Workbook.pdf
+?? "../../madebloque/Mass timber evaluating construction performance.pdf"
+?? "../../madebloque/N\302\2722-REVISTA-MYC.-ESPECIAL-CONSTRUCCION-EN-CLT.pdf"
+?? ../../madebloque/PROJECT_INDEXER.md
+?? ../../madebloque/Photos-3-001(1)/
+?? ../../madebloque/Photos-3-001/
+?? "../../madebloque/Protocolos BIM.pdf"
+?? "../../madebloque/Proyecto Cocun.pdf"
+?? "../../madebloque/Proyecto de hospedaje Nabilera_cokun.xlsx"
+?? ../../madebloque/RESUMEN_DISENO_CONSTRUCCION.md
+?? ../../madebloque/RESUMEN_DISENO_CONSTRUCCION_PROFUNDO.md
+?? ../../madebloque/RESUMEN_EJECUTIVO_CICLO_VIDA.md
+?? ../../madebloque/RESUMEN_FINANZAS_SEGUROS.md
+?? ../../madebloque/RESUMEN_FINANZAS_SEGUROS_PROFUNDO.md
+?? ../../madebloque/RESUMEN_LCA_CARBONO.md
+?? ../../madebloque/RESUMEN_LCA_CARBONO_PROFUNDO.md
+?? ../../madebloque/RESUMEN_MARCOS_CERTIFICACION.md
+?? ../../madebloque/RESUMEN_MARCOS_CERTIFICACION_PROFUNDO.md
+?? ../../madebloque/SG-0009_Timber-in-real-estate.pdf
+?? "../../madebloque/Screenshot 2025-02-16 at 5.05.20\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.06.04\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.06.40\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.07.02\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.15.48\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.16.05\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.19.02\342\200\257PM.png"
+?? "../../madebloque/Screenshot 2025-02-16 at 5.19.37\342\200\257PM.png"
+?? "../../madebloque/VIS 4.0_Digital_VF.pdf"
+?? "../../madebloque/Zero Carbon Hybrid Timber Supertall Prototype.pdf"
+?? ../../madebloque/_wp-content_uploads_WoodWorks_Getting-Started-w-Mass-Timber-2-Pager.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper-Mass-Timber-Design-Cost-Optimization-Checklists-05.2023.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper-concealed_spaces_timber_structures_0522.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper-demonstrating-frrs-in-tall-wood-buildings-woodworks.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper-shaft-wall-light-frame-mass-timber.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper-tall-wood.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper_MEPF_in_Mass_Timber-Buildings_01.2026-1.pdf
+?? ../../madebloque/_wp-content_uploads_wood_solution_paper_what_is_mass_timber_07.2024.pdf
+?? ../../madebloque/accounting-framework-for-bio-based-construction_holland-houtland.pdf
+?? ../../madebloque/build_translations.log
+?? ../../madebloque/build_translations_2.log
+?? ../../madebloque/carbonmitigationtimberbuilding.pdf
+?? ../../madebloque/extract_images_cert.py
+?? ../../madebloque/extract_images_final.py
+?? ../../madebloque/extract_images_lca.py
+?? ../../madebloque/extract_text_axis1.py
+?? ../../madebloque/extract_text_axis2.py
+?? ../../madebloque/extract_text_axis3.py
+?? ../../madebloque/extract_text_axis4.py
+?? ../../madebloque/extracted_text_axis1.txt
+?? ../../madebloque/extracted_text_axis2.txt
+?? ../../madebloque/extracted_text_axis3.txt
+?? ../../madebloque/extracted_text_axis4.txt
+?? ../../madebloque/https___www.woodworks.org_wp-content_uploads_2022-woodworks-thinkwood-mass-timber-design-manual-vol2-revised2024.pdf
+?? ../../madebloque/images_diseno/
+?? ../../madebloque/images_finanzas/
+?? ../../madebloque/images_lca/
+?? ../../madebloque/indexer.py
+?? ../../madebloque/mass-timber-insurance-playbook_asbp.pdf
+?? ../../madebloque/masstimber.pdf
+?? ../../madebloque/media_index/
+?? ../../madebloque/nmb-details-book-1.0_2.pdf
+?? ../../madebloque/nmb-evidence-book-1.0_1.pdf
+?? ../../madebloque/nmb-guide-book-1.1_1.pdf
+?? ../../madebloque/odoo_website_backup/
+?? ../../madebloque/patches/
+?? ../../madebloque/pexels-aliia-troitskaya-44735989-10894324.jpg
+?? ../../madebloque/pexels-ashar-mirza-2148003869-33658513.jpg
+?? ../../madebloque/pexels-audstories-37111424.jpg
+?? ../../madebloque/pexels-berk-ozdemir-1761205-3779187.jpg
+?? ../../madebloque/pexels-construccion-total-2464540-6034140.jpg
+?? ../../madebloque/pexels-cottonbro-4753024.jpg
+?? ../../madebloque/pexels-daniel-sarmiento-314143596-27896149.jpg
+?? ../../madebloque/pexels-diego-agudelo-257100874-13836269.jpg
+?? ../../madebloque/pexels-diegonzalez-13359828.jpg
+?? ../../madebloque/pexels-ekaterinabelinskaya-4744827.jpg
+?? ../../madebloque/pexels-googledeepmind-17483809.jpg
+?? ../../madebloque/pexels-googledeepmind-17483874.jpg
+?? ../../madebloque/pexels-googledeepmind-17484901.jpg
+?? ../../madebloque/pexels-googledeepmind-17484975.jpg
+?? ../../madebloque/pexels-googledeepmind-17485819.jpg
+?? ../../madebloque/pexels-googledeepmind-18069362.jpg
+?? ../../madebloque/pexels-italo-melo-248867-2049736.jpg
+?? ../../madebloque/pexels-juan-rojas-24302738-6708682.jpg
+?? ../../madebloque/pexels-l-a-17372988-36798623.jpg
+?? ../../madebloque/pexels-laker-6156577.jpg
+?? ../../madebloque/pexels-lawrence-lam-988602849-35273211.jpg
+?? ../../madebloque/pexels-lawrence-lam-988602849-35273220.jpg
+?? ../../madebloque/pexels-markusspiske-965345.jpg
+?? ../../madebloque/pexels-matthiasfiesel-9280986.jpg
+?? ../../madebloque/pexels-michael-wright-2160641032-37273609.jpg
+?? ../../madebloque/pexels-naldoandando-13834689.jpg
+?? ../../madebloque/pexels-paduret-1476321.jpg
+?? ../../madebloque/pexels-peter-morch-2157759396-35319114.jpg
+?? ../../madebloque/pexels-pixabay-260024.jpg
+?? ../../madebloque/pexels-pixabay-276452.jpg
+?? ../../madebloque/pexels-santiagob-3337501.jpg
+?? ../../madebloque/pexels-shotbyrain-4705102.jpg
+?? ../../madebloque/pexels-tara-winstead-8849295.jpg
+?? ../../madebloque/project_index.json
+?? ../../madebloque/requirements-odoo-mcp.txt
+?? ../../madebloque/s41467-025-60245-y.pdf
+?? ../../madebloque/scratch/
+?? ../../madebloque/scripts/
+?? ../../madebloque/search_keywords.py
+?? ../../madebloque/search_results.txt
+?? "../../madebloque/technical assessment paper tap for long-term temporary-ML0125089ENN.pdf"
+?? "../../madebloque/timberbuildingasaclimatechange mitigation.pdf"
+?? ../../madebloque/whole-life-carbon-impact-of-45-timber-buildings.pdf
+=== DONE ===
+https://github.com/saenzdf/desarrollo-acciones-automatizadas-odoo

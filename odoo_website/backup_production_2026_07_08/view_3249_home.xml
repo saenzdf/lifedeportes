@@ -1,0 +1,204 @@
+<t name="Homepage" t-name="website.homepage">
+    <t t-call="website.layout">
+        <t t-set="pageName" t-value="'homepage'"/>
+        <div id="wrap" class="oe_structure"><section class="s_text_cover o_colored_level o_cc o_cc1" data-snippet="s_text_cover" data-name="Portada de texto">
+        <div class="container-fluid">
+            <div class="row o_grid_mode" data-row-count="15">
+                <div class="o_grid_item g-height-9 g-col-lg-6 col-lg-6" style="z-index: 1; grid-area: 4 / 2 / 13 / 8; --grid-item-padding-x: 24px; --grid-item-padding-y: 24px; text-align: right;">
+                    <h1 class="display-3">
+        <strong>La siguientecolección</strong> <strong>de ropa deportiva</strong><br/> <strong>de verano</strong>
+    </h1>
+                    <p class="lead">
+        <br/>Las tendencias de diseño deportivo ya están listas para brillar el próximo verano.<br/>
+    </p>
+                    <a class="btn btn-lg btn-primary" href="/contactus">
+        Descúbrelo
+    </a>
+                </div>
+                <div class="o_grid_item oe_img_bg o_not_editable d-none d-lg-block o_snippet_mobile_invisible g-col-lg-4 col-lg-4 g-height-15" style="grid-area: 1 / 9 / 16 / 13; --grid-item-padding-x: 0px; --grid-item-padding-y: 0px; background-image: url('/web/image/website.s_text_cover_default_image');"/>
+            </div>
+        </div>
+    </section><section class="s_image_gallery o_masonry pt0 pb0 o_cc o_cc5 o_spc-none" data-vcss="002" data-columns="3" style="overflow: hidden;" data-snippet="s_images_wall" data-name="Muro de imágenes">
+        <div class="container-fluid">
+            <div class="row s_nb_column_fixed">
+                <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                    <img class="img img-fluid d-block rounded" src="/web/image/website.library_image_03" data-index="0" data-name="Image" alt="" loading="lazy"/>
+                    <img class="img img-fluid d-block rounded" src="/web/image/website.library_image_10" data-index="3" data-name="Image" alt="" loading="lazy"/>
+                </div>
+                <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                    <img class="img img-fluid d-block rounded" src="/web/image/website.library_image_13" data-index="1" data-name="Image" alt="" loading="lazy"/>
+                    <img class="img img-fluid d-block rounded" src="/web/image/website.library_image_05" data-index="4" data-name="Image" alt="" loading="lazy"/>
+                </div>
+                <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                    <img class="img img-fluid d-block rounded" src="/web/image/website.library_image_14" data-index="2" data-name="Image" alt="" loading="lazy"/>
+                    <img class="img img-fluid d-block rounded" src="/web/image/website.library_image_16" data-index="5" data-name="Image" alt="" loading="lazy"/>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_color_blocks_2" data-snippet="s_color_blocks_2" data-name="Cajas grandes">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="o_cc col-lg-4 o_cc3 text-center">
+        <i class="fa fa-5x m-3 fa-venus"/>
+                    <h2 class="h3-fs">
+        Ropa deportiva para ella
+    </h2>
+                    <p>
+        Renueva tu vestuario diario con nuestra gama de ropa deportiva para mujer. Descubre nuestra última colección para ellas de este próximo verano.
+    </p>
+                    <a href="#" class="btn btn-primary btn-lg">Más detalles</a>
+                </div>
+                <div class="o_cc o_cc4 col-lg-4 text-center">
+        <i class="fa fa-5x m-3 fa-mars"/>
+                    <h2 class="h3-fs">
+        Estilo deportivo para él
+    </h2>
+                    <p>
+        Combinaciones perfectas para un rendimiento óptimo. Encuentra ideas originales para tus outfits deportivos para la nueva temporada y para cada actividad. Descubre lo que hay para él.
+    </p>
+                    <a href="#" class="btn btn-primary btn-lg">Más detalles</a>
+                </div>
+        <div class="col-lg-4 o_cc o_cc5 text-center">
+            <i class="fa fa-venus-mars fa-5x m-3"/>
+            <h2 class="h3-fs">Rendimiento y estilo para ellos</h2>
+            <p>¿Estás buscando ropa deportiva sostenible para hombre o mujer? Descubre nuestra exclusiva marca de ropa deportiva para ambos.</p>
+            <a href="#" class="btn btn-primary btn-lg">Más detalles</a>
+        </div>
+            </div>
+        </div>
+    </section><section class="s_references o_cc o_cc1 pt80 pb80" data-snippet="s_references" data-name="Referencias">
+        <div class="container">
+            <div class="row s_nb_column_fixed">
+                <div class="col-12 col-lg-12 pb24">
+                    <h2 style="text-align: center;">
+        <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-2) 100%);" class="text-gradient">Nuestras mejores marcas deportivas</font>
+    </h2>
+                    <p class="lead" style="text-align: center;">
+        Todos los estilos para todos los atletas.
+    </p>
+                    <p style="text-align: center;">
+                        <a href="#">Consultar nuestros casos de estudio <i class="fa fa-long-arrow-right ms-2"/></a>
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2 pt16 pb16">
+                    <img src="/web/image/website.s_reference_demo_image_1" class="img img-fluid mx-auto" alt="" loading="lazy"/>
+                </div>
+                <div class="col-6 col-lg-2 pt16 pb16">
+                    <img src="/web/image/website.s_reference_demo_image_2" class="img img-fluid mx-auto" alt="" loading="lazy"/>
+                </div>
+                <div class="col-6 col-lg-2 pt16 pb16">
+                    <img src="/web/image/website.s_reference_demo_image_3" class="img img-fluid mx-auto" alt="" loading="lazy"/>
+                </div>
+                <div class="col-6 col-lg-2 pt16 pb16">
+                    <img src="/web/image/website.s_reference_demo_image_4" class="img img-fluid mx-auto" alt="" loading="lazy"/>
+                </div>
+                <div class="col-6 col-lg-2 pt16 pb16">
+                    <img src="/web/image/website.s_reference_demo_image_5" class="img img-fluid mx-auto" alt="" loading="lazy"/>
+                </div>
+                <div class="col-6 col-lg-2 pt16 pb16">
+                    <img src="/web/image/website.s_reference_default_image_6" class="img img-fluid mx-auto" alt="" loading="lazy"/>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_media_list o_colored_level o_cc pt64 pb64 o_cc5" data-vcss="001" data-snippet="s_media_list" data-name="Lista de medios">
+        <div class="container">
+            <div class="row s_nb_column_fixed s_col_no_bgcolor">
+                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                    <div class="row s_col_no_resize s_col_no_bgcolor g-0 align-items-center o_colored_level">
+                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
+                            <img src="/web_editor/image_shape/website.s_media_list_default_image_1/web_editor/composition/composition_square_1.svg?c1=o-color-4&amp;c2=o-color-2" class="s_media_list_img h-100 w-100" alt="" data-shape="html_builder/composition/composition_square_1" data-original-mimetype="image/jpeg" data-file-name="s_media_list_1.svg" data-shape-colors="o-color-4;o-color-2;;;" loading="lazy"/>
+                        </div>
+                        <div class="s_media_list_body col-lg-6">
+                            <h3>
+        Las mejores marcas de ropa deportiva del mundo
+    </h3>
+                            <p>
+        Sal de tu zona de confort y descubre actividades emocionantes y novedosas. ¡Aquí está nuestra guía definitiva de los mejores deportes que debes probar!
+    </p>
+                            <a href="#">Descubrir más <i class="fa fa-long-arrow-right align-middle ms-1"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                    <div class="row s_col_no_resize s_col_no_bgcolor g-0 align-items-center o_colored_level flex-row-reverse">
+                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
+                            <img src="/web_editor/image_shape/website.s_media_list_default_image_2/web_editor/composition/composition_square_3.svg?c1=o-color-1&amp;c5=o-color-2" class="s_media_list_img h-100 w-100" alt="" data-shape="html_builder/composition/composition_square_3" data-original-mimetype="image/jpeg" data-file-name="s_media_list_2.svg" data-shape-colors="o-color-1;;;;o-color-2" loading="lazy"/>
+                        </div>
+                        <div class="s_media_list_body col-lg-6">
+                            <h3>
+        Esenciales de verano para el deporte
+    </h3>
+                            <p>
+        Los esenciales deportivos correctos pueden marcar la diferencia entre un buen entrenamiento y un gran rendimiento. Descubre nuestra selección para el día a día durante los cálidos meses de verano.
+    </p>
+        <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section><section class="s_key_images pt72 pb72 o_cc o_cc3" data-snippet="s_key_images" data-name="Imágenes clave">
+        <div class="container">
+            <div class="row s_nb_column_fixed">
+                <div class="col-lg-12 pb32">
+                    <h2>
+        Descubre nuestra colección más reciente de ropa deportiva
+    </h2>
+                    <p class="lead">
+        Explora las tendencias que marcan el ritmo en el deporte
+    </p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <p class="h1-fs">01</p>
+                    <p><img src="/web_editor/image_shape/website.s_key_images_default_image_1/web_editor/geometric/geo_square_6.svg" class="img img-fluid rounded" alt="" style="width: 100% !important;" data-shape="html_builder/geometric/geo_square_6" data-original-mimetype="image/jpeg" data-file-name="s_key_images_default_image_1.svg" data-shape-colors=";;;;" loading="lazy"/></p>
+                    <p>
+        Comodidad y funcionalidad en cada prenda
+    </p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <p class="h1-fs">02</p>
+                    <p><img src="/web/image/website.s_key_images_default_image_2" class="img img-fluid rounded" alt="" style="width: 100% !important;" loading="lazy"/></p>
+                    <p>
+        Outfits perfectos para cada actividad
+    </p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <p class="h1-fs">03</p>
+                    <p><img src="/web/image/website.s_key_images_default_image_3" class="img img-fluid rounded" alt="" style="width: 100% !important;" loading="lazy"/></p>
+                    <p>
+        Calidad que se siente en cada movimiento
+    </p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <p class="h1-fs">04</p>
+                    <p><img src="/web_editor/image_shape/website.s_key_images_default_image_4/web_editor/geometric/geo_square_5.svg" class="img img-fluid rounded" alt="" style="width: 100% !important;" data-shape="html_builder/geometric/geo_square_5" data-original-mimetype="image/jpeg" data-file-name="s_key_images_default_image_4.svg" data-shape-colors=";;;;" loading="lazy"/></p>
+                    <p>
+        Incluye nuestros últimos estilos en tu armario deportivo
+    </p>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_call_to_action o_cc pt120 pb104 o_cc4" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Floats/02&quot;,&quot;flip&quot;:[]}" data-snippet="s_call_to_action" data-name="Llamada a la acción">
+        <div class="o_we_shape o_web_editor_Floats_02 o_footer_extra_shape_mapping"/>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 style="text-align: center;">
+        Sé tú mismo, crea tu propio estilo deportivo
+    </h3>
+                    <p class="lead" style="text-align: center;">
+        Descubre la nueva colección de ropa deportiva de verano.
+    </p>
+                </div>
+                <div class="col-lg-12">
+                    <p style="text-align: center;">
+                        <a class="btn btn-primary btn-lg" href="/contactus">
+        Descúbrelo
+    </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section></div>
+    </t>
+</t>

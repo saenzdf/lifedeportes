@@ -1,0 +1,137 @@
+[
+  {
+    "id": "2875d143-6bde-4e55-a025-fa08fc75a3b7",
+    "phone": "573023700102",
+    "status": "active",
+    "last_active_at": "2026-07-14T16:23:53-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "78cc9d71-954a-4d9e-bb1b-05f97aaa50ee",
+    "phone": "573138323579",
+    "status": "active",
+    "last_active_at": "2026-07-14T16:09:19-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "b9a3b533-c59a-41a2-94d0-094b5363cc0a",
+    "phone": "573142032632",
+    "status": "ended",
+    "last_active_at": "2026-07-14T14:37:01-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "9ffb3f59-87a7-43a3-9980-b88225b387a2",
+    "phone": "584226400323",
+    "status": "ended",
+    "last_active_at": "2026-07-14T14:25:30-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "65353114-e5ed-4de8-96f8-d9b96a3bd313",
+    "phone": "3000000078",
+    "status": "active",
+    "last_active_at": "2026-07-14T13:16:57-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "f1bf5c27-e4da-43c3-a959-c9e201201b1b",
+    "phone": "573188360832",
+    "status": "active",
+    "last_active_at": "2026-07-14T13:10:36-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "ec850657-88e2-40e7-b510-fe1da14fad5f",
+    "phone": "573137075754",
+    "status": "active",
+    "last_active_at": "2026-07-14T13:09:55-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "8264345b-ef47-478a-b9b7-213c50ae9c80",
+    "phone": "573118010307",
+    "status": "active",
+    "last_active_at": "2026-07-14T11:44:04-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "8ec67718-bf07-4213-b551-e14d61ca6bf8",
+    "phone": "573222365779",
+    "status": "active",
+    "last_active_at": "2026-07-14T10:43:52-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "af7f51ad-3040-4014-b4f3-f320700fb4a3",
+    "phone": "573138282127",
+    "status": "active",
+    "last_active_at": "2026-07-14T09:59:01-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "6b0bb97e-f9a1-4709-9f4d-c604de40ea92",
+    "phone": "573122833450",
+    "status": "active",
+    "last_active_at": "2026-07-13T19:57:52-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "3c08a9bd-7851-4de7-8ac9-5289558c0acb",
+    "phone": "573002792376",
+    "status": "active",
+    "last_active_at": "2026-07-13T19:23:32-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "c3478e8e-87b0-42c9-a664-8da75ad7de91",
+    "phone": "573212846671",
+    "status": "active",
+    "last_active_at": "2026-07-13T19:07:48-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "86d39203-e085-4ab7-9dc5-8dd85cf0b1ae",
+    "phone": "573133700136",
+    "status": "active",
+    "last_active_at": "2026-07-13T18:43:58-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  },
+  {
+    "id": "c3d96cf8-359b-442a-9ecd-a62929957dc9",
+    "phone": "573126433043",
+    "status": "active",
+    "last_active_at": "2026-07-13T17:07:35-04:00",
+    "message_count": 0,
+    "recent": [],
+    "sample_all_last20": []
+  }
+]

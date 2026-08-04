@@ -1,0 +1,2 @@
+11:43:39.731[31m [Client ERROR] Failed to handle retry receipt for 217115646812182@lid/3EB0451A1126E3B07329C4 from 173362093510729:60@lid: failed to get message from retry store: sql: no rows in result set[0m
+{"success":true,"data":{"file":{"media":"document","mime_type":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","name":"FORMATO PEDIDO LIFE 2026 (1) listado PASTO.xlsx","ptt":"false"},"id":"3EB0451A1126E3B07329C4","sent":true,"to":"3000000066@s.whatsapp.net"},"error":null}

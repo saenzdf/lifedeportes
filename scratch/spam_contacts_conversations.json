@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "23610358-fea9-4632-90b5-223abd520469",
+    "contact_name": "Johanna Castellanos",
+    "phone_number": "3000000035",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_42fc49232489.ogg) [Size: 47.8 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Ijc4MjYwNTcxLWNhYTYtNDRkZi1hNmQ5LWUyZTZmMTBmYTE3YyIsInB1ciI6ImJsb2JfaWQifX0=--5233b32add785dc14cc329a1d916ab8b0e1ead82/audio_42fc49232489.ogg \n\nTranscript: [background noise]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "2224963551630503",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=2224963551630503&source=webhook&ext=1783898131&hash=ATyEKvk9xjBlQyjf3gdHW2m8hDexLFdoxk83w21FHHU-Xg",
+          "voice": true,
+          "sha256": "wYMdmPHNQ+DoWW+mGQqusQoS6g59afLqLH5OVdaOHSk=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Ijc4MjYwNTcxLWNhYTYtNDRkZi1hNmQ5LWUyZTZmMTBmYTE3YyIsInB1ciI6ImJsb2JfaWQifX0=--5233b32add785dc14cc329a1d916ab8b0e1ead82/audio_42fc49232489.ogg"
+        },
+        "timestamp": 1783897835,
+        "timeStr": "2026-07-12T23:10:35.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783897843,
+        "timeStr": "2026-07-12T23:10:43.000Z"
+      }
+    ]
+  },
+  {
+    "id": "d891131d-1223-4497-b414-9ed21f67bb59",
+    "contact_name": "Johanna Castellanos",
+    "phone_number": "3000000035",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_be6ea11b7f3d.ogg) [Size: 11.5 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImYxY2MzZGQ5LTlmZTEtNDA0My05M2Q1LTM2YWRkMjhiYmViMCIsInB1ciI6ImJsb2JfaWQifX0=--a6729c6d5784cc81de909e780632a601e2630fa3/audio_be6ea11b7f3d.ogg \n\nTranscript: [ruido]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "890366647459522",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=890366647459522&source=webhook&ext=1783898071&hash=ATyC1zFFmU8fTqaB2Cc0ABjEFT6ZFa2Jckrfp7R_WGXU8A",
+          "voice": true,
+          "sha256": "9dAHdzdJrB9GfKL3/0+4PeEeyVVsd0HA9vyTK1VBJeY=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImYxY2MzZGQ5LTlmZTEtNDA0My05M2Q1LTM2YWRkMjhiYmViMCIsInB1ciI6ImJsb2JfaWQifX0=--a6729c6d5784cc81de909e780632a601e2630fa3/audio_be6ea11b7f3d.ogg"
+        },
+        "timestamp": 1783897772,
+        "timeStr": "2026-07-12T23:09:32.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783897778,
+        "timeStr": "2026-07-12T23:09:38.000Z"
+      }
+    ]
+  },
+  {
+    "id": "fee901e2-b45b-4931-8b73-07b3af209ada",
+    "contact_name": "Johanna Castellanos",
+    "phone_number": "3000000035",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola, quiero cotizar uniformes de",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783897732,
+        "timeStr": "2026-07-12T23:08:52.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_f2f9e684b26e.ogg) [Size: 2.9 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImNmZGIyYzA4LWRmZGMtNGFmZi04YjNiLTEyMWM5ZWQ3ODIzMyIsInB1ciI6ImJsb2JfaWQifX0=--972b5719f1978e204e50af5a7b88fd40d60d835f/audio_f2f9e684b26e.ogg \n\nTranscript: [outro jingle]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1010697881565489",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1010697881565489&source=webhook&ext=1783898034&hash=ATz6WG4WxUAEPbJpbp6KJzszi667cpI2WnvJC1sFeG_v1g",
+          "voice": true,
+          "sha256": "IPH7gq0xMzJo1l1LSi2re9iNN9Ixz/wf0qkWEKxLfTU=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImNmZGIyYzA4LWRmZGMtNGFmZi04YjNiLTEyMWM5ZWQ3ODIzMyIsInB1ciI6ImJsb2JfaWQifX0=--972b5719f1978e204e50af5a7b88fd40d60d835f/audio_f2f9e684b26e.ogg"
+        },
+        "timestamp": 1783897734,
+        "timeStr": "2026-07-12T23:08:54.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783897735,
+        "timeStr": "2026-07-12T23:08:55.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783898042,
+        "timeStr": "2026-07-12T23:14:02.000Z"
+      }
+    ]
+  },
+  {
+    "id": "1a61673c-4473-4ec3-9614-25096c1e758f",
+    "contact_name": "Victoria junco",
+    "phone_number": "3000000017",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_8152d2d11e48.ogg) [Size: 12.9 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImUzMzhmNWQ2LTg2OTctNDA1YS1hZDc1LWViNWE0ZjVmYTI2NyIsInB1ciI6ImJsb2JfaWQifX0=--e925e240f0a3b6a788637ed30dd30bb23b1d7562/audio_8152d2d11e48.ogg \n\nTranscript: Casi. Para ver por mí. Para un primer trabajo ya que me fuiste",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1043001344978642",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1043001344978642&source=webhook&ext=1783886278&hash=ATw9dmcRqwp7SdbBmkV1Kown0-MNaGqErhxhVFxSkZUsoA",
+          "voice": true,
+          "sha256": "Z567VyD/e2HqVAXR7W9oImm7edZ2iOwiEGdMJpyo5Zc=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImUzMzhmNWQ2LTg2OTctNDA1YS1hZDc1LWViNWE0ZjVmYTI2NyIsInB1ciI6ImJsb2JfaWQifX0=--e925e240f0a3b6a788637ed30dd30bb23b1d7562/audio_8152d2d11e48.ogg"
+        },
+        "timestamp": 1783885980,
+        "timeStr": "2026-07-12T19:53:00.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885987,
+        "timeStr": "2026-07-12T19:53:07.000Z"
+      }
+    ]
+  },
+  {
+    "id": "ebf6b147-2748-41a6-a6f0-d2b40b5a2fc4",
+    "contact_name": "Victoria junco",
+    "phone_number": "3000000017",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Reacted with 😢 to message wamid.HBgMNTczMDUzMTYyOTg1FQIAEhggQTU0NTlBQTY4NjRDRENDMTI1ODNDRkI3Nzg1NzdDM0YA",
+        "type": "reaction",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885962,
+        "timeStr": "2026-07-12T19:52:42.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885966,
+        "timeStr": "2026-07-12T19:52:46.000Z"
+      }
+    ]
+  },
+  {
+    "id": "f557990c-0675-40b6-89ca-84e81caa11ff",
+    "contact_name": "Victoria junco",
+    "phone_number": "3000000017",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_2728978d0485.ogg) [Size: 3.7 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImEyNzRmNmZkLWY2MTEtNGViNS1hYjY2LWM5ZTQyZTMxZjJiZSIsInB1ciI6ImJsb2JfaWQifX0=--cf92f7ae94932881fe4a25fe4c5c265208ea63e0/audio_2728978d0485.ogg \n\nTranscript: [outro jingle]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1002179559268372",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1002179559268372&source=webhook&ext=1783886245&hash=ATzMbe4oj-cLb3gmxQJPbY9YY7A5RPAnb3cKDTCIYhuWpQ",
+          "voice": true,
+          "sha256": "pI4hl348fVhLIRfIW9ALlrA1b2XneQiKEx97TLHYSQw=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImEyNzRmNmZkLWY2MTEtNGViNS1hYjY2LWM5ZTQyZTMxZjJiZSIsInB1ciI6ImJsb2JfaWQifX0=--cf92f7ae94932881fe4a25fe4c5c265208ea63e0/audio_2728978d0485.ogg"
+        },
+        "timestamp": 1783885946,
+        "timeStr": "2026-07-12T19:52:26.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885953,
+        "timeStr": "2026-07-12T19:52:33.000Z"
+      }
+    ]
+  },
+  {
+    "id": "db1966c7-f581-4c23-88a1-b20fcf3d4760",
+    "contact_name": "Victoria junco",
+    "phone_number": "3000000017",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Mmjnn",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885937,
+        "timeStr": "2026-07-12T19:52:17.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885942,
+        "timeStr": "2026-07-12T19:52:22.000Z"
+      }
+    ]
+  },
+  {
+    "id": "420c0205-7557-4770-993c-5c61680b798e",
+    "contact_name": "Victoria junco",
+    "phone_number": "3000000017",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Reacted with 😂 to message wamid.HBgMNTczMDUzMTYyOTg1FQIAEhggQTUzNTgyMEMxMUQxNjk5RjZDRDM5OTBBOUQ0QjM2MkYA",
+        "type": "reaction",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885921,
+        "timeStr": "2026-07-12T19:52:01.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885924,
+        "timeStr": "2026-07-12T19:52:04.000Z"
+      }
+    ]
+  },
+  {
+    "id": "08224e16-8ac2-4433-8b71-bc01ce67f757",
+    "contact_name": "Victoria junco",
+    "phone_number": "3000000017",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_a221c441c7de.ogg) [Size: 23.6 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImI1ZTM1NDgzLTRjNmItNDVkMS05NDJjLThiNzBiMGEyZDg0ZCIsInB1ciI6ImJsb2JfaWQifX0=--55e09af0a4028b9d51e60a30a53d3da88d836576/audio_a221c441c7de.ogg \n\nTranscript: Hay, hay, eh, hay unos que tienen los precios, los muchachos lo único que hacen es, este, civilizar todo y nos-- y tienen como un",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1105559052019740",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1105559052019740&source=webhook&ext=1783886199&hash=ATyZtxd5vYQ2IG2nXE50jiR6KPAy_z_kRblhN6q4t7Fdew",
+          "voice": true,
+          "sha256": "II7uW1nDoKzqtQS6iRJTVYC9eJF5UA5atzbgP3oFn4Q=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImI1ZTM1NDgzLTRjNmItNDVkMS05NDJjLThiNzBiMGEyZDg0ZCIsInB1ciI6ImJsb2JfaWQifX0=--55e09af0a4028b9d51e60a30a53d3da88d836576/audio_a221c441c7de.ogg"
+        },
+        "timestamp": 1783885900,
+        "timeStr": "2026-07-12T19:51:40.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885906,
+        "timeStr": "2026-07-12T19:51:46.000Z"
+      }
+    ]
+  },
+  {
+    "id": "79fe2680-56a6-4a01-a703-4f5f43fbaa0d",
+    "contact_name": "Victoria junco",
+    "phone_number": "3000000017",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_7899518ece15.ogg) [Size: 23.3 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImE3NWZiOTk4LTNiYmQtNDYwZi1iMGY4LTFlYTRhMjMzNjRlZSIsInB1ciI6ImJsb2JfaWQifX0=--7f645b5c3f001115027d8f59984fb0f005cfb1e3/audio_7899518ece15.ogg \n\nTranscript: [ruido]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1566173451818322",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1566173451818322&source=webhook&ext=1783886180&hash=ATxb-6PLo9g6U9MD3B0CohLSbSVMRPSu3tRNkSYu5Awxow",
+          "voice": true,
+          "sha256": "J6kodkR8L9SeLFmifeQzuMOgNrf5quOXsgBg7+Hcwco=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImE3NWZiOTk4LTNiYmQtNDYwZi1iMGY4LTFlYTRhMjMzNjRlZSIsInB1ciI6ImJsb2JfaWQifX0=--7f645b5c3f001115027d8f59984fb0f005cfb1e3/audio_7899518ece15.ogg"
+        },
+        "timestamp": 1783885881,
+        "timeStr": "2026-07-12T19:51:21.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_12e9891dbe26.ogg) [Size: 5.2 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImVmOTU0N2E4LTBkNjUtNDg1Ny05NjEzLTA5ZmRhOGFkOTQ3OCIsInB1ciI6ImJsb2JfaWQifX0=--26f0b2056f6adc4cef749970dec9f858da8574f8/audio_12e9891dbe26.ogg \n\nTranscript: एवढ्यातच change आहे ना चार महिने पण",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1032717519137164",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1032717519137164&source=webhook&ext=1783886185&hash=ATzbto4dVOecx97G3z7twvB-hqu3ziBOSTLRtxwVMcfrfQ",
+          "voice": true,
+          "sha256": "BidmXZUtbpwDIljFkRq7nUKfSZyO9LZuC48QroyGMi8=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImVmOTU0N2E4LTBkNjUtNDg1Ny05NjEzLTA5ZmRhOGFkOTQ3OCIsInB1ciI6ImJsb2JfaWQifX0=--26f0b2056f6adc4cef749970dec9f858da8574f8/audio_12e9891dbe26.ogg"
+        },
+        "timestamp": 1783885886,
+        "timeStr": "2026-07-12T19:51:26.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885888,
+        "timeStr": "2026-07-12T19:51:28.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783886224,
+        "timeStr": "2026-07-12T19:57:04.000Z"
+      }
+    ]
+  },
+  {
+    "id": "175b7715-761e-4ceb-95e3-7ad90e7e2195",
+    "contact_name": "Victoria junco",
+    "phone_number": "3000000017",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_b8538d74f178.ogg) [Size: 20.6 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjUwMzhlZGVmLWVlZjAtNGU3ZC04YmUzLTY5MjNiZWJmN2RhOSIsInB1ciI6ImJsb2JfaWQifX0=--451818a317c9b7daf939c8d3e73af40e51eb2c32/audio_b8538d74f178.ogg \n\nTranscript: Tú no conoces a Alex. Alex cuando venía aquí que... El supermercado que no puede mostrar, pero bueno",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1597772745314290",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1597772745314290&source=webhook&ext=1783886168&hash=ATxBCZIRSlvNwoCmi6F6YXvGTWfbe_VryehXngryQWbyTQ",
+          "voice": true,
+          "sha256": "irVcxtz0wbEY5EBmotKaG837Lxmo3QVtjEY+A6k0/+w=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjUwMzhlZGVmLWVlZjAtNGU3ZC04YmUzLTY5MjNiZWJmN2RhOSIsInB1ciI6ImJsb2JfaWQifX0=--451818a317c9b7daf939c8d3e73af40e51eb2c32/audio_b8538d74f178.ogg"
+        },
+        "timestamp": 1783885869,
+        "timeStr": "2026-07-12T19:51:09.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885877,
+        "timeStr": "2026-07-12T19:51:17.000Z"
+      }
+    ]
+  },
+  {
+    "id": "fcd582f7-e617-4012-ab36-cf75102881d4",
+    "contact_name": "Victoria junco",
+    "phone_number": "3000000017",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_61a1cdd75dc9.ogg) [Size: 8.0 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImFmMGVlOTMzLWM0MWUtNDQzYS1hYTVkLTUyOGU1ZWU4ODQ0YSIsInB1ciI6ImJsb2JfaWQifX0=--9596cf92b9aad49efc367fe8af2e40a156eb8992/audio_61a1cdd75dc9.ogg \n\nTranscript: Pensaste que iba a comprar la tierra y eso que dijiste, te fuiste y me iba pues",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1541475777680663",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1541475777680663&source=webhook&ext=1783886103&hash=ATzih_bWykLsG7X7kqqaTvfhZNw326xUyXD7rvttLSoKnw",
+          "voice": true,
+          "sha256": "s7Vefu8tPgAtUQhLYSkWICgae9q5I/0Pu21fMh6g728=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImFmMGVlOTMzLWM0MWUtNDQzYS1hYTVkLTUyOGU1ZWU4ODQ0YSIsInB1ciI6ImJsb2JfaWQifX0=--9596cf92b9aad49efc367fe8af2e40a156eb8992/audio_61a1cdd75dc9.ogg"
+        },
+        "timestamp": 1783885803,
+        "timeStr": "2026-07-12T19:50:03.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_9467eb9fef23.ogg) [Size: 10.3 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjZlZDlkM2ZlLWRiYWQtNGExOC1iMmJmLWQ4NjJmODU0OWE5MyIsInB1ciI6ImJsb2JfaWQifX0=--f16356801480260beb97de26d6b602a7bfe78bae/audio_9467eb9fef23.ogg \n\nTranscript: [background noise]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1367987805286573",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1367987805286573&source=webhook&ext=1783886109&hash=ATxXXatX4CQj-Zkf4XklXi5AxN3dBw3DNuK6lO-ilyrJYQ",
+          "voice": true,
+          "sha256": "TGk2IEOpn1sVRwgQtCpCtvZ8gCM2Jqn7PrvcuZcj/eQ=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjZlZDlkM2ZlLWRiYWQtNGExOC1iMmJmLWQ4NjJmODU0OWE5MyIsInB1ciI6ImJsb2JfaWQifX0=--f16356801480260beb97de26d6b602a7bfe78bae/audio_9467eb9fef23.ogg"
+        },
+        "timestamp": 1783885810,
+        "timeStr": "2026-07-12T19:50:10.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885811,
+        "timeStr": "2026-07-12T19:50:11.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783886162,
+        "timeStr": "2026-07-12T19:56:02.000Z"
+      }
+    ]
+  },
+  {
+    "id": "65d3ecf6-bab6-4cb7-9c30-c7f21db5b911",
+    "contact_name": "Victoria junco",
+    "phone_number": "3000000017",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola, quiero cotizar uniformes de",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885798,
+        "timeStr": "2026-07-12T19:49:58.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783885802,
+        "timeStr": "2026-07-12T19:50:02.000Z"
+      }
+    ]
+  },
+  {
+    "id": "08636b6b-672f-46ac-b978-0797cc17b08b",
+    "contact_name": "Stephany",
+    "phone_number": "3000000062",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_3bd8076e4704.ogg) [Size: 5.2 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjliOTM5N2U3LWMwNmEtNGVhNy05ZjA0LTc0ZjhhMzMyMTBlMCIsInB1ciI6ImJsb2JfaWQifX0=--a3fabe004ca3575e7bba51bfb4e089fa12a02af3/audio_3bd8076e4704.ogg \n\nTranscript: [background noise]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "2535349403566666",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=2535349403566666&source=webhook&ext=1783817422&hash=ATzOmYIK-FKd6RycvkXB5fVsLt3d1ksvMCdSN2leDlfssQ",
+          "voice": true,
+          "sha256": "WQXM4GdlPcRlnqIAUuJGkp1BcRoc3PDON8yF69y2hbk=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjliOTM5N2U3LWMwNmEtNGVhNy05ZjA0LTc0ZjhhMzMyMTBlMCIsInB1ciI6ImJsb2JfaWQifX0=--a3fabe004ca3575e7bba51bfb4e089fa12a02af3/audio_3bd8076e4704.ogg"
+        },
+        "timestamp": 1783817123,
+        "timeStr": "2026-07-12T00:45:23.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783817131,
+        "timeStr": "2026-07-12T00:45:31.000Z"
+      }
+    ]
+  },
+  {
+    "id": "7faedc6e-8c9b-4c5f-8860-ca6a843a6e72",
+    "contact_name": "Stephany",
+    "phone_number": "3000000062",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola, quiero cotizar uniformes de",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783817113,
+        "timeStr": "2026-07-12T00:45:13.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783817117,
+        "timeStr": "2026-07-12T00:45:17.000Z"
+      }
+    ]
+  },
+  {
+    "id": "60343bb4-5836-4ed3-8e9b-c62f8c905397",
+    "contact_name": "Te Amo Hija Mía Celeste 💖",
+    "phone_number": "3000000033",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Image attached (image_c836fc662057.jpeg) [Size: 73.3 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImNmYTY5OWE0LTQ0MTYtNDY5My1iMjEzLWZiMzA5N2JmNzIyOSIsInB1ciI6ImJsb2JfaWQifX0=--c2a6f47791236379a7f01a49732bcad4fb94525d/image_c836fc662057.jpeg",
+        "type": "image",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1355147136065361",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1355147136065361&source=webhook&ext=1783812718&hash=ATx8M_iN85s4Adl97qN5AQkv1cYSfbd7lPJrK6EsRywtwA",
+          "sha256": "/bF4JBV8vUQ2FxcUqlUwbJWeOE8p+lI7xBwwKvom2/U=",
+          "mime_type": "image/jpeg",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImNmYTY5OWE0LTQ0MTYtNDY5My1iMjEzLWZiMzA5N2JmNzIyOSIsInB1ciI6ImJsb2JfaWQifX0=--c2a6f47791236379a7f01a49732bcad4fb94525d/image_c836fc662057.jpeg"
+        },
+        "timestamp": 1783812418,
+        "timeStr": "2026-07-11T23:26:58.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783812423,
+        "timeStr": "2026-07-11T23:27:03.000Z"
+      }
+    ]
+  },
+  {
+    "id": "247972d6-ea3d-4b47-b435-e15ea9c0ef50",
+    "contact_name": "Te Amo Hija Mía Celeste 💖",
+    "phone_number": "3000000033",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_3b8b60d9460c.ogg) [Size: 4.5 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjE3ODc1OTM0LThmYmEtNGZlYy1hY2E5LTUwMGYyZWRjZjRiZSIsInB1ciI6ImJsb2JfaWQifX0=--7e461a7422d509f54a757de0e3ec48c10639034f/audio_3b8b60d9460c.ogg \n\nTranscript: Il y a eu",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "908236221590427",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=908236221590427&source=webhook&ext=1783812695&hash=ATy92kK_zjdKqL6MBMe0i0u7CbNW_sL-f8S1yDKjIEsS6w",
+          "voice": true,
+          "sha256": "sneXyA8rN1BE5HUpv0IJO1S/8RXchn5AGz/UD8+s2S8=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjE3ODc1OTM0LThmYmEtNGZlYy1hY2E5LTUwMGYyZWRjZjRiZSIsInB1ciI6ImJsb2JfaWQifX0=--7e461a7422d509f54a757de0e3ec48c10639034f/audio_3b8b60d9460c.ogg"
+        },
+        "timestamp": 1783812395,
+        "timeStr": "2026-07-11T23:26:35.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783812402,
+        "timeStr": "2026-07-11T23:26:42.000Z"
+      }
+    ]
+  },
+  {
+    "id": "50953ea9-ab4c-4f16-bac6-44d28cd0136a",
+    "contact_name": "Te Amo Hija Mía Celeste 💖",
+    "phone_number": "3000000033",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_566a386971d8.ogg) [Size: 5.8 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImMzMzk0ZGExLTZhOGItNDc0Zi1iMDU1LTUzNTUxYzRmODRkYSIsInB1ciI6ImJsb2JfaWQifX0=--5dfa12f8d7324768aaab3792fd5f5596500b8be0/audio_566a386971d8.ogg \n\nTranscript: [pause]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1699448601272771",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1699448601272771&source=webhook&ext=1783812687&hash=ATwiKlhEu0EyqHodSlvUF5vl726f_A_5CeYICA1vwypegw",
+          "voice": true,
+          "sha256": "IQYZ/U8mzghif6+5l13Bx4hvfiP4CgCOML6QBo8Evfk=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImMzMzk0ZGExLTZhOGItNDc0Zi1iMDU1LTUzNTUxYzRmODRkYSIsInB1ciI6ImJsb2JfaWQifX0=--5dfa12f8d7324768aaab3792fd5f5596500b8be0/audio_566a386971d8.ogg"
+        },
+        "timestamp": 1783812387,
+        "timeStr": "2026-07-11T23:26:27.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_58ddcaaa215b.ogg) [Size: 1.8 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQ1YWU2NDQwLTg0MGItNDhlYS1iMTE0LTYyMzBhMDM5NTJmYiIsInB1ciI6ImJsb2JfaWQifX0=--c292d7addc265381364c06a8ff6273ae591c5e36/audio_58ddcaaa215b.ogg \n\nTranscript: [outro jingle]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1559053085897328",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1559053085897328&source=webhook&ext=1783812688&hash=ATwyAdvBe3i2RnGSk0jpYKMqCiyNwovUbsaQPB8cnGHVbQ",
+          "voice": true,
+          "sha256": "3Z+C5CpVhYiq9VlChlSHMaX1kU6qzrs8jR+mj3YWYpE=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQ1YWU2NDQwLTg0MGItNDhlYS1iMTE0LTYyMzBhMDM5NTJmYiIsInB1ciI6ImJsb2JfaWQifX0=--c292d7addc265381364c06a8ff6273ae591c5e36/audio_58ddcaaa215b.ogg"
+        },
+        "timestamp": 1783812390,
+        "timeStr": "2026-07-11T23:26:30.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783812393,
+        "timeStr": "2026-07-11T23:26:33.000Z"
+      }
+    ]
+  },
+  {
+    "id": "591e185d-f3aa-416d-ad48-0e410e212b74",
+    "contact_name": "Te Amo Hija Mía Celeste 💖",
+    "phone_number": "3000000033",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Piñ",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783812380,
+        "timeStr": "2026-07-11T23:26:20.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783812383,
+        "timeStr": "2026-07-11T23:26:23.000Z"
+      }
+    ]
+  },
+  {
+    "id": "1cc859ed-5c24-4275-bdaf-5455df46f940",
+    "contact_name": "Te Amo Hija Mía Celeste 💖",
+    "phone_number": "3000000033",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "EleeHola, quiero cotizar uniformes de",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783812372,
+        "timeStr": "2026-07-11T23:26:12.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola. El canal de atención al cliente está en mantenimiento. Solo el equipo interno (staff) puede usar el asistente en este momento. Si es urgente, escriba al equipo por el canal habitual.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783812376,
+        "timeStr": "2026-07-11T23:26:16.000Z"
+      }
+    ]
+  },
+  {
+    "id": "9e625c14-11fa-448b-b13d-877efb92773b",
+    "contact_name": "Michell Girón",
+    "phone_number": "3000000071",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Sticker attached (sticker_ca3a6d5fc66b.webp) [Size: 47.2 KB | Type: image/webp]",
+        "type": "sticker",
+        "hasMedia": true,
+        "mediaInfo": null,
+        "timestamp": 1783726439,
+        "timeStr": "2026-07-10T23:33:59.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola, mucho gusto. Este WhatsApp de Life Deportes (asistente) está en mantenimiento temporalmente. Para cotizar y recibir atención comercial, escríbenos a nuestros vendedores: 310 336 2484 o 321 398 8464. Con gusto te atendemos.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783726446,
+        "timeStr": "2026-07-10T23:34:06.000Z"
+      }
+    ]
+  },
+  {
+    "id": "1f5b564a-4392-483b-8414-b6f172239256",
+    "contact_name": "Michell Girón",
+    "phone_number": "3000000071",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Sticker attached (sticker_4faaf306e3b5.webp) [Size: 7.7 KB | Type: image/webp]",
+        "type": "sticker",
+        "hasMedia": true,
+        "mediaInfo": null,
+        "timestamp": 1783726392,
+        "timeStr": "2026-07-10T23:33:12.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Sticker attached (sticker_7a5bdb12134f.webp) [Size: 13.4 KB | Type: image/webp]",
+        "type": "sticker",
+        "hasMedia": true,
+        "mediaInfo": null,
+        "timestamp": 1783726394,
+        "timeStr": "2026-07-10T23:33:14.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola, mucho gusto. Este WhatsApp de Life Deportes (asistente) está en mantenimiento temporalmente. Para cotizar y recibir atención comercial, escríbenos a nuestros vendedores: 310 336 2484 o 321 398 8464. Con gusto te atendemos.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783726402,
+        "timeStr": "2026-07-10T23:33:22.000Z"
+      }
+    ]
+  },
+  {
+    "id": "2d859c6a-11f6-4776-b697-ba2596fb7b1d",
+    "contact_name": "Michell Girón",
+    "phone_number": "3000000071",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_8bf40471e0a6.ogg) [Size: 5.2 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImYxOGEwNzFiLWY3NmUtNGNjYS1hY2MyLTY2MTI1Yjk3NDZmNyIsInB1ciI6ImJsb2JfaWQifX0=--43a38d1240ad65b97370293b4264967217ae0578/audio_8bf40471e0a6.ogg \n\nTranscript: [outro jingle]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1562644028854428",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1562644028854428&source=webhook&ext=1783726676&hash=ATyby2Ce3KM5R_GJOf39rMLwWzxVbgHdF0oQWQ16_qIGpA",
+          "voice": true,
+          "sha256": "wRYXjv2M/40YV6dz5ZckpNdd5XZHou+u/SoV5JGT57c=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImYxOGEwNzFiLWY3NmUtNGNjYS1hY2MyLTY2MTI1Yjk3NDZmNyIsInB1ciI6ImJsb2JfaWQifX0=--43a38d1240ad65b97370293b4264967217ae0578/audio_8bf40471e0a6.ogg"
+        },
+        "timestamp": 1783726377,
+        "timeStr": "2026-07-10T23:32:57.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_e089494afb71.ogg) [Size: 2.7 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImJlMDhhNDJhLWRjNjgtNDkxNC04NWFiLTNjNzdiNzFmMDBlMiIsInB1ciI6ImJsb2JfaWQifX0=--6982c31d54ed1a48915d38a59b69b78d1679e476/audio_e089494afb71.ogg \n\nTranscript: [outro jingle]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "916029458224272",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=916029458224272&source=webhook&ext=1783726681&hash=ATzmkWlvyhFR0vgE2XOr_so2OFHIZBZoOZ6kFt-t_DhdhQ",
+          "voice": true,
+          "sha256": "ymPFxtuNCPwJvqqUrB9tmm0IgEpZQjIJpWK6m4izyIE=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImJlMDhhNDJhLWRjNjgtNDkxNC04NWFiLTNjNzdiNzFmMDBlMiIsInB1ciI6ImJsb2JfaWQifX0=--6982c31d54ed1a48915d38a59b69b78d1679e476/audio_e089494afb71.ogg"
+        },
+        "timestamp": 1783726382,
+        "timeStr": "2026-07-10T23:33:02.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola, mucho gusto. Este WhatsApp de Life Deportes (asistente) está en mantenimiento temporalmente. Para cotizar y recibir atención comercial, escríbenos a nuestros vendedores: 310 336 2484 o 321 398 8464. Con gusto te atendemos.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783726387,
+        "timeStr": "2026-07-10T23:33:07.000Z"
+      }
+    ]
+  },
+  {
+    "id": "afabf4de-69e8-49d3-92a2-f8411296227c",
+    "contact_name": "Michell Girón",
+    "phone_number": "3000000071",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola, quiero cotizar uniformes de",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783726358,
+        "timeStr": "2026-07-10T23:32:38.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola, mucho gusto. Este WhatsApp de Life Deportes (asistente) está en mantenimiento temporalmente. Para cotizar y recibir atención comercial, escríbenos a nuestros vendedores: 310 336 2484 o 321 398 8464. Con gusto te atendemos.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783726363,
+        "timeStr": "2026-07-10T23:32:43.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Audio attached (audio_568508842d4f.ogg) [Size: 17.3 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjVhZDhjYjJhLTJiM2MtNGViOC04YjJjLTk0OTcxMzdiNzE2NyIsInB1ciI6ImJsb2JfaWQifX0=--3b7ff2f70a5df5f375c8b4df7dd3dc3859634ee6/audio_568508842d4f.ogg \n\nTranscript: [ruido]",
+        "type": "audio",
+        "hasMedia": true,
+        "mediaInfo": {
+          "id": "1475457207677890",
+          "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1475457207677890&source=webhook&ext=1783726668&hash=ATx4OyUxfLb09uUM6DRMv9F4tfqw2wsRxugAcXd0Zd_FYw",
+          "voice": true,
+          "sha256": "PtoRPrBxHN/mokGn6RkCF7Q088H2+UfIvQqImqu2gOY=",
+          "mime_type": "audio/ogg; codecs=opus",
+          "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjVhZDhjYjJhLTJiM2MtNGViOC04YjJjLTk0OTcxMzdiNzE2NyIsInB1ciI6ImJsb2JfaWQifX0=--3b7ff2f70a5df5f375c8b4df7dd3dc3859634ee6/audio_568508842d4f.ogg"
+        },
+        "timestamp": 1783726369,
+        "timeStr": "2026-07-10T23:32:49.000Z"
+      }
+    ]
+  },
+  {
+    "id": "5a76453b-7d3a-4be3-a2eb-51c065e6f804",
+    "contact_name": "Valerie michell Sarmiento",
+    "phone_number": "573242113668",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola, quiero cotizar uniformes de",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783459327,
+        "timeStr": "2026-07-07T21:22:07.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola, mucho gusto. Este WhatsApp de Life Deportes (asistente) está en mantenimiento temporalmente. Para cotizar y recibir atención comercial, escríbenos a nuestros vendedores: 310 336 2484 o 321 398 8464. Con gusto te atendemos.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783459332,
+        "timeStr": "2026-07-07T21:22:12.000Z"
+      }
+    ]
+  },
+  {
+    "id": "91cb3b92-4dc8-44ab-ad93-5b22e4c4df39",
+    "contact_name": "Olga Lucia Ramirez",
+    "phone_number": "573174326436",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola, quiero cotizar uniformes de fútbol para 10 personas",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783430543,
+        "timeStr": "2026-07-07T13:22:23.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola, mucho gusto. Este WhatsApp de Life Deportes (asistente) está en mantenimiento temporalmente. Para cotizar y recibir atención comercial, escríbenos a nuestros vendedores: 310 336 2484 o 321 398 8464. Con gusto te atendemos.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783430551,
+        "timeStr": "2026-07-07T13:22:31.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Camiseta. Pantalonera y medias",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783430561,
+        "timeStr": "2026-07-07T13:22:41.000Z"
+      }
+    ]
+  },
+  {
+    "id": "8c1798ba-cd53-4ebc-a8fa-7694490c4d63",
+    "contact_name": "Michel💜",
+    "phone_number": "3000000083",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Responda sapo hp",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783284137,
+        "timeStr": "2026-07-05T20:42:17.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola, mucho gusto. Este WhatsApp de Life Deportes (asistente) está en mantenimiento temporalmente. Para cotizar y recibir atención comercial, escríbenos a nuestros vendedores: 310 336 2484 o 321 398 8464. Con gusto te atendemos.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783284141,
+        "timeStr": "2026-07-05T20:42:21.000Z"
+      }
+    ]
+  },
+  {
+    "id": "67b1f21b-990a-480e-8470-de1545391b9f",
+    "contact_name": "Michel💜",
+    "phone_number": "3000000083",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola quien eres malparido",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783284041,
+        "timeStr": "2026-07-05T20:40:41.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola, mucho gusto. Este WhatsApp de Life Deportes (asistente) está en mantenimiento temporalmente. Para cotizar y recibir atención comercial, escríbenos a nuestros vendedores: 310 336 2484 o 321 398 8464. Con gusto te atendemos.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783284045,
+        "timeStr": "2026-07-05T20:40:45.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Coma mierda hp",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1783284088,
+        "timeStr": "2026-07-05T20:41:28.000Z"
+      }
+    ]
+  },
+  {
+    "id": "cc162637-a6de-418b-ae51-1fe45ea83610",
+    "contact_name": "Michel💜",
+    "phone_number": "3000000083",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Holas",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1782967583,
+        "timeStr": "2026-07-02T04:46:23.000Z"
+      },
+      {
+        "sender": "LifeAgent",
+        "text": "Hola, mucho gusto. Este WhatsApp de Life Deportes (asistente) está en mantenimiento temporalmente. Para cotizar y recibir atención comercial, escríbenos a las líneas de Javier o Paola: 310 336 2484 o 321 398 8464. Con gusto te atendemos.",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1782967587,
+        "timeStr": "2026-07-02T04:46:27.000Z"
+      }
+    ]
+  },
+  {
+    "id": "14cca264-a56a-4f83-b4d2-d1039760b425",
+    "contact_name": "johanadejesuscantilloocam",
+    "phone_number": "573145035297",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola, quiero cotizar uniformes de",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1782919926,
+        "timeStr": "2026-07-01T15:32:06.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Futbol",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1782919932,
+        "timeStr": "2026-07-01T15:32:12.000Z"
+      },
+      {
+        "sender": "Customer",
+        "text": "Para niños",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1782919935,
+        "timeStr": "2026-07-01T15:32:15.000Z"
+      }
+    ]
+  },
+  {
+    "id": "459fe458-a195-4d18-8df1-7631636874ee",
+    "contact_name": "Michel💜",
+    "phone_number": "3000000083",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola, quiero cotizar uniformes de",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1782417059,
+        "timeStr": "2026-06-25T19:50:59.000Z"
+      }
+    ]
+  },
+  {
+    "id": "5b82638a-b143-4f9f-aa4d-54688a244122",
+    "contact_name": "Michell",
+    "phone_number": "573019473914",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola, quiero cotizar uniformes de",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1781980501,
+        "timeStr": "2026-06-20T18:35:01.000Z"
+      }
+    ]
+  },
+  {
+    "id": "6b409d04-d6b7-4c9a-979e-f137c1b24f72",
+    "contact_name": "johanacorrea717",
+    "phone_number": "573015500288",
+    "status": "ended",
+    "history": [
+      {
+        "sender": "Customer",
+        "text": "Hola, quiero cotizar uniformes de",
+        "type": "text",
+        "hasMedia": false,
+        "mediaInfo": null,
+        "timestamp": 1781019233,
+        "timeStr": "2026-06-09T15:33:53.000Z"
+      }
+    ]
+  }
+]

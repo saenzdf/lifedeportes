@@ -1,0 +1,122 @@
+[
+  {
+    "order": "S02621",
+    "so_id": 2611,
+    "sheet_id": 41,
+    "sheet_name": "Formulario pedido Life",
+    "snap_type": "bool",
+    "snap_truthy": false,
+    "spreadsheet_data_type": "str",
+    "sheet_names": [
+      "Hoja1",
+      "Hoja2",
+      "formato life"
+    ],
+    "ok": true
+  },
+  {
+    "order": "S02622",
+    "so_id": 2612,
+    "sheet_id": 42,
+    "sheet_name": "Formulario pedido Life",
+    "snap_type": "bool",
+    "snap_truthy": false,
+    "spreadsheet_data_type": "str",
+    "sheet_names": [
+      "Hoja1",
+      "Hoja2",
+      "formato life"
+    ],
+    "ok": true
+  },
+  {
+    "order": "S02623",
+    "so_id": 2613,
+    "sheet_id": 43,
+    "sheet_name": "Formulario pedido Life",
+    "snap_type": "bool",
+    "snap_truthy": false,
+    "spreadsheet_data_type": "str",
+    "sheet_names": [
+      "Hoja1",
+      "Hoja2",
+      "formato life"
+    ],
+    "ok": true
+  },
+  {
+    "order": "S02624",
+    "so_id": 2614,
+    "sheet_id": 44,
+    "sheet_name": "Formulario pedido Life",
+    "snap_type": "bool",
+    "snap_truthy": false,
+    "spreadsheet_data_type": "str",
+    "sheet_names": [
+      "Hoja1",
+      "Hoja2",
+      "formato life"
+    ],
+    "ok": true
+  },
+  {
+    "order": "S02625",
+    "so_id": 2615,
+    "sheet_id": 45,
+    "sheet_name": "Formulario pedido Life",
+    "snap_type": "bool",
+    "snap_truthy": false,
+    "spreadsheet_data_type": "str",
+    "sheet_names": [
+      "Hoja1",
+      "Hoja2",
+      "formato life"
+    ],
+    "ok": true
+  },
+  {
+    "order": "S02626",
+    "so_id": 2616,
+    "sheet_id": 46,
+    "sheet_name": "Formulario pedido Life",
+    "snap_type": "bool",
+    "snap_truthy": false,
+    "spreadsheet_data_type": "str",
+    "sheet_names": [
+      "Hoja1",
+      "Hoja2",
+      "formato life"
+    ],
+    "ok": true
+  },
+  {
+    "order": "S02627",
+    "so_id": 2617,
+    "sheet_id": 47,
+    "sheet_name": "Formulario pedido Life",
+    "snap_type": "bool",
+    "snap_truthy": false,
+    "spreadsheet_data_type": "str",
+    "sheet_names": [
+      "Hoja1",
+      "Hoja2",
+      "formato life"
+    ],
+    "ok": true
+  },
+  {
+    "order": "S02628",
+    "so_id": 2618,
+    "sheet_id": 48,
+    "sheet_name": "Formulario pedido Life",
+    "snap_type": "bool",
+    "snap_truthy": false,
+    "spreadsheet_data_type": "str",
+    "sheet_names": [
+      "Hoja1",
+      "Hoja2",
+      "formato life"
+    ],
+    "ok": true
+  }
+]

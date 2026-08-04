@@ -1,0 +1,25 @@
+{
+  "name": "retomar_pedido_v2",
+  "language": "es_CO",
+  "category": "UTILITY",
+  "parameter_format": "NAMED",
+  "components": [
+    {
+      "type": "BODY",
+      "text": "Hola {{customer_name}}. Actualización de su pedido {{order_summary}}: Life Deportes ya lo está procesando. Le confirmaremos por este chat el siguiente paso de detalle y abono del 50%.",
+      "example": {
+        "body_text_named_params": [
+          { "param_name": "customer_name", "example": "Andrea" },
+          {
+            "param_name": "order_summary",
+            "example": "10 uniformes de futbol dry-fit"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FOOTER",
+      "text": "Life Deportes"
+    }
+  ]
+}

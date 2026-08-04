@@ -1,0 +1,499 @@
+{
+  "synced_at": "2026-07-24T14:26:46.473Z",
+  "project": {
+    "id": "b470d474-6a7a-4d84-a214-6cd4b198b4f3",
+    "name": "Life Deportes"
+  },
+  "workflows": [
+    {
+      "id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+      "name": "lifedeportes_sales_inbound",
+      "slug": "lifedeportes-sales-inbound",
+      "status": "active",
+      "lock_version": 1333,
+      "updated_at": "2026-07-24T10:26:38-04:00",
+      "local_graph": "kapso/workflow_lifedeportes_sales_inbound.json",
+      "local_prompt": "kapso/prompts/agent_orchestrator_v3.md",
+      "triggers": []
+    }
+  ],
+  "functions": [
+    {
+      "id": "4a1591c2-66e3-4734-82a7-ed64a1031c2b",
+      "name": "build-quote-payload",
+      "slug": "build-quote-payload",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T18:04:19-04:00",
+      "last_deployed_at": "2026-07-21T18:04:19-04:00",
+      "local_path": "kapso/functions/build_quote_payload.js"
+    },
+    {
+      "id": "99d48e68-9d7f-43dc-94f5-ce55495a1be0",
+      "name": "buscar-pedido-odoo",
+      "slug": "buscar-pedido-odoo",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T17:51:58-04:00",
+      "last_deployed_at": "2026-07-21T17:51:58-04:00",
+      "local_path": "kapso/functions/buscar_pedido_odoo.js"
+    },
+    {
+      "id": "69b09b3e-213e-4871-8bcb-3ac0eff31e0b",
+      "name": "clasificar-adjuntos-pedido",
+      "slug": "clasificar-adjuntos-pedido",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-10T21:31:11-04:00",
+      "last_deployed_at": "2026-07-10T21:31:11-04:00",
+      "local_path": "kapso/functions/clasificar_adjuntos_pedido.js"
+    },
+    {
+      "id": "93d89e4c-603b-49fc-96f9-0b1c13df86be",
+      "name": "classify-contact-odoo",
+      "slug": "classify-contact-odoo",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T13:51:55-04:00",
+      "last_deployed_at": "2026-07-21T13:51:55-04:00",
+      "local_path": "kapso/functions/classify_contact_odoo.js"
+    },
+    {
+      "id": "55575147-9a87-4e2b-9d83-8e5146ca0661",
+      "name": "compile-staff-order-draft",
+      "slug": "compile-staff-order-draft",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T17:36:00-04:00",
+      "last_deployed_at": "2026-07-21T17:36:00-04:00",
+      "local_path": "kapso/functions/compile_staff_order_draft.js"
+    },
+    {
+      "id": "37be9c66-e600-4d40-af99-81003ef7fb39",
+      "name": "compute-fidelity-retention",
+      "slug": "compute-fidelity-retention",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-24T10:03:20-04:00",
+      "last_deployed_at": "2026-07-24T10:03:20-04:00",
+      "local_path": "kapso/functions/compute_fidelity_retention.js"
+    },
+    {
+      "id": "8d493868-02d1-4beb-bfc9-f1d4d17dcaf4",
+      "name": "confirmar-nomina",
+      "slug": "confirmar-nomina",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-24T10:03:14-04:00",
+      "last_deployed_at": "2026-07-24T10:03:14-04:00",
+      "local_path": "kapso/functions/confirmar_nomina.js"
+    },
+    {
+      "id": "3387d3d8-6ea8-4e59-9158-c46e3263884a",
+      "name": "corregir-pedido-odoo",
+      "slug": "corregir-pedido-odoo",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T18:04:23-04:00",
+      "last_deployed_at": "2026-07-21T18:04:23-04:00",
+      "local_path": "kapso/functions/corregir_pedido_odoo.js"
+    },
+    {
+      "id": "b07a0ccf-e310-4e6b-8fae-7fe30865c2ba",
+      "name": "crear-compra-odoo",
+      "slug": "crear-compra-odoo",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-24T10:03:16-04:00",
+      "last_deployed_at": "2026-07-24T10:03:16-04:00",
+      "local_path": "kapso/functions/crear_compra_odoo.js"
+    },
+    {
+      "id": "b6e4935f-cbf7-48f7-9483-729a2294ec14",
+      "name": "detect-staff-lane",
+      "slug": "detect-staff-lane",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-24T10:03:21-04:00",
+      "last_deployed_at": "2026-07-24T10:03:21-04:00",
+      "local_path": "kapso/functions/detect_staff_lane.js"
+    },
+    {
+      "id": "7113451a-db22-4863-bec5-26f9eb223c23",
+      "name": "detect-staff-upload-command",
+      "slug": "detect-staff-upload-command",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-06-29T19:55:24-04:00",
+      "last_deployed_at": "2026-06-29T19:55:24-04:00",
+      "local_path": "kapso/functions/detect_staff_upload_command.js"
+    },
+    {
+      "id": "ab5ca5cf-b5a8-4656-b9ce-70d23ec4c5af",
+      "name": "fusionar-borrador-lista",
+      "slug": "fusionar-borrador-lista",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T18:01:58-04:00",
+      "last_deployed_at": "2026-07-21T18:01:58-04:00",
+      "local_path": "kapso/functions/fusionar_borrador_lista.js"
+    },
+    {
+      "id": "d889689a-c8bc-4183-a4ec-a793a5268b64",
+      "name": "get-customer-design-references-scoped-odoo",
+      "slug": "get-customer-designs-scoped-odoo",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T13:52:31-04:00",
+      "last_deployed_at": "2026-07-21T13:52:30-04:00",
+      "local_path": "kapso/functions/get_customer_designs_scoped_odoo.js"
+    },
+    {
+      "id": "2fb9ca35-31f7-4b3a-84c7-8c03dc0a1775",
+      "name": "get-customer-card-scoped-odoo",
+      "slug": "get-customer-project-cards-scoped-odoo",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T13:52:21-04:00",
+      "last_deployed_at": "2026-07-21T13:52:21-04:00",
+      "local_path": "kapso/functions/get_customer_project_cards_scoped_odoo.js"
+    },
+    {
+      "id": "c0ea46a6-24f3-4e64-bdd9-cbb51c21a85d",
+      "name": "get-service-status",
+      "slug": "get-service-status",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-04-22T17:27:51-04:00",
+      "last_deployed_at": "2026-04-22T17:27:51-04:00",
+      "local_path": "kapso/functions/get_service_status.js"
+    },
+    {
+      "id": "4fb0b1cc-b2a3-4232-8e7c-9b295710faf3",
+      "name": "mark-maintenance-sent",
+      "slug": "mark-maintenance-sent",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-02T09:17:28-04:00",
+      "last_deployed_at": "2026-07-02T09:17:28-04:00",
+      "local_path": "kapso/functions/mark_maintenance_sent.js"
+    },
+    {
+      "id": "a2236fdc-8afa-40ab-a09f-d231c2b638cd",
+      "name": "notify-sales-interest",
+      "slug": "notify-sales-interest",
+      "status": "error",
+      "public_endpoint": false,
+      "updated_at": "2026-07-18T15:45:49-04:00",
+      "last_deployed_at": "2026-07-18T15:45:30-04:00",
+      "local_path": "kapso/functions/notify_sales_interest.js"
+    },
+    {
+      "id": "8a7b731d-480c-4abc-8a72-f965856d7515",
+      "name": "odoo-create-lead-and-so",
+      "slug": "odoo-create-lead-and-so",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T18:04:17-04:00",
+      "last_deployed_at": "2026-07-21T18:04:17-04:00",
+      "local_path": "kapso/functions/odoo_create_lead_and_so.js"
+    },
+    {
+      "id": "4503ca5c-7114-4442-bada-112be3ddf67e",
+      "name": "odoo-search-product-price",
+      "slug": "odoo-search-product-price",
+      "status": "deployed",
+      "public_endpoint": true,
+      "updated_at": "2026-07-21T13:51:35-04:00",
+      "last_deployed_at": "2026-07-21T13:51:35-04:00",
+      "local_path": "kapso/functions/odoo_search_product_price.js"
+    },
+    {
+      "id": "7c490919-ceb7-48a4-b267-abbf57ff33ab",
+      "name": "parse-nomina-attlog",
+      "slug": "parse-nomina-attlog",
+      "status": "error",
+      "public_endpoint": false,
+      "updated_at": "2026-07-24T10:03:11-04:00",
+      "last_deployed_at": "2026-07-21T13:49:45-04:00",
+      "local_path": "kapso/functions/parse_nomina_attlog.js"
+    },
+    {
+      "id": "2bfdd40a-5556-48d0-b08b-b1bfdd02c368",
+      "name": "parsear-lista-excel-pedido",
+      "slug": "parsear-lista-excel-pedido",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T18:01:55-04:00",
+      "last_deployed_at": "2026-07-21T18:01:55-04:00",
+      "local_path": "kapso/functions/parsear_lista_excel_pedido.js"
+    },
+    {
+      "id": "ca5b89c4-1fce-4bc5-9f63-93ca448b89e9",
+      "name": "parsear-lista-imagen-pedido",
+      "slug": "parsear-lista-imagen-pedido",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-10T21:31:22-04:00",
+      "last_deployed_at": "2026-07-10T21:31:22-04:00",
+      "local_path": "kapso/functions/parsear_lista_imagen_pedido.js"
+    },
+    {
+      "id": "99cd2e9b-c3a4-4f79-93cd-614c126890bc",
+      "name": "parsear-lista-texto-pedido",
+      "slug": "parsear-lista-texto-pedido",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-10T21:31:19-04:00",
+      "last_deployed_at": "2026-07-10T21:31:19-04:00",
+      "local_path": "kapso/functions/parsear_lista_texto_pedido.js"
+    },
+    {
+      "id": "3800675c-b32c-46c4-b896-2a885f58421c",
+      "name": "policy-guard-input",
+      "slug": "policy-guard-input",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-16T08:57:47-04:00",
+      "last_deployed_at": "2026-07-16T08:57:47-04:00",
+      "local_path": "kapso/functions/policy_guard_input.js"
+    },
+    {
+      "id": "d750cbd5-b8a5-4eb8-b6d4-62e0e7fd8058",
+      "name": "prepare-inbox-upload",
+      "slug": "prepare-inbox-upload",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-24T10:03:18-04:00",
+      "last_deployed_at": "2026-07-24T10:03:18-04:00",
+      "local_path": "kapso/functions/prepare_inbox_upload.js"
+    },
+    {
+      "id": "481fa039-0368-4983-bf44-6839cc29da42",
+      "name": "register-nomina-stub",
+      "slug": "register-nomina-stub",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-05T20:47:40-04:00",
+      "last_deployed_at": "2026-07-05T20:47:40-04:00",
+      "local_path": "kapso/functions/register_nomina_stub.js"
+    },
+    {
+      "id": "9f144024-859a-4c21-bc83-7acad5893489",
+      "name": "registrar-adjuntos-pedido",
+      "slug": "registrar-adjuntos-pedido",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-10T21:31:24-04:00",
+      "last_deployed_at": "2026-07-10T21:31:24-04:00",
+      "local_path": "kapso/functions/registrar_adjuntos_pedido.js"
+    },
+    {
+      "id": "972d60bb-ff84-40fc-ba3d-cdd6104aa143",
+      "name": "route-customer-burst-resume",
+      "slug": "route-customer-burst-resume",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-16T09:03:54-04:00",
+      "last_deployed_at": "2026-07-16T09:03:54-04:00",
+      "local_path": "kapso/functions/route_customer_burst_resume.js"
+    },
+    {
+      "id": "189befcd-5a62-482a-ad95-982c6721ad3e",
+      "name": "route-customer-entry",
+      "slug": "route-customer-entry",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-14T18:19:46-04:00",
+      "last_deployed_at": "2026-07-14T13:38:29-04:00",
+      "local_path": "kapso/functions/route_customer_entry.js"
+    },
+    {
+      "id": "64a408aa-2b5c-4112-81e2-9d09ccfda23d",
+      "name": "route-customer-paused",
+      "slug": "route-customer-paused",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-14T13:29:32-04:00",
+      "last_deployed_at": "2026-07-14T13:29:31-04:00",
+      "local_path": "kapso/functions/route_customer_paused.js"
+    },
+    {
+      "id": "f95c1cb4-56cb-4875-b443-5b533a84fc3c",
+      "name": "route-customer-sales-whitelist",
+      "slug": "route-customer-sales-whitelist",
+      "status": "draft",
+      "public_endpoint": false,
+      "updated_at": "2026-07-15T03:08:28-04:00",
+      "last_deployed_at": null,
+      "local_path": "kapso/functions/route_customer_sales_whitelist.js"
+    },
+    {
+      "id": "e65f3ee7-2ff7-41a4-a5ac-66278b080db2",
+      "name": "route-nomina-confirm",
+      "slug": "route-nomina-confirm",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-05T20:47:32-04:00",
+      "last_deployed_at": "2026-07-05T20:47:32-04:00",
+      "local_path": "kapso/functions/route_nomina_confirm.js"
+    },
+    {
+      "id": "c33b936f-437b-40e0-925b-960c8efd86ca",
+      "name": "route-staff-burst-resume",
+      "slug": "route-staff-burst-resume",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T17:55:09-04:00",
+      "last_deployed_at": "2026-07-21T17:55:09-04:00",
+      "local_path": "kapso/functions/route_staff_burst_resume.js"
+    },
+    {
+      "id": "313d9a31-9197-4aa8-8e33-ba7feba69409",
+      "name": "route-staff-domain-guard",
+      "slug": "route-staff-domain-guard",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T16:25:41-04:00",
+      "last_deployed_at": "2026-07-21T16:25:41-04:00",
+      "local_path": "kapso/functions/route_staff_domain_guard.js"
+    },
+    {
+      "id": "04a7d6df-9467-4981-a04d-5df66a45cac9",
+      "name": "route-staff-entry",
+      "slug": "route-staff-entry",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-06-17T09:48:27-04:00",
+      "last_deployed_at": "2026-06-17T09:48:27-04:00",
+      "local_path": "kapso/functions/route_staff_entry.js"
+    },
+    {
+      "id": "763ddc62-3d3a-439e-a3f4-78621a93ea3a",
+      "name": "route-staff-lane",
+      "slug": "route-staff-lane",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-05T20:47:28-04:00",
+      "last_deployed_at": "2026-07-05T20:47:28-04:00",
+      "local_path": "kapso/functions/route_staff_lane.js"
+    },
+    {
+      "id": "9333529a-6e01-468c-931a-203b9ad378d2",
+      "name": "route-staff-lane-resume",
+      "slug": "route-staff-lane-resume",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T17:52:12-04:00",
+      "last_deployed_at": "2026-07-21T17:52:12-04:00",
+      "local_path": "kapso/functions/route_staff_lane_resume.js"
+    },
+    {
+      "id": "9af35d18-f0f9-436f-b668-a0a0eb6df809",
+      "name": "route-staff-registration",
+      "slug": "route-staff-registration",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-06-17T09:48:28-04:00",
+      "last_deployed_at": "2026-06-17T09:48:28-04:00",
+      "local_path": "kapso/functions/route_staff_registration.js"
+    },
+    {
+      "id": "1cf1c2f1-f5ca-49c3-b9a7-bff76d87c1ee",
+      "name": "route-staff-write",
+      "slug": "route-staff-write",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-12T14:55:58-04:00",
+      "last_deployed_at": "2026-07-12T14:55:58-04:00",
+      "local_path": "kapso/functions/route_staff_write.js"
+    },
+    {
+      "id": "58b1d07a-ace2-48fd-9e55-94c288d92a86",
+      "name": "route-user-entry",
+      "slug": "route-user-entry",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-15T08:40:54-04:00",
+      "last_deployed_at": "2026-07-01T18:09:22-04:00",
+      "local_path": "kapso/functions/route_user_entry.js"
+    },
+    {
+      "id": "3ea0712b-6243-49b3-a7e6-a5db9c61dd16",
+      "name": "snapshot-upload-fidelity",
+      "slug": "snapshot-upload-fidelity",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-11T12:05:59-04:00",
+      "last_deployed_at": "2026-07-11T12:05:59-04:00",
+      "local_path": "kapso/functions/snapshot_upload_fidelity.js"
+    },
+    {
+      "id": "53d38630-abc6-4512-bfec-58cbc6c3bc29",
+      "name": "staff-allowlist-check",
+      "slug": "staff-allowlist-check",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-16T17:34:20-04:00",
+      "last_deployed_at": "2026-07-16T17:34:20-04:00",
+      "local_path": "kapso/functions/staff_allowlist_check.js"
+    },
+    {
+      "id": "55eeebe6-4249-4619-9ccc-0908148f49c5",
+      "name": "sync-order-draft-from-odoo",
+      "slug": "sync-order-draft-from-odoo",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T13:53:17-04:00",
+      "last_deployed_at": "2026-07-21T13:53:17-04:00",
+      "local_path": "kapso/functions/sync_order_draft_from_odoo.js"
+    },
+    {
+      "id": "d719ba6e-e2d2-45cf-a8e6-3339adaa9e0c",
+      "name": "validate-nomina-confirm",
+      "slug": "validate-nomina-confirm",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-05T20:47:30-04:00",
+      "last_deployed_at": "2026-07-05T20:47:30-04:00",
+      "local_path": "kapso/functions/validate_nomina_confirm.js"
+    },
+    {
+      "id": "4061a9e7-fce9-4301-81e7-bd2e47da3da4",
+      "name": "validate-staff-write",
+      "slug": "validate-staff-write",
+      "status": "deployed",
+      "public_endpoint": false,
+      "updated_at": "2026-07-21T17:35:58-04:00",
+      "last_deployed_at": "2026-07-21T17:35:58-04:00",
+      "local_path": "kapso/functions/validate_staff_write.js"
+    }
+  ],
+  "local_only_functions": [
+    "kapso/functions/apply_staff_order_correction.js",
+    "kapso/functions/apply_staff_order_correction_deploy.js",
+    "kapso/functions/classify_contact_odoo_deploy.js",
+    "kapso/functions/classify_order_attachments.js",
+    "kapso/functions/classify_order_attachments_deploy.js",
+    "kapso/functions/compile_staff_order_draft_deploy.js",
+    "kapso/functions/get_customer_card_scoped_odoo.js",
+    "kapso/functions/get_customer_design_references_scoped_odoo.js",
+    "kapso/functions/interpret_quote_intent.js",
+    "kapso/functions/merge_order_detail_draft.js",
+    "kapso/functions/merge_order_detail_draft_deploy.js",
+    "kapso/functions/notify_sales_interest_deploy.js",
+    "kapso/functions/parse_nomina_attlog_deploy.js",
+    "kapso/functions/parse_order_detail_excel.js",
+    "kapso/functions/parse_order_detail_excel_deploy.js",
+    "kapso/functions/parse_order_detail_image.js",
+    "kapso/functions/parse_order_detail_image_deploy.js",
+    "kapso/functions/parse_order_detail_text.js",
+    "kapso/functions/parse_order_detail_text_deploy.js",
+    "kapso/functions/register_order_attachments.js",
+    "kapso/functions/register_order_attachments_deploy.js",
+    "kapso/functions/route_intent_next.js",
+    "kapso/functions/search_staff_order.js",
+    "kapso/functions/search_staff_order_deploy.js",
+    "kapso/functions/sync_order_draft_from_odoo_deploy.js"
+  ]
+}

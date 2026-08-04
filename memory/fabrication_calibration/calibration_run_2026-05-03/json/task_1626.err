@@ -1,0 +1,4 @@
+/Users/diego/Documents/Sync/projects/lifedeportes/kapso/.venv-pdf/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/Users/diego/Documents/Sync/projects/lifedeportes/kapso/.venv-pdf/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Conditional Formatting extension is not supported and will be removed
+  warn(msg)

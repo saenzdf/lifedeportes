@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Override del header del website para Life Deportes.
+        Se inyecta una topbar con teléfonos de WhatsApp y se reemplaza
+        el bloque .navbar por uno con la marca de Life Deportes.
+        El layout sigue siendo el de website.layout, así Odoo Website Editor
+        puede seguir editando menús, traducciones, etc.
+    -->
+    <template id="ld_topbar" name="Life Deportes Topbar"
+              inherit_id="website.layout" priority="20">
+        <xpath expr="//header" position="before">
+            <div class="ld-topbar">
+                <div class="container ld-topbar-inner">
+                    <span class="ld-topbar-text">
+                        Uniformes Personalizados · Envíos a toda Colombia, USA y Puerto Rico
+                    </span>
+                    <div class="ld-topbar-phones">
+                        <a href="https://wa.me/573103362484?text=Hola%2C%20quiero%20cotizar%20uniformes%20de%20"
+                           class="ld-wa-link"
+                           target="_blank" rel="noopener">
+                            <i class="fa fa-whatsapp"/> WhatsApp 310 336 2484
+                        </a>
+                        <a href="https://wa.me/573213988464?text=Hola%2C%20quiero%20cotizar%20uniformes%20de%20"
+                           class="ld-wa-link"
+                           target="_blank" rel="noopener">
+                            <i class="fa fa-whatsapp"/> WhatsApp 321 398 8464
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!--
+        Marca el header con la clase .ld-header para aplicar estilos sin
+        reemplazar el menú generado por Website (mantiene editable el menú).
+    -->
+    <template id="ld_header_class" name="Life Deportes Header Class"
+              inherit_id="website.layout" priority="21">
+        <xpath expr="//header" position="attributes">
+            <attribute name="class" add="ld-header" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- Fuentes del sitio reference (lifedeportes.com) en todas las páginas públicas, p. ej. /gallery -->
+    <template id="ld_google_fonts_layout" inherit_id="website.layout" priority="15">
+        <xpath expr="//head" position="inside">
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+            <link rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=DM+Sans:wght@400;500;700&amp;display=swap"/>
+        </xpath>
+    </template>
+
+    <!-- Nav tienda Odoo: catálogo + nosotros (galería solo en lifedeportes.com) -->
+    <template id="ld_nav_shop_links" inherit_id="website.layout" priority="25">
+        <xpath expr="//header//nav[contains(@class,'navbar-expand-lg')]//ul[@id='top_menu']" position="inside">
+            <li class="nav-item">
+                <a href="/shop" class="nav-link">Catálogo</a>
+            </li>
+            <li class="nav-item">
+                <a href="/about-us" class="nav-link">Nosotros</a>
+            </li>
+        </xpath>
+        <xpath expr="//header//nav[contains(@class,'o_header_mobile')]//div[@id='top_menu_collapse_mobile']//ul[@role='menu'][contains(@class,'top_menu')]" position="inside">
+            <li class="nav-item">
+                <a href="/shop" class="nav-link">Catálogo</a>
+            </li>
+            <li class="nav-item">
+                <a href="/about-us" class="nav-link">Nosotros</a>
+            </li>
+        </xpath>
+    </template>
+</odoo>

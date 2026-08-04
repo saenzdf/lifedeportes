@@ -1,0 +1,2950 @@
+{
+  "id": "29404417-6fd3-4668-abf1-a21c698419cf",
+  "current_step": {
+    "id": "178536bf-d0de-469e-a5de-c735aa48ecfe",
+    "identifier": "fn_staff_upload_odoo_1745500002700",
+    "stepable_type": "FlowActionStep"
+  },
+  "ended_at": "2026-07-30T13:03:39-04:00",
+  "execution_context": {
+    "vars": {
+      "crm": {
+        "stage": "Pasa a dise\u00f1o",
+        "has_orders": true,
+        "partner_name": "MARCO GUAINIA",
+        "brief_preview": null,
+        "opportunity_id": 2831,
+        "opportunity_name": "Oportunidad de MARCO GUAINIA"
+      },
+      "lead": {
+        "id": 2831,
+        "name": "Oportunidad de MARCO GUAINIA",
+        "phone": "+57 320 8636647",
+        "partner_id": 595
+      },
+      "user": {
+        "name": "Paola",
+        "role": "staff",
+        "wa_id": "573213988464",
+        "staff_member": {
+          "name": "Paola",
+          "role": "staff",
+          "phone": "573213988464",
+          "odoo_project_id": 9,
+          "odoo_project_name": "Proyecto Paola"
+        },
+        "odoo_project_id": 9,
+        "odoo_project_name": "Proyecto Paola",
+        "is_allowed_for_transactions": true
+      },
+      "kapso": {
+        "customer_lane": null,
+        "staff_only_mode": true
+      },
+      "quote": {
+        "variant": null,
+        "material": "dry_fit",
+        "quantity": 1,
+        "unit_cop": null,
+        "total_cop": null,
+        "extra_lines": [],
+        "product_text": "",
+        "draft_payload": {
+          "rows": [
+            {
+              "name": "Uniforme de F\u00fatbol",
+              "line_id": "rl_1_115",
+              "category": "uniforme",
+              "comments": "",
+              "quantity": 23,
+              "attributes": {
+                "tela": "dry_fit",
+                "deporte": "futbol",
+                "tipo_pantalon": "standard"
+              },
+              "price_unit": 50000,
+              "product_id": 115,
+              "unit_price": 50000,
+              "product_text": "Uniforme de F\u00fatbol",
+              "commercial_role": null
+            },
+            {
+              "name": "Camiseta deportiva dry-fit",
+              "line_id": "rl_2_62",
+              "category": "camiseta",
+              "comments": "",
+              "quantity": 2,
+              "attributes": {
+                "tela": "dry_fit",
+                "tipo_pantalon": "standard"
+              },
+              "price_unit": 30000,
+              "product_id": 62,
+              "unit_price": 30000,
+              "product_text": "Camiseta deportiva dry-fit",
+              "commercial_role": null
+            }
+          ],
+          "source": "conversation",
+          "variant": null,
+          "built_at": "2026-07-30T17:03:36.361Z",
+          "material": "dry_fit",
+          "quantity": 1,
+          "unit_cop": null,
+          "tenant_id": "life_main",
+          "total_cop": null,
+          "detail_rows": [
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "XXL",
+              "nombre": "DIEGO",
+              "numero": "6",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "ALEXIS",
+              "numero": "8",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "JOSE",
+              "numero": "12",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "XL",
+              "nombre": "CARLOS",
+              "numero": "20",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme \u00b7 Uniforme arquero con camiseta manga larga, con dise\u00f1o adjunto",
+              "grupo": "masculino",
+              "manga": "L",
+              "talla": "XL",
+              "nombre": "YACO",
+              "numero": "14",
+              "arquero": true,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "Uniforme arquero con camiseta manga larga, con dise\u00f1o adjunto",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "OMAR",
+              "numero": "5",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "S",
+              "nombre": "SOFI",
+              "numero": "50",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "XL",
+              "nombre": "YAYO",
+              "numero": "15",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "POCHO",
+              "numero": "11",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "HERNAN",
+              "numero": "2",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "GERMAN",
+              "numero": "21",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "PEDRO",
+              "numero": "3",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "PIRI",
+              "numero": "66",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "OCHOA",
+              "numero": "7",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "CESAR",
+              "numero": "16",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "EDDIE",
+              "numero": "96",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "RIOS",
+              "numero": "17",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "WILLIAM",
+              "numero": "4",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "ANIBAL",
+              "numero": "71",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme \u00b7 Talla camiseta XXL, pantaloneta XL",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "XXL, Pant XL",
+              "nombre": "DANNY",
+              "numero": "9",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "Talla camiseta XXL, pantaloneta XL",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "XL",
+              "nombre": "CHEPE",
+              "numero": "56",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "EDUAR",
+              "numero": "29",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "JOHN",
+              "numero": "18",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Camiseta",
+              "grupo": "femenino",
+              "manga": "",
+              "talla": "",
+              "nombre": "Camiseta #24",
+              "numero": "24",
+              "arquero": false,
+              "camiseta": true,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": false,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "camiseta",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Camiseta",
+              "grupo": "femenino",
+              "manga": "",
+              "talla": "",
+              "nombre": "Camiseta #25",
+              "numero": "25",
+              "arquero": false,
+              "camiseta": true,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": false,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "camiseta",
+              "nombre_vacio_impresion": false
+            }
+          ],
+          "extra_lines": [],
+          "product_text": "",
+          "customer_notes": null,
+          "customer_wa_id": null,
+          "price_from_cop": 5000,
+          "resolved_lines": [
+            {
+              "line_id": "rl_1_115",
+              "category": "uniforme",
+              "comments": "",
+              "quantity": 23,
+              "unit_cop": 50000,
+              "attributes": {
+                "tela": "dry_fit",
+                "deporte": "futbol",
+                "tipo_pantalon": "standard"
+              },
+              "confidence": "high",
+              "product_base": "Uniforme de F\u00fatbol",
+              "product_text": "Uniforme de F\u00fatbol",
+              "product_tmpl_id": 115,
+              "product_variant_id": 115
+            },
+            {
+              "line_id": "rl_2_62",
+              "category": "camiseta",
+              "comments": "",
+              "quantity": 2,
+              "unit_cop": 30000,
+              "attributes": {
+                "tela": "dry_fit",
+                "tipo_pantalon": "standard"
+              },
+              "confidence": "high",
+              "product_base": "Camiseta deportiva dry-fit",
+              "product_text": "Camiseta deportiva dry-fit",
+              "product_tmpl_id": 62,
+              "product_variant_id": 62
+            }
+          ],
+          "schema_version": "quote_payload_v2",
+          "odoo_product_id": null,
+          "order_note_html": "<h1>Pedido</h1>\n\n<hr>\n\n<h2>Resumen de uniformes</h2>\n<ul>\n  <li><strong>Uniforme de F\u00fatbol (23 u.):</strong> </li>\n  <li><strong>Camiseta deportiva dry-fit (2 u.):</strong> </li>\n</ul>\n\n<hr>\n\n<h2>Resumen por producto y manga</h2>\n<ul>\n  <li><strong>Arquero:</strong> 1 u. <em>(comentario en lista; mismo precio camiseta/uniforme, sin cargo adicional)</em></li>\n</ul>\n\n<hr>\n\n<h2>Lista de jugadores (Masculino) \u2014 Uniforme (conjunto)</h2>\n<table border=\"1\" cellpadding=\"5\" style=\"border-collapse:collapse; width:100%; border: 1px solid #ddd; font-family: sans-serif;\">\n  <thead>\n    <tr style=\"background-color:#f2f2f2;\">\n      <th style=\"text-align:center; padding: 8px;\">N\u00b0</th>\n      <th style=\"text-align:left; padding: 8px;\">Nombre</th>\n      <th style=\"text-align:center; padding: 8px;\">Talla</th>\n      \n      \n      <th style=\"text-align:left; padding: 8px;\">Comentario</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td style=\"text-align:center; padding: 8px;\">6</td><td style=\"padding: 8px;\">DIEGO</td><td style=\"text-align:center; padding: 8px;\">XXL</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">8</td><td style=\"padding: 8px;\">ALEXIS</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">12</td><td style=\"padding: 8px;\">JOSE</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">20</td><td style=\"padding: 8px;\">CARLOS</td><td style=\"text-align:center; padding: 8px;\">XL</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">14</td><td style=\"padding: 8px;\">YACO</td><td style=\"text-align:center; padding: 8px;\">XL</td><td style=\"padding: 8px;\">Arquero</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">5</td><td style=\"padding: 8px;\">OMAR</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">50</td><td style=\"padding: 8px;\">SOFI</td><td style=\"text-align:center; padding: 8px;\">S</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">15</td><td style=\"padding: 8px;\">YAYO</td><td style=\"text-align:center; padding: 8px;\">XL</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">11</td><td style=\"padding: 8px;\">POCHO</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">2</td><td style=\"padding: 8px;\">HERNAN</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">21</td><td style=\"padding: 8px;\">GERMAN</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">3</td><td style=\"padding: 8px;\">PEDRO</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">66</td><td style=\"padding: 8px;\">PIRI</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">7</td><td style=\"padding: 8px;\">OCHOA</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">16</td><td style=\"padding: 8px;\">CESAR</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">96</td><td style=\"padding: 8px;\">EDDIE</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">17</td><td style=\"padding: 8px;\">RIOS</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">4</td><td style=\"padding: 8px;\">WILLIAM</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">71</td><td style=\"padding: 8px;\">ANIBAL</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">9</td><td style=\"padding: 8px;\">DANNY</td><td style=\"text-align:center; padding: 8px;\">XXL, Pant XL</td><td style=\"padding: 8px;\">Talla camiseta XXL, pantaloneta XL</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">56</td><td style=\"padding: 8px;\">CHEPE</td><td style=\"text-align:center; padding: 8px;\">XL</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">29</td><td style=\"padding: 8px;\">EDUAR</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">18</td><td style=\"padding: 8px;\">JOHN</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n  </tbody>\n</table>\n\n<hr>\n\n<h2>Lista de jugadoras (Femenino) \u2014 Camiseta</h2>\n<table border=\"1\" cellpadding=\"5\" style=\"border-collapse:collapse; width:100%; border: 1px solid #ddd; font-family: sans-serif;\">\n  <thead>\n    <tr style=\"background-color:#f2f2f2;\">\n      <th style=\"text-align:center; padding: 8px;\">N\u00b0</th>\n      <th style=\"text-align:left; padding: 8px;\">Nombre</th>\n      <th style=\"text-align:center; padding: 8px;\">Talla</th>\n      \n      \n      \n    </tr>\n  </thead>\n  <tbody>\n    <tr><td style=\"text-align:center; padding: 8px;\">24</td><td style=\"padding: 8px;\">Camiseta #24</td><td style=\"text-align:center; padding: 8px;\">\u2014</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">25</td><td style=\"padding: 8px;\">Camiseta #25</td><td style=\"text-align:center; padding: 8px;\">\u2014</td></tr>\n  </tbody>\n</table>\n\n<hr>\n\n<p>Proyecto: Proyecto Paola</p>",
+          "commercial_lines": [
+            {
+              "key": "Uniforme de F\u00fatbol",
+              "name": "Uniforme de F\u00fatbol",
+              "category": "uniforme",
+              "quantity": 23,
+              "garment_type": null,
+              "product_text": "Uniforme de F\u00fatbol",
+              "variant_notes": null
+            },
+            {
+              "key": "Camiseta deportiva dry-fit",
+              "name": "Camiseta deportiva dry-fit",
+              "category": "camiseta",
+              "quantity": 2,
+              "garment_type": null,
+              "product_text": "Camiseta deportiva dry-fit",
+              "variant_notes": null
+            }
+          ],
+          "match_confidence": "low",
+          "reference_images": [],
+          "catalog_synced_at": "2026-07-06T02:38:51Z",
+          "design_product_id": null,
+          "product_attributes": {},
+          "matched_product_name": "Extra chaqueta con cremallera en cada lado",
+          "quote_request_source": "agent_request",
+          "customer_display_name": "MARCO GUAINIA",
+          "partial_order_details": {},
+          "billing_is_third_party": false,
+          "formal_quote_requested": false,
+          "suggested_alternatives": [
+            {
+              "name": "Extra chaqueta con cremallera en cada lado",
+              "list_price_cop": 5000
+            },
+            {
+              "name": "Extra pantalon con cremallera en cada lado",
+              "list_price_cop": 5000
+            },
+            {
+              "name": "Incrementos de precio: a partir de la 2xl:",
+              "list_price_cop": 5000
+            },
+            {
+              "name": "Bordado adicional",
+              "list_price_cop": 7000
+            },
+            {
+              "name": "Incrementos de precio: a partir de la 3xl",
+              "list_price_cop": 10000
+            },
+            {
+              "name": "Gorras con un bordado",
+              "list_price_cop": 15000
+            },
+            {
+              "name": "Tulas",
+              "list_price_cop": 18000
+            },
+            {
+              "name": "Petos en malla",
+              "list_price_cop": 25000
+            },
+            {
+              "name": "Petos sublimados",
+              "list_price_cop": 28000
+            },
+            {
+              "name": "Lycra",
+              "list_price_cop": 30000
+            },
+            {
+              "name": "Buzo de arquero",
+              "list_price_cop": 31000
+            },
+            {
+              "name": "Dise\u00f1o especial (arquero o jugador) si son menos de 6 unidades",
+              "list_price_cop": 35000
+            },
+            {
+              "name": "Pantal\u00f3n de arquero",
+              "list_price_cop": 45000
+            },
+            {
+              "name": "Pantal\u00f3n de sudadera",
+              "list_price_cop": 45000
+            },
+            {
+              "name": "Banderas, 1.10 X 1.50",
+              "list_price_cop": 60000
+            },
+            {
+              "name": "Chaqueta Lotto",
+              "list_price_cop": 60000
+            },
+            {
+              "name": "Chaqueta Rompevientos",
+              "list_price_cop": 60000
+            },
+            {
+              "name": "Busos con capota",
+              "list_price_cop": 65000
+            },
+            {
+              "name": "Conjunto de arquero",
+              "list_price_cop": 70000
+            },
+            {
+              "name": "Sudadera Chaqueta y Pantal\u00f3n Ori\u00f3n",
+              "list_price_cop": 100000
+            },
+            {
+              "name": "Sudaderas en algod\u00f3n lycrado con bordados",
+              "list_price_cop": 120000
+            }
+          ],
+          "order_or_team_name_for_billing": null
+        },
+        "price_from_cop": 5000,
+        "odoo_product_id": null,
+        "order_note_html": "<h1>Pedido</h1>\n\n<hr>\n\n<h2>Resumen de uniformes</h2>\n<ul>\n  <li><strong>Uniforme de F\u00fatbol (23 u.):</strong> </li>\n  <li><strong>Camiseta deportiva dry-fit (2 u.):</strong> </li>\n</ul>\n\n<hr>\n\n<h2>Resumen por producto y manga</h2>\n<ul>\n  <li><strong>Arquero:</strong> 1 u. <em>(comentario en lista; mismo precio camiseta/uniforme, sin cargo adicional)</em></li>\n</ul>\n\n<hr>\n\n<h2>Lista de jugadores (Masculino) \u2014 Uniforme (conjunto)</h2>\n<table border=\"1\" cellpadding=\"5\" style=\"border-collapse:collapse; width:100%; border: 1px solid #ddd; font-family: sans-serif;\">\n  <thead>\n    <tr style=\"background-color:#f2f2f2;\">\n      <th style=\"text-align:center; padding: 8px;\">N\u00b0</th>\n      <th style=\"text-align:left; padding: 8px;\">Nombre</th>\n      <th style=\"text-align:center; padding: 8px;\">Talla</th>\n      \n      \n      <th style=\"text-align:left; padding: 8px;\">Comentario</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td style=\"text-align:center; padding: 8px;\">6</td><td style=\"padding: 8px;\">DIEGO</td><td style=\"text-align:center; padding: 8px;\">XXL</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">8</td><td style=\"padding: 8px;\">ALEXIS</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">12</td><td style=\"padding: 8px;\">JOSE</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">20</td><td style=\"padding: 8px;\">CARLOS</td><td style=\"text-align:center; padding: 8px;\">XL</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">14</td><td style=\"padding: 8px;\">YACO</td><td style=\"text-align:center; padding: 8px;\">XL</td><td style=\"padding: 8px;\">Arquero</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">5</td><td style=\"padding: 8px;\">OMAR</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">50</td><td style=\"padding: 8px;\">SOFI</td><td style=\"text-align:center; padding: 8px;\">S</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">15</td><td style=\"padding: 8px;\">YAYO</td><td style=\"text-align:center; padding: 8px;\">XL</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">11</td><td style=\"padding: 8px;\">POCHO</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">2</td><td style=\"padding: 8px;\">HERNAN</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">21</td><td style=\"padding: 8px;\">GERMAN</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">3</td><td style=\"padding: 8px;\">PEDRO</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">66</td><td style=\"padding: 8px;\">PIRI</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">7</td><td style=\"padding: 8px;\">OCHOA</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">16</td><td style=\"padding: 8px;\">CESAR</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">96</td><td style=\"padding: 8px;\">EDDIE</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">17</td><td style=\"padding: 8px;\">RIOS</td><td style=\"text-align:center; padding: 8px;\">M</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">4</td><td style=\"padding: 8px;\">WILLIAM</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">71</td><td style=\"padding: 8px;\">ANIBAL</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">9</td><td style=\"padding: 8px;\">DANNY</td><td style=\"text-align:center; padding: 8px;\">XXL, Pant XL</td><td style=\"padding: 8px;\">Talla camiseta XXL, pantaloneta XL</td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">56</td><td style=\"padding: 8px;\">CHEPE</td><td style=\"text-align:center; padding: 8px;\">XL</td><td style=\"padding: 8px;\"></td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">29</td><td style=\"padding: 8px;\">EDUAR</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n    <tr><td style=\"text-align:center; padding: 8px;\">18</td><td style=\"padding: 8px;\">JOHN</td><td style=\"text-align:center; padding: 8px;\">L</td><td style=\"padding: 8px;\"></td></tr>\n  </tbody>\n</table>\n\n<hr>\n\n<h2>Lista de jugadoras (Femenino) \u2014 Camiseta</h2>\n<table border=\"1\" cellpadding=\"5\" style=\"border-collapse:collapse; width:100%; border: 1px solid #ddd; font-family: sans-serif;\">\n  <thead>\n    <tr style=\"background-color:#f2f2f2;\">\n      <th style=\"text-align:center; padding: 8px;\">N\u00b0</th>\n      <th style=\"text-align:left; padding: 8px;\">Nombre</th>\n      <th style=\"text-align:center; padding: 8px;\">Talla</th>\n      \n      \n      \n    </tr>\n  </thead>\n  <tbody>\n    <tr><td style=\"text-align:center; padding: 8px;\">24</td><td style=\"padding: 8px;\">Camiseta #24</td><td style=\"text-align:center; padding: 8px;\">\u2014</td></tr>\n    <tr style=\"background-color:#f9f9f9;\"><td style=\"text-align:center; padding: 8px;\">25</td><td style=\"padding: 8px;\">Camiseta #25</td><td style=\"text-align:center; padding: 8px;\">\u2014</td></tr>\n  </tbody>\n</table>\n\n<hr>\n\n<p>Proyecto: Proyecto Paola</p>",
+        "match_confidence": "low",
+        "reference_images": [],
+        "design_product_id": null,
+        "commercial_summary": "Desde $5.000 c/u (confirmar opciones con cliente)",
+        "product_attributes": {},
+        "quote_request_source": "agent_request",
+        "commercial_validation": {
+          "ok": true,
+          "code": null,
+          "extras_qty": 2,
+          "message_es": null,
+          "base_uniform_qty": 23
+        },
+        "customer_display_name": "MARCO GUAINIA",
+        "billing_is_third_party": false,
+        "formal_quote_requested": false,
+        "suggested_alternatives": [
+          {
+            "name": "Extra chaqueta con cremallera en cada lado",
+            "list_price_cop": 5000
+          },
+          {
+            "name": "Extra pantalon con cremallera en cada lado",
+            "list_price_cop": 5000
+          },
+          {
+            "name": "Incrementos de precio: a partir de la 2xl:",
+            "list_price_cop": 5000
+          },
+          {
+            "name": "Bordado adicional",
+            "list_price_cop": 7000
+          },
+          {
+            "name": "Incrementos de precio: a partir de la 3xl",
+            "list_price_cop": 10000
+          },
+          {
+            "name": "Gorras con un bordado",
+            "list_price_cop": 15000
+          },
+          {
+            "name": "Tulas",
+            "list_price_cop": 18000
+          },
+          {
+            "name": "Petos en malla",
+            "list_price_cop": 25000
+          },
+          {
+            "name": "Petos sublimados",
+            "list_price_cop": 28000
+          },
+          {
+            "name": "Lycra",
+            "list_price_cop": 30000
+          },
+          {
+            "name": "Buzo de arquero",
+            "list_price_cop": 31000
+          },
+          {
+            "name": "Dise\u00f1o especial (arquero o jugador) si son menos de 6 unidades",
+            "list_price_cop": 35000
+          },
+          {
+            "name": "Pantal\u00f3n de arquero",
+            "list_price_cop": 45000
+          },
+          {
+            "name": "Pantal\u00f3n de sudadera",
+            "list_price_cop": 45000
+          },
+          {
+            "name": "Banderas, 1.10 X 1.50",
+            "list_price_cop": 60000
+          },
+          {
+            "name": "Chaqueta Lotto",
+            "list_price_cop": 60000
+          },
+          {
+            "name": "Chaqueta Rompevientos",
+            "list_price_cop": 60000
+          },
+          {
+            "name": "Busos con capota",
+            "list_price_cop": 65000
+          },
+          {
+            "name": "Conjunto de arquero",
+            "list_price_cop": 70000
+          },
+          {
+            "name": "Sudadera Chaqueta y Pantal\u00f3n Ori\u00f3n",
+            "list_price_cop": 100000
+          },
+          {
+            "name": "Sudaderas en algod\u00f3n lycrado con bordados",
+            "list_price_cop": 120000
+          }
+        ],
+        "minimum_ready_for_quote": true,
+        "order_or_team_name_for_billing": null
+      },
+      "staff": {
+        "write_code": "opportunity_ready",
+        "write_mode": "opportunity_only",
+        "write_status": "ok",
+        "registration_type": "pedido",
+        "write_blocked_reason": null,
+        "confirmation_fingerprint": "{\"lines\":[{\"p\":\"Camiseta deportiva dry-fit\",\"q\":2},{\"p\":\"Uniforme de F\u00fatbol\",\"q\":23}],\"people\":[],\"partner\":\"\"}"
+      },
+      "funnel": {
+        "stage": "venta",
+        "updated_at": "2026-07-30T17:03:36.361Z",
+        "stage_reason": "quote_payload_built"
+      },
+      "intent": {
+        "raw_text": "me puedes subir 2831 anibal a la tarea"
+      },
+      "tenant": {
+        "id": "life_main",
+        "name": "Life Deportes Principal",
+        "policy_set": "sales_default_v1",
+        "secret_prefix": "TENANT_LIFE_MAIN",
+        "phone_number_id": null
+      },
+      "service": {
+        "last_call_at": "2026-07-30T17:03:36.361Z",
+        "last_call_name": "build_quote_payload",
+        "fallback_message": null,
+        "last_call_status": "ready"
+      },
+      "security": {
+        "input_blocked": false,
+        "input_flagged": false,
+        "mcp_call_count": 0,
+        "policy_version": "2026-06-17",
+        "last_block_reason": null
+      },
+      "user_lane": "staff",
+      "order_draft": {
+        "write": {
+          "code": "opportunity_ready",
+          "mode": "opportunity_only",
+          "status": "ready",
+          "fingerprint": "{\"lines\":[{\"p\":\"Camiseta deportiva dry-fit\",\"q\":2},{\"p\":\"Uniforme de F\u00fatbol\",\"q\":23}],\"people\":[],\"partner\":\"\"}"
+        },
+        "detail": {
+          "rows": [
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "XXL",
+              "nombre": "DIEGO",
+              "numero": "6",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "ALEXIS",
+              "numero": "8",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "JOSE",
+              "numero": "12",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "XL",
+              "nombre": "CARLOS",
+              "numero": "20",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme \u00b7 Uniforme arquero con camiseta manga larga, con dise\u00f1o adjunto",
+              "grupo": "masculino",
+              "manga": "L",
+              "talla": "XL",
+              "nombre": "YACO",
+              "numero": "14",
+              "arquero": true,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "Uniforme arquero con camiseta manga larga, con dise\u00f1o adjunto",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "OMAR",
+              "numero": "5",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "S",
+              "nombre": "SOFI",
+              "numero": "50",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "XL",
+              "nombre": "YAYO",
+              "numero": "15",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "POCHO",
+              "numero": "11",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "HERNAN",
+              "numero": "2",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "GERMAN",
+              "numero": "21",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "PEDRO",
+              "numero": "3",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "PIRI",
+              "numero": "66",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "OCHOA",
+              "numero": "7",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "CESAR",
+              "numero": "16",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "EDDIE",
+              "numero": "96",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "M",
+              "nombre": "RIOS",
+              "numero": "17",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "WILLIAM",
+              "numero": "4",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "ANIBAL",
+              "numero": "71",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme \u00b7 Talla camiseta XXL, pantaloneta XL",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "XXL, Pant XL",
+              "nombre": "DANNY",
+              "numero": "9",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "Talla camiseta XXL, pantaloneta XL",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "XL",
+              "nombre": "CHEPE",
+              "numero": "56",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "EDUAR",
+              "numero": "29",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Uniforme",
+              "grupo": "masculino",
+              "manga": "C",
+              "talla": "L",
+              "nombre": "JOHN",
+              "numero": "18",
+              "arquero": false,
+              "camiseta": false,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": true,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "uniforme",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Camiseta",
+              "grupo": "femenino",
+              "manga": "",
+              "talla": "",
+              "nombre": "Camiseta #24",
+              "numero": "24",
+              "arquero": false,
+              "camiseta": true,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": false,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "camiseta",
+              "nombre_vacio_impresion": false
+            },
+            {
+              "rol": "Camiseta",
+              "grupo": "femenino",
+              "manga": "",
+              "talla": "",
+              "nombre": "Camiseta #25",
+              "numero": "25",
+              "arquero": false,
+              "camiseta": true,
+              "cantidad": 1,
+              "category": null,
+              "registro": null,
+              "uniforme": false,
+              "person_id": null,
+              "comentario": "",
+              "manga_parts": [
+                {
+                  "qty": 1,
+                  "manga": "otra"
+                }
+              ],
+              "pantaloneta": false,
+              "garment_type": null,
+              "product_text": null,
+              "variant_notes": null,
+              "product_line_key": null,
+              "impresion_trasera": null,
+              "impresion_delantera": null,
+              "product_choice_hint": "camiseta",
+              "nombre_vacio_impresion": false
+            }
+          ],
+          "people": [
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "6",
+                "print_name": "DIEGO",
+                "display_name": "DIEGO"
+              },
+              "person_id": "row-1",
+              "components": [
+                {
+                  "size": "XXL",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "8",
+                "print_name": "ALEXIS",
+                "display_name": "ALEXIS"
+              },
+              "person_id": "row-2",
+              "components": [
+                {
+                  "size": "M",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "12",
+                "print_name": "JOSE",
+                "display_name": "JOSE"
+              },
+              "person_id": "row-3",
+              "components": [
+                {
+                  "size": "L",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "20",
+                "print_name": "CARLOS",
+                "display_name": "CARLOS"
+              },
+              "person_id": "row-4",
+              "components": [
+                {
+                  "size": "XL",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [
+                "Uniforme arquero con camiseta manga larga, con dise\u00f1o adjunto"
+              ],
+              "identity": {
+                "group": "masculino",
+                "number": "14",
+                "print_name": "YACO",
+                "display_name": "YACO"
+              },
+              "person_id": "row-5",
+              "components": [
+                {
+                  "size": "XL",
+                  "type": "uniforme_completo",
+                  "sleeve": "L",
+                  "comment": "Uniforme arquero con camiseta manga larga, con dise\u00f1o adjunto",
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": true,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "5",
+                "print_name": "OMAR",
+                "display_name": "OMAR"
+              },
+              "person_id": "row-6",
+              "components": [
+                {
+                  "size": "M",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "50",
+                "print_name": "SOFI",
+                "display_name": "SOFI"
+              },
+              "person_id": "row-7",
+              "components": [
+                {
+                  "size": "S",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "15",
+                "print_name": "YAYO",
+                "display_name": "YAYO"
+              },
+              "person_id": "row-8",
+              "components": [
+                {
+                  "size": "XL",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "11",
+                "print_name": "POCHO",
+                "display_name": "POCHO"
+              },
+              "person_id": "row-9",
+              "components": [
+                {
+                  "size": "L",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "2",
+                "print_name": "HERNAN",
+                "display_name": "HERNAN"
+              },
+              "person_id": "row-10",
+              "components": [
+                {
+                  "size": "L",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "21",
+                "print_name": "GERMAN",
+                "display_name": "GERMAN"
+              },
+              "person_id": "row-11",
+              "components": [
+                {
+                  "size": "M",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "3",
+                "print_name": "PEDRO",
+                "display_name": "PEDRO"
+              },
+              "person_id": "row-12",
+              "components": [
+                {
+                  "size": "M",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "66",
+                "print_name": "PIRI",
+                "display_name": "PIRI"
+              },
+              "person_id": "row-13",
+              "components": [
+                {
+                  "size": "M",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "7",
+                "print_name": "OCHOA",
+                "display_name": "OCHOA"
+              },
+              "person_id": "row-14",
+              "components": [
+                {
+                  "size": "L",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "16",
+                "print_name": "CESAR",
+                "display_name": "CESAR"
+              },
+              "person_id": "row-15",
+              "components": [
+                {
+                  "size": "L",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "96",
+                "print_name": "EDDIE",
+                "display_name": "EDDIE"
+              },
+              "person_id": "row-16",
+              "components": [
+                {
+                  "size": "M",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "17",
+                "print_name": "RIOS",
+                "display_name": "RIOS"
+              },
+              "person_id": "row-17",
+              "components": [
+                {
+                  "size": "M",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "4",
+                "print_name": "WILLIAM",
+                "display_name": "WILLIAM"
+              },
+              "person_id": "row-18",
+              "components": [
+                {
+                  "size": "L",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "71",
+                "print_name": "ANIBAL",
+                "display_name": "ANIBAL"
+              },
+              "person_id": "row-19",
+              "components": [
+                {
+                  "size": "L",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [
+                "Talla camiseta XXL, pantaloneta XL"
+              ],
+              "identity": {
+                "group": "masculino",
+                "number": "9",
+                "print_name": "DANNY",
+                "display_name": "DANNY"
+              },
+              "person_id": "row-20",
+              "components": [
+                {
+                  "size": "XXL, Pant XL",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": "Talla camiseta XXL, pantaloneta XL",
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "56",
+                "print_name": "CHEPE",
+                "display_name": "CHEPE"
+              },
+              "person_id": "row-21",
+              "components": [
+                {
+                  "size": "XL",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "29",
+                "print_name": "EDUAR",
+                "display_name": "EDUAR"
+              },
+              "person_id": "row-22",
+              "components": [
+                {
+                  "size": "L",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "masculino",
+                "number": "18",
+                "print_name": "JOHN",
+                "display_name": "JOHN"
+              },
+              "person_id": "row-23",
+              "components": [
+                {
+                  "size": "L",
+                  "type": "uniforme_completo",
+                  "sleeve": "C",
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "femenino",
+                "number": "24",
+                "print_name": "Camiseta #24",
+                "display_name": "Camiseta #24"
+              },
+              "person_id": "row-24",
+              "components": [
+                {
+                  "size": null,
+                  "type": "camiseta",
+                  "sleeve": null,
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            },
+            {
+              "comments": [],
+              "identity": {
+                "group": "femenino",
+                "number": "25",
+                "print_name": "Camiseta #25",
+                "display_name": "Camiseta #25"
+              },
+              "person_id": "row-25",
+              "components": [
+                {
+                  "size": null,
+                  "type": "camiseta",
+                  "sleeve": null,
+                  "comment": null,
+                  "category": null,
+                  "printing": {
+                    "back": null,
+                    "front": null
+                  },
+                  "goalkeeper": false,
+                  "garment_type": null,
+                  "product_text": null,
+                  "variant_notes": null,
+                  "product_line_key": null
+                }
+              ]
+            }
+          ],
+          "source": "excel",
+          "warnings": [
+            "Fila 24 (Camiseta #24): sin talla",
+            "Fila 25 (Camiseta #25): sin talla",
+            "Lista con varios productos (secciones). Revise l\u00edneas comerciales: chaquetas, camisetas y uniformes por separado."
+          ],
+          "parsed_at": "2026-07-30T17:03:12.560Z",
+          "row_count": 25,
+          "disciplina": "F\u00fatbol - Adulto",
+          "color_media": "Negro / Azul petroleo",
+          "excel_sheet": "formato life",
+          "excel_layout": "formato_life_v1",
+          "parse_report": {
+            "hints": [
+              "Pesta\u00f1a formato life \u00b7 layout v1 (\u00fanica l\u00f3gica: parse_life_excel).",
+              "Solo pesta\u00f1a \u00abformato life\u00bb (ignorar Hoja1/Hoja2).",
+              "Dorsal: columna NUMERO; si vac\u00eda y existe NUMERO en el layout, usar No. como dorsal.",
+              "Si la columna D (u otra) es CANTIDAD y no hay NUMERO: cantidad por fila; No. es \u00edndice, no dorsal.",
+              "CANTIDAD = unidades de esa fila (p. ej. 3). Manga puede desglosar: \u00ab2 LARGA+1 CORTA\u00bb, \u00ab3 LARGA\u00bb.",
+              "MAS/FEM = g\u00e9nero (masculino/femenino).",
+              "X en Camiseta / X en Uniforme = tipo de prenda de la fila (validaci\u00f3n pre-ingreso; no columna Formulario).",
+              "Arquero solo columna ARQUERO (X) o comentario con \u00abarquero\u00bb.",
+              "No inferir arqueros por dorsal sin marca.",
+              "Texto en Camiseta/Uniforme (ej. \u00abSOLO PANTALONETA\u00bb) \u2192 comentario/nota, no casilla X.",
+              "Curso/pago u otros datos en comentarios \u2192 registro (no se descartan).",
+              "Fidelidad al Excel: no inventar palabras. COMENTARIO+OBSERVACIONES se unen; Delantera/Trasera solo si el encabezado las nombra; PRECIO no va a la lista.",
+              "2 fila(s) sin nombre en columna B \u2014 revisar Excel o corregir manual."
+            ],
+            "counts": {
+              "total": 25,
+              "arqueros": 1,
+              "manga_corta": 0,
+              "manga_larga": 0,
+              "pantaloneta": 0,
+              "femenino_otro": 0,
+              "total_unidades": 25,
+              "femenino_camiseta": 2,
+              "masculino_camiseta": 0,
+              "masculino_uniforme": 23
+            },
+            "layout": "formato_life_v1",
+            "arqueros": [
+              "YACO #14 (M)"
+            ],
+            "disciplina": "F\u00fatbol - Adulto",
+            "sheet_name": "formato life",
+            "color_media": "Negro / Azul petroleo",
+            "summary_text": "\u00abformato life\u00bb \u00b7 25 filas \u00b7 23 u. M uniforme \u00b7 2 u. F camiseta \u00b7 1 arquero(s)",
+            "registro_hints": [],
+            "product_choice_validation": {
+              "role": "pre_upload_check",
+              "note_es": "Marcas Camiseta/Uniforme del Excel validan la escogencia de producto antes de subir; no son columnas del Formulario Life."
+            }
+          },
+          "parse_status": "partial",
+          "person_count": 25,
+          "summary_text": "25 filas \u00b7 23 M \u00b7 2 F \u00b7 2 sin talla",
+          "schema_version": "life_order_people_v1"
+        },
+        "blockers": [],
+        "lifecycle": {
+          "state": "draft_partial",
+          "updated_at": "2026-07-30T17:03:33.397Z",
+          "missing_fields": [
+            "tallas"
+          ],
+          "schema_version": "life_order_lifecycle_v1",
+          "active_revision": 0,
+          "detail_quantity": 25,
+          "confirmation_gate": {
+            "reason": "Faltan: tallas",
+            "allowed": false
+          },
+          "commercial_quantity": 25
+        },
+        "commercial": {
+          "lines": [
+            {
+              "key": "Uniforme de F\u00fatbol",
+              "name": "Uniforme de F\u00fatbol",
+              "category": "uniforme",
+              "quantity": 23,
+              "garment_type": null,
+              "product_text": "Uniforme de F\u00fatbol",
+              "variant_notes": null
+            },
+            {
+              "key": "Camiseta deportiva dry-fit",
+              "name": "Camiseta deportiva dry-fit",
+              "category": "camiseta",
+              "quantity": 2,
+              "garment_type": null,
+              "product_text": "Camiseta deportiva dry-fit",
+              "variant_notes": null
+            }
+          ],
+          "multi_product": true,
+          "resolved_lines": [
+            {
+              "line_id": "rl_1_115",
+              "category": "uniforme",
+              "comments": "",
+              "quantity": 23,
+              "unit_cop": 50000,
+              "attributes": {
+                "tela": "dry_fit",
+                "deporte": "futbol",
+                "tipo_pantalon": "standard"
+              },
+              "confidence": "high",
+              "product_base": "Uniforme de F\u00fatbol",
+              "product_text": "Uniforme de F\u00fatbol",
+              "product_tmpl_id": 115,
+              "product_variant_id": 115
+            },
+            {
+              "line_id": "rl_2_62",
+              "category": "camiseta",
+              "comments": "",
+              "quantity": 2,
+              "unit_cop": 30000,
+              "attributes": {
+                "tela": "dry_fit",
+                "tipo_pantalon": "standard"
+              },
+              "confidence": "high",
+              "product_base": "Camiseta deportiva dry-fit",
+              "product_text": "Camiseta deportiva dry-fit",
+              "product_tmpl_id": 62,
+              "product_variant_id": 62
+            }
+          ],
+          "requested_lines": [
+            {
+              "key": "Uniforme de F\u00fatbol",
+              "name": "Uniforme de F\u00fatbol",
+              "category": "uniforme",
+              "quantity": 23,
+              "garment_type": null,
+              "product_text": "Uniforme de F\u00fatbol",
+              "variant_notes": null
+            },
+            {
+              "key": "Camiseta deportiva dry-fit",
+              "name": "Camiseta deportiva dry-fit",
+              "category": "camiseta",
+              "quantity": 2,
+              "garment_type": null,
+              "product_text": "Camiseta deportiva dry-fit",
+              "variant_notes": null
+            }
+          ]
+        },
+        "attachments": [
+          {
+            "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjQ5MTNiYzQ0LTgxY2QtNDVlYi1iZjNhLTg4ZjY4MTAwMGQ5OCIsInB1ciI6ImJsb2JfaWQifX0=--b54fb83564ec6e056b821768a12505f157cced74/FORMATO%20PEDIDO%20LIFE_EqF11Masc-AMIGOSUC.xlsx",
+            "role": "detail_list",
+            "filename": "FORMATO PEDIDO LIFE_EqF11Masc-AMIGOSUC.xlsx",
+            "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+          },
+          {
+            "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImYxNzdiODUyLTc3ZWYtNDgxMC05Mzc4LTQ2ZGFhYjE4NmI2MiIsInB1ciI6ImJsb2JfaWQifX0=--8c9e6e9862e6bf59e9002728804690ccc40a66fc/image_d4d86da23cf9.jpeg",
+            "role": "design_reference",
+            "filename": "image_d4d86da23cf9.jpeg",
+            "mime_type": "image/jpeg"
+          },
+          {
+            "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjQzZThjYzVhLTNmNjItNDFkOS1iYjg3LTY2MjUxOTc0MDA1ZiIsInB1ciI6ImJsb2JfaWQifX0=--e3ff56573153fe51a2358478125c2e0ddcd3ca06/image_30c6665bb350.jpeg",
+            "role": "design_reference",
+            "filename": "image_30c6665bb350.jpeg",
+            "mime_type": "image/jpeg"
+          },
+          {
+            "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZUzYTBhNjJkLWFkZmYtNDQ0Ni1iNjA4LTk3ZDc0YTU5NGQyMCIsInB1ciI6ImJsb2JfaWQifX0=--51c1770f1776010b870af6bfe15c081d6417cde5/image_3e5bd6ef12a1.jpeg",
+            "role": "design_reference",
+            "filename": "image_3e5bd6ef12a1.jpeg",
+            "mime_type": "image/jpeg"
+          }
+        ],
+        "spreadsheet": {
+          "status": "empty",
+          "cross_check": null
+        },
+        "customer_display_name": "MARCO GUAINIA"
+      },
+      "spam_profile": null,
+      "order_details": {
+        "partial": {},
+        "updated_at": "2026-07-30T17:03:36.361Z",
+        "completeness": "incomplete",
+        "missing_fields": [],
+        "designer_schema_version": "life_designer_order_v1"
+      },
+      "order_session": {
+        "display_name": "MARCO GUAINIA",
+        "odoo_lead_id": 2831
+      },
+      "agent_response": "",
+      "last_user_input": null,
+      "agent_iterations": 10,
+      "staff.write_mode": "opportunity_only",
+      "staff_burst_reply": null
+    },
+    "system": {
+      "flow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+      "customer": {
+        "id": "7fe6d691-be8f-462a-a2ec-9aeb93476b7b",
+        "name": "Default customer",
+        "external_customer_id": "default_customer"
+      },
+      "failed_at": "2026-07-30T13:03:39-04:00",
+      "flow_name": "lifedeportes_sales_inbound",
+      "running_at": "2026-07-30T13:00:59-04:00",
+      "started_at": "2026-07-30T12:59:54-04:00",
+      "step_count": 12,
+      "waiting_at": "2026-07-30T13:00:49-04:00",
+      "last_resume": {
+        "at": "2026-07-30T13:00:59-04:00",
+        "reason": "timeout",
+        "step_id": "3f1cc501-be5d-4196-8b81-116073970578",
+        "step_type": "FlowWaitStep",
+        "step_identifier": "wait_staff_burst_1745500019200"
+      },
+      "workflow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+      "flow_version": 0,
+      "trigger_type": "inbound_message",
+      "workflow_name": "lifedeportes_sales_inbound",
+      "whatsapp_config": {
+        "id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+        "kind": "production",
+        "name": "Life Deportes Asistente",
+        "phone_number_id": "1095603153637786",
+        "business_account_id": "808809791888713",
+        "display_phone_number": "3000000066",
+        "display_phone_number_normalized": "3000000066"
+      },
+      "workflow_version": 0,
+      "flow_execution_id": "29404417-6fd3-4668-abf1-a21c698419cf",
+      "last_status_change": "2026-07-30T13:03:39-04:00",
+      "workflow_execution_id": "29404417-6fd3-4668-abf1-a21c698419cf",
+      "trigger_whatsapp_config_id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+      "available_whatsapp_config_ids": [
+        "c8364dd2-ae4d-433b-bc02-3b5ea01024df"
+      ]
+    },
+    "context": {
+      "channel": "whatsapp",
+      "contact": {
+        "id": "c53204cc-ccfa-49e0-bc67-2af24c9eb7d4",
+        "name": "Life Deportes",
+        "wa_id": "573213988464",
+        "username": null,
+        "display_name": null,
+        "profile_name": "Life Deportes",
+        "business_scoped_user_id": "CO.2556400578091357",
+        "parent_business_scoped_user_id": null
+      },
+      "phone_number": "573213988464",
+      "conversation_id": "1c95a3d7-d4c6-47b9-99f2-ba7937ff4288",
+      "whatsapp_username": null,
+      "whatsapp_business_scoped_user_id": "CO.2556400578091357",
+      "whatsapp_parent_business_scoped_user_id": null
+    },
+    "metadata": {}
+  },
+  "last_event_at": "2026-07-30T13:03:39-04:00",
+  "started_at": "2026-07-30T12:59:54-04:00",
+  "status": "failed",
+  "tracking_id": null,
+  "whatsapp_conversation_id": "1c95a3d7-d4c6-47b9-99f2-ba7937ff4288",
+  "workflow": {
+    "id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+    "agent_default_tools_version": 2,
+    "lock_version": 1443,
+    "name": "lifedeportes_sales_inbound",
+    "slug": "lifedeportes-sales-inbound",
+    "status": "active",
+    "updated_at": "2026-07-30T13:16:02-04:00"
+  }
+}

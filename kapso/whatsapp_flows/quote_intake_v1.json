@@ -1,0 +1,58 @@
+{
+  "version": "7.3",
+  "screens": [
+    {
+      "id": "QUOTE_INTAKE",
+      "title": "Cotización",
+      "terminal": true,
+      "layout": {
+        "type": "SingleColumnLayout",
+        "children": [
+          {
+            "type": "TextBody",
+            "text": "Cuéntanos lo básico para preparar tu cotización. Un asesor sigue contigo por chat."
+          },
+          {
+            "type": "TextInput",
+            "name": "sport",
+            "label": "Deporte",
+            "helper-text": "¿Para qué deporte es?",
+            "required": true
+          },
+          {
+            "type": "TextInput",
+            "name": "product_family",
+            "label": "Tipo de prenda",
+            "helper-text": "Camiseta, uniforme completo o conjunto",
+            "required": true
+          },
+          {
+            "type": "TextInput",
+            "name": "quantity_estimate",
+            "label": "Cantidad aprox.",
+            "helper-text": "Número estimado de unidades",
+            "input-type": "number",
+            "required": true
+          },
+          {
+            "type": "TextArea",
+            "name": "notes",
+            "label": "Notas",
+            "helper-text": "Colores, tallas u otros detalles (opcional)",
+            "required": false
+          },
+          {
+            "type": "Footer",
+            "label": "Enviar",
+            "on-click-action": {
+              "name": "complete",
+              "payload": {
+                "flow": "quote_intake_v1"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

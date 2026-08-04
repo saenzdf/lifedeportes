@@ -1,0 +1,628 @@
+{
+  "data": [
+    {
+      "context": null,
+      "from": "573166184757",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.4522685931354478",
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAEhggQUM2N0M1OTc1M0YyRTkwN0ZFNUExNTg3RTRCMDU0QTgA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Cual es la diferencia."
+      },
+      "text": {
+        "body": "Cual es la diferencia."
+      },
+      "timestamp": "1784643877",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSNUUyNUVBMjY0QTgwODZCQzVBAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Perfecto, eso se puede hacer sin problema: nombre del grupo y número en el pecho, y nombre con número en la espalda. ¿Qué tela prefieren: Dry Fit, Dumonti o Hidrotec?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSNUUyNUVBMjY0QTgwODZCQzVBAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784643866",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          },
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSNUUyNUVBMjY0QTgwODZCQzVBAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784643866",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, eso se puede hacer sin problema: nombre del grupo y número en el pecho, y nombre con número en la espalda. ¿Qué tela prefieren: Dry Fit, Dumonti o Hidrotec?"
+      },
+      "timestamp": "1784643866",
+      "to": "573166184757",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSM0ZDRjkwQTcwN0NBNkEyQ0U0AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Claro, se puede sin problema: las de mujer en sisa y las de hombre con manga corta. ¿Qué tela prefieren? Trabajamos Dry Fit, Dumonti e Hidrotec.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSM0ZDRjkwQTcwN0NBNkEyQ0U0AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784643852",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          },
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSM0ZDRjkwQTcwN0NBNkEyQ0U0AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784643852",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          }
+        ]
+      },
+      "text": {
+        "body": "Claro, se puede sin problema: las de mujer en sisa y las de hombre con manga corta. ¿Qué tela prefieren? Trabajamos Dry Fit, Dumonti e Hidrotec."
+      },
+      "timestamp": "1784643852",
+      "to": "573166184757",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573166184757",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.4522685931354478",
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAEhggQUMwODMzQzMzNjRDNzVFMEM5RUE4ODVEOEFFQ0MzMDcA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Queremos poner el nombre el grupo en el pecho, con el numero.\n\nY atrás el nombre también con el número."
+      },
+      "text": {
+        "body": "Queremos poner el nombre el grupo en el pecho, con el numero.\n\nY atrás el nombre también con el número."
+      },
+      "timestamp": "1784643851",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573166184757",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.4522685931354478",
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAEhggQUM4OEU2MjlDODhCQTAzNTY4MTUwOTU0RUZBMDkwNUIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Para las mujeres manga sisa, pero para los hombres si se podría completa?"
+      },
+      "text": {
+        "body": "Para las mujeres manga sisa, pero para los hombres si se podría completa?"
+      },
+      "timestamp": "1784643811",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSRjMwNTNGMzIyOTg1OEQxM0I4AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Según la foto, es una camiseta de voleibol negra con detalles en blanco, cuello en V, sin mangas (sisa), con número y logo en el pecho. ¿Sería ese el estilo de diseño que quieren replicar, tanto para mujeres como para hombres?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSRjMwNTNGMzIyOTg1OEQxM0I4AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784643719",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          },
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSRjMwNTNGMzIyOTg1OEQxM0I4AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784643719",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          }
+        ]
+      },
+      "text": {
+        "body": "Según la foto, es una camiseta de voleibol negra con detalles en blanco, cuello en V, sin mangas (sisa), con número y logo en el pecho. ¿Sería ese el estilo de diseño que quieren replicar, tanto para mujeres como para hombres?"
+      },
+      "timestamp": "1784643719",
+      "to": "573166184757",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573166184757",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.4522685931354478",
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAEhggQUNDM0VBNDUyQThDMjlBQjAzQkRDMDU2RDdEMjc1MzkA",
+      "image": {
+        "id": "918524417938702",
+        "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=918524417938702&source=webhook&ext=1784643959&hash=ATwuvDtBZzrj1_DaVSdPTzdgiGm-sTmr80CQklm9gRBkjg",
+        "sha256": "GJXeRGrhr3vS5tiJbPwAJnp2CEX0othM0gCg05ax090=",
+        "caption": "Algo así, pero también para hombre.",
+        "mime_type": "image/jpeg",
+        "link": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImIxNjZkOWNkLTVkZDktNDEwNC05YWM3LTE1MWVjZGRjMzhhMSIsInB1ciI6ImJsb2JfaWQifX0=--f7194b24e50cd9edc34d2cd096975311f2b665fb/image_a1218fa26aa2.jpeg"
+      },
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": true,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Algo así, pero también para hombre. Image attached (image_a1218fa26aa2.jpeg) [Size: 65.5 KB | Type: image/jpeg] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImIxNjZkOWNkLTVkZDktNDEwNC05YWM3LTE1MWVjZGRjMzhhMSIsInB1ciI6ImJsb2JfaWQifX0=--f7194b24e50cd9edc34d2cd096975311f2b665fb/image_a1218fa26aa2.jpeg",
+        "media_data": {
+          "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImIxNjZkOWNkLTVkZDktNDEwNC05YWM3LTE1MWVjZGRjMzhhMSIsInB1ciI6ImJsb2JfaWQifX0=--f7194b24e50cd9edc34d2cd096975311f2b665fb/image_a1218fa26aa2.jpeg",
+          "filename": "image_a1218fa26aa2.jpeg",
+          "content_type": "image/jpeg",
+          "byte_size": 67099
+        },
+        "media_url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImIxNjZkOWNkLTVkZDktNDEwNC05YWM3LTE1MWVjZGRjMzhhMSIsInB1ciI6ImJsb2JfaWQifX0=--f7194b24e50cd9edc34d2cd096975311f2b665fb/image_a1218fa26aa2.jpeg",
+        "message_type_data": {
+          "caption": "Algo así, pero también para hombre.",
+          "has_media": true
+        }
+      },
+      "timestamp": "1784643659",
+      "type": "image",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSQjlGQjM0RjdGQTJGNjI0OUUyAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Claro, quedo atento.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSQjlGQjM0RjdGQTJGNjI0OUUyAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784642905",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          },
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSQjlGQjM0RjdGQTJGNjI0OUUyAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784642907",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          }
+        ]
+      },
+      "text": {
+        "body": "Claro, quedo atento."
+      },
+      "timestamp": "1784642904",
+      "to": "573166184757",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573166184757",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.4522685931354478",
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAEhggQUNBRjI2QTY0ODBGMjQxQjEzMjZENzUxMDVDREE1MDUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Dejame ya te la envio"
+      },
+      "text": {
+        "body": "Dejame ya te la envio"
+      },
+      "timestamp": "1784642847",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSRTJEQjkyNTUzODhCMTAyODM4AA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Bien, 16 camisetas de voleibol. ¿Tiene alguna foto o referencia del diseño que quieren?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSRTJEQjkyNTUzODhCMTAyODM4AA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784642010",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          },
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSRTJEQjkyNTUzODhCMTAyODM4AA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784642010",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          }
+        ]
+      },
+      "text": {
+        "body": "Bien, 16 camisetas de voleibol. ¿Tiene alguna foto o referencia del diseño que quieren?"
+      },
+      "timestamp": "1784642010",
+      "to": "573166184757",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573166184757",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.4522685931354478",
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAEhggQUNEOEIzODY1RUE5MUM3RTM5Q0UyODE0NDc0NEU5MTIA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Solo camiseta"
+      },
+      "text": {
+        "body": "Solo camiseta"
+      },
+      "timestamp": "1784641967",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSRDcxNTVBRUYyQzk2NzhCRkQyAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Perfecto, 16 uniformes de voleibol. ¿Sería uniforme completo (camiseta + pantaloneta) o solo camisetas?",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSRDcxNTVBRUYyQzk2NzhCRkQyAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784641957",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          },
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSRDcxNTVBRUYyQzk2NzhCRkQyAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784641958",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          }
+        ]
+      },
+      "text": {
+        "body": "Perfecto, 16 uniformes de voleibol. ¿Sería uniforme completo (camiseta + pantaloneta) o solo camisetas?"
+      },
+      "timestamp": "1784641957",
+      "to": "573166184757",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573166184757",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.4522685931354478",
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAEhggQUMyNTBGQzlBRTNDNUZDNThFRTc5Q0EwQjUyNDk3NUUA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "16"
+      },
+      "text": {
+        "body": "16"
+      },
+      "timestamp": "1784641910",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSODMwRTg5MEMzQTU5NEJFNDQxAA==",
+      "kapso": {
+        "direction": "outbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Claro, ¿para cuántas personas serían? El mínimo es 6 unidades.",
+        "statuses": [
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSODMwRTg5MEMzQTU5NEJFNDQxAA==",
+            "status": "sent",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784640900",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          },
+          {
+            "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAERgSODMwRTg5MEMzQTU5NEJFNDQxAA==",
+            "status": "delivered",
+            "pricing": {
+              "type": "free_customer_service",
+              "billable": false,
+              "category": "service",
+              "pricing_model": "PMP"
+            },
+            "timestamp": "1784640901",
+            "recipient_id": "573166184757",
+            "recipient_user_id": "CO.4522685931354478"
+          }
+        ]
+      },
+      "text": {
+        "body": "Claro, ¿para cuántas personas serían? El mínimo es 6 unidades."
+      },
+      "timestamp": "1784640900",
+      "to": "573166184757",
+      "to_parent_user_id": null,
+      "to_user_id": null,
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": {
+        "id": "wamid.HBgTQ08uNDUyMjY4NTkzMTM1NDQ3OBUUABIYIEFDMUU3RDI2QUQ0MzQ4Qzk1MjMyMTQzRjFENDNEQjE2AA==",
+        "from": "573166184757",
+        "from_user_id": "CO.4522685931354478"
+      },
+      "from": "573166184757",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.4522685931354478",
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAEhggQUNCQjFGMTczQ0ZGREY0M0UwMzgwREM2QUYzMjkyM0YA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "read",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Voleibol"
+      },
+      "text": {
+        "body": "Voleibol"
+      },
+      "timestamp": "1784640793",
+      "type": "text",
+      "username": null
+    },
+    {
+      "context": null,
+      "from": "573166184757",
+      "from_parent_user_id": null,
+      "from_user_id": "CO.4522685931354478",
+      "id": "wamid.HBgMNTczMTY2MTg0NzU3FQIAEhggQUMxRTdEMjZBRDQzNDhDOTUyMzIxNDNGMUQ0M0RCMTYA",
+      "kapso": {
+        "direction": "inbound",
+        "status": "delivered",
+        "processing_status": "processed",
+        "origin": "cloud_api",
+        "phone_number": "573166184757",
+        "phone_number_id": "1095603153637786",
+        "has_media": false,
+        "whatsapp_conversation_id": "ad4d1332-2776-4c12-8907-873900d496e3",
+        "contact_name": "Stefannia.🫶🏻",
+        "content": "Hola, quiero cotizar uniformes de"
+      },
+      "text": {
+        "body": "Hola, quiero cotizar uniformes de"
+      },
+      "timestamp": "1784640787",
+      "type": "text",
+      "username": null
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yMVQxNDoyNDozNy45NjQ0NTVaIiwiZjliZTA4MjYtMjQ2MC00NzM0LWFiNDQtZDhlYTZmMzMyZGQ2Il0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19",
+      "after": "eyJ2YWx1ZXMiOlsiMjAyNi0wNy0yMVQxMzozMzowNy45NzIxOTdaIiwiYWE4NzkyYjUtYTRhMS00NDFlLWFiODAtZjdlMzVjNWNlZmYxIl0sImNvbHVtbnMiOlsiY3JlYXRlZF9hdCIsImlkIl19"
+    },
+    "next": null,
+    "previous": null
+  }
+}

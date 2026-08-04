@@ -1,0 +1,126 @@
+[
+  {
+    "phone": "3000000081",
+    "conversation_id": "4637710d-bf7c-44d3-9ca8-e96e0dc325fa",
+    "customer_name": "Jan",
+    "team_name": "Jan",
+    "fingerprint": "week_seed:3000000081:2026-07-24",
+    "source": "seed_crm_week_awaiting",
+    "quote": {
+      "team_name": "Jan",
+      "product_text": "uniforme fútbol",
+      "quantity": 9,
+      "unit_cop": 50000,
+      "total_cop": 450000,
+      "notes": "Deseo hacer el pedido. Pendiente tela Hidrotec. Esperaba asesor.",
+      "status": "esperando_asesor_cerrar",
+      "conversation_date": "2026-07-24",
+      "date_deadline": "2026-08-01"
+    }
+  },
+  {
+    "phone": "3000000039",
+    "conversation_id": "2abf9eb0-d22b-4931-be40-d41f445d7920",
+    "customer_name": "Juan Pablo Segura",
+    "team_name": "Juan Pablo Segura",
+    "fingerprint": "week_seed:3000000039:2026-07-24",
+    "source": "seed_crm_week_awaiting",
+    "quote": {
+      "team_name": "Juan Pablo Segura",
+      "product_text": "pedido confirmado",
+      "total_cop": 2020000,
+      "notes": "Pedido confirmado $2.020.000. Pidió contacto para abono 50%. Aún sin contacto humano.",
+      "status": "esperando_contacto_abono",
+      "conversation_date": "2026-07-24",
+      "date_deadline": "2026-08-01"
+    }
+  },
+  {
+    "phone": "3000000032",
+    "conversation_id": "cb321d2c-9b3a-48ed-9e3b-39ccdf3bfe12",
+    "customer_name": "Valentina",
+    "team_name": "Valentina",
+    "fingerprint": "week_seed:3000000032:2026-07-21",
+    "source": "seed_crm_week_awaiting",
+    "quote": {
+      "team_name": "Valentina",
+      "product_text": "camiseta dry-fit",
+      "quantity": 11,
+      "unit_cop": 30000,
+      "total_cop": 330000,
+      "notes": "Abono 50% ($165.000) coordinar. 11 camisetas dry-fit.",
+      "status": "esperando_abono",
+      "conversation_date": "2026-07-21",
+      "date_deadline": "2026-08-01"
+    }
+  },
+  {
+    "phone": "3000000014",
+    "conversation_id": "17d1ca35-9804-4be6-9528-e2ac46548dee",
+    "customer_name": "JR",
+    "team_name": "JR",
+    "fingerprint": "week_seed:3000000014:2026-07-22",
+    "source": "seed_crm_week_awaiting",
+    "quote": {
+      "team_name": "JR",
+      "product_text": "pedido",
+      "notes": "Transferencia; pidió número de cuenta. Bot pospuso a asesor.",
+      "status": "esperando_cuenta_transferencia",
+      "conversation_date": "2026-07-22",
+      "date_deadline": "2026-08-01"
+    }
+  },
+  {
+    "phone": "3000000055",
+    "conversation_id": "79db9003-05cc-4616-9b1c-97996dbb3b83",
+    "customer_name": "Sebastián Martinez",
+    "team_name": "Sebastián Martinez",
+    "fingerprint": "week_seed:3000000055:2026-07-25",
+    "source": "seed_crm_week_awaiting",
+    "quote": {
+      "team_name": "Sebastián Martinez",
+      "product_text": "uniforme fútbol",
+      "quantity": 24,
+      "notes": "24 uniformes + bandera. Preguntó abono 50%; sin cuenta enviada.",
+      "status": "esperando_abono_info",
+      "conversation_date": "2026-07-25",
+      "date_deadline": "2026-08-01"
+    }
+  },
+  {
+    "phone": "3000000052",
+    "conversation_id": "67284301-8368-42e3-a9fc-de2d91ae5d65",
+    "customer_name": "Victor.E",
+    "team_name": "Victor.E",
+    "fingerprint": "week_seed:3000000052:2026-07-22",
+    "source": "seed_crm_week_awaiting",
+    "quote": {
+      "team_name": "Victor.E",
+      "product_text": "camisetas + sudaderas + chaquetas",
+      "quantity": 136,
+      "notes": "60 camisetas + 60 sudaderas + 16 chaquetas. Javier Ayala debía cotizar. Cliente: Si porfa.",
+      "status": "esperando_retoma_humano",
+      "conversation_date": "2026-07-22",
+      "date_deadline": "2026-08-01"
+    }
+  },
+  {
+    "phone": "3000000016",
+    "conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+    "customer_name": "Emily Zuluaga",
+    "team_name": "Emily Zuluaga",
+    "fingerprint": "week_seed:3000000016:2026-07-26",
+    "source": "seed_crm_week_awaiting",
+    "quote": {
+      "team_name": "Emily Zuluaga",
+      "product_text": "camiseta dry-fit",
+      "quantity": 23,
+      "unit_cop": 30000,
+      "total_cop": 690000,
+      "notes": "Logos propios. Cliente enviará listado + abono 50%. Color azul líneas traseras pendiente.",
+      "status": "esperando_lista_y_abono",
+      "conversation_date": "2026-07-26",
+      "date_deadline": "2026-08-01"
+    }
+  }
+]

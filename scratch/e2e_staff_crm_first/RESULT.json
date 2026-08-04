@@ -1,0 +1,21 @@
+{
+  "marker": "WACLI-CRM 07170237",
+  "stamp": "07170237",
+  "staff": "3000000047",
+  "to": "3000000066",
+  "phases": {
+    "hola": {
+      "starts_hola": false,
+      "no_diego": true,
+      "menu_pedido": false,
+      "menu_corregir": false,
+      "menu_consultar": false,
+      "menu_compra": false,
+      "menu_nomina": false,
+      "ok": false,
+      "text": "You exceeded your current quota, please check your plan and billing details. For details, see: https://www.cloudwise.com/help/en/model-studio/error-code#token-limit",
+      "poll_ok": false
+    }
+  },
+  "ok": false
+}

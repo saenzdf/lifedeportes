@@ -1,0 +1,10 @@
+{
+  "folders": [{ "name": "lifedeportes", "path": "." }],
+  "settings": {
+    "files.exclude": {
+      "**/.venv": true,
+      "**/node_modules": true,
+      "**/__pycache__": true
+    }
+  }
+}

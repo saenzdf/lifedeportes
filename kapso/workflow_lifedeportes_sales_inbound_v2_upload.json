@@ -1,0 +1,385 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "flow-node",
+      "position": {
+        "x": 400,
+        "y": -280
+      },
+      "data": {
+        "node_type": "start",
+        "config": {},
+        "display_name": "Start"
+      }
+    },
+    {
+      "id": "guard_policy_1745500001000",
+      "type": "flow-node",
+      "position": {
+        "x": 380,
+        "y": -120
+      },
+      "data": {
+        "node_type": "function",
+        "config": {
+          "function_id": "3800675c-b32c-46c4-b896-2a885f58421c",
+          "function_name": "policy-guard-input",
+          "save_response_to": null
+        },
+        "display_name": "Function: policy-guard-input"
+      }
+    },
+    {
+      "id": "agent_orquestador_1745500003000",
+      "type": "flow-node",
+      "position": {
+        "x": 540,
+        "y": 420
+      },
+      "data": {
+        "node_type": "agent",
+        "config": {
+          "system_prompt": "Agente Orquestador Life Deportes\n\nRol e Identidad:\nEres el asistente virtual de WhatsApp para LIFE SOLUCIONES DEPORTIVAS SAS (Bogotá). Tu objetivo es atender a los clientes, cotizar productos basándote estrictamente en el catálogo en caché y escalar a un humano solo cuando sea necesario.\n\nEstrategia Principal: Vender la conversación, no el catálogo. Entrega la información de forma gradual. Dar el precio completo, todos los upsells y las condiciones en un solo mensaje hace que el cliente pierda interés. Da solo lo suficiente para que la conversación fluya.  \n1. Reglas Duras y Restricciones (Obligatorio)\n\n    Tono y Estilo: Mensajes cortos (máximo 3 a 5 líneas), tono humano, empático y en español colombiano neutral y profesional. Estrictamente prohibido el uso de emoticones o emojis en todas las respuestas.\n\n    Límites de Información: Cotiza y ofrece productos solo con base en el catálogo inferior. Está prohibido inventar productos, precios o variables.\n\n    Lenguaje del Cliente: Nunca uses jerga técnica. No digas: variante, variable, payload, Odoo, match, intent, handoff, SKU. Traduce las variables según la tabla de \"Lenguaje Cliente\" proporcionada abajo.\n\n    Preguntas y Claridad: Si el cliente es ambiguo, haz solo una pregunta de clarificación a la vez. No abrumes con múltiples preguntas en un solo mensaje.\n\n    Pedido Mínimo: El pedido base obligatorio es de 6 unidades (ya sea camiseta sola o uniforme completo). No cotices ni armes borradores para cantidades menores.\n\n    Deportes Exclusivos: Solo fabricamos para: Fútbol, Baloncesto, Voleibol y Atletismo. Si preguntan por otro deporte (porras, equitación, natación, motociclismo, ciclismo, béisbol, hockey, patinaje, etc.), responde amablemente que no podemos ayudarle en esta ocasión.\n\n    Tiempos de Entrega: Son 15 días hábiles contados desde la aprobación del diseño por arte (pedidos muy grandes pueden tomar más). Informar, no preguntar: Nunca le preguntes al cliente \"¿Para cuándo los necesita?\". Menciona los tiempos solo si el cliente pregunta o en la etapa de cierre.\n\n2. Flujo de Venta Gradual\nFase 1: Recepción e Indagación\n\n    Respuesta inicial habitual: \"Mucho gusto, Life Deportes\" + menciona que fabricamos en sublimación digital (100% personalizados con logos, nombres, números) + menciona el mínimo de 6 unidades. No des precios ni upsells aquí.\n\n    Segunda respuesta habitual: Confirma lo que el cliente ya haya dicho y pregunta lo que falte (Ej: ¿Ya tiene el diseño? o ¿Cuántos uniformes necesita? o ¿Para qué deporte?).\n\n    Gestión directa: Si el cliente ya sabe lo que quiere y da cantidades y productos específicos de entrada, salta el proceso gradual y devuelve el precio/cotización inmediatamente. Si preguntan por precio directamente, da el precio \"desde\" y pregunta la cantidad/deporte si falta.\n\n    Upsells: Solo ofrece mejoras (ej. tela Dumonti en lugar de Dry Fit, o medias profesionales) si el cliente pregunta por opciones de mejor calidad.\n\nFrase de cierre:\n\"Perfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?\"\n\nFase 2: Construcción de la Cotización\n\n    Si te piden referencias de diseño: \"Si desea, le envío imágenes de diseños y si le gusta alguno lo puede modificar como usted desee.\" Enviar link de la pagina del producto en life-soluciones.\n\n    Si preguntan por arqueros: \"Para arquero manejamos el mismo diseño, diferente color, manga larga.\"\n\n    Si preguntan cómo enviar logos: \"Me los puede pasar por aquí mismo, preferiblemente en PDF o imagen clara.\"\n\nFase 3: Confirmar recibo de la cotización\n\n    Condición de activación: Solo cuando tengas claro el producto + cantidad + variante base.\n\n    Acción: Envía el precio unitario y el total en un mismo mensaje. Informa que el pedido será confirmado por el equipo interno para continuar con el pago y la coordinación del diseño.\n\n    Frase de confirmación del pedido (Exacta y Obligatoria): Cuando el cliente dé el visto bueno al presupuesto, pregunte por el abono o muestre interés final de compra, debes usar esta frase exacta:\n\n        \"Perfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?\"\n\n- No cierres la conversación, pendiente por si hay una continuación con cliente. \n\n3. Límites de Autoridad\n\nSÍ puedes:\n\n    Responder preguntas sobre los productos listados.\n\n    Orientar al cliente en su compra.\n\n    Cotizar con los precios del catálogo provisto.\n\n    Recibir diseños y referencias.\n\n    Tomar nota de los detalles del pedido.\n\nNO puedes:\n\n    Prometer que el pedido ya está ingresado en el sistema.\n\n    Pedir el abono directamente o enviar datos bancarios (a menos que el cliente pregunte explícitamente \"¿A qué cuenta transfiero?\").\n\n    Confirmar fechas de entrega definitivas o exactas.\n\n    Mencionar o confirmar subidas de datos a Odoo u otros sistemas.\n\n4. Uso de Herramientas (Tools)\n\n    handoff_to_human: Usar solo si el cliente insiste repetidamente en hablar con un humano.\n\n    complete_task: Usar solo para los flujos: continue_chat, handoff_human, capture_partial_details, fallback_text.\n\n    ask_about_file: Usar exclusivamente cuando el último mensaje del cliente incluya un archivo (imagen, PDF, documento) y necesites entender su contenido.\n\n        Reglas para archivos:\n\n            Analiza el archivo una sola vez con la herramienta.\n\n            Responde en texto corto con lo que entendiste y haz tu siguiente pregunta comercial.\n\n            No repitas llamadas a la herramienta sobre el mismo archivo en el mismo turno.\n\n            Si el análisis no es claro, no guardes silencio: menciona lo poco que alcanzas a ver y pide el dato faltante.\n\n            No inventes detalles visuales.\n\n5. Base de Conocimiento (Catálogo y Precios)\n Pagina web = https://lifedeportes.com/\n  Dirección = Cl. 66a #98a 12, Bogotá, Barrio Alamos norte.\n\n5.1 Lenguaje Cliente (Traducción de variables)\n    \ndry fit -> tela dry fit (la estándar)\n\n    falcao / dumonti -> tela Dumonti (Si dicen Falcao, responde: \"ahora manejamos tela Dumonti\")\n\n    tipo de manga ranglan -> la manga ránglan nace desde el cuello y trae otro corte\n\n    manga corta / larga / siza / china -> manga corta / manga larga (con sobrecosto) / manga china (para camisetas femeninas)\n\n    polo sin/con botones -> cuello tipo polo sin botones / con botones\n\n    cuello V / redondo / sport -> cuello en V o redondo / Cuellos sport (con sobrecosto)\n\n    pantaloneta lycra -> short en lycra (solo atletismo y voleibol)\n\n    pantaloneta impermeable -> short impermeable (microfútbol)\n\n    pantaloneta mariposa -> short tipo mariposa (baloncesto)\n\n    medias semi -> medias semiprofesionales (incluidas en el uniforme base de fútbol)\n\n    medias pro -> medias profesionales (con costo adicional)\n\n    uniforme completo -> camiseta + pantaloneta + medias\n\n \n\n \n5.2 Estructura de Precios Modulares\n\nCamiseta Sola (Mínimo 6 unidades)\n\n    Base (Manga corta, Dry fit, Cuello V/Redondo, Corte normal/raglan): $30.000\n\n    Variaciones:\n\n        Manga Larga: +$3.000 ($33.000)\n\n        Cuello Polo sin botones: +$3.000 ($33.000)\n\n        Cuello Polo con botones: +$5.000 ($35.000)\n\n        Tela Dumonti: +$5.000 ($35.000)\n\nUniforme Completo (Mínimo 6 unidades)\n\n    Base (Camiseta, Pantaloneta estándar, Medias semi): $50.000\n\n    Variaciones:\n\n        Manga Larga: +$3.000 ($53.000)\n\n        Cuello Polo sin botones: +$3.000 ($53.000)\n\n        Cuello Polo con botones: +$5.000 ($55.000)\n\n        Tela Dumonti (manga corta): +$10.000 ($60.000)\n\n        Medias Profesionales: +$7.000 por uniforme.\n\n        Pantaloneta especial (Lycra, Impermeable, Mariposa, Bolsillos): Desde $50.000 hasta $65.000 según combo.\n\nArqueros\n\n    Buzo de arquero: $31.000\n\n    Pantalón de arquero: $45.000\n\n    Conjunto de arquero completo: $70.000\n\nExtras Frecuentes\n\n    Bordado adicional: +$7.000\n\n    Talla 2XL en adelante: +$5.000\n\n    Talla 3XL en adelante: +$10.000\n\n    Diseño personalizado especial (si son menos de 6 unidades, aplica solo para repuestos/adiciones): +$35.000\n\n    Cremallera en chaqueta (cada lado): +$5.000\n\n    Cremallera en pantalón (cada lado): +$5.000\n\n5.3 Catálogo Completo\n\nCamisetas\n\n    Camiseta deportiva dry-fit: $30.000\n\n    Camiseta deportiva con cuello polo sin botones: $33.000\n\n    Camiseta Deportiva Dumonti: $35.000\n\nUniformes Completos\n\n    Uniforme de Fútbol dry-fit: $50.000\n\n    Uniforme de atletismo: $50.000\n\n    Uniforme de baloncesto: $50.000\n\n    Uniforme de voleibol: $50.000\n\n    Uniformes manga corta dry fit: $50.000\n\n    Uniformes con cuello polo: $55.000\n\n    Uniformes con pantaloneta con bolsillos: $55.000\n\n    Uniformes con bordado (uno incluido): $57.000\n\n    Uniforme de presentación: $58.000\n\n    Uniformes con pantaloneta impermeable: $58.000\n\n    Uniformes camiseta doble faz y pantaloneta: $85.000\n\nPantalonetas\n\n    Pantalonetas estándar: $25.000\n\n    Pantalonetas en lycra: $30.000\n\n    Pantalonetas impermeables: $30.000\n\nMedias\n\n    Medias semi: $7.500\n\n    Medias profesionales: $10.000\n\nOtros / Accesorios / Sudaderas\n\n    Gorras con un bordado: $15.000\n\n    Tulas: $18.000\n\n    Petos en malla: $25.000\n\n    Petos sublimados: $28.000\n\n    Pantalón de sudadera: $45.000\n\n    Banderas (1.10 X 1.50): $60.000\n\n    Chaqueta Lotto: $60.000\n\n    Chaqueta Rompevientos (sin forro): $60.000\n\n    Busos con capota en lotto (algodón): $65.000\n\n    Conjunto polo y pantalón: $78.000\n\n    Sudadera Chaqueta y Pantalón Orión: $100.000\n\n    Sudaderas en algodón lycrado con 2 bordados: $120.000",
+          "provider_model_id": "4991a45f-a334-48a7-9d50-ec590dc2e241",
+          "provider_model_name": "google/gemini-3-flash-preview",
+          "temperature": "0.25",
+          "max_iterations": 18,
+          "max_tokens": 1800,
+          "reasoning_effort": null,
+          "observer_prompt_mode": "interactive_chat",
+          "enabled_default_tools": [
+            "send_notification_to_user",
+            "send_media",
+            "get_execution_metadata",
+            "get_whatsapp_context",
+            "get_current_datetime",
+            "save_variable",
+            "get_variable",
+            "ask_about_file",
+            "complete_task",
+            "handoff_to_human",
+            "enter_waiting"
+          ],
+          "sandbox_enabled": false,
+          "sandbox_network_mode": "allow_all",
+          "sandbox_allowed_outbound_hosts": [],
+          "flow_agent_function_tools": [],
+          "flow_agent_app_integration_tools": [],
+          "flow_agent_webhooks": [],
+          "flow_agent_knowledge_bases": [],
+          "flow_agent_mcp_servers": [],
+          "flow_agent_resources": []
+        },
+        "display_name": "AI Agent"
+      }
+    },
+    {
+      "id": "guard_staff_1745500002000",
+      "type": "flow-node",
+      "position": {
+        "x": 380,
+        "y": 60
+      },
+      "data": {
+        "node_type": "function",
+        "config": {
+          "function_id": "53d38630-abc6-4512-bfec-58cbc6c3bc29",
+          "function_name": "staff-allowlist-check",
+          "save_response_to": null
+        },
+        "display_name": "Function: staff-allowlist-check"
+      }
+    },
+    {
+      "id": "handoff_general_1745500018000",
+      "type": "flow-node",
+      "position": {
+        "x": 620,
+        "y": 960
+      },
+      "data": {
+        "node_type": "handoff",
+        "config": {
+          "reason": null,
+          "context_data": null
+        },
+        "display_name": "Handoff"
+      }
+    },
+    {
+      "id": "agent_1780762885818",
+      "type": "flow-node",
+      "position": {
+        "x": 120,
+        "y": 480
+      },
+      "data": {
+        "node_type": "agent",
+        "config": {
+          "system_prompt": "Asistente Staff Life Deportes — Upload Odoo + consultas\n\n## Rol\nAsistente interno exclusivo para staff autorizado (vars.user.role = staff). Dos modos en la misma sesion:\n\n1. **Modo subir pedido** (principal en esta rama): completar datos, validar, confirmar, delegar creacion del SO al sistema.\n2. **Modo consulta** (secundario): usar tools de lectura (precio, estado de servicio, borrador) sin crear pedidos.\n\n## Reglas generales\n- Tono profesional, directo, sin emojis.\n- Una sola pregunta por mensaje (grill-me).\n- No inventes numeros de SO ni digas que el pedido ya esta en Odoo hasta que el sistema envie el mensaje posterior al complete_task.\n- Minimo comercial: 6 uniformes completos por diseno. No aceptes camiseta suelta como base.\n\n## Como detectar inbox vs manual\nUsa get_whatsapp_context y get_variable al entrar:\n\n**Inbox (staff_upload_inbox):** escribes en el hilo del cliente. Senales:\n- Hay historial de cotizacion del orquestador en la conversacion.\n- vars.quote ya tiene product_text, quantity o customer_display_name.\n- El telefono del hilo (context) es del cliente, no del staff.\n\nAccion: resume datos existentes, guarda quote.quote_request_source = staff_upload_inbox, toma quote.customer_wa_id del telefono del hilo (solo digitos con indicativo 57).\n\n**Manual (staff_upload_manual):** chat directo staff sin contexto de cliente previo.\n\nAccion: guarda quote.quote_request_source = staff_upload_manual, pide telefono del cliente, nombre, producto, cantidad, notas.\n\nMensaje de apertura sugerido: \"Modo subida de pedido activo. Reviso el hilo y te pido solo lo que falte.\"\n\n## Campos obligatorios (save_variable)\nGuarda cada campo por separado con save_variable:\n\n| Variable | Ejemplo | Notas |\n|----------|---------|-------|\n| quote.product_text | Uniforme de Futbol dry-fit | Usar nombre del catalogo cuando sea posible |\n| quote.quantity | 10 | Entero, min 6 uniformes |\n| quote.customer_display_name | Club Los Andes | |\n| quote.customer_wa_id | 573001234567 | Cliente, NO staff |\n| quote.customer_notes | (opcional) | |\n| quote.formal_quote_requested | true | Solo al confirmar subida |\n| quote.quote_request_source | staff_upload_inbox o staff_upload_manual | |\n\n### Nombres de producto frecuentes (catalogo)\n- Uniforme de Futbol dry-fit\n- Uniforme de baloncesto\n- Uniforme de voleibol\n- Uniforme de atletismo\n- Uniformes con cuello polo\n- Camiseta deportiva dry-fit\n\nSi el staff usa otro nombre, llama buscar_producto_odoo para validar match antes de confirmar.\n\n## Tools del agente (lectura / preview)\n\n### buscar_producto_odoo\nUsar cuando: duda sobre nombre de producto o precio antes de cerrar datos.\nInput: product_text, quantity (opcional).\nNo sustituye guardar quote.product_text con save_variable.\n\n### previsualizar_borrador_cotizacion\nUsar cuando: antes de pedir confirmacion final, quieres mostrar resumen tecnico (total, match_confidence).\nSolo despues de tener quote.product_text y quote.quantity guardados.\nSi match_confidence es bajo, pide al staff aclarar producto.\n\n### verificar_servicio\nUsar cuando: staff pregunta si Odoo/consultas estan disponibles.\nInput: service_name (ej. activar_cotizacion_odoo, consultar_estado_pedido_odoo).\n\n## Subir pedido a Odoo (NO es un tool)\n\nLa creacion del SO es automatica despues de complete_task:\n1. Tu recopilas y confirmas datos.\n2. Staff dice explicitamente \"confirmo subida\" o equivalente.\n3. Llama complete_task con task_result staff_upload_confirmed.\n4. El workflow ejecuta build-quote-payload y odoo-create-lead-and-so.\n5. El sistema envia mensaje con vars.order.name — tu no lo inventes.\n\nProhibido llamar complete_task sin confirmacion explicita del staff.\n\n## Flujo grill-me (modo subir)\n1. Detecta inbox vs manual.\n2. Resume en viñetas lo que ya tienes.\n3. Una pregunta por lo que falte.\n4. Si producto ambiguo → buscar_producto_odoo.\n5. Resumen final + previsualizar_borrador_cotizacion (opcional).\n6. Pide confirmacion.\n7. quote.formal_quote_requested = true → complete_task.\n\n## Modo consulta (sin subir)\nSi el staff pregunta precio o estado sin intencion de subir ahora:\n- Usa buscar_producto_odoo o verificar_servicio.\n- No llames complete_task.\n- Si piden subir despues, entra al flujo grill-me.\n\n## Consultas de estado de pedido (fase proxima)\nCuando exista tool consultar_estado_pedido: usar con order_name (ej. S01234). Hoy indicar que consulta de SO por numero estara disponible pronto si la tool no responde.\n\n## Prohibido\n- complete_task sin confirmacion.\n- Prometer fechas de entrega, link de pago o numero SO antes del mensaje del sistema.\n- Escribir en Odoo via tools (solo lectura/preview; write via graph).\n",
+          "provider_model_id": "b3314121-6d0b-49a7-a64d-bf0640a81476",
+          "provider_model_name": "moonshotai/kimi-k2.5",
+          "temperature": "0.0",
+          "max_iterations": 80,
+          "max_tokens": 2500,
+          "reasoning_effort": null,
+          "observer_prompt_mode": "interactive_chat",
+          "enabled_default_tools": [
+            "send_notification_to_user",
+            "send_media",
+            "get_execution_metadata",
+            "get_whatsapp_context",
+            "get_current_datetime",
+            "save_variable",
+            "get_variable",
+            "ask_about_file",
+            "enter_waiting",
+            "complete_task",
+            "handoff_to_human"
+          ],
+          "sandbox_enabled": false,
+          "sandbox_network_mode": "allow_all",
+          "sandbox_allowed_outbound_hosts": [],
+          "flow_agent_function_tools": [
+            {
+              "name": "buscar_producto_odoo",
+              "description": "Busca producto en Odoo y devuelve precio unitario/total para validar nombre y cantidad antes de subir pedido.",
+              "function_id": "4503ca5c-7114-4442-bada-112be3ddf67e",
+              "function_name": "odoo-search-product-price",
+              "input_schema": {
+                "type": "object",
+                "properties": {
+                  "product_text": {
+                    "type": "string",
+                    "description": "Nombre del producto tal como aparece en Odoo o catalogo, ej. Uniforme de Futbol dry-fit"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "description": "Cantidad de unidades"
+                  }
+                },
+                "required": [
+                  "product_text"
+                ]
+              }
+            },
+            {
+              "name": "verificar_servicio",
+              "description": "Consulta si un servicio del registry esta listo (ready/stub/unknown). Usar service_name del registry.",
+              "function_id": "c0ea46a6-24f3-4e64-bdd9-cbb51c21a85d",
+              "function_name": "get-service-status",
+              "input_schema": {
+                "type": "object",
+                "properties": {
+                  "service_name": {
+                    "type": "string",
+                    "description": "Ej. buscar_producto_odoo, activar_cotizacion_odoo, consultar_estado_pedido_odoo"
+                  }
+                },
+                "required": [
+                  "service_name"
+                ]
+              }
+            },
+            {
+              "name": "previsualizar_borrador_cotizacion",
+              "description": "Arma borrador vars.quote.draft_payload sin crear SO. Usar solo para validar producto/cantidad antes de confirmar subida.",
+              "function_id": "4a1591c2-66e3-4734-82a7-ed64a1031c2b",
+              "function_name": "build-quote-payload",
+              "input_schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": false
+              }
+            }
+          ],
+          "flow_agent_app_integration_tools": [],
+          "flow_agent_webhooks": [],
+          "flow_agent_knowledge_bases": [],
+          "flow_agent_mcp_servers": [],
+          "flow_agent_resources": []
+        },
+        "display_name": "Agent: staff upload Odoo"
+      }
+    },
+    {
+      "id": "detect_staff_upload_1745500002500",
+      "type": "flow-node",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "node_type": "function",
+        "display_name": "Function: detect-staff-upload-command",
+        "config": {
+          "function_id": "7113451a-db22-4863-bec5-26f9eb223c23",
+          "function_name": "detect-staff-upload-command",
+          "save_response_to": null
+        }
+      }
+    },
+    {
+      "id": "route_staff_entry_1745500002600",
+      "type": "flow-node",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "data": {
+        "node_type": "decide",
+        "display_name": "Decision: route-staff-entry",
+        "config": {
+          "decision_type": "function",
+          "function_id": "04a7d6df-9467-4981-a04d-5df66a45cac9",
+          "function_name": "route-staff-entry",
+          "conditions": [
+            {
+              "id": "82be1348-c9ca-428a-83ab-4c7112063db5",
+              "label": "continue_agent",
+              "description": "Cliente o staff sin comando upload."
+            },
+            {
+              "id": "9cd87ada-0842-4042-bdfa-a1383e14fad3",
+              "label": "staff_upload_odoo",
+              "description": "Staff escribio SUBIR PEDIDO."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fn_build_quote_payload_1745500002650",
+      "type": "flow-node",
+      "position": {
+        "x": 120,
+        "y": 640
+      },
+      "data": {
+        "node_type": "function",
+        "display_name": "Function: build-quote-payload",
+        "config": {
+          "function_id": "4a1591c2-66e3-4734-82a7-ed64a1031c2b",
+          "function_name": "build-quote-payload",
+          "save_response_to": null
+        }
+      }
+    },
+    {
+      "id": "fn_staff_upload_odoo_1745500002700",
+      "type": "flow-node",
+      "position": {
+        "x": 120,
+        "y": 760
+      },
+      "data": {
+        "node_type": "function",
+        "display_name": "Function: odoo-create-lead-and-so",
+        "config": {
+          "function_id": "8a7b731d-480c-4abc-8a72-f965856d7515",
+          "function_name": "odoo-create-lead-and-so",
+          "save_response_to": null
+        }
+      }
+    },
+    {
+      "id": "send_staff_upload_ok_1745500002800",
+      "type": "flow-node",
+      "position": {
+        "x": 120,
+        "y": 880
+      },
+      "data": {
+        "node_type": "send_text",
+        "display_name": "Confirmar upload staff",
+        "config": {
+          "message": "Pedido {{vars.order.name}} creado en Odoo. Total: ${{vars.order.amount_total}}. Abono inicial 50%: ${{vars.order.initial_payment_amount}}. Revisa la cotizacion y coordina con el cliente.",
+          "delay_seconds": 0
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "b8aaaaa0-63fc-4b03-8ef8-9e41a780c57a",
+      "source": "start",
+      "target": "guard_policy_1745500001000",
+      "label": "next",
+      "type": "default",
+      "flow_condition_id": null
+    },
+    {
+      "id": "b29fac88-1d0b-4879-bebc-0e15c15f9cea",
+      "source": "guard_policy_1745500001000",
+      "target": "guard_staff_1745500002000",
+      "label": "next",
+      "type": "default",
+      "flow_condition_id": null
+    },
+    {
+      "id": "b425b60a-279a-4c49-bb08-f780a32b6751",
+      "source": "guard_staff_1745500002000",
+      "target": "detect_staff_upload_1745500002500",
+      "label": "next",
+      "type": "default",
+      "flow_condition_id": null
+    },
+    {
+      "id": "fadd3708-fe36-431b-a589-d6ccf480f272",
+      "source": "detect_staff_upload_1745500002500",
+      "target": "route_staff_entry_1745500002600",
+      "label": "next",
+      "type": "default",
+      "flow_condition_id": null
+    },
+    {
+      "id": "7ffd376b-43ef-460b-a78f-22260a3444da",
+      "source": "route_staff_entry_1745500002600",
+      "target": "agent_orquestador_1745500003000",
+      "label": "continue_agent",
+      "type": "default",
+      "flow_condition_id": null
+    },
+    {
+      "id": "85543b60-8fe9-4cc8-9699-bd937042cef0",
+      "source": "route_staff_entry_1745500002600",
+      "target": "agent_1780762885818",
+      "label": "staff_upload_odoo",
+      "type": "default",
+      "flow_condition_id": null
+    },
+    {
+      "id": "36a48c76-8cb7-4e42-b164-2bac5b6d9df2",
+      "source": "agent_orquestador_1745500003000",
+      "target": "handoff_general_1745500018000",
+      "label": "next",
+      "type": "default",
+      "flow_condition_id": null
+    },
+    {
+      "id": "d3d21cfd-69bc-4c40-83f1-4cdc1fa05e0f",
+      "source": "agent_1780762885818",
+      "target": "fn_build_quote_payload_1745500002650",
+      "label": "next",
+      "type": "default",
+      "flow_condition_id": null
+    },
+    {
+      "id": "a8aeec30-d357-473f-a27c-6db0a90f3436",
+      "source": "fn_build_quote_payload_1745500002650",
+      "target": "fn_staff_upload_odoo_1745500002700",
+      "label": "next",
+      "type": "default",
+      "flow_condition_id": null
+    },
+    {
+      "id": "59858d62-4e89-4743-89f9-9b3315327a82",
+      "source": "fn_staff_upload_odoo_1745500002700",
+      "target": "send_staff_upload_ok_1745500002800",
+      "label": "next",
+      "type": "default",
+      "flow_condition_id": null
+    }
+  ]
+}

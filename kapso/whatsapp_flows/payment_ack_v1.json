@@ -1,0 +1,58 @@
+{
+  "version": "7.3",
+  "screens": [
+    {
+      "id": "PAYMENT_ACK",
+      "title": "Confirmar pago",
+      "terminal": true,
+      "layout": {
+        "type": "SingleColumnLayout",
+        "children": [
+          {
+            "type": "TextBody",
+            "text": "Registra los datos de tu abono o pago. Usa la referencia que te dio tu banco o app."
+          },
+          {
+            "type": "TextInput",
+            "name": "amount_cop",
+            "label": "Monto (COP)",
+            "helper-text": "Solo el número, sin puntos ni decimales",
+            "input-type": "number",
+            "required": true
+          },
+          {
+            "type": "TextInput",
+            "name": "payment_reference",
+            "label": "Referencia",
+            "helper-text": "Número o código del comprobante",
+            "required": true
+          },
+          {
+            "type": "TextInput",
+            "name": "payment_method",
+            "label": "Método",
+            "helper-text": "Transferencia, Nequi, Bancolombia, etc.",
+            "required": true
+          },
+          {
+            "type": "TextArea",
+            "name": "notes",
+            "label": "Notas",
+            "helper-text": "Observaciones del pago (opcional)",
+            "required": false
+          },
+          {
+            "type": "Footer",
+            "label": "Enviar",
+            "on-click-action": {
+              "name": "complete",
+              "payload": {
+                "flow": "payment_ack_v1"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

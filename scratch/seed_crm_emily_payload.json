@@ -1,0 +1,32 @@
+{
+  "phone": "3000000016",
+  "conversation_id": "747bdcce-209f-428f-b67c-6568507a7069",
+  "customer_name": "Emily Zuluaga",
+  "team_name": "Emily Zuluaga",
+  "fingerprint": "awaiting:3000000016:emily:2026-07-27",
+  "source": "seed_crm_awaiting_test",
+  "quote": {
+    "team_name": "Emily Zuluaga",
+    "product_text": "camiseta dry-fit",
+    "quantity": 23,
+    "unit_cop": 30000,
+    "total_cop": 690000,
+    "date_deadline": "2026-07-31",
+    "status": "esperando_lista_y_abono",
+    "notes": "Logos propios confirmados. Cliente pedirá listado + abono 50%. Color azul de líneas traseras y diseño final pendientes.",
+    "media_refs": [
+      {
+        "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjU3MTE4NGU3LTYyNjUtNGE4NC1hNGRlLTZiMDYyZmZmZWYxYSIsInB1ciI6ImJsb2JfaWQifX0=--35ee9e59ac3a04790f4f1c8a1063aaadb08d24fb/image_ef67c573348a.jpeg",
+        "filename": "image_ef67c573348a.jpeg",
+        "mime_type": "image/jpeg",
+        "role": "design_reference"
+      },
+      {
+        "url": "https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ImQzZjRjNmU0LWQ2NTMtNGVkYi1hZGQ1LTM0ZTMxZjcyMzRhYiIsInB1ciI6ImJsb2JfaWQifX0=--0adab0b2af3bf1a42d00441562ee2e67ab0bafba/image_a16da06f0bab.jpeg",
+        "filename": "image_a16da06f0bab.jpeg",
+        "mime_type": "image/jpeg",
+        "role": "design_reference"
+      }
+    ]
+  }
+}

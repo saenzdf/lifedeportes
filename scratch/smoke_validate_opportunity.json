@@ -1,0 +1,28 @@
+{
+  "execution_context": {
+    "vars": {
+      "user": { "role": "staff", "wa_id": "3000000047", "name": "Diego" },
+      "staff": { "write_mode": "opportunity_only" },
+      "quote": {
+        "customer_display_name": "SMOKE CRM PASTO",
+        "product_text": "Uniforme de Futbol",
+        "quantity": 20,
+        "odoo_product_id": 115,
+        "match_confidence": "high"
+      },
+      "order_draft": {
+        "commercial": {
+          "lines": [
+            {
+              "product_text": "Uniforme de Futbol",
+              "quantity": 20,
+              "product_variant_id": 115,
+              "confidence": "high",
+              "category": "uniforme"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

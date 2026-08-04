@@ -1,0 +1,26 @@
+{
+  "name": "lifedeportes_record_purchase_receipt_v2",
+  "description": "Registro de compras internas leyendo recibo/foto con OCR y validaciones.",
+  "nodes": [
+    { "id": "start", "type": "trigger_internal_event", "config": { "event": "run_record_purchase_receipt_v2" } },
+    { "id": "authorization_guard_001", "type": "function", "config": { "name": "assert-internal-ops-access" } },
+    { "id": "receipt_ocr_001", "type": "function", "config": { "name": "extract-receipt-data-ocr" } },
+    { "id": "receipt_quality_router_001", "type": "decide", "config": {
+      "conditions": [
+        { "label": "invalid_receipt", "expression": "vars.receipt.is_valid != true" },
+        { "label": "valid_receipt", "expression": "vars.receipt.is_valid == true" }
+      ]
+    } },
+    { "id": "ask_better_photo_001", "type": "template", "config": { "text": "No pude leer bien el recibo. ¿Puedes enviarme una foto mas clara y completa?" } },
+    { "id": "register_purchase_001", "type": "function", "config": { "name": "register-purchase-from-receipt" } },
+    { "id": "confirm_purchase_001", "type": "template", "config": { "text": "Perfecto, ya registre la compra con trazabilidad para operaciones." } }
+  ],
+  "edges": [
+    { "source": "start", "target": "authorization_guard_001" },
+    { "source": "authorization_guard_001", "target": "receipt_ocr_001" },
+    { "source": "receipt_ocr_001", "target": "receipt_quality_router_001" },
+    { "source": "receipt_quality_router_001", "target": "ask_better_photo_001", "label": "invalid_receipt" },
+    { "source": "receipt_quality_router_001", "target": "register_purchase_001", "label": "valid_receipt" },
+    { "source": "register_purchase_001", "target": "confirm_purchase_001" }
+  ]
+}

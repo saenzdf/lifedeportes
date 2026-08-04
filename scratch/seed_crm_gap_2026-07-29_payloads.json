@@ -1,0 +1,78 @@
+[
+  {
+    "phone": "3000000020",
+    "conversation_id": "a981b64b-87df-4468-89fa-ff00501543c7",
+    "customer_name": "Emmanuelle Girón",
+    "team_name": "Emmanuelle Girón",
+    "fingerprint": "gap_seed:3000000020:2026-07-28",
+    "source": "seed_crm_gap_audit_2026-07-29",
+    "quote": {
+      "team_name": "Emmanuelle Girón",
+      "product_text": "uniforme fútbol + medias profesionales",
+      "quantity": 7,
+      "unit_cop": 60000,
+      "total_cop": 420000,
+      "notes": "6 campo + 1 arquero + 7 medias profesionales. Cliente dijo Dale y pidió número de abono 50% ($210.000). Pregunta confección para igualar referencia. Conversación 2026-07-28.",
+      "status": "esperando_abono",
+      "conversation_date": "2026-07-28",
+      "date_deadline": "2026-08-02"
+    }
+  },
+  {
+    "phone": "3000000021",
+    "conversation_id": "74ff50b9-9a6c-44a9-a6b7-8ab392502f2c",
+    "customer_name": "Thiam Restrepo",
+    "team_name": "Thiam Restrepo",
+    "fingerprint": "gap_seed:3000000021:2026-07-28",
+    "source": "seed_crm_gap_audit_2026-07-29",
+    "quote": {
+      "team_name": "Thiam Restrepo",
+      "product_text": "uniforme completo polo+sudadera + camisetas polo",
+      "quantity": 22,
+      "unit_cop": 80000,
+      "total_cop": 2110000,
+      "notes": "22 uniformes completos $80k + 10 polos $35k = $2.110.000. Audios del cliente; cerró Listo gracias. Pendiente diseño/lista/abono. Conversación 2026-07-28.",
+      "status": "esperando_lista_abono",
+      "conversation_date": "2026-07-28",
+      "date_deadline": "2026-08-02"
+    }
+  },
+  {
+    "phone": "3000000019",
+    "conversation_id": "aed618ac-e395-4210-8561-0e7d820a7d62",
+    "customer_name": "Laura",
+    "team_name": "Laura",
+    "fingerprint": "gap_seed:3000000019:2026-07-28",
+    "source": "seed_crm_gap_audit_2026-07-29",
+    "quote": {
+      "team_name": "Laura",
+      "product_text": "uniforme fútbol completo con medias HAKA",
+      "quantity": 19,
+      "unit_cop": 50000,
+      "total_cop": 950000,
+      "notes": "19 uniformes ref. HAKA negro/blanco. Preguntó plazo entrega (15 días hábiles + abono 50%). Warm follow-up. Conversación 2026-07-28.",
+      "status": "esperando_confirmacion",
+      "conversation_date": "2026-07-28",
+      "date_deadline": "2026-08-02"
+    }
+  },
+  {
+    "phone": "3000000082",
+    "conversation_id": "96f8a8bc-fc7b-4c8b-918b-5cd5cb85909b",
+    "customer_name": "Anny",
+    "team_name": "Anny",
+    "fingerprint": "gap_seed:3000000082:2026-07-28",
+    "source": "seed_crm_gap_audit_2026-07-29",
+    "quote": {
+      "team_name": "Anny",
+      "product_text": "uniforme fútbol dry-fit azul",
+      "quantity": 6,
+      "unit_cop": 50000,
+      "total_cop": 300000,
+      "notes": "6 unidades fútbol azul, sin diseño propio. Cotizado $300.000. Soft follow-up. Conversación 2026-07-28.",
+      "status": "cotizado_esperando",
+      "conversation_date": "2026-07-28",
+      "date_deadline": "2026-08-02"
+    }
+  }
+]

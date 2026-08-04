@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "0f5d3b62-c9c7-495b-ad7b-5bec9a19cf55",
+    "contact_name": "felipe_bernal",
+    "messages_count": 20,
+    "last_message_text": "Ok",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "1a7e31b9-ad84-49d1-9799-0fb6b9d04c83",
+    "contact_name": "Sergio",
+    "messages_count": 20,
+    "last_message_text": "Tiene toda la razón, es en otro sector completamente, hubo una confución en los locales completamente",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "9b8b1cfb-b7af-46d8-a2a7-61f94485e8f7",
+    "contact_name": "🥰",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Con gusto le ayudamos.\n\nFabricamos uniformes en sublimación digital, lo que permite personalizarlos totalmente con logos, nombres y números. El pedido mínimo es de 6 unidades.\n\n¿Para qué deporte los necesita?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "2ff1b0cd-8ac2-468b-910d-d41b89f77453",
+    "contact_name": "Distribuidora de Arena Sanitaria para Gatos Willer",
+    "messages_count": 15,
+    "last_message_text": "Ahí le envié la imagen de referencia. Como puede ver, se pueden personalizar completamente.\n\n¿Le gustaría que agendemos el pedido de los 12 uniformes o prefiere iniciar con los petos?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "d9e864cf-fc80-4e52-aeb6-90d428653611",
+    "contact_name": "𝕵𝖍𝖝𝖝𝖘𝖙𝖞𝖓🌩️",
+    "messages_count": 4,
+    "last_message_text": "Mucho gusto, Life Deportes. Con gusto le ayudamos con su cotización.\n\nFabricamos uniformes en sublimación digital, lo que permite personalizarlos totalmente con logos, nombres y números. El pedido mínimo es de 6 unidades.\n\n¿Para qué deporte los necesita y qué cantidad tiene en mente?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "f5fab085-f63d-430e-9a9c-499661eee193",
+    "contact_name": "Gustavo Andres Diaz Torre",
+    "messages_count": 4,
+    "last_message_text": "Buenos días. Por el momento no manejamos la línea de uniformes para árbitros, únicamente fabricamos para fútbol, baloncesto, voleibol y atletismo.\n\nAdemás, trabajamos sobre pedido a partir de 6 unidades. Siento no poder ayudarle en esta ocasión.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "518a5e2f-7fd8-4919-b869-c3c6077e5805",
+    "contact_name": "Jr",
+    "messages_count": 20,
+    "last_message_text": "Excelente, entonces quedamos así. Mañana a primera hora le enviamos las fotos detalladas de la tela desde el taller para que esté totalmente seguro.\n\nYa tengo anotado su pedido de los 22 uniformes con el diseño negro y dorado. ¿Le queda alguna otra duda por ahora?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "395aa6bf-fe28-4246-a7de-c9003210e6b2",
+    "contact_name": "Wendy Perez",
+    "messages_count": 5,
+    "last_message_text": "Entendido, para los 15 uniformes de fútbol el conjunto completo le sale en $50.000 cada uno.\n\nEste precio incluye la camiseta, la pantaloneta estándar y las medias semiprofesionales, todo personalizado con sus logos y números.\n\n¿Ya tiene algún diseño en mente o desea que le envíe algunas referencias para que elija?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "7fdfb929-8dea-4f29-b652-c3d189fce82a",
+    "contact_name": "Okimara Gutiérrez ☺️",
+    "messages_count": 15,
+    "last_message_text": "Para iniciar con la fabricación y el proceso de diseño, solicitamos un abono del 50%. El saldo restante se cancela al momento de la entrega.\n\nPuede realizar el pago por transferencia a Bancolombia, Nequi, Daviplata o directamente en nuestro punto físico en Venecia.\n\n¿Le gustaría que le enviara los datos de alguna cuenta en específico?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "2de37df4-08e9-42e3-969f-d1c1e76d0edc",
+    "contact_name": "NF✨",
+    "messages_count": 4,
+    "last_message_text": "Perfecto, para esa cantidad los petos en malla te salen a $25.000 cada uno y los sublimados en tela dry fit a $28.000 la unidad.\n\n¿Te gustaría ver algunas fotos de referencia de los diseños que hemos trabajado?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "6f51a395-c644-43e5-9ba3-f2a73fd8cd8f",
+    "contact_name": "Jenny Rincon",
+    "messages_count": 7,
+    "last_message_text": "El uniforme completo de fútbol como el de la imagen tiene un costo de $50.000 la unidad. Este precio incluye la camiseta personalizada, la pantaloneta y las medias semiprofesionales.\n\nRecuerde que el pedido mínimo es de 6 unidades. ¿Qué cantidad total estaría necesitando?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "7ac2a753-0633-48f5-8894-bd28fdadf829",
+    "contact_name": "out",
+    "messages_count": 8,
+    "last_message_text": "Con gusto. Si desea, puede enviarme una imagen del diseño que tiene en mente o los logos para ir adelantando.\n\n¿Tiene alguna otra duda sobre los uniformes o el proceso de fabricación?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "ec11aca3-db34-4402-95e5-3cfb9909e7b5",
+    "contact_name": "Damian Romero",
+    "messages_count": 15,
+    "last_message_text": "Mira",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "938aaad2-41a7-4aa6-a3aa-11fbca6dc9d9",
+    "contact_name": "✨",
+    "messages_count": 20,
+    "last_message_text": "Así es, Danna. El precio de $30.000 por camiseta es el mismo para las tallas de niños 12 y 14.\n\n¿Le gustaría que iniciemos con el proceso de los diseños para los diferentes equipos?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "ede492b5-8641-4b47-943f-4e53c0396064",
+    "contact_name": "LIZAR",
+    "messages_count": 8,
+    "last_message_text": "Con gusto. Si decide realizar el pedido o tiene alguna otra duda sobre los materiales o el diseño, quedo atento para ayudarle.\n\n¿Desea que revisemos algo más por ahora?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "de9d3aa2-a534-4743-b8ce-cac3fa234fc3",
+    "contact_name": "😊",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Somos fabricantes de prendas deportivas en sublimación digital, totalmente personalizadas con logos, nombres y números.\n\nManejamos un pedido mínimo de 6 unidades por referencia. ¿En qué deporte está interesado?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "4ecef377-99af-4816-888c-a3ac7e83908f",
+    "contact_name": "Yessica Munera",
+    "messages_count": 20,
+    "last_message_text": "Con mucho gusto. En un momento recibirá la cotización en su correo.\n\nYa tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "3bc086ec-0810-41be-86ab-8286d4cb65cc",
+    "contact_name": "AGU🍒",
+    "messages_count": 16,
+    "last_message_text": "El gramaje de la tela lotto que manejamos para los hoodies es de 260 gramos. Es una tela ideal porque es resistente, abrigada y permite que el diseño personalizado se vea con colores muy vivos.\n\n¿Deseas que procedamos con el registro de estos detalles para que el equipo revise los diseños?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "c13d0e90-54ea-41e4-9efb-c966bee8930a",
+    "contact_name": "Lore 🌺",
+    "messages_count": 16,
+    "last_message_text": "Perfecto, quedo atento a su confirmación. Estaré pendiente para consultar con el equipo apenas me indique la fecha.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "dc18b1c0-34e6-4055-8f03-0a7a9b7c59b7",
+    "contact_name": "Leidy",
+    "messages_count": 4,
+    "last_message_text": "Entendido. Para baloncesto manejamos el uniforme completo que incluye la camiseta y la pantaloneta tipo mariposa.\n\n¿Qué cantidad de uniformes necesita fabricar?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "8f05d653-342d-4959-88c9-575eba0166ab",
+    "contact_name": "Rosalinda🌹",
+    "messages_count": 7,
+    "last_message_text": "Con gusto. Si en el futuro necesita fabricar uniformes para su equipo a partir de 6 unidades, estaremos atentos para ayudarle. Que tenga un excelente día.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "9998ef12-0a86-4253-b36a-912fa2367ebb",
+    "contact_name": "Nando Javii",
+    "messages_count": 8,
+    "last_message_text": "Siento informarle que no podemos ayudarle con su solicitud. Fabricamos a partir de un mínimo de 6 unidades por diseño.\n\nAdemás, el servicio de diseño personalizado para cantidades menores solo aplica para reposiciones de pedidos anteriores.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "ca28008f-bc03-4a35-a829-5ff84dde4008",
+    "contact_name": "Kylian Andrés 😍",
+    "messages_count": 16,
+    "last_message_text": "Con gusto. Quedamos atentos para cuando decida iniciar con su pedido.\n\n¡Que tenga un excelente día!",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "3600fd8d-3136-4798-9cd2-4c5d57f91a08",
+    "contact_name": "Christian",
+    "messages_count": 20,
+    "last_message_text": "Gracias",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "5bc83ba6-0c69-46f3-bb43-b23bd3467be2",
+    "contact_name": "ANDREA",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Con gusto le ayudamos con su cotización.\n\nFabricamos uniformes 100% personalizados en sublimación digital, lo que permite incluir todos los logos, nombres y números que desee. El pedido mínimo es de 6 unidades.\n\n¿Para qué deporte los necesita y qué cantidad tiene en mente?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "07849b75-74a5-4290-9972-869185c68585",
+    "contact_name": "Harol Porras",
+    "messages_count": 20,
+    "last_message_text": "?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "ff01e69c-a0b1-4c38-a27c-fcf752ea3f09",
+    "contact_name": "Juanes Fernandez ⚜️",
+    "messages_count": 20,
+    "last_message_text": "Hola, quiero cotizar uniformes de fútbol",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "c5ac5934-65c3-4c6f-886a-971ef986f3a6",
+    "contact_name": "😎😎",
+    "messages_count": 9,
+    "last_message_text": "Qué pena, sigo sin poder escuchar el audio.\n\nSi gusta, puede escribirme por aquí los detalles de lo que necesita (deporte y cantidad) para poder darle el precio exacto. Quedo atento.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "b2ea0b38-076d-45f9-b2e2-c1ef6336fc9d",
+    "contact_name": "Karen Mejia",
+    "messages_count": 4,
+    "last_message_text": "Lo lamento, pero por el momento no fabricamos uniformes para pádel.\n\nSolo trabajamos con fútbol, baloncesto, voleibol y atletismo. Si necesita algo para alguno de estos deportes, con gusto le ayudamos.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "67cbb58f-fbd6-467a-b1ae-7ab6412f4f24",
+    "contact_name": "Mi Madre Te Amo",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Con gusto le ayudamos.\n\nFabricamos uniformes en sublimación digital 100% personalizados con logos, nombres y números. El pedido mínimo es de 6 unidades.\n\n¿Para qué deporte los necesita y qué cantidad tiene en mente?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "41eef043-ee1a-4b89-a293-e1395a4b8f9d",
+    "contact_name": "ApplianceService",
+    "messages_count": 9,
+    "last_message_text": "Esa es una de nuestras referencias en negro. ¿Le gusta ese estilo o prefiere algo con más detalles en otro color?\n\nRecuerde que el precio de $50.000 incluye la camiseta, la pantaloneta y las medias semiprofesionales.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "da40f409-bf2c-44c8-8cde-7799914a796a",
+    "contact_name": "Sebastian Lara",
+    "messages_count": 17,
+    "last_message_text": "En tela Dumonti el uniforme completo le queda en $60.000 cada uno. El total por los 12 uniformes sería de $720.000.\n\n¿Le gustaría que los agendemos con este tipo de tela?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "2299da65-daff-4752-be77-f96c46d6aab2",
+    "contact_name": "July",
+    "messages_count": 20,
+    "last_message_text": "Con mucho gusto. Quedo muy atento a cuando definan el color con su equipo para continuar con el pedido de sus 11 uniformes.\n\n¿Le queda alguna otra duda por ahora?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "cff79cd4-b3ea-41f9-91db-2f5fedc1d98e",
+    "contact_name": "John Arturo Castañeda",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Con gusto le ayudamos con su cotización.\n\nFabricamos uniformes 100% personalizados mediante sublimación digital, lo que permite incluir todos los logos, nombres y números que desee. El pedido mínimo es de 6 unidades.\n\n¿Qué cantidad tiene pensada y ya cuenta con algún diseño o referencia?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "9cb2e13d-1881-433a-a16f-f149faa1be31",
+    "contact_name": "😊",
+    "messages_count": 18,
+    "last_message_text": "Qué pena con usted, parece que hubo un error en el envío.\n\n¿Me confirma si ya puede ver las imágenes que le acabé de enviar? De lo contrario, cuénteme qué colores le gustaría que llevara el uniforme y yo le ayudo con ideas.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "18d79cb8-1cc2-4c0a-8f62-7d3ff7d1284d",
+    "contact_name": "🥶Düvän Ältåmâr 🥵",
+    "messages_count": 15,
+    "last_message_text": "Recibido, están muy llamativos los diseños de Platanito Pa' El Mundo con esos efectos de neón. Podemos fabricarlos tal cual los tiene en la imagen.\n\nPara los 8 uniformes completos (camiseta manga corta, pantaloneta y medias) el total sería de $400.000.\n\nPerfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "27a706d0-e0f2-4c57-a419-b3b4a3bb6f5c",
+    "contact_name": "Daniel",
+    "messages_count": 20,
+    "last_message_text": "Nuestra oficina principal está ubicada en el barrio Venecia, en la Carrera 53 # 52A - 11 Sur, Bogotá.\n\nAtendemos de lunes a viernes de 8:00 am a 5:30 pm y sábados de 8:00 am a 1:00 pm. ¿Desea pasar a visitarnos o prefiere que sigamos por aquí con el diseño?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "6d0c6585-264e-4016-8867-bb0981c457f5",
+    "contact_name": "Reydea Holding",
+    "messages_count": 20,
+    "last_message_text": "Por favor envíame los modelos que trabajan",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "49acf5ef-dc15-49a4-a7e1-8122319abaf9",
+    "contact_name": "Barry",
+    "messages_count": 8,
+    "last_message_text": "Lo siento, pero no vendemos por unidad. Al ser fabricantes de prendas personalizadas, trabajamos únicamente sobre pedidos de mínimo 6 unidades.\n\nSi en algún momento necesita uniformes para un equipo completo, con gusto le ayudaremos.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "46d93ca1-eb71-4bbb-98a7-7a1cfe34306b",
+    "contact_name": "Wilson Bejarano Morales",
+    "messages_count": 10,
+    "last_message_text": "[Image attached]",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "ffa02d45-4f69-49c0-a354-181f7e419e33",
+    "contact_name": "Laura Peña✨",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Estamos ubicados en Bogotá y realizamos envíos a todo el país.\n\nFabricamos uniformes en sublimación digital, lo que permite personalizarlos totalmente con logos, nombres y números. El pedido mínimo es de 6 unidades.\n\n¿Cuántos uniformes necesita y para qué género serían?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "919b0818-7b46-415b-9525-fc94ac82943b",
+    "contact_name": "Danthonni",
+    "messages_count": 8,
+    "last_message_text": "Para esa fecha estamos muy ajustados, ya que fabricamos desde cero y el proceso toma 15 días hábiles.\n\nSin embargo, si confirma el pedido hoy mismo con el detalle de tallas y nombres, puedo hablar con el equipo de producción para intentar agilizar el proceso.\n\n¿Ya tiene la lista de tallas y números para las 24 camisetas?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "65d3fdab-507a-41bd-9584-fc9ff07324d3",
+    "contact_name": "☀️Lina Trujillo🌻",
+    "messages_count": 20,
+    "last_message_text": "¿Qué le parecen estas opciones? Si alguna le gusta, podemos ajustarla con los colores exactos que usted prefiera.\n\n¿Le gustaría que incluyéramos algún logo o escudo en especial?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "07d1aa31-4468-45fc-92e8-1187c0ff60b0",
+    "contact_name": "Félix L. 😊",
+    "messages_count": 20,
+    "last_message_text": "Si le envío los logos, colores y nombres para el diseño, me envían algunas referencias?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "fb6fae39-26d6-4def-a650-92ad91c8f2fb",
+    "contact_name": "Vanessa Aguirre",
+    "messages_count": 20,
+    "last_message_text": "Que tela usarian?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "22650bce-2d9f-410f-bd07-569911481449",
+    "contact_name": "Michael Steven Henao",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Nuestra sede física principal está en Bogotá, pero realizamos envíos a todo el país, incluido Cali.\n\nSomos fabricantes y trabajamos con sublimación digital para personalizar sus prendas con logos, nombres y números. El pedido mínimo es de 6 unidades.\n\n¿Qué producto está buscando o para qué deporte los necesita?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "0ce0a2f6-2bcb-4140-b128-61cdd5c29067",
+    "contact_name": "😎😎",
+    "messages_count": 20,
+    "last_message_text": "¡Excelente! Despachamos frecuentemente a Barranquilla. El envío se realiza por la transportadora de su preferencia y el costo del flete lo asume el cliente al recibir el pedido.\n\n¿Le parece bien si procedemos con los detalles para su pedido?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "931761ab-9685-4958-a3f2-eef3efe2cc2d",
+    "contact_name": "AD",
+    "messages_count": 8,
+    "last_message_text": "Perfecto, para las 15 camisetas el valor unitario es de $30.000, para un total de $450.000.\n\n¿Desea que sean en manga corta o manga larga?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "518c0d6e-5f80-4a4f-bd7c-7b98ae8851c6",
+    "contact_name": "💖Yeimy johanna Fonseca💖",
+    "messages_count": 20,
+    "last_message_text": "Con mucho gusto.\n\nPerfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "954a097a-0eb8-42a2-ab04-f12ea063a64d",
+    "contact_name": "Christian",
+    "messages_count": 20,
+    "last_message_text": "Claro que sí, quedo atento a la imagen para revisarla con el equipo. \n\nCualquier otra duda que tenga mientras tanto, me avisa.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "6dd9309c-023f-4025-a075-3561ffe0d61f",
+    "contact_name": ".",
+    "messages_count": 20,
+    "last_message_text": "El precio de $50.000 es nuestro mejor valor para el uniforme completo personalizado en tela dry fit, ya que incluye todos los logos, nombres y números sin costo adicional.\n\n¿Le gustaría que le enviara algunas fotos de trabajos anteriores para que vea la calidad de nuestras prendas?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "9331092f-b43b-481a-9185-54ff0779822f",
+    "contact_name": "Luis Alonso",
+    "messages_count": 7,
+    "last_message_text": "Audio attached (audio_b172f70fb220.ogg) [Size: 20.5 KB | Type: audio/opus] URL: https://app.kapso.ai/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6IjZkYTNiNTU4LWRlNTMtNDBhZS05YzIwLTBjYmU2NzZmMDMzMSIsInB1ciI6ImJsb2JfaWQifX0=--7295e986c3e811ee73552b23bfd91e7ecf16af03/audio_b172f70fb220.ogg \n\nTranscript: Bueno, entonces una última cosa. En caso de que yo quiera mandar a hacer el pantalón, que, que fueran seis unidades, ¿a cómo me saldrían las seis? Qué pena. Para saber",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "062f468d-589d-4207-8ccc-ee76214f3b69",
+    "contact_name": "😍",
+    "messages_count": 16,
+    "last_message_text": "No hay problema, podemos empezar desde cero. Si gusta, le puedo enviar imágenes de diseños y si le gusta alguno lo puede modificar como usted desee.\n\n¿Qué colores representan a su equipo para enviarle opciones que combinen?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "40d372b7-25e5-4771-a356-f083842846b4",
+    "contact_name": "j14",
+    "messages_count": 6,
+    "last_message_text": "Con gusto. Si en el futuro necesita uniformes para su equipo a partir de 6 unidades, estaremos atentos para ayudarle. \n\n¡Que tenga un buen día!",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "2499d3ab-c83e-4b53-8f72-6723a6b71535",
+    "contact_name": "GS🍕⚖️",
+    "messages_count": 20,
+    "last_message_text": "Excelente. Estaremos atentos para continuar con el proceso de su pedido. Que tenga un buen día.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "f2ec1049-20e6-4af7-b916-c3d042227312",
+    "contact_name": "Melissa 🌸",
+    "messages_count": 11,
+    "last_message_text": "En tela dry fit el uniforme completo le sale en $50.000 cada uno.\n\nSi prefiere la tela Dumonti, que es de calidad superior, el uniforme completo tiene un costo de $60.000 la unidad.\n\n¿Cuál de las dos opciones le interesa más para su pedido?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "36d6154d-168b-4e0c-a717-d423fde3cc11",
+    "contact_name": "Diego Alexander",
+    "messages_count": 3,
+    "last_message_text": "Mucho gusto Life Deportes. Estamos ubicados en Bogotá pero realizamos envíos a todo el país.\n\nFabricamos uniformes en sublimación digital 100% personalizados con logos, nombres y números. El pedido mínimo es de 6 unidades.\n\n¿Para qué deporte los necesita?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "dc70c73e-801f-43fb-9ade-373850864e3e",
+    "contact_name": "Sol-@Tuldeazucar",
+    "messages_count": 20,
+    "last_message_text": "Hola, quiero cotizar uniformes de",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "daaa57b0-4910-48b0-9c08-07cc6bf77589",
+    "contact_name": "Gladys",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Con gusto le ayudamos.\n\nFabricamos uniformes en sublimación digital, lo que permite personalizarlos totalmente con logos, nombres y números. El pedido mínimo es de 6 unidades.\n\n¿Cuántos uniformes necesita y ya tiene algún diseño en mente?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "30fb4366-8cb3-4ed4-9d99-d6f6b12e8dac",
+    "contact_name": "🦋💍💎",
+    "messages_count": 8,
+    "last_message_text": "Para las 36 camisetas el valor unitario es de $30.000, para un total de $1.080.000.\n\n¿Ya cuenta con algún diseño o le gustaría que le envíe algunas referencias para que elija?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "6cb2fa7b-bd18-41d5-a1f1-75fc731d620e",
+    "contact_name": "luis arias cortes",
+    "messages_count": 12,
+    "last_message_text": "Entiendo, quedo atento a lo que le digan. Si decide realizarlos con nosotros, con gusto le ayudaremos con todo el proceso de diseño y fabricación.\n\n¡Que tenga un excelente día!",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "b8953006-ac5e-41cd-86f9-fad769859387",
+    "contact_name": "guerrayuli49",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Estamos ubicados en Bogotá, en el barrio Venecia.\n\nSomos fabricantes de uniformes deportivos 100% personalizados desde 6 unidades. ¿Para qué deporte los necesita?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "0d385695-c125-49c4-b8aa-209821b2a3dc",
+    "contact_name": "delago",
+    "messages_count": 19,
+    "last_message_text": "Si",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "965f31a5-dd41-4dc9-8b6b-79c0b3683143",
+    "contact_name": "Jenn Rodriguez",
+    "messages_count": 4,
+    "last_message_text": "Entiendo, para niño manejamos las mismas opciones de personalización.\n\n¿Necesita solo la camiseta o el uniforme completo con pantaloneta y medias?\n\nRecuerde que el pedido mínimo es de 6 unidades.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "76055bb0-34d5-401e-bff6-265d5e5a36fd",
+    "contact_name": "💛",
+    "messages_count": 11,
+    "last_message_text": "Lamentamos no poder ayudarle en esta ocasión, pero por los procesos de fabricación y personalización nos es imposible entregarlos para mañana.\n\nSi en el futuro necesita uniformes con más tiempo de antelación, estaremos atentos para servirle.\n\n¿Hay algo más en lo que pueda colaborarle?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "da2cd985-aac8-4a6f-a36a-a4a9ee71a4e7",
+    "contact_name": "Paola Ruiz",
+    "messages_count": 6,
+    "last_message_text": "La camiseta tipo siza tiene un costo de $30.000 la unidad.\n\nAl igual que el uniforme completo, se entrega totalmente personalizada con el diseño y logos que usted prefiera. ¿Le gustaría ver algunos modelos de referencia?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "b4e95f2f-4707-477f-87c7-5b83cd10efa2",
+    "contact_name": "Yolanda Páez",
+    "messages_count": 19,
+    "last_message_text": "Siento el inconveniente, parece que hubo un error en el envío. En un momento nuestro equipo se pondrá en contacto con usted para enviarle las fotos de las telas y las propuestas de diseño por este mismo medio.\n\n¿Le puedo ayudar con alguna otra información adicional?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "c4e95103-4b28-447f-9bff-f85c8f87fcc5",
+    "contact_name": "Denny✨",
+    "messages_count": 20,
+    "last_message_text": "Quedo atenta",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "6a401c98-1cdc-44f0-9a57-094fee186627",
+    "contact_name": "……",
+    "messages_count": 9,
+    "last_message_text": "Realizamos envíos a todo el país. El costo del envío a Medellín lo asume el cliente y se realiza por la transportadora de su preferencia, generalmente por Interrapidísimo o Servientrega.\n\n¿Le gustaría que las camisetas sean en cuello en V o redondo?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "e27269c1-ffb1-42a1-8727-85727feff5fc",
+    "contact_name": "573215919490",
+    "messages_count": 20,
+    "last_message_text": "Estamos ubicados en Bogotá. Desde aquí fabricamos y despachamos todos nuestros pedidos.\n\n¿Desea que pasemos el pedido al equipo interno para que le indiquen cómo realizar el abono?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "d0dd0b79-c660-435c-a1c3-ba313c5c5544",
+    "contact_name": "Yerlis. Pao",
+    "messages_count": 8,
+    "last_message_text": "Sí, podemos fabricarlo exactamente igual al de la imagen que envió, ya que trabajamos con sublimación digital y personalizamos cada detalle.\n\n¿Cuántos uniformes necesita para confirmarle el valor total de su pedido?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "4167ebd7-8061-4a73-bdfa-03364a526f43",
+    "contact_name": "Guillermo Pisco",
+    "messages_count": 20,
+    "last_message_text": "Claro que sí, ellos se pondrán en contacto con usted lo antes posible para definir todos los detalles de los hexágonos y el diseño.\n\nMuchas gracias por elegirnos.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "ad3674a5-d710-41de-b497-9d90179f83ed",
+    "contact_name": ".",
+    "messages_count": 12,
+    "last_message_text": "Siento el inconveniente con el enlace. Si gusta, me puede indicar qué colores o estilo tiene en mente y yo le puedo enviar algunas imágenes por aquí mismo.\n\n¿Qué colores representan a su equipo?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "18379cdb-f534-49e8-afc4-90e34c08fcf0",
+    "contact_name": "Juanes Fernandez ⚜️",
+    "messages_count": 20,
+    "last_message_text": "Claro que sí, no hay problema. Quedo atento a cuando tenga el dinero recaudado para que realicemos el abono y podamos iniciar con el diseño de sus camisetas.\n\n¿Le queda alguna duda adicional o nos hablamos el martes?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "aeda52b6-a7a9-4b0f-ad32-c87b6cb29d53",
+    "contact_name": "Diana A. Tinoco ",
+    "messages_count": 20,
+    "last_message_text": "Muchas gracias por su interés. Estaremos en contacto muy pronto para confirmar los detalles y la fecha de entrega.\n\n¡Que tenga un excelente día!",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "c87562a0-1bb2-4bc0-b844-3c553c9eb1b6",
+    "contact_name": "Michael Steven Henao",
+    "messages_count": 19,
+    "last_message_text": ".e surgió una pregunta si es para cali igual los hacen?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "d0e6413c-ff61-4274-980f-1a244303dd3e",
+    "contact_name": "Distrimarcas",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Con gusto le ayudamos.\n\nFabricamos uniformes en sublimación digital, totalmente personalizados con logos, nombres y números. El pedido mínimo es de 6 unidades.\n\n¿Para qué deporte los necesita?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "18243a4f-0a18-4deb-90cd-c3135030d91a",
+    "contact_name": "*~Reyka~*",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Por el momento solo fabricamos uniformes para fútbol, baloncesto, voleibol y atletismo.\n\nLamentablemente no podemos ayudarle con su pedido de béisbol en esta ocasión.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "cde26a4f-f2bb-4223-9a5d-0dc7599c0d4c",
+    "contact_name": "Sebastián",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Con gusto le ayudamos.\n\nFabricamos uniformes en sublimación digital 100% personalizados con logos, nombres y números. El pedido mínimo es de 6 unidades.\n\n¿Para qué deporte los necesita y qué cantidad tiene en mente?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "87aca197-99a5-4343-8bfd-d6ddeb4b7f8a",
+    "contact_name": "Valentina ✨",
+    "messages_count": 3,
+    "last_message_text": "Mucho gusto, Life Deportes. Por el momento solo fabricamos uniformes para fútbol, baloncesto, voleibol y atletismo, por lo que no podríamos ayudarle con su pedido de patinaje en esta ocasión.\n\n¿Le gustaría cotizar para alguno de los deportes que manejamos?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "c35c2a6b-8754-4fb7-91aa-cfc838ae7d87",
+    "contact_name": "yudisdanissesernahernande",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Con gusto le ayudamos.\n\nFabricamos uniformes en sublimación digital, lo que permite personalizarlos totalmente con logos, nombres y números. El pedido mínimo es de 6 unidades.\n\n¿Para qué deporte los necesita y qué cantidad tiene en mente?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "6d4eea87-431b-4942-8750-640a34008014",
+    "contact_name": "Edilma",
+    "messages_count": 17,
+    "last_message_text": "Nuestra oficina principal está ubicada en Bogotá, en la Carrera 24 # 17 - 52 Sur, en el barrio Restrepo.\n\nAtendemos de lunes a viernes de 8:00 am a 5:30 pm y los sábados de 8:00 am a 1:00 pm. ¿Le gustaría pasar a ver las telas o prefiere que sigamos por aquí?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "07fe3761-7f5e-40eb-98a8-47f348316aab",
+    "contact_name": "=÷£[ =§¢|",
+    "messages_count": 20,
+    "last_message_text": "Claro que sí, para hombre el diseño sería el mismo pero con el corte de manga corta tradicional y una horma más recta.\n\nSi desea, le envío imágenes de diseños y si le gusta alguno lo puede modificar como usted desee: https://life-soluciones.com/categoria-producto/deportes/voleibol/\n\n¿Le gustaría ver alguna de esas opciones o prefiere que adaptemos el diseño negro y rojo al corte masculino?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "deba703e-e7f3-4ae2-8ab9-f307a475b610",
+    "contact_name": "🖤",
+    "messages_count": 4,
+    "last_message_text": "Perfecto, para 10 uniformes de fútbol el precio por unidad es de $50.000.\n\nEste valor le incluye la camiseta, la pantaloneta estándar y las medias semiprofesionales.\n\n¿Desea que la camiseta sea en cuello en V o redondo?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "752f1398-b4b6-4c5f-b83c-f77b1a9873c7",
+    "contact_name": "TATIANA R.🤩",
+    "messages_count": 5,
+    "last_message_text": "cc 38142782",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "e3a259ec-0e7e-498d-83cf-e2370a470deb",
+    "contact_name": "Ovidio SDG",
+    "messages_count": 8,
+    "last_message_text": "Con gusto, señor Ovidio. Quedamos atentos por si más adelante desea realizar el pedido o si necesita cotizar algo diferente.\n\nFeliz noche para usted también.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "dafa5c6e-c7e1-4361-a1c2-84cb68eba636",
+    "contact_name": "Sebastian",
+    "messages_count": 20,
+    "last_message_text": "Perfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "0313c5fd-dfff-4ef8-86aa-25c9fedf10ec",
+    "contact_name": "GS🍕⚖️",
+    "messages_count": 20,
+    "last_message_text": "Ninguna",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "97c89053-c4f1-449a-b84a-d4d1c037b5a3",
+    "contact_name": "Carolina Carrillo",
+    "messages_count": 8,
+    "last_message_text": "Excelente, la personalización con nombre y número ya está incluida en el precio.\n\nEl total por las 19 camisetas sería de $570.000. \n\nPerfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "159afd96-e006-4cd5-b8cd-575256c5e9ae",
+    "contact_name": "Meka",
+    "messages_count": 15,
+    "last_message_text": "Entiendo, la ventaja de fabricarlos desde cero es que les quedan exactamente como los quieren y con la talla de cada una.\n\nSi se anima por alguno de los diseños, me confirma y así podemos avanzar con el pedido de una vez. ¿Qué le parece?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "3c099216-d373-41e9-aafd-75a0231fb1a5",
+    "contact_name": "Suelen 🥰🥰",
+    "messages_count": 12,
+    "last_message_text": "Perfecto, ya tengo anotado su pedido, ahora nuestro equipo va a revisar el diseño y le indica cómo hacer el abono del 50%. ¿Le queda alguna duda mientras tanto?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "a5785289-6e5c-4f58-938d-69ed8a5382b5",
+    "contact_name": "……",
+    "messages_count": 6,
+    "last_message_text": "Buenas tardes. Con gusto le ayudo con la cotización para fútbol.\n\n¿Cuántos uniformes necesita y ya cuenta con algún diseño o referencia para los mismos?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "d7a85c8a-853d-400e-82ed-92e9da84bfde",
+    "contact_name": "Martin Moya Celis 💙",
+    "messages_count": 20,
+    "last_message_text": "Con mucho gusto. Quedamos atentos a su visita para iniciar con su pedido.\n\n¡Que tenga un excelente día!",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "4bbf08b0-c9f4-4654-a127-abd3a485aa84",
+    "contact_name": "John Eusse 🥶❄️",
+    "messages_count": 12,
+    "last_message_text": "Sí, estamos ubicados en Bogotá. Nuestra oficina principal queda en el barrio Venecia.\n\nSi desea pasar a ver muestras de telas o tallas, me avisa y con gusto le comparto la dirección exacta.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "863d7b40-773c-43eb-a43a-fd659b0051c4",
+    "contact_name": "Vc15",
+    "messages_count": 15,
+    "last_message_text": "Perfecto, quedo atento al envío de su diseño para revisarlo. \n\n¿Desea que vayamos adelantando algún otro detalle como las tallas o el tipo de tela?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "b0d385fa-e49c-4263-b720-4bcf95937ed4",
+    "contact_name": "milenasa23",
+    "messages_count": 4,
+    "last_message_text": "Excelente elección. Para fútbol femenino manejamos un corte especial de camiseta y pantaloneta.\n\nEl uniforme completo que incluye camiseta, pantaloneta y medias semiprofesionales tiene un costo de $50.000 cada uno.\n\n¿Ya tiene algún diseño en mente o desea que le envíe algunas referencias?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "1e5c37f2-aaa7-4e09-9ea0-0636155ca335",
+    "contact_name": "Wilson",
+    "messages_count": 2,
+    "last_message_text": "Mucho gusto, Life Deportes. Fabricamos prendas en sublimación digital 100% personalizadas con logos, nombres y números.\n\nPor el momento solo trabajamos para fútbol, baloncesto, voleibol y atletismo. Lamento no poder ayudarle con su pedido de tenis de mesa en esta ocasión.",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "280fc918-97c4-41e1-8a7e-9701217e8695",
+    "contact_name": ".",
+    "messages_count": 14,
+    "last_message_text": "Buenos días. Si necesitas revisar diseños, puedes verlos en nuestras redes sociales\n\nEn Instagram: @lifedeportes",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "de5c01f3-6ee7-4590-bcd5-371a2b6dec3b",
+    "contact_name": "Arely Pc",
+    "messages_count": 7,
+    "last_message_text": "Entiendo, el video no me permite ver los detalles técnicos. Para poder darle el precio exacto, ¿me podría confirmar si los uniformes son para fútbol, baloncesto, voleibol o atletismo?\n\n¿Y cuántas unidades necesita fabricar?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  },
+  {
+    "id": "21fc493a-192b-474f-b53a-ca585d7daec6",
+    "contact_name": "Sam...",
+    "messages_count": 17,
+    "last_message_text": "Claro que sí, estamos ubicados en la Calle 64 # 113 - 41, en el barrio Engativá Pueblo, Bogotá. Atendemos de lunes a viernes de 8:00 am a 5:30 pm y sábados de 8:00 am a 1:00 pm.\n\n¿Le gustaría programar su visita o tiene alguna otra consulta sobre los uniformes?",
+    "analysis": {
+      "is_successful_sale": false,
+      "waiting_for_life_response": false,
+      "summary": "Error analizando conversación.",
+      "reason": "Gemini API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key expired. Please renew the API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key expired. Please renew the API key.\"\n      }\n    ]\n  }\n}\n"
+    }
+  }
+]

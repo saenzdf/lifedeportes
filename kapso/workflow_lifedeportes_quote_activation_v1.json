@@ -1,0 +1,107 @@
+{
+  "name": "lifedeportes_quote_activation_v1",
+  "description": "Workflow de cierre comercial para crear lead y cotizacion en Odoo.",
+  "nodes": [
+    {
+      "id": "start",
+      "type": "trigger_internal_event",
+      "config": {
+        "event": "activate_quote_skill"
+      }
+    },
+    {
+      "id": "validate_quote_payload_001",
+      "type": "function",
+      "config": {
+        "name": "validate_quote_payload"
+      }
+    },
+    {
+      "id": "payload_valid_router_001",
+      "type": "decide",
+      "config": {
+        "conditions": [
+          {
+            "label": "valid",
+            "expression": "vars.quote_payload.is_valid == true"
+          },
+          {
+            "label": "invalid",
+            "expression": "vars.quote_payload.is_valid != true"
+          }
+        ]
+      }
+    },
+    {
+      "id": "create_or_update_lead_001",
+      "type": "function",
+      "config": {
+        "name": "odoo_create_or_update_lead"
+      }
+    },
+    {
+      "id": "create_sale_order_001",
+      "type": "function",
+      "config": {
+        "name": "odoo_create_sale_order"
+      }
+    },
+    {
+      "id": "reply_quote_confirmed_001",
+      "type": "template",
+      "config": {
+        "text": "Listo, ya deje tu pedido en proceso de cotizacion formal. Te comparto el resumen y siguiente paso de pago."
+      }
+    },
+    {
+      "id": "reply_quote_missing_data_001",
+      "type": "template",
+      "config": {
+        "text": "Para generar la cotizacion necesito confirmar producto, cantidad y variante. Te ayudo a completarlo en un mensaje."
+      }
+    },
+    {
+      "id": "send_reply_001",
+      "type": "whatsapp_send_message",
+      "config": {
+        "text": "vars.reply_text"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "start",
+      "target": "validate_quote_payload_001"
+    },
+    {
+      "source": "validate_quote_payload_001",
+      "target": "payload_valid_router_001"
+    },
+    {
+      "source": "payload_valid_router_001",
+      "target": "create_or_update_lead_001",
+      "label": "valid"
+    },
+    {
+      "source": "payload_valid_router_001",
+      "target": "reply_quote_missing_data_001",
+      "label": "invalid"
+    },
+    {
+      "source": "create_or_update_lead_001",
+      "target": "create_sale_order_001"
+    },
+    {
+      "source": "create_sale_order_001",
+      "target": "reply_quote_confirmed_001"
+    },
+    {
+      "source": "reply_quote_confirmed_001",
+      "target": "send_reply_001"
+    },
+    {
+      "source": "reply_quote_missing_data_001",
+      "target": "send_reply_001"
+    }
+  ]
+}

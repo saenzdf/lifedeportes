@@ -1,0 +1,27 @@
+{
+  "default_tenant_id": "life_main",
+  "tenants": [
+    {
+      "id": "life_main",
+      "name": "Life Deportes Principal",
+      "allowed_phone_number_ids": [
+        "1081649091701994"
+      ],
+      "allowed_whatsapp_numbers": [
+        "3000000069"
+      ],
+      "policy_set": "sales_default_v1",
+      "secret_prefix": "TENANT_LIFE_MAIN"
+    },
+    {
+      "id": "life_secondary",
+      "name": "Life Deportes Tenant 2",
+      "allowed_phone_number_ids": [
+        "597907523413541"
+      ],
+      "allowed_whatsapp_numbers": [],
+      "policy_set": "sales_default_v1",
+      "secret_prefix": "TENANT_LIFE_SECONDARY"
+    }
+  ]
+}

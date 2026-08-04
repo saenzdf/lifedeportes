@@ -1,0 +1,156 @@
+{
+  "data": {
+    "id": "f40befd3-0229-4530-808c-d4ebf504b28b",
+    "current_step": {
+      "id": "fa38bdc8-0121-4f16-852f-5a91c3bda646",
+      "identifier": "agent_orquestador_1745500003000",
+      "stepable_type": "FlowAgentStep"
+    },
+    "ended_at": null,
+    "execution_context": {
+      "vars": {
+        "user": {
+          "name": "Cristian",
+          "role": "customer",
+          "wa_id": "573219587787",
+          "staff_member": null,
+          "history_count": 0,
+          "contact_segment": "new_customer",
+          "odoo_project_id": null,
+          "is_known_in_odoo": false,
+          "odoo_project_name": null,
+          "is_allowed_for_transactions": false
+        },
+        "kapso": {
+          "customer_lane": "paused_maintenance",
+          "staff_only_mode": true
+        },
+        "intent": {
+          "raw_text": "Sticker attached (sticker_e5cc8c004417.webp) [Size: 197.3 KB | Type: image/webp]"
+        },
+        "orders": {
+          "active": [],
+          "active_count": 0,
+          "focus_order_id": null,
+          "focus_order_name": null
+        },
+        "tenant": {
+          "id": "life_main",
+          "name": "Life Deportes Principal",
+          "policy_set": "sales_default_v1",
+          "secret_prefix": "TENANT_LIFE_MAIN",
+          "phone_number_id": null
+        },
+        "service": {
+          "last_call_at": "2026-07-30T17:39:17.724Z",
+          "route_reason": "burst_silence_timeout",
+          "last_call_name": "route_customer_burst_resume",
+          "fallback_message": null,
+          "last_call_status": "ready",
+          "burst_resume_reason": "timeout"
+        },
+        "session": {
+          "continuity": {
+            "source": "none",
+            "resumed": false,
+            "resumed_at": "2026-07-30T17:38:43.931Z",
+            "hydrate_error": "no_useful_quote"
+          }
+        },
+        "security": {
+          "input_blocked": false,
+          "input_flagged": false,
+          "mcp_call_count": 0,
+          "policy_version": "2026-06-17",
+          "last_block_reason": null
+        },
+        "user_lane": "customer",
+        "spam_profile": null,
+        "crm_seed_ensure": {
+          "at": "2026-07-30T17:39:18.123Z",
+          "reason": "insufficient_payload",
+          "skipped": true,
+          "message_es": "Falta producto+cantidad (≥6) o lista/cotización suficiente."
+        },
+        "last_user_input": null,
+        "customer_burst_reply": null
+      },
+      "system": {
+        "flow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+        "customer": {
+          "id": "7fe6d691-be8f-462a-a2ec-9aeb93476b7b",
+          "name": "Default customer",
+          "external_customer_id": "default_customer"
+        },
+        "flow_name": "lifedeportes_sales_inbound",
+        "running_at": "2026-07-30T13:39:17-04:00",
+        "started_at": "2026-07-30T13:38:11-04:00",
+        "step_count": 8,
+        "waiting_at": "2026-07-30T13:40:06-04:00",
+        "last_resume": {
+          "at": "2026-07-30T13:39:17-04:00",
+          "reason": "timeout",
+          "step_id": "6dbd154b-5aad-439f-a61f-445a58800ba3",
+          "step_type": "FlowWaitStep",
+          "step_identifier": "wait_customer_burst_1745500002580"
+        },
+        "workflow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+        "flow_version": 0,
+        "trigger_type": "inbound_message",
+        "workflow_name": "lifedeportes_sales_inbound",
+        "whatsapp_config": {
+          "id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+          "kind": "production",
+          "name": "Life Deportes Asistente",
+          "phone_number_id": "1095603153637786",
+          "business_account_id": "808809791888713",
+          "display_phone_number": "3000000066",
+          "display_phone_number_normalized": "3000000066"
+        },
+        "workflow_version": 0,
+        "flow_execution_id": "f40befd3-0229-4530-808c-d4ebf504b28b",
+        "last_status_change": "2026-07-30T13:40:06-04:00",
+        "workflow_execution_id": "f40befd3-0229-4530-808c-d4ebf504b28b",
+        "trigger_whatsapp_config_id": "c8364dd2-ae4d-433b-bc02-3b5ea01024df",
+        "available_whatsapp_config_ids": [
+          "c8364dd2-ae4d-433b-bc02-3b5ea01024df"
+        ]
+      },
+      "context": {
+        "channel": "whatsapp",
+        "contact": {
+          "id": "b4996956-7849-41a9-8cf6-c5b3db8d3004",
+          "name": "Cristian",
+          "wa_id": "573219587787",
+          "username": null,
+          "display_name": null,
+          "profile_name": "Cristian",
+          "business_scoped_user_id": "CO.1541352150811322",
+          "parent_business_scoped_user_id": null
+        },
+        "phone_number": "573219587787",
+        "conversation_id": "1b4dd088-a82e-4e39-a0d0-dfd15ee24f21",
+        "agent_iterations": 1,
+        "whatsapp_username": null,
+        "agent_last_message": null,
+        "whatsapp_business_scoped_user_id": "CO.1541352150811322",
+        "whatsapp_parent_business_scoped_user_id": null
+      },
+      "metadata": {}
+    },
+    "last_event_at": "2026-07-30T13:40:06-04:00",
+    "started_at": "2026-07-30T13:38:11-04:00",
+    "status": "waiting",
+    "tracking_id": null,
+    "whatsapp_conversation_id": "1b4dd088-a82e-4e39-a0d0-dfd15ee24f21",
+    "workflow": {
+      "id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
+      "agent_default_tools_version": 2,
+      "lock_version": 1443,
+      "name": "lifedeportes_sales_inbound",
+      "slug": "lifedeportes-sales-inbound",
+      "status": "active",
+      "updated_at": "2026-07-30T13:16:02-04:00"
+    }
+  }
+}

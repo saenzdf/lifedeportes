@@ -1,0 +1,12 @@
+Odoo target: https://testlifesoluciones.odoo.com testlifesoluciones
+
+=== case 1 ===
+{
+  "ok": false,
+  "order": "S02620",
+  "sheet": "error",
+  "filled": 0,
+  "audit_ok": false
+}
+
+SUMMARY { passed: 0, failed: 1 }

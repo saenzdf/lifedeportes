@@ -1,0 +1,11 @@
+{
+  "name": "abono_50_cuentas",
+  "language": "es",
+  "category": "UTILITY",
+  "components": [
+    {
+      "type": "BODY",
+      "text": "Hola, Para pagar su orden por favor enviar el 50% para empezar.\nBancolombia: 54793749654\nDavivienda: 108900235772 NIT 901164485\nBre-B: 0050571942"
+    }
+  ]
+}

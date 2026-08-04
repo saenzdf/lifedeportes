@@ -1,0 +1,12 @@
+{"ok":true,"lead_id":3587,"lead_url":"https://lifedeportes.odoo.com/odoo/crm/3587","created":true,"partner_id":3806,"name":"Juan Pablo Segura","expected_revenue":2020000,"date_deadline":"2026-08-01","attachments":{"uploaded":[],"errors":[]}}
+HTTP:200
+{"ok":true,"lead_id":3588,"lead_url":"https://lifedeportes.odoo.com/odoo/crm/3588","created":true,"partner_id":3825,"name":"Valentina","expected_revenue":330000,"date_deadline":"2026-08-01","attachments":{"uploaded":[],"errors":[]}}
+HTTP:200
+{"ok":true,"lead_id":3589,"lead_url":"https://lifedeportes.odoo.com/odoo/crm/3589","created":true,"partner_id":3826,"name":"JR","expected_revenue":null,"date_deadline":"2026-08-01","attachments":{"uploaded":[],"errors":[]}}
+HTTP:200
+{"ok":true,"lead_id":3590,"lead_url":"https://lifedeportes.odoo.com/odoo/crm/3590","created":true,"partner_id":3827,"name":"Sebastián Martinez","expected_revenue":null,"date_deadline":"2026-08-01","attachments":{"uploaded":[],"errors":[]}}
+HTTP:200
+{"ok":true,"lead_id":3591,"lead_url":"https://lifedeportes.odoo.com/odoo/crm/3591","created":true,"partner_id":3828,"name":"Victor.E","expected_revenue":null,"date_deadline":"2026-08-01","attachments":{"uploaded":[],"errors":[]}}
+HTTP:200
+{"ok":true,"lead_id":3585,"lead_url":"https://lifedeportes.odoo.com/odoo/crm/3585","created":false,"partner_id":3822,"name":"Emily Zuluaga","expected_revenue":690000,"date_deadline":"2026-08-01","attachments":{"uploaded":[],"errors":[]}}
+HTTP:200

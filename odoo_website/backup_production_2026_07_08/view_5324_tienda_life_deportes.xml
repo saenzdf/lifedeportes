@@ -1,0 +1,153 @@
+<t t-name="website.tienda-life-deportes">
+<t t-call="website.layout">
+            <div id="wrap" class="oe_structure ld-shop-landing">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=DM+Sans:wght@400;500;700&amp;display=swap"/>
+<style type="text/css">
+.ld-shop-landing{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a2e}
+.ld-shop-landing h1,.ld-shop-landing h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase}
+.ld-shop-hero{background:linear-gradient(135deg,#051B36 0%,#0a3060 55%,#051B36 100%);color:#fff;padding:72px 0 56px}
+.ld-shop-hero-inner{max-width:920px}
+.ld-shop-badge{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);margin-bottom:18px}
+.ld-shop-hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.05;margin:0 0 16px}
+.ld-shop-lead{font-size:1.05rem;line-height:1.65;opacity:.95;max-width:760px;margin-bottom:24px}
+.ld-shop-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+.ld-shop-btn-primary{background:#0F385F!important;border:none!important;border-radius:999px!important;
+  padding:.85rem 1.6rem!important;font-weight:700!important;text-transform:uppercase!important}
+.ld-shop-btn-outline{border:2px solid rgba(255,255,255,.65)!important;border-radius:999px!important;
+  padding:.75rem 1.35rem!important;font-weight:700!important;text-transform:uppercase!important;color:#fff!important}
+.ld-shop-note{font-size:.92rem;opacity:.9;margin:0}
+.ld-shop-note a{color:#9ec5f0;text-decoration:underline}
+.ld-shop-featured{padding:56px 0 40px;background:#f8f9fa}
+.ld-shop-featured h2{font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 8px;color:#051B36}
+.ld-shop-sub{color:#5a6677;margin:0 0 28px}
+.ld-shop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.ld-shop-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(5,27,54,.08);
+  text-decoration:none!important;color:inherit!important;display:flex;flex-direction:column;height:100%}
+.ld-shop-card img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#eef1f5}
+.ld-shop-card-body{padding:14px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.ld-shop-card h3{font-size:1rem;font-weight:700;margin:0;line-height:1.3;text-transform:none;font-family:inherit}
+.ld-shop-card p{font-size:.86rem;color:#5a6677;margin:0;line-height:1.45;flex:1}
+.ld-shop-price{font-weight:800;color:#0F385F;font-size:1rem}
+.ld-shop-trust{padding:36px 0;background:#fff;border-top:1px solid rgba(5,27,54,.06)}
+.ld-shop-trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;text-align:center}
+.ld-shop-trust strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;color:#051B36}
+.ld-shop-trust span{font-size:.82rem;color:#5a6677;text-transform:uppercase;letter-spacing:.05em}
+.ld-shop-cta{padding:52px 0 64px;background:linear-gradient(135deg,#0F385F 0%,#051B36 100%);color:#fff}
+.ld-shop-cta h2{font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:10px}
+.ld-shop-cta p{opacity:.92;margin-bottom:22px}
+</style>
+                <section class="ld-shop-hero">
+                    <div class="container ld-shop-hero-inner">
+                        <span class="ld-shop-badge">Tienda oficial Life Deportes</span>
+                        <h1>Catálogo de uniformes deportivos personalizados</h1>
+                        <p class="ld-shop-lead">
+                            Configura tu producto, elige variantes y cotiza en línea.
+                            Fútbol, baloncesto, voleibol, sudaderas y complementos.
+                            Pedido mínimo 6 unidades por diseño.
+                        </p>
+                        <div class="ld-shop-actions">
+                            <a href="/shop" class="btn btn-primary ld-shop-btn-primary">Ver catálogo completo</a>
+                            <a href="https://wa.me/573103362484?text=Hola%2C%20quiero%20cotizar%20uniformes%20de%20" class="btn btn-outline-light ld-shop-btn-outline" target="_blank" rel="noopener">
+                                Cotizar por WhatsApp
+                            </a>
+                        </div>
+                        <p class="ld-shop-note">
+                            ¿Buscas inspiración de diseños?
+                            <a href="https://lifedeportes.com/galeria.html" target="_blank" rel="noopener">
+                                Ver galería en lifedeportes.com
+                            </a>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="ld-shop-featured">
+                    <div class="container">
+                        <h2>Productos destacados</h2>
+                        <p class="ld-shop-sub">Los más solicitados por equipos en Colombia</p>
+                        <div class="ld-shop-grid"><a class="ld-shop-card" href="/shop/uniforme-de-futbol-115">
+              <img src="https://life-soluciones.odoo.com/web/image/product.template/115/image_512" alt="Uniforme de Fútbol" loading="lazy"/>
+              <div class="ld-shop-card-body">
+                <h3>Uniforme de Fútbol</h3>
+                <p>Uniforme de fútbol personalizado (camiseta, pantaloneta y medias).</p>
+                <span class="ld-shop-price">Desde $ 50.000</span>
+              </div>
+            </a>
+<a class="ld-shop-card" href="/shop/camiseta-deportiva-dry-fit-62">
+              <img src="https://life-soluciones.odoo.com/web/image/product.template/62/image_512" alt="Camiseta deportiva dry-fit" loading="lazy"/>
+              <div class="ld-shop-card-body">
+                <h3>Camiseta deportiva dry-fit</h3>
+                <p>Camiseta deportiva dry-fit personalizada.</p>
+                <span class="ld-shop-price">Desde $ 30.000</span>
+              </div>
+            </a>
+<a class="ld-shop-card" href="/shop/uniforme-de-baloncesto-23">
+              <img src="https://life-soluciones.odoo.com/web/image/product.template/23/image_512" alt="Uniforme de baloncesto" loading="lazy"/>
+              <div class="ld-shop-card-body">
+                <h3>Uniforme de baloncesto</h3>
+                <p>Uniforme de baloncesto personalizado (camiseta sisa y pantaloneta).</p>
+                <span class="ld-shop-price">Desde $ 50.000</span>
+              </div>
+            </a>
+<a class="ld-shop-card" href="/shop/camiseta-deportiva-con-cuello-polo-sin-botones-61">
+              <img src="https://life-soluciones.odoo.com/web/image/product.template/61/image_512" alt="Camiseta deportiva con cuello polo, Sin botones" loading="lazy"/>
+              <div class="ld-shop-card-body">
+                <h3>Camiseta deportiva con cuello polo, Sin botones</h3>
+                <p>Camiseta deportiva cuello polo personalizada.</p>
+                <span class="ld-shop-price">Desde $ 33.000</span>
+              </div>
+            </a>
+<a class="ld-shop-card" href="/shop/uniforme-de-voleibol-31">
+              <img src="https://life-soluciones.odoo.com/web/image/product.template/31/image_512" alt="Uniforme de voleibol" loading="lazy"/>
+              <div class="ld-shop-card-body">
+                <h3>Uniforme de voleibol</h3>
+                <p>Uniforme de voleibol personalizado (camiseta y pantaloneta o licra).</p>
+                <span class="ld-shop-price">Desde $ 50.000</span>
+              </div>
+            </a>
+<a class="ld-shop-card" href="/shop/camiseta-deportiva-dumonti-685">
+              <img src="https://life-soluciones.odoo.com/web/image/product.template/685/image_512" alt="Camiseta Deportiva Dumonti" loading="lazy"/>
+              <div class="ld-shop-card-body">
+                <h3>Camiseta Deportiva Dumonti</h3>
+                <p>Camiseta deportiva Dumonti personalizada.</p>
+                <span class="ld-shop-price">Desde $ 35.000</span>
+              </div>
+            </a>
+<a class="ld-shop-card" href="/shop/sudadera-chaqueta-y-pantalon-orion-66">
+              <img src="https://life-soluciones.odoo.com/web/image/product.template/66/image_512" alt="Sudadera Chaqueta y Pantalón Orión" loading="lazy"/>
+              <div class="ld-shop-card-body">
+                <h3>Sudadera Chaqueta y Pantalón Orión</h3>
+                <p>Sudadera chaqueta y pantalón tela Orión personalizados.</p>
+                <span class="ld-shop-price">Desde $ 100.000</span>
+              </div>
+            </a>
+<a class="ld-shop-card" href="/shop/chaqueta-rompevientos-68">
+              <img src="https://life-soluciones.odoo.com/web/image/product.template/68/image_512" alt="Chaqueta Rompevientos" loading="lazy"/>
+              <div class="ld-shop-card-body">
+                <h3>Chaqueta Rompevientos</h3>
+                <p>Chaqueta rompevientos con capota personalizada.</p>
+                <span class="ld-shop-price">Desde $ 60.000</span>
+              </div>
+            </a></div>
+                    </div>
+                </section>
+
+                <section class="ld-shop-trust">
+                    <div class="container ld-shop-trust-grid">
+                        <div><strong>+20 años</strong><span>Fabricación en Bogotá</span></div>
+                        <div><strong>6 uds.</strong><span>Pedido mínimo por diseño</span></div>
+                        <div><strong>10 días</strong><span>Fabricación tras aprobación</span></div>
+                        <div><strong>Envío</strong><span>A toda Colombia</span></div>
+                    </div>
+                </section>
+
+                <section class="ld-shop-cta">
+                    <div class="container text-center">
+                        <h2>¿Listo para armar tu pedido?</h2>
+                        <p>Entra al catálogo, configura tu uniforme y continúa con la cotización.</p>
+                        <a href="/shop" class="btn btn-primary ld-shop-btn-primary">Ir al catálogo</a>
+                    </div>
+                </section>
+            </div>
+        </t>
+</t>

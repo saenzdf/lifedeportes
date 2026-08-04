@@ -1,0 +1,55 @@
+{
+  "case": 10,
+  "ok": true,
+  "partner_mode": "new",
+  "entry": "excel_life",
+  "note": "Cliente NUEVO CHUCHO-style (no reusar TACALOA)",
+  "task": {
+    "model": "project.task",
+    "id": 2288,
+    "name": "[S02486] CHUCHO TACALOA",
+    "sale_order": "S02486",
+    "partner": "CHUCHO TACALOA"
+  },
+  "customer_requested": "E2E NUEVO 07122201 C10 CHUCHO TACALOA",
+  "history_probe": null,
+  "parse": "layout=formato_life_v1 rows=13",
+  "parse_rows": 13,
+  "bumped_min6": false,
+  "write_status": "ready",
+  "write_error": "Lead y cotizacion BORRADOR creados en Odoo (confirmar manualmente). Linea Diseno a costo 0.",
+  "order_id": 2646,
+  "partner_match_ok": true,
+  "so_name": "S02656",
+  "so_state": "draft",
+  "amount_total": 773500,
+  "partner_id": 3635,
+  "partner_name": "E2E NUEVO 07122201 C10 CHUCHO TACALOA",
+  "partner_prior_so_count": 0,
+  "partner_has_history": false,
+  "note_has_lista": true,
+  "note_chars": 4118,
+  "lines": [
+    {
+      "qty": 1,
+      "name": "Diseño"
+    },
+    {
+      "qty": 13,
+      "name": "Uniforme de Fútbol"
+    }
+  ],
+  "spreadsheet_id": 75,
+  "spreadsheet_url": "https://testlifesoluciones.odoo.com/odoo/sales/2646/sale-order-spreadsheet/75",
+  "filled": 13,
+  "mode": "native_aprobacion_cf_hm",
+  "people_cf": 13,
+  "talla_sample": "Tallas: S",
+  "nombre_sample": "M.L PiNillo",
+  "payload_validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "grave": false
+  }
+}

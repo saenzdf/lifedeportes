@@ -1,0 +1,14 @@
+{
+  "approval_requested": {
+    "task_id": 1623,
+    "attachment_id": null,
+    "event": "approval_requested",
+    "db": "life-soluciones-test-saas19-0401"
+  },
+  "pdf_attached": {
+    "task_id": 1623,
+    "attachment_id": 21683,
+    "event": "pdf_attached",
+    "db": "life-soluciones-test-saas19-0401"
+  }
+}

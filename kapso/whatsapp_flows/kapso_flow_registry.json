@@ -1,0 +1,29 @@
+{
+  "phone_number_id": "1081649091701994",
+  "whatsapp_business_account_id": "1935759060383719",
+  "flows_encryption_configured": true,
+  "note": "Flows creados como draft. JSON validado sin errores (v7.3, labels <=20 chars). Encryption configurada (2026-04-21). Publicación bloqueada por 'Integrity requirements not met' (#139000) a nivel Meta WABA; revisar Business Verification, display name status y asignación System User segun kapso/META_FLOWS_PUBLISH_BLOCKED.md.",
+  "flows": {
+    "quote_intake": {
+      "kapso_flow_id": "dab204cd-5b66-4c3c-9e55-7cee3baf2119",
+      "meta_flow_id": "2155167821968779",
+      "name": "LD Cotizacion Inicial v1",
+      "local_json": "quote_intake_v1.json",
+      "status": "draft"
+    },
+    "payment_ack": {
+      "kapso_flow_id": "a15f28c3-dae7-4857-9c92-8b9635053edf",
+      "meta_flow_id": "1664953277874860",
+      "name": "LD Payment Ack v1",
+      "local_json": "payment_ack_v1.json",
+      "status": "draft"
+    },
+    "order_details": {
+      "kapso_flow_id": "1477ca63-048b-4757-a011-9a45166c75da",
+      "meta_flow_id": "814522331272060",
+      "name": "LD Order Details v1",
+      "local_json": "order_details_v1.json",
+      "status": "draft"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "name": "lifedeportes_router_v2",
+  "description": "Router maestro multi-intent para Life Deportes con contexto tenant y guardas de seguridad.",
+  "nodes": [
+    {
+      "id": "start",
+      "type": "trigger_whatsapp_inbound",
+      "config": {
+        "event": "inbound_message"
+      }
+    },
+    {
+      "id": "normalize_input_001",
+      "type": "function",
+      "config": {
+        "name": "normalize-input"
+      }
+    },
+    {
+      "id": "tenant_context_resolver_001",
+      "type": "function",
+      "config": {
+        "name": "resolve-tenant-context"
+      }
+    },
+    {
+      "id": "user_eligibility_guard_001",
+      "type": "function",
+      "config": {
+        "name": "validate-user-eligibility"
+      }
+    },
+    {
+      "id": "security_policy_guard_001",
+      "type": "function",
+      "config": {
+        "name": "policy-guard-input"
+      }
+    },
+    {
+      "id": "intent_router_001",
+      "type": "agent",
+      "config": {
+        "system_prompt_ref": "prompts/sales_agent_v2.md",
+        "outputs": [
+          "vars.intent.type",
+          "vars.intent.confidence"
+        ]
+      }
+    },
+    {
+      "id": "intent_switch_001",
+      "type": "decide",
+      "config": {
+        "conditions": [
+          { "label": "sales_assist", "expression": "vars.intent.type == 'sales_assist'" },
+          { "label": "create_order_text", "expression": "vars.intent.type == 'create_order_text'" },
+          { "label": "create_order_audio", "expression": "vars.intent.type == 'create_order_audio'" },
+          { "label": "record_purchase_from_receipt", "expression": "vars.intent.type == 'record_purchase_from_receipt'" },
+          { "label": "handoff_human", "expression": "vars.intent.type == 'handoff_human'" }
+        ]
+      }
+    },
+    {
+      "id": "run_sales_assist_001",
+      "type": "function",
+      "config": { "name": "run-workflow-sales-assist-v2" }
+    },
+    {
+      "id": "run_create_order_text_001",
+      "type": "function",
+      "config": { "name": "run-workflow-create-order-text-v2" }
+    },
+    {
+      "id": "run_create_order_audio_001",
+      "type": "function",
+      "config": { "name": "run-workflow-create-order-audio-v2" }
+    },
+    {
+      "id": "run_record_purchase_receipt_001",
+      "type": "function",
+      "config": { "name": "run-workflow-record-purchase-receipt-v2" }
+    },
+    {
+      "id": "run_handoff_human_001",
+      "type": "function",
+      "config": { "name": "run-workflow-handoff-human-v2" }
+    },
+    {
+      "id": "send_reply_001",
+      "type": "whatsapp_send_message",
+      "config": {
+        "text": "vars.reply_text"
+      }
+    }
+  ],
+  "edges": [
+    { "source": "start", "target": "normalize_input_001" },
+    { "source": "normalize_input_001", "target": "tenant_context_resolver_001" },
+    { "source": "tenant_context_resolver_001", "target": "user_eligibility_guard_001" },
+    { "source": "user_eligibility_guard_001", "target": "security_policy_guard_001" },
+    { "source": "security_policy_guard_001", "target": "intent_router_001" },
+    { "source": "intent_router_001", "target": "intent_switch_001" },
+    { "source": "intent_switch_001", "target": "run_sales_assist_001", "label": "sales_assist" },
+    { "source": "intent_switch_001", "target": "run_create_order_text_001", "label": "create_order_text" },
+    { "source": "intent_switch_001", "target": "run_create_order_audio_001", "label": "create_order_audio" },
+    { "source": "intent_switch_001", "target": "run_record_purchase_receipt_001", "label": "record_purchase_from_receipt" },
+    { "source": "intent_switch_001", "target": "run_handoff_human_001", "label": "handoff_human" },
+    { "source": "run_sales_assist_001", "target": "send_reply_001" },
+    { "source": "run_create_order_text_001", "target": "send_reply_001" },
+    { "source": "run_create_order_audio_001", "target": "send_reply_001" },
+    { "source": "run_record_purchase_receipt_001", "target": "send_reply_001" },
+    { "source": "run_handoff_human_001", "target": "send_reply_001" }
+  ]
+}

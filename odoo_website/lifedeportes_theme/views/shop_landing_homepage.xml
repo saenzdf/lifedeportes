@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Landing de tienda Odoo (life-soluciones.odoo.com).
+        Intención SEO: catálogo / compra — no compite con lifedeportes.com (marketing).
+        Publicar vía scripts/configure_odoo_shop_seo.py
+    -->
+    <template id="shop_landing_homepage" name="Life Deportes Shop Landing">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure ld-shop-landing">
+                <section class="ld-shop-hero">
+                    <div class="container ld-shop-hero-inner">
+                        <span class="ld-shop-badge">Tienda oficial Life Deportes</span>
+                        <h1>Catálogo de uniformes deportivos personalizados</h1>
+                        <p class="ld-shop-lead">
+                            Configura tu producto, elige variantes y cotiza en línea.
+                            Fútbol, baloncesto, voleibol, sudaderas y complementos.
+                            Pedido mínimo 6 unidades por diseño.
+                        </p>
+                        <div class="ld-shop-actions">
+                            <a href="/shop" class="btn btn-primary ld-shop-btn-primary">Ver catálogo completo</a>
+                            <a href="https://wa.me/573103362484?text=Hola%2C%20quiero%20cotizar%20uniformes%20de%20"
+                               class="btn btn-outline-light ld-shop-btn-outline" target="_blank" rel="noopener">
+                                Cotizar por WhatsApp
+                            </a>
+                        </div>
+                        <p class="ld-shop-note">
+                            ¿Buscas inspiración de diseños?
+                            <a href="https://lifedeportes.com/galeria.html" target="_blank" rel="noopener">
+                                Ver galería en lifedeportes.com
+                            </a>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="ld-shop-featured">
+                    <div class="container">
+                        <h2>Productos destacados</h2>
+                        <p class="ld-shop-sub">Los más solicitados por equipos en Colombia</p>
+                        <div class="ld-shop-grid" data-ld-featured-products="1"/>
+                    </div>
+                </section>
+
+                <section class="ld-shop-trust">
+                    <div class="container ld-shop-trust-grid">
+                        <div><strong>+20 años</strong><span>Fabricación en Bogotá</span></div>
+                        <div><strong>6 uds.</strong><span>Pedido mínimo por diseño</span></div>
+                        <div><strong>15 días</strong><span>Fabricación tras aprobación</span></div>
+                        <div><strong>Envío</strong><span>A toda Colombia</span></div>
+                    </div>
+                </section>
+
+                <section class="ld-shop-cta">
+                    <div class="container text-center">
+                        <h2>¿Listo para armar tu pedido?</h2>
+                        <p>Entra al catálogo, configura tu uniforme y continúa con la cotización.</p>
+                        <a href="/shop" class="btn btn-primary ld-shop-btn-primary">Ir al catálogo</a>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

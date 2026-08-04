@@ -1,0 +1,13 @@
+STORE             /Users/diego/.wacli
+LOCKED            false
+LOCK_OWNER_PID    69045
+AUTHENTICATED     true
+LINKED_JID        3000000047@s.whatsapp.net
+CONNECTED         false
+CONNECTION_STATE  disconnected
+FTS5              true
+MESSAGES          9572
+CHATS             613
+CONTACTS          663
+GROUPS            74
+LAST_SYNC         2026-07-17T00:50:16Z

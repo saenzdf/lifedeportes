@@ -1,0 +1,11 @@
+{
+  "name": "retomar_pedido_v2",
+  "language": "es",
+  "category": "UTILITY",
+  "components": [
+    {
+      "type": "BODY",
+      "text": "Hola, te escribimos para confirmar o retomar su pedido."
+    }
+  ]
+}

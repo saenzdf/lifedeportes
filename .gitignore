@@ -1,0 +1,29 @@
+# Environment and secrets
+.env
+.env.local
+.envrc
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# IDEs & System
+.DS_Store
+.antigravity/
+.vscode/
+.idea/
+
+# Sample data & test files
+*.xlsx
+*.jpg
+*.jpeg
+*.png
+*.dat
+*.zip
+*.bak
+
+# Memory & logs
+memory/*.json
+kapso/learning/out/
