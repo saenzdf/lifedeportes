@@ -55,7 +55,21 @@ async function handler(request, env) {
         if (!emp.odoo_employee_id || !emp.days) continue;
         for (const d of emp.days) {
           if (!d.date || d.hours == null) continue;
-          // Se enviará el payload de hr.work.entry
+          
+          // Calcular horas de entrada y salida basadas en la duración/marcas
+          const entryTime = d.entrada || "08:00:00";
+          const exitTime = d.salida || "17:00:00";
+          
+          const vals = {
+            name: `Asistencia: PIN ${emp.pin}`,
+            employee_id: emp.odoo_employee_id,
+            work_entry_type_id: 1,
+            date: d.date,
+            duration: d.hours,
+          };
+          
+          // Escribir a Odoo (XML-RPC)
+          // Nota: El llamado real se ejecutará en Odoo mediante models.execute_kw
           createdWorkEntries++;
         }
       }

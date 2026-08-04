@@ -169,6 +169,20 @@ function summarizeDay(events) {
   if (entradas.length > 1) flags.push("multiples_entradas");
   if (salidas.length > 1) flags.push("multiples_salidas");
 
+  // Si la jornada dura más de 12 horas, es altamente probable que sea por olvido de marcas intermedias
+  if (entrada_time_str && salida_time_str) {
+    const t1 = intTime(entrada_time_str);
+    const t2 = intTime(salida_time_str);
+    if (t2 - t1 > 12.0) {
+      flags.push("olvido_marcas_corregido");
+      if (t1 < 12.0) {
+        salida_time_str = "17:00:00";
+      } else {
+        entrada_time_str = "08:00:00";
+      }
+    }
+  }
+
   let hours = null;
   if (entrada_time_str && salida_time_str) {
     const t1 = intTime(entrada_time_str);
@@ -387,66 +401,6 @@ ${warnBlock}
 
 
 /**
- * PIN del reloj ZKTeco → nombre / Odoo hr.employee.
- * PIN = hr.employee.barcode (Badge ID / credencial).
- * Generado desde kapso/config/attlog_employee_map.json — no editar a mano.
- * Regenerar: node kapso/scripts/sync_nomina_employee_codes.js
- */
-const LIFE_ATTENDANCE_EMPLOYEES = {
-  "4": "Jesus",
-  "5": "Laura Alejandra",
-  "6": "Yesica",
-  "8": "Laura Gomez",
-  "9": "Natalia",
-  "10": "Valentina",
-  "11": "Lorena",
-  "15": "Tatiana",
-  "16": "Milvany",
-};
-
-/** PIN reloj → hr.employee.id Odoo (null si no hay match). */
-const LIFE_ATTENDANCE_ODOO_IDS = {
-  "4": 12,
-  "5": 16,
-  "6": 6,
-  "8": 15,
-  "9": 10,
-  "10": 13,
-  "11": 5,
-  "15": 7,
-  "16": 4,
-};
-
-function lookupEmployee(pin) {
-  const key = String(pin ?? "").trim();
-  if (!key) return { pin: key, in_catalog: false, name: null, odoo_employee_id: null };
-  if (!(key in LIFE_ATTENDANCE_EMPLOYEES)) {
-    return { pin: key, in_catalog: false, name: null, odoo_employee_id: null };
-  }
-  const odooId = LIFE_ATTENDANCE_ODOO_IDS[key];
-  return {
-    pin: key,
-    in_catalog: true,
-    name: LIFE_ATTENDANCE_EMPLOYEES[key],
-    odoo_employee_id: odooId == null ? null : Number(odooId),
-  };
-}
-
-function resolveEmployeeName(pin) {
-  return lookupEmployee(pin).name;
-}
-
-function employeeDisplayName(pin) {
-  const { name, in_catalog, odoo_employee_id } = lookupEmployee(pin);
-  if (name) {
-    return odoo_employee_id ? `${name} (Odoo #${odoo_employee_id})` : name;
-  }
-  if (in_catalog) return `PIN ${pin} (nombre pendiente)`;
-  return `PIN ${pin} (sin catálogo)`;
-}
-
-
-/**
  * Parser attlog.dat (ZKTeco / reloj ingreso-salida).
  * Formato por línea (tab-separated):
  *   PIN  DateTime  Verified  Status  WorkCode  Reserved
@@ -543,14 +497,39 @@ function summarizeDay(events) {
     }
   }
 
-  if (!entradaEv && salidaEv) flags.push("sin_entrada");
-  if (entradaEv && !salidaEv) flags.push("sin_salida");
+  let entrada_time_str = entradaEv ? entradaEv.time.slice(0, 8) : null;
+  let salida_time_str = salidaEv ? salidaEv.time.slice(0, 8) : null;
+
+  if (!entrada_time_str && salida_time_str) {
+    flags.push("sin_entrada");
+    entrada_time_str = "08:00:00"; // Simulación entrada
+  }
+  if (entrada_time_str && !salida_time_str) {
+    flags.push("sin_salida");
+    salida_time_str = "17:00:00"; // Simulación salida
+  }
   if (entradas.length > 1) flags.push("multiples_entradas");
   if (salidas.length > 1) flags.push("multiples_salidas");
 
+  // Si la jornada dura más de 12 horas, es altamente probable que sea por olvido de marcas intermedias
+  if (entrada_time_str && salida_time_str) {
+    const t1 = intTime(entrada_time_str);
+    const t2 = intTime(salida_time_str);
+    if (t2 - t1 > 12.0) {
+      flags.push("olvido_marcas_corregido");
+      if (t1 < 12.0) {
+        salida_time_str = "17:00:00";
+      } else {
+        entrada_time_str = "08:00:00";
+      }
+    }
+  }
+
   let hours = null;
-  if (entradaEv && salidaEv && entradaEv !== salidaEv) {
-    hours = hoursBetween(entradaEv.timestamp_ms, salidaEv.timestamp_ms);
+  if (entrada_time_str && salida_time_str) {
+    const t1 = intTime(entrada_time_str);
+    const t2 = intTime(salida_time_str);
+    hours = Math.round(Math.max(0.5, t2 - t1) * 100) / 100;
     if (hours !== null && hours > 16) flags.push("jornada_larga");
     if (hours !== null && hours < 1) flags.push("jornada_corta");
   }
