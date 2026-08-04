@@ -1,8 +1,0 @@
-Odoo target: https://testlifesoluciones.odoo.com testlifesoluciones
-
-=== case 6 ===
-{
-  "ok": false
-}
-
-SUMMARY { passed: 0, failed: 1 }

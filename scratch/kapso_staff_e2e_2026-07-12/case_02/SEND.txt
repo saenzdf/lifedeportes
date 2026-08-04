@@ -1,9 +1,0 @@
-Pedido nuevo E2E canary.
-Cliente: E2E Test 2 — JORGE
-Adjunto Excel/fotos de referencia. Sube borrador en Odoo test.
-
-Files:
-UNIFORMES RODEO JORGE DUEÑOS DEL BALON.xlsx
-DUEÑOS DEL BALON DISEÑO.jpeg
-DUEÑOS DEL BALON.jpeg
-DUEÑOS DEL BALONN.jpeg
