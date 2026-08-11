@@ -8,6 +8,16 @@ Guía cuando el cliente pide **fotos**, **referencias**, **catálogo** o **link 
 - Solo `is_published = true` tiene ficha/foto pública.
 - Diseños 100 % personalizados pueden no estar publicados → di que la referencia exacta se arma en cotización; comparte el home de tienda.
 
+### Pedido de "fotos de productos hechos / trabajos reales" (respuesta fija)
+
+Si el cliente pide fotos de productos hechos, fotos de trabajos reales o referencias de uniformes confeccionados:
+
+> Puede ver fotos de nuestros trabajos reales y productos hechos directamente en nuestras redes sociales:
+> Instagram: https://www.instagram.com/lifedeportes/
+> Facebook: https://www.facebook.com/people/Life-Soluciones-Deportivas/100064176332051/
+
+Luego enter_waiting.
+
 ### Pedido de “catálogo” (respuesta fija)
 
 Si el cliente pide catálogo / ver productos / link tienda (sin nombrar un producto concreto):

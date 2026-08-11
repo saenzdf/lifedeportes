@@ -106,6 +106,7 @@ async function conversationOutside24h(env, phoneDigits) {
   );
   const url = new URL("https://api.kapso.ai/platform/v1/whatsapp/conversations");
   url.searchParams.set("phone_number_id", phoneNumberId);
+  url.searchParams.set("phone_number", phoneDigits);
   url.searchParams.set("phone", phoneDigits);
   url.searchParams.set("per_page", "5");
   const resp = await fetch(url.toString(), {

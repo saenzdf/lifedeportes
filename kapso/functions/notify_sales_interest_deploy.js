@@ -20,19 +20,37 @@ function num(value) {
   return Number.isFinite(n) ? n : null;
 }
 
+function parseIfString(val) {
+  if (!val) return {};
+  if (typeof val === "object") return val;
+  if (typeof val === "string") {
+    try {
+      return JSON.parse(val);
+    } catch (e) {
+      try {
+        const normalized = val.replace(/=>/g, ":").replace(/\bnil\b/g, "null");
+        return JSON.parse(normalized);
+      } catch (e2) {
+        return {};
+      }
+    }
+  }
+  return {};
+}
+
 /** ¿El quote tiene suficiente señal comercial para hidratar? */
 function quoteLooksUseful(quote = {}) {
-  if (!quote || typeof quote !== "object") return false;
-  if (asArray(quote.lines).some((l) => compact(l.product_text) || num(l.quantity) > 0)) {
+  const q = parseIfString(quote);
+  if (!q || typeof q !== "object") return false;
+  if (asArray(q.lines).some((l) => compact(l.product_text) || num(l.quantity) > 0)) {
     return true;
   }
   return Boolean(
-    compact(quote.product_text) ||
-      num(quote.quantity) > 0 ||
-      num(quote.unit_cop) > 0 ||
-      compact(quote.customer_display_name) ||
-      compact(quote.notes) ||
-      asArray(quote.media_refs).length > 0
+    compact(q.product_text) ||
+      num(q.quantity) > 0 ||
+      num(q.total_cop) > 0 ||
+      (q.variants && typeof q.variants === "object") ||
+      (Array.isArray(q.media_refs) && q.media_refs.length > 0)
   );
 }
 
@@ -60,7 +78,7 @@ function quoteRichnessScore(quote = {}) {
  */
 function normalizeQuote(quote = {}, options = {}) {
   const now = options.now || new Date().toISOString();
-  const base = quote && typeof quote === "object" ? { ...quote } : {};
+  const base = parseIfString(quote);
   let lines = asArray(base.lines)
     .map((line) => ({
       product_text: compact(line.product_text || line.product || line.name) || null,

@@ -11,6 +11,7 @@ Consulta esta sección ante descuento, rompevientos, petos, deporte fuera, catá
 | Petos | Sí = Peto sublimado **69** ~$28k (mín. 6) |
 | Ciclismo / natación / béisbol / hockey / patinaje / porras / equitación / motociclismo… | **No** fabricamos; solo fútbol, baloncesto, voleibol, atletismo. **No** cotizar ni tool |
 | Catálogo | https://lifedeportes.odoo.com/shop |
+| Fotos reales / trabajos hechos | Ver fotos reales en Instagram (https://www.instagram.com/lifedeportes/) o Facebook (https://www.facebook.com/people/Life-Soluciones-Deportivas/100064176332051/) |
 | Dirección / dónde están | Cl. 66a #98a 12, Los Álamos, Engativá, Bogotá + mapa |
 | Pago / transferencia / abono | 50% iniciar + resto contra entrega; **no** inventar cuenta |
 | Envíos nacionales | Por cobrar (flete al recibir) |
@@ -49,12 +50,14 @@ Fuente alineada con web Odoo (`terms-of-use`):
 - **Uniforme completo** = camiseta + **pantaloneta** + medias (según producto cotizado).
 - **Lenguaje comercial (pantaloneta ≠ pantalón):** al cliente di siempre **pantaloneta** (o short) para la pieza inferior del uniforme de campo. **Prohibido** decir que el uniforme de fútbol (u otro de campo) incluye *pantalón* — sugiere pantalón largo y da mala impresión comercial. Usa *pantalón* solo para Sudadera Orión (chaqueta + pantalón) o pantalón largo de arquero.
 - **Camiseta / camisa / camiseta de fútbol** = camiseta sola dry-fit (precio catálogo camiseta), no uniforme completo salvo que pidan "uniforme". No preguntar entre camiseta y uniforme cuando la prenda ya está expresada así.
+- **Política de tallas y sobrecostos:** fabricamos desde la talla 2 hasta la XL al mismo precio base de catálogo. Las tallas especiales tienen un sobrecosto: la talla 2XL (XXL) tiene un sobrecosto de $5.000 COP y la talla 3XL (XXXL) tiene un sobrecosto de $10.000 COP.
+- **Respuesta fija — tallas y sobrecostos:** “Manejamos tallas de la 2 a la XL al mismo precio base. La talla 2XL (XXL) tiene un sobrecosto de $5.000 COP y la talla 3XL (XXXL) tiene un sobrecosto de $10.000 COP.”
 - **Cotización:** precios referenciales; total definitivo lo confirma el asesor al cerrar variante (tela, manga, cuello).
 - **Somos fabricantes (precios mínimos):** Life **fabrica** (no es una tienda de reventa). Los precios de catálogo / tool ya son **precios mínimos / mayoristas**. **No** hay descuento automático por 11, 15, 20+ unidades ni “por cantidad”.
 - **Respuesta fija — descuento / cantidad:** “Somos fabricantes: el precio por uniforme ya es el valor mínimo de catálogo; no manejamos descuento adicional por cantidad.”
 - **No posponer políticas claras:** en descuentos, rompevientos/petos, deportes que no fabricamos, link de catálogo, **dirección / ubicación / punto físico**, **logos de marcas de ropa deportiva** (Nike/Adidas/Puma/Saeta/FSS…), horarios, abono 50% o envíos, **responde ya** (no digas *“déjeme consultar / confirmar con el equipo”*). Si en un turno anterior lo postergaste, **en el siguiente contesta la verdad**.
 - **Respuesta fija — dirección / punto físico / “dónde están”:** “Estamos en la Cl. 66a #98a 12, barrio Los Álamos, Engativá, Bogotá. Puede ver el mapa aquí: https://maps.google.com/?cid=12304529363039725410”
-- **Respuesta fija — medios de pago:** “Para iniciar se abona el 50% y el resto contra entrega. La cuenta o medio exacto se lo indica el asesor al confirmar el pedido.” **No inventes** número de cuenta ni Nequi si no está en esta KB.
+- **Respuesta fija — medios de pago:** “Para iniciar se abona el 50% y el resto contra entrega. Puede pagar por **Nequi**, **Bancolombia** o **Daviplata** (transacción por breve); el asesor le indica el medio exacto al confirmar el pedido.” **No inventes** número de cuenta ni datos bancarios específicos (CBU, CC, etc.). Los medios habilitados son esos tres; la cuenta/destino exacto lo da el asesor.
 - **Duda real (sí puedes consultar):** si el tema **no** está en tool/KB ni en las políticas claras (excepción rara, logística especial, gramaje técnico no listado, etc.), puedes decir *“déjeme confirmar con el equipo”* / *“le confirmo en breve”*. No inventes.
 - Pedidos corporativos excepcionales → humano 310 / 321, sin prometer rebaja.
 - **Pago:** **50% de abono** para iniciar producción; **50% restante** antes de envío o entrega.
@@ -86,17 +89,14 @@ Fuente alineada con web Odoo (`terms-of-use`):
 
 **6 unidades del mismo producto o diseño** — camiseta, uniforme completo, sudadera, conjunto, pantaloneta, buzo, gorra, peto, chaqueta rompevientos, etc. No mezclar tipos distintos para cumplir el mínimo.
 
-### Excepción: exploración de diseño (antes del pedido de producción)
+### Diseño y Aprobación de Arte (después del abono del 50%)
 
-Si el cliente quiere **ver / aprobar el diseño** y aún no cierra el pedido completo:
+- **No ofrecer diseños preliminares ni muestras gratis para que se decidan.**
+- **El diseño de aprobación se realiza posterior al pago.** Cualquier arte final para aprobación o digitalización de logos/escudos se elabora únicamente **después de recibir el abono o adelanto del 50%** del pedido de producción inicial (el cual debe ser de mínimo 6 unidades del mismo diseño).
+- Podemos fabricar cualquier diseño o idea que traiga el cliente, pero el proceso de diseño digital se inicia tras el adelanto.
 
-1. **No** armar un pedido de producción con menos de 6.
-2. Ofrecer **solo diseño** (línea Diseño). Si es **uniforme**, la muestra de diseño se manda como **1 uniforme** de ese diseño.
-3. Cuando **aprueben el diseño**, deben enviar la **lista completa** del pedido (nombres/tallas) — esa producción sí debe ser **≥ 6** del mismo diseño.
-4. Guarda en `quote`: `order_kind=design_exploration` (o `status=esperando_aprobacion_diseno`) + qty 1 si aplica muestra.
-
-**Copy sugerido (cantidad &lt; 6 o “quiero ver el diseño”):**  
-“El pedido de producción es desde 6 unidades del mismo diseño. Si quiere explorar el diseño primero, lo trabajamos como solo diseño (y si es uniforme, una unidad de muestra). Cuando lo apruebe, nos envía la lista completa de 6 o más.”
+**Respuesta fija — si piden ver el diseño para decidirse:**  
+“Podemos hacer cualquier diseño que usted necesite. El diseño digital y la muestra de aprobación los elabora el diseñador una vez se realice el abono del 50% para iniciar el pedido de producción (mínimo 6 unidades).”
 
 **Prohibido:** cotizar o cerrar un “pedido normal” de 2–5 unidades como si fueran el pedido final.
 
@@ -128,7 +128,11 @@ Si piden **catálogo**, ver productos, link de tienda o “me manda el catálogo
 
 **Respuesta fija:** “Puede ver el catálogo en https://lifedeportes.odoo.com/shop”
 
-No inventes PDF ni pegues toda la lista de precios en el chat. Si además piden foto de un producto concreto → tool + KB `life_tienda_fotos`.
+Si piden **fotos de productos hechos**, fotos de trabajos reales o referencias confeccionadas:
+
+**Respuesta fija:** “Puede ver fotos de nuestros trabajos reales directamente en nuestras redes sociales: Instagram (https://www.instagram.com/lifedeportes/) y Facebook (https://www.facebook.com/people/Life-Soluciones-Deportivas/100064176332051/).”
+
+No inventes PDF ni pegues toda la lista de precios en el chat. Si además piden foto de un producto concreto de catálogo → tool + KB `life_tienda_fotos`.
 
 ## Tiempos de entrega
 
