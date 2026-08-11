@@ -20,19 +20,37 @@ function num(value) {
   return Number.isFinite(n) ? n : null;
 }
 
+function parseIfString(val) {
+  if (!val) return {};
+  if (typeof val === "object") return val;
+  if (typeof val === "string") {
+    try {
+      return JSON.parse(val);
+    } catch (e) {
+      try {
+        const normalized = val.replace(/=>/g, ":").replace(/\bnil\b/g, "null");
+        return JSON.parse(normalized);
+      } catch (e2) {
+        return {};
+      }
+    }
+  }
+  return {};
+}
+
 /** ¿El quote tiene suficiente señal comercial para hidratar? */
 function quoteLooksUseful(quote = {}) {
-  if (!quote || typeof quote !== "object") return false;
-  if (asArray(quote.lines).some((l) => compact(l.product_text) || num(l.quantity) > 0)) {
+  const q = parseIfString(quote);
+  if (!q || typeof q !== "object") return false;
+  if (asArray(q.lines).some((l) => compact(l.product_text) || num(l.quantity) > 0)) {
     return true;
   }
   return Boolean(
-    compact(quote.product_text) ||
-      num(quote.quantity) > 0 ||
-      num(quote.unit_cop) > 0 ||
-      compact(quote.customer_display_name) ||
-      compact(quote.notes) ||
-      asArray(quote.media_refs).length > 0
+    compact(q.product_text) ||
+      num(q.quantity) > 0 ||
+      num(q.total_cop) > 0 ||
+      (q.variants && typeof q.variants === "object") ||
+      (Array.isArray(q.media_refs) && q.media_refs.length > 0)
   );
 }
 
@@ -60,7 +78,7 @@ function quoteRichnessScore(quote = {}) {
  */
 function normalizeQuote(quote = {}, options = {}) {
   const now = options.now || new Date().toISOString();
-  const base = quote && typeof quote === "object" ? { ...quote } : {};
+  const base = parseIfString(quote);
   let lines = asArray(base.lines)
     .map((line) => ({
       product_text: compact(line.product_text || line.product || line.name) || null,
@@ -1149,22 +1167,6 @@ async function seedCrmOpportunityFromQuote(env, {
     const stageId = resolveCrmStageId(env, q, status);
     // Nombre CRM = cliente/equipo plano (sin «Oportunidad de»).
     const oppName = teamName;
-    const staffUserId = vars.user?.odoo_user_id || vars.user?.user_id || (vars.user?.odoo_project_id === 8 ? 8 : vars.user?.odoo_project_id === 9 ? 9 : undefined);
-
-    // Compute CRM probability (95-100% close/pay intent, 75-85% high intent, 50% evaluating)
-    const textsForProb = [
-      vars?.last_user_input,
-      vars?.staff?.last_inbound_text,
-      customerPhone,
-      description
-    ].filter(Boolean).join("\n").toLowerCase();
-    let calculatedProb = 75; // Default high interest
-    if (/\b(d[oó]nde\s+pago|d[aá]tos?\s+de\s+pago|n[uú]mero\s+de\s+cuenta|nequi|bancolombia|hacer\s+el\s+abono|para\s+consignar|c[oó]mo\s+cierro|pagar|cu[eé]nta\s+bancaria)\b/i.test(textsForProb)) {
-      calculatedProb = 98;
-    } else if (/\b(lo\b.*\bpensar|preguntar\b.*\bequipo|preguntar\b.*\bgrupo|esperando\b.*\bconfirmaci[oó]n|ma[nñ]ana\b.*\baviso|consultando)\b/i.test(textsForProb)) {
-      calculatedProb = 50;
-    }
-
     const vals = {
       name: oppName,
       partner_id: partnerId,
@@ -1173,9 +1175,7 @@ async function seedCrmOpportunityFromQuote(env, {
       description,
       type: "opportunity",
       date_deadline: deadline,
-      probability: calculatedProb,
     };
-    if (staffUserId) vals.user_id = staffUserId;
     if (expected) vals.expected_revenue = expected;
 
     // Create always lands on resolved stage. Updates only move stage when

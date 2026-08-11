@@ -77,7 +77,7 @@ async function kapsoFetch(pathname, opts = {}) {
 
 async function listDiegoConversations() {
   const { ok, json } = await kapsoFetch(
-    `/platform/v1/whatsapp/conversations?q=${encodeURIComponent(TESTER_WA)}&limit=20`
+    `/platform/v1/whatsapp/conversations?phone_number=${encodeURIComponent(TESTER_WA)}&limit=20`
   );
   if (!ok) return [];
   const data = json?.data;

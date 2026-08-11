@@ -282,11 +282,6 @@
       "kapso_function_id": "972d60bb-ff84-40fc-ba3d-cdd6104aa143",
       "local_path": "kapso/functions/route_customer_burst_resume.js"
     },
-    "route_customer_sales_whitelist": {
-      "kapso_function_name": "route-customer-sales-whitelist",
-      "kapso_function_id": "f95c1cb4-56cb-4875-b443-5b533a84fc3c",
-      "local_path": "kapso/functions/route_customer_sales_whitelist.js"
-    },
     "route_staff_burst_resume": {
       "kapso_function_name": "route-staff-burst-resume",
       "kapso_function_id": "c33b936f-437b-40e0-925b-960c8efd86ca",

@@ -110,9 +110,10 @@ export async function hydrateCustomerSessionFromKapso(env, phone, options = {}) 
     // Kapso list often ignores/weakly applies `phone`; always filter client-side
     // (cross-customer quote bleed: Rinfor←Isbe←Así Es La Vida, 2026-07-18).
     const conversationsPayload = await kapsoGet(cfg, "/platform/v1/whatsapp/conversations", {
+      phone_number: phoneDigits,
       phone: phoneDigits,
       q: phoneDigits,
-      per_page: 20,
+      per_page: 50,
     });
     const conversationsRaw = unwrapList(conversationsPayload);
     const conversations = conversationsRaw.filter((c) =>

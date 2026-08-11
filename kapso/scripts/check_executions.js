@@ -37,7 +37,7 @@ async function main() {
   console.log("Using API key (prefix):", key.slice(0, 5));
   
   // 1. Get conversations
-  const convs = await kapsoFetch(`/platform/v1/whatsapp/conversations?q=${encodeURIComponent(TESTER_WA)}&limit=10`);
+  const convs = await kapsoFetch(`/platform/v1/whatsapp/conversations?phone_number=${encodeURIComponent(TESTER_WA)}&limit=10`);
   const data = convs.data || [];
   const ids = data.map(c => c.id);
   console.log("Diego Conversation IDs:", ids);
