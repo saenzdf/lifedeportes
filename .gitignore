@@ -2,6 +2,7 @@
 .env
 .env.local
 .envrc
+galvanic-*.json
 
 # Python
 .venv/
@@ -17,6 +18,18 @@ __pycache__/
 
 # Developer scratchpads & local tests
 scratch/
+Pedidos/
+_from_parent/
+laura_media/
+maricela_media_today/
+poker_media/
+repo_dir/
+repo_temp/
+mcp-odoo-main/
+bin/
+stores/
+*.ogg
+*.zip
 
 # Sample data & test files
 *.xlsx
@@ -24,7 +37,6 @@ scratch/
 *.jpeg
 *.png
 *.dat
-*.zip
 *.bak
 
 # Memory & logs
