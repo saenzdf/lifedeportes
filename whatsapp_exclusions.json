@@ -1,0 +1,11 @@
+{
+  "version": "v1-2026-08-04",
+  "ignored_numbers": [
+    "573000000000"
+  ],
+  "ignored_groups": [],
+  "rules": {
+    "ignore_personal_chats": true,
+    "ignore_family_chats": true
+  }
+}
