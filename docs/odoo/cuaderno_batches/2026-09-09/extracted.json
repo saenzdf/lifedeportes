@@ -3389,7 +3389,7 @@
       "case": "packing"
     },
     {
-      "raw_name": "Abello Yesica",
+      "raw_name": "Yesica Abello",
       "so_number": 3144,
       "address": null,
       "carrier_raw": null,
@@ -3400,7 +3400,8 @@
       "needs_review": false,
       "page_type": "packing",
       "page_id": "p08_160438",
-      "case": "packing"
+      "case": "packing",
+      "name_fixed_from": "Abello Yesica"
     },
     {
       "raw_name": "Mateo Diamante",
@@ -3487,7 +3488,7 @@
       "case": "packing"
     },
     {
-      "raw_name": "Luisa peñaloza",
+      "raw_name": "Luisa Peñaloza",
       "so_number": 3146,
       "address": null,
       "carrier_raw": null,
@@ -3498,7 +3499,8 @@
       "needs_review": false,
       "page_type": "packing",
       "page_id": "p08_160438",
-      "case": "packing"
+      "case": "packing",
+      "name_fixed_from": "Luisa peñaloza"
     },
     {
       "raw_name": "Melisa Romero",
@@ -3543,7 +3545,7 @@
       "case": "packing"
     },
     {
-      "raw_name": "Laura San juan",
+      "raw_name": "Laura San Juan",
       "so_number": 3073,
       "address": null,
       "carrier_raw": null,
@@ -3554,7 +3556,8 @@
       "needs_review": false,
       "page_type": "packing",
       "page_id": "p08_160438",
-      "case": "packing"
+      "case": "packing",
+      "name_fixed_from": "Laura San juan"
     },
     {
       "raw_name": "La margarita - Jesus",
@@ -3613,7 +3616,7 @@
       "case": "packing"
     },
     {
-      "raw_name": "Fortaleza omar",
+      "raw_name": "Fortaleza Omar",
       "so_number": 3045,
       "address": null,
       "carrier_raw": null,
@@ -3624,7 +3627,8 @@
       "needs_review": false,
       "page_type": "packing",
       "page_id": "p09_160426",
-      "case": "packing"
+      "case": "packing",
+      "name_fixed_from": "Fortaleza omar"
     },
     {
       "raw_name": "Hector Morales",
@@ -3795,7 +3799,7 @@
       "case": "packing"
     },
     {
-      "raw_name": "Brayan ws",
+      "raw_name": "Brayan",
       "so_number": 3062,
       "address": null,
       "carrier_raw": null,
@@ -3806,7 +3810,8 @@
       "needs_review": false,
       "page_type": "packing",
       "page_id": "p09_160426",
-      "case": "packing"
+      "case": "packing",
+      "name_fixed_from": "Brayan ws"
     },
     {
       "raw_name": "Mao Pedido 2",
@@ -3985,9 +3990,10 @@
       "qty_note": null,
       "date": "03/09/25",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p01_160223",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Camilo Villadiego",
@@ -4024,9 +4030,10 @@
       "qty_note": null,
       "date": "04/09/25",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p01_160223",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Javier colegio",
@@ -4245,9 +4252,10 @@
       "qty_note": null,
       "date": "07/09/25",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p01_160223",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "duplicate_name_multi_addr"
     },
     {
       "raw_name": "Alejandro",
@@ -4258,9 +4266,10 @@
       "qty_note": null,
       "date": "07/09/25",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p01_160223",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Ramplita",
@@ -4310,9 +4319,10 @@
       "qty_note": null,
       "date": "20/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p02_160313",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Edwin escobar",
@@ -4557,9 +4567,10 @@
       "qty_note": null,
       "date": "24/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p02_160313",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Futbolístico club",
@@ -4583,9 +4594,10 @@
       "qty_note": null,
       "date": "24/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p02_160313",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "envia_inter_null_address"
     },
     {
       "raw_name": "Stefany",
@@ -4622,9 +4634,10 @@
       "qty_note": null,
       "date": "24/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p02_160313",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Hamilton Lopez",
@@ -4674,9 +4687,10 @@
       "qty_note": null,
       "date": "04/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p03_160341",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Angy Perez",
@@ -4713,9 +4727,10 @@
       "qty_note": null,
       "date": "04/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p03_160341",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Angel cupiño",
@@ -4895,9 +4910,10 @@
       "qty_note": "los dos pedidos / 10 polos",
       "date": "31/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p04_160229",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Maricela",
@@ -4960,9 +4976,10 @@
       "qty_note": null,
       "date": "01/09/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p04_160229",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Fenix Natagaima",
@@ -4999,9 +5016,10 @@
       "qty_note": null,
       "date": "01/09/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p04_160229",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "colombo argentina",
@@ -5090,9 +5108,10 @@
       "qty_note": null,
       "date": "02/09/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p04_160229",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Diaz granados",
@@ -5116,9 +5135,10 @@
       "qty_note": null,
       "date": "14/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p05_160320",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Juan Diego",
@@ -5350,9 +5370,10 @@
       "qty_note": null,
       "date": "19/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p05_160320",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Pedro rapimertar",
@@ -5714,9 +5735,10 @@
       "qty_note": null,
       "date": "27/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p06_160236",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Arelyn retorno",
@@ -5948,9 +5970,10 @@
       "qty_note": null,
       "date": "09/09/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p07_160143",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "William",
@@ -5961,9 +5984,10 @@
       "qty_note": null,
       "date": "31/07/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p10_160350",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Happy kids",
@@ -6195,9 +6219,10 @@
       "qty_note": null,
       "date": "03/08/26",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p10_160350",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "duplicate_name_multi_addr"
     },
     {
       "raw_name": "Yiduar",
@@ -6260,9 +6285,10 @@
       "qty_note": null,
       "date": "10/08/25",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p11_160335",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Juan Mendoza",
@@ -6364,9 +6390,10 @@
       "qty_note": null,
       "date": "11/08/25",
       "confidence": 0.85,
-      "needs_review": false,
+      "needs_review": true,
       "page_id": "p11_160335",
-      "case": "delivery"
+      "case": "delivery",
+      "review_reason": "ambiguous_name"
     },
     {
       "raw_name": "Manuel orozco",
@@ -6603,6 +6630,8 @@
     "packing": 42,
     "delivery": 195,
     "review": 8,
-    "packing_so_unique": 42
+    "packing_so_unique": 42,
+    "delivery_needs_review": 26,
+    "delivery_auto": 169
   }
 }

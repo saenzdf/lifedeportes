@@ -33,3 +33,11 @@
 
 - Extraction used transcriptions (no JPG on VM).
 - Apply script will dry-run against Odoo prod when credentials are available.
+
+## Post-review (agents)
+
+- Packing SO audit: all 42 in range; Empacado uses SO # (names optional).
+- Delivery carrier coverage: 195/195 valid.
+- Flagged ambiguous delivery names for `needs_review` (no auto-validate): **26**
+- Remaining auto-eligible deliveries: **169**
+- Packing name cleanups applied: Brayan, Yesica Abello, Laura San Juan, Fortaleza Omar, Luisa Peñaloza.
