@@ -263,6 +263,17 @@ print('crm:', json.dumps(ec.get('crm',{}), indent=2, ensure_ascii=False))
 "
 ```
 
+### Auditoría de calidad de respuestas (7 días)
+
+Clasifica chats cliente: bien / mal / sin responder / silencio correcto (Ads).
+
+```bash
+set -a; source .env; set +a
+node kapso/scripts/audit_customer_responses.js --hours 168 --pages 8
+```
+
+Rubrica: [`response_audit_rubric.md`](response_audit_rubric.md). El dump queda en `scratch/` (no versionar PII).
+
 ### Ver conversación de un teléfono
 
 ```bash
