@@ -102,7 +102,9 @@ Código: `resolveVariantAttr` en `kapso/functions/lib/product_match_engine.js` (
 ## Cantidad
 
 - Número + prenda: *"12 camisetas"*, *"20 uniformes"*
-- Campo + arquero: *"20 de campo y 2 arqueros"* → 20 línea jugador + 2 línea arquero (178)
+- Campo + arquero: *"20 de campo y 2 arqueros"*
+  - Si el arquero lleva **pantaloneta** (mismo diseño de los jugadores pero en diferente color): 20 línea jugador (template 115) + 2 línea arquero en pantaloneta (template 115, mismo precio base $50k / $53k si es manga larga).
+  - Si el arquero lleva **pantalón** (buzo manga larga acolchado + pantalón acolchado): 20 línea jugador (template 115) + 2 línea conjunto de arquero (template **178**, $70.000 c/u).
 - Docena = 12
 - &lt; 6 → no crear; informar mínimo
 
@@ -110,11 +112,12 @@ Código: `resolveVariantAttr` en `kapso/functions/lib/product_match_engine.js` (
 
 1. Ingresar **uniforme 115** cuando pidieron **camiseta** (usar 62).
 2. Preguntar camiseta vs uniforme cuando ya dijeron camiseta.
-3. Mezclar arquero en la misma línea/cantidad que jugadores sin línea aparte.
-4. Usar `product.template` id en `sale.order.line` (usar variante `product.product`).
-5. Omitir línea Diseño 504 a $0.
-6. Poner **fútbol (115)** cuando el deporte es **voleibol** (31).
-7. Línea con **licra** sobre template **115** — no existe; licra es atributo del uniforme de voleibol.
-8. Asignar **manga larga** en voleibol — no hay variante; solo Siza o China.
-9. Una sola línea genérica “uniforme” sin el `product.product` id de la variante correcta.
-10. Inventar precio $55.000 u otro sin variante Odoo que lo soporte (usar `list_price` de la variante).
+3. Asumir que el arquero con pantalón cuesta lo mismo que el uniforme de campo en pantaloneta (el conjunto con pantalón es template 178 a $70.000).
+4. Mezclar arquero en la misma línea/cantidad que jugadores sin línea aparte si son productos o variantes distintas.
+5. Usar `product.template` id en `sale.order.line` (usar variante `product.product`).
+6. Omitir línea Diseño 504 a $0.
+7. Poner **fútbol (115)** cuando el deporte es **voleibol** (31).
+8. Línea con **licra** sobre template **115** — no existe; licra es atributo del uniforme de voleibol.
+9. Asignar **manga larga** en voleibol — no hay variante; solo Siza o China.
+10. Una sola línea genérica “uniforme” sin el `product.product` id de la variante correcta.
+11. Inventar precio $55.000 u otro sin variante Odoo que lo soporte (usar `list_price` de la variante).
