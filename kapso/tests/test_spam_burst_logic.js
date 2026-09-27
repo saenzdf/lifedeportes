@@ -59,10 +59,10 @@ async function check(name, payload, expect) {
   }
 }
 
-const edges = ["user_input", "ignore", "timeout"];
+const edges = ["user_input", "ignore", "timeout", "end", "ads_greet"];
 
 await check(
-  "prefill-only → ignore",
+  "prefill-only → ads_greet",
   {
     available_edges: edges,
     system: { last_resume: { reason: "timeout" } },
@@ -71,11 +71,11 @@ await check(
       messages: [msg({ text: "Hola, quiero cotizar uniformes de" })],
     },
   },
-  { edge: "ignore", is_spam: false, ads_prefill_only: true }
+  { edge: "ads_greet", is_spam: false, ads_prefill_only: true }
 );
 
 await check(
-  "prefill without comma → ignore",
+  "prefill without comma → ads_greet",
   {
     available_edges: edges,
     system: { last_resume: { reason: "timeout" } },
@@ -84,7 +84,36 @@ await check(
       messages: [msg({ text: "hola quiero cotizar uniformes de" })],
     },
   },
-  { edge: "ignore", ads_prefill_only: true }
+  { edge: "ads_greet", ads_prefill_only: true }
+);
+
+await check(
+  "quiero uniformes de → ads_greet",
+  {
+    available_edges: edges,
+    system: { last_resume: { reason: "timeout" } },
+    whatsapp_context: {
+      conversation: { phone_number: "573111111113" },
+      messages: [msg({ text: "quiero uniformes de" })],
+    },
+  },
+  { edge: "ads_greet", ads_prefill_only: true }
+);
+
+await check(
+  "prefill already greeted → ignore",
+  {
+    available_edges: edges,
+    system: { last_resume: { reason: "timeout" } },
+    execution_context: {
+      vars: { service: { ads_prefill_greeted: true } },
+    },
+    whatsapp_context: {
+      conversation: { phone_number: "573111111114" },
+      messages: [msg({ text: "Hola, quiero cotizar uniformes de" })],
+    },
+  },
+  { edge: "end", ads_prefill_only: true }
 );
 
 await check(
@@ -142,11 +171,11 @@ await check(
       ],
     },
   },
-  { edge: "ignore", is_spam: true }
+  { edge: "end", is_spam: true }
 );
 
 await check(
-  "spam 3157 pocket dial mooing/crying → ignore",
+  "spam 3157 pocket dial mooing/crying → end",
   {
     available_edges: edges,
     system: { last_resume: { reason: "timeout" } },
@@ -161,11 +190,11 @@ await check(
       ],
     },
   },
-  { edge: "ignore", is_spam: true }
+  { edge: "end", is_spam: true }
 );
 
 await check(
-  "keyboard smash without blacklist → ignore",
+  "keyboard smash without blacklist → end",
   {
     available_edges: edges,
     system: { last_resume: { reason: "timeout" } },
@@ -178,7 +207,7 @@ await check(
       ],
     },
   },
-  { edge: "ignore", is_spam: true }
+  { edge: "end", is_spam: true }
 );
 
 await check(
@@ -195,7 +224,7 @@ await check(
 );
 
 await check(
-  "2x Hola alone without media is gibberish → ignore",
+  "2x Hola alone without media is gibberish → end",
   {
     available_edges: edges,
     system: { last_resume: { reason: "timeout" } },
@@ -204,7 +233,7 @@ await check(
       messages: [msg({ text: "Hola" }), msg({ text: "Hola" })],
     },
   },
-  { edge: "ignore", is_spam: true }
+  { edge: "end", is_spam: true }
 );
 
 await check(
@@ -230,7 +259,7 @@ await check(
 );
 
 await check(
-  "2x Hola + non-verbal audio only → ignore (no real speech)",
+  "2x Hola + non-verbal audio only → end (no real speech)",
   {
     available_edges: edges,
     system: { last_resume: { reason: "timeout" } },
@@ -244,7 +273,7 @@ await check(
       ],
     },
   },
-  { edge: "ignore", is_spam: true }
+  { edge: "end", is_spam: true }
 );
 
 await check(

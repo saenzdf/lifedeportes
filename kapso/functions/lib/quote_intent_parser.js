@@ -48,10 +48,12 @@ export function validateTranscript(transcript) {
 
 function extractQuantity(text) {
   const t = normalizeText(text);
-  const m =
-    t.match(/(\d+)\s*(uniforme|camiseta|camisa|unidad|u\b|kit|hoodie|buzo|peto)/) ||
-    t.match(/(\d+)\s+de\s+campo/);
-  if (m) return Math.max(1, parseInt(m[1], 10));
+  const m1 = t.match(/(\d+)\s*(uniforme|camiseta|camisa|unidad|u\b|kit|hoodie|buzo|peto|persona|jugador|integrante|muchacho|chico|nino|nina|alumno)/);
+  if (m1) return Math.max(1, parseInt(m1[1], 10));
+  const m2 = t.match(/(\d+)\s+de\s+campo/);
+  if (m2) return Math.max(1, parseInt(m2[1], 10));
+  const m3 = t.match(/\b(para|somos|equipo\s+de)\s+(\d+)\b/);
+  if (m3) return Math.max(1, parseInt(m3[2], 10));
   const docena = /\bdocena\b/.test(t) ? 12 : null;
   return docena;
 }

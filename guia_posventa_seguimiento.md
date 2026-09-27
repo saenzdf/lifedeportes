@@ -16,8 +16,7 @@ Una vez cerrada la venta, el proceso se traslada a la fase de ejecución y segui
 
 ## 3. Seguimiento del Pedido
 
-- El cliente suele preguntar por el estado. La respuesta debe ser honesta basándose en la etapa de Odoo (Corte, Confección, Entrega).
-- **Entrega Final:** Se coordina la logística (ej: "Vale 22 mil la carrera") y se solicita el 50% restante antes del despacho o contra entrega según el acuerdo.
+- **Entrega Final:** Se coordina la logística (ej: "Vale 22 mil la carrera") y se solicita el 50% restante antes del despacho (o al pasar a recogerlo en fábrica si es entrega presencial). No se despacha contra entrega.
 
 ---
 

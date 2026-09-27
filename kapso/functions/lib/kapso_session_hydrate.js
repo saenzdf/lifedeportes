@@ -250,3 +250,106 @@ export function mapActiveOrders(activeOrders = [], projectTasks = []) {
     };
   });
 }
+
+/**
+ * Normaliza y resume mensajes recientes de WhatsApp para dar continuidad
+ * y visibilidad de las intervenciones del staff al agente orquestador.
+ */
+export function parseRecentMessages(rawMessages = [], options = {}) {
+  const currentMessageId = options.currentMessageId ? String(options.currentMessageId) : null;
+  const list = unwrapList(rawMessages);
+
+  const parsed = [];
+  for (const m of list) {
+    const id = String(m?.id || m?.wamid || "");
+    if (currentMessageId && id === currentMessageId) continue;
+
+    const d = String(m?.kapso?.direction || m?.direction || "").toLowerCase();
+    const dir = d === "inbound" || d === "in" ? "inbound" : d === "outbound" || d === "out" ? "outbound" : "unknown";
+    const origin = String(m?.kapso?.origin || m?.origin || "").toLowerCase();
+
+    const k = m?.kapso || {};
+    const t = m?.text || {};
+    const textParts = [
+      k.content,
+      k.transcription,
+      k.caption,
+      typeof t === "string" ? t : t?.body,
+      m?.caption,
+      m?.image?.caption,
+      m?.document?.filename,
+      m?.document?.caption,
+    ].map((x) => String(x || "").trim()).filter(Boolean);
+
+    let text = textParts.join(" ").slice(0, 500);
+    if (!text) {
+      const type = String(m?.type || m?.message_type || m?.kapso?.type || "text").toLowerCase();
+      if (type === "image") text = "[imagen]";
+      else if (type === "audio") text = "[audio]";
+      else if (type === "video") text = "[video]";
+      else if (type === "document") text = "[documento]";
+      else if (type === "sticker") text = "[sticker]";
+      else text = "";
+    }
+    if (!text) continue;
+
+    let speaker = "BOT";
+    if (dir === "inbound") {
+      speaker = "CLIENTE";
+    } else {
+      if (origin === "business_app" || origin === "user" || origin === "staff" || origin === "human") {
+        speaker = "STAFF";
+      } else {
+        speaker = "BOT";
+      }
+    }
+
+    const ts = Date.parse(m?.created_at || m?.timestamp || m?.inserted_at || 0) || 0;
+    parsed.push({ id, dir, origin, speaker, text, ts });
+  }
+
+  parsed.sort((a, b) => a.ts - b.ts);
+
+  const staffMessages = parsed.filter((m) => m.speaker === "STAFF");
+  const lastStaff = staffMessages.length ? staffMessages[staffMessages.length - 1].text : null;
+  const staffParticipated = staffMessages.length > 0;
+
+  const summarySlice = parsed.slice(-6);
+  const summaryLines = summarySlice.map((m) => `[${m.speaker}]: ${m.text.replace(/\s+/g, " ").trim()}`);
+  const recentThreadSummary = summaryLines.join("\n");
+
+  return {
+    messages: parsed,
+    has_prior_conversation: parsed.length > 0,
+    staff_participated: staffParticipated,
+    last_staff_message: lastStaff,
+    recent_thread_summary: recentThreadSummary || null,
+  };
+}
+
+export async function fetchRecentThreadContext(cfg, conversationId, options = {}) {
+  if (!cfg || !conversationId) {
+    return {
+      has_prior_conversation: false,
+      staff_participated: false,
+      last_staff_message: null,
+      recent_thread_summary: null,
+    };
+  }
+  try {
+    const payload = await kapsoGet(cfg, "/platform/v1/whatsapp/messages", {
+      conversation_id: conversationId,
+      per_page: options.limit || 12,
+    });
+    return parseRecentMessages(payload, options);
+  } catch (err) {
+    return {
+      has_prior_conversation: false,
+      staff_participated: false,
+      last_staff_message: null,
+      recent_thread_summary: null,
+      error: String(err?.message || err),
+    };
+  }
+}
+

@@ -1381,7 +1381,9 @@ const FIXED_REPLIES = {
     "Estamos en la Cl. 66a #98a 12, barrio Los Álamos, Engativá, Bogotá. Puede ver el mapa aquí: https://maps.google.com/?cid=12304529363039725410",
   catalogo: "Puede ver el catálogo en https://lifedeportes.odoo.com/shop",
   pago:
-    "Abono del 50% para iniciar y el resto contra entrega. La cuenta o medio exacto se lo indica el asesor al confirmar el pedido.",
+    "Abono del 50% para iniciar y el 50% restante para hacer el envío (o al pasar a recogerlo en fábrica). La cuenta o medio exacto se lo indica el asesor al confirmar el pedido.",
+  contra_entrega:
+    "No manejamos pago contra entrega del pedido: se abona el 50% para iniciar la elaboración y el 50% restante para hacer el envío (o al recoger en fábrica).",
   envios:
     "Sí, tenemos envíos nacionales por cobrar: despachamos por transportadora y el valor del flete se paga al recibir.",
   logo_marca_ropa:
@@ -2384,7 +2386,209 @@ async function handler(request, env) {
     }
   }
 
-  const total = unit ? unit * quantity : null;
+  // --- Jev Layer: Desambiguación de producto y sobrecostos de tallas ---
+  const JEV_MODE = String(env?.LIFE_JEV_MODE || "off").toLowerCase().trim();
+  const JEV_THRESHOLD = Number(env?.LIFE_JEV_THRESHOLD || 0.7);
+  let jevShadow = null;
+  let sizeSurcharges = [];
+
+  if (JEV_MODE === "shadow" || JEV_MODE === "on") {
+    const t0 = Date.now();
+    const key = String(env?.OPENROUTER_API_KEY || "").trim();
+    if (key) {
+      const jevQuestions = {
+        matched_template: {
+          type: "choice",
+          instructions: "De los templates del catálogo de Life Deportes, ¿cuál es el producto principal solicitado? 115 para Uniforme de Fútbol completo (camiseta+pantaloneta), 62 para Camiseta dry-fit sola, 23 para Baloncesto, 31 para Voleibol, 8 para Polo presentación, 68 para Rompevientos, 1800 para Chaqueta Lotto, 66 para Sudadera, 179 para Buzo arquero, 178 para Conjunto arquero, 69 para Peto.",
+          criteria: {
+            "115": "Uniforme de Fútbol completo (camiseta + pantaloneta + medias)",
+            "62": "Camiseta deportiva dry-fit (solo camiseta)",
+            "23": "Uniforme de baloncesto",
+            "31": "Uniforme de voleibol",
+            "8": "Uniforme de Presentación polo",
+            "68": "Chaqueta rompevientos",
+            "1800": "Chaqueta Lotto",
+            "66": "Sudadera Chaqueta y Pantalón",
+            "179": "Buzo de arquero",
+            "178": "Conjunto de arquero",
+            "69": "Peto sublimado",
+            "other": "Otro producto o no especificado claramente"
+          }
+        },
+        collar_type: {
+          type: "choice",
+          instructions: "¿El cliente solicita cuello polo o cuello sport (+ $3.000 COP)?",
+          criteria: {
+            "sport_polo": "Solicita cuello polo o cuello sport",
+            "normal": "Cuello en V, redondo o normal",
+            "unspecified": "No especifica cuello"
+          }
+        },
+        has_plus_sizes: {
+          type: "choice",
+          instructions: "¿El pedido contiene prendas en tallas especiales (2XL / XXL o 3XL / XXXL)? Recuerda: 2XL y XXL son sinónimos exactos (+$5.000 COP); 3XL y XXXL son sinónimos exactos (+$10.000 COP).",
+          criteria: {
+            "none": "No hay tallas especiales o solo tallas estándar 2 a XL",
+            "has_2xl": "Tiene talla 2XL o XXL",
+            "has_3xl": "Tiene talla 3XL o XXXL",
+            "has_both": "Tiene tanto 2XL/XXL como 3XL/XXXL"
+          }
+        },
+        qty_2xl: {
+          type: "choice",
+          instructions: "¿Cuántas prendas en talla 2XL o XXL solicita el cliente? (2XL y XXL son sinónimos)",
+          criteria: {
+            "0": "Cero prendas en 2XL o XXL",
+            "1": "Una prenda en 2XL o XXL",
+            "2": "Dos prendas en 2XL o XXL",
+            "3": "Tres prendas en 2XL o XXL",
+            "4": "Cuatro prendas en 2XL o XXL",
+            "5": "Cinco prendas en 2XL o XXL",
+            "6": "Seis prendas en 2XL o XXL",
+            "7": "Siete prendas en 2XL o XXL",
+            "8": "Ocho prendas en 2XL o XXL",
+            "9": "Nueve prendas en 2XL o XXL",
+            "10": "Diez prendas en 2XL o XXL",
+            "more_than_10": "Más de 10 prendas en 2XL o XXL"
+          }
+        },
+        qty_3xl: {
+          type: "choice",
+          instructions: "¿Cuántas prendas en talla 3XL o XXXL solicita el cliente? (3XL y XXXL son sinónimos)",
+          criteria: {
+            "0": "Cero prendas en 3XL o XXXL",
+            "1": "Una prenda en 3XL o XXXL",
+            "2": "Dos prendas en 3XL o XXXL",
+            "3": "Tres prendas en 3XL o XXXL",
+            "4": "Cuatro prendas en 3XL o XXXL",
+            "5": "Cinco prendas en 3XL o XXXL",
+            "6": "Seis prendas en 3XL o XXXL",
+            "7": "Siete prendas en 3XL o XXXL",
+            "8": "Ocho prendas en 3XL o XXXL",
+            "9": "Nueve prendas en 3XL o XXXL",
+            "10": "Diez prendas en 3XL o XXXL",
+            "more_than_10": "Más de 10 prendas en 3XL o XXXL"
+          }
+        }
+      };
+
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 8000);
+      try {
+        const jevRes = await fetch("https://openrouter.ai/api/alpha/decisions", {
+          method: "POST",
+          headers: {
+            Authorization: "Bearer " + key,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model: "typesafe/jev-1.13",
+            state: {
+              customer_text: combinedProductText,
+              quantity,
+              local_match: { id: matchId, name: matchName, score: local.score },
+            },
+            questions: jevQuestions,
+          }),
+          signal: ctrl.signal,
+        });
+        clearTimeout(timer);
+
+        if (jevRes.ok) {
+          const jevJson = await jevRes.json();
+          const ans = jevJson?.answers || {};
+          const matchedChoice = ans.matched_template?.choice;
+          const matchedConf = Number(ans.matched_template?.confidence || 0);
+          const collarChoice = ans.collar_type?.choice;
+          const qty2XL = parseInt(ans.qty_2xl?.choice || "0", 10) || 0;
+          const qty3XL = parseInt(ans.qty_3xl?.choice || "0", 10) || 0;
+
+          let jevApplied = false;
+
+          // Sobrecostos de tallas
+          if (qty2XL > 0) {
+            sizeSurcharges.push({
+              odoo_product_id: 1805,
+              type: "size_2xl",
+              name: "Sobrecosto Talla 2XL / XXL",
+              unit_cop: 5000,
+              quantity: qty2XL,
+              total_cop: 5000 * qty2XL,
+            });
+          }
+          if (qty3XL > 0) {
+            sizeSurcharges.push({
+              odoo_product_id: 1806,
+              type: "size_3xl",
+              name: "Sobrecosto Talla 3XL / XXXL",
+              unit_cop: 10000,
+              quantity: qty3XL,
+              total_cop: 10000 * qty3XL,
+            });
+          }
+          if (collarChoice === "sport_polo" && matchId !== 8 && matchId !== 61) {
+            sizeSurcharges.push({
+              type: "collar",
+              name: "Sobrecosto Cuello Polo/Sport",
+              unit_cop: 3000,
+              quantity: quantity,
+              total_cop: 3000 * quantity,
+            });
+          }
+
+          if (JEV_MODE === "on" && matchedChoice && matchedChoice !== "other" && matchedConf >= JEV_THRESHOLD) {
+            const tmplNum = Number(matchedChoice);
+            if (Number.isFinite(tmplNum) && tmplNum > 0 && tmplNum !== matchId) {
+              matchId = tmplNum;
+              if (tmplNum === 115) { matchName = "Uniforme de Fútbol"; unit = 50000; }
+              else if (tmplNum === 62) { matchName = "Camiseta deportiva dry-fit"; unit = 30000; }
+              else if (tmplNum === 23) { matchName = "Uniforme de baloncesto"; unit = 50000; }
+              else if (tmplNum === 31) { matchName = "Uniforme de voleibol"; unit = 50000; }
+            }
+            jevApplied = true;
+          }
+
+          jevShadow = {
+            enabled: true,
+            mode: JEV_MODE,
+            ok: true,
+            matched_template: matchedChoice,
+            confidence: matchedConf,
+            collar: collarChoice,
+            qty_2xl: qty2XL,
+            qty_3xl: qty3XL,
+            surcharges_count: sizeSurcharges.length,
+            applied: JEV_MODE === "on",
+            latency_ms: Date.now() - t0,
+            cost_usd: jevJson?.usage?.cost || null,
+          };
+        } else {
+          jevShadow = { enabled: true, mode: JEV_MODE, ok: false, reason: "http_" + jevRes.status };
+        }
+      } catch (err) {
+        clearTimeout(timer);
+        jevShadow = { enabled: true, mode: JEV_MODE, ok: false, reason: err?.name === "AbortError" ? "timeout" : "network" };
+      }
+    }
+  }
+
+  const surchargesTotal = (JEV_MODE === "on" ? sizeSurcharges : []).reduce((s, x) => s + x.total_cop, 0);
+  const total = unit ? (unit * quantity) + surchargesTotal : null;
+
+  // Resumen formateado para que el bot lo cite directamente
+  let summaryForBot = "";
+  if (unit) {
+    const parts = [quantity + " × " + matchName + " ($" + Number(unit).toLocaleString("es-CO") + " c/u)"];
+    if (sizeSurcharges.length > 0) {
+      const extraList = sizeSurcharges
+        .map(function(s) { return s.quantity + " u. " + s.name + " (+$" + Number(s.total_cop).toLocaleString("es-CO") + ")"; })
+        .join(", ");
+      parts.push("Sobrecostos: " + extraList);
+    }
+    parts.push("Total pedido: $" + Number(total).toLocaleString("es-CO") + " COP");
+    summaryForBot = parts.join(". ") + ".";
+  }
+
   let status = local.found ? "ready" : "needs_clarification";
   if (wantsShopMedia && shop?.is_published) status = "shop_media_ready";
   else if (wantsShopMedia && shopCatalog.length) status = "shop_catalog_suggestions";
@@ -2414,7 +2618,7 @@ async function handler(request, env) {
         ? `Tienda: ${shopPayload.name} — ${shopPayload.page_url}`
         : wantsShopMedia && local.found
           ? "El producto exacto no tiene una foto publicada en Odoo."
-        : local.interpretation_es || (local.found ? matchName : "Sin match"),
+        : summaryForBot || local.interpretation_es || (local.found ? matchName : "Sin match"),
     vars: {
       product: {
         found: Boolean(local.found),
@@ -2440,9 +2644,12 @@ async function handler(request, env) {
         ? {
             unit_cop: unit,
             total_cop: total,
+            base_subtotal: unit * quantity,
             quantity,
             price_source: priceSource,
             variant_extras: variantExtras,
+            surcharges: sizeSurcharges,
+            summary_es: summaryForBot,
           }
         : null,
       quote: local.found
@@ -2454,12 +2661,15 @@ async function handler(request, env) {
             odoo_product_id: matchId,
             match_confidence: local.match_confidence,
             price_source: priceSource,
+            surcharges: sizeSurcharges,
+            summary_es: summaryForBot,
           }
         : {
             product_text: productText,
             quantity,
             match_confidence: local.match_confidence,
           },
+      jev_shadow: jevShadow,
       service: serviceMeta(status),
     },
   });

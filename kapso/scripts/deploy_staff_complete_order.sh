@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# RETIRADO 2026-09-16 — cadena de subida del staff movida a Hermes local.
+# Resucitaría validate-staff-write / compile-staff-order-draft y re-cablearía el grafo.
+echo "RETIRADO: deploy_staff_complete_order.sh ya no aplica (staff = Hermes local)." >&2
+exit 1
 # Publica Functions del carril staff pedidos completos + spreadsheet.
 set -euo pipefail
 

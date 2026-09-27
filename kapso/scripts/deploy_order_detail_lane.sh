@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# RETIRADO 2026-09-16 — parsers/tools del agente staff movidos a Hermes local.
+# Resucitaría functions borradas (clasificar-adjuntos-pedido, parsear-lista-*, odoo-create-lead-and-so).
+echo "RETIRADO: deploy_order_detail_lane.sh ya no aplica (staff = Hermes local)." >&2
+exit 1
 # Deploy tools lista pedido staff + patch grafo v10 + odoo-create-lead-and-so
 set -euo pipefail
 

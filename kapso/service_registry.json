@@ -1,6 +1,6 @@
 {
-  "version": "v10-2026-07-21-unified-staff",
-  "description": "Grafo v10: Agent Staff unificado (pedido + nómina attlog + compra PO draft). Jump → mismo agente. PDF/HR attendance fuera.",
+  "version": "v10-2026-09-16-staff-hermes",
+  "description": "Grafo v10: carril cliente en Kapso (vendedor) + carril staff despachado a Hermes local (staff-hermes-forwarder). Agente staff embebido retirado.",
   "kapso": {
     "project_id": "b470d474-6a7a-4d84-a214-6cd4b198b4f3",
     "workflow_id": "8995b14c-d852-4fb3-bceb-8a51a6ccc2c6",
@@ -8,48 +8,44 @@
     "trigger_id": "581c292e-7abd-4bfe-97a7-159cb3a33f95",
     "phone_number_id": "1095603153637786",
     "phone_display": "3000000066 (Life Deportes Asistente)",
-    "workflow_lock_version": 1418,
+    "workflow_lock_version": 2143,
     "local_graph": "kapso/workflow_lifedeportes_sales_inbound_v10.json",
     "trigger_active": true,
     "trigger_note": "Customer lane ON; Diego 3000000047 back on staff allowlist for wacli staff tests",
     "staff_only_mode": false,
     "workflow_status": "active",
-    "active_function_count": 15,
+    "active_function_count": 25,
     "sales_tester_mode": false,
     "sales_tester_note": "Bypass whitelist vigente (route_user_entry salesGate=false). No reactivar sales_tester_mode.js enable sin --i-know-this-blocks-production.",
-    "synced_at": "2026-07-29T20:19:54.177Z"
+    "synced_at": "2026-09-16T18:30:00.000Z",
+    "staff_lane_note": "Carril staff -> Hermes local (staff-hermes-forwarder). Sin agente staff embebido."
   },
   "staff_lane": {
-    "doc": "kapso/docs/staff_graph_v10.md",
+    "doc": "kapso/docs/staff_hermes_bridge.md",
+    "note": "El carril staff vive en Hermes local (2026-09-16). Kapso solo detecta el mensaje, agrupa el hilo 1s y lo despacha con staff-hermes-forwarder al webhook staff-assistant.",
     "graph_functions": [
       "policy-guard-input",
       "staff-allowlist-check",
       "route-user-entry",
-      "compile-staff-order-draft",
-      "validate-staff-write",
-      "route-staff-write",
-      "build-quote-payload",
-      "odoo-create-lead-and-so",
-      "route-staff-lane-resume",
-      "route-staff-burst-resume"
+      "route-staff-burst-resume",
+      "staff-hermes-forwarder"
     ],
-    "agent": "agent_1780762885818",
-    "agent_tools": [
-      "odoo-search-product-price",
-      "build-quote-payload",
-      "get-service-status",
-      "sync-order-draft-from-odoo"
-    ],
-    "burst_debounce_seconds": 15
+    "agent": null,
+    "agent_note": "Sin agente staff embebido: agent_1780762885818 retirado. El agente staff corre en Hermes local (MCP odoo-life-prod + repo).",
+    "forwarder": {
+      "kapso_function_name": "staff-hermes-forwarder",
+      "kapso_function_id": "4e9625ad-e42b-4c22-abe9-69eae639c5af",
+      "local_path": null,
+      "note": "Pendiente versionar en el repo. Destino: webhook Hermes ruta staff-assistant (HMAC X-Hub-Signature-256)."
+    },
+    "burst_debounce_seconds": 1
   },
   "customer_lane": {
     "unchanged": false,
     "graph_functions": [
       "classify-contact-odoo",
-      "mark-maintenance-sent",
       "policy-guard-input",
       "route-customer-burst-resume",
-      "route-customer-paused",
       "route-user-entry",
       "staff-allowlist-check",
       "ensure-crm-from-quote"
@@ -65,16 +61,8 @@
     "ensure_crm_function_id": "10c53577-1fd5-45b1-9353-1dd44da449ee"
   },
   "customer_paused": {
-    "route_customer_paused": {
-      "kapso_function_name": "route-customer-paused",
-      "kapso_function_id": "64a408aa-2b5c-4112-81e2-9d09ccfda23d",
-      "local_path": "kapso/functions/route_customer_paused.js"
-    },
-    "mark_maintenance_sent": {
-      "kapso_function_name": "mark-maintenance-sent",
-      "kapso_function_id": "4fb0b1cc-b2a3-4232-8e7c-9b295710faf3",
-      "local_path": "kapso/functions/mark_maintenance_sent.js"
-    }
+    "retired": true,
+    "note": "Retiradas 2026-09-16: codigo en kapso/functions/_archive/ y bloqueadas en ARCHIVED_FUNCTION_NAMES (scripts/validate-graph-lifedeportes.js)."
   },
   "entry_guards": {
     "policy_guard_input": {
@@ -101,103 +89,29 @@
     }
   },
   "customer_routers": {
-    "route_customer_entry": {
-      "kapso_function_name": "route-customer-entry",
-      "kapso_function_id": "189befcd-5a62-482a-ad95-982c6721ad3e",
-      "local_path": "kapso/functions/route_customer_entry.js"
-    }
+    "retired": true,
+    "note": "Retiradas 2026-09-16: codigo en kapso/functions/_archive/ y bloqueadas en ARCHIVED_FUNCTION_NAMES (scripts/validate-graph-lifedeportes.js)."
   },
   "inbox_lane": {
-    "doc": "kapso/docs/inbox_ingreso_handoff.md",
-    "note": "Agent Inbox retirado 2026-07-21. Jump → agent_1780762885818. prepare/fidelity como tools o Jump-only chain.",
-    "agent_node_id": "agent_1780762885818",
-    "jump_display_name": "Agent: Staff (pedido / nómina / compra)",
-    "prepare_inbox_upload": {
-      "kapso_function_name": "prepare-inbox-upload",
-      "kapso_function_id": "d750cbd5-b8a5-4eb8-b6d4-62e0e7fd8058",
-      "local_path": "kapso/functions/prepare_inbox_upload.js"
-    },
-    "snapshot_upload_fidelity": {
-      "kapso_function_name": "snapshot-upload-fidelity",
-      "kapso_function_id": "3ea0712b-6243-49b3-a7e6-a5db9c61dd16",
-      "local_path": "kapso/functions/snapshot_upload_fidelity.js"
-    },
-    "compute_fidelity_retention": {
-      "kapso_function_name": "compute-fidelity-retention",
-      "kapso_function_id": "37be9c66-e600-4d40-af99-81003ef7fb39",
-      "local_path": "kapso/functions/compute_fidelity_retention.js"
+    "retired": true,
+    "note": "Retiradas 2026-09-16: codigo en kapso/functions/_archive/ y bloqueadas en ARCHIVED_FUNCTION_NAMES (scripts/validate-graph-lifedeportes.js).",
+    "detalle": {
+      "doc": "kapso/docs/inbox_ingreso_handoff.md",
+      "note": "Agent Inbox retirado 2026-07-21. Jump → agent_1780762885818. prepare/fidelity como tools o Jump-only chain.",
+      "agent_node_id": "agent_1780762885818",
+      "jump_display_name": "Agent: Staff (pedido / nómina / compra)"
     }
   },
   "unified_staff_tools": {
-    "doc": "kapso/docs/staff_graph_v10.md",
-    "parse_nomina_attlog": {
-      "kapso_function_name": "parse-nomina-attlog",
-      "kapso_function_id": "7c490919-ceb7-48a4-b267-abbf57ff33ab",
-      "local_path": "kapso/functions/parse_nomina_attlog.js"
-    },
-    "confirmar_nomina": {
-      "kapso_function_name": "confirmar-nomina",
-      "kapso_function_id": "8d493868-02d1-4beb-bfc9-f1d4d17dcaf4",
-      "local_path": "kapso/functions/confirmar_nomina.js"
-    },
-    "crear_compra_odoo": {
-      "kapso_function_name": "crear-compra-odoo",
-      "kapso_function_id": "b07a0ccf-e310-4e6b-8fae-7fe30865c2ba",
-      "local_path": "kapso/functions/crear_compra_odoo.js"
+    "retired": true,
+    "note": "Retiradas 2026-09-16: codigo en kapso/functions/_archive/ y bloqueadas en ARCHIVED_FUNCTION_NAMES (scripts/validate-graph-lifedeportes.js).",
+    "detalle": {
+      "doc": "kapso/docs/staff_graph_v10.md"
     }
   },
   "staff_write": {
-    "validate_staff_write": {
-      "kapso_function_name": "validate-staff-write",
-      "kapso_function_id": "4061a9e7-fce9-4301-81e7-bd2e47da3da4",
-      "local_path": "kapso/functions/validate_staff_write.js"
-    },
-    "route_staff_write": {
-      "kapso_function_name": "route-staff-write",
-      "kapso_function_id": "1cf1c2f1-f5ca-49c3-b9a7-bff76d87c1ee",
-      "local_path": "kapso/functions/route_staff_write.js"
-    },
-    "compile_staff_order_draft": {
-      "kapso_function_name": "compile-staff-order-draft",
-      "kapso_function_id": "55575147-9a87-4e2b-9d83-8e5146ca0661",
-      "local_path": "kapso/functions/compile_staff_order_draft.js",
-      "note": "Insertar en grafo entre agent complete_task y validate-staff-write cuando se publique.",
-      "bundle": "kapso/functions/compile_staff_order_draft_deploy.js"
-    },
-    "build_quote_payload": {
-      "kapso_function_name": "build-quote-payload",
-      "kapso_function_id": "4a1591c2-66e3-4734-82a7-ed64a1031c2b",
-      "local_path": "kapso/functions/build_quote_payload.js"
-    },
-    "odoo_create_lead_and_so": {
-      "kapso_function_name": "odoo-create-lead-and-so",
-      "kapso_function_id": "8a7b731d-480c-4abc-8a72-f965856d7515",
-      "local_path": "kapso/functions/odoo_create_lead_and_so.js"
-    },
-    "sync_order_draft_from_odoo": {
-      "kapso_function_name": "sync-order-draft-from-odoo",
-      "kapso_function_id": "55eeebe6-4249-4619-9ccc-0908148f49c5",
-      "local_path": "kapso/functions/sync_order_draft_from_odoo.js",
-      "bundle": "kapso/functions/sync_order_draft_from_odoo_deploy.js"
-    },
-    "buscar_pedido_odoo": {
-      "kapso_function_name": "buscar-pedido-odoo",
-      "kapso_function_id": "99d48e68-9d7f-43dc-94f5-ce55495a1be0",
-      "local_path": "kapso/functions/search_staff_order.js",
-      "bundle": "kapso/functions/search_staff_order_deploy.js"
-    },
-    "buscar_oportunidad_odoo": {
-      "kapso_function_name": "buscar-oportunidad-odoo",
-      "kapso_function_id": "1009b5dd-7034-42d3-8742-aeda29f481db",
-      "local_path": "kapso/functions/buscar_oportunidad_odoo.js",
-      "note": "Retomar opp CRM manual (Canal Ventas) → vars.lead.id"
-    },
-    "corregir_pedido_odoo": {
-      "kapso_function_name": "corregir-pedido-odoo",
-      "kapso_function_id": "3387d3d8-6ea8-4e59-9158-c46e3263884a",
-      "local_path": "kapso/functions/apply_staff_order_correction.js",
-      "bundle": "kapso/functions/apply_staff_order_correction_deploy.js"
-    }
+    "retired": true,
+    "note": "Retiradas 2026-09-16: codigo en kapso/functions/_archive/ y bloqueadas en ARCHIVED_FUNCTION_NAMES (scripts/validate-graph-lifedeportes.js)."
   },
   "odoo_catalog": {
     "odoo_search_product_price": {
@@ -214,20 +128,57 @@
     }
   },
   "meta": {
-    "get_service_status": {
-      "kapso_function_name": "get-service-status",
-      "kapso_function_id": "c0ea46a6-24f3-4e64-bdd9-cbb51c21a85d",
-      "local_path": "kapso/functions/get_service_status.js"
-    }
+    "retired": true,
+    "note": "Retiradas 2026-09-16: codigo en kapso/functions/_archive/ y bloqueadas en ARCHIVED_FUNCTION_NAMES (scripts/validate-graph-lifedeportes.js)."
   },
   "archived_staff_legacy": {
-    "doc": "kapso/docs/archived_staff_nomina_compra.md",
-    "note": "Routers legacy archivados. Nómina+compra viven como tools del Agent Staff unificado (2026-07-21).",
+    "doc": "kapso/docs/staff_graph_v10.md",
+    "note": "Retiro 2026-09-16: el carril staff pasó a Hermes local. Codigo archivado en kapso/functions/_archive/ (cabecera ARCHIVED con id y motivo); bloqueadas en ARCHIVED_FUNCTION_NAMES de scripts/validate-graph-lifedeportes.js.",
+    "retired_count": 40,
+    "retired_functions": [
+      "build-quote-payload",
+      "buscar-conversacion-kapso",
+      "buscar-oportunidad-odoo",
+      "buscar-pedido-odoo",
+      "clasificar-adjuntos-pedido",
+      "compile-staff-order-draft",
+      "compute-fidelity-retention",
+      "confirmar-nomina",
+      "corregir-pedido-odoo",
+      "crear-compra-odoo",
+      "detect-staff-lane",
+      "detect-staff-upload-command",
+      "enviar-retomar-pedido",
+      "fusionar-borrador-lista",
+      "get-service-status",
+      "mark-maintenance-sent",
+      "odoo-create-lead-and-so",
+      "parse-nomina-attlog",
+      "parsear-lista-excel-pedido",
+      "parsear-lista-imagen-pedido",
+      "parsear-lista-pdf-pedido",
+      "parsear-lista-texto-pedido",
+      "prepare-inbox-upload",
+      "register-nomina-stub",
+      "registrar-adjuntos-pedido",
+      "route-customer-entry",
+      "route-customer-paused",
+      "route-nomina-confirm",
+      "route-staff-domain-guard",
+      "route-staff-entry",
+      "route-staff-lane",
+      "route-staff-lane-resume",
+      "route-staff-registration",
+      "route-staff-write",
+      "seed-crm-awaiting",
+      "snapshot-upload-fidelity",
+      "staff-sales-notify-reply",
+      "sync-order-draft-from-odoo",
+      "validate-nomina-confirm",
+      "validate-staff-write"
+    ],
     "local_paths": [
-      "kapso/functions/_archive/detect_staff_upload_command.js",
-      "kapso/functions/_archive/route_staff_entry.js",
-      "kapso/functions/_archive/route_staff_post.js",
-      "kapso/functions/_archive/route_staff_registration.js"
+      "kapso/functions/_archive/"
     ]
   },
   "archived_customer": {
@@ -271,12 +222,6 @@
       "bundle": "kapso/functions/notify_sales_interest_deploy.js",
       "note": "Al aceptar cotización: dry-run salvo LIFE_SALES_NOTIFY_ENABLED=true + LIFE_SALES_NOTIFY_PHONES; quote rico + LIFE_DOSSIER_v1; sin handoff"
     },
-    "route_staff_lane_resume": {
-      "kapso_function_name": "route-staff-lane-resume",
-      "kapso_function_id": "9333529a-6e01-468c-931a-203b9ad378d2",
-      "local_path": "kapso/functions/route_staff_lane_resume.js",
-      "note": "Tras wait_staff_lane: CONFIRMO→validate; nuevo/corrección→agent; ack+SO→done; else→agent (copiloto)"
-    },
     "route_customer_burst_resume": {
       "kapso_function_name": "route-customer-burst-resume",
       "kapso_function_id": "972d60bb-ff84-40fc-ba3d-cdd6104aa143",
@@ -317,14 +262,6 @@
       "kapso_function_id": "f0981cbd-f8f5-4161-93fc-c1b25c4aec13",
       "local_path": "kapso/functions/enviar_formulario_excel.js",
       "note": "Staff→cliente o vendedor→mismo chat: Formulario Life xlsx"
-    },
-    "enviar_retomar_pedido": {
-      "kapso_function_name": "enviar-retomar-pedido",
-      "kapso_function_id": "b297a0c7-ce59-4f7c-bfba-1184c02c9743",
-      "local_path": "kapso/functions/enviar_retomar_pedido.js",
-      "template": "retomar_pedido_v2",
-      "language": "es",
-      "note": "Staff ENVIAR RETOMAR → template Meta al cliente (fuera ventana 24h)"
     },
     "odoo_send_wa_template": {
       "kapso_function_name": "odoo-send-wa-template",

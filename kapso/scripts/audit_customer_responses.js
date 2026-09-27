@@ -30,6 +30,24 @@ const STAFF_PHONES = new Set([
   "3000000047", // Diego
 ]);
 const ADS_PREFILL = /^hola,\s*quiero\s+cotizar\s+uniformes\s+de\s*$/i;
+/** Prefill a veces llega duplicado en content ("…de Hola, quiero…de"). */
+function isAdsPrefillText(raw) {
+  let t = String(raw || "").trim();
+  if (!t) return false;
+  const mid = Math.floor(t.length / 2);
+  if (mid > 10 && t.slice(0, mid).trim() === t.slice(mid).trim()) {
+    t = t.slice(0, mid).trim();
+  }
+  t = t.replace(/\s+/g, " ").trim();
+  if (ADS_PREFILL.test(t)) return true;
+  // Solo el stem Ads, sin deporte/precio/pregunta
+  return (
+    /^hola,\s*quiero\s+c?otizar\s+uniformes\s+de\s*$/i.test(t) ||
+    (t.toLowerCase().startsWith("hola, quiero cotizar uniformes de") &&
+      t.length <= 40 &&
+      !/[?¿]|precio|futbol|fútbol|volei|basket|necesito|docena|\d/.test(t))
+  );
+}
 const PRODUCT_SIGNAL =
   /uniforme|camiseta|camisa|kit|conjunto|pantaloneta|short|media|arquero|portero|buzo|buso|hoodie|sudadera|peto|gorra|bandera|cotiz|precio|valor|cu[aá]nto|f[uú]tbol|baloncesto|basket|volei|voley|atletismo|microf[uú]tbol|futsal|dumonti|dry.?fit|polo|manga|cuello|talla|pedido|abono|dise[nñ]o|logo|escudo/i;
 const COMMERCIAL_INTENT =
@@ -291,8 +309,10 @@ function classifyConversation(conv, normalized, now) {
 
   const adsOnly =
     inbound.length > 0 &&
-    inbound.every((m) => ADS_PREFILL.test(m.text.trim())) &&
-    !PRODUCT_SIGNAL.test(inboundText.replace(ADS_PREFILL, ""));
+    inbound.every((m) => isAdsPrefillText(m.text)) &&
+    !PRODUCT_SIGNAL.test(
+      inboundText.replace(/hola,\s*quiero\s+cotizar\s+uniformes\s+de/gi, "")
+    );
   const hasCommercial = COMMERCIAL_INTENT.test(inboundText) || inbound.some((m) =>
     ["image", "audio", "document"].includes(m.type)
   );
