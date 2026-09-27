@@ -1,21 +1,8 @@
-# Asignación de diseñador por proyecto — Odoo 19 Studio
+# Asignación de diseñador por proyecto — [DESMANTELADO / DEPRECATED]
 
-Ruteo de tareas a **José Diseñador** (proyecto Javier) y **Leyrol Diseñador** (proyecto Paola), con excepción manual a José en tareas de Paola cuando la operaria lo indique.
-
-## Trigger de negocio
-
-| Proyecto | Diseñador por defecto | Excepción |
-|----------|----------------------|-----------|
-| Javier Proyecto (id 8) | José Diseñador (user 7) | — |
-| Proyecto Paola (id 9) | Leyrol Diseñador (user 8) | Operaria cambia campo **Diseñador** → José en tareas puntuales |
-
-Al entrar a etapa **Fabricación** (ids 32 Javier / 36 Paola), además de crear la OF/MRP existente, se asigna el diseñador, se suscribe al chatter y se notifica.
-
-## Campo Studio
-
-| Campo técnico | Etiqueta | Tipo | Modelo |
-|---------------|----------|------|--------|
-| `x_studio_diseador` | Diseñador | Many2one → `res.users` | `project.task` |
+> [!NOTE]
+> **Estado a 21-sep-2026:** Esta automatización y el campo `x_studio_diseador` fueron **completamente desmantelados y eliminados de Odoo**.
+> La asignación de diseñadores es ahora **100% manual por parte de la operaria** mediante el campo nativo de responsables / seguidores, sin ninguna regla automática que sobreescriba los valores al entrar a Fabricación o crear tareas.
 
 | Instancia | `ir.model.fields` id |
 |-----------|----------------------|

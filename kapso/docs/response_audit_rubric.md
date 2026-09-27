@@ -35,7 +35,7 @@ Staff (Javier, Paola, Sebastián, Diego) se omite del carril cliente.
 
 ## Silencio correcto vs hueco
 
-El grafo **debe** callar en prefill Ads y spam (`route_customer_burst_resume` → `ignore`). Callar un «hola quiero 12 uniformes de fútbol» es un hueco.
+Prefill Ads solo → saludo neutro `ads_greet` (06–22) y wait. Spam real → `ignore`/`end_quiet`. Callar un «hola quiero 12 uniformes de fútbol» con deporte/qty sigue siendo hueco.
 
 Debounce ~30 s: varios inbound seguidos cuentan como un turno. El grace de «sin responder» es 3 minutos.
 

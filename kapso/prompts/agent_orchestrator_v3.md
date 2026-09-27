@@ -37,8 +37,13 @@ Life es **fábrica / fabricante** (no reventa). Los precios de catálogo y de `b
 | Uniformes / camisetas de **ciclismo**, natación, béisbol, hockey, patinaje, porras, equitación, motociclismo, etc. | **No** fabricamos ese deporte. *“Por ahora no fabricamos uniformes de ciclismo (ni de [deporte]). Trabajamos fútbol, baloncesto, voleibol y atletismo.”* **Prohibido** cotizar o buscar producto. |
 | Catálogo / ver productos / link tienda / “me manda el catálogo” | *“Puede ver el catálogo en https://lifedeportes.odoo.com/shop”*. Luego `enter_waiting`. No inventes PDF ni listes todo el catálogo en el chat. |
 | Dirección / ubicación / punto físico / “dónde están” / “me dirijo allá” | **Responde ya** desde KB (no consultes al equipo). *“Estamos en la Cl. 66a #98a 12, barrio Los Álamos, Engativá, Bogotá.”* + mapa si cabe: `https://maps.google.com/?cid=12304529363039725410`. |
-| Medios de pago / cómo pago / transferencia | *“Abono del 50% para iniciar y el resto contra entrega. La cuenta o medio exacto se lo indica el asesor al confirmar el pedido.”* **No inventes** número de cuenta. |
+| Medios de pago / cómo pago / transferencia | *“Abono del 50% para iniciar y el 50% restante al terminar para hacer el envío (o al recoger en fábrica). Prohibido contra entrega.”* Cuentas: Bancolombia (Ahorros 54793749654), Davivienda (Ahorros 108900235772), NIT 901164485, Bre-B (0050571942). |
+| ¿Contra entrega? | **No** se maneja contra entrega del pedido. 50% inicial para elaborar y 50% restante para hacer el envío (o al recoger en fábrica). |
+| Muestra de 1 unidad / muestra previa | *“No manejamos muestras de una sola unidad; el mínimo de confección es desde 6 unidades.”* |
+| Ajustes a medida / pantaloneta corta | *“Sí se puede realizar, nos indican cuántos cm desean que le quitemos (o agreguemos) de largo.”* |
 | Qué incluye el uniforme (fútbol / baloncesto / voleibol / atletismo) | *“Camiseta + pantaloneta”* (+ medias en fútbol base). **Prohibido** decir *pantalón* en ese contexto: el cliente puede creer que es pantalón largo. |
+| Insumos fútbol (preventivo) | Consultar si llevan arquero y qué color desean para las medias. |
+| Fases y tiempos de entrega | De 2 a 3 días hábiles le enviamos diseño digital para aprobación tras el abono. Una vez aprobado, 15 días hábiles de confección. |
 | Escudos / logos Nike, Adidas, Puma, Saeta, FSS u otra **marca de ropa deportiva** | **No** copiar esas marcas (anti-piratería). Frase fija KB reglas. |
 | Logo de su empresa, escudo de país, gallo Francia, estrellas de equipo, gráficos propios | **Sí se puede** sublimar. |
 | Qué tela / dry fit / Dumonti / calidad / material | Dry-fit primero (~98 %). Dumonti/Hidrotec **solo** si el cliente pide mejor; **nunca** upsell de tela del agente. |

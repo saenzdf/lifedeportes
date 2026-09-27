@@ -11,8 +11,9 @@ Cada mensaje entrante dispara el workflow desde **Start**. El agente responde y 
 
 ```
 Start → policy-guard-input → staff-allowlist-check → route-user-entry
-  → (cliente) classify-contact-odoo → route-customer-entry → agente
-  → (staff) detect-staff-upload-command → route-staff-entry → agente / write
+  → (cliente) classify-contact-odoo → wait_customer_burst → decide burst
+                  └ timeout → ensure-crm-from-quote → resolve-business-hours → agente vendedor
+  → (staff)   wait_staff_burst (1s) → decide burst [timeout] → staff-hermes-forwarder → Hermes local
 ```
 
 ---
@@ -52,21 +53,26 @@ Lógica `returning_sale` en `route_customer_entry.js`: si histórico guardó `cu
 
 ---
 
-## Principio 3: carril staff (v10 — línea única, canal directo)
+## Principio 3: carril staff = Hermes local (2026-09-16)
 
-Grafo: `workflow_lifedeportes_sales_inbound_v10.json` · Doc: `kapso/docs/staff_graph_v10.md` · Prompt: `agent_staff_upload_v5.md`
+Grafo: `workflow_lifedeportes_sales_inbound_v10.json` · Doc: `kapso/docs/staff_hermes_bridge.md`
 
 **Entrada:** teléfono staff en allowlist (o test con `LIFE_FORCE_STAFF_LANE`). **No** requiere abrir inbox del cliente.
 
 ```
 Start → policy → allowlist → route-user-entry [staff]
-  → agente ingreso pedido (preprocesa con tools del agente)
-  → validate-staff-write → route-staff-write
-       ok → build-quote-payload → odoo-create-lead-and-so → send → handoff fin staff
-       blocked → send → handoff fin staff
+  → wait_staff_burst (1s, debounce del hilo)
+  → decide burst: user_input → re-wait | timeout → staff-hermes-forwarder (webhook Hermes `staff-assistant`)
+  → wait_staff_lane (espera el próximo mensaje) → reengancha el burst
 ```
 
-Sin `detect-staff-upload-command`, `route-staff-entry`, agente general, nómina ni `route-staff-registration`.
+- Kapso **no decide nada** del staff: no crea CRM/SO, no parsea listas, no maneja nómina ni compras.
+  Todo eso vive en el agente staff de Hermes local (MCP Odoo + repo).
+- Sin camino legacy de subida en Kapso (se retiró para evitar doble SO).
+- **Sin reintroducir** `agent_1780762885818`, `detect-staff-upload-command`, `route-staff-entry`,
+  la cadena `validate-staff-write → build-quote-payload → odoo-create-lead-and-so`, nómina ni
+  `route-staff-registration` (todas en `ARCHIVED_FUNCTION_NAMES`).
+- El deploy unificado ya no embebe prompt/KB de staff (`embed_agent_knowledge.js --agent staff` = no-op).
 
 ---
 
@@ -83,16 +89,22 @@ Sin `detect-staff-upload-command`, `route-staff-entry`, agente general, nómina 
                  /            \
            customer            staff
               |                  |
-    [classify-contact-odoo]  [detect-staff-upload-command]
+    [classify-contact-odoo]  [wait_staff_burst 1s]
               |                  |
-    [route-customer-entry]   [route-staff-entry]
-         /         \              ...
-   [vendedor]  [histórico]     [staff general / upload / write chain]
-      (fin)       (fin)
-   enter_waiting  enter_waiting
+    [wait_customer_burst]    [decide burst] --user_input--> (re-wait)
+              |                  |
+      [decide burst]        [staff-hermes-forwarder] → Hermes local (webhook)
+        |        |               |
+   timeout      end        [wait_staff_lane] --next--> (re-wait)
+        |        |
+ [ensure-crm-from-quote] [end-quiet-customer]
+        |
+ [resolve-business-hours]
+        |
+   [agente vendedor] (enter_waiting)
 ```
 
-Sin flechas de vuelta desde vendedor/histórico a nodos Decision.
+Sin flechas de vuelta desde el vendedor a nodos Decision.
 
 ---
 
@@ -121,17 +133,16 @@ Sin flechas de vuelta desde vendedor/histórico a nodos Decision.
 
 ## Sync repo ↔ Kapso
 
+Camino único (pull → embed → tests → validate → push):
+
 ```bash
-# SIEMPRE primero si editaste en UI
-node ~/.agents/skills/automate-whatsapp/scripts/get-graph.js 8995b14c-d852-4fb3-bceb-8a51a6ccc2c6 \
-  > kapso/workflow_lifedeportes_sales_inbound_v8_session.json
-
-node kapso/scripts/embed_prompts_v8.js   # solo prompts
-
-node ~/.agents/skills/automate-whatsapp/scripts/update-graph.js ...  # solo si publicas
+bash kapso/scripts/deploy_graph_kb_progressive.sh
+# deja el workflow en active (si quedó draft: update-workflow-settings.js <WF_ID> --lock-version <n> --status active)
 ```
 
-**Regla:** topología = UI Kapso. `embed_prompts_v8.js` no toca edges.
+Edición puntual: `get-graph.js` → editar → `validate-graph-lifedeportes.js` → `update-graph.js --expected-lock-version`.
+
+**Regla:** topología = UI Kapso. `embed_prompts_v8.js` está retirado (apuntaba a v8); no usarlo.
 
 ---
 

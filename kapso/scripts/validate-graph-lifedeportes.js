@@ -12,10 +12,48 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const kapsoRoot = path.resolve(__dirname, "..");
 
 const ARCHIVED_FUNCTION_NAMES = new Set([
+  // Carril staff legacy (retirado 2026-09-16: el staff vive en Hermes local).
   "route-staff-registration",
   "route-staff-entry",
   "route-staff-post",
   "detect-staff-upload-command",
+  "detect-staff-lane",
+  "route-staff-lane",
+  "route-staff-lane-resume",
+  "route-staff-domain-guard",
+  "compile-staff-order-draft",
+  "validate-staff-write",
+  "route-staff-write",
+  "build-quote-payload",
+  "odoo-create-lead-and-so",
+  "get-service-status",
+  "sync-order-draft-from-odoo",
+  "prepare-inbox-upload",
+  "staff-sales-notify-reply",
+  "buscar-pedido-odoo",
+  "corregir-pedido-odoo",
+  "buscar-oportunidad-odoo",
+  "buscar-conversacion-kapso",
+  "clasificar-adjuntos-pedido",
+  "parsear-lista-excel-pedido",
+  "parsear-lista-texto-pedido",
+  "parsear-lista-imagen-pedido",
+  "parsear-lista-pdf-pedido",
+  "registrar-adjuntos-pedido",
+  "fusionar-borrador-lista",
+  "enviar-retomar-pedido",
+  "parse-nomina-attlog",
+  "confirmar-nomina",
+  "crear-compra-odoo",
+  "route-nomina-confirm",
+  "validate-nomina-confirm",
+  "register-nomina-stub",
+  "mark-maintenance-sent",
+  "route-customer-entry",
+  "route-customer-paused",
+  "compute-fidelity-retention",
+  "snapshot-upload-fidelity",
+  "seed-crm-awaiting",
 ]);
 
 const CUSTOMER_LANE_ORPHAN_OK = new Set([
@@ -131,10 +169,12 @@ function validateLife(definition) {
     }
   }
 
-  // Staff activo: solo ingreso de pedido + espera. Nómina/compras quedan en fases aisladas.
+  // Staff activo: el carril staff lo atiende Hermes local vía staff-hermes-forwarder.
+  // El agente staff embebido (agent_1780762885818) quedó huérfano y se retiró 2026-09-16.
   const requiredStaff = [
-    "agent_1780762885818",
+    "fn_staff_hermes_forwarder",
     "wait_staff_lane_1745500019050",
+    "wait_staff_burst_1745500019200",
   ];
   for (const id of requiredStaff) {
     if (!nodeIds.has(id)) errors.push(`missing required staff node: ${id}`);

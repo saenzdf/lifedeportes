@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+# RETIRADO 2026-09-16 — el carril staff vive en Hermes local (staff-hermes-forwarder).
+# Este deploy resucitaría functions borradas y re-cablearía el agente staff embebido.
+# Ver kapso/docs/staff_hermes_bridge.md. Deploy vigente: deploy_graph_kb_progressive.sh
+echo "RETIRADO: deploy_unified_staff.sh ya no aplica (carril staff = Hermes local)." >&2
+exit 1
 # Deploy Agent Staff unificado: nómina + compra tools, sin agente inbox.
 set -euo pipefail
 

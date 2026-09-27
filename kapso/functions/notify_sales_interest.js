@@ -458,40 +458,201 @@ function buildFingerprint(conversationId, quote) {
   return parts.join("|").slice(0, 240);
 }
 
-function buildNotifyBody({ customerPhone, customerName, conversationId, quote, note }) {
-  const q = normalizeQuote(quote || {});
-  const product = compact(q.product_text || "producto");
-  const qty = q.quantity || "?";
-  const unit = money(q.unit_cop);
-  const total = money(q.total_cop);
-  const lines = [
-    "Life · interés → semilla CRM (pedido vivo multi-semana)",
-    "Siguiente paso staff: crear/actualizar OPORTUNIDAD con LIFE_DOSSIER_v1. Presupuesto SO solo después (lista+refs + HAZ PRESUPUESTO).",
-    `Cliente WA: ${customerPhone || "sin teléfono"}`,
-  ];
-  if (customerName) lines.push(`Nombre (si lo dijo): ${customerName}`);
-  lines.push(`Estimado principal: ${qty} × ${product}`);
-  if (unit) lines.push(`Unitario: ${unit}`);
-  if (total) lines.push(`Total cotizado: ${total}`);
-  if ((q.lines || []).length > 1) {
-    lines.push("Opciones:");
-    for (const l of q.lines) {
-      lines.push(
-        `  - ${l.quantity || "?"} × ${l.product_text || "producto"}` +
-          (l.unit_cop ? ` @ ${money(l.unit_cop)}` : "") +
-          (l.total_cop ? ` = ${money(l.total_cop)}` : "")
-      );
-    }
+async function classifyBuyingReadinessWithJev(env, { customerName, lastMessage, quote, note }) {
+  const JEV_MODE = String(env?.LIFE_JEV_MODE || "off").toLowerCase().trim();
+  const key = env?.OPENROUTER_API_KEY;
+
+  if (JEV_MODE === "off" || !key) {
+    return {
+      mode: JEV_MODE,
+      enabled: false,
+      readiness: "ready_to_pay",
+      stars: "3",
+      explicitPayment: "yes",
+      confidence: 1.0,
+      reason: !key ? "missing_openrouter_key" : "jev_off",
+      tag: "⚠️ VENTA CONFIRMADA PARA PAGAR",
+      shouldAlertStaff: true,
+      latencyMs: 0,
+    };
   }
+
+  const q = normalizeQuote(quote || {});
+  const questions = {
+    buying_readiness: {
+      type: "choice",
+      instructions:
+        "Clasifica el nivel de intención del cliente. 'ready_to_pay' si pide cuentas bancarias, dice que va a transferir/abonar, pregunta cómo consignar o ya envió el comprobante. 'quote_in_progress' si solo está cotizando, preguntando precios o pidiendo información. 'needs_human' si pide hablar con un asesor o llamada.",
+      criteria: {
+        ready_to_pay: "Pide cuentas, confirma abono del 50%, va a transferir, o adjunta comprobante",
+        quote_in_progress: "Está cotizando, preguntando precios, tallas o modelos",
+        needs_human: "Pide hablar con un asesor humano o solicita llamada",
+        other: "Dudas generales u otro motivo",
+      },
+    },
+    has_explicit_payment_intent: {
+      type: "choice",
+      instructions: "¿El cliente solicita cuentas bancarias o confirma explícitamente que va a pagar/abonar?",
+      criteria: {
+        yes: "Sí, pide cuentas o afirma que va a pagar/consignar",
+        no: "No, no ha pedido cuentas ni confirmado abono",
+      },
+    },
+  };
+
+  const state = {
+    customer_name: customerName || null,
+    last_message: lastMessage ? String(lastMessage).slice(0, 1000) : null,
+    quote: {
+      product: q.product_text,
+      quantity: q.quantity,
+      total: q.total_cop,
+      notes: q.notes || note || null,
+    },
+  };
+
+  const t0 = Date.now();
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 6000);
+
+  try {
+    const res = await fetch("https://openrouter.ai/api/alpha/decisions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${key}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "typesafe/jev-1.13",
+        state,
+        questions,
+      }),
+      signal: ctrl.signal,
+    });
+    clearTimeout(timer);
+    const latencyMs = Date.now() - t0;
+
+    if (!res.ok) {
+      return {
+        mode: JEV_MODE,
+        enabled: true,
+        readiness: "ready_to_pay",
+        stars: "3",
+        explicitPayment: "yes",
+        confidence: 0,
+        reason: `http_${res.status}`,
+        tag: "⚠️ VENTA CONFIRMADA PARA PAGAR",
+        shouldAlertStaff: true,
+        latencyMs,
+      };
+    }
+
+    const data = await res.json();
+    const answers = data?.answers || {};
+    const readiness = answers.buying_readiness?.choice || "ready_to_pay";
+    const confidence = Number(answers.buying_readiness?.confidence || 0);
+    const payChoice = answers.has_explicit_payment_intent?.choice || "no";
+
+    let stars = "3";
+    let tag = "⚠️ VENTA CONFIRMADA PARA PAGAR";
+    let shouldAlertStaff = true;
+
+    if (readiness === "quote_in_progress" || readiness === "other") {
+      stars = "0";
+      tag = "ℹ️ COTIZACIÓN EN CURSO";
+      shouldAlertStaff = false;
+    } else if (readiness === "needs_human") {
+      stars = "2";
+      tag = "👤 ASESOR SOLICITADO";
+      shouldAlertStaff = true;
+    } else {
+      stars = "3";
+      tag = "⚠️ VENTA CONFIRMADA PARA PAGAR";
+      shouldAlertStaff = true;
+    }
+
+    if (JEV_MODE === "shadow") {
+      return {
+        mode: "shadow",
+        enabled: true,
+        jev_decision: { readiness, confidence, payChoice, stars, tag, shouldAlertStaff },
+        readiness: "ready_to_pay",
+        stars: "3",
+        explicitPayment: payChoice,
+        confidence,
+        reason: "shadow_mode_active",
+        tag: "⚠️ VENTA CONFIRMADA PARA PAGAR",
+        shouldAlertStaff: true,
+        latencyMs,
+        cost: data?.usage?.cost,
+      };
+    }
+
+    return {
+      mode: "on",
+      enabled: true,
+      readiness,
+      stars,
+      explicitPayment: payChoice,
+      confidence,
+      reason: "ok",
+      tag,
+      shouldAlertStaff,
+      latencyMs,
+      cost: data?.usage?.cost,
+    };
+  } catch (err) {
+    clearTimeout(timer);
+    const latencyMs = Date.now() - t0;
+    return {
+      mode: JEV_MODE,
+      enabled: true,
+      readiness: "ready_to_pay",
+      stars: "3",
+      explicitPayment: "yes",
+      confidence: 0,
+      reason: String(err?.message || err).slice(0, 100),
+      tag: "⚠️ VENTA CONFIRMADA PARA PAGAR",
+      shouldAlertStaff: true,
+      latencyMs,
+    };
+  }
+}
+
+function buildNotifyBody({ customerPhone, customerName, conversationId, quote, note, env, readiness }) {
+  const q = normalizeQuote(quote || {});
+  const client = customerName || (customerPhone ? `WA ${customerPhone.slice(-10)}` : "Cliente");
+  const total = money(q.total_cop) || (q.unit_cop && q.quantity ? money(q.unit_cop * q.quantity) : "por confirmar");
+
+  const qtyStr = q.quantity ? `${q.quantity} × ` : "";
+  const prodStr = compact(q.product_text || "pedido");
   const v = q.variants || {};
-  const variantBits = [v.material, v.collar, v.sleeves, v.sport].filter(Boolean);
-  if (variantBits.length) lines.push(`Variantes: ${variantBits.join(", ")}`);
-  if (q.notes) lines.push(`Notas: ${compact(q.notes).slice(0, 160)}`);
-  if (conversationId) lines.push(`Conv: ${conversationId}`);
-  if (note) lines.push(`Nota aviso: ${compact(note).slice(0, 160)}`);
-  const hint = continuityResumeHint(q);
-  if (hint) lines.push(`Retomar: ${hint}`);
-  lines.push("Bot sigue en waiting — pueden escribir en el hilo del cliente.");
+  const varBits = [v.sport, v.collar, v.sleeves, v.material].filter(Boolean);
+  const varStr = varBits.length ? ` (${varBits.join(", ")})` : "";
+  const unitStr = q.unit_cop ? `, Unitario: ${money(q.unit_cop)}` : "";
+  const orderDetail = `${qtyStr}${prodStr}${varStr}${unitStr}`;
+
+  const projectId = compact(env?.LIFE_KAPSO_PROJECT_ID) || "b470d474-6a7a-4d84-a214-6cd4b198b4f3";
+  const kapsoUrl = conversationId
+    ? `https://inbox.kapso.ai/projects/${projectId}?conversation_id=${encodeURIComponent(conversationId)}`
+    : null;
+
+  const phoneDigits = digits(customerPhone);
+  const waMeUrl = phoneDigits.length >= 10 ? `https://wa.me/${phoneDigits}` : null;
+
+  let firstLine = `El cliente ${client} está pendiente de consignar ${total}.`;
+  if (readiness === "needs_human") {
+    firstLine = `El cliente ${client} solicita comunicarse con un asesor.`;
+  }
+
+  const lines = [
+    firstLine,
+    `Está pidiendo: ${orderDetail}.`,
+  ];
+  if (kapsoUrl) lines.push(`Link conversación: ${kapsoUrl}`);
+  if (waMeUrl) lines.push(`Link WhatsApp: ${waMeUrl}`);
+  else lines.push(`(Cliente con número privado en WhatsApp)`);
+
   return lines.join("\n");
 }
 
@@ -881,8 +1042,18 @@ function buildVisibleDescription(quote, status, teamName, conversationId, env, s
     if (total) bits.push(`total <b>${formatCop(total)}</b>`);
     parts.push(`<p><b>Cotización ofrecida:</b> ${bits.join(" → ")}.</p>`);
   }
-  if (status) {
-    parts.push(`<p><b>Estado:</b> ${escapeHtml(String(status))}.</p>`);
+  const statusStr = compact(status);
+  const awaitingContact =
+    /interes_confirmado|esperando_abono|esperando_contacto|contacto_asesor|awaiting|pide_asesor|needs_human/i.test(
+      statusStr
+    );
+  if (awaitingContact) {
+    parts.unshift(
+      `<p><b>⚠️ Esperando que un asesor se comunique</b> — el bot ya le dijo al cliente que lo contactan para el abono / seguimiento.</p>`
+    );
+  }
+  if (statusStr) {
+    parts.push(`<p><b>Estado:</b> ${escapeHtml(statusStr)}.</p>`);
   }
   if (teamName) {
     parts.push(`<!-- team:${teamName.replace(/</g, "")} -->`);
@@ -1050,6 +1221,8 @@ async function seedCrmOpportunityFromQuote(env, {
   statusOverride,
   fingerprint,
   source,
+  priority = "3",
+  chatterTag = "",
 }) {
   const enabledRaw = String(env.LIFE_CRM_SEED_ENABLED ?? "true").toLowerCase().trim();
   if (["0", "false", "no", "off"].includes(enabledRaw)) {
@@ -1175,6 +1348,7 @@ async function seedCrmOpportunityFromQuote(env, {
       description,
       type: "opportunity",
       date_deadline: deadline,
+      priority: String(priority ?? "3"),
     };
     if (expected) vals.expected_revenue = expected;
 
@@ -1190,6 +1364,7 @@ async function seedCrmOpportunityFromQuote(env, {
       if (stageId !== seedStage) {
         vals.stage_id = stageId;
       }
+      vals.priority = String(priority ?? "3");
       const forceName = ["1", "true", "yes", "on"].includes(
         String(q.force_name || q.crm_rename || "")
           .toLowerCase()
@@ -1236,12 +1411,291 @@ return { shouldSeedCrmOpportunity, seedCrmOpportunityFromQuote };
 })();
 // --- LIFE_CRM_SEED_INLINE_END ---
 
+function parseAssigneeName(desc) {
+  const m = String(desc || "").match(/Asignado a:\s*(Paola|Javier)/i);
+  if (!m) return null;
+  return m[1].charAt(0).toUpperCase() + m[1].slice(1).toLowerCase();
+}
+
+function phoneForAssigneeName(name) {
+  return name === "Paola" ? "573213988464" : name === "Javier" ? "573103362484" : null;
+}
+
+function cleanPersonName(name) {
+  return compact(name).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, "").trim();
+}
+
+function realCustomerPhone(raw) {
+  const s = compact(raw);
+  if (!s || /^CO\./i.test(s)) return "";
+  const d = digits(s);
+  return d.length >= 10 ? d : "";
+}
+
+async function writeLeadAssignee(env, leadId, label, priority = "3", chatterTag = "") {
+  const url = String(env.ODOO_URL || "").replace(/\/$/, "");
+  if (!url || !env.ODOO_DB || !env.ODOO_USERNAME || !env.ODOO_PASSWORD) return;
+  const rpc = (service, method, args) =>
+    fetch(`${url}/jsonrpc`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        jsonrpc: "2.0",
+        method: "call",
+        params: { service, method, args },
+      }),
+    })
+      .then((r) => r.json())
+      .then((j) => j.result);
+
+  const uid = await rpc("common", "authenticate", [
+    env.ODOO_DB,
+    env.ODOO_USERNAME,
+    env.ODOO_PASSWORD,
+    {},
+  ]);
+  if (!uid) return;
+
+  const rows = await rpc("object", "execute_kw", [
+    env.ODOO_DB,
+    uid,
+    env.ODOO_PASSWORD,
+    "crm.lead",
+    "read",
+    [[leadId], ["description", "priority"]],
+  ]);
+  const current = String(rows?.[0]?.description || "");
+  const targetPriority = String(priority ?? "3");
+  const writeVals = {};
+  if (rows?.[0]?.priority !== targetPriority) {
+    writeVals.priority = targetPriority;
+  }
+  const tagPart = chatterTag ? ` · ${chatterTag}` : "";
+  const fullLabel = `${label}${tagPart}`;
+  if (!/Asignado a:\s*(Paola|Javier)/i.test(current) || (chatterTag && !current.includes(chatterTag))) {
+    writeVals.description = `${current}\n\n<p><b>${fullLabel}</b></p>`.trim();
+  }
+  if (Object.keys(writeVals).length > 0) {
+    await rpc("object", "execute_kw", [
+      env.ODOO_DB,
+      uid,
+      env.ODOO_PASSWORD,
+      "crm.lead",
+      "write",
+      [[leadId], writeVals],
+    ]);
+  }
+}
+
+async function pickGlobalRoundRobinPhone(env, allPhones) {
+  const fallback = allPhones[0] || "573213988464";
+  const url = String(env.ODOO_URL || "").replace(/\/$/, "");
+  if (!url || !env.ODOO_DB || !env.ODOO_USERNAME || !env.ODOO_PASSWORD) {
+    return fallback;
+  }
+  try {
+    const rpc = (service, method, args) =>
+      fetch(`${url}/jsonrpc`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          jsonrpc: "2.0",
+          method: "call",
+          params: { service, method, args },
+        }),
+      })
+        .then((r) => r.json())
+        .then((j) => j.result);
+    const uid = await rpc("common", "authenticate", [
+      env.ODOO_DB,
+      env.ODOO_USERNAME,
+      env.ODOO_PASSWORD,
+      {},
+    ]);
+    if (!uid) return fallback;
+    const rows =
+      (await rpc("object", "execute_kw", [
+        env.ODOO_DB,
+        uid,
+        env.ODOO_PASSWORD,
+        "crm.lead",
+        "search_read",
+        [
+          [
+            ["type", "=", "opportunity"],
+            ["description", "ilike", "Asignado a:"],
+          ],
+        ],
+        {
+          fields: ["id", "description"],
+          limit: 1,
+          order: "id desc",
+          context: { active_test: false },
+        },
+      ])) || [];
+    const lastName = parseAssigneeName(rows[0]?.description || "");
+    if (!lastName || allPhones.length < 2) return fallback;
+    const lastPhone = phoneForAssigneeName(lastName);
+    const idx = allPhones.indexOf(lastPhone);
+    if (idx < 0) return fallback;
+    return allPhones[(idx + 1) % allPhones.length] || fallback;
+  } catch (_err) {
+    return fallback;
+  }
+}
+
+async function claimAssignee(env, { conversationId, customerName, customerPhone, assigneePhone }) {
+  const url = String(env.ODOO_URL || "").replace(/\/$/, "");
+  const person = cleanPersonName(customerName);
+  if (!url || !env.ODOO_DB || !env.ODOO_USERNAME || !env.ODOO_PASSWORD) {
+    return { phone: assigneePhone || null, name: null, lead_id: null, reused: false };
+  }
+  try {
+    const rpc = (service, method, args) =>
+      fetch(`${url}/jsonrpc`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          jsonrpc: "2.0",
+          method: "call",
+          params: { service, method, args },
+        }),
+      }).then((r) => r.json()).then((j) => j.result);
+    const uid = await rpc("common", "authenticate", [
+      env.ODOO_DB,
+      env.ODOO_USERNAME,
+      env.ODOO_PASSWORD,
+      {},
+    ]);
+    if (!uid) return { phone: assigneePhone || null, name: null, lead_id: null, reused: false };
+    const executeKw = (model, method, positionalArgs = [], kw = {}) =>
+      rpc("object", "execute_kw", [
+        env.ODOO_DB,
+        uid,
+        env.ODOO_PASSWORD,
+        model,
+        method,
+        positionalArgs,
+        kw,
+      ]);
+
+    const searchKw = {
+      fields: ["id", "name", "phone", "description", "active"],
+      limit: 8,
+      order: "id desc",
+      context: { active_test: false },
+    };
+    const byId = new Map();
+    const addRows = (found) => {
+      for (const r of found || []) if (r?.id) byId.set(r.id, r);
+    };
+    if (conversationId) {
+      addRows(
+        await executeKw("crm.lead", "search_read", [[["description", "ilike", conversationId]]], searchKw)
+      );
+    }
+    const digitsOnly = realCustomerPhone(customerPhone);
+    const local10 = digitsOnly.slice(-10);
+    if (local10.length >= 7) {
+      addRows(
+        await executeKw("crm.lead", "search_read", [[["phone", "ilike", local10]]], searchKw)
+      );
+    }
+    if (person.length >= 8) {
+      const named =
+        (await executeKw(
+          "crm.lead",
+          "search_read",
+          [[["name", "ilike", person.slice(0, 40)], ["type", "=", "opportunity"]]],
+          searchKw
+        )) || [];
+      for (const r of named) {
+        if (r?.id && parseAssigneeName(r.description)) byId.set(r.id, r);
+      }
+    }
+
+    const rows = [...byId.values()];
+    const assigned = rows
+      .filter((r) => parseAssigneeName(r.description))
+      .sort((a, b) => Number(a.id) - Number(b.id));
+    const sticky = assigned[0] || null;
+    const stickyName = sticky ? parseAssigneeName(sticky.description) : null;
+    if (stickyName) {
+      const stickyPhone = phoneForAssigneeName(stickyName);
+      return { phone: stickyPhone, name: stickyName, lead_id: sticky.id, reused: true };
+    }
+
+    const assigneeName =
+      assigneePhone === "573213988464" ? "Paola" : assigneePhone === "573103362484" ? "Javier" : null;
+    return { phone: assigneePhone || null, name: assigneeName, lead_id: rows[0]?.id || null, reused: false };
+  } catch (_err) {
+    return { phone: assigneePhone || null, name: null, lead_id: null, reused: false };
+  }
+}
+
+async function sendWhatsAppTemplate(env, toDigits, { client, orderSummary, value, conversationId }) {
+  const apiKey = compact(env.KAPSO_API_KEY);
+  const phoneNumberId = compact(
+    env.KAPSO_PHONE_NUMBER_ID ||
+      env.LIFE_WHATSAPP_PHONE_NUMBER_ID ||
+      "1095603153637786"
+  );
+  if (!apiKey) return { ok: false, error: "missing_kapso_api_key" };
+  if (!toDigits || toDigits.length < 10) return { ok: false, error: "invalid_to" };
+  if (!conversationId) return { ok: false, error: "missing_conversation_id" };
+  const templateName = compact(env.LIFE_SALES_NOTIFY_TEMPLATE) || "alerta_oportunidad_ventas_kapso_v2";
+  const url = `https://api.kapso.ai/meta/whatsapp/v24.0/${phoneNumberId}/messages`;
+  const resp = await fetch(url, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      "X-API-Key": apiKey,
+    },
+    body: JSON.stringify({
+      messaging_product: "whatsapp",
+      to: toDigits,
+      type: "template",
+      template: {
+        name: templateName,
+        language: { code: "es" },
+        components: [
+          {
+            type: "body",
+            parameters: [
+              { type: "text", text: String(client || "Cliente").slice(0, 120) },
+              { type: "text", text: String(orderSummary || "Pedido").slice(0, 160) },
+              { type: "text", text: String(value || "Por confirmar").slice(0, 60) },
+            ],
+          },
+          {
+            type: "button",
+            sub_type: "url",
+            index: "0",
+            parameters: [{ type: "text", text: String(conversationId) }],
+          },
+        ],
+      },
+    }),
+  });
+  const json = await resp.json().catch(() => ({}));
+  if (!resp.ok) {
+    return {
+      ok: false,
+      error: String(json?.error?.message || resp.statusText || "wa_template_failed").slice(0, 160),
+    };
+  }
+  return { ok: true, message_id: json?.messages?.[0]?.id || null };
+}
+
 async function handler(request, env) {
-  const body = await request.json().catch(() => ({}));
-  const vars = body?.execution_context?.vars || body?.vars || {};
-  const input = body?.input || {};
-  const whatsapp = body?.whatsapp_context || {};
-  const now = new Date().toISOString();
+  try {
+    const body = await request.json().catch(() => ({}));
+    const executionContext = body?.execution_context || {};
+    const vars = executionContext.vars || body?.vars || {};
+    const input = body?.input || {};
+    const whatsapp = body?.whatsapp_context || {};
+    const now = new Date().toISOString();
 
   const inputPatch = {
     product_text: input.product_text || null,
@@ -1319,6 +1773,7 @@ async function handler(request, env) {
       whatsapp?.contact?.name ||
       ""
   );
+  const staffParticipated = Boolean(vars.session?.continuity?.staff_participated || vars.staff_participated);
   const fingerprint = buildFingerprint(conversationId, quote);
   const priorFp = compact(vars.sales_notify?.fingerprint || "");
 
@@ -1346,12 +1801,31 @@ async function handler(request, env) {
     );
   }
 
+  const lastCustomerText =
+    vars.context?.last_inbound_text ||
+    vars.staff?.last_inbound_text ||
+    whatsapp?.messages?.[0]?.text ||
+    input.note ||
+    input.customer_text ||
+    note ||
+    "";
+
+  // --- JEV BUYING READINESS CLASSIFIER ---
+  const jevDecision = await classifyBuyingReadinessWithJev(env, {
+    customerName,
+    lastMessage: lastCustomerText,
+    quote,
+    note,
+  });
+
   const text = buildNotifyBody({
     customerPhone,
     customerName: customerName || null,
     conversationId,
     quote,
     note,
+    env,
+    readiness: jevDecision.readiness,
   });
 
   const notifyEnabled = ["1", "true", "yes", "on"].includes(
@@ -1365,39 +1839,14 @@ async function handler(request, env) {
         .filter((p) => p.length >= 10)
     : [];
 
-  const waResults = [];
-  if (notifyEnabled && destinations.length) {
-    for (const to of destinations) {
-      waResults.push({ to, ...(await sendWhatsAppText(env, to, text)) });
-    }
-  }
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   // --- LIFE_CRM_SEED_CALL ---
   let crmSeedResult = { ok: false, skipped: true, reason: "not_attempted" };
   const crmGate = shouldSeedCrmOpportunity({
     quote,
     note,
-    lastCustomerText:
-      vars.context?.last_inbound_text ||
-      vars.staff?.last_inbound_text ||
-      whatsapp?.messages?.[0]?.text ||
-      "",
+    lastCustomerText,
   });
-  if (!crmGate.ok) {
+  if (!crmGate.ok && jevDecision.readiness !== "ready_to_pay" && jevDecision.readiness !== "needs_human") {
     crmSeedResult = { ok: false, skipped: true, reason: crmGate.reason, message_es: crmGate.message_es };
   } else {
     quote.status = quote.status && quote.status !== "cotizando" ? quote.status : "interes_confirmado";
@@ -1415,6 +1864,75 @@ async function handler(request, env) {
       statusOverride: "interes_confirmado",
       fingerprint,
       source: "notify_sales_interest",
+      priority: jevDecision.stars,
+      chatterTag: jevDecision.tag,
+    });
+  }
+
+  const allStaffPhones = ["573213988464", "573103362484"];
+  const roundRobinPhone = await pickGlobalRoundRobinPhone(env, allStaffPhones);
+  const claimed = await claimAssignee(env, {
+    conversationId,
+    customerName,
+    customerPhone,
+    assigneePhone: roundRobinPhone,
+  });
+  const assignedPhone = claimed.phone || roundRobinPhone;
+  const assignedName = claimed.name || (assignedPhone === "573213988464" ? "Paola" : "Javier");
+  const assigneeLabel = `Asignado a: ${assignedName}`;
+
+  if (crmSeedResult?.ok && crmSeedResult.lead_id) {
+    await writeLeadAssignee(env, crmSeedResult.lead_id, assigneeLabel, jevDecision.stars, jevDecision.tag);
+    crmSeedResult.assignee_label = `${assigneeLabel} · ${jevDecision.tag}`;
+  }
+
+  // --- ALERTA WHATSAPP A STAFF (PAOLA O JAVIER) ---
+  const waResults = [];
+  const clientLabel =
+    customerName || (customerPhone ? `WA ${customerPhone.slice(-10)}` : "Cliente");
+  const qtyStr = quote.quantity ? `${quote.quantity} × ` : "";
+  const prodStr = compact(quote.product_text || "pedido");
+  const v = quote.variants || {};
+  const varBits = [v.sport, v.collar, v.sleeves, v.material].filter(Boolean);
+  const varStr = varBits.length ? ` (${varBits.join(", ")})` : "";
+  const unitStr = quote.unit_cop ? `, Unit: ${money(quote.unit_cop)}` : "";
+  const orderSummaryForTemplate = `${qtyStr}${prodStr}${varStr}${unitStr}`.slice(0, 160);
+  const valueLabel = money(quote.total_cop) || "Por confirmar";
+
+  const shouldSendStaffAlert =
+    notifyEnabled &&
+    !staffParticipated &&
+    Boolean(assignedPhone) &&
+    jevDecision.shouldAlertStaff;
+
+  if (shouldSendStaffAlert) {
+    const staffShortMsg = text;
+    const directRes = await sendWhatsAppText(env, assignedPhone, staffShortMsg);
+    if (directRes.ok) {
+      waResults.push({ to: assignedPhone, method: "text", ...directRes });
+    } else {
+      // Fuera de ventana 24h (Meta error 131047): enviar template MARKETING aprobado
+      const tplRes = await sendWhatsAppTemplate(env, assignedPhone, {
+        client: clientLabel,
+        orderSummary: orderSummaryForTemplate,
+        value: valueLabel,
+        conversationId: conversationId || "carril-ventas",
+      });
+      waResults.push({ to: assignedPhone, method: "template", ...tplRes });
+    }
+  } else if (!jevDecision.shouldAlertStaff) {
+    waResults.push({
+      to: assignedPhone,
+      skipped: true,
+      reason: "quote_in_progress",
+      message: "Cotización en curso (0 estrellas). Lead registrado en Odoo sin interrumpir a asesores por WhatsApp.",
+    });
+  } else if (staffParticipated) {
+    waResults.push({
+      to: assignedPhone,
+      skipped: true,
+      reason: "staff_already_active",
+      message: "Operaria ya activa en el chat; se mantiene en su carril sin alerta de turno.",
     });
   }
 
@@ -1451,9 +1969,13 @@ async function handler(request, env) {
   let status = "dry_run";
   if (!notifyEnabled) {
     status = "disabled";
+  } else if (staffParticipated) {
+    status = "staff_active";
+  } else if (!jevDecision.shouldAlertStaff) {
+    status = "quote_in_progress";
   } else if (anyWaOk || webhook.ok) {
     status = "sent";
-  } else if (destinations.length) {
+  } else if (assignedPhone || destinations.length) {
     status = "failed";
   } else {
     status = "no_destinations";
@@ -1466,12 +1988,17 @@ async function handler(request, env) {
         sales_notify: {
           status,
           enabled: notifyEnabled,
+          staff_participated: staffParticipated,
           fingerprint,
           notified_at: now,
           destinations,
-          whatsapp: waResults.map(({ to, ok, error, message_id }) => ({
+          jev: jevDecision,
+          whatsapp: waResults.map(({ to, ok, error, message_id, skipped, reason, message }) => ({
             to,
-            ok,
+            ok: Boolean(ok),
+            skipped: Boolean(skipped),
+            reason: reason || null,
+            message: message || null,
             error: error || null,
             message_id: message_id || null,
           })),
@@ -1514,12 +2041,26 @@ async function handler(request, env) {
       message:
         status === "sent"
           ? "Ventas notificadas; cliente sigue en waiting."
-          : status === "disabled"
-            ? "Aviso a ventas desactivado (LIFE_SALES_NOTIFY_ENABLED); cliente sigue en waiting."
-            : "Intento de notificación a ventas registrado.",
+          : status === "quote_in_progress"
+            ? "Cotización en curso registrada en CRM (0 estrellas); asesores no interrumpidos por WhatsApp."
+            : status === "staff_active"
+              ? "Operaria ya activa en el chat; se mantiene en su carril sin alerta de turno."
+              : status === "disabled"
+                ? "Aviso a ventas desactivado (LIFE_SALES_NOTIFY_ENABLED); cliente sigue en waiting."
+                : "Intento de notificación a ventas registrado.",
     }),
     { headers: { "Content-Type": "application/json" } }
   );
+  } catch (err) {
+    return new Response(
+      JSON.stringify({
+        status: "fallback",
+        error: String(err?.message || err).slice(0, 300),
+        message: "Error controlado en notificación a ventas; el bot continúa.",
+      }),
+      { headers: { "Content-Type": "application/json" } }
+    );
+  }
 }
 
 { handler };

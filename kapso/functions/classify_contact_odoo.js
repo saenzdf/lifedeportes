@@ -893,6 +893,108 @@ async function hydrateCustomerSessionFromKapso(env, phone, options = {}) {
   };
 }
 
+/**
+ * Normaliza y resume mensajes recientes de WhatsApp para dar continuidad
+ * y visibilidad de las intervenciones del staff al agente orquestador.
+ */
+function parseRecentMessages(rawMessages = [], options = {}) {
+  const currentMessageId = options.currentMessageId ? String(options.currentMessageId) : null;
+  const list = unwrapList(rawMessages);
+
+  const parsed = [];
+  for (const m of list) {
+    const id = String(m?.id || m?.wamid || "");
+    if (currentMessageId && id === currentMessageId) continue;
+
+    const d = String(m?.kapso?.direction || m?.direction || "").toLowerCase();
+    const dir = d === "inbound" || d === "in" ? "inbound" : d === "outbound" || d === "out" ? "outbound" : "unknown";
+    const origin = String(m?.kapso?.origin || m?.origin || "").toLowerCase();
+
+    const k = m?.kapso || {};
+    const t = m?.text || {};
+    const textParts = [
+      k.content,
+      k.transcription,
+      k.caption,
+      typeof t === "string" ? t : t?.body,
+      m?.caption,
+      m?.image?.caption,
+      m?.document?.filename,
+      m?.document?.caption,
+    ].map((x) => String(x || "").trim()).filter(Boolean);
+
+    let text = textParts.join(" ").slice(0, 500);
+    if (!text) {
+      const type = String(m?.type || m?.message_type || m?.kapso?.type || "text").toLowerCase();
+      if (type === "image") text = "[imagen]";
+      else if (type === "audio") text = "[audio]";
+      else if (type === "video") text = "[video]";
+      else if (type === "document") text = "[documento]";
+      else if (type === "sticker") text = "[sticker]";
+      else text = "";
+    }
+    if (!text) continue;
+
+    let speaker = "BOT";
+    if (dir === "inbound") {
+      speaker = "CLIENTE";
+    } else {
+      if (origin === "business_app" || origin === "user" || origin === "staff" || origin === "human") {
+        speaker = "STAFF";
+      } else {
+        speaker = "BOT";
+      }
+    }
+
+    const ts = Date.parse(m?.created_at || m?.timestamp || m?.inserted_at || 0) || 0;
+    parsed.push({ id, dir, origin, speaker, text, ts });
+  }
+
+  parsed.sort((a, b) => a.ts - b.ts);
+
+  const staffMessages = parsed.filter((m) => m.speaker === "STAFF");
+  const lastStaff = staffMessages.length ? staffMessages[staffMessages.length - 1].text : null;
+  const staffParticipated = staffMessages.length > 0;
+
+  const summarySlice = parsed.slice(-6);
+  const summaryLines = summarySlice.map((m) => `[${m.speaker}]: ${m.text.replace(/\s+/g, " ").trim()}`);
+  const recentThreadSummary = summaryLines.join("\n");
+
+  return {
+    messages: parsed,
+    has_prior_conversation: parsed.length > 0,
+    staff_participated: staffParticipated,
+    last_staff_message: lastStaff,
+    recent_thread_summary: recentThreadSummary || null,
+  };
+}
+
+async function fetchRecentThreadContext(cfg, conversationId, options = {}) {
+  if (!cfg || !conversationId) {
+    return {
+      has_prior_conversation: false,
+      staff_participated: false,
+      last_staff_message: null,
+      recent_thread_summary: null,
+    };
+  }
+  try {
+    const payload = await kapsoGet(cfg, "/platform/v1/whatsapp/messages", {
+      conversation_id: conversationId,
+      per_page: options.limit || 12,
+    });
+    return parseRecentMessages(payload, options);
+  } catch (err) {
+    return {
+      has_prior_conversation: false,
+      staff_participated: false,
+      last_staff_message: null,
+      recent_thread_summary: null,
+      error: String(err?.message || err),
+    };
+  }
+}
+
 function mapActiveOrders(activeOrders = [], projectTasks = []) {
   const taskByOrderId = new Map();
   for (const task of projectTasks || []) {
@@ -973,12 +1075,23 @@ async function handler(request, env) {
       ""
   ).trim();
   const currentConversationId = String(
-    whatsappContext?.conversation?.id || execVars?.kapso?.conversation_id || ""
+    whatsappContext?.conversation?.id ||
+      execVars?.kapso?.conversation_id ||
+      body?.input?.conversation_id ||
+      body?.conversation_id ||
+      ""
   ).trim();
   const currentExecutionId = String(
     body?.execution_id ||
       body?.workflow_execution_id ||
       execVars?.kapso?.execution_id ||
+      ""
+  ).trim();
+  const currentMessageId = String(
+    whatsappContext?.message?.id ||
+      execVars?.kapso?.message_id ||
+      body?.input?.message_id ||
+      body?.message_id ||
       ""
   ).trim();
 
@@ -996,11 +1109,42 @@ async function handler(request, env) {
   if (!normalizedPhone.e164Digits) {
     return response("new_customer", false, 0, now, baseUser);
   }
+
+  // Memoria y Continuidad de Hilo: obtener contexto de mensajes recientes en Kapso
+  const cfg = kapsoConfig(env);
+  let threadContext = null;
+  if (cfg) {
+    let convId = currentConversationId;
+    if (!convId && normalizedPhone.e164Digits) {
+      try {
+        const convPayload = await kapsoGet(cfg, "/platform/v1/whatsapp/conversations", {
+          phone_number: normalizedPhone.e164Digits,
+          per_page: 5,
+        });
+        const list = unwrapList(convPayload).filter((c) =>
+          conversationMatchesPhone(c, normalizedPhone.e164Digits)
+        );
+        if (list.length > 0) convId = String(list[0].id || "");
+      } catch (_e) {
+        // ignore
+      }
+    }
+    if (convId) {
+      threadContext = await fetchRecentThreadContext(cfg, convId, {
+        currentMessageId,
+        limit: 10,
+      });
+      if (threadContext) {
+        threadContext.conversation_id = convId;
+      }
+    }
+  }
+
   if (
     stakeholders.includes(normalizedPhone.e164Digits) ||
     stakeholders.includes(normalizedPhone.e164Plus)
   ) {
-    return response("stakeholder", true, 0, now, baseUser);
+    return response("stakeholder", true, 0, now, baseUser, null, { threadContext });
   }
 
   // Memoria Kapso: retomar quote aunque Odoo no conozca al partner aún.
@@ -1015,6 +1159,7 @@ async function handler(request, env) {
 
   if (!ODOO_URL || !ODOO_DB || !ODOO_USERNAME || !ODOO_PASSWORD) {
     return response("new_customer", false, 0, now, baseUser, null, {
+      threadContext,
       hydrated,
       hydrateError,
       existingQuote,
@@ -1048,6 +1193,7 @@ async function handler(request, env) {
     ]);
     if (!uid) {
       return response("new_customer", false, 0, now, baseUser, null, {
+        threadContext,
         hydrated,
         hydrateError,
         existingQuote,
@@ -1075,6 +1221,7 @@ async function handler(request, env) {
     const partner = lookup.partner;
     if (!partner?.id) {
       return response("new_customer", false, 0, now, baseUser, null, {
+        threadContext,
         hydrated,
         hydrateError,
         existingQuote,
@@ -1174,6 +1321,7 @@ async function handler(request, env) {
       has_active_orders: activeOrderCount > 0,
       has_project_cards: projectCardCount > 0,
     }, null, {
+      threadContext,
       hydrated,
       hydrateError,
       opportunityDossier,
@@ -1187,6 +1335,7 @@ async function handler(request, env) {
     });
   } catch (_error) {
     return response("new_customer", false, 0, now, baseUser, "odoo_error", {
+      threadContext,
       hydrated,
       hydrateError,
       existingQuote,
@@ -1216,6 +1365,11 @@ function response(
   const lastOrder = extras.lastOrder || null;
   const latestTask = extras.latestTask || null;
   const projectCardCount = Number(extras.projectCardCount || 0);
+  const threadContext = extras.threadContext || null;
+  const hasPriorThread = Boolean(threadContext?.has_prior_conversation);
+  const staffParticipated = Boolean(threadContext?.staff_participated);
+  const lastStaffMsg = threadContext?.last_staff_message || null;
+  const threadSummary = threadContext?.recent_thread_summary || null;
 
   // Memoria: Kapso hydrate + dossier CRM (elige/merge el más rico)
   let resumedQuote = null;
@@ -1257,6 +1411,34 @@ function response(
     }
   }
 
+  if (!resumedQuote) {
+    if (staffParticipated) {
+      continuitySource = "kapso_staff_interaction";
+    } else if (hasPriorThread) {
+      continuitySource = "kapso_thread_history";
+    } else if (known) {
+      continuitySource = "odoo_only";
+    }
+  }
+
+  const isReturning = Boolean(
+    resumedQuote ||
+    hasPriorThread ||
+    known ||
+    activeMapped.length > 0 ||
+    projectCardCount > 0 ||
+    historyCount > 0
+  );
+
+  let resumeHint = null;
+  if (resumedQuote) {
+    resumeHint = continuityResumeHint(resumedQuote);
+  } else if (lastStaffMsg) {
+    resumeHint = `Staff dijo: "${lastStaffMsg.slice(0, 100).replace(/\s+/g, ' ')}"`;
+  } else if (hasPriorThread) {
+    resumeHint = "Hilo previo activo; retomar respondiendo a su mensaje sin saludo frío.";
+  }
+
   const outVars = {
     user: {
       ...baseUser,
@@ -1277,21 +1459,29 @@ function response(
           : hydrated?.order_focus?.name || null,
     },
     session: {
-      continuity: resumedQuote
+      continuity: isReturning
         ? {
             resumed: true,
+            has_prior_conversation: hasPriorThread,
+            staff_participated: staffParticipated,
+            last_staff_message: lastStaffMsg,
+            recent_thread_summary: threadSummary,
             source: continuitySource,
-            conversation_id: continuityMeta.conversation_id,
+            conversation_id: continuityMeta.conversation_id || threadContext?.conversation_id || null,
             execution_id: continuityMeta.execution_id,
             prior_status: continuityMeta.prior_status,
             same_conversation: continuityMeta.same_conversation,
             opportunity_id: continuityMeta.opportunity_id,
-            resume_hint: continuityResumeHint(resumedQuote),
+            resume_hint: resumeHint,
             resumed_at: now,
           }
         : {
             resumed: false,
-            source: known ? "odoo_only" : "none",
+            has_prior_conversation: false,
+            staff_participated: false,
+            last_staff_message: null,
+            recent_thread_summary: null,
+            source: "none",
             hydrate_error: extras.hydrateError || null,
             resumed_at: now,
           },
@@ -1301,6 +1491,7 @@ function response(
       last_call_status: errorCode ? "fallback" : "ready",
       last_call_at: now,
       fallback_message: errorCode,
+      ...(isReturning ? { greeting_sent: true } : {}),
     },
   };
 
@@ -1351,8 +1542,8 @@ function response(
     JSON.stringify({
       vars: outVars,
       status: "ready",
-      message: resumedQuote
-        ? "Contacto clasificado; sesión comercial retomada (Kapso/CRM dossier)."
+      message: isReturning
+        ? "Contacto clasificado; sesión/continuidad comercial retomada."
         : "Contacto clasificado por telefono contra Odoo.",
     }),
     { headers: { "Content-Type": "application/json" } }

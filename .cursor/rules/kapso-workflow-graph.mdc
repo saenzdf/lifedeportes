@@ -1,12 +1,12 @@
 ---
-description: Grafo Kapso Life Deportes — v10 staff, validar antes de subir
+description: Grafo Kapso Life Deportes — carril staff en Hermes, validar antes de subir
 globs: kapso/workflow*.json,kapso/functions/**/*.js,kapso/prompts/**,kapso/docs/**
 alwaysApply: false
 ---
 
 # Grafo Kapso Life Deportes
 
-Leer `kapso/docs/graph_architecture.md` y `kapso/docs/staff_graph_v10.md`.
+Leer `kapso/docs/graph_architecture.md` y `kapso/docs/staff_hermes_bridge.md`.
 
 Skill obligatoria antes de publicar: `.agents/skills/kapso-graph-guard/SKILL.md`
 
@@ -20,20 +20,28 @@ No ejecutar `update-graph` si falla.
 
 ## Grafo activo
 
-`workflow_lifedeportes_sales_inbound_v10.json` — staff línea única. Sin nodos huérfanos de v7/v8/v9.
+`workflow_lifedeportes_sales_inbound_v10.json` — 16 nodos: carril cliente + carril staff reducido al forwarder. Sin nodos huérfanos de v7/v8/v9.
 
 ## Carril cliente
 
-Sin cambios de filosofía. Sin decides post vendedor/histórico. Ver `graph_architecture.md`.
+Sin cambios de filosofía: classify → wait_customer_burst → decide → ensure-crm → resolve-business-hours → vendedor. Sin decides post vendedor.
 
-## Staff v10
+## Carril staff (2026-09-16: vive en Hermes local)
 
 ```
-route-user-entry [staff] → agente ingreso → validate → route-staff-write → build → odoo → handoff
+route-user-entry [staff] → wait_staff_burst (1s) → decide burst [timeout] → staff-hermes-forwarder
+   → webhook Hermes `staff-assistant` → wait_staff_lane → reengancha burst
 ```
 
-No reintroducir: detect-staff-upload-command, route-staff-entry, staff general, nómina.
+Kapso **no** crea CRM/SO ni parsea listas: eso es del agente staff de Hermes.
+
+No reintroducir: `agent_1780762885818`, `detect-staff-upload-command`, `route-staff-entry`,
+`validate-staff-write` → `build-quote-payload` → `odoo-create-lead-and-so`, nómina, ni
+`route-staff-registration`. Todas están en `ARCHIVED_FUNCTION_NAMES` (`scripts/validate-graph-lifedeportes.js`)
+con código archivado en `kapso/functions/_archive/`.
 
 ## Sync
 
-`get-graph` → validar → `update-graph` con lock_version. Prompts staff: `embed_prompts_staff_v10.js` (lee `prompts/agent_staff_upload_v5.md`).
+`get-graph` → validar → `update-graph` con lock_version, o el camino único
+`bash kapso/scripts/deploy_graph_kb_progressive.sh`. El embed de staff es no-op
+(`embed_agent_knowledge.js --agent staff` → `RETIRED_AGENTS`).

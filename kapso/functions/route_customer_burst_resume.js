@@ -1,10 +1,12 @@
 /**
  * route_customer_burst_resume — tras wait_customer_burst (debounce ~30s).
  * timeout / silencio → vendedor; user_input → reinicia el wait;
- * ignore → vuelve al wait sin responder (prefill Meta Ads solo, o spam).
+ * ads_greet → saludo neutro preconfigurado + wait (prefill Meta Ads);
+ * ignore / end → spam real (o Ads fuera de ventana 06:00–22:00).
  *
- * Prioridad: ventas legítimas (keywords / audio con contenido comercial) siempre
- * van a vendedor. Prefill "Hola, quiero cotizar uniformes de" solo → ignore.
+ * Prefill "Hola, quiero cotizar/quiero uniformes de" solo → ads_greet (06–22).
+ * ≥2 audios sin contexto de ropa deportiva → ignore/end.
+ * Tras spam+timeout: termina la ejecución (evita loop 30s y no dispara al vendedor).
  */
 async function handler(request, env) {
   const body = await request.json().catch(() => ({}));
@@ -13,47 +15,25 @@ async function handler(request, env) {
   const vars = executionContext.vars || {};
   const system = executionContext.system || body?.system || {};
   const whatsappContext = body?.whatsapp_context || {};
-  const messages = Array.isArray(whatsappContext.messages) ? whatsappContext.messages : [];
+  const messages = Array.isArray(whatsappContext.messages)
+    ? whatsappContext.messages
+    : Array.isArray(body?.inbound_messages)
+      ? body.inbound_messages
+      : Array.isArray(whatsappContext?.inbound_messages)
+        ? whatsappContext.inbound_messages
+        : [];
   const conversation = whatsappContext.conversation || {};
   const now = new Date().toISOString();
 
   const BLACKLIST = [
-    "573134996131", // Johanna Castellanos
-    "573217106630", // Stephany
-    "573122038033", // Maria-Luci
-    "573116841997", // Que Dios Me Mendiga
-    "573332230330", // Kris💜💜
-    "573217328374", // Alba Estrada
-    "573023532238", // mangonesjoao
-    "584226400323", // Yaneida
-    "573249880802", // Luis angel Marin
-    "573053162985", // Victoria junco
-    "573152768086", // Bertha Hernández
-    "573132444892", // Te Amo Hija Mía Celeste
-    "573232007699", // Michell Girón
-    "573188475194", // Yofe
-    "573165160487", // Karen Ojeda
-    "573187363170",
-    "573508147621", // Michel (insultos)
-    "573045553700",
-    "573232503426",
-    "573145111116", // Deymar Y Emma
-    "573238090324", // Isaac David
-    "573012925882",
-    "573234749904",
-    "584260851544", // Rosales
-    "573137863940", // AE
-    "573242410054", // LOA
-    "573206634244", // Valledupar
-    "573219535530", // gonzalesberriosanapaola
-    "573115462722", // cristian
-    "573233506843", // Carolina Acosta / Michell
-    "573046672766",
-    "573043892013", // Sergio
-    "573242363448", // Wendy Perez
-    "573042668702",
-    "573007252275", // spam 2026-07-15 (😍❤️) gibberish + sticker
-    "573157582035", // spam 2026-07-15 (anarincon819) pocket dial / child play
+    "573134996131", "573217106630", "573122038033", "573116841997", "573332230330",
+    "573217328374", "573023532238", "584226400323", "573249880802", "573053162985",
+    "573152768086", "573132444892", "573232007699", "573188475194", "573165160487",
+    "573187363170", "573508147621", "573045553700", "573232503426", "573145111116",
+    "573238090324", "573012925882", "573234749904", "584260851544", "573137863940",
+    "573242410054", "573206634244", "573219535530", "573115462722", "573233506843",
+    "573046672766", "573043892013", "573242363448", "573042668702",
+    "573007252275", "573157582035",
   ];
 
   const GENUINE_KEYWORDS = [
@@ -64,6 +44,11 @@ async function handler(request, env) {
     "chaqueta", "pantalon", "licra", "impermeable", "bolsillo", "bordado",
     "vendedor", "asesor", "persona", "atencion", "humano", "atender", "cantidad",
     "unidad", "unidades", "equipo", "club", "colegio",
+    "cuenta", "banco", "nequi", "bancolombia", "daviplata", "consignar", "consignacion",
+    "transferir", "transferencia", "abono", "abonar", "pago", "pagar", "espera",
+    "entrega", "entregar", "envio", "enviar", "despacho", "octubre", "noviembre",
+    "diciembre", "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
+    "agosto", "septiembre", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado",
   ];
 
   const NON_VERBAL_MARKERS = [
@@ -75,12 +60,8 @@ async function handler(request, env) {
   ];
 
   const COLOMBIAN_INSULTS = [
-    /\bmalparid[oa]/i,
-    /\bsapo\b/i,
-    /\b(gonorrea|hpta|mierda|hp)\b/i,
-    /\bcoma\s+mierda/i,
-    /\bhijo\s+de\s+puta/i,
-    /\bcarechimba/i,
+    /\bmalparid[oa]/i, /\bsapo\b/i, /\b(gonorrea|hpta|mierda|hp)\b/i,
+    /\bcoma\s+mierda/i, /\bhijo\s+de\s+puta/i, /\bcarechimba/i,
   ];
 
   const GREETING_ONLY = /^(hola+|buenas?|buenos\s+dias?|buenas\s+tardes?|buenas\s+noches?|hi|hey|ok|oki|si|sí|dale|ya)$/i;
@@ -103,9 +84,9 @@ async function handler(request, env) {
 
   function getMessageText(msg) {
     if (!msg || typeof msg !== "object") return "";
-    const direct = msg.content ?? msg.body;
+    const direct = msg.content ?? msg.body ?? msg.caption;
     if (typeof direct === "string" && direct.trim()) return direct.trim();
-    const nested = msg.text;
+    const nested = msg.text ?? msg.message?.text;
     if (typeof nested === "string" && nested.trim()) return nested.trim();
     if (nested && typeof nested === "object") {
       const bodyText = nested.body ?? nested.text;
@@ -127,53 +108,81 @@ async function handler(request, env) {
   function getTranscript(msg) {
     if (!msg || typeof msg !== "object") return "";
     const fromFields = transcriptRawToString(
-      msg.transcript ?? msg.metadata?.transcript ?? msg.kapso?.transcript
+      msg.transcript ??
+        msg.metadata?.transcript ??
+        msg.kapso?.transcript ??
+        msg.audio?.transcript ??
+        msg.message?.audio?.transcript
     );
     if (fromFields) return fromFields;
-    // Kapso a veces embebe "Transcript: ..." en el body del audio
-    const body = getMessageText(msg);
-    const m = body.match(/transcript\s*:\s*(.+)$/is);
+    const bodyText = getMessageText(msg);
+    const m = bodyText.match(/transcript\s*:\s*(.+)$/is);
     if (m && m[1]) return m[1].trim();
     return "";
   }
 
-  /**
-   * Clasifica transcripción de audio:
-   * - real_speech: habla humana con palabras → siempre contar (venta o no)
-   * - non_verbal: silencio / ruido / animal / jingle
-   * - empty: sin transcript
-   */
   function classifyTranscript(rawText) {
     const original = String(rawText || "").trim();
     if (!original) return { kind: "empty", text: "", folded: "" };
-
     let folded = fold(original).replace(/\[|\]/g, " ");
-    for (const mk of NON_VERBAL_MARKERS) {
-      folded = folded.split(mk).join(" ");
-    }
+    for (const mk of NON_VERBAL_MARKERS) folded = folded.split(mk).join(" ");
     folded = folded.replace(/[^a-z0-9ñ\s]/g, " ").replace(/\s+/g, " ").trim();
-
     const words = folded.split(/\s+/).filter((w) => w.length >= 2);
     const letters = (folded.match(/[a-zñ]/g) || []).length;
-
-    if (words.length >= 3 && letters >= 12) {
-      return { kind: "real_speech", text: original, folded };
-    }
-    if (words.length >= 2 && letters >= 16) {
-      return { kind: "real_speech", text: original, folded };
-    }
+    if (words.length >= 3 && letters >= 12) return { kind: "real_speech", text: original, folded };
+    if (words.length >= 2 && letters >= 16) return { kind: "real_speech", text: original, folded };
     return { kind: "non_verbal", text: original, folded };
   }
 
-  /** Prefill Meta Ads click-to-WhatsApp (sin deporte / sin pedido real). */
+  function isSalesSpeech(foldedText) {
+    return GENUINE_KEYWORDS.some((kw) => foldedText.includes(kw));
+  }
+
   function isAdsPrefillGreeting(text) {
-    const t = fold(text).replace(/\s+/g, " ").trim();
+    // Meta a veces mete ZWSP / puntuación rara al final del prefill incompleto.
+    let t = fold(text)
+      .replace(/[\u200b-\u200d\ufeff]/g, "")
+      .replace(/[^\wñáéíóúü\s]/gi, " ")
+      .replace(/\s+/g, " ")
+      .trim();
     if (!t) return false;
+    const mid = Math.floor(t.length / 2);
+    if (mid > 10 && t.slice(0, mid).trim() === t.slice(mid).trim()) {
+      t = t.slice(0, mid).trim();
+    }
     return (
-      /^hola,?\s*quiero\s+cotizar\s+uniformes\s+de\s*$/.test(t) ||
-      /^hola,?\s*quiero\s+cotizar\s+uniformes\s*$/.test(t)
+      /^hola\s*quiero\s+cotizar\s+uniformes\s+de\s*$/.test(t) ||
+      /^hola\s*quiero\s+cotizar\s+uniformes\s*$/.test(t) ||
+      /^hola\s*quiero\s+uniformes\s+de\s*$/.test(t) ||
+      /^quiero\s+(cotizar\s+)?uniformes\s+de\s*$/.test(t)
     );
   }
+
+  /** Ventana de envío al cliente: 06:00–22:00 Bogotá. */
+  function customerSendOkNow() {
+    try {
+      const fmt = new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/Bogota",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+      });
+      const map = {};
+      for (const p of fmt.formatToParts(new Date())) {
+        if (p.type !== "literal") map[p.type] = p.value;
+      }
+      const minutes = Number(map.hour) * 60 + Number(map.minute);
+      return minutes >= 6 * 60 && minutes < 22 * 60;
+    } catch {
+      return true;
+    }
+  }
+
+  const SPANISH_SHORT_WORDS = new Set([
+    "a", "al", "de", "del", "el", "en", "es", "la", "las", "le", "les", "lo", "los",
+    "me", "mi", "no", "o", "se", "si", "su", "sus", "te", "tu", "un", "una", "unos",
+    "unas", "ya", "yo", "con", "por", "que", "mas", "tan", "muy", "dia", "ano", "mes"
+  ]);
 
   function isKeyboardSmash(text) {
     const t = String(text || "").replace(/\s+/g, " ").trim();
@@ -181,16 +190,22 @@ async function handler(request, env) {
     if (isAdsPrefillGreeting(t)) return false;
     const folded = fold(t);
     if (GENUINE_KEYWORDS.some((kw) => folded.includes(kw))) return false;
+    if (/(.)\1{4,}/.test(folded)) return true;
+    if (/[bcdfghjklmnpqrstvwxyz]{5,}/i.test(folded)) return true;
     const tokens = folded.split(/\s+/).filter(Boolean);
     if (tokens.length < 6) return false;
-    const shortTok = tokens.filter((x) => x.length <= 3).length;
-    const weirdTok = tokens.filter((x) => /[0-9]/.test(x) || /(.)\1{2,}/.test(x) || x.length <= 2).length;
-    if (shortTok / tokens.length >= 0.4 && weirdTok / tokens.length >= 0.35) return true;
-    if (/(.)\1{4,}/.test(folded)) return true;
+    const nonStopTokens = tokens.filter((x) => !SPANISH_SHORT_WORDS.has(x));
+    if (nonStopTokens.length === 0) return false;
+    const weirdTok = nonStopTokens.filter(
+      (x) => /[0-9]/.test(x) || /(.)\1{2,}/.test(x) || x.length <= 2
+    ).length;
+    if (weirdTok / nonStopTokens.length >= 0.5) return true;
     return false;
   }
 
-  const inboundMessages = messages.filter((m) => m.direction === "inbound");
+  const inboundMessages = messages.filter(
+    (m) => !m.direction || String(m.direction).toLowerCase() === "inbound"
+  );
 
   const assignee = conversation.assignee || vars.assignee || vars.assignee_id || null;
   const hasHumanAssignee =
@@ -203,7 +218,7 @@ async function handler(request, env) {
   let nonPrefillTextCount = 0;
   let prefillOnlyTexts = 0;
   let anyNonPrefillSignal = false;
-  let realSpeechCount = 0;
+  let salesSpeechCount = 0;
 
   inboundMessages.forEach((m) => {
     const text = getMessageText(m);
@@ -221,9 +236,11 @@ async function handler(request, env) {
       }
     }
     if (classified.kind === "real_speech") {
-      realSpeechCount++;
-      anyNonPrefillSignal = true;
-      allWordsCombined += " " + classified.folded;
+      if (isSalesSpeech(classified.folded)) {
+        salesSpeechCount++;
+        anyNonPrefillSignal = true;
+        allWordsCombined += " " + classified.folded;
+      }
     }
     if (type === "image" || type === "video" || type === "document") {
       anyNonPrefillSignal = true;
@@ -231,8 +248,7 @@ async function handler(request, env) {
   });
 
   const hasGenuineKeyword = GENUINE_KEYWORDS.some((kw) => allWordsCombined.includes(kw));
-  // Habla real en audio (aunque no diga "uniforme") cuenta como lead legítimo
-  const hasRealSpeech = realSpeechCount >= 1;
+  const hasSalesSpeech = salesSpeechCount >= 1;
 
   let isSpam = false;
   let spamReason = "";
@@ -240,11 +256,11 @@ async function handler(request, env) {
 
   if (hasHumanAssignee) {
     isSpam = false;
-  } else if (hasGenuineKeyword || hasRealSpeech) {
-    // Prioridad ventas: keyword comercial O transcripción con habla real → nunca spam
+  } else if (hasGenuineKeyword || hasSalesSpeech) {
     isSpam = false;
   } else {
     let audiosCount = 0;
+    let salesAudioCount = 0;
     let imagesCount = 0;
     let stickersCount = 0;
     let shortTextsCount = 0;
@@ -259,7 +275,9 @@ async function handler(request, env) {
 
       if (type === "audio") {
         audiosCount++;
-        audioClassifications.push(classifyTranscript(getTranscript(m)));
+        const cls = classifyTranscript(getTranscript(m));
+        audioClassifications.push(cls);
+        if (cls.kind === "real_speech" && isSalesSpeech(cls.folded)) salesAudioCount++;
       } else if (type === "image" || type === "video") {
         imagesCount++;
       } else if (type === "sticker") {
@@ -276,11 +294,8 @@ async function handler(request, env) {
           shortTextsCount++;
           return;
         }
-        if (cleaned.length <= 5) {
-          shortTextsCount++;
-        } else {
-          nonSpamTextsCount++;
-        }
+        if (cleaned.length <= 5) shortTextsCount++;
+        else nonSpamTextsCount++;
       }
     });
 
@@ -292,35 +307,43 @@ async function handler(request, env) {
       audiosCount >= 1 &&
       audioClassifications.every((c) => c.kind === "non_verbal" || c.kind === "empty");
     const isPocketDialAudios = audiosCount >= 2 && allAudiosNonVerbal;
-
     const isMediaFloodChildPlay =
       audiosCount >= 2 && (imagesCount >= 2 || stickersCount >= 3);
     const isStickerFlood = stickersCount >= 4 && nonSpamTextsCount === 0 && !anyNonPrefillSignal;
-
-    // Gibberish: ≥2 saludos/textos vacíos Y sin habla real Y sin otro contenido útil
     const isGibberishText =
       shortTextsCount >= 2 &&
       nonSpamTextsCount === 0 &&
       smashTextsCount === 0 &&
-      !hasRealSpeech &&
+      !hasSalesSpeech &&
       imagesCount === 0 &&
       (audiosCount === 0 || allAudiosNonVerbal);
-
     const isSmashText =
-      smashTextsCount >= 1 && nonSpamTextsCount === 0 && !hasGenuineKeyword && !hasRealSpeech;
+      smashTextsCount >= 1 && nonSpamTextsCount === 0 && !hasGenuineKeyword && !hasSalesSpeech;
     const isBlacklisted = waId && BLACKLIST.includes(waId);
 
-    // Prefill Meta solo (o prefill + stickers/ruido sin pedido real)
+    // ≥2 audios sin ropa deportiva / venta (ruido o habla irrelevante).
+    // Saludos / prefill Meta no cuentan como texto de lead.
+    const isNonSalesAudioFlood =
+      audiosCount >= 2 &&
+      salesAudioCount === 0 &&
+      nonSpamTextsCount === 0 &&
+      imagesCount === 0 &&
+      stickersCount === 0 &&
+      smashTextsCount === 0;
+
     isPrefillOnly =
       prefillOnlyTexts >= 1 &&
       nonPrefillTextCount === 0 &&
       !hasGenuineKeyword &&
-      !hasRealSpeech &&
+      !hasSalesSpeech &&
       audiosCount === 0 &&
       imagesCount === 0 &&
       smashTextsCount === 0;
 
-    if (isBlacklisted) {
+    if (isNonSalesAudioFlood) {
+      isSpam = true;
+      spamReason = "2+ audios sin contexto de ropa deportiva / uniformes — no lead.";
+    } else if (isBlacklisted) {
       isSpam = true;
       spamReason = "Phone number is blacklisted.";
     } else if (hasInsults) {
@@ -344,8 +367,7 @@ async function handler(request, env) {
     }
   }
 
-  // Prefill-only también cuando hay genuine path corto-circuitado: recalcular bandera
-  if (!hasHumanAssignee && !hasGenuineKeyword && !hasRealSpeech && !isSpam) {
+  if (!hasHumanAssignee && !hasGenuineKeyword && !hasSalesSpeech && !isSpam) {
     const onlyPrefill =
       inboundMessages.length > 0 &&
       inboundMessages.every((m) => {
@@ -359,13 +381,150 @@ async function handler(request, env) {
     if (onlyPrefill) isPrefillOnly = true;
   }
 
+  // ─────────────────────────────────────────────────────────────────────────
+  // Jev (TypeSafe vía OpenRouter) — capa de decisión tipada.
+  //   LIFE_JEV_MODE=off (default) | shadow | on
+  //   shadow → solo registra la decisión de Jev en vars.jev_shadow.guard (NO cambia routing)
+  //   on     → Jev puede RESCATAR leads (spam→lead) y confirmar prefill Ads.
+  //            NUNCA puede convertir un no-spam en spam (protege ingresos).
+  //            Blacklist y hasHumanAssignee siguen siendo deterministas.
+  // Sin OPENROUTER_API_KEY o si la llamada falla → null y se usa la heurística.
+  // ─────────────────────────────────────────────────────────────────────────
+  const JEV_MODE = String(env?.LIFE_JEV_MODE || "off").toLowerCase().trim();
+  const JEV_THRESHOLD = Number(env?.LIFE_JEV_THRESHOLD || 0.7);
+
+  async function jevDecide(questions, timeoutMs = 8000) {
+    const key = String(env?.OPENROUTER_API_KEY || "").trim();
+    if (!key) return { ok: false, reason: "no_api_key", answers: null };
+
+    const state = {
+      burst_messages: inboundMessages.slice(0, 8).map((m) => {
+        const type = String(m.message_type || m.type || "text").toLowerCase();
+        const entry = { type };
+        const text = getMessageText(m);
+        if (text) entry.text = text.slice(0, 600);
+        const tr = getTranscript(m);
+        if (tr) entry.transcript = tr.slice(0, 600);
+        return entry;
+      }),
+      prefill_text_count: prefillOnlyTexts,
+      real_text_count: nonPrefillTextCount,
+      has_human_assignee: hasHumanAssignee,
+      in_send_window_06_22: customerSendOkNow(),
+    };
+
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+    try {
+      const res = await fetch("https://openrouter.ai/api/alpha/decisions", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${key}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ model: "typesafe/jev-1.13", state, questions }),
+        signal: ctrl.signal,
+      });
+      if (!res.ok) return { ok: false, reason: `http_${res.status}`, answers: null };
+      const json = await res.json();
+      return { ok: true, reason: null, answers: json?.answers || null, cost: json?.usage?.cost };
+    } catch (err) {
+      return { ok: false, reason: String(err?.name || err?.message || err).slice(0, 60), answers: null };
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+
+  const JEV_QUESTIONS = {
+    lead_intent: {
+      type: "choice",
+      instructions:
+        "¿Cuál es la intención real de este burst de mensajes entrantes hacia Life Deportes, una empresa de uniformes y ropa deportiva personalizada?",
+      criteria: {
+        sales_lead:
+          "El cliente pregunta o muestra interés real de compra/cotización de ropa deportiva o uniformes, aunque sea breve o mal escrito.",
+        ads_prefill_only:
+          "Es solo un saludo/prefill automático de Meta Ads (p. ej. 'Hola, quiero cotizar uniformes de') sin ningún contenido propio del cliente.",
+        spam_or_noise:
+          "Ruido: pocket-dial, stickers o audios sin habla humana, insultos, texto basura o flood de medios sin relación con ventas.",
+      },
+    },
+    is_real_speech: {
+      type: "noul",
+      instructions: "¿Al menos uno de los mensajes contiene habla humana real (no solo ruido, silencio o música)?",
+      criteria: {
+        true: "Hay palabras reconocibles transcritas de un audio.",
+        false: "Solo ruido, silencio, música o marcadores no verbales.",
+      },
+    },
+    is_insult: {
+      type: "noul",
+      instructions: "¿El mensaje contiene insultos o profanidad explícita?",
+      criteria: {
+        true: "Insulto o profanidad explícita en español.",
+        false: "No hay insultos ni profanidad.",
+      },
+    },
+  };
+
+  const heuristicClass = isSpam ? "spam_or_noise" : isPrefillOnly ? "ads_prefill_only" : "sales_lead";
+  let jevShadow = null;
+
+  if (JEV_MODE === "shadow" || JEV_MODE === "on") {
+    const t0 = Date.now();
+    const jev = await jevDecide(JEV_QUESTIONS);
+    const ans = jev.answers;
+    const intent = ans?.lead_intent && ans.lead_intent.type === "choice" ? ans.lead_intent : null;
+    const jevClass = intent?.choice ?? null;
+    const jevConfidence =
+      typeof intent?.confidence === "number"
+        ? intent.confidence
+        : jevClass && typeof intent?.probabilities?.[jevClass] === "number"
+          ? intent.probabilities[jevClass]
+          : null;
+    const jevUsable =
+      jev.ok && jevClass !== null && jevConfidence !== null && jevConfidence >= JEV_THRESHOLD;
+
+    jevShadow = {
+      enabled: true,
+      mode: JEV_MODE,
+      ok: jev.ok,
+      reason: jev.reason,
+      decision: jevClass,
+      confidence: jevConfidence,
+      probabilities: intent?.probabilities ?? null,
+      is_real_speech: ans?.is_real_speech?.noul ?? null,
+      is_insult: ans?.is_insult?.noul ?? null,
+      heuristic: heuristicClass,
+      agreement: jevClass === null ? null : jevClass === heuristicClass,
+      applied: false,
+      latency_ms: Date.now() - t0,
+      cost_usd: jev.cost ?? null,
+      called_at: now,
+    };
+
+    if (JEV_MODE === "on" && jevUsable) {
+      const blacklisted = Boolean(waId && BLACKLIST.includes(waId));
+      if (!blacklisted && !hasHumanAssignee) {
+        if (jevClass === "sales_lead" && isSpam) {
+          // Rescate: la heurística descartaba un lead; Jev dice que sí lo es.
+          isSpam = false;
+          spamReason = "";
+          jevShadow.applied = true;
+          jevShadow.applied_reason = "rescued_lead";
+        } else if (jevClass === "ads_prefill_only" && !isSpam && !isPrefillOnly) {
+          isPrefillOnly = true;
+          jevShadow.applied = true;
+          jevShadow.applied_reason = "detected_ads_prefill";
+        }
+      }
+      // Dirección contraria (no-spam → spam) NO se aplica: protege ingresos.
+    }
+  }
+
   let spamProfile = null;
   if (isSpam) {
-    spamProfile = {
-      is_spam: true,
-      reason: spamReason,
-      classified_at: now,
-    };
+    spamProfile = { is_spam: true, reason: spamReason, classified_at: now };
   } else if (isPrefillOnly) {
     spamProfile = {
       is_spam: false,
@@ -399,27 +558,139 @@ async function handler(request, env) {
       ""
   ).toLowerCase();
 
-  const shouldIgnore = isSpam || isPrefillOnly;
+  // Routing abajo: spam → ignore/end; ads prefill → ads_greet (06–22).
+
+  async function endQuietExecution() {
+    const executionId = String(
+      body?.execution_id ||
+        body?.workflow_execution_id ||
+        executionContext?.execution_id ||
+        executionContext?.id ||
+        system?.execution_id ||
+        system?.workflow_execution_id ||
+        vars?.kapso?.execution_id ||
+        body?.flow_info?.execution_id ||
+        ""
+    ).trim();
+    const apiKey = String(env?.KAPSO_API_KEY || "").trim();
+    if (!executionId || !apiKey) return { ok: false, reason: "missing_id_or_key" };
+    try {
+      const base = String(env?.KAPSO_API_BASE_URL || "https://api.kapso.ai").replace(/\/$/, "");
+      const resp = await fetch(`${base}/platform/v1/workflow_executions/${executionId}`, {
+        method: "PATCH",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "X-API-Key": apiKey,
+        },
+        body: JSON.stringify({ workflow_execution: { status: "ended" } }),
+      });
+      return { ok: resp.ok, status: resp.status };
+    } catch (err) {
+      return { ok: false, error: String(err?.message || err).slice(0, 120) };
+    }
+  }
+
+  let quietEnded = null;
+  // Spam NUNCA va al vendedor. Prefill Ads → saludo neutro (ads_greet) en 06–22.
+  // En prod, a veces available_edges en timeout solo trae ["timeout"] (sin "ignore"):
+  // igual hay que evitar el edge timeout → ensure-crm → vendedor para spam.
+  const edgeSet = new Set(
+    (availableEdges || []).map((e) => String(e || "").trim()).filter(Boolean)
+  );
+  const sendOk = customerSendOkNow();
+  const alreadyGreeted = Boolean(
+    vars?.service?.ads_prefill_greeted || vars?.spam_profile?.ads_greeted
+  );
 
   let signal;
   let routeReason;
-  if (reason === "user_input" && availableEdges.includes("user_input")) {
+  let servicePatch = {};
+
+  // Durante el debounce, otro mensaje siempre reinicia el wait (juntar burst).
+  if (reason === "user_input" && edgeSet.has("user_input")) {
     signal = "user_input";
     routeReason = "burst_more_messages";
-  } else if (shouldIgnore && availableEdges.includes("ignore")) {
-    signal = "ignore";
-    routeReason = isSpam ? `burst_ignore_spam:${spamReason}` : "burst_ignore_ads_prefill";
-  } else if (availableEdges.includes("timeout")) {
-    // Fallback: si no hay edge ignore, no mandar spam/prefill al vendedor si podemos
-    // quedarnos en user_input; si no, timeout (el prompt del agente también silencia).
-    if (shouldIgnore && availableEdges.includes("user_input") && reason !== "timeout") {
+  } else if (isSpam) {
+    const isTimeoutIgnore = reason === "timeout";
+    if (isTimeoutIgnore) {
+      quietEnded = await endQuietExecution();
+    }
+    if (isTimeoutIgnore && edgeSet.has("end")) {
+      signal = "end";
+      routeReason = `burst_end_spam:${spamReason}`;
+    } else if (edgeSet.has("ignore")) {
+      signal = "ignore";
+      routeReason = `burst_ignore_spam:${spamReason}`;
+    } else if (edgeSet.has("user_input")) {
       signal = "user_input";
       routeReason = "burst_ignore_fallback_rewait";
     } else {
-      signal = "timeout";
-      routeReason = reason === "timeout" ? "burst_silence_timeout" : "burst_default_to_vendor";
+      signal = "ignore";
+      routeReason = "burst_ignore_forced_no_edge";
     }
-  } else if (availableEdges.includes("user_input")) {
+  } else if (isPrefillOnly) {
+    // Ya saludamos este prefill → no repetir; esperar o cerrar en silencio.
+    if (alreadyGreeted) {
+      if (reason === "timeout" && edgeSet.has("end")) {
+        quietEnded = await endQuietExecution();
+        signal = "end";
+        routeReason = "burst_end_ads_already_greeted";
+      } else if (edgeSet.has("ignore")) {
+        signal = "ignore";
+        routeReason = "burst_ignore_ads_already_greeted";
+      } else if (edgeSet.has("user_input")) {
+        signal = "user_input";
+        routeReason = "burst_ads_greeted_rewait";
+      } else {
+        signal = "ignore";
+        routeReason = "burst_ads_greeted_forced";
+      }
+    } else if (!sendOk) {
+      // Noche 22:00–06:00: sin WA; resume matutino retoma el hilo.
+      if (reason === "timeout" && edgeSet.has("end")) {
+        quietEnded = await endQuietExecution();
+        signal = "end";
+        routeReason = "burst_end_ads_outside_send_window";
+      } else if (edgeSet.has("ignore")) {
+        signal = "ignore";
+        routeReason = "burst_ignore_ads_outside_send_window";
+      } else if (edgeSet.has("user_input")) {
+        signal = "user_input";
+        routeReason = "burst_ads_night_rewait";
+      } else {
+        signal = "ignore";
+        routeReason = "burst_ads_night_forced";
+      }
+    } else if (edgeSet.has("ads_greet")) {
+      signal = "ads_greet";
+      routeReason = "burst_ads_prefill_greet";
+      servicePatch = {
+        ads_prefill_greeted: true,
+        greeting_sent: true,
+      };
+      if (spamProfile) {
+        spamProfile = {
+          ...spamProfile,
+          ads_greeted: true,
+          reason: "Meta Ads prefill — saludo neutro enviado; waiting real message",
+        };
+      }
+    } else if (edgeSet.has("ignore")) {
+      // Grafo viejo sin ads_greet: no mandar al vendedor.
+      signal = "ignore";
+      routeReason = "burst_ignore_ads_no_greet_edge";
+    } else if (edgeSet.has("user_input")) {
+      signal = "user_input";
+      routeReason = "burst_ads_fallback_rewait";
+    } else {
+      signal = "ignore";
+      routeReason = "burst_ads_forced_no_edge";
+    }
+  } else if (edgeSet.has("timeout")) {
+    signal = "timeout";
+    routeReason = reason === "timeout" ? "burst_silence_timeout" : "burst_default_to_vendor";
+  } else if (edgeSet.has("user_input")) {
     signal = "user_input";
     routeReason = "burst_fallback_input";
   } else {
@@ -432,13 +703,18 @@ async function handler(request, env) {
       next_edge: signal,
       vars: {
         spam_profile: spamProfile,
+        jev_shadow: jevShadow,
         service: {
           ...(vars.service || {}),
+          ...servicePatch,
           last_call_name: "route_customer_burst_resume",
           last_call_status: "ready",
           last_call_at: now,
           burst_resume_reason: reason || null,
           route_reason: routeReason,
+          quiet_ended: quietEnded,
+          customer_send_ok: sendOk,
+          available_edges_seen: availableEdges,
         },
       },
     }),
