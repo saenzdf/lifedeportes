@@ -65,6 +65,7 @@ En Life Deportes, "subir un producto" o "ingresar un pedido" significa tomar la 
 5. **Regla de Subida Directa (Sin Fricción Staff)**: Si la información ingresada es válida y no hay un bloqueador duro (como una variante inexistente o cantidad < 6), el agente debe **crear el borrador en Odoo de inmediato sin preguntar "¿Confirmas la subida?"**.
 6. **No Duplicar Datos Sensibles en Notas**: La nota del presupuesto (`sale.order.note`) y la descripción de la tarea (`project.task.description`) **NO** deben contener el nombre del cliente, teléfono ni precios. Esos datos ya residen en los campos nativos de Odoo.
 7. **Subida de Nómina/Asistencia estricta (attlog.dat)**: Al subir asistencias a Odoo, nunca inventar información de turnos. Solo registrar los días que salgan en el archivo. No llenar el mes de forma artificial. Aplicar heurística de salida a las 17:00 o entrada a las 08:00 únicamente cuando el empleado olvidó marcar la entrada o la salida, impidiendo que los turnos queden con más de 12 horas consecutivas. Inyectar siempre la duración real calculada (`duration`) y fecha en cada registro de `hr.work.entry`. Mapear los empleados únicamente mediante el `barcode` (Badge ID / PIN del reloj) para evitar confusiones con IDs internos.
+8. **Capa Decisional Jev (`typesafe/jev-1.13`)**: Antes de crear o actualizar pedidos, los agentes deben apoyarse en la capa decisional Jev para resolver de forma probabilística pero ultrarrápida: clasificación de adjuntos (comprobante de pago vs planilla vs diseño), intención de compra (`ready_to_pay` vs `quote_in_progress`), matching de plantillas Odoo y conteo de sobrecostos de tallas grandes (2XL +$5k / 3XL +$10k). Consultar [`life-jev-decision-guide`](../life-jev-decision-guide/SKILL.md).
 
 ---
 
@@ -72,6 +73,7 @@ En Life Deportes, "subir un producto" o "ingresar un pedido" significa tomar la 
 
 Este skill interactúa y se coordina con los siguientes skills especializados dentro de `projects/lifedeportes/.agents/skills/`:
 
+- **`life-jev-decision-guide`**: Guía canónica para invocar Jev en los 7 puntos decisionales del flujo (antispam, cotizaciones, matching Odoo, comprobantes de pago, CRM y seguridad).
 - **`life-odoo-ingreso-pedidos`**: Ejecución directa del flujo de ingreso preventa (creación de Partner, SO borrador, líneas de producto).
 - **`life-odoo-lista-tarea`**: Parseo de listas y actualización de notas HTML en presupuestos existentes (`sale.order.note`) y tareas (`project.task.description`).
 - **`life-preparar-pedido`**: Extracción y descarga previa de archivos/conversaciones desde WhatsApp vía `wacli`.
