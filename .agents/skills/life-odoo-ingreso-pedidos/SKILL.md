@@ -70,9 +70,16 @@ Checklist interpretación antes de Odoo:
 - [ ] Tipo prenda: camiseta_sola | uniforme_completo | arquero | buzo | otro
 - [ ] Deporte (si aplica): futbol | baloncesto | voleibol | atletismo
 - [ ] Variante: cuello (V/redondo/polo), manga (corta/larga/sisa), tela (dry fit / dumonti)
+- [ ] Tallas grandes especiales: conteo de 2XL (+5.000 COP) y 3XL (+10.000 COP)
 - [ ] Cantidad ≥ 6 del mismo artículo
 - [ ] Precio = list_price Odoo salvo precio acordado explícito
 ```
+
+### Apoyo Decisional con Jev (`typesafe/jev-1.13`)
+Si el texto, transcript o foto son ambiguos, o si la lista contiene tallas especiales (2XL/3XL) o comprobantes bancarios, invocar a **Jev** antes de escribir en Odoo:
+1. **Sobrecostos de Tallas:** Jev cuenta con precisión cuántas unidades requieren sobrecosto de 2XL (ID 1805, +$5.000 c/u) y 3XL (ID 1806, +$10.000 c/u).
+2. **Clasificación de Comprobantes de Pago:** Si el adjunto es un soporte bancario (Bancolombia, Davivienda, Nequi, Daviplata, Bre-B), clasificarlo como `payment_receipt`, registrar el lead en CRM con 3 estrellas (`priority: '3'`) y disparar la alerta WhatsApp al asesor asignado.
+3. **Guía técnica y schemas:** Consultar [`life-jev-decision-guide`](../life-jev-decision-guide/SKILL.md).
 
 ---
 
