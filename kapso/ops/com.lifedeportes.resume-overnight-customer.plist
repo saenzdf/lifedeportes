@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.lifedeportes.resume-overnight-customer</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/diego/Library/Application Support/lifedeportes/resume_overnight_customer.sh</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/tmp</string>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>6</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>StandardOutPath</key>
+  <string>/tmp/life_resume_overnight_customer.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/life_resume_overnight_customer.err</string>
+</dict>
+</plist>

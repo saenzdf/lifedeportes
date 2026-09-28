@@ -1,0 +1,29 @@
+---
+description: Un cliente/pedido = un asesor. Nunca la misma tarea de atención a Paola y a Javier.
+alwaysApply: true
+---
+
+# Un cliente = un asesor (Life Deportes)
+
+Paola `573213988464` y Javier `573103362484` **nunca** reciben el mismo aviso, digest, “hay que actuar”, llegada a fábrica, catch-up, template o tarea de atención sobre el **mismo cliente o pedido**.
+
+Esto ya existía en `notificar_interes_ventas` / `claimAssignee` (`Asignado a: Paola|Javier`). Aplica a **cualquier** tarea de atención a cliente, no solo a esa function.
+
+## Contrato
+
+1. Lee `Asignado a` en `crm.lead` (también archivados; por conv Kapso, BSUID, teléfono, nombre).
+2. Envía **solo** a esa persona. Si Nicolás Giraldo es de Paola → **no** le llega a Javier (ni el resumen ni “falta contactarlo”).
+3. Lo que ya se envió a Javier **no** se pasa a Paola, ni “por si acaso”, ni en un digest conjunto.
+4. Sin `Asignado a`: asigna **uno** (round-robin global) y persiste. Nunca ambos.
+5. Si el cliente **pide un asesor**: dale **solo** el número de esa persona (Javier `310 336 2484` / Paola `321 398 8464`). Si aún no hay `Asignado a`, asígnalo en ese momento (`notificar_interes_ventas` / `claimAssignee`) y luego ese número. No pegues 310 y 321 juntos.
+6. **Ventas Kapso (desde 2026-09-03):** no hay turno de cotizaciones a Paola/Javier. El presupuesto va a **Kapso pedidos**. El aviso/teléfono a un asesor **solo** si el cliente lo pide.
+
+## Prohibido
+
+- Un WhatsApp idéntico (o el mismo lote de tareas) a Paola y a Javier.
+- Catch-up / “pendientes de hoy” / “el bot no contestó” fan-out a las dos líneas.
+- Reenviar a “el otro” porque el primero no contestó, sin orden explícita de Diego.
+
+Incidente 2026-08-25: `kapso/scripts/catchup_unanswered_2026-08-25.js` mandó el mismo digest a ambos. Eso hace que te llamen porque se repitió la tarea. No repetir.
+
+Código de referencia: `claimAssignee` en `notify_sales_interest.js`; `on-contact-shared`; `enviar_ubicacion` avisa a **un** asignado.

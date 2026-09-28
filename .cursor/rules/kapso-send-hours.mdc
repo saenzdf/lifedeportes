@@ -1,0 +1,29 @@
+---
+description: Ventanas de envío Kapso — vendedor 6am–10pm; staff proactivo 8am–6pm.
+alwaysApply: true
+---
+
+# Ventanas de envío Kapso (Life Deportes)
+
+Zona: **America/Bogota**. Son **otro reloj** que el horario comercial (hoy vs mañana: lun–vie 8:30–17, sáb 8:30–14).
+
+## Cliente (carril vendedor)
+
+El agente vendedor puede mandar WhatsApp al cliente **hasta las 10:00 p.m.** Se vuelve a responder **a las 6:00 a.m.**
+
+- Ventana de envío: **06:00–22:00** todos los días (`customerSendOk`).
+- **18:00–22:00:** solo vendedor al cliente; notify staff / llegada / digest **pausados**.
+- **22:00–06:00:** tools en silencio hacia el cliente. **Prohibido** `send_notification_to_user`, Excel, pin, ack al cliente. `enter_waiting`.
+- A las 6:00 se reanudan los waiting con inbound de noche.
+
+## Staff (Paola / Javier)
+
+Avisos **proactivos** (notify, wa.me, llegada, catch-up, digest) solo **08:00–18:00** lun–sáb (`staffNotifyOk`). Domingo: no.
+
+**Excepción:** si esa persona **escribe** (inbound staff), se le puede contestar fuera de horario. No se le manda nada si no preguntó.
+
+Un cliente = un asesor sigue aplicando (`.cursor/rules/one-advisor-per-client.mdc`).
+
+## Código
+
+`kapso/functions/lib/send_windows.js`. TTL / inactive **no** terminan waiting de 22:00 a 06:00.
