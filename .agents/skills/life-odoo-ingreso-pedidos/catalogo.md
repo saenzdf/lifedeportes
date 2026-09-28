@@ -60,10 +60,22 @@ Atributos: medias (semi/pro), cuello (V / redondo / **Personalizado o Sport**), 
 
 ## Arquero, buzos, extras
 
+### Regla de Arquero (Dos opciones y distinción de productos):
+1. **Opción A (Arquero mismo diseño en pantaloneta):**
+   - El arquero lleva camiseta (manga corta o larga) + pantaloneta + medias, con el mismo corte y diseño que el equipo pero cambiando color.
+   - Producto Odoo: Se cotiza e ingresa bajo la misma plantilla de **Uniforme de Fútbol** (template **115**).
+   - Precio: **Mismo precio del uniforme de campo** ($50.000 COP base manga corta, o $53.000 COP manga larga).
+2. **Opción B (Conjunto especializado de arquero con pantalón largo acolchado):**
+   - El arquero lleva **buzo manga larga acolchado + pantalón largo acolchado** (prenda técnica con protección).
+   - Producto Odoo: Plantilla separada **Conjunto de arquero** (template **178**).
+   - Precio: **$70.000 COP** (piezas individuales si se piden sueltas: Buzo template 179 a $31.000, Pantalón template 163 a $45.000).
+
 | Interpretación | Plantilla | id | Desde (COP) |
 |----------------|-----------|-----|-------------|
-| Conjunto arquero | Conjunto de arquero | 178 | 70.000 |
-| Buzo arquero (pieza) | Buzo de arquero | 179 | 31.000 |
+| Arquero pantaloneta (mismo diseño) | Uniforme de Fútbol dry-fit | 115 | 50.000 (o 53.000 m. larga) |
+| Conjunto arquero (buzo + pantalón) | Conjunto de arquero | 178 | 70.000 |
+| Buzo arquero (pieza suelta) | Buzo de arquero | 179 | 31.000 |
+| Pantalón de arquero (pieza suelta) | Pantalón de arquero | 163 | 45.000 |
 | Sudaderas / hoodies | Sudaderas en algodón lycrado con bordados | 1811 | 120.000 |
 | Peto sublimado | Peto sublimado life | **69** | 28.000 (publicado tienda) |
 | Petos malla | Petos en malla | 177 | 25.000 (puede no estar publicado — confirmar Odoo) |

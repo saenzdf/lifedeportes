@@ -53,9 +53,18 @@ export function isPantalonetaOnlyText(...parts) {
   return false;
 }
 
-export function inferAttachmentRole(filename, mimeType = "") {
+export function inferAttachmentRole(filename, mimeType = "", contextText = "") {
   const name = compact(filename).toLowerCase();
   const mime = compact(mimeType).toLowerCase();
+  const text = compact(contextText).toLowerCase();
+
+  // Detección de comprobante de pago / transferencia bancaria (Bancolombia, Davivienda, Nequi, etc.)
+  if (
+    /comprobante|consigna|transfer|nequi|daviplata|bancolombia|davivienda|bre-?b|soporte.*pago|recibo.*pago|abono|anticipo|\bpago\b/i.test(name) ||
+    /comprobante|consigna|transfer|nequi|daviplata|bancolombia|davivienda|bre-?b|soporte\s*(del?)?\s*pago|recibo\s*(del?)?\s*pago|ya\s*(te\s*)?(pagu[eé]|abon[eé]|transfer[ií]|consign[eé])|adjunto\s*(el?)?\s*(pago|comprobante|soporte)/i.test(text)
+  ) {
+    return "payment_receipt";
+  }
 
   if (/\.(xlsx|xlsm|xltx|xls|csv)$/i.test(name) || mime.includes("spreadsheet") || mime.includes("excel")) {
     return "detail_list";
@@ -64,12 +73,13 @@ export function inferAttachmentRole(filename, mimeType = "") {
     return "detail_list";
   }
   if (
-    /lista|tallas|formato|pedido|nomin|jugador|alumno|roster|plantel/i.test(name) &&
-    /\.(jpe?g|png|webp|pdf)$/i.test(name)
+    /lista|tallas|formato|pedido|nomin|jugador|alumno|roster|plantel/i.test(name) ||
+    /lista|tallas|dorsal|planilla|nombres.*tallas/i.test(text)
   ) {
     return "detail_list";
   }
-  if (/referencia|diseno|diseño|mockup|logo|arte|wildcat|hub/i.test(name)) {
+  if (/referencia|diseno|diseño|mockup|logo|arte|wildcat|hub|escudo/i.test(name) ||
+      /diseño|diseno|referencia|boceto|logo|modelo|escudo/i.test(text)) {
     return "design_reference";
   }
   if (/\.(jpe?g|png|webp|gif)$/i.test(name) || mime.startsWith("image/")) {
@@ -83,11 +93,21 @@ export function inferAttachmentRole(filename, mimeType = "") {
 
 export function pickMediaFromContext(body) {
   const input = body?.input || body?.data || {};
-  const vars = body?.execution_context?.vars || {};
+  const vars = body?.execution_context?.vars || body?.vars || {};
   const ctx = body?.whatsapp_context || {};
   const messages = Array.isArray(ctx.messages) ? ctx.messages : [];
 
   const inbound = [...messages].reverse().filter((m) => m.direction === "inbound");
+  const lastCustomerText = compact(
+    input.text ||
+    input.message ||
+    input.context_text ||
+    inbound[0]?.content ||
+    inbound[0]?.body ||
+    inbound[0]?.text ||
+    ""
+  );
+
   const mediaFromMessages = [];
   for (const msg of inbound.slice(0, 12)) {
     const url =
@@ -101,7 +121,15 @@ export function pickMediaFromContext(body) {
       compact(msg?.media?.filename || msg?.document?.filename || msg?.filename) ||
       filenameFromUrl(url);
     const mime = compact(msg?.media?.mime_type || msg?.mimetype || "");
-    mediaFromMessages.push({ url, filename, mime_type: mime, role: inferAttachmentRole(filename, mime) });
+    const caption = compact(msg?.caption || msg?.content || msg?.body || "");
+    const contextText = [caption, lastCustomerText].filter(Boolean).join(" ");
+    mediaFromMessages.push({
+      url,
+      filename,
+      mime_type: mime,
+      caption,
+      role: inferAttachmentRole(filename, mime, contextText),
+    });
   }
 
   const candidates = [
@@ -126,11 +154,13 @@ export function pickMediaFromContext(body) {
   if (primaryUrl && !mediaFromMessages.some((m) => m.url === primaryUrl)) {
     const filename = compact(input.filename) || filenameFromUrl(primaryUrl);
     const mime = compact(input.mime_type || ctx?.media_data?.mime_type || "");
+    const caption = compact(input.caption || input.description || lastCustomerText);
     mediaFromMessages.unshift({
       url: primaryUrl,
       filename,
       mime_type: mime,
-      role: inferAttachmentRole(filename, mime),
+      caption,
+      role: inferAttachmentRole(filename, mime, caption),
     });
   }
 
@@ -372,11 +402,14 @@ export function mergeAttachments(existing, incoming) {
     const key = `${url}|${compact(att.filename)}`;
     if (seen.has(key)) continue;
     seen.add(key);
+    const caption = compact(att.caption || "");
     out.push({
       url,
       filename: compact(att.filename) || filenameFromUrl(url),
       mime_type: compact(att.mime_type) || null,
-      role: att.role || inferAttachmentRole(att.filename, att.mime_type),
+      caption: caption || undefined,
+      role: att.role || inferAttachmentRole(att.filename, att.mime_type, caption),
+      is_payment_proof: Boolean(att.is_payment_proof),
     });
   }
   return out;

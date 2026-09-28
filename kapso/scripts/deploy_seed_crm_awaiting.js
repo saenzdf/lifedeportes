@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// RETIRADO 2026-09-16 — seed-crm-awaiting se borró de Kapso (carril staff = Hermes local).
+console.error("RETIRADO: deploy_seed_crm_awaiting.js ya no aplica (ver kapso/docs/staff_hermes_bridge.md).");
+process.exit(1);
 /**
  * Inline seed lib → seed_crm_awaiting.js, upsert Kapso function, secrets, deploy, optional invoke.
  *

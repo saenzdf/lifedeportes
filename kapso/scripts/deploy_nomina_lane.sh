@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# RETIRADO 2026-09-16 — nómina/compra staff fuera del carril Kapso (Hermes local).
+# Resucitaría detect-staff-lane / route-staff-lane / parse-nomina-attlog / confirmar-nomina.
+echo "RETIRADO: deploy_nomina_lane.sh ya no aplica (staff = Hermes local)." >&2
+exit 1
 # Deploy carril nómina staff: functions → patch grafo v10 → validate → push
 set -euo pipefail
 

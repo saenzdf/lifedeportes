@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import {
   mapActiveOrders,
   conversationMatchesPhone,
+  parseRecentMessages,
 } from "../functions/lib/kapso_session_hydrate.js";
 import {
   normalizeQuote,
@@ -128,9 +129,81 @@ function testConversationMatchesPhone() {
   assert.equal(conversationMatchesPhone({ phone_number: "" }, "573222658395"), false);
 }
 
+function testParseRecentMessagesStaffAndCustomer() {
+  const raw = [
+    {
+      id: "wamid_1",
+      direction: "inbound",
+      text: { body: "Buenas tardes, cuánto cuesta un uniforme de fútbol?" },
+      created_at: "2026-09-22T14:00:00Z",
+    },
+    {
+      id: "wamid_2",
+      direction: "outbound",
+      origin: "workflow",
+      text: { body: "Buenas tardes, uniforme completo dry-fit sale en $50.000..." },
+      created_at: "2026-09-22T14:00:30Z",
+    },
+    {
+      id: "wamid_3",
+      direction: "inbound",
+      text: { body: "Tienen disponibilidad para la próxima semana?" },
+      created_at: "2026-09-22T14:02:00Z",
+    },
+    {
+      id: "wamid_4",
+      direction: "outbound",
+      origin: "business_app",
+      text: { body: "Hola, habla Paola de Life. Sí tenemos cupos, para iniciar requerimos el 50% de abono." },
+      created_at: "2026-09-22T14:10:00Z",
+    },
+    {
+      id: "wamid_5",
+      direction: "inbound",
+      text: { body: "Listo, a qué cuenta puedo consignar?" },
+      created_at: "2026-09-22T14:15:00Z",
+    },
+  ];
+
+  const parsed = parseRecentMessages(raw, { currentMessageId: "wamid_5" });
+  assert.equal(parsed.has_prior_conversation, true);
+  assert.equal(parsed.staff_participated, true);
+  assert.match(parsed.last_staff_message, /habla Paola/);
+  assert.match(parsed.recent_thread_summary, /\[STAFF\]: Hola, habla Paola/);
+  assert.match(parsed.recent_thread_summary, /\[CLIENTE\]: Buenas tardes/);
+  // wamid_5 must be excluded
+  assert.ok(!parsed.recent_thread_summary.includes("a qué cuenta puedo consignar"));
+}
+
+function testParseRecentMessagesOnlyBot() {
+  const raw = [
+    {
+      id: "wamid_10",
+      direction: "inbound",
+      text: { body: "Hola" },
+      created_at: "2026-09-22T10:00:00Z",
+    },
+    {
+      id: "wamid_11",
+      direction: "outbound",
+      origin: "workflow",
+      text: { body: "Buenas, qué uniforme necesita?" },
+      created_at: "2026-09-22T10:00:15Z",
+    },
+  ];
+  const parsed = parseRecentMessages(raw);
+  assert.equal(parsed.has_prior_conversation, true);
+  assert.equal(parsed.staff_participated, false);
+  assert.equal(parsed.last_staff_message, null);
+  assert.match(parsed.recent_thread_summary, /\[BOT\]/);
+}
+
 testMapActiveOrders();
 testNormalizeAndLines();
 testMergeKeepsBothOptions();
 testDossierRoundTrip();
 testConversationMatchesPhone();
-console.log("OK session continuity + life_quote_dossier");
+testParseRecentMessagesStaffAndCustomer();
+testParseRecentMessagesOnlyBot();
+console.log("OK session continuity + life_quote_dossier + recent messages thread");
+
