@@ -7,6 +7,7 @@ Consulta esta sección ante descuento, rompevientos, petos, deporte fuera, catá
 | Tema | Idea fija |
 |------|-----------|
 | Descuento / mayooreo / qty | Fabricantes → precios mínimos; **no** rebaja por volumen |
+| Sudaderas / Busos (capota vs sin capota) | Con capota o sin capota tienen el **mismo precio estándar** de catálogo. Se vende al mismo precio y se anota en el pedido si es con o sin capota; **prohibido** trabarse o pedir sobrecostos |
 | Muestra de 1 unidad / muestra previa | **No** manejamos muestras de una sola unidad. Mínimo 6 unidades del mismo producto/diseño |
 | Ajustes a medida / pantaloneta corta | **Sí** se puede realizar; el cliente nos indica cuántos centímetros desea quitar o añadir de largo |
 | Rompevientos | Sí = Chaqueta Rompevientos **68** ~$60k (no Lotto salvo que pidan Lotto) |

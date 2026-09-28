@@ -1149,8 +1149,7 @@ const SEMANTIC_CATALOG = {
         "buso con capota",
         "buzo con capota",
         "buso capota",
-        "hoodie con capota",
-        "capota"
+        "hoodie con capota"
       ],
       "operator_label": "Buso con capota (Lotto)"
     },
@@ -1709,8 +1708,10 @@ function scoreProduct(product, ctx, catalog) {
     );
     if (missing) return 0;
   }
+  const hasSinCapota = /\bsin\s+capota\b/.test(combined);
   for (const alias of semantic.aliases || []) {
     const a = normalizeText(alias);
+    if (hasSinCapota && a.includes("capota")) continue;
     if (a && combined.includes(a)) score += 22;
   }
 
@@ -1727,7 +1728,9 @@ function scoreProduct(product, ctx, catalog) {
   if (ctx.garmentType === "sudadera_conjunto") {
     if (name.includes("sudadera") || name.includes("buzo") || name.includes("buso") || name.includes("hoodie"))
       score += 30;
-    if (name.includes("pantalon") && !combined.includes("pantalon")) score -= 25;
+    if (hasSinCapota && name.includes("capota")) score -= 50;
+    if (hasSinCapota && (name.includes("sudadera") || name.includes("algodon"))) score += 25;
+    if (name.includes("pantalon") && !combined.includes("pantalon") && !name.includes("sudadera")) score -= 25;
     if (name.includes("arquero") && !combined.includes("arquero") && !combined.includes("portero"))
       score -= 50;
     if (product.commercial_role === "extra" && name.includes("chaqueta")) score -= 25;
@@ -2538,12 +2541,21 @@ async function handler(request, env) {
 
           if (JEV_MODE === "on" && matchedChoice && matchedChoice !== "other" && matchedConf >= JEV_THRESHOLD) {
             const tmplNum = Number(matchedChoice);
-            if (Number.isFinite(tmplNum) && tmplNum > 0 && tmplNum !== matchId) {
+            if (Number.isFinite(tmplNum) && tmplNum > 0) {
               matchId = tmplNum;
               if (tmplNum === 115) { matchName = "Uniforme de Fútbol"; unit = 50000; }
               else if (tmplNum === 62) { matchName = "Camiseta deportiva dry-fit"; unit = 30000; }
               else if (tmplNum === 23) { matchName = "Uniforme de baloncesto"; unit = 50000; }
               else if (tmplNum === 31) { matchName = "Uniforme de voleibol"; unit = 50000; }
+              else if (tmplNum === 66) { matchName = "Sudadera Chaqueta y Pantalón"; unit = 100000; }
+              else if (tmplNum === 8) { matchName = "Uniforme de Presentación polo"; unit = 75000; }
+              else if (tmplNum === 68) { matchName = "Chaqueta rompevientos"; unit = 60000; }
+              else if (tmplNum === 1800) { matchName = "Chaqueta Lotto"; unit = 60000; }
+              else if (tmplNum === 1795) { matchName = "Buso deportivo"; unit = 65000; }
+            }
+            const hasSinCapota = /sins+capota/i.test(combinedProductText);
+            if (hasSinCapota && matchName) {
+              matchName = matchName.replace(/s*cons+capota/i, "") + " (sin capota)";
             }
             jevApplied = true;
           }
