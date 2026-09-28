@@ -1,3 +1,9 @@
+// ARCHIVED 2026-09-16 — retirada del carril Kapso (Life Deportes)
+// function: route-staff-entry  id: 04a7d6df-9467-4981-a04d-5df66a45cac9
+// ultimo deploy: 2026-06-17T09:48:27-04:00  status: deployed
+// motivo: ya archivada localmente (graph-guard)
+// Restaurar: recrear la function en Kapso con este código y volver a cablearla.
+
 async function handler(request, env) {
   const body = await request.json().catch(() => ({}));
   const availableEdges = Array.isArray(body?.available_edges) ? body.available_edges : [];

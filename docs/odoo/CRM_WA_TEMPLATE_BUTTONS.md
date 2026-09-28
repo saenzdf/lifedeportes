@@ -7,13 +7,17 @@ Trigger: **manual** (Server Action + binding formulario/lista)
 
 ## Qué hace
 
-| Acción en Odoo (menú Acción) | SA id (prod) | Template Meta |
-|------------------------------|--------------|---------------|
-| **WA: Enviar retoma (template)** | **1553** | `retomar_pedido_v2` |
-| **WA: Enviar abono 50% (cuentas)** | **1554** | `abono_50_cuentas` |
+| Acción en Odoo (menú Acción) | SA id (prod) | Template Meta | Estado |
+|------------------------------|--------------|---------------|--------|
+| **WA: Enviar retoma (template)** | **1553** | `retomar_pedido_v2` | **OK** — reabre ventana 24h / retomar pedido |
+| **WA: Enviar abono 50% (cuentas)** | **1554** | `abono_50_cuentas` | **OK** — datos de pago 50% |
+| **WA: Nueva información de pedido** | **1590** | `nueva_info_pedido` | **OK** en Kapso function `8044ad1b…` (UTILITY). El SA Odoo aún resuelve solo `lead.phone` / `partner.phone` — **no** BSUID |
 
-Teléfono: `lead.phone` → si falta, `partner.mobile` / `partner.phone` (normaliza a `57…`).  
+Teléfono: `lead.phone` → si falta, `partner.phone` (Odoo 19 Life: sin `partner.mobile`). Normaliza a `57…`.  
+Kapso `odoo-send-wa-template` (deploy) también acepta **BSUID** / `conversation_id` en el payload, pero los botones Odoo **1553/1554/1590** hoy solo mandan E.164: sin teléfono en la opp el botón falla.  
 Tras OK: nota en chatter de la oportunidad.
+
+**Uso staff (retoma desde CRM):** Acción → **WA: Enviar retoma** en la oportunidad → el cliente recibe el template → al responder, ventana 24h abierta para seguir el pedido.
 
 ## Flujo técnico
 

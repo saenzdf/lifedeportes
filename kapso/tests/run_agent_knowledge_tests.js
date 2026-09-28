@@ -14,6 +14,7 @@ const kapsoRoot = path.resolve(__dirname, "..");
 const {
   KB_CATALOG,
   AGENTS,
+  RETIRED_AGENTS,
   loadKnowledge,
   applyAgent,
 } = await import(path.join(kapsoRoot, "scripts/embed_agent_knowledge.js"));
@@ -89,17 +90,16 @@ assert("vendedor slim: ref KB audio foto", vendedorSlim.includes("life_flujo_aud
 assert("vendedor slim: respuesta texto", /texto/i.test(vendedorSlim) && vendedorSlim.includes("life_flujo_audio_foto"));
 assert("vendedor slim: buscar obligatorio Fase 3", 
   vendedorSlim.includes("buscar_producto_odoo") && /Obligatorio/i.test(vendedorSlim));
-assert("vendedor slim: checklist precio", vendedorSlim.includes("Checklist antes de enviar"));
+assert("vendedor slim: checklist precio", /Checklist\s*(—|-)?\s*Antes de enviar/i.test(vendedorSlim));
 
-const staffSlim = fs.readFileSync(path.join(kapsoRoot, AGENTS.staff.promptFile), "utf8");
-assert("staff slim: ref KB match", staffSlim.includes("life_catalog_staff_match"));
-assert("staff slim: ref KB variantes", staffSlim.includes("life_variantes_odoo"));
+// El prompt staff legacy se conserva como referencia, pero NO se embebe en ningún nodo.
+const staffSlim = fs.readFileSync(path.join(kapsoRoot, "prompts/agent_staff_upload_v9_slim.md"), "utf8");
+assert("staff legacy: prompt archivado existe (referencia)", staffSlim.includes("life_catalog_staff_match"));
+assert("staff legacy: agente retirado del embed", !!RETIRED_AGENTS.staff && !AGENTS.staff);
 
 const variantes = fs.readFileSync(path.join(kapsoRoot, KB_CATALOG.life_variantes_odoo.file), "utf8");
 assert("variantes: voley corta 12202", variantes.includes("12202"));
 assert("variantes: corta vs china", variantes.includes("manga corta") && variantes.includes("manga china"));
-assert("staff slim: ref catálogo staff", staffSlim.includes("life_catalog_staff_match") || staffSlim.includes("life_catalogo_precios") || staffSlim.includes("producto"));
-assert("staff slim: sin catálogo concatenado en prompt (KB aparte)", !staffSlim.includes("### 5.3 Catálogo Completo") && staffSlim.length < 12000);
 
 // --- loadKnowledge ---
 const vKb = loadKnowledge(AGENTS.vendedor.knowledgeKeys);
@@ -112,30 +112,45 @@ const wf = JSON.parse(fs.readFileSync(wfPath, "utf8"));
 const wfCopy = JSON.parse(JSON.stringify(wf));
 
 applyAgent(wfCopy, "vendedor");
-applyAgent(wfCopy, "staff");
 
 const vNode = wfCopy.nodes.find((n) => n.id === AGENTS.vendedor.nodeId);
-const sNode = wfCopy.nodes.find((n) => n.id === AGENTS.staff.nodeId);
+const nodeIds = new Set(wfCopy.nodes.map((n) => n.id));
 
-assert("grafo vendedor: KB no vacío", vNode.data.config.flow_agent_knowledge_bases.length === AGENTS.vendedor.knowledgeKeys.length);
-assert("grafo staff: KB 9 bloques", sNode.data.config.flow_agent_knowledge_bases.length === 9);
+// --- Carril staff = Hermes local (retiro 2026-09-16) ---
+assert("grafo staff: agente staff legacy retirado", !nodeIds.has("agent_1780762885818"));
+assert("grafo staff: forwarder a Hermes presente", nodeIds.has("fn_staff_hermes_forwarder"));
+assert("grafo staff: sin camino legacy de subida", !nodeIds.has("fn_validate_staff_write_1745500003300"));
+assert("grafo staff: sin decide legacy lane-resume", !nodeIds.has("decide_route_staff_lane_resume_1745500019060"));
+const fwdEdges = wfCopy.edges.filter((e) => e.source === "fn_staff_hermes_forwarder");
 assert(
-  "grafo staff: reglas extract (no FAQ cliente completa)",
-  sNode.data.config.flow_agent_knowledge_bases.some((k) => k.name === "life_reglas_staff") &&
-    !sNode.data.config.flow_agent_knowledge_bases.some((k) => k.name === "life_reglas_comerciales")
+  "grafo staff: forwarder despacha a wait_staff_lane",
+  fwdEdges.length === 1 && fwdEdges[0].target === "wait_staff_lane_1745500019050",
+  JSON.stringify(fwdEdges)
 );
-const staffToolNames = (sNode.data.config.flow_agent_function_tools || []).map((t) => t.name);
-assert(
-  "grafo staff: sin verificar_servicio ni medir_fidelidad",
-  !staffToolNames.includes("verificar_servicio") && !staffToolNames.includes("medir_fidelidad_pedido"),
-  staffToolNames.join(",")
+const burstTimeout = wfCopy.edges.find(
+  (e) => e.source === "decide_route_staff_burst_resume_1745500019210" && e.label === "timeout"
 );
 assert(
-  "grafo staff: tools core presentes",
-  ["buscar_producto_odoo", "clasificar_adjuntos_pedido", "fusionar_borrador_lista", "crear_compra_odoo"].every(
-    (n) => staffToolNames.includes(n)
+  "grafo staff: el burst staff va al forwarder (no al agente)",
+  burstTimeout?.target === "fn_staff_hermes_forwarder",
+  JSON.stringify(burstTimeout)
+);
+const laneNext = wfCopy.edges.find((e) => e.source === "wait_staff_lane_1745500019050");
+assert(
+  "grafo staff: wait_staff_lane reengancha al burst",
+  laneNext?.target === "wait_staff_burst_1745500019200",
+  JSON.stringify(laneNext)
+);
+assert(
+  "grafo staff: functions legacy fuera del grafo",
+  !wfCopy.nodes.some((n) =>
+    ["odoo-create-lead-and-so", "build-quote-payload", "route-staff-domain-guard", "compile-staff-order-draft"].includes(
+      n.data?.config?.function_name
+    )
   )
 );
+
+assert("grafo vendedor: KB no vacío", vNode.data.config.flow_agent_knowledge_bases.length === AGENTS.vendedor.knowledgeKeys.length);
 assert(
   "grafo vendedor: prompt sin sección 5.3",
   !vNode.data.config.system_prompt.includes("Sudaderas en algodón lycrado")

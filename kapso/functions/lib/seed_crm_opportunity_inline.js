@@ -240,8 +240,18 @@ function buildVisibleDescription(quote, status, teamName, conversationId, env, s
     if (total) bits.push(`total <b>${formatCop(total)}</b>`);
     parts.push(`<p><b>Cotización ofrecida:</b> ${bits.join(" → ")}.</p>`);
   }
-  if (status) {
-    parts.push(`<p><b>Estado:</b> ${escapeHtml(String(status))}.</p>`);
+  const statusStr = compact(status);
+  const awaitingContact =
+    /interes_confirmado|esperando_abono|esperando_contacto|contacto_asesor|awaiting|pide_asesor|needs_human/i.test(
+      statusStr
+    );
+  if (awaitingContact) {
+    parts.unshift(
+      `<p><b>⚠️ Esperando que un asesor se comunique</b> — el bot ya le dijo al cliente que lo contactan para el abono / seguimiento.</p>`
+    );
+  }
+  if (statusStr) {
+    parts.push(`<p><b>Estado:</b> ${escapeHtml(statusStr)}.</p>`);
   }
   if (teamName) {
     parts.push(`<!-- team:${teamName.replace(/</g, "")} -->`);

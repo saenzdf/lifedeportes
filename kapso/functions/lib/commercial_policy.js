@@ -37,7 +37,9 @@ export const FIXED_REPLIES = {
     "Estamos en la Cl. 66a #98a 12, barrio Los Álamos, Engativá, Bogotá. Puede ver el mapa aquí: https://maps.google.com/?cid=12304529363039725410",
   catalogo: "Puede ver el catálogo en https://lifedeportes.odoo.com/shop",
   pago:
-    "Abono del 50% para iniciar y el resto contra entrega. La cuenta o medio exacto se lo indica el asesor al confirmar el pedido.",
+    "Abono del 50% para iniciar y el 50% restante para hacer el envío (o al pasar a recogerlo en fábrica). La cuenta o medio exacto se lo indica el asesor al confirmar el pedido.",
+  contra_entrega:
+    "No manejamos pago contra entrega del pedido: se abona el 50% para iniciar la elaboración y el 50% restante para hacer el envío (o al recoger en fábrica).",
   envios:
     "Sí, tenemos envíos nacionales por cobrar: despachamos por transportadora y el valor del flete se paga al recibir.",
   logo_marca_ropa:

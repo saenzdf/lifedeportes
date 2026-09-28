@@ -16,12 +16,12 @@ description: >-
 
 ## Reglas (no negociables)
 
-1. **Un mensaje = re-trigger desde Start** (cliente). Staff write = línea única documentada en `kapso/docs/staff_graph_v10.md`.
+1. **Un mensaje = re-trigger desde Start** (cliente). Carril staff = despacho a Hermes, ver `kapso/docs/staff_hermes_bridge.md`.
 2. **No dejar nodos sin edge entrante** salvo whitelist cliente (`staff_only_mode`).
 3. **No duplicar** `source + label` en edges (causa rutas ambiguas).
-4. **No cablear** functions archivadas: `detect-staff-upload-command`, `route-staff-entry`, `route-staff-post`, `route-staff-registration`.
-5. **Cliente:** no tocar prompts/topología vendedor/histórico salvo pedido explícito.
-6. **Staff:** un Agent Staff (`agent_1780762885818`) para pedido/nómina/compra vía tools. No crear agentes por dominio. Jump → mismo agente.
+4. **No cablear** functions archivadas: la lista vive en `ARCHIVED_FUNCTION_NAMES` (`scripts/validate-graph-lifedeportes.js`) — incluye todo el carril staff legacy (`validate-staff-write`, `build-quote-payload`, `odoo-create-lead-and-so`, `detect-staff-upload-command`, `route-staff-entry`, `route-staff-lane`, `route-staff-registration`, nómina, parsers de lista).
+5. **Cliente:** no tocar prompts/topología vendedor salvo pedido explícito.
+6. **Staff:** Kapso **solo despacha** a Hermes (`fn_staff_hermes_forwarder` → webhook `staff-assistant`). **No reintroducir** `agent_1780762885818` ni agentes por dominio: el agente staff vive en Hermes local (2026-09-16).
 7. **UI Kapso manda en topología** — siempre `get-graph` → validar → `update-graph` con `lock_version`.
 
 ## Workflow obligatorio antes de subir
@@ -30,14 +30,15 @@ description: >-
 cd lifedeportes/kapso
 export $(grep -v '^#' ../.env | xargs)   # KAPSO_API_* si aplica
 
-# Preferido: deploy unificado
-bash scripts/deploy_unified_staff.sh
+# Preferido: deploy unificado (pull → embed → tests → validate → push)
+bash scripts/deploy_graph_kb_progressive.sh
 
 # O manual:
 node scripts/validate-graph-lifedeportes.js workflow_lifedeportes_sales_inbound_v10.json
 ```
 
-Si `validate-graph-lifedeportes.js` falla: **no subir**. Corregir o regenerar con `build_graph_v10_pruned.js`.
+Si `validate-graph-lifedeportes.js` falla: **no subir**. Corregir o reparar con `build_graph_v10_pruned.js`.
+`deploy_unified_staff.sh` está **retirado** (apuntaba al agente staff embebido): no correrlo.
 
 ## Cómo editar sin ensuciar
 

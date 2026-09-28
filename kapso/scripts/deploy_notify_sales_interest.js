@@ -8,14 +8,23 @@ const FN = "a2236fdc-8afa-40ab-a09f-d231c2b638cd";
 const CODE = path.join(ROOT, "kapso/functions/notify_sales_interest_deploy.js");
 
 function loadEnv() {
-  const envPath = path.join(ROOT, ".env");
-  for (const line of fs.readFileSync(envPath, "utf8").split("\n")) {
-    const t = line.trim();
-    if (!t || t.startsWith("#") || !t.includes("=")) continue;
-    const i = t.indexOf("=");
-    const k = t.slice(0, i).trim();
-    const v = t.slice(i + 1).trim();
-    if (!(k in process.env)) process.env[k] = v;
+  const candidates = [
+    path.join(ROOT, ".env"),
+    path.join(ROOT, "..", ".env"),
+    path.resolve(process.cwd(), ".env"),
+    path.resolve(process.cwd(), "../../.env")
+  ];
+  for (const envPath of candidates) {
+    if (fs.existsSync(envPath)) {
+      for (const line of fs.readFileSync(envPath, "utf8").split("\n")) {
+        const t = line.trim();
+        if (!t || t.startsWith("#") || !t.includes("=")) continue;
+        const i = t.indexOf("=");
+        const k = t.slice(0, i).trim();
+        const v = t.slice(i + 1).trim();
+        if (!(k in process.env)) process.env[k] = v;
+      }
+    }
   }
 }
 
@@ -124,6 +133,10 @@ async function main() {
   await upsertSecret("LIFE_CRM_SEED_STAGE_ID", "6");
   await upsertSecret("LIFE_CRM_WON_STAGE_ID", "3");
   await upsertSecret("LIFE_CRM_LOST_STAGE_ID", "5");
+  await upsertSecret("LIFE_SALES_NOTIFY_ENABLED", "true");
+  await upsertSecret("LIFE_SALES_NOTIFY_PHONES", "573213988464,573103362484");
+  await upsertSecret("OPENROUTER_API_KEY", process.env.OPENROUTER_API_KEY);
+  await upsertSecret("LIFE_JEV_MODE", process.env.LIFE_JEV_MODE || "on");
 
   // secrets require redeploy
   dep = await kapso(`/platform/v1/functions/${FN}/deploy`, {

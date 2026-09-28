@@ -636,13 +636,13 @@ const UNIFIED_STAFF_EXTRA_TOOL_DEFS = [
   // medir_fidelidad_pedido / verificar_servicio: ops-only — no van en UNIFIED_STAFF_EXTRA ni keep set.
 ];
 
-/** Tools de ops/KPI: existen en Kapso pero no se exponen al Agent Staff día a día. */
+/** Ops/KPI staff: retirados del toolset (2026-06). El carril staff vive en Hermes local. */
 const STAFF_OPS_ONLY_TOOLS = ["verificar_servicio", "medir_fidelidad_pedido"];
 
 const AGENTS = {
   vendedor: {
     nodeId: "agent_orquestador_1745500003000",
-    promptFile: "prompts/agent_vendedor_v10_unified.md",
+    promptFile: "prompts/agent_vendedor_v11_deepseek.md",
     displayName: "Agent: Vendedor y Soporte Life",
     knowledgeKeys: [
       "kapso_whatsapp_patterns",
@@ -661,31 +661,13 @@ const AGENTS = {
     /** Intent: no complete_task en cliente. Kapso a veces lo inyecta igual → prompt hard-ban. */
     stripDefaultTools: ["complete_task"],
   },
-  staff: {
-    nodeId: "agent_1780762885818",
-    promptFile: "prompts/agent_staff_upload_v9_slim.md",
-    displayName: "Jump → Staff: subir pedido CRM / nómina / compra",
-    knowledgeKeys: [
-      "life_lista_pedido_staff",
-      "life_correccion_pedido_staff",
-      "life_retomar_oportunidad_crm",
-      "life_nomina_attlog",
-      "kapso_whatsapp_patterns",
-      "life_reglas_staff",
-      "life_catalog_staff_match",
-      "life_variantes_odoo",
-      "life_catalogo_precios",
-    ],
-    maxTokens: 8000,
-    maxIterations: 80,
-    patchSearchTool: false,
-    patchOrderDetailTools: true,
-    patchUnifiedStaffTools: true,
-    /** Staff controla Kapso/WA directo; no handoff a sí mismo. */
-    stripDefaultTools: ["handoff_to_human"],
-    /** Ops/KPI: fuera del toolset activo (siguen en registry Kapso). */
-    excludeFunctionTools: STAFF_OPS_ONLY_TOOLS,
-  },
+  // `staff`: RETIRADO 2026-09-16 — ver RETIRED_AGENTS (el carril staff vive en Hermes local).
+};
+
+/** Agentes retirados: el deploy los salta sin fallar (ver RETIRED_REASON). */
+const RETIRED_AGENTS = {
+  staff:
+    "carril staff movido a Hermes local (staff-hermes-forwarder); nodo agent_1780762885818 retirado del grafo 2026-09-16",
 };
 
 function loadKnowledge(keys) {
@@ -836,6 +818,10 @@ function main() {
   const targets = only ? [only] : Object.keys(AGENTS);
 
   for (const key of targets) {
+    if (RETIRED_AGENTS[key]) {
+      console.log(`[skip] ${key}: retirado — ${RETIRED_AGENTS[key]}`);
+      continue;
+    }
     if (!AGENTS[key]) {
       console.error(`Unknown agent: ${key}. Use: ${Object.keys(AGENTS).join(", ")}`);
       process.exit(1);
@@ -852,6 +838,7 @@ main();
 module.exports = {
   KB_CATALOG,
   AGENTS,
+  RETIRED_AGENTS,
   loadKnowledge,
   applyAgent,
   VENDEDOR_SEARCH_TOOL,

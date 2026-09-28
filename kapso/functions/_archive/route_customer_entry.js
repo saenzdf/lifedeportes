@@ -1,3 +1,9 @@
+// ARCHIVED 2026-09-16 — retirada del carril Kapso (Life Deportes)
+// function: route-customer-entry  id: 189befcd-5a62-482a-ad95-982c6721ad3e
+// ultimo deploy: 2026-08-31T18:17:08-04:00  status: deployed
+// motivo: ruteo cliente legacy sin cablear
+// Restaurar: recrear la function en Kapso con este código y volver a cablearla.
+
 /**
  * route_customer_entry — dual mode:
  * 1) Sales-gate (edges sales_allowed / send_message / already_notified):
@@ -158,8 +164,21 @@ async function handler(request, env) {
     reason = "first_edge";
   }
 
+  const continuityResumed = vars?.session?.continuity?.resumed === true;
+  const hasUsefulQuote =
+    Boolean(vars?.quote?.product_text || vars?.quote?.quantity || vars?.quote?.lines?.length);
+
   const hasGreetingInText = /^(hola|buenas|buenos\s*dias|buen\s*dia|buenas\s*tardes|saludos)/i.test(lastText.trim());
-  const isNewQuoteSession = !vars?.service?.greeting_sent || (hasGreetingInText && looksLikeNewQuote);
+  const isNewQuoteSession =
+    continuityResumed || hasUsefulQuote
+      ? false
+      : !vars?.service?.greeting_sent || (hasGreetingInText && looksLikeNewQuote);
+
+  if (continuityResumed && signal === "new_customer") {
+    reason = vars?.session?.continuity?.cross_thread
+      ? "continuity_cross_thread"
+      : "continuity_resumed";
+  }
 
   return new Response(
     JSON.stringify({
@@ -167,7 +186,7 @@ async function handler(request, env) {
       vars: {
         customer_line:
           signal === "new_customer"
-            ? returningSale || looksLikeNewQuote
+            ? continuityResumed || returningSale || looksLikeNewQuote
               ? "returning_sale"
               : "new_customer"
             : signal,
@@ -196,9 +215,13 @@ async function handler(request, env) {
           routed_signal: segment,
           routed_edge: signal,
           route_reason: reason,
-          returning_sale: Boolean(returningSale || looksLikeNewQuote),
+          returning_sale: Boolean(continuityResumed || returningSale || looksLikeNewQuote),
           fallback_message: null,
-          greeting_sent: isNewQuoteSession ? false : (vars.service?.greeting_sent ?? false),
+          greeting_sent: continuityResumed || hasUsefulQuote
+            ? true
+            : isNewQuoteSession
+              ? false
+              : (vars.service?.greeting_sent ?? false),
         },
       },
     }),
