@@ -1,0 +1,15 @@
+{
+  "name": "retomar_pedido_v3",
+  "language": "es",
+  "category": "MARKETING",
+  "components": [
+    {
+      "type": "BODY",
+      "text": "Hola, le escribimos de Life Deportes para confirmar o retomar su pedido. Le quedamos atentos."
+    },
+    {
+      "type": "FOOTER",
+      "text": "Life Deportes"
+    }
+  ]
+}
