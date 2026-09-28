@@ -179,8 +179,10 @@ function scoreProduct(product, ctx, catalog) {
     );
     if (missing) return 0;
   }
+  const hasSinCapota = /\bsin\s+capota\b/.test(combined);
   for (const alias of semantic.aliases || []) {
     const a = normalizeText(alias);
+    if (hasSinCapota && a.includes("capota")) continue;
     if (a && combined.includes(a)) score += 22;
   }
 
@@ -197,7 +199,9 @@ function scoreProduct(product, ctx, catalog) {
   if (ctx.garmentType === "sudadera_conjunto") {
     if (name.includes("sudadera") || name.includes("buzo") || name.includes("buso") || name.includes("hoodie"))
       score += 30;
-    if (name.includes("pantalon") && !combined.includes("pantalon")) score -= 25;
+    if (hasSinCapota && name.includes("capota")) score -= 50;
+    if (hasSinCapota && (name.includes("sudadera") || name.includes("algodon"))) score += 25;
+    if (name.includes("pantalon") && !combined.includes("pantalon") && !name.includes("sudadera")) score -= 25;
     if (name.includes("arquero") && !combined.includes("arquero") && !combined.includes("portero"))
       score -= 50;
     if (product.commercial_role === "extra" && name.includes("chaqueta")) score -= 25;
