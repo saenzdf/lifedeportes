@@ -1,0 +1,15 @@
+{
+  "name": "nueva_info_pedido",
+  "language": "es",
+  "category": "UTILITY",
+  "components": [
+    {
+      "type": "BODY",
+      "text": "Hola. Tenemos nueva información de su pedido en Life Deportes. Por favor revise este chat o escríbanos si tiene alguna duda."
+    },
+    {
+      "type": "FOOTER",
+      "text": "Life Deportes"
+    }
+  ]
+}

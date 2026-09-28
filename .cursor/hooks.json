@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "hooks": {
+    "workspaceOpen": [
+      {
+        "command": "../../.cursor/hooks/project-env-activate.sh",
+        "timeout": 30
+      }
+    ],
+    "sessionStart": [
+      {
+        "command": "../../.cursor/hooks/project-env-activate.sh",
+        "timeout": 30
+      }
+    ]
+  }
+}

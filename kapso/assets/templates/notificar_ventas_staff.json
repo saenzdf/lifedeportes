@@ -1,0 +1,23 @@
+{
+  "name": "notificar_ventas_staff",
+  "language": "es",
+  "category": "MARKETING",
+  "components": [
+    {
+      "type": "BODY",
+      "text": "Cliente: {{1}}\nPedido: {{2}}\nValor: {{3}}\n\nPara hablarle al cliente: {{4}}",
+      "example": {
+        "body_text": [
+          "Dora Nelly Lopez",
+          "16 camisetas dry-fit",
+          "$480.000",
+          "https://wa.me/3000000054"
+        ]
+      }
+    },
+    {
+      "type": "FOOTER",
+      "text": "Life Deportes"
+    }
+  ]
+}
