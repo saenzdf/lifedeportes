@@ -1,0 +1,61 @@
+{
+  "batch_id": "cuaderno_2026-09-09",
+  "source": "RECTIFY_IMG_20260909_* (transcription from plan chat; images not on cloud VM)",
+  "pages": [
+    {
+      "page_id": "p01_160223",
+      "file": "RECTIFY_IMG_20260909_160223.jpg",
+      "note": "delivery 03-07/09/25"
+    },
+    {
+      "page_id": "p02_160313",
+      "file": "RECTIFY_IMG_20260909_160313.jpg",
+      "note": "delivery 20-25/08/26"
+    },
+    {
+      "page_id": "p03_160341",
+      "file": "RECTIFY_IMG_20260909_160341.jpg",
+      "note": "delivery 04-06/08/26"
+    },
+    {
+      "page_id": "p04_160229",
+      "file": "RECTIFY_IMG_20260909_160229.jpg",
+      "note": "delivery 29/08-02/09/26"
+    },
+    {
+      "page_id": "p05_160320",
+      "file": "RECTIFY_IMG_20260909_160320.jpg",
+      "note": "mixed 14-19/08/26 + some #"
+    },
+    {
+      "page_id": "p06_160236",
+      "file": "RECTIFY_IMG_20260909_160236.jpg",
+      "note": "delivery 26-28/08/26"
+    },
+    {
+      "page_id": "p07_160143",
+      "file": "RECTIFY_IMG_20260909_160143.jpg",
+      "note": "delivery 08-09/09/26"
+    },
+    {
+      "page_id": "p08_160438",
+      "file": "RECTIFY_IMG_20260909_160438.jpg",
+      "note": "packing Valentina 08-09/09/26"
+    },
+    {
+      "page_id": "p09_160426",
+      "file": "RECTIFY_IMG_20260909_160426.jpg",
+      "note": "packing 03-07/09/26"
+    },
+    {
+      "page_id": "p10_160350",
+      "file": "RECTIFY_IMG_20260909_160350.jpg",
+      "note": "delivery 31/07-03/08/26"
+    },
+    {
+      "page_id": "p11_160335",
+      "file": "RECTIFY_IMG_20260909_160335.jpg",
+      "note": "delivery 10-13/08/25"
+    }
+  ]
+}

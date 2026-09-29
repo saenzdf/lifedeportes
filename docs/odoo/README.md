@@ -5,6 +5,8 @@ Automatizaciones y setup Studio para Odoo Online 19.
 | Documento | Tema |
 |-----------|------|
 | [CDR_CLEANUP_ODOO19_STUDIO_SETUP.md](CDR_CLEANUP_ODOO19_STUDIO_SETUP.md) | Borrar `.cdr` al entrar a Cobro y entrega |
+| [CUADERNO_EMPACADO_ENTREGA.md](CUADERNO_EMPACADO_ENTREGA.md) | Cuaderno → Empacado / validar entrega + carriers |
+| [cuaderno_batches/2026-09-09/](cuaderno_batches/2026-09-09/) | Extracción batch 2026-09-09 |
 | [DISENADOR_ROUTING_STUDIO_SETUP.md](DISENADOR_ROUTING_STUDIO_SETUP.md) | Campo Diseñador y ruteo Javier/Paola |
 | [SO_TO_TASK_SYNC_STUDIO_SETUP.md](SO_TO_TASK_SYNC_STUDIO_SETUP.md) | Nota y adjuntos del SO → tarea al crear |
 | [TAGS_DESCRIPTION_AUTOMATION_RETIRE.md](TAGS_DESCRIPTION_AUTOMATION_RETIRE.md) | Retirar Tags → descripción (automation 17) |

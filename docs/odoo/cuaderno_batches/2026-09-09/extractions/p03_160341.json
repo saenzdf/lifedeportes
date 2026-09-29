@@ -1,0 +1,127 @@
+{
+  "page_id": "p03_160341",
+  "page_type": "delivery",
+  "date_headers": [
+    "04/08/26",
+    "06/08/26"
+  ],
+  "rows": [
+    {
+      "raw_name": "Sebastian vidal",
+      "so_number": null,
+      "address": "Cra 46 # 48-50 Edificio Portal de Asturias / Apto 106",
+      "carrier_raw": "Envia",
+      "carrier_canonical": "Envía",
+      "qty_note": null,
+      "date": "04/08/26",
+      "confidence": 0.85,
+      "needs_review": false,
+      "page_id": "p03_160341",
+      "case": "delivery"
+    },
+    {
+      "raw_name": "July",
+      "so_number": null,
+      "address": "cra 1 # 4-68 piso 2 frente al estadio pácora - caldas",
+      "carrier_raw": "inter",
+      "carrier_canonical": "Interrapidísimo",
+      "qty_note": null,
+      "date": "04/08/26",
+      "confidence": 0.85,
+      "needs_review": false,
+      "page_id": "p03_160341",
+      "case": "delivery"
+    },
+    {
+      "raw_name": "Angy Perez",
+      "so_number": null,
+      "address": "cra 7 a # 9-04 - tierra alta córdoba",
+      "carrier_raw": "Envia inter",
+      "carrier_canonical": "Envía",
+      "qty_note": null,
+      "date": "04/08/26",
+      "confidence": 0.85,
+      "needs_review": false,
+      "page_id": "p03_160341",
+      "case": "delivery"
+    },
+    {
+      "raw_name": "Profe Hugo",
+      "so_number": null,
+      "address": "La hormiga - Putumayo oficim princ",
+      "carrier_raw": "inter",
+      "carrier_canonical": "Interrapidísimo",
+      "qty_note": null,
+      "date": "04/08/26",
+      "confidence": 0.85,
+      "needs_review": false,
+      "page_id": "p03_160341",
+      "case": "delivery"
+    },
+    {
+      "raw_name": "Royal",
+      "so_number": null,
+      "address": "Se envía",
+      "carrier_raw": "Moto",
+      "carrier_canonical": "Moto",
+      "qty_note": null,
+      "date": "04/08/26",
+      "confidence": 0.85,
+      "needs_review": false,
+      "page_id": "p03_160341",
+      "case": "delivery"
+    },
+    {
+      "raw_name": "Angel cupiño",
+      "so_number": null,
+      "address": "Se envía",
+      "carrier_raw": "Moto",
+      "carrier_canonical": "Moto",
+      "qty_note": null,
+      "date": "04/08/26",
+      "confidence": 0.85,
+      "needs_review": false,
+      "page_id": "p03_160341",
+      "case": "delivery"
+    },
+    {
+      "raw_name": "Antonio Nariño",
+      "so_number": null,
+      "address": "Se envía",
+      "carrier_raw": "Moto",
+      "carrier_canonical": "Moto",
+      "qty_note": null,
+      "date": "04/08/26",
+      "confidence": 0.85,
+      "needs_review": false,
+      "page_id": "p03_160341",
+      "case": "delivery"
+    },
+    {
+      "raw_name": "Diamantes del pacifico",
+      "so_number": null,
+      "address": "Cra 26 L # 44-50 piso 2",
+      "carrier_raw": "Envia",
+      "carrier_canonical": "Envía",
+      "qty_note": null,
+      "date": "04/08/26",
+      "confidence": 0.85,
+      "needs_review": false,
+      "page_id": "p03_160341",
+      "case": "delivery"
+    },
+    {
+      "raw_name": "Alianza TC",
+      "so_number": null,
+      "address": null,
+      "carrier_raw": "Envia",
+      "carrier_canonical": "Envía",
+      "qty_note": null,
+      "date": "06/08/26",
+      "confidence": 0.7,
+      "needs_review": false,
+      "page_id": "p03_160341",
+      "case": "delivery"
+    }
+  ]
+}
