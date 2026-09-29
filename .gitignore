@@ -4,6 +4,9 @@
 .envrc
 galvanic-*.json
 
+# Node
+node_modules/
+
 # Python
 .venv/
 venv/
